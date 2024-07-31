@@ -2,22 +2,27 @@
 	<div id="app">
 		<router-view></router-view>
 	</div>
+	<div>
+		<FooterMenu />
+	</div>
 </template>
 
 <script>
+import FooterMenu from '/src/components/Btm_Menu.vue';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
 export default {
+	components: {
+		FooterMenu,
+	},
 	name: 'App'
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-	/* Example of customizing the styles */
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: white;
 	display: flex;
-	max-width: none;
+	flex-direction: column;
 }
 </style>

@@ -1,213 +1,363 @@
 <template>
 	<div>
+		<PopUpCard />
+	</div>
+
+	<div>
+		<BackToTop />
+	</div>
+
+	<div>
 		<TopBanner />
 	</div>
 
+	<div class="running-sentence-container">
+		<div class="running-sentence">
+			{{ sentence }}
+		</div>
+	</div>
+
 	<div class="main-content">
-		<div class="col-sm-12 col-lg-3">
+		<div class="LeftBanner col-sm-12 col-md-12 col-lg-3">
 			<LeftBanner />
 		</div>
 		<!-- Middle Blank Column -->
 
-		<div class="Middle_Banner_Container col-lg-6">
+		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-6">
 			<div class="Middle_Inner_Container">
-				<ul class="Top_Btn_Container">
-					<li class="Top_Btn" v-for="(item, index) in menuItems" :key="index"
-						:class="{ 'active': selectedItem === index }" @click="selectItem(index)">
-						{{ item }}
-					</li>
-				</ul>
-				<div class="MB_Img_Gallery">
-					<div class="MB_Img">
-						<img src="/Images/MB_Img.png" alt="" v-for="n in 40" :key="n">
+				<div class="site-tabs">
+					<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
+						:class="['image-container', { selected: selectedIndex === index }]"
+						@click="selectImage(index); handleRedirect(index)">
+						<img :src="selectedIndex === index ? image.selected : image.notSelected"
+							:alt="'Image ' + (index + 1)">
 					</div>
 				</div>
-				<h1>100Cuci: The Trusted Top Online Casino in Malaysia</h1>
-				<p>
-					Welcome to <strong><a href="https://100cuci.info/">100Cuci</a></strong>,
-					one of the top local online casinos in Malaysia. Whether you’re a pro
-					or just starting out, we’ve got something waiting for you. Sign up and
-					play
-				</p>
-				<h2>100Cuci Game Online Selection</h2>
-				<p>We offer a diverse range of games to suit every preference. Let’s check it out!</p>
-				<h3>Slot Game</h3>
-				<p>
-					<strong>100Cuci slot</strong> game is one of the most popular games on
-					our platform. We have more than a hundred slot games with high RTP for
-					you to play. You may find popular slot game providers like Jili, JDB,
-					918Kiss, and Mega888.
-				</p>
-				<h3>Live Casino</h3>
-				<p>
-					Step into the <strong>100Cuci live</strong> casino game! We have a wide
-					range of live casino games like blackjack, roulette, baccarat, and
-					poker. You can also interact with our friendly dealers and play in real
-					time.
-				</p>
-				<p>
-					Most of the games are accessible via browsers, so you can enjoy all the
-					100cuci game online without downloading any app!
-				</p>
-				<h2>100Cuci Free Credit Bonus</h2>
-				<p>
-					There is various exciting bonuses waiting you, claim it now at
-					<strong>100Cuci Casino Malaysia</strong>
-				</p>
-				<ul>
-					<li>New Register Free RM5 with no turnover and rollover.</li>
-					<li>RM2 <strong>100Cuci Free Credit</strong> for 365 days with daily 1 times.</li>
-					<li>Free Spin with just RM1 deposit only</li>
-				</ul>
-				<h2>Supported Payment Method</h2>
-				<p>
-					<strong>100Cuci Asia</strong> offers a variety of payment options for
-					Malaysian players. From popular e-wallets like GrabPay and Touch ‘n Go
-					to online banking transfers via Maybank, CIMB, and Public Bank. You can
-					always enjoy fast and secure deposits with no withdrawal limit in
-					100Cuci casino online!
-				</p>
-				<h2>Get Started 100Cuci Net</h2>
-				<p>There are just a few simple steps to start your online casino experience with us, check it out:</p>
-				<ol>
-					<li>Visit our official website: <strong>100cuci.info</strong></li>
-					<li>Sign up for an account with a phone number.</li>
-					<li>Access <strong>100Cuci log in</strong> to claim free credits if newly registered players.</li>
-					<li>Explore all the casino games.</li>
-					<li>Start playing the 100Cuci game online and win real money.</li>
-					<li>Withdraw your winning from <strong>100Cuci ewallet</strong>.</li>
-				</ol>
-				<p>
-					Remember, join the 100Cuci Telegram group to get the latest bonus or news
-					update.
-				</p>
-				<p>
-					As a leading online casino in Malaysia, Cuci100 caters to the unique
-					preferences of players in the region. We constantly offer an exciting
-					gaming experience for all our players. Sign up and claim
-					<strong>100Cuci free kredit</strong> now!
-				</p>
-				<p>
-					<strong>Address office</strong>: 326, Jln Sepakat 8, Taman United, 58200
-					Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
-				</p>
-				<a class="google-map-link" href="https://maps.app.goo.gl/Yk1sdaktbaEaZXDD6" target="_blank">
-					<strong>https://maps.app.goo.gl/Yk1sdaktbaEaZXDD6</strong>
-				</a>
-				<div class="map-container">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3984.05116838465!2d101.674628!3d3.081017!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smy!4v1720752722021!5m2!1sen!2smy"
-						width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+				<div class="MB_Img_Gallery">
+					<div class="MB_Img" id="MB_Img">
+						<div class="image-grid-container">
+							<div class="image-wrapper" v-for="n in 53" :key="n">
+								<a v-if="n <= 18" :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
+								</a>
+								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
+
+								<div v-if="n <= 18">
+									<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+										<p>{{ $t('message.Play') }}</p>
+									</a>
+								</div>
+								<div v-else>
+									<p>{{ $t('message.Play') }}</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<p><img src="/Images/MM_Img_1.png" alt=""></p>
-				<p><strong>Learn more about our big parner:</strong></p>
-				<p><a class="platform" href="https://www.winbox88my1.com/winbox-login" target="_blank"><strong>Winbox
-							Login</strong></a> 3.0
-					| Winbox Mobile Login 2024 | Winbox88 H5 | Winbox Mobile Login 2024, access Winbox H5 3.0 Web
-					Version now. No download needed, Winbox88 casino is your best choice being the top casino game
-					provider in Malaysia.
-				</p>
-				<p>OFFICIAL <a class="platform" href="https://www.winbox8.my/"><strong>WINBOX</strong></a> 2024 |
-					Winbox88. Top leading Online Casino in Malaysia 2024. Play with Winbox games for all Playtech, Lion
-					King, Lucky365, SBObet, Maxbet, KingMaker, Spade Gaming, AE Sexy and other well-known gaming
-					provider brands. With a single account, you may bet on dozens of odds over thousands of games.
-				</p>
+
+				<div class="footer-content">
+					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
+					<p><a href="https://www.mamak24.fun/">MAMAK24</a> {{
+						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
+							}}</strong> {{
+								$t('Upper_Content.MAMAK24_Description_SH') }}
+					</p>
+					<br>
+					<h2>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24_Online_Games') }}</h2>
+					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24-OG-Main-Word') }}</strong> {{
+						$t('H2-MAMAK24-Online-Casino-Games.M24-OG-Description') }}
+					</p>
+					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Live-Casino-Games') }}</h3>
+					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-LCG-Description') }}</p>
+					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Casino-Slots') }}</h3>
+					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Main-Word') }}</strong> {{
+						$t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Description') }}
+					</p>
+					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Sports-Betting') }}</h3>
+					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-SB-Main-Word') }}</strong> {{
+						$t('H2-MAMAK24-Online-Casino-Games.H3-SB-Description') }}
+					</p>
+					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Lottery') }}</h3>
+					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OL-FH-Description') }} <strong>{{
+						$t('H2-MAMAK24-Online-Casino-Games.H3-OL-Main-word') }}</strong> {{
+								$t('H2-MAMAK24-Online-Casino-Games.H3-OL-SH-Description') }}
+					</p>
+					<br>
+					<h2>{{ $t('H2-MAMAK24-Payment-Methods.MAMAK24_Payment_Methods') }}</h2>
+					<p>{{ $t('H2-MAMAK24-Payment-Methods.M24-PM-Description') }}</p>
+					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Bank-Transfer') }}</h3>
+					<p>{{ $t('H2-MAMAK24-Payment-Methods.H3-BT-Description') }}</p>
+					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Ewallet-Transfer') }}</h3>
+					<p><strong>{{ $t('H2-MAMAK24-Payment-Methods.H3-ET-Main-Word') }}</strong> {{
+						$t('H2-MAMAK24-Payment-Methods.H3-ET-Description') }}
+					</p>
+					<br>
+					<h2>{{ $t('H2-Join-M24.Join_MAMAK24') }}</h2>
+					<p>{{ $t('H2-Join-M24.Join-M24-Description') }}</p>
+					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Register-Online') }}</h3>
+					<ol>
+						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-1') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-2') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-3') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-4') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-5-FH') }} <strong>{{
+							$t('H2-Join-M24.H3-M24-RO-Step-5-Main-Word') }}</strong> {{
+									$t('H2-Join-M24.H3-M24-RO-Step-5-SH') }}</li>
+					</ol>
+					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Casino-Online') }}</h3>
+					<ol>
+						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-1') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-2-Description') }} <strong>{{
+							$t('H2-Join-M24.H3-M24-CO-Step-2-Main-Word') }}</strong></li>
+						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-3') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-4') }}</li>
+						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-5-FH') }} <strong>{{
+							$t('H2-Join-M24.H3-M24-CO-Step-5-Main-Word') }}</strong> {{
+									$t('H2-Join-M24.H3-M24-CO-Step-5') }}</li>
+					</ol>
+					<br>
+					<h2>{{ $t('H2-MAMAK24-Bonus.MAMAK24_Bonus') }}</h2>
+					<p><strong>{{ $t('H2-MAMAK24-Bonus.M24-Bonus-Main-Word') }}</strong> {{
+						$t('H2-MAMAK24-Bonus.M24-Bonus-Description') }}
+					</p>
+					<h3>{{ $t('H2-MAMAK24-Bonus.H3-Advant-Play-Bonus') }}</h3>
+					<p>{{ $t('H2-MAMAK24-Bonus.H3-APB-Description') }}</p>
+					<h3>{{ $t('H2-MAMAK24-Bonus.H3-50%-Welcome-Bonus') }}</h3>
+					<p>{{ $t('H2-MAMAK24-Bonus.H3-WB-Description') }}</p>
+					<h3>{{ $t('H2-MAMAK24-Bonus.H3-10%-Unlimited-Bonus') }}</h3>
+					<p>{{ $t('H2-MAMAK24-Bonus.H3-UB-Description') }}</p>
+					<br>
+					<p>{{ $t('MAMAK24-Last-Description.M24_LD') }}</p>
+					<br>
+					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
+							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+							alt="DMCA.com Protection Status" />
+					</a>
+					<br>
+					<br>
+					<p class="b-700">
+						{{ $t('content.Learn_More') }}
+					</p>
+					<p>
+						<a href="https://www.atascasinobet.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
+						{{
+							$t('content.FP_Content') }}
+					</p>
+					<p>
+						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
+							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
+					</p>
+
+
+				</div>
 			</div>
 		</div>
 
 		<!-- Right Banner Column -->
-		<div class="col-sm-12 col-lg-3">
+		<div class="RightBanner col-sm-12 col-md-12 col-lg-3">
 			<RightBanner />
 		</div>
-	</div>
 
-	<div class="Mobile_Middle_Banner" style="display: none">
-		<img src="/Images/LB_Img_1.gif" alt="">
-		<img src="/Images/LB_Img_2.webp" alt="">
-		<img src="/Images/LB_Img_3.png" alt="">
-		<img src="/Images/LB_Img_4.png" alt="">
-		<img src="/Images/RB_Img_1.webp" alt="">
-		<div class="MM_Login_Register_Btn_Container">
-			<img src="/Images/RB_Login_Img.gif" alt="">
-			<img src="/Images/RB_Register_Img.gif" alt="">
-		</div>
-		<div style="display: flex; margin-bottom: 50px; justify-content: space-between;">
-			<div class="MM_Small_Text_Container">
-				<p>Baki: <br><strong>RM0.00</strong> </p>
-				<p>Deposit Minimum: <br><strong>RM0.00</strong></p>
-				<p>Withdraw Minimum: <br><strong>RM25.00</strong></p>
-			</div>
-			<div class="RB_Cash_Btn_Container">
-				<img src="/Images/RB_Deposit_Img.gif" alt="">
-				<img src="/Images/RB_WithDraw_Img.gif" alt="">
-				<img src="/Images/RB_Refresh_Img.gif" alt="">
-			</div>
-		</div>
-		<img src="/Images/RB_Img_2.gif" alt="">
-		<img src="/Images/LB_Img_1.gif" alt="">
-		<img src="/Images/LB_Img_6.gif" alt="">
-		<img src="/Images/LB_Img_7.webp" alt="">
-		<div class="MM_Small_Btn_Container">
-			<img src="/Images/LB_Share_Img.gif" alt="">
-			<img src="/Images/LB_DL_Img.gif" alt="">
-			<img src="/Images/LB_CL_Img.gif" alt="">
-		</div>
-		<img src="/Images/LB_Img_8.png" alt="">
-		<img src="/Images/LB_Img_9.png" alt="">
-		<img src="/Images/LB_Img_10.gif" alt="">
-		<img style="margin-bottom: 0px;" src="/Images/LB_Img_11.gif" alt="">
 	</div>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
+import PopUpCard from '@/components/PopUpCard.vue';
+import BackToTop from '@/components/BackToTop.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
+		PopUpCard,
+		BackToTop,
 	},
 	data() {
 		return {
-			menuItems: ['Menu 1', 'Menu 2', 'Menu 3', 'Menu 4', 'Menu 5'],
 			selectedItem: 0,
+			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks. MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses. Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
+			selectedIndex: 0,
+			altTexts: [
+				"Ramakien Belssing",
+				"Aztec 2",
+				"Football Fever",
+				"Firefly Hunter",
+				"Dark Ritual",
+				"Hungry Slime",
+				"Crazy Bounty",
+				"Dragon Chi’s Quest",
+				"Maya Elemental Totem",
+				"Xiang Qi Ways 2",
+				"Aztec",
+				"Last Samurai",
+				"Genie Mystery",
+				"Disco 777",
+				"Boom of Prosperity",
+				"World Cop Final",
+				"Astro Bunny",
+				"Cookie Hunter",
+				"Xmas Gift Delight",
+				"Mace of Hercules",
+				"Wheel of Gems",
+				"Scale of Heaven Anubis",
+				"Infinity Ocean",
+				"DJ Fever",
+				"Jewel Mastermind",
+				"PUBG 2",
+				"Fantastic Beast",
+				"Slotto 4D",
+				"Xiang Qi Ways",
+				"Candy Rush",
+				"Fortune God’s Pot",
+				"Tiger on Gold",
+				"Ancient Gems",
+				"Hu Fu Blessing",
+				"Battle Heroes",
+				"Mine of Prosperity",
+				"Eye of RA",
+				"Ninja Legend",
+				"Treasure of Drake",
+				"Immortal Love",
+				"Racing for Luck",
+				"Treasure Guardian",
+				"Fortune’s Warrior",
+				"Chronicle of Heroes 3 Warloads",
+				"Chronicle of Heroes Lucky Dragon",
+				"King of Glory",
+				"Bom Bom Bot",
+				"Counter Terrorists",
+				"Bubble Dragon",
+				"Road to UEFA",
+				"Bobo Monster",
+				"Chronicle of Heroes Divine Tree",
+				"Road To Euro"
+			],
+			images: [
+				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
+				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
+				{ notSelected: '/images/RICH_NotS.webp', selected: '/images/RICH_S.webp' },
+				{ notSelected: '/images/Bongo_NotS.webp', selected: '/images/Bongo_S.webp' },
+				{ notSelected: '/images/Pragmatic_NotS.webp', selected: '/images/Pragmatic_S.webp' },
+				{ notSelected: '/images/Playtech_NotS.webp', selected: '/images/Playtech_S.webp' },
+				{ notSelected: '/images/AceWin_NotS.webp', selected: '/images/AceWin_S.webp' },
+				{ notSelected: '/images/JDB_NotS.webp', selected: '/images/JDB_S.webp' },
+				{ notSelected: '/images/Dragoon_NotS.webp', selected: '/images/Dragoon_S.webp' },
+				{ notSelected: '/images/Rich88_NotS.webp', selected: '/images/Rich88_S.webp' },
+				{ notSelected: '/images/Bigpot_NotS.webp', selected: '/images/Bigpot_S.webp' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp' },
+				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp' },
+				{ notSelected: '/images/Other_NotS.webp', selected: '/images/Other_S.webp' },
+			],
+		};
+	},
+	setup() {
+		const { locale } = useI18n();
+		const changeLanguage = (lang) => {
+			locale.value = lang;
+		};
+		return {
+			changeLanguage
 		};
 	},
 	methods: {
-		selectItem(index) {
+		selectItem(event, index) {
 			this.selectedItem = index;
+			const clickedElementId = event.target.id;
+			this.scrollToGame(clickedElementId);
+
+			// Remove the active class from all items (assuming you have a way to select them)
+			const items = document.querySelectorAll('.Top_Btn'); // Replace '.item' with your actual item selector
+			items.forEach(item => {
+				item.classList.remove('active');
+			});
+
+			// Add the active class to the clicked item
+			event.target.classList.add('active');
 		},
-	},
-};
+		scrollToGame(elementId) {
+			let sectionId = '';
+			if (elementId === 'Slot-Game') {
+				sectionId = 'MB_Img';
+			} else {
+				sectionId = 'Game';
+			}
+
+			const sectionElement = document.getElementById(sectionId);
+			if (sectionElement) {
+				sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		},
+		selectImage(index) {
+			this.selectedIndex = index;
+		},
+		handleRedirect(index) {
+			if (index === 0) {
+				this.scrollToElement('.MB_Img_Gallery');
+			} else {
+				this.scrollToElement('.footer-content');
+			}
+		},
+		scrollToElement(selector) {
+			const element = document.querySelector(selector);
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			} else {
+				console.error(`Element with selector ${selector} not found`);
+			}
+		},
+		// redirectToSignUp() {
+		// 	window.location.href = "https://www.atascasinobet.com/sign-up";
+		// }
+	}
+}
 </script>
 
 <style scoped>
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1000px) {
 	.Mobile_Middle_Banner {
 		display: flex !important;
 		flex-direction: column;
+		order: 1;
 	}
 
-	.Left_Banner_Container,
-	.Right_Banner_Container {
-		display: none !important;
+	.Middle_Banner_Container {
+		order: 2;
+	}
+
+	.main-content {
+		flex-direction: column;
+	}
+
+	.MM_Small_Text_Container p {
+		font-size: 18px !important;
+		color: rgb(2, 47, 138);
+	}
+}
+
+@media screen and (max-width: 431px) {
+	.MM_Small_Text_Container p {
+		font-size: 16px !important;
 	}
 }
 
 .main-content {
-	margin-top: 100px;
 	display: flex;
+	width: 100%;
+	background-image: url('/images/Bg_img.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom;
 }
 
 .Mobile_Middle_Banner {
-	margin-top: 10px;
-	position: absolute;
-	right: 0;
-	top: 45px;
 	width: 100%;
 	background: rgba(0, 0, 0, .3);
 	padding: 0 15px 30px;
@@ -222,6 +372,14 @@ export default {
 	width: 50%;
 	padding: 0 1px;
 
+}
+
+.MM_Small_Text_Container {
+	width: 50%;
+}
+
+.RB_Cash_Btn_Container {
+	width: 50%;
 }
 
 .MM_Small_Text_Container p {
@@ -239,56 +397,45 @@ export default {
 }
 
 .Middle_Banner_Container {
-	margin: 0 auto;
-	/* width: 50%; */
-	/* position: absolute; */
-	/* top: 100px;
-	left: 25%; */
 	padding: 0px 15px 30px;
 }
 
-.Top_Btn_Container {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-}
-
-.Top_Btn {
-	cursor: pointer;
-	padding: 2px 9.8px;
-	border: none;
-	background-color: transparent;
-	font-size: 13px;
-	font-weight: 700;
-	transition: background-color 0.3s, color 0.3s;
-	border-radius: 20px;
-}
-
-.active {
-	background-color: rgb(49, 205, 132);
-	color: white;
-	border-radius: 20px;
-}
-
 .MB_Img_Gallery {
-	margin: 10px -15px 0px;
+	margin: 10px 0px;
+}
+
+.MB_Img {
+	display: flex;
+	flex-wrap: wrap;
+
 }
 
 .MB_Img img {
-	width: 16.667%;
-	padding: 0 15px 30px;
+	/* padding: 0 15px 30px; */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 12px;
+	border: 1px solid #fff;
+}
+
+@media screen and (max-width: 576px) {
+	.MB_Img img {
+		width: 33%;
+	}
 }
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: rgba(13, 110, 253);
+	color: #ffc107;
 }
 
 .google-map-link {
 	font-style: italic;
 	color: #f0d843 !important;
 	font-weight: bolder;
+	font-size: 12px;
+	overflow-wrap: anywhere;
 }
 
 .map-container {
@@ -300,5 +447,179 @@ export default {
 
 .platform {
 	color: #f0d843 !important;
+}
+
+.running-sentence-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url('/images/Running_Banner_BgImg.gif');
+	visibility: visible;
+	background-size: 100% 100%;
+	background-color: black;
+	color: #f3c015;
+	font-size: 12px;
+}
+
+.running-sentence {
+	white-space: nowrap;
+	/* position: absolute; */
+	width: max-content;
+	animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(75%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.site-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+
+.image-container {
+	width: 6.66%;
+	cursor: pointer;
+}
+
+.image-container img {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.site-tabs {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		/* Allow horizontal scrolling */
+		-webkit-overflow-scrolling: touch;
+		/* Enable smooth scrolling on touch devices */
+	}
+
+	.image-container {
+		width: 71px;
+		/* Fixed width for mobile view */
+		flex: 0 0 auto;
+		/* Prevent shrinking */
+	}
+
+	.site-tabs::-webkit-scrollbar {
+		display: none;
+		/* Hide scrollbar on WebKit browsers */
+	}
+
+	.site-tabs {
+		-ms-overflow-style: none;
+		/* Hide scrollbar on IE and Edge */
+		scrollbar-width: none;
+		/* Hide scrollbar on Firefox */
+	}
+}
+
+.image-grid-container {
+	display: grid;
+	gap: 10px;
+}
+
+@media (min-width: 1200px) {
+	.image-grid-container {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.image-grid-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.image-grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.image-wrapper img {
+	width: 100%;
+}
+
+.image-wrapper p {
+	border-radius: 30px;
+	padding: 3px 0;
+	margin-top: 8px;
+	width: 100%;
+	border: 1px solid #34740e;
+	background-color: #4ba614;
+	background-image: linear-gradient(to bottom, #4ba614, #008c00);
+	text-align: center;
+	color: white;
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+
+.image-wrapper p {
+	margin-bottom: 0;
+}
+
+.footer-content {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.footer-content h1,
+h2,
+h3,
+li,
+p {
+	color: white;
+}
+
+.footer-content h1 {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.footer-content h2 {
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.footer-content h3 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.footer-content p,
+li {
+	font-size: 16px;
+}
+
+.footer-content a {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+.footer-content strong {
+	font-weight: 700;
+	color: #ffd700;
+}
+
+.image-wrapper a {
+	text-decoration: none;
+}
+
+.DMCA-width {
+	width: 150px;
+}
+
+.b-700 {
+	font-weight: 700;
 }
 </style>
