@@ -2,29 +2,30 @@
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
 			<div class="login-register-container">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/RB_Login_Btn_Img.png"
-						alt="Login"></a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
-						src="/images/RB_Register_Btn_Img.png" alt="Register"></a>
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="Join"
+						src="/images/RB_Join_Img.gif" alt="Login"></a>
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="Register"
+						src="/images/RB_Register_Img.gif" alt="Register"></a>
 			</div>
-			<div style="display: flex; margin-bottom: 23px">
+			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
 				<div class="RB_Small_Text_Container">
 					<div class="Baki">
 						<p>{{ $t('message.balance') }} </p>
 						<p><strong>0.00</strong></p>
 					</div>
-					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
-					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
+					<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
+					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/RB_Deposit_Btn_Img.png" alt="Deposit">
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+						<img class="no-br" src="/images/RB_Deposit_Img.gif" alt="Deposit">
 					</a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/RB_Withdraw_Btn_Img.png" alt="Withdraw">
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+						<img class="no-br" src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 					</a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
-							src="/images/RB_Refresh_Btn_Img.png" alt="Refresh"></a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+						<img class="no-br" src="/images/RB_Refresh_Img.gif" alt="Refresh">
+					</a>
 				</div>
 			</div>
 
@@ -110,10 +111,18 @@ export default {
 
 }
 
-
 .RB_Imgs img {
 	max-width: 100%;
 	border-radius: 20px;
+}
+
+.RB_Info_Container {
+	background-image: url('/images/RB_Cash_Btn_Container_Img.webp');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 0px -10px;
+	padding: 15px 15px;
 }
 
 .RB_Cash_Btn_Container {
@@ -123,7 +132,9 @@ export default {
 }
 
 .RB_Cash_Btn_Container img {
+	height: 44px;
 	width: 130px;
+	margin-bottom: 5px;
 }
 
 .login-register-container {
@@ -132,7 +143,15 @@ export default {
 }
 
 .login-register-container img {
-	padding: 0 5px;
+	border-radius: 0%;
+}
+
+.Join {
+	padding-right: 5px;
+}
+
+.Register {
+	padding-left: 5px;
 }
 
 .RB_Small_Text_Container {
@@ -145,7 +164,7 @@ export default {
 
 .RB_Small_Text_Container p {
 	color: white;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 400;
 	font-family: Lato, sans-serif;
 	margin-bottom: 0;
@@ -166,8 +185,8 @@ export default {
 }
 
 .Baki strong {
-	color: #4798d1;
-	font-size: 19.5px;
+	color: #FFC107;
+	font-size: 24px;
 }
 
 .Tablet-Mobile-view {

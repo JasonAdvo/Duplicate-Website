@@ -1,6 +1,7 @@
 <template>
 	<div class="relative">
 		<div class="Top_Banner_Container" />
+		<a href="https://www.atascasinobet.com/sign-up"><img src="/images/crown99_TB_Img_2.webp" alt="A66 Group"></a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
@@ -55,13 +56,25 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TBanner_Img.jpg');
+	background-image: url('/images/crown99_topbanner_gif.gif');
 	position: relative;
 	background-size: cover;
-	background-position: 0 24%;
+	/* Adjusted to make the image smaller */
+	background-position: 0px 40%;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 60px;
+	height: 80px;
+}
+
+.relative a {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.relative img {
+	width: 60px;
+	height: 40px;
 }
 
 .TopBanner {
@@ -78,7 +91,7 @@ export default {
 
 .GT-icon {
 	position: absolute;
-	top: 20px;
+	top: 28px;
 	right: 20px;
 	z-index: 1;
 	color: white;

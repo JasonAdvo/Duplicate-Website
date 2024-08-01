@@ -3,9 +3,9 @@
 		<PopUpCard />
 	</div>
 
-	<div>
+	<!-- <div>
 		<BackToTop />
-	</div>
+	</div> -->
 
 	<div>
 		<TopBanner />
@@ -18,12 +18,12 @@
 	</div>
 
 	<div class="main-content">
-		<div class="LeftBanner col-sm-12 col-md-12 col-lg-3">
+		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<LeftBanner />
 		</div>
 		<!-- Middle Blank Column -->
 
-		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-6">
+		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-4 col-xl-6">
 			<div class="Middle_Inner_Container">
 				<div class="site-tabs">
 					<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
@@ -156,7 +156,7 @@
 		</div>
 
 		<!-- Right Banner Column -->
-		<div class="RightBanner col-sm-12 col-md-12 col-lg-3">
+		<div class="RightBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<RightBanner />
 		</div>
 
@@ -351,10 +351,10 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_img.png');
+	background-image: url('/images/Bg_img.webp');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 }
 
 .Mobile_Middle_Banner {
@@ -453,19 +453,23 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Running_Banner_BgImg.gif');
-	visibility: visible;
+	background-image: url('/images/Running_Banner_BgImg.webp');
+	/* visibility: visible; */
 	background-size: 100% 100%;
-	background-color: black;
-	color: #f3c015;
+	color: black;
 	font-size: 12px;
+	letter-spacing: 0.5px;
+	height: 25px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
 }
 
 .running-sentence {
 	white-space: nowrap;
 	/* position: absolute; */
 	width: max-content;
-	animation: scroll 40s linear infinite;
+	animation: scroll 72s linear infinite;
 }
 
 @keyframes scroll {
