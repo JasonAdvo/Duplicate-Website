@@ -36,31 +36,31 @@
 						<td>JILI</td>
 					</tr>
 					<tr>
-						<td>60*******095</td>
-						<td class="amount">RM50.00</td>
-						<td>60******739</td>
-						<td class="amount">RM600.05</td>
+						<td>60*******399</td>
+						<td class="amount">RM10.00</td>
+						<td>60******209</td>
+						<td class="amount">RM127.09</td>
+						<td>KISS918</td>
+					</tr>
+					<tr>
+						<td>60*******874</td>
+						<td class="amount">RM5.00</td>
+						<td>60******316</td>
+						<td class="amount">RM20.09</td>
 						<td>JILI</td>
 					</tr>
 					<tr>
-						<td>60*******095</td>
-						<td class="amount">RM50.00</td>
-						<td>60******739</td>
-						<td class="amount">RM600.05</td>
-						<td>JILI</td>
+						<td>60*******399</td>
+						<td class="amount">RM10.00</td>
+						<td>60******453</td>
+						<td class="amount">RM127.05</td>
+						<td>MEGA888</td>
 					</tr>
 					<tr>
-						<td>60*******095</td>
+						<td>60*******110</td>
 						<td class="amount">RM50.00</td>
-						<td>60******739</td>
-						<td class="amount">RM600.05</td>
-						<td>JILI</td>
-					</tr>
-					<tr>
-						<td>60*******095</td>
+						<td>60******716</td>
 						<td class="amount">RM50.00</td>
-						<td>60******739</td>
-						<td class="amount">RM600.05</td>
 						<td>JILI</td>
 					</tr>
 				</tbody>
@@ -82,7 +82,7 @@
 						alt="Telegram">
 				</a>
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Facebook_Img.webp"
-						alt="Telegram">
+						alt="Facebook">
 				</a>
 
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"

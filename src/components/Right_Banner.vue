@@ -30,18 +30,34 @@
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.jpg"
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.webp"
 						alt="Banner"></a>
 				<div class="button-grp">
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_Share_btn.gif" alt="Share"></a>
+							src="/images/LB_Share_Img.webp" alt="Share"></a>
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_Downline_btn.png" alt="Downline"></a>
+							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_Copy_btn.png" alt="Copy"></a>
+							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_More_btn.png" alt="More"></a>
+							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
+				<div class="RB-mobile-img-grp">
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
+							src="/images/LB_Telegram_Img.webp" alt="Telegram">
+					</a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
+							src="/images/LB_Facebook_Img.webp" alt="Facebook">
+					</a>
+
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"
+							alt=""></a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_4.webp"
+							alt=""></a>
+				</div>
+
+
+
 			</div>
 
 
@@ -94,7 +110,7 @@ export default {
 <style scoped>
 .Right_Banner_Container {
 	background: rgba(0, 0, 0, .3);
-	padding: 10px 15px 30px 15px;
+	padding: 10px 15px 0px 15px;
 	height: 100%;
 	border-left: 1px solid rgba(255, 255, 255, .5);
 }
@@ -121,14 +137,15 @@ export default {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	margin: 0px -10px;
 	padding: 15px 15px;
 }
 
 .RB_Cash_Btn_Container {
 	width: 50%;
-	padding-left: 15px;
 	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .RB_Cash_Btn_Container img {
@@ -138,8 +155,8 @@ export default {
 }
 
 .login-register-container {
-	padding: 10px 0;
 	display: flex;
+	margin-bottom: 16px;
 }
 
 .login-register-container img {
@@ -155,11 +172,7 @@ export default {
 }
 
 .RB_Small_Text_Container {
-	display: flex;
-	flex-direction: column;
 	width: 50%;
-	white-space: nowrap;
-	justify-content: space-around;
 }
 
 .RB_Small_Text_Container p {
@@ -199,15 +212,17 @@ export default {
 		flex-direction: column;
 	}
 
-	.RB_Cash_Btn_Container {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		justify-content: space-around;
+	.RB_Info_Container {
+		margin-bottom: 0 !important;
 	}
 
 	.RB_Cash_Btn_Container img {
 		width: 80%;
+		height: 100%;
+	}
+
+	.RB_Cash_Btn_Container a {
+		height: 80px;
 	}
 
 	.RB_Small_Text_Container {
@@ -228,6 +243,10 @@ export default {
 		font-size: 14px;
 	}
 
+	.RB_Cash_Btn_Container a {
+		height: 40px;
+	}
+
 	.Baki strong {
 		font-size: 20px;
 	}
@@ -242,13 +261,17 @@ export default {
 }
 
 .button-grp {
-	margin-top: -25%;
+	margin-top: -23%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.button-grp img {
+.button-grp a {
 	width: 50%;
+}
+
+.button-grp img {
+	width: 100%;
 	padding: 0 5px;
 	margin-bottom: 16px;
 }
@@ -349,5 +372,9 @@ export default {
 
 .no-br {
 	border-radius: unset !important;
+}
+
+.RB-mobile-img-grp img {
+	margin-bottom: 16px;
 }
 </style>

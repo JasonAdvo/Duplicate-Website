@@ -558,9 +558,10 @@ export default {
 	padding: 3px 0;
 	margin-top: 8px;
 	width: 100%;
-	border: 1px solid #34740e;
+	border: 0;
 	background-color: #4ba614;
-	background-image: linear-gradient(to bottom, #4ba614, #008c00);
+	background-image: linear-gradient(to bottom, #746526, #C3B32A);
+	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
 	text-align: center;
 	color: white;
 	font-size: 11px;
