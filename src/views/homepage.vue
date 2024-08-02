@@ -3,10 +3,6 @@
 		<PopUpCard />
 	</div>
 
-	<!-- <div>
-		<BackToTop />
-	</div> -->
-
 	<div>
 		<TopBanner />
 	</div>
@@ -22,26 +18,31 @@
 			<LeftBanner />
 		</div>
 		<!-- Middle Blank Column -->
-
 		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-4 col-xl-6">
 			<div class="Middle_Inner_Container">
-				<div class="site-tabs">
-					<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
-						:class="['image-container', { selected: selectedIndex === index }]"
-						@click="selectImage(index); handleRedirect(index)">
-						<img :src="selectedIndex === index ? image.selected : image.notSelected"
-							:alt="'Image ' + (index + 1)">
+				<div style="display: flex; justify-content: center;">
+					<div class="site-tabs">
+
+						<MobileGameSplide />
+
+						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
+							:class="['image-container', { selected: selectedIndex === index }]"
+							@click="selectImage(index); handleRedirect(index)">
+							<img :src="selectedIndex === index ? image.selected : image.notSelected"
+								:alt="'Image ' + (index + 1)">
+						</div>
 					</div>
 				</div>
+
 
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 53" :key="n">
+							<div class="image-wrapper" v-for="n in 34" :key="n">
 								<a v-if="n <= 18" :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
-									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
+									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
-								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
+								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 18">
 									<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
@@ -149,8 +150,45 @@
 						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
 							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
 					</p>
-
-
+					<div class="footer-detail">
+						<div class="license">
+							<p>GAME LICENSE</p>
+							<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+								<img src="/images/Footer-License-Img.webp" alt="Game License">
+							</a>
+						</div>
+						<div class="game">
+							CROWN99 is a Registered Trade Mark, brand, and registered by Moon Technologie. Regulated &
+							Licensed by the Government
+							of Curacao and operates under the Master License of Gaming Services Provider, N.V.
+							#1168/JAZ.
+						</div>
+						<div class="payment">
+							<p>PAYMENT METHODS</p>
+							<img src="/images/payment-list.webp" alt="payment-list">
+						</div>
+						<div class="certification">
+							<p>CERTIFICATE & SECURITY</p>
+							<img src="/images/Cert-list.webp" alt="certificate-list">
+						</div>
+						<div class="follow">
+							<p>FOLLOW US</p>
+							<a href="" rel="nofollow"><img class="main-pulse" src="/images/facebook.webp"
+									alt="facebook"></a>
+							<a href="" rel="nofollow"><img class="main-pulse" src="/images/telegram.webp"
+									alt="telegram"></a>
+							<a href="" rel="nofollow"><img class="main-pulse" src="/images/instagram.webp"
+									alt="instagram"></a>
+							<a href="" rel="nofollow"><img class="main-pulse" src="/images/youtube.webp"
+									alt="youtube"></a>
+							<a href="" rel="nofollow"><img class="main-pulse" src="/images/whatsapp.webp"
+									alt="whatsapp"></a>
+							<a href="" rel="nofollow"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
+						</div>
+					</div>
+					<div class="copyright">
+						2016-2024 CROWN99. ALL RIGHTS RESERVED.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -170,12 +208,14 @@ import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
 import PopUpCard from '@/components/PopUpCard.vue';
 import BackToTop from '@/components/BackToTop.vue';
+import MobileGameSplide from '@/components/Mobile_Game_Splide.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
+		MobileGameSplide,
 		PopUpCard,
 		BackToTop,
 	},
@@ -185,76 +225,56 @@ export default {
 			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks. MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses. Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
 			altTexts: [
-				"Ramakien Belssing",
-				"Aztec 2",
-				"Football Fever",
-				"Firefly Hunter",
-				"Dark Ritual",
-				"Hungry Slime",
-				"Crazy Bounty",
-				"Dragon Chi’s Quest",
-				"Maya Elemental Totem",
-				"Xiang Qi Ways 2",
-				"Aztec",
-				"Last Samurai",
-				"Genie Mystery",
-				"Disco 777",
-				"Boom of Prosperity",
-				"World Cop Final",
-				"Astro Bunny",
-				"Cookie Hunter",
-				"Xmas Gift Delight",
-				"Mace of Hercules",
-				"Wheel of Gems",
-				"Scale of Heaven Anubis",
-				"Infinity Ocean",
-				"DJ Fever",
-				"Jewel Mastermind",
-				"PUBG 2",
-				"Fantastic Beast",
-				"Slotto 4D",
-				"Xiang Qi Ways",
-				"Candy Rush",
-				"Fortune God’s Pot",
-				"Tiger on Gold",
-				"Ancient Gems",
-				"Hu Fu Blessing",
-				"Battle Heroes",
-				"Mine of Prosperity",
-				"Eye of RA",
-				"Ninja Legend",
-				"Treasure of Drake",
-				"Immortal Love",
-				"Racing for Luck",
-				"Treasure Guardian",
-				"Fortune’s Warrior",
-				"Chronicle of Heroes 3 Warloads",
-				"Chronicle of Heroes Lucky Dragon",
-				"King of Glory",
-				"Bom Bom Bot",
-				"Counter Terrorists",
-				"Bubble Dragon",
-				"Road to UEFA",
-				"Bobo Monster",
-				"Chronicle of Heroes Divine Tree",
-				"Road To Euro"
+				"Tanzania King",
+				"Candy Party",
+				"Legend Slot Onimaru",
+				"Legend Slot Musashi",
+				"Durian King",
+				"Thai Lucky",
+				"Color Alchemy",
+				"Trade Wars",
+				"Gems Rush",
+				"Gods Of Olympus",
+				"Beauty Contest",
+				"Dragon Jewels",
+				"Golden Temple",
+				"LIFE",
+				"Magic Box",
+				"Mr Fortune",
+				"Meow Meow",
+				"Lucky 7",
+				"Where's My Monkey",
+				"Samurai Wars",
+				"Happy Road",
+				"Feed the Zombie",
+				"Burm the Office",
+				"All You Can Eat",
+				"TVW",
+				"Strange Encounter",
+				"S.O.S",
+				"On Crap",
+				"Pon Pon",
+				"Lullababy",
+				"Talent Night",
+				"Spell Craft",
+				"Steam Punk 100",
+				"Thai Street Food"
 			],
 			images: [
-				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
+				{ notSelected: '/images/ClotPlayN_NotS.webp', selected: '/images/ClotPlayN_S.webp' },
+				{ notSelected: '/images/ClotPlay_NotS.webp', selected: '/images/ClotPlay_S.webp' },
 				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
-				{ notSelected: '/images/RICH_NotS.webp', selected: '/images/RICH_S.webp' },
-				{ notSelected: '/images/Bongo_NotS.webp', selected: '/images/Bongo_S.webp' },
-				{ notSelected: '/images/Pragmatic_NotS.webp', selected: '/images/Pragmatic_S.webp' },
-				{ notSelected: '/images/Playtech_NotS.webp', selected: '/images/Playtech_S.webp' },
+				{ notSelected: '/images/BPG_NotS.webp', selected: '/images/BPG_S.webp' },
+				{ notSelected: '/images/SPINIX_NotS.webp', selected: '/images/SPINIX_S.webp' },
+				{ notSelected: '/images/RICHG_NotS.webp', selected: '/images/RICHG_S.webp' },
+				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp' },
+				{ notSelected: '/images/PragmaticP_NotS.webp', selected: '/images/PragmaticP_S.webp' },
 				{ notSelected: '/images/AceWin_NotS.webp', selected: '/images/AceWin_S.webp' },
-				{ notSelected: '/images/JDB_NotS.webp', selected: '/images/JDB_S.webp' },
-				{ notSelected: '/images/Dragoon_NotS.webp', selected: '/images/Dragoon_S.webp' },
-				{ notSelected: '/images/Rich88_NotS.webp', selected: '/images/Rich88_S.webp' },
-				{ notSelected: '/images/Bigpot_NotS.webp', selected: '/images/Bigpot_S.webp' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp' },
-				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp' },
-				{ notSelected: '/images/Other_NotS.webp', selected: '/images/Other_S.webp' },
+				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp' },
+				{ notSelected: '/images/KAG_NotS.webp', selected: '/images/KAG_S.webp' },
+				{ notSelected: '/images/SlotG_NotS.webp', selected: '/images/SlotG_S.webp' },
+				{ notSelected: '/images/LiveG_NotS.webp', selected: '/images/LiveG_S.webp' },
+				{ notSelected: '/images/SportB_NotS.webp', selected: '/images/SportB_S.webp' },
 			],
 		};
 	},
@@ -483,14 +503,40 @@ export default {
 }
 
 .site-tabs {
-	display: flex;
 	flex-wrap: wrap;
 	margin: 10px 0;
+	position: relative;
+	display: flex;
+}
+
+.site-tabs::before {
+	content: "";
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	width: 100%;
+	bottom: 1px;
 }
 
 .image-container {
-	width: 6.66%;
+	width: calc(100% / 14);
+	padding-bottom: 30px;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+
+	.site-tabs {
+		display: flex;
+		justify-content: center;
+	}
+
+	.image-container {
+		display: none;
+	}
+}
+
+.image-container.selected {
+	border-bottom: 5px solid #FFF;
 }
 
 .image-container img {
@@ -501,13 +547,11 @@ export default {
 	.site-tabs {
 		flex-wrap: nowrap;
 		overflow-x: auto;
-		/* Allow horizontal scrolling */
 		-webkit-overflow-scrolling: touch;
-		/* Enable smooth scrolling on touch devices */
 	}
 
 	.image-container {
-		width: 71px;
+		width: 86px;
 		/* Fixed width for mobile view */
 		flex: 0 0 auto;
 		/* Prevent shrinking */
@@ -626,5 +670,108 @@ li {
 
 .b-700 {
 	font-weight: 700;
+}
+
+.footer-detail {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.footer-detail p {
+	color: #fff;
+	font-size: 12px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.license {
+	float: left;
+	width: 30%;
+}
+
+.license img {
+	width: 80%;
+	margin-top: 10px;
+	float: left;
+	margin-right: 10px;
+}
+
+.game {
+	text-align: left;
+	font-size: 14px;
+	float: left;
+	width: 70%;
+	margin-top: 50px;
+	color: #fff;
+}
+
+@media screen and (max-width: 430px) {
+	.game {
+		font-size: 8px;
+	}
+}
+
+.payment {
+	float: left;
+	width: 100%;
+}
+
+.payment img {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.certification {
+	float: left;
+	width: 100%;
+}
+
+.certification img {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.follow {
+	float: left;
+	width: 100%;
+}
+
+.follow a img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.main-pulse {
+	animation: pulse 1s infinite ease-in-out alternate;
+}
+
+.payment P,
+.certification p,
+.follow p {
+	margin-bottom: 0;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	padding: 50px 0;
+	color: #fff;
 }
 </style>

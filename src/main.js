@@ -5,6 +5,9 @@ import { createI18n } from 'vue-i18n';
 import en from '/src/locales/en.json';
 import ms from '/src/locales/ms.json';
 import zh from '/src/locales/zh.json';
+// main.js
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const messages = {
 	en,

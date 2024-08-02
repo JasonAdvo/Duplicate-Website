@@ -32,7 +32,12 @@ export default {
 
 		const togglePopup = () => {
 			showPopup.value = !showPopup.value;
-			document.body.style.overflow = 'hidden';
+
+			if (showPopup.value) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = 'auto';
+			}
 		};
 
 		return {
@@ -70,6 +75,12 @@ export default {
 	position: absolute;
 	top: 20px;
 	left: 20px;
+}
+
+@media screen and (max-width: 430px) {
+	.relative a {
+		top: 6px
+	}
 }
 
 .relative img {

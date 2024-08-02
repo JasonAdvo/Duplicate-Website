@@ -2,41 +2,46 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank"
-					class="social-media-icon">
-					<img src="/images/download_side_btn.webp" alt="download">
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" class="social-media-icon">
+					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
 				</a>
-				<a href="https://t.me/atas77channel" rel="nofollow" target="_blank" class="social-media-icon">
-					<img src="/images/telegram_side_btn.webp" alt="telegram">
-				</a>
-				<a href=" https://x.com/atascasinomy" rel="nofollow" target="_blank" class="social-media-icon">
-					<img src="/images/fb_side_btn.webp" alt="Twitter">
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" class="social-media-icon">
+					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
 				</a>
 			</div>
+
+			<div v-if="isVisible" class="Btm-Popup_Container">
+				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+					<img src="/images/Btm_Popup_Img.webp" alt="Join Us Now">
+				</a>
+			</div>
+
+
 			<div class="footer-content">
 				<div class="d-f col">
 					<a href="https://www.atascasinobet.com/" rel="nofollow" target="_blank">
-						<img src="/images/M24_BtmB_Home_Img.png" alt="Home">
+						<img src="/images/Btm_Home_Btn.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/M24_BtmB_History_Img.png" alt="Sign Up">
+						<img src="/images/Btm_History_Btn.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/M24_BtmB_Promo_Img.png" alt="Promotion">
+						<img src="/images/Btm_Bonus_Btn.webp" alt="Bonus">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/M24_BtmB_Live_Chat_Img.png" alt="Live Chat">
+						<img src="/images/Btm_LiveChat_Btn.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/M24_BtmB_Setting_Img.png" alt="Setting">
+						<img src="/images/Btm_Setting_Btn.webp" alt="Setting">
 					</a>
 				</div>
 			</div>
@@ -46,7 +51,17 @@
 
 <script>
 export default {
-	name: 'FooterMenu'
+	name: 'FooterMenu',
+	data() {
+		return {
+			isVisible: true // Set this to control visibility
+		};
+	},
+	methods: {
+		closePopup() {
+			this.isVisible = false;
+		}
+	}
 };
 </script>
 
@@ -58,7 +73,7 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 55px;
-	background-image: url('/images/Mamak24_Btm_Banner.jpg');
+	background-image: url('/images/Btm_Bg_Img.webp');
 	background-size: 100% 100%;
 }
 
@@ -71,15 +86,8 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -700%;
+	top: -500%;
 	right: 0;
-}
-
-@media screen and (max-width: 426px) {
-	.social-media-container {
-		top: -700%;
-		right: 0;
-	}
 }
 
 .social-media-icon {
@@ -117,5 +125,39 @@ export default {
 .social-media-icon img {
 	width: 20px;
 	height: 108px;
+}
+
+.Btm-Popup_Container {
+	position: absolute;
+	bottom: 55px;
+	padding-top: 30px;
+}
+
+.Btm-Popup_Container img {
+	width: 500px;
+}
+
+@media screen and (max-width: 430px) {
+	.Btm-Popup_Container img {
+		width: 100%;
+	}
+}
+
+.ic-close-circle {
+	display: flex;
+	justify-content: center;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	padding: 4px;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.fa-times::before {
+	color: white;
 }
 </style>

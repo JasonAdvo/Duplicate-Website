@@ -285,6 +285,18 @@ export default {
 	border-radius: 20px;
 }
 
+@media screen and (max-width: 430px) {
+	.sport-betting-container {
+		padding: 30px 0 10px 0 !important;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.sport-betting-container {
+		padding: 50px 0 10px 0;
+	}
+}
+
 @media screen and (min-width: 1600px) {
 	.sport-betting-container {
 		padding: 30px 0 10px 0;
