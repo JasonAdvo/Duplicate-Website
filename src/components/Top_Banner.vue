@@ -61,11 +61,11 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/crown99_topbanner_gif.gif');
+	background-image: url('/images/TB_Img.webp');
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
-	background-position: 0px 40%;
+	background-position: 0px 47%;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;

@@ -22,9 +22,6 @@
 			<div class="Middle_Inner_Container">
 				<div style="display: flex; justify-content: center;">
 					<div class="site-tabs">
-
-						<MobileGameSplide />
-
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="selectImage(index); handleRedirect(index)">
@@ -261,20 +258,20 @@ export default {
 				"Thai Street Food"
 			],
 			images: [
-				{ notSelected: '/images/ClotPlayN_NotS.webp', selected: '/images/ClotPlayN_S.webp' },
+				{ notSelected: '/images/ClotPlayF_NotS.webp', selected: '/images/ClotPlayF_S.webp' },
 				{ notSelected: '/images/ClotPlay_NotS.webp', selected: '/images/ClotPlay_S.webp' },
 				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
 				{ notSelected: '/images/BPG_NotS.webp', selected: '/images/BPG_S.webp' },
 				{ notSelected: '/images/SPINIX_NotS.webp', selected: '/images/SPINIX_S.webp' },
-				{ notSelected: '/images/RICHG_NotS.webp', selected: '/images/RICHG_S.webp' },
-				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp' },
-				{ notSelected: '/images/PragmaticP_NotS.webp', selected: '/images/PragmaticP_S.webp' },
-				{ notSelected: '/images/AceWin_NotS.webp', selected: '/images/AceWin_S.webp' },
+				{ notSelected: '/images/RichG_NotS.webp', selected: '/images/RichG_S.webp' },
+				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
 				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp' },
-				{ notSelected: '/images/KAG_NotS.webp', selected: '/images/KAG_S.webp' },
-				{ notSelected: '/images/SlotG_NotS.webp', selected: '/images/SlotG_S.webp' },
-				{ notSelected: '/images/LiveG_NotS.webp', selected: '/images/LiveG_S.webp' },
-				{ notSelected: '/images/SportB_NotS.webp', selected: '/images/SportB_S.webp' },
+				{ notSelected: '/images/Pegasus_NotS.webp', selected: '/images/Pegasus_S.webp' },
+				{ notSelected: '/images/CO9G_NotS.webp', selected: '/images/CO9G_NotS.webp' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp' },
+				{ notSelected: '/images/Lottery_NotS.webp', selected: '/images/Lottery_S.webp' },
+				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp' },
 			],
 		};
 	},
@@ -371,7 +368,7 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_img.webp');
+	background-image: url('/images/Starbucks88_BG_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top;
@@ -473,7 +470,7 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Running_Banner_BgImg.webp');
+	background-image: url('/images/RunningB_Img.webp');
 	/* visibility: visible; */
 	background-size: 100% 100%;
 	color: black;
@@ -490,6 +487,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 72s linear infinite;
+	color: white;
 }
 
 @keyframes scroll {
@@ -509,34 +507,9 @@ export default {
 	display: flex;
 }
 
-.site-tabs::before {
-	content: "";
-	border-bottom: 1px solid #fff;
-	position: absolute;
-	width: 100%;
-	bottom: 1px;
-}
-
 .image-container {
 	width: calc(100% / 14);
-	padding-bottom: 30px;
 	cursor: pointer;
-}
-
-@media screen and (max-width: 769px) {
-
-	.site-tabs {
-		display: flex;
-		justify-content: center;
-	}
-
-	.image-container {
-		display: none;
-	}
-}
-
-.image-container.selected {
-	border-bottom: 5px solid #FFF;
 }
 
 .image-container img {
@@ -680,7 +653,7 @@ li {
 }
 
 .footer-detail p {
-	color: #fff;
+	color: black;
 	font-size: 12px;
 	margin-top: 30px;
 	text-transform: uppercase;
@@ -704,7 +677,7 @@ li {
 	float: left;
 	width: 70%;
 	margin-top: 50px;
-	color: #fff;
+	color: black;
 }
 
 @media screen and (max-width: 430px) {
@@ -772,6 +745,6 @@ li {
 	text-align: center;
 	font-size: 12px;
 	padding: 50px 0;
-	color: #fff;
+	color: black;
 }
 </style>

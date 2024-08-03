@@ -3,9 +3,9 @@
 		<div class="RB_Imgs">
 			<div class="login-register-container">
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="Join"
-						src="/images/RB_Join_Img.gif" alt="Login"></a>
+						src="/images/RB_Login_Btn.webp" alt="Login"></a>
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="Register"
-						src="/images/RB_Register_Img.gif" alt="Register"></a>
+						src="/images/RB_Register_Btn.webp" alt="Register"></a>
 			</div>
 			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
 				<div class="RB_Small_Text_Container">
@@ -18,13 +18,13 @@
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
-						<img class="no-br" src="/images/RB_Deposit_Img.gif" alt="Deposit">
+						<img class="no-br" src="/images/RB_Deposit_Btn.webp" alt="Deposit">
 					</a>
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
-						<img class="no-br" src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
+						<img class="no-br" src="/images/RB_Withdraw_Btn.webp" alt="Withdraw">
 					</a>
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
-						<img class="no-br" src="/images/RB_Refresh_Img.gif" alt="Refresh">
+						<img class="no-br" src="/images/RB_Refresh_Btn.webp" alt="Refresh">
 					</a>
 				</div>
 			</div>
@@ -51,15 +51,9 @@
 					</a>
 
 					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"
-							alt=""></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_4.webp"
-							alt=""></a>
+							alt="Live Now"></a>
 				</div>
-
-
-
 			</div>
-
 
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
@@ -109,10 +103,15 @@ export default {
 
 <style scoped>
 .Right_Banner_Container {
-	background: rgba(0, 0, 0, .3);
 	padding: 10px 15px 0px 15px;
 	height: 100%;
 	border-left: 1px solid rgba(255, 255, 255, .5);
+}
+
+@media screen and (min-width: 769px) {
+	.Right_Banner_Container {
+		background: rgba(0, 0, 0, .3);
+	}
 }
 
 @media screen and (max-width: 430px) {
@@ -137,7 +136,6 @@ export default {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	padding: 15px 15px;
 }
 
 .RB_Cash_Btn_Container {
@@ -149,13 +147,13 @@ export default {
 }
 
 .RB_Cash_Btn_Container img {
-	height: 44px;
-	width: 130px;
 	margin-bottom: 5px;
+	width: 200px;
 }
 
 .login-register-container {
 	display: flex;
+	justify-content: space-between;
 	margin-bottom: 16px;
 }
 
@@ -176,7 +174,7 @@ export default {
 }
 
 .RB_Small_Text_Container p {
-	color: white;
+	color: black;
 	font-size: 15px;
 	font-weight: 400;
 	font-family: Lato, sans-serif;
@@ -198,7 +196,7 @@ export default {
 }
 
 .Baki strong {
-	color: #FFC107;
+	color: #4da5e8;
 	font-size: 24px;
 }
 
@@ -212,9 +210,9 @@ export default {
 		flex-direction: column;
 	}
 
-	.RB_Info_Container {
+	/* .RB_Info_Container {
 		margin-bottom: 0 !important;
-	}
+	} */
 
 	.RB_Cash_Btn_Container img {
 		width: 80%;
@@ -264,6 +262,7 @@ export default {
 	margin-top: -23%;
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 16px;
 }
 
 .button-grp a {
@@ -272,8 +271,8 @@ export default {
 
 .button-grp img {
 	width: 100%;
-	padding: 0 5px;
-	margin-bottom: 16px;
+	padding: 0 15px;
+	margin-bottom: 10px;
 }
 
 .sport-betting-container {

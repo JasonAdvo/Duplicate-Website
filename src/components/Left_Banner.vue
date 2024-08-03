@@ -2,9 +2,9 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_1.webp"
+			<!-- <a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_1.webp"
 					alt="PAGCOR">
-			</a>
+			</a> -->
 			<table>
 				<thead>
 					<tr>
@@ -20,7 +20,7 @@
 					</tr>
 					<tr>
 						<td colspan="2" class="green">
-							DEPOSIT
+							TOP UP
 						</td>
 						<td colspan="3" class="red">
 							WITHDRAW
@@ -86,9 +86,7 @@
 				</a>
 
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"
-						alt=""></a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_4.webp"
-						alt=""></a>
+						alt="Live Now"></a>
 			</div>
 
 			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/188welcome_bonus.webp"
@@ -113,10 +111,15 @@ export default {
 
 <style scoped>
 .Left_Banner_Container {
-	background: rgba(0, 0, 0, .3);
 	padding: 10px 15px 30px 15px;
 	height: 100%;
 	border-right: 1px solid rgba(255, 255, 255, .5);
+}
+
+@media screen and (min-width: 769px) {
+	.Left_Banner_Container {
+		background: rgba(0, 0, 0, .3);
+	}
 }
 
 .LB_Imgs img {
@@ -139,10 +142,11 @@ export default {
 
 .button-grp {
 	margin-top: -28%;
+	margin-bottom: 16px;
 }
 
 .button-grp img {
-	padding: 0 5px;
+	padding: 0 15px;
 }
 
 .no-br {
@@ -202,6 +206,7 @@ export default {
 
 table {
 	width: 100%;
+	margin-bottom: 16px;
 }
 
 @media screen and (max-width: 769px) {
@@ -212,17 +217,19 @@ table {
 
 table td {
 	font-size: 11px;
-	color: white;
+	color: black;
 	border: 1px solid white;
 	font-weight: 500;
 }
 
 .green {
 	background: #239809;
+	color: white;
 }
 
 .red {
 	background: #d02c27;
+	color: white;
 }
 
 tbody td {
