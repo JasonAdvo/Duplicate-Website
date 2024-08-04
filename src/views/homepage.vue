@@ -316,6 +316,7 @@ export default {
 			this.selectedIndex = index;
 		},
 		handleRedirect(index) {
+			// Additional logic for redirection or handling specific actions
 			if (index === 0) {
 				this.scrollToElement('.MB_Img_Gallery');
 			} else {
@@ -323,11 +324,10 @@ export default {
 			}
 		},
 		scrollToElement(selector) {
+			// Your scroll logic here
 			const element = document.querySelector(selector);
 			if (element) {
 				element.scrollIntoView({ behavior: 'smooth' });
-			} else {
-				console.error(`Element with selector ${selector} not found`);
 			}
 		},
 		// redirectToSignUp() {
