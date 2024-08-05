@@ -71,19 +71,17 @@
 
 					<div class="footer-detail">
 						<div class="license">
-							<p>GAME LICENSE</p>
+							<p>{{ $t('content.Game_License') }}</p>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img src="/images/Footer-License-Img.webp" alt="Game License">
 							</a>
 						</div>
 						<div class="game">
-							CROWN99 is a Registered Trade Mark, brand, and registered by Moon Technologie. Regulated &
-							Licensed by the Government
-							of Curacao and operates under the Master License of Gaming Services Provider, N.V.
-							#1168/JAZ.
+							{{
+								$t('content.Game_License_Content') }}
 						</div>
 						<div class="payment">
-							<p>PAYMENT METHODS</p>
+							<p>{{ $t('content.Payment_Methods') }}</p>
 							<img src="/images/payment-list.webp" alt="payment-list">
 						</div>
 						<div class="certification">
@@ -91,7 +89,7 @@
 							<img src="/images/Cert-list.webp" alt="certificate-list">
 						</div>
 						<div class="follow">
-							<p>FOLLOW US</p>
+							<p>{{ $t('content.Follow_Us') }}</p>
 							<a href="" rel="nofollow"><img class="main-pulse" src="/images/facebook.webp"
 									alt="facebook"></a>
 							<a href="" rel="nofollow"><img class="main-pulse" src="/images/telegram.webp"
