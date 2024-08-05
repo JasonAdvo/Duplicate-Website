@@ -2,9 +2,9 @@
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
 			<div class="login-register-container">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="Join"
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Join"
 						src="/images/RB_Login_Btn.webp" alt="Login"></a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="Register"
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Register"
 						src="/images/RB_Register_Btn.webp" alt="Register"></a>
 			</div>
 			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
@@ -17,40 +17,44 @@
 					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img class="no-br" src="/images/RB_Deposit_Btn.webp" alt="Deposit">
 					</a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img class="no-br" src="/images/RB_Withdraw_Btn.webp" alt="Withdraw">
 					</a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img class="no-br" src="/images/RB_Refresh_Btn.webp" alt="Refresh">
 					</a>
 				</div>
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.webp"
-						alt="Banner"></a>
-				<div class="button-grp">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+				<div style="position: relative;">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img src="/images/LB_Img_2.webp" class="no-br" alt="Share">
+						<div class="button-grp" style="position: absolute; bottom: 0;">
+							<a href=""></a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
+							</a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_Downline_Img.webp" alt="Downline">
+							</a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
+							</a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More">
+							</a>
+						</div>
+					</a>
 				</div>
-				<div class="RB-mobile-img-grp">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
-							src="/images/LB_Telegram_Img.webp" alt="Telegram">
+				<div class="RB-mobile-img-grp" style="margin-top: 16px;">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
+							src="/images/LB_Telegram_Img.webp" class="no-br" alt="Telegram">
 					</a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
-							src="/images/LB_Facebook_Img.webp" alt="Facebook">
-					</a>
-
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
 							alt="Live Now"></a>
 				</div>
 			</div>
@@ -65,7 +69,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="https://www.atascasinobet.com/sports-live" rel="nofollow">
+						<a href="https://www.ataskasino.com/en/sport-live/" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -76,18 +80,18 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a href="https://www.atascasinobet.com/sports-live" rel="nofollow">
+				<a href="https://www.ataskasino.com/en/sport-live/" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
 					src="/images/Atas-Post-Banner-(Eng).webp" alt="188% Welcome Bonus" style="margin-bottom: 16px;">
 			</a>
 
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/check_in.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/check_in.webp"
 					alt="Weekly Check In Bonus" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -128,7 +132,7 @@ export default {
 
 .RB_Imgs img {
 	max-width: 100%;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 .RB_Info_Container {
@@ -144,6 +148,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 5px;
 }
 
 .RB_Cash_Btn_Container img {
@@ -263,6 +268,26 @@ export default {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 16px;
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 769px) {
+	.button-grp {
+		bottom: 0;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.button-grp {
+		bottom: -9px !important;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.button-grp {
+		bottom: -14px !important;
+	}
 }
 
 .button-grp a {
@@ -271,7 +296,7 @@ export default {
 
 .button-grp img {
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 5px;
 	margin-bottom: 10px;
 }
 
@@ -377,6 +402,7 @@ export default {
 	display: block;
 	margin-top: 3px;
 	font-size: 21px;
+	font-weight: 700;
 	color: #258D2D;
 	font-family: 'Digital-7', sans-serif;
 }

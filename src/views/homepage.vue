@@ -3,14 +3,8 @@
 		<PopUpCard />
 	</div>
 
-	<div>
+	<div class="topbanner">
 		<TopBanner />
-	</div>
-
-	<div class="running-sentence-container">
-		<div class="running-sentence">
-			{{ sentence }}
-		</div>
 	</div>
 
 	<div class="main-content">
@@ -24,9 +18,9 @@
 					<div class="site-tabs">
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
-							@click="selectImage(index); handleRedirect(index)">
+							@click="handleSelection(index)">
 							<img :src="selectedIndex === index ? image.selected : image.notSelected"
-								:alt="'Image ' + (index + 1)">
+								:alt="'Image ' + (index + 1)" />
 						</div>
 					</div>
 				</div>
@@ -36,13 +30,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 34" :key="n">
-								<a v-if="n <= 18" :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+								<a v-if="n <= 18" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 18">
-									<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+									<a :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -55,86 +49,6 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
-					<p><a href="https://www.mamak24.fun/">MAMAK24</a> {{
-						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
-							}}</strong> {{
-								$t('Upper_Content.MAMAK24_Description_SH') }}
-					</p>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24_Online_Games') }}</h2>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24-OG-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.M24-OG-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Live-Casino-Games') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-LCG-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Casino-Slots') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Sports-Betting') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-SB-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-SB-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Lottery') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OL-FH-Description') }} <strong>{{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-OL-Main-word') }}</strong> {{
-								$t('H2-MAMAK24-Online-Casino-Games.H3-OL-SH-Description') }}
-					</p>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Payment-Methods.MAMAK24_Payment_Methods') }}</h2>
-					<p>{{ $t('H2-MAMAK24-Payment-Methods.M24-PM-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Bank-Transfer') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Payment-Methods.H3-BT-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Ewallet-Transfer') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Payment-Methods.H3-ET-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Payment-Methods.H3-ET-Description') }}
-					</p>
-					<br>
-					<h2>{{ $t('H2-Join-M24.Join_MAMAK24') }}</h2>
-					<p>{{ $t('H2-Join-M24.Join-M24-Description') }}</p>
-					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Register-Online') }}</h3>
-					<ol>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-1') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-2') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-3') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-4') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-5-FH') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-RO-Step-5-Main-Word') }}</strong> {{
-									$t('H2-Join-M24.H3-M24-RO-Step-5-SH') }}</li>
-					</ol>
-					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Casino-Online') }}</h3>
-					<ol>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-1') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-2-Description') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-CO-Step-2-Main-Word') }}</strong></li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-3') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-4') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-5-FH') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-CO-Step-5-Main-Word') }}</strong> {{
-									$t('H2-Join-M24.H3-M24-CO-Step-5') }}</li>
-					</ol>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Bonus.MAMAK24_Bonus') }}</h2>
-					<p><strong>{{ $t('H2-MAMAK24-Bonus.M24-Bonus-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Bonus.M24-Bonus-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-Advant-Play-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-APB-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-50%-Welcome-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-WB-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-10%-Unlimited-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-UB-Description') }}</p>
-					<br>
-					<p>{{ $t('MAMAK24-Last-Description.M24_LD') }}</p>
-					<br>
-					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
-						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
-							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
-							alt="DMCA.com Protection Status" />
-					</a>
-					<br>
-					<br>
 					<p class="b-700">
 						{{ $t('content.Learn_More') }}
 					</p>
@@ -145,12 +59,20 @@
 					</p>
 					<p>
 						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
-							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
+							$t('content.SP_F_Content') }}
 					</p>
+
+					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
+							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+							alt="DMCA.com Protection Status" />
+					</a>
+					<br>
+
 					<div class="footer-detail">
 						<div class="license">
 							<p>GAME LICENSE</p>
-							<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img src="/images/Footer-License-Img.webp" alt="Game License">
 							</a>
 						</div>
@@ -219,7 +141,6 @@ export default {
 	data() {
 		return {
 			selectedItem: 0,
-			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks. MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses. Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
 			altTexts: [
 				"Tanzania King",
@@ -263,7 +184,7 @@ export default {
 				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
 				{ notSelected: '/images/BPG_NotS.webp', selected: '/images/BPG_S.webp' },
 				{ notSelected: '/images/SPINIX_NotS.webp', selected: '/images/SPINIX_S.webp' },
-				{ notSelected: '/images/RichG_NotS.webp', selected: '/images/RichG_S.webp' },
+				{ notSelected: '/images/RICHG_NotS.webp', selected: '/images/RICHG_S.webp' },
 				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
 				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp' },
 				{ notSelected: '/images/Pegasus_NotS.webp', selected: '/images/Pegasus_S.webp' },
@@ -312,11 +233,15 @@ export default {
 				sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			}
 		},
+		handleSelection(index) {
+			this.selectImage(index);
+			this.handleRedirect(index);
+		},
 		selectImage(index) {
 			this.selectedIndex = index;
 		},
 		handleRedirect(index) {
-			// Additional logic for redirection or handling specific actions
+			// Check the index to determine the redirection or scrolling
 			if (index === 0) {
 				this.scrollToElement('.MB_Img_Gallery');
 			} else {
@@ -324,14 +249,13 @@ export default {
 			}
 		},
 		scrollToElement(selector) {
-			// Your scroll logic here
 			const element = document.querySelector(selector);
 			if (element) {
 				element.scrollIntoView({ behavior: 'smooth' });
 			}
-		},
+		}
 		// redirectToSignUp() {
-		// 	window.location.href = "https://www.atascasinobet.com/sign-up";
+		// 	window.location.href = "https://www.ataskasino.com/en/sign-up/";
 		// }
 	}
 }
@@ -444,7 +368,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #ffc107;
+	color: green;
 }
 
 .google-map-link {
@@ -466,43 +390,9 @@ export default {
 	color: #f0d843 !important;
 }
 
-.running-sentence-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	background-image: url('/images/RunningB_Img.webp');
-	/* visibility: visible; */
-	background-size: 100% 100%;
-	color: black;
-	font-size: 12px;
-	letter-spacing: 0.5px;
-	height: 25px;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-}
-
-.running-sentence {
-	white-space: nowrap;
-	/* position: absolute; */
-	width: max-content;
-	animation: scroll 72s linear infinite;
-	color: white;
-}
-
-@keyframes scroll {
-	0% {
-		transform: translateX(75%);
-	}
-
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
 .site-tabs {
 	flex-wrap: wrap;
-	margin: 10px 0;
+	margin: 20px 0;
 	position: relative;
 	display: flex;
 }
@@ -599,7 +489,7 @@ h2,
 h3,
 li,
 p {
-	color: white;
+	color: black;
 }
 
 .footer-content h1 {
@@ -630,7 +520,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: #ffd700;
+	color: green;
 }
 
 .image-wrapper a {
@@ -746,5 +636,15 @@ li {
 	font-size: 12px;
 	padding: 50px 0;
 	color: black;
+}
+
+body {
+	position: relative;
+}
+
+.topbanner {
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 </style>

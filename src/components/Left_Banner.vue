@@ -2,9 +2,6 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<!-- <a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_1.webp"
-					alt="PAGCOR">
-			</a> -->
 			<table>
 				<thead>
 					<tr>
@@ -66,33 +63,38 @@
 				</tbody>
 			</table>
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.webp"
-						alt="Share"></a>
-				<div class="button-grp">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+				<div style="position: relative;">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img src="/images/LB_Img_2.webp" alt="Share">
+						<div class="button-grp" style="position: absolute; bottom: 0;">
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
+							</a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_Downline_Img.webp" alt="Downline">
+							</a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
+							</a>
+							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+								<img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More">
+							</a>
+						</div>
+					</a>
 				</div>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
+
+
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
 						alt="Telegram">
 				</a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Facebook_Img.webp"
-						alt="Facebook">
-				</a>
-
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
 						alt="Live Now"></a>
 			</div>
 
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/188welcome_bonus.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/188welcome_bonus.webp"
 					alt="188% Welcome Bonus">
 			</a>
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
 					alt="Top Up Bonus">
 			</a>
 		</div>
@@ -125,7 +127,7 @@ export default {
 .LB_Imgs img {
 	max-width: 100%;
 	margin-bottom: 16px;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -141,12 +143,12 @@ export default {
 
 
 .button-grp {
-	margin-top: -28%;
-	margin-bottom: 16px;
+	padding: 0 12px;
+	margin-bottom: 10px;
 }
 
 .button-grp img {
-	padding: 0 15px;
+	padding: 0 2px;
 }
 
 .no-br {
@@ -160,6 +162,7 @@ export default {
 .title span {
 	color: #d3ab22;
 	font-weight: 700;
+	padding-left: 5px;
 }
 
 .live {
@@ -222,20 +225,35 @@ table td {
 	font-weight: 500;
 }
 
+@media screen and (max-width: 321px) {
+	table td {
+		font-size: 10px;
+	}
+}
+
 .green {
-	background: #239809;
+	background: radial-gradient(circle, rgba(79, 255, 69, 1) 0%, rgba(29, 75, 31, 1) 100%);
 	color: white;
+	padding-left: 5px;
 }
 
 .red {
-	background: #d02c27;
+	background: radial-gradient(circle, rgba(156, 63, 251, 1) 0%, rgba(38, 1, 23, 1) 100%);
 	color: white;
+	padding-left: 5px;
 }
 
 tbody td {
 	width: 20%;
 	height: 20px;
 	padding: 4px;
+}
+
+table,
+th,
+td {
+	border: 1px solid black !important;
+	/* Change to desired color */
 }
 
 .amount {
