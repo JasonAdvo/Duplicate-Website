@@ -109,7 +109,7 @@ export default {
 .relative a {
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	right: 60px;
 }
 
 @media screen and (max-width: 430px) {
@@ -200,7 +200,7 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/RunningB_Img.webp');
+	background-image: url('/images/Running_Bar_Bg_Img.webp');
 	/* visibility: visible; */
 	background-size: 100% 100%;
 	color: black;
@@ -218,7 +218,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 72s linear infinite;
-	color: white;
+	color: darkblue;
 }
 
 @keyframes scroll {

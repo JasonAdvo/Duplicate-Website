@@ -177,20 +177,20 @@ export default {
 				"Thai Street Food"
 			],
 			images: [
-				{ notSelected: '/images/ClotPlayF_NotS.webp', selected: '/images/ClotPlayF_S.webp' },
-				{ notSelected: '/images/ClotPlay_NotS.webp', selected: '/images/ClotPlay_S.webp' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
-				{ notSelected: '/images/BPG_NotS.webp', selected: '/images/BPG_S.webp' },
-				{ notSelected: '/images/SPINIX_NotS.webp', selected: '/images/SPINIX_S.webp' },
-				{ notSelected: '/images/RICHG_NotS.webp', selected: '/images/RICHG_S.webp' },
-				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
-				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp' },
-				{ notSelected: '/images/Pegasus_NotS.webp', selected: '/images/Pegasus_S.webp' },
-				{ notSelected: '/images/CO9G_NotS.webp', selected: '/images/CO9G_NotS.webp' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp' },
-				{ notSelected: '/images/Lottery_NotS.webp', selected: '/images/Lottery_S.webp' },
-				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp' },
+				{ notSelected: '/images/ClotPlayF_S.webp', selected: '/images/ClotPlayF_S.webp' },
+				{ notSelected: '/images/ClotPlay_S.webp', selected: '/images/ClotPlay_S.webp' },
+				{ notSelected: '/images/JILI_S.webp', selected: '/images/JILI_S.webp' },
+				{ notSelected: '/images/BPG_S.webp', selected: '/images/BPG_S.webp' },
+				{ notSelected: '/images/SPINIX_S.webp', selected: '/images/SPINIX_S.webp' },
+				{ notSelected: '/images/RichG_S.webp', selected: '/images/RichG_S.webp' },
+				{ notSelected: '/images/NS_S.webp', selected: '/images/NS_S.webp' },
+				{ notSelected: '/images/Pegasus_S.webp', selected: '/images/Pegasus_S.webp' },
+				{ notSelected: '/images/AP_S.webp', selected: '/images/AP_S.webp' },
+				{ notSelected: '/images/AceWin_S.webp', selected: '/images/AceWin_S.webp' },
+				{ notSelected: '/images/Slot_S.webp', selected: '/images/Slot_S.webp' },
+				{ notSelected: '/images/Live_S.webp', selected: '/images/Live_S.webp' },
+				{ notSelected: '/images/Sport_S.webp', selected: '/images/Sport_S.webp' },
+				{ notSelected: '/images/Lottery_S.webp', selected: '/images/Lottery_S.webp' },
 			],
 		};
 	},
@@ -290,7 +290,7 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Starbucks88_BG_Img.webp');
+	background-image: url('/images/Alpha_Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top;
@@ -464,8 +464,7 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-color: #4ba614;
-	background-image: linear-gradient(to bottom, #746526, #C3B32A);
+	background-image: linear-gradient(to bottom, #097CB8, #2FA1DC);
 	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
 	text-align: center;
 	color: white;

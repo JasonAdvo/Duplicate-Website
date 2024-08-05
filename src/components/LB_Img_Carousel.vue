@@ -4,17 +4,17 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/LB_Slider_Img_1.webp" class="d-block w-100" alt="slide1">
+					<img width="100%" src="/images/LB_Sliding_Img_1.webp" class="d-block w-100 max-h" alt="slide1">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/LB_Slider_Img_2.webp" class="d-block w-100" alt="slide2">
+					<img width="100%" src="/images/LB_Sliding_Img_2.webp" class="d-block w-100 max-h" alt="slide2">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/LB_Slider_Img_3.webp" class="d-block w-100" alt="slide3">
+					<img width="100%" src="/images/LB_Sliding_Img_5.webp" class="d-block w-100 max-h" alt="slide3">
 				</a>
 			</div>
 		</div>
@@ -34,4 +34,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.max-h {
+	max-height: 156.75px;
+}
+</style>

@@ -68,25 +68,20 @@
 						<img src="/images/LB_Img_2.webp" alt="Share">
 						<div class="button-grp" style="position: absolute; bottom: 0;">
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
+								<img class="col-6 no-br" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Downline_Img.webp" alt="Downline">
+								<img class="col-6 no-br" src="/images/LB_Downline_Btn.webp" alt="Downline">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
+								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More">
+								<img class="col-6 no-br" src="/images/LB_More_Btn.webp" alt="More">
 							</a>
 						</div>
 					</a>
 				</div>
-
-
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
-						alt="Telegram">
-				</a>
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
 						alt="Live Now"></a>
 			</div>

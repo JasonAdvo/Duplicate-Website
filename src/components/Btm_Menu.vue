@@ -13,32 +13,32 @@
 			<div class="footer-content">
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/" rel="nofollow">
-						<img src="/images/Btm_Home_Img.webp" alt="Home">
+						<img src="/images/Btm_Home_Btn.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_History_Img.webp" alt="History">
+						<img src="/images/Btm_Wallet_Btn.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Promo_Img.webp" alt="Setting">
+						<img src="/images/Btm_Promo_Btn.webp" alt="Setting">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Lucky_Img.webp" alt="Bonus">
+						<img src="/images/Btm_Lucky_Btn.webp" alt="Bonus">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_LiveC_Img.webp" alt="Live Chat">
+						<img src="/images/Btm_Live_Btn.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
+						<img src="/images/Btm_Profile_Btn.webp" alt="Setting">
 					</a>
 				</div>
 
@@ -110,13 +110,13 @@ export default {
 }
 
 .col img {
-	width: 40px;
+	width: 60px;
 	height: auto;
 }
 
 @media screen and (max-width: 321px) {
 	.col img {
-		width: 30px;
+		width: 50px;
 	}
 }
 

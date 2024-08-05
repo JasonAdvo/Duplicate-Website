@@ -2,10 +2,10 @@
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
 			<div class="login-register-container">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Join"
-						src="/images/RB_Login_Btn.webp" alt="Login"></a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Join" src=""
+						alt="Login"></a>
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Register"
-						src="/images/RB_Register_Btn.webp" alt="Register"></a>
+						src="/images/RB_Register_Btn.gif" alt="Register"></a>
 			</div>
 			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
 				<div class="RB_Small_Text_Container">
@@ -36,24 +36,21 @@
 						<div class="button-grp" style="position: absolute; bottom: 0;">
 							<a href=""></a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
+								<img class="col-6 no-br" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Downline_Img.webp" alt="Downline">
+								<img class="col-6 no-br" src="/images/LB_Downline_Btn.webp" alt="Downline">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
+								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More">
+								<img class="col-6 no-br" src="/images/LB_More_Btn.webp" alt="More">
 							</a>
 						</div>
 					</a>
 				</div>
 				<div class="RB-mobile-img-grp" style="margin-top: 16px;">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
-							src="/images/LB_Telegram_Img.webp" class="no-br" alt="Telegram">
-					</a>
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
 							alt="Live Now"></a>
 				</div>
