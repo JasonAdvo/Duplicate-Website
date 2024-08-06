@@ -2,7 +2,7 @@
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
 			<div class="login-register-container">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Join"
+				<a href="https://www.ataskasino.com/login/" rel="nofollow"><img class="Join"
 						src="/images/RB_Login_Btn.webp" alt="Login"></a>
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Register"
 						src="/images/RB_Register_Btn.webp" alt="Register"></a>
@@ -51,8 +51,8 @@
 					</a>
 				</div>
 				<div class="RB-mobile-img-grp" style="margin-top: 16px;">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
-							src="/images/LB_Telegram_Img.webp" class="no-br" alt="Telegram">
+					<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
+							class="no-br" alt="Telegram">
 					</a>
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
 							alt="Live Now"></a>
@@ -69,7 +69,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="https://www.ataskasino.com/en/sport-live/" rel="nofollow">
+						<a href="https://www.ataskasino.com/login/" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -87,12 +87,13 @@
 				</a>
 			</div>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
-					src="/images/Atas-Post-Banner-(Eng).webp" alt="188% Welcome Bonus" style="margin-bottom: 16px;">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus50_.webp"
+					alt="Bonus 50%" style="margin-bottom: 16px;">
 			</a>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/check_in.webp"
-					alt="Weekly Check In Bonus" style="margin-bottom: 16px;">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
+					src="/images/atasmuatturunpercumarm50_mobile.webp" alt="Percuma Krefit RM50"
+					style="margin-bottom: 16px;">
 			</a>
 		</div>
 	</div>
@@ -131,7 +132,7 @@ export default {
 }
 
 .RB_Imgs img {
-	max-width: 100%;
+	width: 100%;
 	border-radius: 8px;
 }
 
@@ -153,7 +154,6 @@ export default {
 
 .RB_Cash_Btn_Container img {
 	margin-bottom: 5px;
-	width: 200px;
 }
 
 .login-register-container {
@@ -264,7 +264,6 @@ export default {
 }
 
 .button-grp {
-	margin-top: -23%;
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 16px;
@@ -273,20 +272,20 @@ export default {
 
 @media screen and (max-width: 769px) {
 	.button-grp {
-		bottom: 0;
+		bottom: 16px !important;
 	}
 }
 
 @media screen and (max-width: 430px) {
 	.button-grp {
-		bottom: -9px !important;
 		padding: 0 10px;
+		bottom: 1px !important;
 	}
 }
 
 @media screen and (max-width: 330px) {
 	.button-grp {
-		bottom: -14px !important;
+		bottom: -4px !important;
 	}
 }
 
@@ -297,7 +296,7 @@ export default {
 .button-grp img {
 	width: 100%;
 	padding: 0 5px;
-	margin-bottom: 10px;
+	margin-bottom: 2px;
 }
 
 .sport-betting-container {
@@ -390,6 +389,7 @@ export default {
 }
 
 .team img {
+	width: 50px;
 	margin-bottom: 10px;
 }
 

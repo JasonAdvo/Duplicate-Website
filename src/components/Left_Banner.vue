@@ -1,7 +1,10 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<LB_Img_Carousel />
+			<!-- <LB_Img_Carousel /> -->
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<img width="100%" src="/images/bonus388.webp" class="d-block w-100" alt="Bonus RM 388">
+			</a>
 			<table>
 				<thead>
 					<tr>
@@ -66,7 +69,7 @@
 				<div style="position: relative;">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" alt="Share">
-						<div class="button-grp" style="position: absolute; bottom: 0;">
+						<div class="button-grp">
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
 							</a>
@@ -84,18 +87,15 @@
 				</div>
 
 
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
+				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
 						alt="Telegram">
 				</a>
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
 						alt="Live Now"></a>
 			</div>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/188welcome_bonus.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/ATAS-BAds.webp"
 					alt="188% Welcome Bonus">
-			</a>
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
-					alt="Top Up Bonus">
 			</a>
 		</div>
 	</div>
@@ -125,7 +125,7 @@ export default {
 }
 
 .LB_Imgs img {
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 16px;
 	border-radius: 8px;
 }
@@ -143,12 +143,48 @@ export default {
 
 
 .button-grp {
+	position: absolute;
 	padding: 0 12px;
 	margin-bottom: 10px;
+	position: absolute;
 }
 
+@media screen and (min-width: 768px) {
+	.button-grp {
+		bottom: 17px;
+	}
+}
+
+@media screen and (min-width: 1030px) {
+	.button-grp {
+		bottom: 24px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.button-grp {
+		bottom: 18px;
+	}
+}
+
+@media screen and (min-width: 1650px) {
+	.button-grp {
+		padding: 0 20px;
+		bottom: 24px;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.button-grp {
+		bottom: 30px;
+	}
+}
+
+
 .button-grp img {
+	width: 50%;
 	padding: 0 2px;
+	margin-bottom: 3px;
 }
 
 .no-br {

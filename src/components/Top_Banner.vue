@@ -1,35 +1,45 @@
 <template>
 	<div class="relative">
-		<div class="Top_Banner_Container" @click="redirectToHome"></div>
-		<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/crown99_TB_Img_2.webp"
-				alt="A66 Group"></a>
-		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
+		<div class="Top_Banner_Container">
+			<a href="/"></a>
+		</div>
+		<a class="A66-Grp" href="/"><img src="/images/crown99_TB_Img_2.webp" alt="A66 Group"></a>
+		<a href="#">
+			<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
+		</a>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
 		<!-- Pop-up Card -->
 		<div v-if="showPopup" class="popup-card">
-			<div @click="changeLanguage('en')">
-				English
-				<span v-if="selectedLanguage === 'en'" class="tick">
-					<i class="fa fa-check"></i>
+			<div>
+				<span @click="changeLanguage('en')" class="changeLanguage" role="button">
+					English
+					<span v-if="selectedLanguage === 'en'" class="tick">
+						<i class="fa fa-check"></i>
+					</span>
 				</span>
 			</div>
-			<div @click="changeLanguage('ms')">
-				Bahasa Melayu
-				<span v-if="selectedLanguage === 'ms'" class="tick">
-					<i class="fa fa-check"></i>
+			<div>
+				<span @click="changeLanguage('ms')" class="changeLanguage" role="button">
+					Bahasa Melayu
+					<span v-if="selectedLanguage === 'ms'" class="tick">
+						<i class="fa fa-check"></i>
+					</span>
 				</span>
 			</div>
-			<div @click="changeLanguage('zh')">
-				中文
-				<span v-if="selectedLanguage === 'zh'" class="tick">
-					<i class="fa fa-check"></i>
+			<div>
+				<span @click="changeLanguage('zh')" class="changeLanguage" role="button">
+					中文
+					<span v-if="selectedLanguage === 'zh'" class="tick">
+						<i class="fa fa-check"></i>
+					</span>
 				</span>
 			</div>
 		</div>
+
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ sentence }}
+				{{ $t('content.Game_License_Content') }}
 			</div>
 		</div>
 	</div>
@@ -41,26 +51,25 @@ import { useI18n } from 'vue-i18n';
 
 export default {
 	name: 'TopBanner',
-	data() {
-		return {
-			sentence: `Welcome to Starbucks88 Club MY, Malaysia's premier crypto gambling site! Dive into an exciting world of slots, table games, and live casino action, all powered by secure cryptocurrency transactions. Enjoy exclusive bonuses, fast payouts, and top-notch gaming. Join now and elevate your entertainment with Starbucks88 Club MY!`,
-		}
-	},
-	methods: {
-		redirectToHome() {
-			this.$router.push('/');
-		}
-	},
 	setup() {
-		const { locale } = useI18n();
+		const { locale } = useI18n(); // Destructure locale from Vue I18n
+
 		const showPopup = ref(false);
-		const selectedLanguage = ref('en'); // Default language set to English
+		const selectedLanguage = ref(localStorage.getItem('selectedLanguage') || 'en');
 
 		const changeLanguage = (lang) => {
+			// Save the selected language to localStorage
+			localStorage.setItem('selectedLanguage', lang);
+
+			// Update Vue I18n locale
 			locale.value = lang;
-			selectedLanguage.value = lang;
-			showPopup.value = false; // Hide popup after changing language
+
+			// Hide popup and reset body overflow
+			showPopup.value = false;
 			document.body.style.overflow = 'auto';
+
+			// Optionally, reload the page
+			location.reload();
 		};
 
 		const togglePopup = () => {
@@ -75,12 +84,19 @@ export default {
 
 		return {
 			showPopup,
+			selectedLanguage,
 			changeLanguage,
-			togglePopup,
-			selectedLanguage
+			togglePopup
 		};
 	},
-
+	mounted() {
+		// Retrieve and apply the stored language setting on component mount
+		const savedLanguage = localStorage.getItem('selectedLanguage');
+		if (savedLanguage) {
+			this.$i18n.locale = savedLanguage;
+			this.selectedLanguage = savedLanguage;
+		}
+	},
 };
 </script>
 
@@ -106,7 +122,13 @@ export default {
 	height: 80px;
 }
 
-.relative a {
+.Top_Banner_Container a {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.A66-Grp {
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -137,11 +159,12 @@ export default {
 
 .GT-icon {
 	position: absolute;
-	top: 28px;
+	top: 24px;
 	right: 20px;
 	z-index: 1;
-	color: white;
+	color: black;
 	cursor: pointer;
+	font-size: 30px;
 }
 
 .overlay {
@@ -176,6 +199,11 @@ export default {
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
+}
+
+.changeLanguage {
+	color: black;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 430px) {
