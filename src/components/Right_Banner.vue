@@ -1,39 +1,43 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<div class="login-register-container">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Join" src=""
-						alt="Login"></a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Register"
-						src="/images/RB_Register_Btn.gif" alt="Register"></a>
-			</div>
-			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
-				<div class="RB_Small_Text_Container">
-					<div class="Baki">
-						<p>{{ $t('message.balance') }} </p>
-						<p><strong>0.00</strong></p>
+			<div
+				style="padding: 8px 10px; box-shadow: 2px 4px 20px rgb(14 14 14 / 61%); border-radius: 8px; margin-bottom: 16px;">
+				<div class="login-register-container">
+					<a href="https://www.ataskasino.com/login/" rel="nofollow"><img style="opacity: 0;" class="Join"
+							src="/images/RB_Register_Btn.gif" alt="Login"></a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img class="Register"
+							src="/images/RB_Register_Btn.gif" alt="Register"></a>
+				</div>
+				<div class="RB_Info_Container" style="display: flex">
+					<div class="RB_Small_Text_Container">
+						<div class="Baki">
+							<p>{{ $t('message.balance') }} </p>
+							<p><strong>0.00</strong></p>
+						</div>
+						<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
 					</div>
-					<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
-					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
-				</div>
-				<div class="RB_Cash_Btn_Container">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Deposit_Btn.webp" alt="Deposit">
-					</a>
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Withdraw_Btn.webp" alt="Withdraw">
-					</a>
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Refresh_Btn.webp" alt="Refresh">
-					</a>
+					<div class="RB_Cash_Btn_Container">
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="no-br" src="/images/RB_Deposit_Btn.webp" alt="Deposit">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="no-br" src="/images/RB_Withdraw_Btn.webp" alt="Withdraw">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="no-br" src="/images/RB_Refresh_Btn.webp" alt="Refresh">
+						</a>
+					</div>
 				</div>
 			</div>
+
 
 			<div class="Tablet-Mobile-view">
 				<div style="position: relative;">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" class="no-br" alt="Share">
-						<div class="button-grp" style="position: absolute; bottom: 0;">
+						<div class="button-grp" style="position: absolute; bottom: -2px;">
 							<a href=""></a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_Share_Btn.webp" alt="Share">
@@ -84,11 +88,11 @@
 				</a>
 			</div>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img
-					src="/images/Atas-Post-Banner-(Eng).webp" alt="188% Welcome Bonus" style="margin-bottom: 16px;">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/ATAS-BAds.webp"
+					alt="188% Welcome Bonus" style="margin-bottom: 16px;">
 			</a>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/check_in.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus50_.webp"
 					alt="Weekly Check In Bonus" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -159,6 +163,10 @@ export default {
 	margin-bottom: 16px;
 }
 
+.login-register-container a {
+	width: 50%;
+}
+
 .login-register-container img {
 	border-radius: 0%;
 }
@@ -211,10 +219,6 @@ export default {
 		display: flex !important;
 		flex-direction: column;
 	}
-
-	/* .RB_Info_Container {
-		margin-bottom: 0 !important;
-	} */
 
 	.RB_Cash_Btn_Container img {
 		width: 80%;
@@ -270,13 +274,13 @@ export default {
 
 @media screen and (max-width: 769px) {
 	.button-grp {
-		bottom: 0;
+		bottom: 17px !important;
 	}
 }
 
 @media screen and (max-width: 430px) {
 	.button-grp {
-		bottom: -9px !important;
+		bottom: -5px !important;
 		padding: 0 10px;
 	}
 }

@@ -82,14 +82,15 @@
 						</div>
 					</a>
 				</div>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
+				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp" alt="Telegram"></a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
 						alt="Live Now"></a>
 			</div>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/188welcome_bonus.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus388.webp"
 					alt="188% Welcome Bonus">
 			</a>
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/Percuma RM 50.webp"
 					alt="Top Up Bonus">
 			</a>
 		</div>

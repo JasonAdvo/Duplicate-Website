@@ -182,7 +182,7 @@ export default {
 				{ notSelected: '/images/JILI_S.webp', selected: '/images/JILI_S.webp' },
 				{ notSelected: '/images/BPG_S.webp', selected: '/images/BPG_S.webp' },
 				{ notSelected: '/images/SPINIX_S.webp', selected: '/images/SPINIX_S.webp' },
-				{ notSelected: '/images/RichG_S.webp', selected: '/images/RichG_S.webp' },
+				{ notSelected: '/images/RICHG_S.webp', selected: '/images/RICHG_S.webp' },
 				{ notSelected: '/images/NS_S.webp', selected: '/images/NS_S.webp' },
 				{ notSelected: '/images/Pegasus_S.webp', selected: '/images/Pegasus_S.webp' },
 				{ notSelected: '/images/AP_S.webp', selected: '/images/AP_S.webp' },

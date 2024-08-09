@@ -1,6 +1,8 @@
 <template>
 	<div class="relative">
+
 		<div class="Top_Banner_Container" @click="redirectToHome"></div>
+		<a class="Alpha66_logo" href="/"><img src="/images/ALPHA66_Logo_Img.webp" alt="Alpha66 Logo"></a>
 		<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/crown99_TB_Img_2.webp"
 				alt="A66 Group"></a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
@@ -86,12 +88,14 @@ export default {
 
 <style scoped>
 @media screen and (max-width: 767px) {
-	.Top_Banner_Container {
-		height: 50px !important;
-	}
-
 	.TR_Img {
 		max-width: 40px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.Top_Banner_Container {
+		height: 50px !important;
 	}
 }
 
@@ -104,6 +108,34 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;
+}
+
+.Alpha66_logo {
+	position: absolute;
+	left: 20px;
+}
+
+.Alpha66_logo img {
+	width: 140px !important;
+	height: auto !important;
+}
+
+@media screen and (max-width: 1030px) {
+	.Alpha66_logo img {
+		width: 190px !important;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.Alpha66_logo img {
+		width: 150px !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.Alpha66_logo img {
+		width: 145px !important;
+	}
 }
 
 .relative a {
