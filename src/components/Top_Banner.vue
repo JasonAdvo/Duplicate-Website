@@ -31,7 +31,7 @@
 		</div>
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ sentence }}
+				{{ $t('content.sentence') }}
 			</div>
 		</div>
 	</div>
