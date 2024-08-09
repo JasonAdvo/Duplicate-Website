@@ -279,7 +279,7 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Starbucks88_BG_Img.webp');
+	background-image: url('/images/Alpha_Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top;

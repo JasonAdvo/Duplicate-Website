@@ -3,6 +3,16 @@
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
 			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt=""></a>
+			<div style="position: relative;">
+				<img src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
+				<div class="Jackpot">
+					<JackpotOdometer :value="jackpotValue" />
+				</div>
+
+			</div>
+
+			</img>
+
 			<table>
 				<thead>
 					<tr>
@@ -100,10 +110,47 @@
 
 <script>
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+import JackpotOdometer from '/src/components/JackpotOdometer.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
-		LB_Img_Carousel
+		LB_Img_Carousel,
+		JackpotOdometer
+	},
+	data() {
+		return {
+			jackpotValue: 10000000 // Starting value, 9 digits
+		};
+	},
+	mounted() {
+		this.loadJackpotValue();
+		this.startJackpotIncrease();
+	},
+	methods: {
+		startJackpotIncrease() {
+			setInterval(() => {
+				this.jackpotValue += Math.floor(Math.random() * 10); // Increment by a random value up to 9999
+				this.scheduleNextIncrease();
+			}, this.getRandomDelay());
+		},
+		scheduleNextIncrease() {
+			setTimeout(() => {
+				this.jackpotValue += Math.floor(Math.random() * 10); // Increment by a random value up to 9999
+				this.scheduleNextIncrease();
+			}, this.getRandomDelay());
+		},
+		getRandomDelay() {
+			return Math.floor(Math.random() * (8000 - 3000 + 1)) + 3000; // Delay between 3 and 8 seconds
+		},
+		saveJackpotValue() {
+			localStorage.setItem('jackpotValue', this.jackpotValue);
+		},
+		loadJackpotValue() {
+			const storedValue = localStorage.getItem('jackpotValue');
+			if (storedValue !== null) {
+				this.jackpotValue = parseInt(storedValue, 10);
+			}
+		}
 	}
 };
 </script>
@@ -138,6 +185,35 @@ export default {
 	}
 }
 
+.Jackpot {
+	position: absolute;
+	top: 8px;
+	right: 30px;
+}
+
+@media screen and (max-width: 1030px) {
+	.Jackpot {
+		top: 1px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.Jackpot {
+		top: 25px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.Jackpot {
+		top: 6px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.Jackpot {
+		top: 0px;
+	}
+}
 
 .button-grp {
 	padding: 0 12px;
