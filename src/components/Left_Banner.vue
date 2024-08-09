@@ -2,6 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt=""></a>
 			<table>
 				<thead>
 					<tr>
@@ -228,13 +229,13 @@ table td {
 }
 
 .green {
-	background: radial-gradient(circle, rgba(79, 255, 69, 1) 0%, rgba(29, 75, 31, 1) 100%);
+	background: linear-gradient(90deg, rgba(8, 207, 255, 1) 35%, rgba(0, 154, 255, 1) 100%);
 	color: white;
 	padding-left: 5px;
 }
 
 .red {
-	background: radial-gradient(circle, rgba(156, 63, 251, 1) 0%, rgba(38, 1, 23, 1) 100%);
+	background: linear-gradient(90deg, rgba(8, 207, 255, 1) 35%, rgba(0, 154, 255, 1) 100%);
 	color: white;
 	padding-left: 5px;
 }
@@ -253,7 +254,7 @@ td {
 }
 
 .amount {
-	color: #d3ab22;
+	color: #1075b8;
 	text-align: right;
 }
 </style>

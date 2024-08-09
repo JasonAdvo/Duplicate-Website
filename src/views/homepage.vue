@@ -19,12 +19,13 @@
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="handleSelection(index)">
-							<img :src="selectedIndex === index ? image.selected : image.notSelected"
-								:alt="'Image ' + (index + 1)" />
+							<a :href="index === 0 ? '#MB_Img_Gallery' : '#footer-content'" @click="handleClick(index)">
+								<img :src="selectedIndex === index ? image.selected : image.notSelected"
+									:alt="'Image ' + (index + 1)" />
+							</a>
 						</div>
 					</div>
 				</div>
-
 
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
@@ -47,34 +48,17 @@
 						</div>
 					</div>
 				</div>
-
+				<br>
+				<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+					title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
+						src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+						alt="DMCA.com Protection Status" />
+				</a>
 				<div class="footer-content">
-					<p class="b-700">
-						{{ $t('content.Learn_More') }}
-					</p>
-					<p>
-						<a href="https://www.atascasinobet.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
-						{{
-							$t('content.FP_Content') }}
-					</p>
-					<p>
-						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
-							$t('content.SP_F_Content') }}
-					</p>
-
-					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
-						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
-							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
-							alt="DMCA.com Protection Status" />
-					</a>
-					<br>
-
 					<div class="footer-detail">
 						<div class="license">
 							<p>{{ $t('content.Game_License') }}</p>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img src="/images/Footer-License-Img.webp" alt="Game License">
-							</a>
+							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
 							{{
@@ -90,21 +74,18 @@
 						</div>
 						<div class="follow">
 							<p>{{ $t('content.Follow_Us') }}</p>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/facebook.webp"
-									alt="facebook"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/telegram.webp"
-									alt="telegram"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/instagram.webp"
-									alt="instagram"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/youtube.webp"
-									alt="youtube"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/whatsapp.webp"
-									alt="whatsapp"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
+							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
+							<a href="https://t.me/atas77channel" rel="nofollow"><img class="main-pulse"
+									src="/images/telegram.webp" alt="telegram"></a>
+							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
+							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
+							<a href="https://rebrand.ly/ATASxSEO2P" rel="nofollow"><img class="main-pulse"
+									src="/images/whatsapp.webp" alt="whatsapp"></a>
+							<a href="/"><img class=" main-pulse" src="/images/mail.webp" alt="mail"></a>
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2024 CROWN99. ALL RIGHTS RESERVED.
+						2016-2023 Starbucks88. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>
@@ -140,6 +121,8 @@ export default {
 		return {
 			selectedItem: 0,
 			selectedIndex: 0,
+			stickyBarHeightWeb: 105,
+			stickyBarHeightMobile: 75,
 			altTexts: [
 				"Tanzania King",
 				"Candy Party",
@@ -189,7 +172,7 @@ export default {
 				{ notSelected: '/images/AceWin_S.webp', selected: '/images/AceWin_S.webp' },
 				{ notSelected: '/images/Slot_S.webp', selected: '/images/Slot_S.webp' },
 				{ notSelected: '/images/Live_S.webp', selected: '/images/Live_S.webp' },
-				{ notSelected: '/images/Sport_S.webp', selected: '/images/Sport_S.webp' },
+				{ notSelected: '/images/Sport_S.webp', selected: '/images/Sports_S.webp' },
 				{ notSelected: '/images/Lottery_S.webp', selected: '/images/Lottery_S.webp' },
 			],
 		};
@@ -248,13 +231,19 @@ export default {
 		},
 		scrollToElement(selector) {
 			const element = document.querySelector(selector);
+			console.log(element)
 			if (element) {
-				element.scrollIntoView({ behavior: 'smooth' });
+				const isMobile = window.innerWidth <= 768;
+				const stickyBarHeight = isMobile ? this.stickyBarHeightMobile : this.stickyBarHeightWeb;
+				const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+				const offsetPosition = elementPosition - stickyBarHeight;
+
+				window.scrollTo({
+					top: offsetPosition,
+					behavior: 'smooth'
+				});
 			}
 		}
-		// redirectToSignUp() {
-		// 	window.location.href = "https://www.ataskasino.com/en/sign-up/";
-		// }
 	}
 }
 </script>
@@ -290,7 +279,7 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Alpha_Bg_Img.webp');
+	background-image: url('/images/Starbucks88_BG_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top;
@@ -390,7 +379,7 @@ export default {
 
 .site-tabs {
 	flex-wrap: wrap;
-	margin: 20px 0;
+	margin: 10px 0;
 	position: relative;
 	display: flex;
 }
@@ -464,7 +453,8 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-image: linear-gradient(to bottom, #097CB8, #2FA1DC);
+	background-color: #4ba614;
+	background-image: linear-gradient(to bottom, #746526, #C3B32A);
 	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
 	text-align: center;
 	color: white;
