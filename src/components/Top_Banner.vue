@@ -52,15 +52,24 @@ export default {
 		}
 	},
 	setup() {
-		const { locale } = useI18n();
+		const { locale } = useI18n(); // Destructure locale from Vue I18n
+
 		const showPopup = ref(false);
-		const selectedLanguage = ref('en'); // Default language set to English
+		const selectedLanguage = ref(localStorage.getItem('selectedLanguage') || 'en');
 
 		const changeLanguage = (lang) => {
+			// Save the selected language to localStorage
+			localStorage.setItem('selectedLanguage', lang);
+
+			// Update Vue I18n locale
 			locale.value = lang;
-			selectedLanguage.value = lang;
-			showPopup.value = false; // Hide popup after changing language
+
+			// Hide popup and reset body overflow
+			showPopup.value = false;
 			document.body.style.overflow = 'auto';
+
+			// Optionally, reload the page
+			location.reload();
 		};
 
 		const togglePopup = () => {
@@ -80,9 +89,18 @@ export default {
 			selectedLanguage
 		};
 	},
-
+	mounted() {
+		// Retrieve and apply the stored language setting on component mount
+		const savedLanguage = localStorage.getItem('selectedLanguage');
+		if (savedLanguage) {
+			this.$i18n.locale = savedLanguage;
+			this.selectedLanguage = savedLanguage;
+		}
+	},
 };
 </script>
+
+
 
 <style scoped>
 @media screen and (max-width: 767px) {

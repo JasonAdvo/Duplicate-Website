@@ -2,18 +2,16 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt=""></a>
-			<div style="position: relative;">
-				<img src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
-				<div class="Jackpot">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.webp"
+					alt="Provider Listing"></a>
+			<div style="position: relative; display: flex; align-items: center; justify-content: flex-end;">
+				<img style="margin: 0;" src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
+				<div class="Jackpot" style="position: absolute; padding-right: 20px;">
 					<JackpotOdometer :value="jackpotValue" />
 				</div>
-
 			</div>
 
-			</img>
-
-			<table>
+			<table style="margin-top: 16px;">
 				<thead>
 					<tr>
 						<td colspan="5" class="title">
@@ -77,12 +75,12 @@
 				<div style="position: relative;">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" alt="Share">
-						<div class="button-grp" style="position: absolute; bottom: 0;">
+						<div class="button-grp" style="position: absolute; bottom: 10px;">
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Share_Btn.webp" alt="Share">
+								<img class="col-6 no-br mb-1" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Downline_Btn.webp" alt="Downline">
+								<img class="col-6 no-br mb-1" src="/images/LB_Downline_Btn.webp" alt="Downline">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
@@ -93,7 +91,8 @@
 						</div>
 					</a>
 				</div>
-				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp" alt="Telegram"></a>
+				<a href="https://t.me/atas77channel" rel="nofollow"><img style="margin-top: -16px;"
+						src="/images/LB_Img_3.webp" alt="Telegram"></a>
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
 						alt="Live Now"></a>
 			</div>
@@ -169,7 +168,7 @@ export default {
 }
 
 .LB_Imgs img {
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 16px;
 	border-radius: 8px;
 }
@@ -185,36 +184,6 @@ export default {
 	}
 }
 
-.Jackpot {
-	position: absolute;
-	top: 8px;
-	right: 30px;
-}
-
-@media screen and (max-width: 1030px) {
-	.Jackpot {
-		top: 1px;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	.Jackpot {
-		top: 25px;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	.Jackpot {
-		top: 6px;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	.Jackpot {
-		top: 0px;
-	}
-}
-
 .button-grp {
 	padding: 0 12px;
 	margin-bottom: 10px;
@@ -222,6 +191,7 @@ export default {
 
 .button-grp img {
 	padding: 0 2px;
+	width: 50%;
 }
 
 .no-br {

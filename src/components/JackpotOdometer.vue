@@ -5,9 +5,7 @@
 </template>
 
 <script>
-import 'odometer/themes/odometer-theme-car.css';
 import 'odometer/themes/odometer-theme-slot-machine.css';
-
 import Odometer from 'odometer';
 
 export default {

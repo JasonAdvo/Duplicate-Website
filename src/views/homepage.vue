@@ -19,7 +19,7 @@
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="handleSelection(index)">
-							<a :href="index === 0 ? '#MB_Img_Gallery' : '#footer-content'" @click="handleClick(index)">
+							<a :href="index === 0 ? '#MB_Img_Gallery' : '#footer-content'">
 								<img :src="selectedIndex === index ? image.selected : image.notSelected"
 									:alt="'Image ' + (index + 1)" />
 							</a>
@@ -85,7 +85,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2023 Starbucks88. ALL RIGHTS RESERVED.
+						2016-2023 ALPHA66. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>
@@ -231,7 +231,6 @@ export default {
 		},
 		scrollToElement(selector) {
 			const element = document.querySelector(selector);
-			console.log(element)
 			if (element) {
 				const isMobile = window.innerWidth <= 768;
 				const stickyBarHeight = isMobile ? this.stickyBarHeightMobile : this.stickyBarHeightWeb;

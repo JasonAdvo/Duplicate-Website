@@ -37,13 +37,13 @@
 				<div style="position: relative;">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" class="no-br" alt="Share">
-						<div class="button-grp" style="position: absolute; bottom: -2px;">
+						<div class="button-grp" style="position: absolute; bottom: 10px;">
 							<a href=""></a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Share_Btn.webp" alt="Share">
+								<img class="col-6 no-br mb-1" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Downline_Btn.webp" alt="Downline">
+								<img class="col-6 no-br mb-1" src="/images/LB_Downline_Btn.webp" alt="Downline">
 							</a>
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
@@ -54,8 +54,10 @@
 						</div>
 					</a>
 				</div>
-				<div class="RB-mobile-img-grp" style="margin-top: 16px;">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_3.webp"
+				<div class="RB-mobile-img-grp">
+					<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp"
+							alt="Telegram"></a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
 							alt="Live Now"></a>
 				</div>
 			</div>
@@ -70,7 +72,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="https://www.ataskasino.com/en/sport-live/" rel="nofollow">
+						<a href="https://www.ataskasino.com/login/" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -89,11 +91,11 @@
 			</div>
 
 			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/ATAS-BAds.webp"
-					alt="188% Welcome Bonus" style="margin-bottom: 16px;">
+					alt="188% Welcome Bonus" style="margin-bottom: 16px; width: 100%;">
 			</a>
 
 			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus50_.webp"
-					alt="Weekly Check In Bonus" style="margin-bottom: 16px;">
+					alt="Weekly Check In Bonus" style="margin-bottom: 16px; width: 100%">
 			</a>
 		</div>
 	</div>
@@ -282,12 +284,6 @@ export default {
 	.button-grp {
 		bottom: -5px !important;
 		padding: 0 10px;
-	}
-}
-
-@media screen and (max-width: 330px) {
-	.button-grp {
-		bottom: -14px !important;
 	}
 }
 

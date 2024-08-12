@@ -36,6 +36,12 @@ export default {
 
 <style>
 .max-h {
-	max-height: 156.75px;
+	max-height: 150px !important;
+}
+
+@media screen and (min-width: 430px) and (max-width: 769px) {
+	.max-h {
+		max-height: 230px !important;
+	}
 }
 </style>
