@@ -1,10 +1,10 @@
 <template>
 	<div class="relative">
-
-		<div class="Top_Banner_Container" @click="redirectToHome"></div>
+		<a href="/">
+			<div class="Top_Banner_Container" />
+		</a>
 		<a class="Alpha66_logo" href="/"><img src="/images/ALPHA66_Logo_Img.webp" alt="Alpha66 Logo"></a>
-		<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/crown99_TB_Img_2.webp"
-				alt="A66 Group"></a>
+		<img class="A66_Group" src="/images/crown99_TB_Img_2.webp" alt="A66 Group">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
@@ -47,9 +47,7 @@ export default {
 		return {}
 	},
 	methods: {
-		redirectToHome() {
-			this.$router.push('/');
-		}
+
 	},
 	setup() {
 		const { locale } = useI18n(); // Destructure locale from Vue I18n
@@ -128,17 +126,18 @@ export default {
 
 .Alpha66_logo {
 	position: absolute;
+	top: 10px;
 	left: 20px;
 }
 
 .Alpha66_logo img {
-	width: 140px !important;
+	width: 240px !important;
 	height: auto !important;
 }
 
 @media screen and (max-width: 1030px) {
 	.Alpha66_logo img {
-		width: 190px !important;
+		width: 200px !important;
 	}
 }
 
@@ -154,7 +153,7 @@ export default {
 	}
 }
 
-.relative a {
+.A66_Group {
 	position: absolute;
 	top: 20px;
 	right: 60px;
@@ -163,6 +162,10 @@ export default {
 @media screen and (max-width: 430px) {
 	.relative a {
 		top: 6px
+	}
+
+	.A66_Group {
+		top: 5px;
 	}
 }
 

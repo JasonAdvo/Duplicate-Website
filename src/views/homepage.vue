@@ -69,7 +69,7 @@
 							<img src="/images/payment-list.webp" alt="payment-list">
 						</div>
 						<div class="certification">
-							<p>CERTIFICATE & SECURITY</p>
+							<p>{{ $t('content.Certificate_N_Security') }}</p>
 							<img src="/images/Cert-list.webp" alt="certificate-list">
 						</div>
 						<div class="follow">

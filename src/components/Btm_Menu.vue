@@ -12,7 +12,7 @@
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 					<img src="/images/Btm_Popup_Img.webp" alt="Join Us Now">
 				</a>
 			</div>

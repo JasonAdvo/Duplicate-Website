@@ -2,8 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.webp"
-					alt="Provider Listing"></a>
+			<img src="/images/LB_Img_1.webp" alt="Provider Listing">
 			<div style="position: relative; display: flex; align-items: center; justify-content: flex-end;">
 				<img style="margin: 0;" src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
 				<div class="Jackpot" style="position: absolute; padding-right: 20px;">

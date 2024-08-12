@@ -304,6 +304,7 @@ export default {
 	padding: 20px 0 10px 0;
 	margin-bottom: 16px;
 	border-radius: 20px;
+	box-shadow: 0 0 3px rgb(0 0 0 / 50%);
 }
 
 @media screen and (max-width: 430px) {
