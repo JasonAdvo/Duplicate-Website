@@ -44,9 +44,7 @@ import { useI18n } from 'vue-i18n';
 export default {
 	name: 'TopBanner',
 	data() {
-		return {
-			sentence: `Welcome to Starbucks88 Club MY, Malaysia's premier crypto gambling site! Dive into an exciting world of slots, table games, and live casino action, all powered by secure cryptocurrency transactions. Enjoy exclusive bonuses, fast payouts, and top-notch gaming. Join now and elevate your entertainment with Starbucks88 Club MY!`,
-		}
+		return {}
 	},
 	methods: {
 		redirectToHome() {
@@ -191,14 +189,14 @@ export default {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: white;
+	background: black;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	z-index: 9999;
 	text-align: center;
 	width: 300px;
 	border: 1px solid #FFC107;
-	color: black;
+	color: white;
 }
 
 .popup-card div {

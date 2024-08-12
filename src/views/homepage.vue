@@ -453,8 +453,7 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-color: #4ba614;
-	background-image: linear-gradient(to bottom, #746526, #C3B32A);
+	background-image: linear-gradient(to bottom, #097CB8, #2FA1DC);
 	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
 	text-align: center;
 	color: white;
