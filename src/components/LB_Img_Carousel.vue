@@ -4,17 +4,12 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/LB_Sliding_Img_1.webp" class="d-block w-100 max-h" alt="slide1">
+					<img width="100%" src="/images/bonus388.png" class="d-block w-100 max-h" alt="Bonus 388">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/LB_Sliding_Img_2.webp" class="d-block w-100 max-h" alt="slide2">
-				</a>
-			</div>
-			<div class="carousel-item" data-bs-interval="4000">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/LB_Sliding_Img_5.webp" class="d-block w-100 max-h" alt="slide3">
+					<img width="100%" src="/images/bonus50_.webp" class="d-block w-100 max-h" alt="Bonus 50">
 				</a>
 			</div>
 		</div>

@@ -2,51 +2,33 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="https://t.me/atas77channel" rel="nofollow" class="social-media-icon">
-					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
-				</a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow" class="social-media-icon">
-					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
-				</a>
-			</div>
-
-			<div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
-					<img src="/images/Btm_Popup_Img.webp" alt="Join Us Now">
-				</a>
 			</div>
 
 
 			<div class="footer-content">
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/" rel="nofollow">
-						<img src="/images/Btm_Home_Btn.webp" alt="Home">
+						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Wallet_Btn.webp" alt="History">
+						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Promo_Btn.webp" alt="Setting">
+						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Lucky_Btn.webp" alt="Bonus">
+						<img src="/images/Btm_Chat_Img.gif" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Live_Btn.webp" alt="Live Chat">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Btm_Profile_Btn.webp" alt="Setting">
+						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
 
@@ -79,7 +61,7 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 55px;
-	background-image: url('/images/Btm_Bg_Img.webp');
+	background-image: url('/images/IJaya_TB_Bg_Img.webp');
 	background-size: 100% 100%;
 }
 

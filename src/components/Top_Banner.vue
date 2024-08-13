@@ -2,7 +2,7 @@
 	<div class="relative">
 
 		<div class="Top_Banner_Container" @click="redirectToHome"></div>
-		<a class="Alpha66_logo" href="/"><img src="/images/ALPHA66_Logo_Img.webp" alt="Alpha66 Logo"></a>
+		<a class="Alpha66_logo" href="/"><img src="/images/IJaya_Logo.webp" alt="IJaya Logo"></a>
 		<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/crown99_TB_Img_2.webp"
 				alt="A66 Group"></a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
@@ -27,11 +27,6 @@
 				<span v-if="selectedLanguage === 'zh'" class="tick">
 					<i class="fa fa-check"></i>
 				</span>
-			</div>
-		</div>
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				{{ $t('content.sentence') }}
 			</div>
 		</div>
 	</div>
@@ -116,7 +111,7 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TB_Img.webp');
+	background-image: url('/images/IJaya_TB_Bg_Img.webp');
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */

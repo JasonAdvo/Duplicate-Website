@@ -56,37 +56,11 @@
 				</a>
 				<div class="footer-content">
 					<div class="footer-detail">
-						<div class="license">
-							<p>{{ $t('content.Game_License') }}</p>
-							<img src="/images/Footer-License-Img.webp" alt="Game License">
-						</div>
-						<div class="game">
-							{{
-								$t('content.Game_License_Content') }}
-						</div>
-						<div class="payment">
-							<p>{{ $t('content.Payment_Methods') }}</p>
-							<img src="/images/payment-list.webp" alt="payment-list">
-						</div>
-						<div class="certification">
-							<p>CERTIFICATE & SECURITY</p>
-							<img src="/images/Cert-list.webp" alt="certificate-list">
-						</div>
-						<div class="follow">
-							<p>{{ $t('content.Follow_Us') }}</p>
-							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
-							<a href="https://t.me/atas77channel" rel="nofollow"><img class="main-pulse"
-									src="/images/telegram.webp" alt="telegram"></a>
-							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
-							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
-							<a href="https://rebrand.ly/ATASxSEO2P" rel="nofollow"><img class="main-pulse"
-									src="/images/whatsapp.webp" alt="whatsapp"></a>
-							<a href="/"><img class=" main-pulse" src="/images/mail.webp" alt="mail"></a>
-						</div>
+
 					</div>
-					<div class="copyright">
+					<!-- <div class="copyright">
 						2016-2023 ALPHA66. ALL RIGHTS RESERVED.
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -106,14 +80,12 @@ import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
 import PopUpCard from '@/components/PopUpCard.vue';
 import BackToTop from '@/components/BackToTop.vue';
-import MobileGameSplide from '@/components/Mobile_Game_Splide.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		MobileGameSplide,
 		PopUpCard,
 		BackToTop,
 	},
@@ -160,20 +132,11 @@ export default {
 				"Thai Street Food"
 			],
 			images: [
-				{ notSelected: '/images/ClotPlayF_S.webp', selected: '/images/ClotPlayF_S.webp' },
-				{ notSelected: '/images/ClotPlay_S.webp', selected: '/images/ClotPlay_S.webp' },
-				{ notSelected: '/images/JILI_S.webp', selected: '/images/JILI_S.webp' },
-				{ notSelected: '/images/BPG_S.webp', selected: '/images/BPG_S.webp' },
-				{ notSelected: '/images/SPINIX_S.webp', selected: '/images/SPINIX_S.webp' },
-				{ notSelected: '/images/RICHG_S.webp', selected: '/images/RICHG_S.webp' },
-				{ notSelected: '/images/NS_S.webp', selected: '/images/NS_S.webp' },
-				{ notSelected: '/images/Pegasus_S.webp', selected: '/images/Pegasus_S.webp' },
-				{ notSelected: '/images/AP_S.webp', selected: '/images/AP_S.webp' },
-				{ notSelected: '/images/AceWin_S.webp', selected: '/images/AceWin_S.webp' },
-				{ notSelected: '/images/Slot_S.webp', selected: '/images/Slot_S.webp' },
-				{ notSelected: '/images/Live_S.webp', selected: '/images/Live_S.webp' },
-				{ notSelected: '/images/Sport_S.webp', selected: '/images/Sports_S.webp' },
-				{ notSelected: '/images/Lottery_S.webp', selected: '/images/Lottery_S.webp' },
+				{ notSelected: '/images/JILI_Game_Img.webp', selected: '/images/JILI_Game_Img.webp' },
+				{ notSelected: '/images/BT_Game_Img.webp', selected: '/images/BT_Game_Img.webp' },
+				{ notSelected: '/images/EVO888.webp', selected: '/images/EVO888.webp' },
+				{ notSelected: '/images/Lottery_Game_Img.webp', selected: '/images/Lottery_Game_Img.webp' },
+				{ notSelected: '/images/Sport_Game_Img.webp', selected: '/images/Sport_Game_Img.webp' },
 			],
 		};
 	},
@@ -222,27 +185,22 @@ export default {
 			this.selectedIndex = index;
 		},
 		handleRedirect(index) {
+			// Define the scrollIntoView function
+			const scrollIntoView = (selector) => {
+				const element = document.querySelector(selector);
+				if (element) {
+					element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			};
+
 			// Check the index to determine the redirection or scrolling
 			if (index === 0) {
-				this.scrollToElement('.MB_Img_Gallery');
+				scrollIntoView('.MB_Img_Gallery');
 			} else {
-				this.scrollToElement('.footer-content');
-			}
-		},
-		scrollToElement(selector) {
-			const element = document.querySelector(selector);
-			if (element) {
-				const isMobile = window.innerWidth <= 768;
-				const stickyBarHeight = isMobile ? this.stickyBarHeightMobile : this.stickyBarHeightWeb;
-				const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-				const offsetPosition = elementPosition - stickyBarHeight;
-
-				window.scrollTo({
-					top: offsetPosition,
-					behavior: 'smooth'
-				});
+				scrollIntoView('.footer-content');
 			}
 		}
+
 	}
 }
 </script>
@@ -278,10 +236,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Alpha_Bg_Img.webp');
-	background-attachment: fixed;
+	background-image: url('/images/IJaya_Bg_Img.webp');
 	background-size: cover;
-	background-position: top;
 }
 
 .Mobile_Middle_Banner {
@@ -628,7 +584,7 @@ body {
 }
 
 .topbanner {
-	position: sticky;
+	/* position: sticky; */
 	top: 0;
 	z-index: 1;
 }

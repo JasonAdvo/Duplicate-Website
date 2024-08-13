@@ -2,155 +2,58 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.webp"
-					alt="Provider Listing"></a>
-			<div style="position: relative; display: flex; align-items: center; justify-content: flex-end;">
-				<img style="margin: 0;" src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
-				<div class="Jackpot" style="position: absolute; padding-right: 20px;">
-					<JackpotOdometer :value="jackpotValue" />
-				</div>
-			</div>
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.gif"
+					alt="Free Credit RM 10"></a>
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_2.webp"
+					alt="Grand Launch"></a>
+			<img src="/images/LB_Img_3.webp" alt="Payment List">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.gif"
+					alt="Free RM 55"></a>
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_5.gif"
+					alt="Claim Free Credit RM 10"></a>
+			<img src="/images/LB_Img_6.webp" alt="Progressive Jackpot and Live Transaction">
+			<p>FREE SHARE RM3</p>
 
-			<table style="margin-top: 16px;">
-				<thead>
-					<tr>
-						<td colspan="5" class="title">
-							<span>
-								LIVE TRANSACTION
-							</span>
-							<div class="live main-blink-me">
-								LIVE
-								<span></span>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="green">
-							TOP UP
-						</td>
-						<td colspan="3" class="red">
-							WITHDRAW
-						</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>60*******095</td>
-						<td class="amount">RM50.00</td>
-						<td>60******739</td>
-						<td class="amount">RM600.05</td>
-						<td>JILI</td>
-					</tr>
-					<tr>
-						<td>60*******399</td>
-						<td class="amount">RM10.00</td>
-						<td>60******209</td>
-						<td class="amount">RM127.09</td>
-						<td>KISS918</td>
-					</tr>
-					<tr>
-						<td>60*******874</td>
-						<td class="amount">RM5.00</td>
-						<td>60******316</td>
-						<td class="amount">RM20.09</td>
-						<td>JILI</td>
-					</tr>
-					<tr>
-						<td>60*******399</td>
-						<td class="amount">RM10.00</td>
-						<td>60******453</td>
-						<td class="amount">RM127.05</td>
-						<td>MEGA888</td>
-					</tr>
-					<tr>
-						<td>60*******110</td>
-						<td class="amount">RM50.00</td>
-						<td>60******716</td>
-						<td class="amount">RM50.00</td>
-						<td>JILI</td>
-					</tr>
-				</tbody>
-			</table>
 			<div class="Tablet-Mobile-view">
-				<div style="position: relative;">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_7.webp"
+						alt="Get Bonus"></a>
+				<div class="button-grp">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/LB_Img_2.webp" alt="Share">
-						<div class="button-grp" style="position: absolute; bottom: 10px;">
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br mb-1" src="/images/LB_Share_Btn.webp" alt="Share">
-							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br mb-1" src="/images/LB_Downline_Btn.webp" alt="Downline">
-							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
-							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_More_Btn.webp" alt="More">
-							</a>
-						</div>
+						<img class="col-6 no-br mb-1" src="/images/LB_Share_Img.webp" alt="Share">
+					</a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img class="col-6 no-br mb-1" src="/images/LB_Downline_Img.webp" alt="Downline">
+					</a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
+					</a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img class="col-6 no-br" src="/images/LB_Free_Img.gif" alt="More">
 					</a>
 				</div>
-				<a href="https://t.me/atas77channel" rel="nofollow"><img style="margin-top: -16px;"
-						src="/images/LB_Img_3.webp" alt="Telegram"></a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
-						alt="Live Now"></a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_8.webp"
+						alt="888% Slot Bonus"></a>
+				<a href="/" rel="nofollow"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
+				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
+						alt="Telegram"></a>
+				<a href="/" rel="nofollow"><img src="/images/LB_App_Img.webp" alt="App Download"></a>
 			</div>
-
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus388.webp"
-					alt="188% Welcome Bonus">
-			</a>
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/Percuma RM 50.webp"
-					alt="Top Up Bonus">
-			</a>
 		</div>
 	</div>
 </template>
 
 <script>
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
-import JackpotOdometer from '/src/components/JackpotOdometer.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
-		JackpotOdometer
 	},
 	data() {
 		return {
-			jackpotValue: 10000000 // Starting value, 9 digits
+
 		};
 	},
-	mounted() {
-		this.loadJackpotValue();
-		this.startJackpotIncrease();
-	},
-	methods: {
-		startJackpotIncrease() {
-			setInterval(() => {
-				this.jackpotValue += Math.floor(Math.random() * 10); // Increment by a random value up to 9999
-				this.scheduleNextIncrease();
-			}, this.getRandomDelay());
-		},
-		scheduleNextIncrease() {
-			setTimeout(() => {
-				this.jackpotValue += Math.floor(Math.random() * 10); // Increment by a random value up to 9999
-				this.scheduleNextIncrease();
-			}, this.getRandomDelay());
-		},
-		getRandomDelay() {
-			return Math.floor(Math.random() * (8000 - 3000 + 1)) + 3000; // Delay between 3 and 8 seconds
-		},
-		saveJackpotValue() {
-			localStorage.setItem('jackpotValue', this.jackpotValue);
-		},
-		loadJackpotValue() {
-			const storedValue = localStorage.getItem('jackpotValue');
-			if (storedValue !== null) {
-				this.jackpotValue = parseInt(storedValue, 10);
-			}
-		}
-	}
 };
 </script>
 
@@ -196,111 +99,5 @@ export default {
 
 .no-br {
 	border-radius: unset !important;
-}
-
-.title {
-	position: relative;
-}
-
-.title span {
-	color: #d3ab22;
-	font-weight: 700;
-	padding-left: 5px;
-}
-
-.live {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	top: 3px;
-	right: 3px;
-	background: red;
-	padding: 1px 3px;
-	border-radius: 2px;
-	color: #fff;
-	font-weight: 400;
-	height: 13px;
-}
-
-.live span {
-	display: block;
-	width: 8px;
-	height: 8px;
-	background: #fff;
-	float: right;
-	border-radius: 10px;
-	margin: 1px 1px 0 3px;
-}
-
-.main-blink-me {
-	animation: blinkme 1.5s linear infinite;
-}
-
-@keyframes blinkme {
-	0% {
-		display: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-table {
-	width: 100%;
-	margin-bottom: 16px;
-}
-
-@media screen and (max-width: 769px) {
-	table {
-		margin-bottom: 16px;
-	}
-}
-
-table td {
-	font-size: 11px;
-	color: black;
-	border: 1px solid white;
-	font-weight: 500;
-}
-
-@media screen and (max-width: 321px) {
-	table td {
-		font-size: 10px;
-	}
-}
-
-.green {
-	background: linear-gradient(90deg, rgba(8, 207, 255, 1) 35%, rgba(0, 154, 255, 1) 100%);
-	color: white;
-	padding-left: 5px;
-}
-
-.red {
-	background: linear-gradient(90deg, rgba(8, 207, 255, 1) 35%, rgba(0, 154, 255, 1) 100%);
-	color: white;
-	padding-left: 5px;
-}
-
-tbody td {
-	width: 20%;
-	height: 20px;
-	padding: 4px;
-}
-
-table,
-th,
-td {
-	border: 1px solid black !important;
-	/* Change to desired color */
-}
-
-.amount {
-	color: #1075b8;
-	text-align: right;
 }
 </style>
