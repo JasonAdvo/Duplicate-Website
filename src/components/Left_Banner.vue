@@ -1,7 +1,7 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<LB_Img_Carousel />
+			<LB_Img_Carousel_AK />
 			<img src="/images/LB_Img_1.webp" alt="Provider Listing">
 			<div style="position: relative; display: flex; align-items: center; justify-content: flex-end;">
 				<img style="margin: 0;" src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
@@ -90,29 +90,26 @@
 						</div>
 					</a>
 				</div>
-				<a href="https://t.me/atas77channel" rel="nofollow"><img style="margin-top: -16px;"
-						src="/images/LB_Img_3.webp" alt="Telegram"></a>
+				<div style="margin-top: -24px;">
+					<LB_Img_Carousel />
+				</div>
+				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp" alt="Telegram"></a>
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
 						alt="Live Now"></a>
 			</div>
-
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus388.webp"
-					alt="188% Welcome Bonus">
-			</a>
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/Percuma RM 50.webp"
-					alt="Top Up Bonus">
-			</a>
 		</div>
 	</div>
 </template>
 
 <script>
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+import LB_Img_Carousel_AK from '/src/components/LB_Img_Carousel_AK.vue';
 import JackpotOdometer from '/src/components/JackpotOdometer.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
+		LB_Img_Carousel_AK,
 		JackpotOdometer
 	},
 	data() {

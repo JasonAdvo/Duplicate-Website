@@ -1,6 +1,10 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<img width="100%" src="/images/ATAS-BAds.webp" class="d-block w-100 br-8 height-208"
+					style="margin-bottom: 16px;" alt="188% Welcome Bonus">
+			</a>
 			<div
 				style="padding: 8px 10px; box-shadow: 2px 4px 20px rgb(14 14 14 / 61%); border-radius: 8px; margin-bottom: 16px;">
 				<div class="login-register-container">
@@ -31,8 +35,6 @@
 					</div>
 				</div>
 			</div>
-
-
 			<div class="Tablet-Mobile-view">
 				<div style="position: relative;">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
@@ -54,6 +56,10 @@
 						</div>
 					</a>
 				</div>
+				<div style="margin-top: -24px;">
+					<LB_Img_Carousel />
+				</div>
+
 				<div class="RB-mobile-img-grp">
 					<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp"
 							alt="Telegram"></a>
@@ -89,21 +95,24 @@
 					</div>
 				</a>
 			</div>
-
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/ATAS-BAds.webp"
-					alt="188% Welcome Bonus" style="margin-bottom: 16px; width: 100%;">
-			</a>
-
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/bonus50_.webp"
-					alt="Weekly Check In Bonus" style="margin-bottom: 16px; width: 100%">
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<img width="100%" src="/images/bonus50_.webp" class="d-block w-100 br-8 height-208"
+					alt="Weekly Check In Bonus">
 			</a>
 		</div>
 	</div>
 </template>
 
 <script>
+import RB_Img_Carousel_AK from '/src/components/RB_Img_Carousel_AK.vue';
+import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+
 export default {
 	name: 'RightBanner',
+	components: {
+		RB_Img_Carousel_AK,
+		LB_Img_Carousel
+	}
 
 };
 </script>

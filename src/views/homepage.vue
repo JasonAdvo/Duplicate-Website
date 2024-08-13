@@ -56,6 +56,9 @@
 				</a>
 				<div class="footer-content">
 					<div class="footer-detail">
+						<div class="Visit_site">
+							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
+						</div>
 						<div class="license">
 							<p>{{ $t('content.Game_License') }}</p>
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
@@ -352,11 +355,6 @@ export default {
 	}
 }
 
-.Middle_Inner_Container a {
-	padding: 0;
-	color: green;
-}
-
 .google-map-link {
 	font-style: italic;
 	color: #f0d843 !important;
@@ -631,5 +629,22 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 1;
+}
+
+@keyframes blink {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.Visit_site a {
+	animation: blink 1s infinite;
+	/* Adjust the duration (1s) and the repetition (infinite) as needed */
 }
 </style>
