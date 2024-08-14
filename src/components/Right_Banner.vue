@@ -1,92 +1,92 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<div>
-				<div class="Laptop-view">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/Percuma RM 50.webp" alt="Percuma RM 50">
-					</a>
-				</div>
-
-				<p>FREE SHARE RM3</p>
-
-				<div class="login-register-container">
-					<a href="https://www.ataskasino.com/login/" rel="nofollow">
-						<img class="Join" src="/images/RB_Login_Img.gif" alt="Login">
-					</a>
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="Register" src="/images/RB_Register_Img.gif" alt="Register">
-					</a>
-				</div>
-
-				<div class="RB_Info_Container" style="display: flex">
-					<div class="RB_Small_Text_Container">
-						<div class="Baki">
-							<p>{{ $t('message.balance') }} </p>
-							<p><strong>0.00</strong></p>
-						</div>
-						<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
-						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
-					</div>
-					<div class="RB_Cash_Btn_Container">
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-							<img class="no-br" src="/images/RB_Deposit_Img.webp" alt="Deposit">
-						</a>
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-							<img class="no-br" src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
-						</a>
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-							<img class="no-br" src="/images/RB_Refresh_Img.webp" alt="Refresh">
-						</a>
-					</div>
-				</div>
-
-				<div class="Laptop-view">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/LB_Img_2.webp" alt="Grand Launch">
-					</a>
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/RB_Img_2.webp" alt="388% Welcome Bonus">
-					</a>
-				</div>
-
+			<div class="Laptop-view">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img src="/images/RB_Img_3.webp" alt="388% Welcome Bonus">
+					<img src="/images/Percuma RM 50.webp" alt="Percuma RM 50">
 				</a>
+			</div>
 
-				<div class="Laptop-view">
+			<div class="RM3">
+				<p>FREE SHARE RM3</p>
+			</div>
+
+			<div class="login-register-container">
+				<a href="https://www.ataskasino.com/login/" rel="nofollow">
+					<img class="Join" src="/images/RB_Login_Img.gif" alt="Login">
+				</a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img class="Register" src="/images/RB_Register_Img.gif" alt="Register">
+				</a>
+			</div>
+
+			<div class="RB_Info_Container" style="display: flex">
+				<div class="RB_Small_Text_Container">
+					<div class="Baki">
+						<p>{{ $t('message.balance') }} </p>
+						<p><strong>0.00</strong></p>
+					</div>
+					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
+					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
+				</div>
+				<div class="RB_Cash_Btn_Container">
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/LB_Img_1.gif" alt="Free Credit RM 10">
+						<img class="no-br" src="/images/RB_Deposit_Img.webp" alt="Deposit">
 					</a>
 					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img src="/images/LB_Img_5.gif" alt="Claim Free Credit RM 10">
+						<img class="no-br" src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+					</a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img class="no-br" src="/images/RB_Refresh_Img.webp" alt="Refresh">
 					</a>
 				</div>
-				<div class="Tablet-Mobile-view">
-					<div style="position: relative;">
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_7.webp"
-								alt="Get Bonus"></a>
-						<div class="button-grp">
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br mb-1" src="/images/LB_Share_Img.webp" alt="Share">
-							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br mb-1" src="/images/LB_Downline_Img.webp" alt="Downline">
-							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
-							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-								<img class="col-6 no-br" src="/images/LB_Free_Img.gif" alt="More">
-							</a>
-						</div>
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_8.webp"
-								alt="888% Slot Bonus"></a>
-						<a href="/" rel="nofollow"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
-						<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
-								alt="Telegram"></a>
-						<a href="/" rel="nofollow"><img src="/images/LB_App_Img.webp" alt="App Download"></a>
+			</div>
+
+			<div class="Laptop-view">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img src="/images/LB_Img_2.webp" alt="Grand Launch">
+				</a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img src="/images/RB_Img_2.webp" alt="388% Welcome Bonus">
+				</a>
+			</div>
+
+			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<img src="/images/RB_Img_3.webp" alt="388% Welcome Bonus">
+			</a>
+
+			<div class="Laptop-view">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img src="/images/LB_Img_1.gif" alt="Free Credit RM 10">
+				</a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img src="/images/LB_Img_5.gif" alt="Claim Free Credit RM 10">
+				</a>
+			</div>
+			<div class="Tablet-Mobile-view">
+				<div style="position: relative;">
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_7.webp"
+							alt="Get Bonus"></a>
+					<div class="button-grp">
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="col-6" src="/images/LB_Share_Img.webp" alt="Share">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="col-6" src="/images/LB_Downline_Img.webp" alt="Downline">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="col-6" src="/images/LB_Copy_Img.webp" alt="Copy">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="col-6" src="/images/LB_Free_Img.gif" alt="More">
+						</a>
 					</div>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_8.webp"
+							alt="888% Slot Bonus"></a>
+					<a href="/" rel="nofollow"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
+					<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
+							alt="Telegram"></a>
+					<a href="/" rel="nofollow"><img src="/images/LB_App_Img.webp" alt="App Download"></a>
 				</div>
 			</div>
 		</div>
@@ -102,21 +102,15 @@ export default {
 
 <style scoped>
 .Right_Banner_Container {
-	padding: 10px 15px 0px 15px;
+	margin-top: 10px;
+	padding: 0px 15px 0px 15px;
 	height: 100%;
-	border-left: 1px solid rgba(255, 255, 255, .5);
-}
-
-@media screen and (min-width: 769px) {
-	.Right_Banner_Container {
-		background: rgba(0, 0, 0, .3);
-	}
+	background: rgba(0, 0, 0, .3);
 }
 
 @media screen and (max-width: 430px) {
 	.Right_Banner_Container {
 		padding: 0 15px 0px 15px;
-		border-left: unset;
 	}
 
 	.login-register-container {
@@ -125,16 +119,19 @@ export default {
 
 }
 
+.RM3 {
+	text-align: center;
+	color: #143808;
+	font-weight: bolder;
+}
+
 .RB_Imgs img {
-	max-width: 100%;
-	border-radius: 8px;
+	width: 100%;
+	margin-bottom: 16px;
 }
 
 .RB_Info_Container {
-	background-image: url('/images/RB_Cash_Btn_Container_Img.webp');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: bottom;
+	margin-bottom: 16px;
 }
 
 .RB_Cash_Btn_Container {
@@ -259,24 +256,9 @@ export default {
 }
 
 .button-grp {
-	margin-top: -23%;
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 16px;
-	padding: 0 20px;
-}
-
-@media screen and (max-width: 769px) {
-	.button-grp {
-		bottom: 17px !important;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	.button-grp {
-		bottom: -5px !important;
-		padding: 0 10px;
-	}
 }
 
 .button-grp a {
@@ -285,8 +267,7 @@ export default {
 
 .button-grp img {
 	width: 100%;
-	padding: 0 5px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
 .sport-betting-container {

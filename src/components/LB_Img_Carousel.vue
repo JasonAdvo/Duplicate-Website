@@ -1,15 +1,14 @@
 <template>
-	<div style="padding-top: 10px; margin-bottom: 16px;" id="carouselExampleInterval" class="carousel slide"
-		data-bs-ride="carousel">
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/bonus388.png" class="d-block w-100 max-h" alt="Bonus 388">
+					<img width="100%" src="/images/bonus388.png" class="d-block w-100" alt="Bonus 388">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/bonus50_.webp" class="d-block w-100 max-h" alt="Bonus 50">
+					<img width="100%" src="/images/bonus50_.webp" class="d-block w-100" alt="Bonus 50">
 				</a>
 			</div>
 		</div>

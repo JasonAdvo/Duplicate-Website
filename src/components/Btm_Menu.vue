@@ -4,7 +4,6 @@
 			<div class="social-media-container">
 			</div>
 
-
 			<div class="footer-content">
 				<div class="d-f col">
 					<a href="https://www.ataskasino.com/" rel="nofollow">
@@ -62,7 +61,8 @@ export default {
 	width: 100%;
 	height: 55px;
 	background-image: url('/images/IJaya_TB_Bg_Img.webp');
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: 0px 47%;
 }
 
 .relative {
@@ -75,7 +75,7 @@ export default {
 	flex-direction: column;
 	position: absolute;
 	top: -500%;
-	right: 0;
+	left: 0;
 }
 
 .social-media-icon {

@@ -1,7 +1,7 @@
 <template>
-	<div>
+	<!-- <div>
 		<PopUpCard />
-	</div>
+	</div> -->
 
 	<div class="topbanner">
 		<TopBanner />
@@ -30,7 +30,7 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 34" :key="n">
+							<div class="image-wrapper" v-for="n in 38" :key="n">
 								<a v-if="n <= 18" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
@@ -38,11 +38,15 @@
 
 								<div v-if="n <= 18">
 									<a :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
+										<p class="Play_Text">{{ $t('message.Play') }}</p>
 									</a>
 								</div>
 								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
+									<div class="Play_Button">
+										<div class="Play_Button">
+											<p class="Play_Text">{{ $t('message.Play') }}</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -294,12 +298,9 @@ export default {
 }
 
 .MB_Img img {
-	/* padding: 0 15px 30px; */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-radius: 12px;
-	border: 1px solid #fff;
 }
 
 @media screen and (max-width: 576px) {
@@ -337,10 +338,13 @@ export default {
 	margin: 10px 0;
 	position: relative;
 	display: flex;
+	justify-content: space-around;
 }
 
 .image-container {
-	width: calc(100% / 14);
+	display: flex;
+	justify-content: center;
+	width: calc(100% /8);
 	cursor: pointer;
 }
 
@@ -356,10 +360,8 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
-		/* Fixed width for mobile view */
+		width: calc(100% / 5);
 		flex: 0 0 auto;
-		/* Prevent shrinking */
 	}
 
 	.site-tabs::-webkit-scrollbar {
@@ -402,18 +404,21 @@ export default {
 	width: 100%;
 }
 
-.image-wrapper p {
-	border-radius: 30px;
-	padding: 3px 0;
-	margin-top: 8px;
+.Play_Text {
+	display: inline-block;
+	background-image: url('/images/Play_Img.webp');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 	width: 100%;
-	border: 0;
-	background-image: linear-gradient(to bottom, #097CB8, #2FA1DC);
-	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
+	height: 30px;
 	text-align: center;
-	color: white;
-	font-size: 11px;
-	margin-bottom: 10px;
+	align-content: center;
+	color: green;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0;
+	text-decoration: none;
 }
 
 .image-wrapper p {

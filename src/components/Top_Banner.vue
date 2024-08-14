@@ -1,10 +1,11 @@
 <template>
 	<div class="relative">
+		<a href="/">
+			<div class="Top_Banner_Container"></div>
+		</a>
 
-		<div class="Top_Banner_Container" @click="redirectToHome"></div>
 		<a class="Alpha66_logo" href="/"><img src="/images/IJaya_Logo.webp" alt="IJaya Logo"></a>
-		<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/crown99_TB_Img_2.webp"
-				alt="A66 Group"></a>
+		<img class="Partnership" src="/images/TB_Partnership_Img.webp" alt="A66 Group">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
@@ -149,10 +150,15 @@ export default {
 	}
 }
 
-.relative a {
+.Partnership {
 	position: absolute;
 	top: 20px;
 	right: 60px;
+}
+
+.relative a {
+	position: absolute;
+	top: 20px;
 }
 
 @media screen and (max-width: 430px) {
@@ -162,7 +168,6 @@ export default {
 }
 
 .relative img {
-	width: 60px;
 	height: 40px;
 }
 
@@ -180,10 +185,11 @@ export default {
 
 .GT-icon {
 	position: absolute;
-	top: 28px;
+	top: 26px;
 	right: 20px;
 	z-index: 1;
-	color: white;
+	font-size: 30px;
+	color: green;
 	cursor: pointer;
 }
 
@@ -202,20 +208,20 @@ export default {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: black;
+	background: white;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	z-index: 9999;
 	text-align: center;
 	width: 300px;
-	border: 1px solid #FFC107;
-	color: white;
+	border: 2px solid green;
+	color: green;
 }
 
 .popup-card div {
 	display: block;
 	padding: 15px;
-	border-bottom: 1px solid #FFC107;
+	border-bottom: 1px solid green;
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
@@ -228,7 +234,7 @@ export default {
 }
 
 .tick {
-	color: #FFC107;
+	color: green;
 }
 
 .tick i {
