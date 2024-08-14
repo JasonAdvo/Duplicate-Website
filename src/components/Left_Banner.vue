@@ -6,10 +6,74 @@
 			</div>
 
 			<img src="/images/LB_Img_3.webp" alt="Payment List">
-			<img src="/images/LB_Img_6.webp" alt="Progressive Jackpot and Live Transaction">
-			<div class="RM3">
-				<p>{{ $t('content.Free_Share') }}</p>
+
+			<div style="position: relative; display: flex; align-items: center; justify-content: flex-end;">
+				<img style="margin: 0;" src="/images/LB_PJ_Img.gif" alt="Progressive Jackpot">
+				<div class="Jackpot" style="position: absolute; padding-right: 20px;">
+					<JackpotOdometer :value="jackpotValue" />
+				</div>
 			</div>
+
+			<table style="margin-top: 16px;">
+				<thead>
+					<tr>
+						<td colspan="5" class="title">
+							<span>
+								LIVE TRANSACTION
+							</span>
+							<div class="live main-blink-me">
+								LIVE
+								<span></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="green">
+							TOP UP
+						</td>
+						<td colspan="3" class="red">
+							WITHDRAW
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>60*******095</td>
+						<td class="amount">RM50.00</td>
+						<td>60******739</td>
+						<td class="amount">RM600.05</td>
+						<td>JILI</td>
+					</tr>
+					<tr>
+						<td>60*******399</td>
+						<td class="amount">RM10.00</td>
+						<td>60******209</td>
+						<td class="amount">RM127.09</td>
+						<td>KISS918</td>
+					</tr>
+					<tr>
+						<td>60*******874</td>
+						<td class="amount">RM5.00</td>
+						<td>60******316</td>
+						<td class="amount">RM20.09</td>
+						<td>JILI</td>
+					</tr>
+					<tr>
+						<td>60*******399</td>
+						<td class="amount">RM10.00</td>
+						<td>60******453</td>
+						<td class="amount">RM127.05</td>
+						<td>MEGA888</td>
+					</tr>
+					<tr>
+						<td>60*******110</td>
+						<td class="amount">RM50.00</td>
+						<td>60******716</td>
+						<td class="amount">RM50.00</td>
+						<td>JILI</td>
+					</tr>
+				</tbody>
+			</table>
 
 			<div class="Tablet-Mobile-view">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_7.webp"
@@ -40,10 +104,12 @@
 
 <script>
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+import JackpotOdometer from '/src/components/JackpotOdometer.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
+		JackpotOdometer
 	},
 	data() {
 		return {
@@ -97,7 +163,120 @@ export default {
 }
 
 .button-grp img {
-	width: 50%;
-	margin-bottom: 0;
+	width: 47%;
+	margin: 8px 2.5px 0 5px;
+}
+
+.title {
+	position: relative;
+	text-align: left;
+	background-color: white;
+}
+
+.title span {
+	color: #d3ab22;
+	font-weight: 700;
+	padding-left: 5px;
+}
+
+.live {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 3px;
+	right: 3px;
+	background: red;
+	padding: 1px 3px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 400;
+	height: 13px;
+}
+
+.live span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	float: right;
+	border-radius: 10px;
+	margin: 1px 1px 0 3px;
+}
+
+.main-blink-me {
+	animation: blinkme 1.5s linear infinite;
+}
+
+@keyframes blinkme {
+	0% {
+		display: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+table {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+@media screen and (max-width: 769px) {
+	table {
+		margin-bottom: 16px;
+	}
+}
+
+table td {
+	font-size: 11px;
+	color: black;
+	border: 1px solid white;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 321px) {
+	table td {
+		font-size: 10px;
+	}
+}
+
+.green {
+	background: linear-gradient(to bottom, rgba(29, 75, 31, 1) 0%, rgba(79, 255, 69, 1) 100%);
+	color: white;
+	padding-left: 5px;
+	text-align: left;
+}
+
+.red {
+	background: linear-gradient(to bottom, rgb(198 1 1) 51%, rgb(254 0 0) 100%);
+	color: white;
+	padding-left: 5px;
+	text-align: left;
+}
+
+tbody td {
+	width: 20%;
+	height: 20px;
+	padding: 4px;
+	text-align: left;
+}
+
+table,
+th,
+td {
+	border: 2px solid black !important;
+	/* Change to desired color */
+	background-color: white;
+}
+
+.amount {
+	color: #d3ab22;
+	text-align: right;
+	font-weight: 700;
 }
 </style>

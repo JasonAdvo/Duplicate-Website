@@ -143,8 +143,17 @@ export default {
 				{ notSelected: '/images/JILI_Game_Img.webp', selected: '/images/JILI_Game_Img.webp' },
 				{ notSelected: '/images/BT_Game_Img.webp', selected: '/images/BT_Game_Img.webp' },
 				{ notSelected: '/images/EVO888.webp', selected: '/images/EVO888.webp' },
+				{ notSelected: '/images/BongoG.webp', selected: '/images/BongoG.webp' },
+				{ notSelected: '/images/NS.webp', selected: '/images/NS.webp' },
+				{ notSelected: '/images/PGPlay.webp', selected: '/images/PGPlay.webp' },
+				{ notSelected: '/images/AW.webp', selected: '/images/AW.webp' },
+				{ notSelected: '/images/Joker.webp', selected: '/images/Joker.webp' },
+				{ notSelected: '/images/KAGaming.webp', selected: '/images/KAGaming.webp' },
+				{ notSelected: '/images/CGGaming.webp', selected: '/images/CGGaming.webp' },
+				{ notSelected: '/images/Slot.webp', selected: '/images/Slot.webp' },
+				{ notSelected: '/images/LiveG.webp', selected: '/images/LiveG.webp' },
 				{ notSelected: '/images/Lottery_Game_Img.webp', selected: '/images/Lottery_Game_Img.webp' },
-				{ notSelected: '/images/Sport_Game_Img.webp', selected: '/images/Sport_Game_Img.webp' },
+				{ notSelected: '/images/Sport_Game_Img.webp', selected: '/images/Sport_Game_Img.webp' }
 			],
 		};
 	},
@@ -349,7 +358,7 @@ export default {
 .image-container {
 	display: flex;
 	justify-content: center;
-	width: calc(100% /8);
+	width: calc(100% /14);
 	cursor: pointer;
 }
 

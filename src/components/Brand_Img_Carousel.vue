@@ -1,0 +1,73 @@
+<template>
+	<div id="carouselExampleIntervalBrand" class="carousel slide" data-bs-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-bs-target="#carouselExampleIntervalBrand" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#carouselExampleIntervalBrand" data-bs-slide-to="1"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="4000">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img width="100%" src="/images/Brand_Carousel_Img_1.webp" class="d-block w-100" alt="Bonus 388">
+				</a>
+			</div>
+			<div class="carousel-item" data-bs-interval="4000">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img width="100%" src="/images/Brand_Carousel_Img_2.webp" class="d-block w-100" alt="Bonus 50">
+				</a>
+			</div>
+			<div class="carousel-item active" data-bs-interval="4000">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img width="100%" src="/images/Brand_Carousel_Img_3.webp" class="d-block w-100" alt="Bonus 388">
+				</a>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+export default {
+	mounted() {
+		// Initialize the carousel
+		const carouselElement = document.querySelector('#carouselExampleIntervalBrand');
+
+		// Event listener for updating indicators on slide change
+		carouselElement.addEventListener('slide.bs.carousel', (event) => {
+			const indicators = document.querySelectorAll('.carousel-indicators li');
+			indicators.forEach((indicator, index) => {
+				if (index === event.to) {
+					indicator.classList.add('active');
+				} else {
+					indicator.classList.remove('active');
+				}
+			});
+		});
+	},
+};
+</script>
+
+<style>
+.carousel-indicators {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-indicators li {
+	width: 10px !important;
+	height: 10px !important;
+	border-radius: 50% !important;
+	background-color: #ccc !important;
+	cursor: pointer;
+}
+
+.carousel-indicators .active {
+	width: 12px;
+	height: 12px;
+	background-color: #fff !important;
+}
+</style>

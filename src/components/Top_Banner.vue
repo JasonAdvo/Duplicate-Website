@@ -4,8 +4,9 @@
 			<div class="Top_Banner_Container" />
 		</a>
 		<a href="/"><img class="IJaya_Logo" src="/images/IJaya_Logo.webp" alt="IJaya Logo"></a>
-		<img class="Partnership" src="/images/TB_Partnership_Img.webp" alt="A66 Group">
-		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
+		<img class="Partnership" src="/images/TB_Right_Img.gif" alt="Information Icon">
+		<img class="GT-icon" src="/images/Translate_Icon.webp" @click="togglePopup" alt="Translate Icon">
+		<!-- <i class="material-icons GT-icon">g_translate</i> -->
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
 		<!-- Pop-up Card -->
@@ -126,9 +127,9 @@ export default {
 
 .Partnership {
 	position: absolute;
-	top: 20px;
-	right: 60px;
-	height: 40px;
+	top: 10px;
+	right: 80px;
+	height: 60px;
 }
 
 @media screen and (max-width: 1030px) {
@@ -174,12 +175,13 @@ export default {
 
 .GT-icon {
 	position: absolute;
-	top: 26px;
+	top: 10px;
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
 	color: green;
 	cursor: pointer;
+	width: 50px;
 }
 
 .overlay {

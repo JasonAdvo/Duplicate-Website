@@ -11,35 +11,66 @@
 				<p>{{ $t('content.Free_Share') }}</p>
 			</div>
 
-			<div class="login-register-container">
-				<a href="https://www.ataskasino.com/login/" rel="nofollow">
-					<img class="Join" src="/images/RB_Login_Img.gif" alt="Login">
-				</a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img class="Register" src="/images/RB_Register_Img.gif" alt="Register">
-				</a>
+
+			<div class="Info_Container">
+				<div class="login-register-container">
+					<a href="https://www.ataskasino.com/login/" rel="nofollow">
+						<img class="Join" src="/images/RB_Login_Img.gif" alt="Login">
+					</a>
+					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<img class="Register" src="/images/RB_Register_Img.gif" alt="Register">
+					</a>
+				</div>
+
+				<div class="RB_Info_Container" style="display: flex">
+					<div class="RB_Small_Text_Container">
+						<div class="Baki">
+							<p>{{ $t('message.balance') }} </p>
+							<p><strong>RM0.00</strong></p>
+						</div>
+						<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
+					</div>
+					<div class="RB_Cash_Btn_Container">
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="no-br" src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="no-br" src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						</a>
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img class="no-br" src="/images/RB_Refresh_Img.webp" alt="Refresh">
+						</a>
+					</div>
+				</div>
 			</div>
 
-			<div class="RB_Info_Container" style="display: flex">
-				<div class="RB_Small_Text_Container">
-					<div class="Baki">
-						<p>{{ $t('message.balance') }} </p>
-						<p><strong>0.00</strong></p>
+			<div class="sport-betting-container">
+				<div class="SB-content-container">
+					<div class="team">
+						<img src="/images/team-1.webp" alt="team 1">
+						<p>{{ $t('message.team_1') }}</p>
 					</div>
-					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
-					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
+					<div class="time-info">
+						<p>{{ $t('message.start_time') }}</p>
+						<p>17 Aug 2024</p>
+						<p class="time">03:00</p>
+						<a href="https://www.ataskasino.com/login/" rel="nofollow">
+							<div class="bet-now-container">
+								<p>{{ $t('message.bet_now') }}</p>
+							</div>
+						</a>
+					</div>
+					<div class="team">
+						<img src="/images/team-2.webp" alt="team 2">
+						<p>{{ $t('message.team_2') }}</p>
+					</div>
 				</div>
-				<div class="RB_Cash_Btn_Container">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Deposit_Img.webp" alt="Deposit">
-					</a>
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
-					</a>
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Refresh_Img.webp" alt="Refresh">
-					</a>
-				</div>
+				<a href="https://www.ataskasino.com/en/sport-live/" rel="nofollow">
+					<div class="show-more-button-container">
+						<p>{{ $t('message.show_more') }}</p>
+					</div>
+				</a>
 			</div>
 
 			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
@@ -106,9 +137,14 @@ export default {
 }
 
 .RM3 {
-	text-align: center;
+	text-align: left;
 	color: #143808;
 	font-weight: bolder;
+	font-size: 30px;
+}
+
+.RM3 p {
+	margin: 0;
 }
 
 .RB_Imgs img {
@@ -116,7 +152,12 @@ export default {
 	margin-bottom: 16px;
 }
 
-.RB_Info_Container {
+.Info_Container {
+	background-image: url('/images/RB_Info_Bg_Img.webp');
+	border-radius: 8px;
+	padding: 8px 10px;
+	background-size: 100% 100%;
+	box-shadow: 1px 1px 8px rgb(14 14 14 / 20%);
 	margin-bottom: 16px;
 }
 
@@ -160,7 +201,7 @@ export default {
 }
 
 .RB_Small_Text_Container p {
-	color: #022f8a;
+	color: #143808;
 	font-size: 15px;
 	font-weight: 400;
 	font-family: Lato, sans-serif;
@@ -178,12 +219,12 @@ export default {
 }
 
 .Baki p {
-	color: #022f8a;
+	color: #143808;
 	margin: 5px 0;
 }
 
 .Baki strong {
-	color: #022f8a;
+	color: #143808;
 	font-size: 24px;
 }
 
@@ -239,10 +280,6 @@ export default {
 	.button-grp a {
 		width: 50% !important;
 	}
-
-	.button-grp img {
-		width: 100% !important;
-	}
 }
 
 .button-grp {
@@ -256,8 +293,8 @@ export default {
 }
 
 .button-grp img {
-	width: 100%;
-	margin-bottom: 0;
+	width: 98%;
+	margin: 8px 2.5px 0 5px;
 }
 
 .sport-betting-container {
@@ -266,7 +303,7 @@ export default {
 	background-size: cover;
 	padding: 20px 0 10px 0;
 	margin-bottom: 16px;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 @media screen and (max-width: 430px) {
@@ -351,6 +388,7 @@ export default {
 
 .team img {
 	margin-bottom: 10px;
+	width: 50px;
 }
 
 @font-face {
