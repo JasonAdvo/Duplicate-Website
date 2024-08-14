@@ -1,10 +1,9 @@
 <template>
 	<div class="relative">
 		<a href="/">
-			<div class="Top_Banner_Container"></div>
+			<div class="Top_Banner_Container" />
 		</a>
-
-		<a class="Alpha66_logo" href="/"><img src="/images/IJaya_Logo.webp" alt="IJaya Logo"></a>
+		<a href="/"><img class="IJaya_Logo" src="/images/IJaya_Logo.webp" alt="IJaya Logo"></a>
 		<img class="Partnership" src="/images/TB_Partnership_Img.webp" alt="A66 Group">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
@@ -43,9 +42,7 @@ export default {
 		return {}
 	},
 	methods: {
-		redirectToHome() {
-			this.$router.push('/');
-		}
+
 	},
 	setup() {
 		const { locale } = useI18n(); // Destructure locale from Vue I18n
@@ -95,9 +92,6 @@ export default {
 	},
 };
 </script>
-
-
-
 <style scoped>
 @media screen and (max-width: 767px) {
 	.TR_Img {
@@ -122,53 +116,48 @@ export default {
 	height: 80px;
 }
 
-.Alpha66_logo {
+.IJaya_Logo {
 	position: absolute;
+	top: 0px;
 	left: 20px;
-}
-
-.Alpha66_logo img {
-	width: 140px !important;
-	height: auto !important;
-}
-
-@media screen and (max-width: 1030px) {
-	.Alpha66_logo img {
-		width: 190px !important;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	.Alpha66_logo img {
-		width: 150px !important;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.Alpha66_logo img {
-		width: 145px !important;
-	}
+	width: 240px;
+	height: auto;
 }
 
 .Partnership {
 	position: absolute;
 	top: 20px;
 	right: 60px;
+	height: 40px;
 }
 
-.relative a {
-	position: absolute;
-	top: 20px;
-}
-
-@media screen and (max-width: 430px) {
-	.relative a {
-		top: 6px
+@media screen and (max-width: 1030px) {
+	.IJaya_Logo img {
+		width: 200px !important;
 	}
 }
 
-.relative img {
-	height: 40px;
+@media screen and (max-width: 769px) {
+	.IJaya_Logo {
+		top: 5px;
+		/* height: auto; */
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.IJaya_Logo {
+		width: 150px !important;
+	}
+
+	.Partnership {
+		top: 5px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.IJaya_Logo img {
+		width: 145px !important;
+	}
 }
 
 .TopBanner {
@@ -218,6 +207,12 @@ export default {
 	color: green;
 }
 
+@media screen and (max-width: 1000px) {
+	.popup-card {
+		top: 53%;
+	}
+}
+
 .popup-card div {
 	display: block;
 	padding: 15px;
@@ -234,7 +229,7 @@ export default {
 }
 
 .tick {
-	color: green;
+	color: #FFC107;
 }
 
 .tick i {

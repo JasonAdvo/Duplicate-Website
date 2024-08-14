@@ -21,7 +21,7 @@
 							@click="handleSelection(index)">
 							<a :href="index === 0 ? '#MB_Img_Gallery' : '#footer-content'">
 								<img :src="selectedIndex === index ? image.selected : image.notSelected"
-									:alt="'Image ' + (index + 1)" />
+									:alt="'Game Section ' + (index + 1)" />
 							</a>
 						</div>
 					</div>
@@ -31,12 +31,12 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 38" :key="n">
-								<a v-if="n <= 18" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
+								<a v-if="n <= 12" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
-								<div v-if="n <= 18">
+								<div v-if="n <= 12">
 									<a :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
 										<p class="Play_Text">{{ $t('message.Play') }}</p>
 									</a>
@@ -100,40 +100,44 @@ export default {
 			stickyBarHeightWeb: 105,
 			stickyBarHeightMobile: 75,
 			altTexts: [
-				"Tanzania King",
-				"Candy Party",
-				"Legend Slot Onimaru",
-				"Legend Slot Musashi",
-				"Durian King",
-				"Thai Lucky",
-				"Color Alchemy",
-				"Trade Wars",
-				"Gems Rush",
-				"Gods Of Olympus",
-				"Beauty Contest",
-				"Dragon Jewels",
-				"Golden Temple",
-				"LIFE",
-				"Magic Box",
-				"Mr Fortune",
-				"Meow Meow",
-				"Lucky 7",
-				"Where's My Monkey",
-				"Samurai Wars",
-				"Happy Road",
-				"Feed the Zombie",
-				"Burm the Office",
-				"All You Can Eat",
-				"TVW",
-				"Strange Encounter",
-				"S.O.S",
-				"On Crap",
-				"Pon Pon",
-				"Lullababy",
-				"Talent Night",
-				"Spell Craft",
-				"Steam Punk 100",
-				"Thai Street Food"
+				"Super Ace",
+				"Money Coming",
+				"Mega Fishing",
+				"Sic Bo",
+				"3 Coin Treasures",
+				"Fortune Monkey",
+				"Jackpot Joker",
+				"Fortune Gems 3",
+				"Potion Wizard",
+				"Jogo Do Bicho",
+				"Ocean King Jackpot",
+				"Speed Baccarat",
+				"Crash Bonus",
+				"Ascent Charge Buffalo",
+				"Devil Fire 2",
+				"Mines Gold",
+				"Video Poker",
+				"Zeus",
+				"Plinko",
+				"Keno",
+				"Dabanggg",
+				"Bangla Beauty",
+				"Wheel",
+				"Limbo",
+				"Hilo",
+				"Tower",
+				"Caribbean Stud Poker",
+				"Cricket Sah 75",
+				"Mines",
+				"Arene Fighter",
+				"Witches Night",
+				"Cricket King 18",
+				"Go Rush",
+				"Fortune Gems 2",
+				"Mini Flush",
+				"Black Jack Lucky Ladies 21",
+				"Black Jack 21",
+				"Magic Lamp Bingo"
 			],
 			images: [
 				{ notSelected: '/images/JILI_Game_Img.webp', selected: '/images/JILI_Game_Img.webp' },
@@ -242,6 +246,7 @@ export default {
 	width: 100%;
 	background-image: url('/images/IJaya_Bg_Img.webp');
 	background-size: cover;
+	margin-bottom: 75px;
 }
 
 .Mobile_Middle_Banner {
@@ -589,8 +594,6 @@ body {
 }
 
 .topbanner {
-	/* position: sticky; */
-	top: 0;
 	z-index: 1;
 }
 </style>

@@ -2,6 +2,11 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
+				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/telegram.webp"
+						alt="Telegram Icon"></a>
+				<a href="/"><img src="/images/Facebook_icon.webp" alt="Facebook Icon"></a>
+				<a href="https://rebrand.ly/ATASxSEO2P" rel="nofollow"><img src="/images/whatsapp.webp"
+						alt="Whatsapp Icon"></a>
 			</div>
 
 			<div class="footer-content">
@@ -59,7 +64,7 @@ export default {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 55px;
+	height: 75px;
 	background-image: url('/images/IJaya_TB_Bg_Img.webp');
 	background-size: cover;
 	background-position: 0px 47%;
@@ -74,11 +79,19 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -500%;
-	left: 0;
+	top: -150%;
+	left: 20px;
 }
 
-.social-media-icon {
+@media screen and (max-width: 430px) {
+	.social-media-container {
+		top: -200%;
+	}
+}
+
+.social-media-container img {
+	width: 40px;
+	height: auto;
 	margin-bottom: 5px;
 }
 
@@ -100,13 +113,19 @@ export default {
 }
 
 .col img {
-	width: 60px;
+	width: 80px;
 	height: auto;
+}
+
+@media screen and (max-width: 430px) {
+	.col img {
+		width: 70px;
+	}
 }
 
 @media screen and (max-width: 321px) {
 	.col img {
-		width: 50px;
+		width: 60px;
 	}
 }
 

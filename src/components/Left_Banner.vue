@@ -5,18 +5,10 @@
 				<LB_Img_Carousel />
 			</div>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_1.gif"
-					alt="Free Credit RM 10"></a>
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_2.webp"
-					alt="Grand Launch"></a>
 			<img src="/images/LB_Img_3.webp" alt="Payment List">
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.gif"
-					alt="Free RM 55"></a>
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_5.gif"
-					alt="Claim Free Credit RM 10"></a>
 			<img src="/images/LB_Img_6.webp" alt="Progressive Jackpot and Live Transaction">
 			<div class="RM3">
-				<p>FREE SHARE RM3</p>
+				<p>{{ $t('content.Free_Share') }}</p>
 			</div>
 
 			<div class="Tablet-Mobile-view">
@@ -36,12 +28,11 @@
 						<img class="col-6" src="/images/LB_Free_Img.gif" alt="More">
 					</a>
 				</div>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_8.webp"
-						alt="888% Slot Bonus"></a>
-				<a href="/" rel="nofollow"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
+				<a href="/"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
 				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
 						alt="Telegram"></a>
-				<a href="/" rel="nofollow"><img src="/images/LB_App_Img.webp" alt="App Download"></a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_App_Img.webp"
+						alt="App Download"></a>
 			</div>
 		</div>
 	</div>
@@ -92,6 +83,12 @@ export default {
 
 	.Left_Banner_Container {
 		padding-bottom: 0px;
+		margin-top: 0;
+	}
+
+	.RM3 p {
+		margin: 0;
+		padding-bottom: 16px;
 	}
 }
 
