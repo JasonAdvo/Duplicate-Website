@@ -1,8 +1,17 @@
 <template>
+	<div class="Left_Banner_Container_M">
+		<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<img src="/images/bonus50_.webp" class="d-block w-100" alt="Bonus Tambah Nilai Harian 50%">
+		</a>
+	</div>
+
 	<div class="Left_Banner_Container">
+
 		<div class="LB_Imgs">
-			<div style="margin-bottom: 16px;">
-				<LB_Img_Carousel />
+			<div class="LB_First_Banner" style="display: none;">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img src="/images/bonus50_.webp" class="d-block w-100" alt="Bonus Tambah Nilai Harian 50%">
+				</a>
 			</div>
 
 			<img src="/images/LB_Img_3.webp" alt="Payment List">
@@ -92,6 +101,13 @@
 						<img class="col-6" src="/images/LB_Free_Img.gif" alt="More">
 					</a>
 				</div>
+			</div>
+
+			<div style="padding-bottom: 16px;">
+				<LB_Img_Carousel />
+			</div>
+
+			<div class="Tablet-Mobile-view">
 				<a href="/"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
 				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
 						alt="Telegram"></a>
@@ -104,11 +120,13 @@
 
 <script>
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+import B_Img_Carousel from '/src/components/Brand_Img_Carousel.vue';
 import JackpotOdometer from '/src/components/JackpotOdometer.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
+		B_Img_Carousel,
 		JackpotOdometer
 	},
 	data() {
@@ -143,6 +161,7 @@ export default {
 }
 
 @media screen and (max-width: 1000px) {
+
 	.Tablet-Mobile-view {
 		display: none;
 	}
@@ -165,6 +184,7 @@ export default {
 .button-grp img {
 	width: 47%;
 	margin: 8px 2.5px 0 5px;
+	height: 37px;
 }
 
 .title {
@@ -278,5 +298,15 @@ td {
 	color: #d3ab22;
 	text-align: right;
 	font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+	.LB_First_Banner {
+		display: flex !important;
+	}
+
+	.Left_Banner_Container_M {
+		display: none;
+	}
 }
 </style>

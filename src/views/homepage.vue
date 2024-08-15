@@ -21,7 +21,7 @@
 							@click="handleSelection(index)">
 							<a :href="index === 0 ? '#MB_Img_Gallery' : '#footer-content'">
 								<img :src="selectedIndex === index ? image.selected : image.notSelected"
-									:alt="'Game Section ' + (index + 1)" />
+									:alt="'Image ' + (index + 1)" />
 							</a>
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 38" :key="n">
+							<div class="image-wrapper" v-for="n in 92" :key="n">
 								<a v-if="n <= 12" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
@@ -60,11 +60,32 @@
 				</a>
 				<div class="footer-content">
 					<div class="footer-detail">
-
+						<div class="Visit_site">
+							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
+						</div>
+						<div class="license">
+							<p>{{ $t('content.Game_License') }}</p>
+							<img src="/images/Footer-License-Img.webp" alt="Game License">
+						</div>
+						<div class="providers">
+							<p>{{ $t('content.Providers') }}</p>
+							<img src="/images/Provider-List-Img.webp" alt="Provider List">
+						</div>
+						<div class="follow">
+							<p>{{ $t('content.Follow_Us') }}</p>
+							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
+							<a href="https://t.me/atas77channel" rel="nofollow"><img class="main-pulse"
+									src="/images/telegram.webp" alt="telegram"></a>
+							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
+							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
+							<a href="https://rebrand.ly/ATASxSEO2P" rel="nofollow"><img class="main-pulse"
+									src="/images/whatsapp.webp" alt="whatsapp"></a>
+							<a href="/"><img class=" main-pulse" src="/images/mail.webp" alt="mail"></a>
+						</div>
 					</div>
-					<!-- <div class="copyright">
-						2016-2023 ALPHA66. ALL RIGHTS RESERVED.
-					</div> -->
+					<div class="copyright">
+						2011-2024 IJaya88 ALL RIGHTS RESERVED.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -102,42 +123,96 @@ export default {
 			altTexts: [
 				"Super Ace",
 				"Money Coming",
-				"Mega Fishing",
-				"Sic Bo",
+				"Super Ace Deluxe",
 				"3 Coin Treasures",
+				"Poseidon",
 				"Fortune Monkey",
+				"Money Gaming Expended Bets",
 				"Jackpot Joker",
-				"Fortune Gems 3",
+				"Forturn Gems 3",
 				"Potion Wizard",
-				"Jogo Do Bicho",
-				"Ocean King Jackpot",
-				"Speed Baccarat",
-				"Crash Bonus",
+				"Egypts Glow",
+				"The Pig House",
 				"Ascent Charge Buffalo",
 				"Devil Fire 2",
-				"Mines Gold",
-				"Video Poker",
 				"Zeus",
-				"Plinko",
-				"Keno",
-				"Dabanggg",
+				"Party Star",
+				"Dabangggg",
 				"Bangla Beauty",
-				"Wheel",
-				"Limbo",
-				"Hilo",
-				"Tower",
-				"Caribbean Stud Poker",
 				"Cricket Sah 75",
-				"Mines",
-				"Arene Fighter",
+				"Arena Fighter",
 				"Witches Night",
 				"Cricket King 18",
-				"Go Rush",
 				"Fortune Gems 2",
-				"Mini Flush",
-				"Black Jack Lucky Ladies 21",
-				"Black Jack 21",
-				"Magic Lamp Bingo"
+				"King Arthur",
+				"Aztrc Priestess",
+				"Trial of Phoenix",
+				"Sweet Land",
+				"Devil Fire",
+				"Golden Temple",
+				"Golden Joker",
+				"Wild Ace",
+				"Legacy of Egypt",
+				"Master Tiger",
+				"Elf Bingo JP",
+				"Sin City",
+				"Wild Racer",
+				"Pirate Queen",
+				"Crazy Pusher",
+				"World Cup",
+				"Neko Fortune",
+				"Jili Caishen",
+				"Bonus Hunter",
+				"Gold Rush",
+				"Samba",
+				"Mayan Empire",
+				"Mega Ace",
+				"Thorx",
+				"Bone Fortune",
+				"Happy Taxi",
+				"Agent Ace",
+				"Ali Baba",
+				"Fortune Gems",
+				"Magic Lamp",
+				"Twin Wins",
+				"Golden Empire",
+				"Romax",
+				"Medusa",
+				"Super Rioh",
+				"Crazy Hunter",
+				"Lucky Coming",
+				"Book of Gold",
+				"Pharaoh Treasure",
+				"Secret Treasure",
+				"Boxing King",
+				"Party Night",
+				"Fairness Gaming",
+				"7 Up-Down",
+				"Dice",
+				"Dragon & Tiger",
+				"Golden Queen",
+				"Lucky Goldbricks",
+				"Charge Buffalo",
+				"Dragon Treasure",
+				"Golden Bank",
+				"Xi Yang Yang",
+				"Crazy Fa Fa Fa",
+				"Feng Shen",
+				"Night City",
+				"Bao Goon Chin",
+				"777",
+				"Fortune Pig",
+				"Bubble Beauty",
+				"777",
+				"Candy Baby",
+				"Fa Fa Fa",
+				"Shang Hai Beauty",
+				"Jungle King",
+				"War of Dragons",
+				"Fortune Tree",
+				"Hot Chilli",
+				"God of Mantial",
+				"Chin Shi Huang"
 			],
 			images: [
 				{ notSelected: '/images/JILI_Game_Img.webp', selected: '/images/JILI_Game_Img.webp' },
@@ -202,19 +277,25 @@ export default {
 			this.selectedIndex = index;
 		},
 		handleRedirect(index) {
-			// Define the scrollIntoView function
-			const scrollIntoView = (selector) => {
-				const element = document.querySelector(selector);
-				if (element) {
-					element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				}
-			};
-
 			// Check the index to determine the redirection or scrolling
 			if (index === 0) {
-				scrollIntoView('.MB_Img_Gallery');
+				this.scrollToElement('.MB_Img_Gallery');
 			} else {
-				scrollIntoView('.footer-content');
+				this.scrollToElement('.footer-content');
+			}
+		},
+		scrollToElement(selector) {
+			const element = document.querySelector(selector);
+			if (element) {
+				const isMobile = window.innerWidth <= 768;
+				const stickyBarHeight = isMobile ? this.stickyBarHeightMobile : this.stickyBarHeightWeb;
+				const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+				const offsetPosition = elementPosition - stickyBarHeight;
+
+				window.scrollTo({
+					top: offsetPosition,
+					behavior: 'smooth'
+				});
 			}
 		}
 
@@ -352,7 +433,6 @@ export default {
 	margin: 10px 0;
 	position: relative;
 	display: flex;
-	justify-content: space-around;
 }
 
 .image-container {
@@ -441,7 +521,6 @@ export default {
 
 .footer-content {
 	margin-top: 30px;
-	margin-bottom: 60px;
 }
 
 .footer-content h1,
@@ -503,10 +582,17 @@ li {
 }
 
 .footer-detail p {
-	color: black;
-	font-size: 12px;
+	color: #143808;
+	font-size: 16px;
+	font-weight: 700;
 	margin-top: 30px;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 760px) {
+	.footer-detail p {
+		font-size: 12px;
+	}
 }
 
 .license {
@@ -519,6 +605,15 @@ li {
 	margin-top: 10px;
 	float: left;
 	margin-right: 10px;
+}
+
+.providers {
+	float: left;
+	width: 70%;
+}
+
+.providers img {
+	width: 100%;
 }
 
 .game {
@@ -594,7 +689,7 @@ li {
 .copyright {
 	text-align: center;
 	font-size: 12px;
-	padding: 50px 0;
+	padding: 50px 0 10px 0;
 	color: black;
 }
 
@@ -603,6 +698,25 @@ body {
 }
 
 .topbanner {
+	position: sticky;
+	top: 0;
 	z-index: 1;
+}
+
+@keyframes blink {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.Visit_site a {
+	animation: blink 1s infinite;
+	/* Adjust the duration (1s) and the repetition (infinite) as needed */
 }
 </style>

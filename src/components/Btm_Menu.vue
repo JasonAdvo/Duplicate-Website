@@ -2,11 +2,10 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/telegram.webp"
-						alt="Telegram Icon"></a>
-				<a href="/"><img src="/images/Facebook_icon.webp" alt="Facebook Icon"></a>
-				<a href="https://rebrand.ly/ATASxSEO2P" rel="nofollow"><img src="/images/whatsapp.webp"
-						alt="Whatsapp Icon"></a>
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/Save_Link_Img.webp"
+						alt="Save Link"></a>
+				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/Subscribe_Us_Img.webp"
+						alt="Subscribe Us"></a>
 			</div>
 
 			<div class="footer-content">
@@ -79,18 +78,13 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -150%;
-	left: 20px;
-}
-
-@media screen and (max-width: 430px) {
-	.social-media-container {
-		top: -200%;
-	}
+	top: -350%;
+	right: 0px;
 }
 
 .social-media-container img {
-	width: 40px;
+	width: 25px;
+	height: 110px;
 	height: auto;
 	margin-bottom: 5px;
 }
@@ -100,6 +94,7 @@ export default {
 	justify-content: space-around;
 	align-items: center;
 	height: 100%;
+	box-shadow: 0 -1px 5px rgba(0, 0, 0, 1);
 }
 
 .d-f {

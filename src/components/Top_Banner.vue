@@ -30,6 +30,14 @@
 				</span>
 			</div>
 		</div>
+
+		<div class="running-sentence-container">
+			<div class="running-sentence">
+				{{ $t('content.Running_Bar_1') }} | {{ $t('content.Running_Bar_2') }} | {{ $t('content.Running_Bar_3')
+				}} | {{ $t('content.Running_Bar_4') }} | {{ $t('content.Running_Bar_5') }} | {{
+					$t('content.Running_Bar_6') }}
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -129,7 +137,18 @@ export default {
 	position: absolute;
 	top: 10px;
 	right: 80px;
-	height: 60px;
+	width: 60px;
+}
+
+.GT-icon {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	z-index: 1;
+	font-size: 30px;
+	color: green;
+	cursor: pointer;
+	width: 50px;
 }
 
 @media screen and (max-width: 1030px) {
@@ -141,7 +160,6 @@ export default {
 @media screen and (max-width: 769px) {
 	.IJaya_Logo {
 		top: 5px;
-		/* height: auto; */
 	}
 }
 
@@ -151,6 +169,12 @@ export default {
 	}
 
 	.Partnership {
+		top: 5px;
+		width: 40px;
+	}
+
+	.GT-icon {
+		width: 40px;
 		top: 5px;
 	}
 }
@@ -173,16 +197,7 @@ export default {
 	max-width: 60px;
 }
 
-.GT-icon {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	z-index: 1;
-	font-size: 30px;
-	color: green;
-	cursor: pointer;
-	width: 50px;
-}
+
 
 .overlay {
 	position: fixed;
@@ -209,12 +224,6 @@ export default {
 	color: green;
 }
 
-@media screen and (max-width: 1000px) {
-	.popup-card {
-		top: 53%;
-	}
-}
-
 .popup-card div {
 	display: block;
 	padding: 15px;
@@ -222,12 +231,6 @@ export default {
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
-}
-
-@media screen and (max-width: 430px) {
-	.GT-icon {
-		top: 14px !important;
-	}
 }
 
 .tick {
@@ -246,10 +249,10 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Running_Bar_Bg_Img.webp');
+	background-image: url('/images/Running_Bar_Bg_Img.gif');
 	/* visibility: visible; */
 	background-size: 100% 100%;
-	color: black;
+	background-color: black;
 	font-size: 12px;
 	letter-spacing: 0.5px;
 	height: 25px;
@@ -263,17 +266,33 @@ export default {
 	white-space: nowrap;
 	/* position: absolute; */
 	width: max-content;
-	animation: scroll 72s linear infinite;
-	color: darkblue;
+	animation: scroll 20s linear infinite;
+	color: gold;
 }
 
 @keyframes scroll {
 	0% {
-		transform: translateX(60%);
+		transform: translateX(400%);
 	}
 
 	100% {
 		transform: translateX(-100%);
+	}
+}
+
+@media (max-width: 1000px) {
+
+	/* Adjust this value as needed for your design */
+	@keyframes scroll {
+		0% {
+			transform: translateX(100%);
+			/* Different value for mobile view */
+		}
+
+		100% {
+			transform: translateX(-100%);
+			/* Different value for mobile view */
+		}
 	}
 }
 </style>

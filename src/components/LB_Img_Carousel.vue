@@ -4,17 +4,23 @@
 		<ol class="carousel-indicators">
 			<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"></li>
 			<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></li>
+			<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></li>
 		</ol>
 
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/bonus388.png" class="d-block w-100" alt="Bonus 388">
+					<img width="100%" src="/images/Brand_Carousel_Img_1.webp" class="d-block w-100" alt="Bonus 388">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
 				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-					<img width="100%" src="/images/bonus50_.webp" class="d-block w-100" alt="Bonus 50">
+					<img width="100%" src="/images/Brand_Carousel_Img_2.webp" class="d-block w-100" alt="Bonus 50">
+				</a>
+			</div>
+			<div class="carousel-item" data-bs-interval="4000">
+				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<img width="100%" src="/images/Brand_Carousel_Img_3.webp" class="d-block w-100" alt="Bonus 50">
 				</a>
 			</div>
 		</div>

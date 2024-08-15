@@ -295,6 +295,7 @@ export default {
 .button-grp img {
 	width: 98%;
 	margin: 8px 2.5px 0 5px;
+	height: 37px;
 }
 
 .sport-betting-container {
