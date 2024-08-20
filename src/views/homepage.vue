@@ -3,14 +3,8 @@
 		<PopUpCard />
 	</div>
 
-	<div>
+	<div class="TopBanner">
 		<TopBanner />
-	</div>
-
-	<div class="running-sentence-container">
-		<div class="running-sentence">
-			{{ sentence }}
-		</div>
 	</div>
 
 	<div class="main-content">
@@ -222,7 +216,6 @@ export default {
 	data() {
 		return {
 			selectedItem: 0,
-			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks. MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses. Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
 			altTexts: [
 				"Tanzania King",
@@ -773,5 +766,11 @@ li {
 	font-size: 12px;
 	padding: 50px 0;
 	color: #fff;
+}
+
+.TopBanner {
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 </style>
