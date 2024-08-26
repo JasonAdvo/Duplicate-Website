@@ -38,13 +38,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a v-if="n <= 18" :href="`https://www.atascasinobet1.com/sign-up`" rel="nofollow">
+								<a v-if="n <= 18" :href="`https://www.atascasinobet1.com/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 18">
-									<a :href="`https://www.atascasinobet1.com/sign-up`" rel="nofollow">
+									<a :href="`https://www.atascasinobet1.com/sign-up/`" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -58,7 +58,7 @@
 
 				<div class="footer-content">
 					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
-					<p><a href="https://www.mamak24.fun/">MAMAK24</a> {{
+					<p><a href="/">MAMAK24</a> {{
 						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
 							}}</strong> {{
 								$t('Upper_Content.MAMAK24_Description_SH') }}
@@ -317,7 +317,7 @@ export default {
 			}
 		},
 		// redirectToSignUp() {
-		// 	window.location.href = "https://www.atascasinobet1.com/sign-up";
+		// 	window.location.href = "https://www.atascasinobet1.com/sign-up/";
 		// }
 	}
 }
