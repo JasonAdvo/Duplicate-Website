@@ -4,7 +4,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+					<a href="https://www.atascasinobet1.com/sign-up" rel="nofollow">
 						<img src="/images/Mamak24_Popup_Img.png" class="img-fluid" alt="notice">
 					</a>
 				</div>

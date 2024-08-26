@@ -38,13 +38,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a v-if="n <= 18" :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+								<a v-if="n <= 18" :href="`https://www.atascasinobet1.com/sign-up`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 18">
-									<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+									<a :href="`https://www.atascasinobet1.com/sign-up`" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -141,12 +141,15 @@
 						{{ $t('content.Learn_More') }}
 					</p>
 					<p>
-						<a href="https://www.atascasinobet.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
+						<a href="https://www.atascasinobet1.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a>
+						|
 						{{
 							$t('content.FP_Content') }}
 					</p>
 					<p>
-						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
+						<a href="https://www.atascasinobet1.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a>
+						|
+						{{
 							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
 					</p>
 
@@ -314,7 +317,7 @@ export default {
 			}
 		},
 		// redirectToSignUp() {
-		// 	window.location.href = "https://www.atascasinobet.com/sign-up";
+		// 	window.location.href = "https://www.atascasinobet1.com/sign-up";
 		// }
 	}
 }
