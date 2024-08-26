@@ -147,7 +147,7 @@
 							$t('content.FP_Content') }}
 					</p>
 					<p>
-						<a href="https://www.atascasinobet1.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a>
+						<a href="https://www.ataskasino1.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a>
 						|
 						{{
 							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
