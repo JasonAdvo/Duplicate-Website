@@ -60,7 +60,8 @@
 						{{ $t('content.Learn_More') }}
 					</p>
 					<p>
-						<a href="https://www.atascasinobet.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
+						<a href="https://www.atascasinobet1.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a>
+						|
 						{{
 							$t('content.FP_Content') }}
 					</p>
