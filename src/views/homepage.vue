@@ -32,13 +32,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 34" :key="n">
-								<a v-if="n <= 18" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
+								<a v-if="n <= 18" :href="`https://www.ataskasino1.com/en/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 18">
-									<a :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
+									<a :href="`https://www.ataskasino1.com/en/sign-up/`" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -65,7 +65,8 @@
 							$t('content.FP_Content') }}
 					</p>
 					<p>
-						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
+						<a href="https://www.ataskasino1.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> |
+						{{
 							$t('content.SP_F_Content') }}
 					</p>
 					<div class="footer-detail">
@@ -259,7 +260,7 @@ export default {
 			}
 		}
 		// redirectToSignUp() {
-		// 	window.location.href = "https://www.ataskasino.com/en/sign-up/";
+		// 	window.location.href = "https://www.ataskasino1.com/en/sign-up/";
 		// }
 	}
 }
