@@ -9,13 +9,13 @@
 
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="4000">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img width="100%" src="/images/ATAS-BAds.webp" class="d-block w-100 br-8 height-208"
 						alt="188% Welcome Bonus">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img width="100%" src="/images/bonus50_.webp" class="d-block w-100 br-8 height-208"
 						alt="Weekly Check In Bonus">
 				</a>

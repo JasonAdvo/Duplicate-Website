@@ -9,12 +9,12 @@
 
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-bs-interval="4000">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img width="100%" src="/images/bonus388.webp" class="d-block w-100 br-8" alt="Bonus888">
 				</a>
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img width="100%" src="/images/Percuma RM 50.webp" class="d-block w-100 br-8" alt="Percuma RM 50">
 				</a>
 			</div>

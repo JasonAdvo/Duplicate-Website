@@ -72,19 +72,19 @@
 			</table>
 			<div class="Tablet-Mobile-view">
 				<div style="position: relative;">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" alt="Share">
 						<div class="button-grp" style="position: absolute; bottom: 10px;">
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br mb-1" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br mb-1" src="/images/LB_Downline_Btn.webp" alt="Downline">
 							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
 							</a>
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_More_Btn.webp" alt="More">
 							</a>
 						</div>
@@ -94,7 +94,7 @@
 					<LB_Img_Carousel />
 				</div>
 				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp" alt="Telegram"></a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
 						alt="Live Now"></a>
 			</div>
 		</div>
