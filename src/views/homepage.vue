@@ -31,13 +31,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 92" :key="n">
-								<a v-if="n <= 12" :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
+								<a v-if="n <= 12" :href="`https://www.ataskasino1.com/en/sign-up/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
+									<a :href="`https://www.ataskasino1.com/en/sign-up/`" rel="nofollow">
 										<p class="Play_Text">{{ $t('message.Play') }}</p>
 									</a>
 								</div>

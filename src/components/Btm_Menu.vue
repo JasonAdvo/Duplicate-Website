@@ -2,7 +2,7 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow"><img src="/images/Save_Link_Img.webp"
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/Save_Link_Img.webp"
 						alt="Save Link"></a>
 				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/Subscribe_Us_Img.webp"
 						alt="Subscribe Us"></a>
@@ -10,27 +10,27 @@
 
 			<div class="footer-content">
 				<div class="d-f col">
-					<a href="https://www.ataskasino.com/" rel="nofollow">
+					<a href="https://www.ataskasino1.com/" rel="nofollow">
 						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 						<img src="/images/Btm_Chat_Img.gif" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
