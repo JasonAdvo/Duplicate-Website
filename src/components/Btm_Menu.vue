@@ -2,46 +2,45 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" class="social-media-icon">
+				<a href="/" rel="nofollow" class="social-media-icon">
 					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
 				</a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" class="social-media-icon">
+				<a href="/" rel="nofollow" class="social-media-icon">
 					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
-					<img src="/images/Btm_Popup_Img.webp" alt="Join Us Now">
+				<a href="/" rel="nofollow">
+					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
 
-
 			<div class="footer-content">
 				<div class="d-f col">
-					<a href="https://www.atascasinobet.com/" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Btn.webp" alt="Home">
+					<a href="/" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Btn.webp" alt="History">
+					<a href="/" rel="nofollow" target="_blank">
+						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Bonus_Btn.webp" alt="Bonus">
+					<a href="/" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Promo_Img.webp" alt="Bonus">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/Btm_LiveChat_Btn.webp" alt="Live Chat">
+					<a href="/" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Btn.webp" alt="Setting">
+					<a href="/" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
 			</div>

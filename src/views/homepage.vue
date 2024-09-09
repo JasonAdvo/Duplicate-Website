@@ -33,13 +33,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 34" :key="n">
-								<a v-if="n <= 18" :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+								<a v-if="n <= 18" :href="`/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 18">
-									<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+									<a :href="`/`" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -53,7 +53,7 @@
 
 				<div class="footer-content">
 					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
-					<p><a href="https://www.mamak24.fun/">MAMAK24</a> {{
+					<p><a href="/">MAMAK24</a> {{
 						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
 							}}</strong> {{
 								$t('Upper_Content.MAMAK24_Description_SH') }}
@@ -136,7 +136,7 @@
 						{{ $t('content.Learn_More') }}
 					</p>
 					<p>
-						<a href="https://www.atascasinobet.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
+						<a href="/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
 						{{
 							$t('content.FP_Content') }}
 					</p>
@@ -147,7 +147,7 @@
 					<div class="footer-detail">
 						<div class="license">
 							<p>GAME LICENSE</p>
-							<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
+							<a href="/" rel="nofollow">
 								<img src="/images/Footer-License-Img.webp" alt="Game License">
 							</a>
 						</div>
@@ -327,7 +327,7 @@ export default {
 			}
 		},
 		// redirectToSignUp() {
-		// 	window.location.href = "https://www.atascasinobet.com/sign-up";
+		// 	window.location.href = "/";
 		// }
 	}
 }
@@ -364,7 +364,7 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_img.webp');
+	background-image: url('/images/Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top;

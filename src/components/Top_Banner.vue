@@ -3,10 +3,8 @@
 		<a href="/">
 			<div class="Top_Banner_Container" />
 		</a>
-		<!-- <a href="/"><img class="IJaya_Logo" src="/images/IJaya_Logo.webp" alt="IJaya Logo"></a> -->
-		<img class="Partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
-		<!-- <img class="GT-icon" src="/images/Translate_Icon.webp"  alt="Translate Icon"> -->
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
+
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
 		<!-- Pop-up Card -->
@@ -33,9 +31,7 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('content.Running_Bar_1') }} | {{ $t('content.Running_Bar_2') }} | {{ $t('content.Running_Bar_3')
-				}} | {{ $t('content.Running_Bar_4') }} | {{ $t('content.Running_Bar_5') }} | {{
-					$t('content.Running_Bar_6') }}
+				{{ $t('Runnig_Bar.Content') }}
 			</div>
 		</div>
 	</div>
@@ -249,7 +245,7 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Running_Bar_Bg_Img.gif');
+	background-image: url('/images/Crown99_Running_Bar_Bg_Img.webp');
 	/* visibility: visible; */
 	background-size: 100% 100%;
 	background-color: black;
@@ -266,13 +262,13 @@ export default {
 	white-space: nowrap;
 	/* position: absolute; */
 	width: max-content;
-	animation: scroll 20s linear infinite;
-	color: gold;
+	animation: scroll 90s linear infinite;
+	color: black;
 }
 
 @keyframes scroll {
 	0% {
-		transform: translateX(400%);
+		transform: translateX(100%);
 	}
 
 	100% {

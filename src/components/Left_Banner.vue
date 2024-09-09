@@ -1,9 +1,8 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<LB_Img_Carousel />
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_1.webp"
-					alt="PAGCOR">
+			<!-- <LB_Img_Carousel /> -->
+			<a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR">
 			</a>
 			<table>
 				<thead>
@@ -66,47 +65,37 @@
 				</tbody>
 			</table>
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.webp"
-						alt="Share"></a>
+				<a href="/" rel="nofollow"><img src="/images/LB_Img_2.webp" alt="Share"></a>
 				<div class="button-grp">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share"></a>
+					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Downline_Img.webp"
+							alt="Downline"></a>
+					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
-						alt="Telegram">
+				<a href="/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
 				</a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Facebook_Img.webp"
-						alt="Facebook">
+				<a href="/" rel="nofollow"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
 				</a>
 
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_3.webp"
-						alt=""></a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_4.webp"
-						alt=""></a>
+				<a href="/" rel="nofollow"><img src="/images/LB_Img_3.webp" alt=""></a>
+				<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt=""></a>
 			</div>
 
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/188welcome_bonus.webp"
-					alt="188% Welcome Bonus">
-			</a>
-			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
-					alt="Top Up Bonus">
-			</a>
+			<!-- <a href="/" rel="nofollow"><img src="/images/188welcome_bonus.webp" alt="188% Welcome Bonus">
+			</a> -->
+			<!-- <a href="/" rel="nofollow"><img src="/images/daily_top_up_bonus.webp" alt="Top Up Bonus">
+			</a> -->
 		</div>
 	</div>
 </template>
 
 <script>
-import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+// import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
-		LB_Img_Carousel
+		// LB_Img_Carousel
 	}
 };
 </script>
