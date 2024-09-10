@@ -60,6 +60,15 @@
 				</a>
 				<div class="footer-content">
 					<div class="footer-detail">
+						<div class="Atas_Sign_Up_Container">
+							<a :href="link_ataskasino">{{ $t('Atas_Sign_Up.Header') }}</a> - {{
+								$t('Atas_Sign_Up.Content') }}
+						</div>
+						<div class="Atas_Download_Container">
+							<a :href="link_atascasinobet">{{ $t('Atas_Download.Header') }}</a> - {{
+								$t('Atas_Download.Content_1') }} <strong>{{ $t('Atas_Download.Content_2') }}</strong> {{
+								$t('Atas_Download.Content_3') }}
+						</div>
 						<div class="Visit_site">
 							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
 						</div>
@@ -763,5 +772,23 @@ body {
 .Visit_site a {
 	animation: blink 1s infinite;
 	/* Adjust the duration (1s) and the repetition (infinite) as needed */
+}
+
+.Atas_Sign_Up_Container {
+	margin-bottom: 16px;
+}
+
+.Atas_Sign_Up_Container a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.Atas_Download_Container {
+	margin-bottom: 25px;
+}
+
+.Atas_Download_Container a {
+	font-size: 16px;
+	text-decoration: none;
 }
 </style>

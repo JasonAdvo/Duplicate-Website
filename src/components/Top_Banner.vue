@@ -33,9 +33,7 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('content.Running_Bar_1') }} | {{ $t('content.Running_Bar_2') }} | {{ $t('content.Running_Bar_3')
-				}} | {{ $t('content.Running_Bar_4') }} | {{ $t('content.Running_Bar_5') }} | {{
-					$t('content.Running_Bar_6') }}
+				<strong>{{ $t('content.Running_Bar_1') }}</strong> - {{ $t('content.Running_Bar_2') }}
 			</div>
 		</div>
 	</div>
@@ -266,13 +264,13 @@ export default {
 	white-space: nowrap;
 	/* position: absolute; */
 	width: max-content;
-	animation: scroll 20s linear infinite;
+	animation: scroll 30s linear infinite;
 	color: gold;
 }
 
 @keyframes scroll {
 	0% {
-		transform: translateX(400%);
+		transform: translateX(100%);
 	}
 
 	100% {
