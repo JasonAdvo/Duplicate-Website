@@ -4,9 +4,7 @@
 			<a href="/"></a>
 		</div>
 		<a class="A66-Grp" href="/"><img src="/images/crown99_TB_Img_2.webp" alt="A66 Group"></a>
-		<a href="#">
-			<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
-		</a>
+		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
 		<!-- Pop-up Card -->
