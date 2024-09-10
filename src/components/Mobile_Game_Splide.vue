@@ -1,5 +1,5 @@
 <template>
-	<div class="splide-width">
+	<!-- <div class="splide-width">
 		<splide :options="splideOptions" v-if="isTabletOrMobile" class="splide">
 			<splide-slide v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 				:class="['image-container', { selected: selectedIndex === index }]"
@@ -8,7 +8,7 @@
 					:alt="'Image ' + (index + 1)" />
 			</splide-slide>
 		</splide>
-	</div>
+	</div> -->
 </template>
 
 <script>
