@@ -1,6 +1,6 @@
 <template>
 	<div class="Left_Banner_Container_M">
-		<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+		<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 			<img src="/images/bonus50_.webp" class="d-block w-100" alt="Bonus Tambah Nilai Harian 50%">
 		</a>
 	</div>
@@ -9,7 +9,7 @@
 
 		<div class="LB_Imgs">
 			<div class="LB_First_Banner" style="display: none;">
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 					<img src="/images/bonus50_.webp" class="d-block w-100" alt="Bonus Tambah Nilai Harian 50%">
 				</a>
 			</div>
@@ -85,19 +85,19 @@
 			</table>
 
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_7.webp"
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow"><img src="/images/LB_Img_7.webp"
 						alt="Get Bonus"></a>
 				<div class="button-grp">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img class="col-6" src="/images/LB_Share_Img.webp" alt="Share">
 					</a>
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img class="col-6" src="/images/LB_Downline_Img.webp" alt="Downline">
 					</a>
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img class="col-6" src="/images/LB_Copy_Img.webp" alt="Copy">
 					</a>
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img class="col-6" src="/images/LB_Free_Img.gif" alt="More">
 					</a>
 				</div>
@@ -111,7 +111,7 @@
 				<a href="/"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
 				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
 						alt="Telegram"></a>
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/LB_App_Img.webp"
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow"><img src="/images/LB_App_Img.webp"
 						alt="App Download"></a>
 			</div>
 		</div>
@@ -120,20 +120,65 @@
 
 <script>
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
-import B_Img_Carousel from '/src/components/Brand_Img_Carousel.vue';
 import JackpotOdometer from '/src/components/JackpotOdometer.vue';
+import axios from 'axios';
+
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
-		B_Img_Carousel,
 		JackpotOdometer
 	},
 	data() {
 		return {
-
+			status: null,
+			response: [],
+			link_atascasinobet: '',
+			link_ataskasino: ''
 		};
 	},
+	methods: {
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
+				// console.log(this.link_atascasinobet)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+		async fetchLink_ataskasino() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
+				// console.log(this.link_ataskasino)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+	},
+	mounted() {
+		this.fetchLink();
+		this.fetchLink_ataskasino();
+	}
 };
 </script>
 

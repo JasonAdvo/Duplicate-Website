@@ -2,7 +2,7 @@
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
 			<div class="Laptop-view">
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 					<img src="/images/Percuma RM 50.webp" alt="Percuma RM 50">
 				</a>
 			</div>
@@ -14,10 +14,10 @@
 
 			<div class="Info_Container">
 				<div class="login-register-container">
-					<a href="https://www.ataskasino1.com/login/" rel="nofollow">
+					<a :href="link_ataskasino + 'login'" rel="nofollow">
 						<img class="Join" src="/images/RB_Login_Img.gif" alt="Login">
 					</a>
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img class="Register" src="/images/RB_Register_Img.gif" alt="Register">
 					</a>
 				</div>
@@ -32,13 +32,13 @@
 						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 					</div>
 					<div class="RB_Cash_Btn_Container">
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="no-br" src="/images/RB_Deposit_Img.webp" alt="Deposit">
 						</a>
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="no-br" src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 						</a>
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="no-br" src="/images/RB_Refresh_Img.webp" alt="Refresh">
 						</a>
 					</div>
@@ -55,7 +55,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="https://www.ataskasino1.com/login/" rel="nofollow">
+						<a :href="link_ataskasino + 'login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -66,44 +66,44 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a href="https://www.ataskasino1.com/en/sport-live/" rel="nofollow">
+				<a :href="link_ataskasino + 'en/sports-live'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+			<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 				<img src="/images/RB_Img_3.webp" alt="Slot Competition Leaderboard">
 			</a>
 
 			<div class="Tablet-Mobile-view">
 				<div style="position: relative;">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_7.webp"
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow"><img src="/images/LB_Img_7.webp"
 							alt="Get Bonus"></a>
 					<div class="button-grp">
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="col-6" src="/images/LB_Share_Img.webp" alt="Share">
 						</a>
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="col-6" src="/images/LB_Downline_Img.webp" alt="Downline">
 						</a>
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="col-6" src="/images/LB_Copy_Img.webp" alt="Copy">
 						</a>
-						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+						<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 							<img class="col-6" src="/images/LB_Free_Img.gif" alt="More">
 						</a>
 					</div>
 					<a href="/"><img src="/images/LB_FB_Img.webp" alt="Facebook"></a>
 					<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
 							alt="Telegram"></a>
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/LB_App_Img.webp"
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow"><img src="/images/LB_App_Img.webp"
 							alt="App Download"></a>
 				</div>
 			</div>
 
-			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+			<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 				<img src="/images/ATAS-BAds.webp" alt="Bonus Top Up">
 			</a>
 		</div>
@@ -111,8 +111,60 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
 	name: 'RightBanner',
+	data() {
+		return {
+			status: null,
+			response: [],
+			link_atascasinobet: '',
+			link_ataskasino: ''
+		}
+	},
+	methods: {
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
+				// console.log(this.link_atascasinobet)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+		async fetchLink_ataskasino() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
+				// console.log(this.link_ataskasino)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+	},
+	mounted() {
+		this.fetchLink();
+		this.fetchLink_ataskasino();
+	}
 
 };
 </script>
