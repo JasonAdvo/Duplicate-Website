@@ -76,8 +76,7 @@
 
 						</div>
 						<div class="game">
-							{{
-								$t('content.Game_License_Content') }}
+							<span v-html="gameLicenseContent"></span>
 						</div>
 						<div class="payment">
 							<p>{{ $t('content.Payment_Methods') }}</p>
@@ -100,7 +99,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2023 Starbucks88. ALL RIGHTS RESERVED.
+						2016-2024 Starbucks88. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>
@@ -196,6 +195,11 @@ export default {
 			link_atascasinobet: '',
 			link_ataskasino: ''
 		};
+	},
+	computed: {
+		gameLicenseContent() {
+			return this.$t('content.Game_License_Content');
+		}
 	},
 	setup() {
 		const { locale } = useI18n();
@@ -610,7 +614,7 @@ li {
 	margin-right: 10px;
 }
 
-.game {
+.game span {
 	text-align: left;
 	font-size: 14px;
 	float: left;
