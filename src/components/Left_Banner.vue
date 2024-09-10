@@ -1,35 +1,67 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<LB_Img_Carousel />
+			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/188welcome_bonus.webp"
+					alt="188% Welcome Bonus"></a>
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img src="/images/LB_Img_2.jpg"
+				<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg"
 						alt="Share"></a>
 				<div class="button-grp">
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
-			<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img src="/images/188welcome_bonus.webp"
-					alt="188% Welcome Bonus"></a>
-			<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
+			<LB_Img_Carousel />
+
+			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
 					alt="Top Up Bonus"></a>
 		</div>
 	</div>
 </template>
 
 <script>
+import axios from 'axios';
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel
+	},
+	data() {
+		return {
+			status: null,
+			response: [],
+			link_atascasinobet: ''
+		}
+	},
+	methods: {
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
+				// console.log(this.link_atascasinobet)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+	},
+	mounted() {
+		this.fetchLink();
 	}
 };
 </script>

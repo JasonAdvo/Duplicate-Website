@@ -1,11 +1,14 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
+			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/Atas-Post-Banner-(Eng).webp"
+					alt="188% Welcome Bonus" style="margin-bottom: 16px;">
+			</a>
 			<div class="login-register-container">
-				<a href="https://www.atascasinobet1.com/atas-login/" rel="nofollow"><img
-						src="/images/RB_Login_Btn_Img.png" alt="Login"></a>
-				<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img
-						src="/images/RB_Register_Btn_Img.png" alt="Register"></a>
+				<a :href="link_atascasinobet + 'atas-login'" rel="nofollow"><img src="/images/RB_Login_Btn_Img.png"
+						alt="Login"></a>
+				<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/RB_Register_Btn_Img.png"
+						alt="Register"></a>
 			</div>
 			<div style="display: flex; margin-bottom: 23px">
 				<div class="RB_Small_Text_Container">
@@ -17,28 +20,28 @@
 					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow" target="_blank">
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow" target="_blank">
 						<img src="/images/RB_Deposit_Btn_Img.png" alt="Deposit">
 					</a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow" target="_blank">
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow" target="_blank">
 						<img src="/images/RB_Withdraw_Btn_Img.png" alt="Withdraw">
 					</a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img
-							src="/images/RB_Refresh_Btn_Img.png" alt="Refresh"></a>
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/RB_Refresh_Btn_Img.png"
+							alt="Refresh"></a>
 				</div>
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img src="/images/LB_Img_2.jpg"
+				<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg"
 						alt="Banner"></a>
 				<div class="button-grp">
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
@@ -54,7 +57,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="https://www.atascasinobet1.com/sports-live" rel="nofollow">
+						<a :href="link_atascasinobet + 'atas-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -65,18 +68,14 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a href="https://www.atascasinobet1.com/sports-live" rel="nofollow">
+				<a :href="link_atascasinobet + 'sports-live'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img
-					src="/images/Atas-Post-Banner-(Eng).webp" alt="188% Welcome Bonus" style="margin-bottom: 16px;">
-			</a>
-
-			<a href="https://www.atascasinobet1.com/sign-up/" rel="nofollow"><img src="/images/check_in.webp"
+			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/check_in.webp"
 					alt="Weekly Check In Bonus" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -84,8 +83,39 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
 	name: 'RightBanner',
+	data() {
+		return {
+			status: null,
+			response: [],
+			link_atascasinobet: ''
+		}
+	},
+	methods: {
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
+				// console.log(this.link_atascasinobet)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+	},
+	mounted() {
+		this.fetchLink();
+	}
 
 };
 </script>
