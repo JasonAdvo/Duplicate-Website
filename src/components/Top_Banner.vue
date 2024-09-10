@@ -37,7 +37,7 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('content.Game_License_Content') }}
+				<span v-html="gameLicenseContent"></span>
 			</div>
 		</div>
 	</div>
@@ -95,6 +95,11 @@ export default {
 			this.selectedLanguage = savedLanguage;
 		}
 	},
+	computed: {
+		gameLicenseContent() {
+			return this.$t('content.sentence');
+		}
+	}
 };
 </script>
 
@@ -241,10 +246,14 @@ export default {
 
 .running-sentence {
 	white-space: nowrap;
-	/* position: absolute; */
 	width: max-content;
 	animation: scroll 72s linear infinite;
 	color: white;
+}
+
+.running-sentence span {
+	font-size: 12px;
+	letter-spacing: 0.5px;
 }
 
 @keyframes scroll {

@@ -48,6 +48,79 @@
 					</div>
 				</div>
 				<br>
+				<div class="Content_Container">
+					<h1>{{ $t('Btm_Content.H1_Header') }}</h1>
+					<p>{{ $t('Btm_Content.H1_Content_1') }} <strong>{{ $t('Btm_Content.H1_Content_2') }}</strong> {{
+						$t('Btm_Content.H1_Content_3') }} </p>
+					<p>{{ $t('Btm_Content.H1_Content_4') }} <strong>{{ $t('Btm_Content.H1_Content_2') }}</strong> {{
+						$t('Btm_Content.H1_Content_5') }} </p>
+					<br>
+					<h2>{{ $t('Btm_Content.First_H2_Header') }}</h2>
+					<p>{{ $t('Btm_Content.First_H2_Content_1') }} <strong>{{ $t('Btm_Content.First_H2_Content_2')
+							}}</strong> {{
+								$t('Btm_Content.First_H2_Content_3') }} </p>
+					<br>
+					<h2>{{ $t('Btm_Content.Second_H2_Header') }}</h2>
+					<p>{{ $t('Btm_Content.Second_H2_Content_1') }} <strong>{{ $t('Btm_Content.Second_H2_Content_2')
+							}}</strong> {{
+								$t('Btm_Content.Second_H2_Content_3') }} </p>
+					<ul>
+						<li>
+							{{ $t('Btm_Content.Second_H2_First_Li_Header') }}
+							<p>{{ $t('Btm_Content.Second_H2_First_Li_Content_1') }} <strong>{{
+								$t('Btm_Content.Second_H2_First_Li_Content_2')
+							}}</strong> {{
+										$t('Btm_Content.Second_H2_First_Li_Content_3') }} </p>
+						</li>
+						<li>
+							{{ $t('Btm_Content.Second_H2_Second_Li_Header') }}
+							<p>{{ $t('Btm_Content.Second_H2_Second_Li_Content') }}</p>
+						</li>
+						<li>
+							{{ $t('Btm_Content.Second_H2_Third_Li_Header') }}
+							<p>{{ $t('Btm_Content.Second_H2_Third_Li_Content_1') }} <strong>{{
+								$t('Btm_Content.Second_H2_Third_Li_Content_2')
+							}}</strong> {{
+										$t('Btm_Content.Second_H2_Third_Li_Content_3') }} </p>
+						</li>
+					</ul>
+					<p>{{ $t('Btm_Content.Second_H2_Btm_Content_1') }} <strong>{{
+						$t('Btm_Content.Second_H2_Btm_Content_2')
+					}}</strong> {{
+								$t('Btm_Content.Second_H2_Btm_Content_3') }} </p>
+					<br>
+					<h2>{{ $t('Btm_Content.Third_H2_Header') }}</h2>
+					<p>{{ $t('Btm_Content.Third_H2_Content_1') }} <strong>{{
+						$t('Btm_Content.Third_H2_Content_2')
+					}}</strong> {{
+								$t('Btm_Content.Third_H2_Content_3') }} </p>
+					<ol>
+						<li>
+							<p>{{ $t('Btm_Content.Third_H2_First_Li_Content_1') }} <strong>{{
+								$t('Btm_Content.Third_H2_First_Li_Content_2')
+							}}</strong> {{
+										$t('Btm_Content.Third_H2_First_Li_Content_3') }} </p>
+						</li>
+						<li>
+							<p>{{ $t('Btm_Content.Third_H2_Second_Li_Content') }}</p>
+						</li>
+						<li>
+							<p>{{ $t('Btm_Content.Third_H2_Third_Li_Content_1') }} <strong>{{
+								$t('Btm_Content.Third_H2_Third_Li_Content_2')
+							}}</strong> {{
+										$t('Btm_Content.Third_H2_Third_Li_Content_3') }} </p>
+						</li>
+						<li>
+							<p>{{ $t('Btm_Content.Third_H2_Fourth_Li_Content_1') }} <strong>{{
+								$t('Btm_Content.Third_H2_Fourth_Li_Content_2')
+							}}</strong> {{
+										$t('Btm_Content.Third_H2_Fourth_Li_Content_3') }} </p>
+						</li>
+					</ol>
+					<p>{{ $t('Btm_Content.Btm_Content') }}</p>
+
+
+				</div>
 				<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 					title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 						src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
@@ -699,5 +772,25 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 1;
+}
+
+.Content_Container h1 {
+	font-size: 25px;
+}
+
+.Content_Container h2 {
+	font-size: 23px;
+}
+
+.Content_Container h3 {
+	font-size: 18px;
+}
+
+.Content_Container p {
+	font-size: 16px;
+}
+
+.Content_Container strong {
+	color: green;
 }
 </style>
