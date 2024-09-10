@@ -132,7 +132,7 @@ export default {
 				// this.response = response;
 				// console.log(this.response)
 				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
-				console.log(this.link_atascasinobet)
+				// console.log(this.link_atascasinobet)
 			} catch (error) {
 				console.log(error)
 			}
@@ -150,7 +150,7 @@ export default {
 				// this.response = response;
 				// console.log(this.response)
 				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
-				console.log(this.link_ataskasino)
+				// console.log(this.link_ataskasino)
 			} catch (error) {
 				console.log(error)
 			}
