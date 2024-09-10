@@ -29,7 +29,7 @@
 		</div>
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('Announce_Bar.Header') }} - {{ $t('Announce_Bar.Content') }}
+				<strong>{{ $t('Announce_Bar.Header') }}</strong> - {{ $t('Announce_Bar.Content') }}
 			</div>
 		</div>
 	</div>
