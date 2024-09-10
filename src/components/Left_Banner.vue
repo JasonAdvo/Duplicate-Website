@@ -72,19 +72,19 @@
 			</table>
 			<div class="Tablet-Mobile-view">
 				<div style="position: relative;">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" alt="Share">
 						<div class="button-grp" style="position: absolute; bottom: 10px;">
-							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+							<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 								<img class="col-6 no-br mb-1" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
-							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+							<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 								<img class="col-6 no-br mb-1" src="/images/LB_Downline_Btn.webp" alt="Downline">
 							</a>
-							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+							<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_Copy_Btn.webp" alt="Copy">
 							</a>
-							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+							<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 								<img class="col-6 no-br" src="/images/LB_More_Btn.webp" alt="More">
 							</a>
 						</div>
@@ -94,7 +94,7 @@
 					<LB_Img_Carousel />
 				</div>
 				<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Img_3.webp" alt="Telegram"></a>
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow"><img src="/images/LB_Img_4.webp"
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow"><img src="/images/LB_Img_4.webp"
 						alt="Live Now"></a>
 			</div>
 		</div>
@@ -105,6 +105,8 @@
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
 import LB_Img_Carousel_AK from '/src/components/LB_Img_Carousel_AK.vue';
 import JackpotOdometer from '/src/components/JackpotOdometer.vue';
+import axios from 'axios';
+
 export default {
 	name: 'LeftBanner',
 	components: {
@@ -114,14 +116,56 @@ export default {
 	},
 	data() {
 		return {
-			jackpotValue: 10000000 // Starting value, 9 digits
+			jackpotValue: 10000000, // Starting value, 9 digits
+			status: null,
+			response: [],
+			link_atascasinobet: '',
+			link_ataskasino: ''
 		};
 	},
 	mounted() {
 		this.loadJackpotValue();
 		this.startJackpotIncrease();
+		this.fetchLink();
+		this.fetchLink_ataskasino();
 	},
 	methods: {
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
+				// console.log(this.link_atascasinobet)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+		async fetchLink_ataskasino() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
+				// console.log(this.link_ataskasino)
+			} catch (error) {
+				console.log(error)
+			}
+		},
 		startJackpotIncrease() {
 			setInterval(() => {
 				this.jackpotValue += Math.floor(Math.random() * 10); // Increment by a random value up to 9999

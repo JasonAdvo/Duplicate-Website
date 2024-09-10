@@ -5,14 +5,14 @@
 				<a href="https://t.me/atas77channel" rel="nofollow" class="social-media-icon">
 					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
 				</a>
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow" class="social-media-icon">
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+				<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 					<img src="/images/Btm_Popup_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
@@ -20,32 +20,32 @@
 
 			<div class="footer-content">
 				<div class="d-f col">
-					<a href="https://www.ataskasino1.com/" rel="nofollow">
+					<a :href="link_ataskasino" rel="nofollow">
 						<img src="/images/Btm_Home_Btn.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/Btm_Wallet_Btn.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/Btm_Promo_Btn.webp" alt="Setting">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/Btm_Lucky_Btn.webp" alt="Bonus">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/Btm_Live_Btn.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
+					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/Btm_Profile_Btn.webp" alt="Setting">
 					</a>
 				</div>
@@ -56,17 +56,63 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
 	name: 'FooterMenu',
 	data() {
 		return {
-			isVisible: true // Set this to control visibility
+			isVisible: true, // Set this to control visibility
+			status: null,
+			response: [],
+			link_atascasinobet: '',
+			link_ataskasino: ''
 		};
 	},
 	methods: {
 		closePopup() {
 			this.isVisible = false;
-		}
+		},
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
+				// console.log(this.link_atascasinobet)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+		async fetchLink_ataskasino() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com", {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+					}
+				});
+
+				// this.status = response.status;
+				// console.log(this.status)
+				// this.response = response;
+				// console.log(this.response)
+				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
+				// console.log(this.link_ataskasino)
+			} catch (error) {
+				console.log(error)
+			}
+		},
+	},
+	mounted() {
+		this.fetchLink();
+		this.fetchLink_ataskasino();
 	}
 };
 </script>
