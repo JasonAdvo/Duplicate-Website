@@ -87,11 +87,19 @@
 		"SP_Link_Word": "Atas APK",
 		"SP_F_Content": "Muat turun APK untuk menikmati aksi kasino bertaraf tinggi dengan pelbagai pilihan permainan, transaksi yang selamat, dan ganjaran eksklusif. Muat turun sekarang untuk hiburan yang tiada tandingan dan kemenangan besar!",
 		"SP_S_Content": "Temui destinasi perjudian utama Malaysia di Atas Kasino, yang menawarkan pelbagai jenis permainan seperti kasino langsung, mesin slot, dan pertaruhan sukan. Dikenali dengan keselamatan yang cemerlang, pelbagai jenis permainan yang luas, dan perkhidmatan pelanggan yang hebat, Atas Kasino memastikan pengalaman permainan yang luar biasa untuk semua pemain.",
-		"Game_License_Content": "ALPHA66 adalah tanda dagangan berdaftar, jenama, dan didaftarkan oleh Moon Technologie. Dikawal selia & Berlesen oleh Kerajaan Curacao dan beroperasi di bawah Lesen Utama Penyedia Perkhidmatan Permainan, N.V. #1168/JAZ.",
+		"Game_License_Content": "<b>ALPHA66</b> adalah tanda dagang berdaftar milik <b>Moon Technologie</b>, yang dikawal dan dilesenkan oleh Kerajaan <b>Curacao</b> di bawah Lesen Induk #1168/JAZ.",
 		"Game_License": "LESEN PERMAINAN",
 		"Payment_Methods": "CARA BAYARAN",
 		"Certificate_N_Security": "Sijil & Keselamatan",
 		"Follow_Us": "IKUT KAMI",
-		"sentence": "DIGI, MAXIS, CELCOM, UMOBILE Tiada BONUS, Tapi cuci 100%. Kami Rekomen Guna Ewallet (TnG, Boost, Grab, Shopee, DuitNow) utk Deposit, Ada bonus lagi cuci 100% Juga ~ Untung extra income di ALPHA66 hanya tekan 'SHARE', Banyak anda share banyak anda untung!"
+		"sentence": "<b>DIGI, MAXIS, CELCOM, dan UMOBILE</b> tidak menawarkan bonus, tetapi anda boleh mendapatkan bonus bersih 100% dengan e-wallet (TnG, Boost, Grab, Shopee, DuitNow) untuk deposit. Dengan <b>ALPHA66</b>, cukup klik 'KONGSI'—semakin banyak anda kongsi, semakin banyak anda peroleh!"
+	},
+	"Atas_Sign_Up": {
+		"Header": "Daftar Atas",
+		"Content": "Terokai versi Web Atas Casino H5 3.0 tanpa perlu memuat turun. Sebagai penyedia permainan kasino terkemuka di Malaysia, Atas Casino menawarkan pengalaman permainan yang cemerlang."
+	},
+	"Atas_Download": {
+		"Header": "Muat Turun Atas",
+		"Content": "Dapatkan APK sekarang untuk mengakses aksi kasino premium, dengan pelbagai pilihan permainan, transaksi selamat, dan ganjaran eksklusif. Muat turun hari ini untuk hiburan yang tiada tandingan dan kemenangan besar!"
 	}
 }

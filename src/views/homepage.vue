@@ -56,6 +56,14 @@
 				</a>
 				<div class="footer-content">
 					<div class="footer-detail">
+						<div class="Atas_Sign_Up_Container">
+							<a :href="link_ataskasino">{{ $t('Atas_Sign_Up.Header') }}</a> | {{
+								$t('Atas_Sign_Up.Content') }}
+						</div>
+						<div class="Atas_Download_Container">
+							<a :href="link_atascasinobet">{{ $t('Atas_Download.Header') }}</a> | {{
+								$t('Atas_Download.Content') }}
+						</div>
 						<div class="Visit_site">
 							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
 						</div>
@@ -64,8 +72,7 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
-							{{
-								$t('content.Game_License_Content') }}
+							<span v-html="gameLicenseContent"></span>
 						</div>
 						<div class="payment">
 							<p>{{ $t('content.Payment_Methods') }}</p>
@@ -184,6 +191,11 @@ export default {
 			link_atascasinobet: '',
 			link_ataskasino: ''
 		};
+	},
+	computed: {
+		gameLicenseContent() {
+			return this.$t('content.Game_License_Content');
+		}
 	},
 	setup() {
 		const { locale } = useI18n();
@@ -589,7 +601,7 @@ li {
 	margin-right: 10px;
 }
 
-.game {
+.game span {
 	text-align: left;
 	font-size: 14px;
 	float: left;
@@ -691,5 +703,23 @@ body {
 .Visit_site a {
 	animation: blink 1s infinite;
 	/* Adjust the duration (1s) and the repetition (infinite) as needed */
+}
+
+.Atas_Sign_Up_Container {
+	margin-bottom: 16px;
+}
+
+.Atas_Sign_Up_Container a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.Atas_Download_Container {
+	margin-bottom: 25px;
+}
+
+.Atas_Download_Container a {
+	font-size: 16px;
+	text-decoration: none;
 }
 </style>

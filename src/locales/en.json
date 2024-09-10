@@ -87,11 +87,19 @@
 		"SP_Link_Word": "Atas APK",
 		"SP_F_Content": "Download APK to enjoy top-tier casino action with a wide game selection, secure transactions, and exclusive rewards. Download now for unparalleled entertainment and big wins!",
 		"SP_S_Content": "Discover Malaysia's premier gambling destination at Atas Casino, featuring a wide array of games such as live casino, slots, and sports betting. Known for its top-notch security, vast game variety, and excellent customer service, Atas Casino ensures an outstanding gaming experience for all players.",
-		"Game_License_Content": "ALPHA66 is a Registered Trade Mark, brand, and registered by Moon Technologie. Regulated & Licensed by the Government of Curacao and operates under the Master License of Gaming Services Provider, N.V. #1168/JAZ.",
+		"Game_License_Content": "<b>ALPHA66</b> is a registered trademark of <b>Moon Technologie</b>, regulated and licensed by the Government of <b>Curacao</b> under Master License #1168/JAZ.",
 		"Game_License": "GAME LICENSE",
 		"Payment_Methods": "PAYMENT METHODS",
 		"Certificate_N_Security": "CERTIFICATE & SECIRITY",
 		"Follow_Us": "FOLLOW US",
-		"sentence": "DIGI, MAXIS, CELCOM, UMOBILE have no bonus, but you can get a 100% clean. We recommend using e-wallets (TnG, Boost, Grab, Shopee, DuitNow) for deposits, and you'll get a 100% bonus as well. With ALPHA66, just click 'SHARE', the more you share, the more you earn!"
+		"sentence": "<b>DIGI, MAXIS, CELCOM, and UMOBILE</b> offer no bonuses, but you can get a 100% clean bonus with e-wallets (TnG, Boost, Grab, Shopee, DuitNow) for deposits. With <b>ALPHA66</b>, simply click 'SHARE'—the more you share, the more you earn!"
+	},
+	"Atas_Sign_Up": {
+		"Header": "Atas Sign Up",
+		"Content": "Explore Atas Casino H5 3.0 Web version with no download needed. As Malaysia’s leading casino game provider, Atas Casino offers a top-notch gaming experience."
+	},
+	"Atas_Download": {
+		"Header": "Atas Download",
+		"Content": "Get the APK now to access premium casino action, featuring a diverse game selection, secure transactions, and exclusive rewards. Download today for unmatched entertainment and big wins!"
 	}
 }

@@ -31,7 +31,7 @@
 		</div>
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('content.sentence') }}
+				<span v-html="gameLicenseContent"></span>
 			</div>
 		</div>
 	</div>
@@ -95,6 +95,11 @@ export default {
 			this.selectedLanguage = savedLanguage;
 		}
 	},
+	computed: {
+		gameLicenseContent() {
+			return this.$t('content.sentence');
+		}
+	}
 };
 </script>
 
@@ -255,8 +260,6 @@ export default {
 	/* visibility: visible; */
 	background-size: 100% 100%;
 	color: black;
-	font-size: 12px;
-	letter-spacing: 0.5px;
 	height: 25px;
 	font-weight: bold;
 	display: flex;
@@ -270,6 +273,11 @@ export default {
 	width: max-content;
 	animation: scroll 72s linear infinite;
 	color: darkblue;
+}
+
+.running-sentence span {
+	font-size: 12px;
+	letter-spacing: 0.5px;
 }
 
 @keyframes scroll {
