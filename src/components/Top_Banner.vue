@@ -1,14 +1,36 @@
 <template>
 	<div class="relative">
-		<div class="Top_Banner_Container" />
+		<a href="/">
+			<div class="Top_Banner_Container" />
+		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
 		<!-- Pop-up Card -->
 		<div v-if="showPopup" class="popup-card">
-			<div @click="changeLanguage('ms')">Bahasa Melayu</div>
-			<div @click="changeLanguage('en')">English</div>
-			<div @click="changeLanguage('zh')">中文</div>
+			<div @click="changeLanguage('en')">
+				English
+				<span v-if="selectedLanguage === 'en'" class="tick">
+					<i class="fa fa-check"></i>
+				</span>
+			</div>
+			<div @click="changeLanguage('ms')">
+				Bahasa Melayu
+				<span v-if="selectedLanguage === 'ms'" class="tick">
+					<i class="fa fa-check"></i>
+				</span>
+			</div>
+			<div @click="changeLanguage('zh')">
+				中文
+				<span v-if="selectedLanguage === 'zh'" class="tick">
+					<i class="fa fa-check"></i>
+				</span>
+			</div>
+		</div>
+		<div class="running-sentence-container">
+			<div class="running-sentence">
+				{{ $t('Announce_Bar.Header') }} - {{ $t('Announce_Bar.Content') }}
+			</div>
 		</div>
 	</div>
 </template>
@@ -22,11 +44,21 @@ export default {
 	setup() {
 		const { locale } = useI18n();
 		const showPopup = ref(false);
+		const selectedLanguage = ref(localStorage.getItem('selectedLanguage') || 'en');
 
 		const changeLanguage = (lang) => {
+			// Save the selected language to localStorage
+			localStorage.setItem('selectedLanguage', lang);
+
+			// Update Vue I18n locale
 			locale.value = lang;
-			showPopup.value = false; // Hide popup after changing language
+
+			// Hide popup and reset body overflow
+			showPopup.value = false;
 			document.body.style.overflow = 'auto';
+
+			// Optionally, reload the page
+			location.reload();
 		};
 
 		const togglePopup = () => {
@@ -123,5 +155,46 @@ export default {
 	.GT-icon {
 		top: 14px !important;
 	}
+}
+
+.running-sentence-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url('/images/Running_Banner_BgImg.gif');
+	visibility: visible;
+	background-size: 100% 100%;
+	background-color: black;
+	color: #f3c015;
+	font-size: 12px;
+}
+
+.running-sentence {
+	white-space: nowrap;
+	/* position: absolute; */
+	width: max-content;
+	animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(75%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.tick {
+	color: #FFC107;
+}
+
+.tick i {
+	font-size: 18px;
+}
+
+.fa-check::before {
+	content: "\f00c";
 }
 </style>

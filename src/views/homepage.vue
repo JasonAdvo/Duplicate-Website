@@ -7,14 +7,8 @@
 		<BackToTop />
 	</div>
 
-	<div>
+	<div class="topbanner">
 		<TopBanner />
-	</div>
-
-	<div class="running-sentence-container">
-		<div class="running-sentence">
-			{{ sentence }}
-		</div>
 	</div>
 
 	<div class="main-content">
@@ -496,35 +490,6 @@ export default {
 	color: #f0d843 !important;
 }
 
-.running-sentence-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	background-image: url('/images/Running_Banner_BgImg.gif');
-	visibility: visible;
-	background-size: 100% 100%;
-	background-color: black;
-	color: #f3c015;
-	font-size: 12px;
-}
-
-.running-sentence {
-	white-space: nowrap;
-	/* position: absolute; */
-	width: max-content;
-	animation: scroll 40s linear infinite;
-}
-
-@keyframes scroll {
-	0% {
-		transform: translateX(75%);
-	}
-
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
 .site-tabs {
 	display: flex;
 	flex-wrap: wrap;
@@ -668,5 +633,11 @@ li {
 
 .b-700 {
 	font-weight: 700;
+}
+
+.topbanner {
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 </style>
