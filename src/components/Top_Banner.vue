@@ -31,7 +31,8 @@
 		</div>
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				<span v-html="gameLicenseContent"></span>
+				<strong>{{ $t('content.sentence_1') }}</strong> {{ $t('content.sentence_2') }}
+				<strong>{{ $t('content.sentence_3') }}</strong> {{ $t('content.sentence_4') }}
 			</div>
 		</div>
 	</div>

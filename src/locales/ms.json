@@ -87,12 +87,19 @@
 		"SP_Link_Word": "Atas APK",
 		"SP_F_Content": "Muat turun APK untuk menikmati aksi kasino bertaraf tinggi dengan pelbagai pilihan permainan, transaksi yang selamat, dan ganjaran eksklusif. Muat turun sekarang untuk hiburan yang tiada tandingan dan kemenangan besar!",
 		"SP_S_Content": "Temui destinasi perjudian utama Malaysia di Atas Kasino, yang menawarkan pelbagai jenis permainan seperti kasino langsung, mesin slot, dan pertaruhan sukan. Dikenali dengan keselamatan yang cemerlang, pelbagai jenis permainan yang luas, dan perkhidmatan pelanggan yang hebat, Atas Kasino memastikan pengalaman permainan yang luar biasa untuk semua pemain.",
-		"Game_License_Content": "<b>ALPHA66</b> adalah tanda dagang berdaftar milik <b>Moon Technologie</b>, yang dikawal dan dilesenkan oleh Kerajaan <b>Curacao</b> di bawah Lesen Induk #1168/JAZ.",
-		"Game_License": "LESEN PERMAINAN",
+		"Game_License_Content_1": "ALPHA66,",
+		"Game_License_Content_2": "sebuah tanda dagangan berdaftar milik",
+		"Game_License_Content_3": "Moon Technologie,",
+		"Game_License_Content_4": "dilesenkan oleh",
+		"Game_License_Content_5": "Kerajaan Curacao",
+		"Game_License_Content_6": "di bawah Lesen Induk #1168/JAZ.",
 		"Payment_Methods": "CARA BAYARAN",
 		"Certificate_N_Security": "Sijil & Keselamatan",
 		"Follow_Us": "IKUT KAMI",
-		"sentence": "<b>DIGI, MAXIS, CELCOM, dan UMOBILE</b> tidak menawarkan bonus, tetapi anda boleh mendapatkan bonus bersih 100% dengan e-wallet (TnG, Boost, Grab, Shopee, DuitNow) untuk deposit. Dengan <b>ALPHA66</b>, cukup klik 'KONGSI'—semakin banyak anda kongsi, semakin banyak anda peroleh!"
+		"sentence_1": "DIGI, MAXIS, CELCOM, dan UMOBILE",
+		"sentence_2": "tidak menawarkan bonus, tetapi anda boleh mendapatkan bonus bersih 100% dengan e-wallet (TnG, Boost, Grab, Shopee, DuitNow) untuk deposit. Dengan",
+		"sentence_3": "ALPHA66,",
+		"sentence_4": "hanya klik 'KONGSI'—lebih banyak anda kongsikan, lebih banyak anda peroleh!"
 	},
 	"Atas_Sign_Up": {
 		"Header": "Daftar Atas",

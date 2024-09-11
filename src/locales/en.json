@@ -87,12 +87,20 @@
 		"SP_Link_Word": "Atas APK",
 		"SP_F_Content": "Download APK to enjoy top-tier casino action with a wide game selection, secure transactions, and exclusive rewards. Download now for unparalleled entertainment and big wins!",
 		"SP_S_Content": "Discover Malaysia's premier gambling destination at Atas Casino, featuring a wide array of games such as live casino, slots, and sports betting. Known for its top-notch security, vast game variety, and excellent customer service, Atas Casino ensures an outstanding gaming experience for all players.",
-		"Game_License_Content": "<b>ALPHA66</b> is a registered trademark of <b>Moon Technologie</b>, regulated and licensed by the Government of <b>Curacao</b> under Master License #1168/JAZ.",
+		"Game_License_Content_1": "ALPHA66,",
+		"Game_License_Content_2": "a registered trademark of",
+		"Game_License_Content_3": "Moon Technologie,",
+		"Game_License_Content_4": "is licensed by the",
+		"Game_License_Content_5": "Government of Curacao",
+		"Game_License_Content_6": "under Master License #1168/JAZ.",
 		"Game_License": "GAME LICENSE",
 		"Payment_Methods": "PAYMENT METHODS",
 		"Certificate_N_Security": "CERTIFICATE & SECIRITY",
 		"Follow_Us": "FOLLOW US",
-		"sentence": "<b>DIGI, MAXIS, CELCOM, and UMOBILE</b> offer no bonuses, but you can get a 100% clean bonus with e-wallets (TnG, Boost, Grab, Shopee, DuitNow) for deposits. With <b>ALPHA66</b>, simply click 'SHARE'—the more you share, the more you earn!"
+		"sentence_1": "DIGI, MAXIS, CELCOM, and UMOBILE",
+		"sentence_2": "offer no bonuses, but you can get a 100% clean bonus with e-wallets (TnG, Boost, Grab, Shopee, DuitNow) for deposits. With",
+		"sentence_3": "ALPHA66,",
+		"sentence_4": "simply click 'SHARE'—the more you share, the more you earn!"
 	},
 	"Atas_Sign_Up": {
 		"Header": "Atas Sign Up",

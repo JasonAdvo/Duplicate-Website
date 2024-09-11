@@ -72,7 +72,12 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
-							<span v-html="gameLicenseContent"></span>
+							<strong>{{ $t('content.Game_License_Content_1') }} </strong> {{
+								$t('content.Game_License_Content_2') }}
+							<strong>{{ $t('content.Game_License_Content_3') }} </strong> {{
+								$t('content.Game_License_Content_4') }}
+							<strong>{{ $t('content.Game_License_Content_5') }} </strong> {{
+								$t('content.Game_License_Content_6') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('content.Payment_Methods') }}</p>
@@ -560,7 +565,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: green;
+	color: rgb(13, 110, 253);
 }
 
 .image-wrapper a {
@@ -601,7 +606,7 @@ li {
 	margin-right: 10px;
 }
 
-.game span {
+.game {
 	text-align: left;
 	font-size: 14px;
 	float: left;
