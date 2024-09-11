@@ -336,7 +336,6 @@ export default {
 		},
 		scrollToElement(selector) {
 			const element = document.querySelector(selector);
-			console.log(element)
 			if (element) {
 				const isMobile = window.innerWidth <= 768;
 				const stickyBarHeight = isMobile ? this.stickyBarHeightMobile : this.stickyBarHeightWeb;
