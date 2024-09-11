@@ -283,7 +283,7 @@ export default {
 
 @keyframes scroll {
 	0% {
-		transform: translateX(60%);
+		transform: translateX(110%);
 	}
 
 	100% {
