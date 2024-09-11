@@ -1,7 +1,7 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<!-- <LB_Img_Carousel /> -->
+			<a href="/"><img style="border-radius: 8px;" src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
 			<a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR">
 			</a>
 			<table>
@@ -67,25 +67,25 @@
 			<div class="Tablet-Mobile-view">
 				<a href="/" rel="nofollow"><img src="/images/LB_Img_2.webp" alt="Share"></a>
 				<div class="button-grp">
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Downline_Img.webp"
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Share_Img.webp"
+							alt="Share"></a>
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Downline_Img.webp"
 							alt="Downline"></a>
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More"></a>
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
-				<a href="/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
+				<a href="/" rel="nofollow"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp"
+						alt="Telegram">
 				</a>
 				<a href="/" rel="nofollow"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
 				</a>
 
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_3.webp" alt=""></a>
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt=""></a>
+				<a href="/" rel="nofollow"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp"
+						alt="Live Now"></a>
+				<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt="About"></a>
 			</div>
-
-			<!-- <a href="/" rel="nofollow"><img src="/images/188welcome_bonus.webp" alt="188% Welcome Bonus">
-			</a> -->
-			<!-- <a href="/" rel="nofollow"><img src="/images/daily_top_up_bonus.webp" alt="Top Up Bonus">
-			</a> -->
+			<a href="/"><img style="border-radius: 8px;" src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
+			<a href="/"><img style="border-radius: 8px;" src="/images/welcome bonus.webp" alt="Welcome Bonus"></a>
 		</div>
 	</div>
 </template>
@@ -109,9 +109,8 @@ export default {
 }
 
 .LB_Imgs img {
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 16px;
-	border-radius: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -127,15 +126,30 @@ export default {
 
 
 .button-grp {
-	margin-top: -28%;
+	margin-top: -30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1920px) {
+	.button-grp {
+		margin-top: -28%;
+	}
 }
 
 .button-grp img {
 	padding: 0 5px;
 }
 
-.no-br {
-	border-radius: unset !important;
+.button-grp a {
+	width: calc(50% - 5px);
+}
+
+.button_width {
+	width: 100%;
+	margin-bottom: 8px !important;
 }
 
 .title {
@@ -191,12 +205,7 @@ export default {
 
 table {
 	width: 100%;
-}
-
-@media screen and (max-width: 769px) {
-	table {
-		margin-bottom: 16px;
-	}
+	margin-bottom: 16px;
 }
 
 table td {

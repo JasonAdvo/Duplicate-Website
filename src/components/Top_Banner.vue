@@ -210,20 +210,20 @@ export default {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: white;
+	background: black;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	z-index: 9999;
 	text-align: center;
 	width: 300px;
-	border: 2px solid green;
-	color: green;
+	border: 2px solid #FFC107;
+	color: white;
 }
 
 .popup-card div {
 	display: block;
 	padding: 15px;
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid #FFC107;
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;

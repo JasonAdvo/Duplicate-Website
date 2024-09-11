@@ -1,6 +1,8 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
+			<a href="/"><img style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
+					alt="50% Daily Bonus"></a>
 			<div class="login-register-container">
 				<a href="/" rel="nofollow"><img class="Join" src="/images/RB_Login_Img.webp" alt="Login"></a>
 				<a href="/" rel="nofollow"><img class="Register" src="/images/RB_Register_Img.webp" alt="Register"></a>
@@ -16,13 +18,13 @@
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a href="/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
 					</a>
 					<a href="/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 					</a>
 					<a href="/" rel="nofollow">
-						<img class="no-br" src="/images/RB_Refresh_Img.webp" alt="Refresh">
+						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
 					</a>
 				</div>
 			</div>
@@ -30,11 +32,12 @@
 			<div class="Tablet-Mobile-view">
 				<a href="/" rel="nofollow"><img src="/images/LB_Img_2.webp" alt="Banner"></a>
 				<div class="button-grp">
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Downline_Img.webp"
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Share_Img.webp"
+							alt="Share"></a>
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Downline_Img.webp"
 							alt="Downline"></a>
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="/" rel="nofollow"><img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More"></a>
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 				<div class="RB-mobile-img-grp">
 					<a href="/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
@@ -42,8 +45,9 @@
 					<a href="/" rel="nofollow"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
 					</a>
 
-					<a href="/" rel="nofollow"><img src="/images/LB_Img_3.webp" alt=""></a>
-					<!-- <a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt=""></a> -->
+					<a href="/" rel="nofollow"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp"
+							alt="Live Now"></a>
+					<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt="About"></a>
 				</div>
 			</div>
 
@@ -75,13 +79,13 @@
 				</a>
 			</div>
 
-			<!-- <a href="/" rel="nofollow"><img src="/images/Atas-Post-Banner-(Eng).webp" alt="188% Welcome Bonus"
-					style="margin-bottom: 16px;">
-			</a> -->
+			<a href="/" rel="nofollow"><img src="/images/Marc Marquez bonus.webp" alt="93% Marc Marquex Bonus"
+					style="margin-bottom: 16px; border-radius: 8px;">
+			</a>
 
-			<!-- <a href="/" rel="nofollow"><img src="/images/check_in.webp" alt="Weekly Check In Bonus"
-					style="margin-bottom: 16px;">
-			</a> -->
+			<a href="/" rel="nofollow"><img src="/images/top up rm20.webp" alt="Top Up Rm20"
+					style="margin-bottom: 16px; border-radius: 8px;">
+			</a>
 		</div>
 	</div>
 </template>
@@ -114,16 +118,13 @@ export default {
 }
 
 .RB_Imgs img {
-	max-width: 100%;
-	border-radius: 20px;
+	width: 100%;
 }
 
 .RB_Info_Container {
-	background-image: url('/images/RB_Cash_Btn_Container_Img.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	padding: 15px 15px;
 }
 
 .RB_Cash_Btn_Container {
@@ -132,6 +133,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 5px;
 }
 
 .RB_Cash_Btn_Container img {
@@ -143,10 +145,16 @@ export default {
 .login-register-container {
 	display: flex;
 	margin-bottom: 16px;
+	justify-content: space-between;
 }
 
 .login-register-container img {
 	border-radius: 0%;
+}
+
+.Join,
+.Register {
+	height: 47px;
 }
 
 .Join {
@@ -185,7 +193,7 @@ export default {
 
 .Baki strong {
 	color: #FFC107;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 .Tablet-Mobile-view {
@@ -196,10 +204,6 @@ export default {
 	.Tablet-Mobile-view {
 		display: flex !important;
 		flex-direction: column;
-	}
-
-	.RB_Info_Container {
-		margin-bottom: 0 !important;
 	}
 
 	.RB_Cash_Btn_Container img {
@@ -234,11 +238,7 @@ export default {
 	}
 
 	.Baki strong {
-		font-size: 20px;
-	}
-
-	.button-grp a {
-		width: 50% !important;
+		font-size: 30px;
 	}
 
 	.button-grp img {
@@ -247,19 +247,25 @@ export default {
 }
 
 .button-grp {
-	margin-top: -23%;
+	margin-top: -24%;
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
 .button-grp a {
-	width: 50%;
+	width: calc(50% - 5px);
+}
+
+.button_width {
+	width: 100%
 }
 
 .button-grp img {
 	width: 100%;
 	padding: 0 5px;
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 }
 
 .sport-betting-container {
@@ -268,7 +274,7 @@ export default {
 	background-size: cover;
 	padding: 20px 0 10px 0;
 	margin-bottom: 16px;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 @media screen and (max-width: 430px) {
@@ -353,6 +359,7 @@ export default {
 
 .team img {
 	margin-bottom: 10px;
+	width: 50px;
 }
 
 @font-face {
@@ -368,8 +375,8 @@ export default {
 	font-family: 'Digital-7', sans-serif;
 }
 
-.no-br {
-	border-radius: unset !important;
+.RB-mobile-img-grp {
+	margin-top: 22px;
 }
 
 .RB-mobile-img-grp img {

@@ -19,7 +19,7 @@
 
 			<div class="footer-content">
 				<div class="d-f col">
-					<a href="/" rel="nofollow" target="_blank">
+					<a :href="winbox_link" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
@@ -49,17 +49,43 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
 	name: 'FooterMenu',
 	data() {
 		return {
-			isVisible: true // Set this to control visibility
+			isVisible: true, // Set this to control visibility
+			winbox_link: ''
 		};
 	},
 	methods: {
 		closePopup() {
 			this.isVisible = false;
-		}
+		},
+		async fetchLink() {
+			try {
+				const response = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
+					headers: {
+						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
+					}
+				});
+				this.winbox_link = response.data.data.attributes.winboxofficial_my;
+				// console.log(this.winbox_link)
+
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+					headers: {
+						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
+					}
+				});
+				this.winbox77_link = response_winbox77.data.data.attributes.winbox77_my;
+			} catch (error) {
+				console.log(error)
+			}
+		},
+	},
+	mounted() {
+		this.fetchLink();
 	}
 };
 </script>

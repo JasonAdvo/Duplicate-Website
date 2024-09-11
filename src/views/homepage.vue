@@ -16,29 +16,24 @@
 			<div class="Middle_Inner_Container">
 				<div style="display: flex; justify-content: center;">
 					<div class="site-tabs">
-
-						<MobileGameSplide />
-
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="selectImage(index); handleRedirect(index)">
-							<img :src="selectedIndex === index ? image.selected : image.notSelected"
-								:alt="'Image ' + (index + 1)">
+							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
 						</div>
 					</div>
 				</div>
 
-
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 34" :key="n">
-								<a v-if="n <= 18" :href="`/`" rel="nofollow">
+							<div class="image-wrapper" v-for="n in 35" :key="n">
+								<a v-if="n <= 12" :href="`/`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
-								<div v-if="n <= 18">
+								<div v-if="n <= 12">
 									<a :href="`/`" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
@@ -52,78 +47,91 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
-					<p><a href="/">MAMAK24</a> {{
-						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
-							}}</strong> {{
-								$t('Upper_Content.MAMAK24_Description_SH') }}
+					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
+					<p> {{ $t('Main_Content.H1_Content_1') }}
+						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
+						{{ $t('Main_Content.H1_Content_3') }}
+						<strong>{{ $t('Main_Content.H1_Content_4') }} </strong>
+						{{ $t('Main_Content.H1_Content_5') }}
+					</p>
+					<p>
+						{{ $t('Main_Content.H1_Content_6') }}
+						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
+						{{ $t('Main_Content.H1_Content_7') }}
 					</p>
 					<br>
-					<h2>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24_Online_Games') }}</h2>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24-OG-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.M24-OG-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Live-Casino-Games') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-LCG-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Casino-Slots') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Sports-Betting') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-SB-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-SB-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Lottery') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OL-FH-Description') }} <strong>{{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-OL-Main-word') }}</strong> {{
-								$t('H2-MAMAK24-Online-Casino-Games.H3-OL-SH-Description') }}
+					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
+					<p> {{ $t('Main_Content.H2_1_Content_1') }}
+						<strong>{{ $t('Main_Content.H2_1_Content_2') }}</strong>
+						{{ $t('Main_Content.H2_1_Content_3') }}
 					</p>
 					<br>
-					<h2>{{ $t('H2-MAMAK24-Payment-Methods.MAMAK24_Payment_Methods') }}</h2>
-					<p>{{ $t('H2-MAMAK24-Payment-Methods.M24-PM-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Bank-Transfer') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Payment-Methods.H3-BT-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Ewallet-Transfer') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Payment-Methods.H3-ET-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Payment-Methods.H3-ET-Description') }}
+					<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
+					<p> <strong>{{ $t('Main_Content.H2_2_Content_1') }}</strong>
+						{{ $t('Main_Content.H2_2_Content_2') }}</p>
+					<ul>
+						<li>
+							{{ $t('Main_Content.H2_2_Li_1_Header') }}
+							<p>
+								{{ $t('Main_Content.H2_2_Li_1_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_2_Li_1_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_2_Li_1_Content_3') }}
+							</p>
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_2_Li_2_Header') }}
+							<p>
+								{{ $t('Main_Content.H2_2_Li_2_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_2_Li_2_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_2_Li_2_Content_3') }}
+							</p>
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_2_Li_3_Header') }}
+							<p>
+								{{ $t('Main_Content.H2_2_Li_3_Content') }}
+							</p>
+						</li>
+					</ul>
+					<p>
+						{{ $t('Main_Content.H2_2_Middle_Content_1') }}
+						<strong>{{ $t('Main_Content.H2_2_Middle_Content_2') }}</strong>
+						{{ $t('Main_Content.H2_2_Middle_Content_3') }}
+					</p>
+					<ul>
+						<li>
+							{{ $t('Main_Content.H2_2_Li_4_Header') }}
+							<p>
+								{{ $t('Main_Content.H2_2_Li_4_Content') }}
+							</p>
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_2_Li_5_Header') }}
+							<p>
+								{{ $t('Main_Content.H2_2_Li_5_Content') }}
+							</p>
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_2_Li_6_Header') }}
+							<p>
+								{{ $t('Main_Content.H2_2_Li_6_Content') }}
+							</p>
+						</li>
+					</ul>
+					<p>
+						{{ $t('Main_Content.H2_2_Btm_Content_1') }}
+						<strong>{{ $t('Main_Content.H2_2_Btm_Content_2') }}</strong>
+						{{ $t('Main_Content.H2_2_Btm_Content_3') }}
 					</p>
 					<br>
-					<h2>{{ $t('H2-Join-M24.Join_MAMAK24') }}</h2>
-					<p>{{ $t('H2-Join-M24.Join-M24-Description') }}</p>
-					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Register-Online') }}</h3>
-					<ol>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-1') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-2') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-3') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-4') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-5-FH') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-RO-Step-5-Main-Word') }}</strong> {{
-									$t('H2-Join-M24.H3-M24-RO-Step-5-SH') }}</li>
-					</ol>
-					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Casino-Online') }}</h3>
-					<ol>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-1') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-2-Description') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-CO-Step-2-Main-Word') }}</strong></li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-3') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-4') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-5-FH') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-CO-Step-5-Main-Word') }}</strong> {{
-									$t('H2-Join-M24.H3-M24-CO-Step-5') }}</li>
-					</ol>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Bonus.MAMAK24_Bonus') }}</h2>
-					<p><strong>{{ $t('H2-MAMAK24-Bonus.M24-Bonus-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Bonus.M24-Bonus-Description') }}
+					<h2>{{ $t('Main_Content.H3_Header') }}</h2>
+					<p>{{ $t('Main_Content.H3_Content_1') }}</p>
+					<p>
+						{{ $t('Main_Content.H3_Content_2') }}
+						<strong>{{ $t('Main_Content.H3_Content_3') }}</strong>
+						{{ $t('Main_Content.H3_Content_4') }}
 					</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-Advant-Play-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-APB-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-50%-Welcome-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-WB-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-10%-Unlimited-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-UB-Description') }}</p>
-					<br>
-					<p>{{ $t('MAMAK24-Last-Description.M24_LD') }}</p>
+
 					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
@@ -133,40 +141,47 @@
 					<br>
 					<br>
 					<p class="b-700">
-						{{ $t('content.Learn_More') }}
+						{{ $t('Main_Content.Btm_Header') }}
 					</p>
 					<p>
-						<a href="/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
-						{{
-							$t('content.FP_Content') }}
+						{{ $t('Main_Content.Btm_Content_1') }} |
+						<a :href="winbox_link"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
+						{{ $t('Main_Content.Btm_Content_3') }}
 					</p>
 					<p>
-						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
-							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
+						{{ $t('Main_Content.Btm_Content_4') }} |
+						<a :href="winbox77_link">
+							<strong>
+								{{ $t('Main_Content.Btm_Content_5') }}
+							</strong>
+						</a> |
+						{{ $t('Main_Content.Btm_Content_6') }}
 					</p>
 					<div class="footer-detail">
 						<div class="license">
-							<p>GAME LICENSE</p>
+							<p>{{ $t('message.Game_Licence') }}</p>
 							<a href="/" rel="nofollow">
 								<img src="/images/Footer-License-Img.webp" alt="Game License">
 							</a>
 						</div>
 						<div class="game">
-							CROWN99 is a Registered Trade Mark, brand, and registered by Moon Technologie. Regulated &
-							Licensed by the Government
-							of Curacao and operates under the Master License of Gaming Services Provider, N.V.
-							#1168/JAZ.
+							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
+							{{ $t('Registered_TradeMark.Content_2') }}
+							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
+							{{ $t('Registered_TradeMark.Content_4') }}
+							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
+							{{ $t('Registered_TradeMark.Content_6') }}
 						</div>
 						<div class="payment">
-							<p>PAYMENT METHODS</p>
+							<p>{{ $t('message.Payment_Method') }}</p>
 							<img src="/images/payment-list.webp" alt="payment-list">
 						</div>
 						<div class="certification">
-							<p>CERTIFICATE & SECURITY</p>
+							<p>{{ $t('message.Certidicate_Security') }}</p>
 							<img src="/images/Cert-list.webp" alt="certificate-list">
 						</div>
 						<div class="follow">
-							<p>FOLLOW US</p>
+							<p>{{ $t('message.Follow_Us') }}</p>
 							<a href="" rel="nofollow"><img class="main-pulse" src="/images/facebook.webp"
 									alt="facebook"></a>
 							<a href="" rel="nofollow"><img class="main-pulse" src="/images/telegram.webp"
@@ -252,26 +267,29 @@ export default {
 				"Talent Night",
 				"Spell Craft",
 				"Steam Punk 100",
-				"Thai Street Food"
+				"Thai Street Food",
+				"Madness Buffalo"
 			],
 			images: [
-				{ notSelected: '/images/ClotPlayN_NotS.webp', selected: '/images/ClotPlayN_S.webp' },
-				{ notSelected: '/images/ClotPlay_NotS.webp', selected: '/images/ClotPlay_S.webp' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
-				{ notSelected: '/images/BPG_NotS.webp', selected: '/images/BPG_S.webp' },
-				{ notSelected: '/images/SPINIX_NotS.webp', selected: '/images/SPINIX_S.webp' },
-				{ notSelected: '/images/RICHG_NotS.webp', selected: '/images/RICHG_S.webp' },
-				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp' },
-				{ notSelected: '/images/PragmaticP_NotS.webp', selected: '/images/PragmaticP_S.webp' },
-				{ notSelected: '/images/AceWin_NotS.webp', selected: '/images/AceWin_S.webp' },
-				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp' },
-				{ notSelected: '/images/KAG_NotS.webp', selected: '/images/KAG_S.webp' },
-				{ notSelected: '/images/SlotG_NotS.webp', selected: '/images/SlotG_S.webp' },
-				{ notSelected: '/images/LiveG_NotS.webp', selected: '/images/LiveG_S.webp' },
-				{ notSelected: '/images/SportB_NotS.webp', selected: '/images/SportB_S.webp' },
+				{ notSelected: '/images/CPF_NotS.webp', selected: '/images/CPF_S.webp', alt: 'Clot Play Free' },
+				{ notSelected: '/images/CP_NotS.webp', selected: '/images/CP_S.webp', alt: 'Clot Play' },
+				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
+				{ notSelected: '/images/BT_NotS.webp', selected: '/images/BT_S.webp', alt: 'BT Gaming' },
+				{ notSelected: '/images/BP_NotS.webp', selected: '/images/BP_S.webp', alt: 'BP Gaming' },
+				{ notSelected: '/images/Rich_NotS.webp', selected: '/images/Rich_S.webp', alt: 'Rich Gaming' },
+				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp', alt: 'Next Spin' },
+				{ notSelected: '/images/PP_NotS.webp', selected: '/images/PP_S.webp', alt: 'Pragmatic Play' },
+				{ notSelected: '/images/AW_NotS.webp', selected: '/images/AW_S.webp', alt: 'Ace Win' },
+				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp', alt: 'Joker' },
+				{ notSelected: '/images/KA_NotS.webp', selected: '/images/KA_S.webp', alt: 'KA Gaming' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
+				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Sports' },
 			],
 			status: null,
-			response: []
+			response: [],
+			winbox_link: '',
+			winbox77_link: ''
 		};
 	},
 	setup() {
@@ -291,11 +309,15 @@ export default {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
+				this.winbox_link = response.data.data.attributes.winboxofficial_my;
+				// console.log(this.winbox_link)
 
-				// this.status = response.status;
-				// console.log(this.status)
-				this.response = response;
-				console.log(response)
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+					headers: {
+						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
+					}
+				});
+				this.winbox77_link = response_winbox77.data.data.attributes.winbox77_my;
 			} catch (error) {
 				console.log(error)
 			}
@@ -462,7 +484,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #ffc107;
+	color: rgb(0, 191, 255);
 }
 
 .google-map-link {
@@ -538,18 +560,6 @@ export default {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 769px) {
-
-	.site-tabs {
-		display: flex;
-		justify-content: center;
-	}
-
-	.image-container {
-		display: none;
-	}
-}
-
 .image-container.selected {
 	border-bottom: 5px solid #FFF;
 }
@@ -567,9 +577,8 @@ export default {
 
 	.image-container {
 		width: 86px;
-		/* Fixed width for mobile view */
 		flex: 0 0 auto;
-		/* Prevent shrinking */
+		padding-bottom: 0;
 	}
 
 	.site-tabs::-webkit-scrollbar {
@@ -582,6 +591,14 @@ export default {
 		/* Hide scrollbar on IE and Edge */
 		scrollbar-width: none;
 		/* Hide scrollbar on Firefox */
+	}
+
+	.site-tabs::before {
+		content: none;
+	}
+
+	.image-container.selected {
+		border-bottom: 0;
 	}
 }
 
@@ -672,7 +689,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: #ffd700;
+	color: rgb(0, 191, 255);
 }
 
 .image-wrapper a {
