@@ -37,7 +37,7 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				<span v-html="gameLicenseContent"></span>
+				{{ $t('content.sentence') }}
 			</div>
 		</div>
 	</div>
@@ -95,11 +95,7 @@ export default {
 			this.selectedLanguage = savedLanguage;
 		}
 	},
-	computed: {
-		gameLicenseContent() {
-			return this.$t('content.sentence');
-		}
-	}
+
 };
 </script>
 
