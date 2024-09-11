@@ -32,12 +32,12 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a v-if="n <= 18" :href="link_atascasinobet + 'sign-up'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_atascasinobet + 'sign-up'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 
-								<div v-if="n <= 18">
+								<div v-if="n <= 12">
 									<a :href="link_atascasinobet + 'sign-up'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
@@ -167,6 +167,7 @@ import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
 import PopUpCard from '@/components/PopUpCard.vue';
 import BackToTop from '@/components/BackToTop.vue';
+import { mapGetters } from 'vuex';
 import axios from 'axios';
 
 export default {
@@ -256,8 +257,9 @@ export default {
 			],
 			status: null,
 			response: [],
-			link_atascasinobet: '',
 			link_ataskasino: '',
+			stickyBarHeightWeb: 80,
+			stickyBarHeightMobile: 75,
 		};
 	},
 	setup() {
@@ -269,38 +271,28 @@ export default {
 			changeLanguage
 		};
 	},
+	computed: {
+		...mapGetters(['link_atascasinobet', 'error']),
+	},
+	mounted() {
+		this.$store.dispatch('fetchLink_atascasinobet');
+		this.fetchLink_ataskasino();
+	},
 	methods: {
-		async fetchLink() {
-			try {
-				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com", {
-					headers: {
-						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
-					}
-				});
-
-				// this.status = response.status;
-				// console.log(this.status)
-				// this.response = response;
-				// console.log(this.response)
-				this.link_atascasinobet = response.data.data.attributes.atascasinobet_com;
-				// console.log(this.link_atascasinobet)
-			} catch (error) {
-				console.log(error)
-			}
-		},
-		async fetchlink_ataskasino() {
+		async fetchLink_ataskasino() {
 			try {
 				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com", {
 					headers: {
 						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
 					}
 				});
+
 				// this.status = response.status;
 				// console.log(this.status)
 				// this.response = response;
 				// console.log(this.response)
 				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
-
+				// console.log(this.link_ataskasino)
 			} catch (error) {
 				console.log(error)
 			}
@@ -344,20 +336,21 @@ export default {
 		},
 		scrollToElement(selector) {
 			const element = document.querySelector(selector);
+			console.log(element)
 			if (element) {
-				element.scrollIntoView({ behavior: 'smooth' });
-			} else {
-				console.error(`Element with selector ${selector} not found`);
+				const isMobile = window.innerWidth <= 768;
+				const stickyBarHeight = isMobile ? this.stickyBarHeightMobile : this.stickyBarHeightWeb;
+				const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+				const offsetPosition = elementPosition - stickyBarHeight;
+
+				window.scrollTo({
+					top: offsetPosition,
+					behavior: 'smooth'
+				});
 			}
 		},
-		// redirectToSignUp() {
-		// 	window.location.href = "https://www.atascasinobet1.com/sign-up/";
-		// }
 	},
-	mounted() {
-		this.fetchLink();
-		this.fetchlink_ataskasino();
-	}
+
 }
 </script>
 
