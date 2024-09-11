@@ -7,7 +7,7 @@ import ms from '/src/locales/ms.json';
 import zh from '/src/locales/zh.json';
 // main.js
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import store from '/src/store/index.js'; // Import the Vuex store
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -26,4 +26,5 @@ const i18n = createI18n({
 const app = createApp(App);
 app.use(i18n);
 app.use(router);
+app.use(store); // Add the Vuex store to the app
 app.mount('#app');
