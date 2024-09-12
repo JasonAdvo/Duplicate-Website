@@ -12,5 +12,8 @@ export default defineConfig({
 	},
 	optimizeDeps: {
 		include: ['bootstrap', 'bootstrap-vue-3']
+	},
+	esbuild: {
+		logOverride: { 'css-syntax-error': 'silent' }
 	}
 })
