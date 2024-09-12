@@ -483,7 +483,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: rgb(0, 191, 255);
+	color: #07a6fb;
 }
 
 .google-map-link {
@@ -688,7 +688,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: rgb(0, 191, 255);
+	color: #07a6fb;
 }
 
 .image-wrapper a {
