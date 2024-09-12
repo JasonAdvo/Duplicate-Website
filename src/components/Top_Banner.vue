@@ -245,7 +245,7 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Crown99_Running_Bar_Bg_Img.webp');
+	background-image: url('/images/Running_Bar_Bg_Img.webp');
 	/* visibility: visible; */
 	background-size: 100% 100%;
 	background-color: black;

@@ -2,8 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<a href="/"><img style="border-radius: 8px;" src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
-			<a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR">
-			</a>
+			<!-- <a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR"></a> -->
 			<table>
 				<thead>
 					<tr>
