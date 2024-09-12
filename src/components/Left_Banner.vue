@@ -2,8 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<a href="/"><img style="border-radius: 8px;" src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
-			<a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR">
-			</a>
+			<img src="/images/LB_Img_1.webp" alt="PAGCOR">
 			<table>
 				<thead>
 					<tr>
@@ -65,24 +64,21 @@
 				</tbody>
 			</table>
 			<div class="Tablet-Mobile-view">
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_2.webp" alt="Share"></a>
+				<a href="/"><img src="/images/LB_Img_2.webp" alt="Share"></a>
 				<div class="button-grp">
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Share_Img.webp"
-							alt="Share"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Downline_Img.webp"
-							alt="Downline"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
+					<a href="/"><img class="button_width" src="/images/LB_Share_Img.webp" alt="Share"></a>
+					<a href="/"><img class="button_width" src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+					<a href="/"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a href="/"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
-				<a href="/" rel="nofollow"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp"
-						alt="Telegram">
+				<a href="https://t.me/atas77channel" rel="nofollow"><img style="margin-top: 7%;"
+						src="/images/LB_Telegram_Img.webp" alt="Telegram">
 				</a>
-				<a href="/" rel="nofollow"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
+				<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
 				</a>
 
-				<a href="/" rel="nofollow"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp"
-						alt="Live Now"></a>
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt="About"></a>
+				<a href="/"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp" alt="Live Now"></a>
+				<a href="/"><img src="/images/LB_Img_4.webp" alt="About"></a>
 			</div>
 			<a href="/"><img style="border-radius: 8px;" src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
 			<a href="/"><img style="border-radius: 8px;" src="/images/welcome bonus.webp" alt="Welcome Bonus"></a>

@@ -28,13 +28,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 35" :key="n">
-								<a v-if="n <= 12" :href="`/`" rel="nofollow">
+								<a v-if="n <= 12" :href="`/`">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="`/`" rel="nofollow">
+									<a :href="`/`">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -160,9 +160,7 @@
 					<div class="footer-detail">
 						<div class="license">
 							<p>{{ $t('message.Game_Licence') }}</p>
-							<a href="/" rel="nofollow">
-								<img src="/images/Footer-License-Img.webp" alt="Game License">
-							</a>
+							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
 							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
@@ -182,17 +180,14 @@
 						</div>
 						<div class="follow">
 							<p>{{ $t('message.Follow_Us') }}</p>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/facebook.webp"
-									alt="facebook"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/telegram.webp"
-									alt="telegram"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/instagram.webp"
-									alt="instagram"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/youtube.webp"
-									alt="youtube"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/whatsapp.webp"
-									alt="whatsapp"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
+							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
+							<a href="https://t.me/atas77channel" rel="nofollow"><img class="main-pulse"
+									src="/images/telegram.webp" alt="telegram"></a>
+							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
+							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
+							<a href="https://rebrand.ly/ATASxSEO2P" rel="nofollow"><img class="main-pulse"
+									src="/images/whatsapp.webp" alt="whatsapp"></a>
+							<a href="/"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
 						</div>
 					</div>
 					<div class="copyright">

@@ -4,8 +4,8 @@
 			<a href="/"><img style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
 					alt="50% Daily Bonus"></a>
 			<div class="login-register-container">
-				<a href="/" rel="nofollow"><img class="Join" src="/images/RB_Login_Img.webp" alt="Login"></a>
-				<a href="/" rel="nofollow"><img class="Register" src="/images/RB_Register_Img.webp" alt="Register"></a>
+				<a href="/"><img class="Join" src="/images/RB_Login_Img.webp" alt="Login"></a>
+				<a href="/"><img class="Register" src="/images/RB_Register_Img.webp" alt="Register"></a>
 			</div>
 			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
 				<div class="RB_Small_Text_Container">
@@ -17,37 +17,35 @@
 					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a href="/" rel="nofollow">
+					<a href="/">
 						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
 					</a>
-					<a href="/" rel="nofollow">
+					<a href="/">
 						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 					</a>
-					<a href="/" rel="nofollow">
+					<a href="/">
 						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
 					</a>
 				</div>
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_2.webp" alt="Banner"></a>
+				<a href="/"><img src="/images/LB_Img_2.webp" alt="Banner"></a>
 				<div class="button-grp">
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Share_Img.webp"
-							alt="Share"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Downline_Img.webp"
-							alt="Downline"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
+					<a href="/"><img class="button_width" src="/images/LB_Share_Img.webp" alt="Share"></a>
+					<a href="/"><img class="button_width" src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+					<a href="/"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a href="/"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 				<div class="RB-mobile-img-grp">
-					<a href="/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
+					<a href="https://t.me/atas77channel" rel="nofollow"><img src="/images/LB_Telegram_Img.webp"
+							alt="Telegram">
 					</a>
-					<a href="/" rel="nofollow"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
+					<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
 					</a>
 
-					<a href="/" rel="nofollow"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp"
-							alt="Live Now"></a>
-					<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt="About"></a>
+					<a href="/"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp" alt="Live Now"></a>
+					<a href="/"><img src="/images/LB_Img_4.webp" alt="About"></a>
 				</div>
 			</div>
 
@@ -61,7 +59,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="/sports-live" rel="nofollow">
+						<a href="/">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -72,18 +70,18 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a href="/sports-live" rel="nofollow">
+				<a href="/">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a href="/" rel="nofollow"><img src="/images/Marc Marquez bonus.webp" alt="93% Marc Marquex Bonus"
+			<a href="/"><img src="/images/Marc Marquez bonus.webp" alt="93% Marc Marquex Bonus"
 					style="margin-bottom: 16px; border-radius: 8px;">
 			</a>
 
-			<a href="/" rel="nofollow"><img src="/images/top up rm20.webp" alt="Top Up Rm20"
+			<a href="/"><img src="/images/top up rm20.webp" alt="Top Up Rm20"
 					style="margin-bottom: 16px; border-radius: 8px;">
 			</a>
 		</div>

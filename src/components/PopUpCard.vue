@@ -4,7 +4,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a href="/" rel="nofollow">
+					<a href="/">
 						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
 					</a>
 				</div>
