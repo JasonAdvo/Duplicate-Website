@@ -266,9 +266,9 @@ table td {
 	font-weight: 500;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 1440px) {
 	table td {
-		font-size: 10px;
+		font-size: 9px;
 	}
 }
 
