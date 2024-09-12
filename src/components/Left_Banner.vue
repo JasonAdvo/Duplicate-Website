@@ -144,7 +144,7 @@ export default {
 }
 
 .button-grp a {
-	width: calc(50% - 5px);
+	width: calc(50% - 8px);
 }
 
 .button_width {
