@@ -1,8 +1,9 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<a :href="link_winboxmys + 'winbox-register'"><img style="margin-bottom: 16px; border-radius: 8px;"
-					src="/images/Daily_bonus.webp" alt="50% Daily Bonus"></a>
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img
+					style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
+					alt="50% Daily Bonus"></a>
 			<div class="login-register-container">
 				<a :href="link_winboxmys + 'winbox-login'" rel="nofollow"><img class="Join"
 						src="/images/RB_Login_Img.webp" alt="Login"></a>
@@ -45,7 +46,7 @@
 							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 				<div class="RB-mobile-img-grp">
-					<a href="/" rel="nofollow"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
+					<a href="/"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
 					</a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
 							src="/images/LB_Img_3.webp" alt="Live Now"></a>
@@ -62,7 +63,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a href="/">
+						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -208,7 +209,7 @@ export default {
 }
 
 .Baki strong {
-	color: #4da5e8;
+	color: #086cec;
 	font-size: 30px;
 }
 

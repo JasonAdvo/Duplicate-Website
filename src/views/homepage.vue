@@ -51,12 +51,12 @@
 					<p> {{ $t('Main_Content.H1_Content_1') }}
 						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
 						{{ $t('Main_Content.H1_Content_3') }}
-						<strong>{{ $t('Main_Content.H1_Content_4') }} </strong>
-						{{ $t('Main_Content.H1_Content_5') }}
+						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
+						{{ $t('Main_Content.H1_Content_4') }}
 					</p>
 					<p>
-						{{ $t('Main_Content.H1_Content_6') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
+						{{ $t('Main_Content.H1_Content_5') }}
+						<strong>{{ $t('Main_Content.H1_Content_6') }} </strong>
 						{{ $t('Main_Content.H1_Content_7') }}
 					</p>
 					<br>
@@ -65,73 +65,67 @@
 						<strong>{{ $t('Main_Content.H2_1_Content_2') }}</strong>
 						{{ $t('Main_Content.H2_1_Content_3') }}
 					</p>
+					<ol>
+						<li>
+							{{ $t('Main_Content.H2_1_Li_1_Content_1') }}
+							<strong>{{ $t('Main_Content.H2_1_Li_1_Content_2') }}</strong>
+							{{ $t('Main_Content.H2_1_Li_1_Content_3') }}
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_1_Li_2_Content_1') }}
+							<strong>{{ $t('Main_Content.H2_1_Li_2_Content_2') }}</strong>
+							{{ $t('Main_Content.H2_1_Li_2_Content_3') }}
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_1_Li_3_Content') }}
+						</li>
+						<li>
+							{{ $t('Main_Content.H2_1_Li_4_Content_1') }}
+							<strong>{{ $t('Main_Content.H2_1_Li_4_Content_2') }}</strong>
+							{{ $t('Main_Content.H2_1_Li_4_Content_3') }}
+						</li>
+					</ol>
 					<br>
 					<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
-					<p> <strong>{{ $t('Main_Content.H2_2_Content_1') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_2') }}</p>
-					<ul>
-						<li>
-							{{ $t('Main_Content.H2_2_Li_1_Header') }}
-							<p>
-								{{ $t('Main_Content.H2_2_Li_1_Content_1') }}
-								<strong>{{ $t('Main_Content.H2_2_Li_1_Content_2') }}</strong>
-								{{ $t('Main_Content.H2_2_Li_1_Content_3') }}
-							</p>
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_2_Li_2_Header') }}
-							<p>
-								{{ $t('Main_Content.H2_2_Li_2_Content_1') }}
-								<strong>{{ $t('Main_Content.H2_2_Li_2_Content_2') }}</strong>
-								{{ $t('Main_Content.H2_2_Li_2_Content_3') }}
-							</p>
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_2_Li_3_Header') }}
-							<p>
-								{{ $t('Main_Content.H2_2_Li_3_Content') }}
-							</p>
-						</li>
-					</ul>
 					<p>
-						{{ $t('Main_Content.H2_2_Middle_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Middle_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Middle_Content_3') }}
+						{{ $t('Main_Content.H2_2_Content_1') }}
+						<strong>{{ $t('Main_Content.H2_2_Content_2') }}</strong>
+						{{ $t('Main_Content.H2_2_Content_3') }}
 					</p>
-					<ul>
-						<li>
-							{{ $t('Main_Content.H2_2_Li_4_Header') }}
-							<p>
-								{{ $t('Main_Content.H2_2_Li_4_Content') }}
-							</p>
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_2_Li_5_Header') }}
-							<p>
-								{{ $t('Main_Content.H2_2_Li_5_Content') }}
-							</p>
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_2_Li_6_Header') }}
-							<p>
-								{{ $t('Main_Content.H2_2_Li_6_Content') }}
-							</p>
-						</li>
-					</ul>
 					<p>
-						{{ $t('Main_Content.H2_2_Btm_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Btm_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Btm_Content_3') }}
+						{{ $t('Main_Content.H2_2_Content_4') }}
+						<strong>{{ $t('Main_Content.H2_2_Content_5') }}</strong>
+						{{ $t('Main_Content.H2_2_Content_6') }}
 					</p>
 					<br>
-					<h2>{{ $t('Main_Content.H3_Header') }}</h2>
-					<p>{{ $t('Main_Content.H3_Content_1') }}</p>
+					<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
 					<p>
-						{{ $t('Main_Content.H3_Content_2') }}
-						<strong>{{ $t('Main_Content.H3_Content_3') }}</strong>
-						{{ $t('Main_Content.H3_Content_4') }}
+						<strong>{{ $t('Main_Content.H2_3_Content_1') }}</strong>
+						{{ $t('Main_Content.H2_3_Content_2') }}
 					</p>
-
+					<ol>
+						<li>
+							<strong>{{ $t('Main_Content.H2_3_Li_1_Header') }}</strong>
+							{{ $t('Main_Content.H2_3_Li_1_Content') }}
+						</li>
+						<li>
+							<strong>{{ $t('Main_Content.H2_3_Li_2_Header') }}</strong>
+							{{ $t('Main_Content.H2_3_Li_2_Content') }}
+						</li>
+						<li>
+							<strong>{{ $t('Main_Content.H2_3_Li_3_Header') }}</strong>
+							{{ $t('Main_Content.H2_3_Li_3_Content_1') }}
+							<strong>{{ $t('Main_Content.H2_3_Li_3_Content_2') }}</strong>
+							{{ $t('Main_Content.H2_3_Li_3_Content_3') }}
+						</li>
+					</ol>
+					<br>
+					<h2>{{ $t('Main_Content.H2_4_Header') }}</h2>
+					<p>
+						{{ $t('Main_Content.H2_4_Content_1') }}
+						<strong>{{ $t('Main_Content.H2_4_Content_2') }}</strong>
+						{{ $t('Main_Content.H2_4_Content_3') }}
+					</p>
 					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
@@ -146,18 +140,26 @@
 					<p>
 						{{ $t('Main_Content.Btm_Content_1') }} |
 						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
-						{{ $t('Main_Content.Btm_Content_3') }}
+						{{ $t('Main_Content.Btm_Content_3') }} |
+						{{ $t('Main_Content.Btm_Content_4') }}
 					</p>
 					<p>
-						{{ $t('Main_Content.Btm_Content_4') }} |
 						<a :href="winboxofficial_link">
 							<strong>
 								{{ $t('Main_Content.Btm_Content_5') }}
 							</strong>
-						</a> |
+						</a>
 						{{ $t('Main_Content.Btm_Content_6') }}
 					</p>
 					<div class="footer-detail">
+						<div class="Visit">
+							<p>
+								{{ $t('message.Visit') }}
+								<a href="/">
+									<strong>{{ $t('message.Click') }} {{ $t('message.Website') }}</strong>
+								</a>
+							</p>
+						</div>
 						<div class="license">
 							<p>{{ $t('message.Game_Licence') }}</p>
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
@@ -180,17 +182,13 @@
 						</div>
 						<div class="follow">
 							<p>{{ $t('message.Follow_Us') }}</p>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/facebook.webp"
-									alt="facebook"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/telegram.webp"
-									alt="telegram"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/instagram.webp"
-									alt="instagram"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/youtube.webp"
-									alt="youtube"></a>
+							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
+							<a href="/"><img class="main-pulse" src="/images/telegram.webp" alt="telegram"></a>
+							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
+							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
 							<a href="https://rebrand.ly/wbxseo1pWhatsapp" rel="nofollow"><img class="main-pulse"
 									src="/images/whatsapp.webp" alt="whatsapp"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
+							<a href="/"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
 						</div>
 					</div>
 					<div class="copyright">
@@ -669,7 +667,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: #07a6fb;
+	color: #086cec;
 }
 
 .image-wrapper a {
@@ -698,6 +696,24 @@ li {
 	text-transform: uppercase;
 }
 
+.Visit p {
+	font-size: 16px;
+}
+
+.Visit a {
+	animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.Visit strong {
+	color: #086cec;
+}
+
 .license {
 	float: left;
 	width: 30%;
@@ -721,7 +737,7 @@ li {
 
 @media screen and (max-width: 430px) {
 	.game {
-		font-size: 8px;
+		font-size: 12px;
 	}
 }
 

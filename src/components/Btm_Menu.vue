@@ -2,7 +2,7 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="/" rel="nofollow" class="social-media-icon">
+				<a href="/" class="social-media-icon">
 					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
 				</a>
 				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">

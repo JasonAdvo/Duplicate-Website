@@ -1,8 +1,8 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<a :href="link_winboxmys + 'winbox-register'"><img style="border-radius: 8px;" src="/images/Spin Bonus.webp"
-					alt="Spin Bonus"></a>
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
+					src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
 			<!-- <a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR"></a> -->
 			<table>
 				<thead>
@@ -77,16 +77,15 @@
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
-				<a href="/" rel="nofollow"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp"
-						alt="Telegram">
+				<a href="/"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp" alt="Telegram">
 				</a>
 
 				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
 						src="/images/LB_Img_3.webp" alt="Live Now"></a>
 			</div>
-			<a :href="link_winboxmys + 'winbox-register'"><img style="border-radius: 8px;"
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
 					src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
-			<a :href="link_winboxmys + 'winbox-register'"><img style="border-radius: 8px;"
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
 					src="/images/welcome bonus.webp" alt="Welcome Bonus"></a>
 		</div>
 	</div>

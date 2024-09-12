@@ -31,7 +31,8 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('Runnig_Bar.Content') }}
+				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong>
+				{{ $t('Runnig_Bar.Content_2') }}
 			</div>
 		</div>
 	</div>
@@ -264,6 +265,8 @@ export default {
 	width: max-content;
 	animation: scroll 90s linear infinite;
 	color: black;
+	letter-spacing: 0.5px;
+	font-size: 13px;
 }
 
 @keyframes scroll {
@@ -278,10 +281,14 @@ export default {
 
 @media (max-width: 1000px) {
 
+	.running-sentence {
+		animation: scroll 70s linear infinite;
+	}
+
 	/* Adjust this value as needed for your design */
 	@keyframes scroll {
 		0% {
-			transform: translateX(100%);
+			transform: translateX(30%);
 			/* Different value for mobile view */
 		}
 
