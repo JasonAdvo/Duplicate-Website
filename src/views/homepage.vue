@@ -505,22 +505,6 @@ export default {
 	color: #f0d843 !important;
 }
 
-.running-sentence-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	background-image: url('/images/Running_Banner_BgImg.webp');
-	/* visibility: visible; */
-	background-size: 100% 100%;
-	color: black;
-	font-size: 12px;
-	letter-spacing: 0.5px;
-	height: 25px;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-}
-
 .running-sentence {
 	white-space: nowrap;
 	/* position: absolute; */
