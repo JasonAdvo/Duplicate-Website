@@ -28,13 +28,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 35" :key="n">
-								<a v-if="n <= 12" :href="`/`" rel="nofollow">
+								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="`/`" rel="nofollow">
+									<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -145,12 +145,12 @@
 					</p>
 					<p>
 						{{ $t('Main_Content.Btm_Content_1') }} |
-						<a :href="link_winbox"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
+						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
 						{{ $t('Main_Content.Btm_Content_3') }}
 					</p>
 					<p>
 						{{ $t('Main_Content.Btm_Content_4') }} |
-						<a :href="winbox77_link">
+						<a :href="winboxofficial_link">
 							<strong>
 								{{ $t('Main_Content.Btm_Content_5') }}
 							</strong>
@@ -160,9 +160,7 @@
 					<div class="footer-detail">
 						<div class="license">
 							<p>{{ $t('message.Game_Licence') }}</p>
-							<a href="/" rel="nofollow">
-								<img src="/images/Footer-License-Img.webp" alt="Game License">
-							</a>
+							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
 							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
@@ -190,8 +188,8 @@
 									alt="instagram"></a>
 							<a href="" rel="nofollow"><img class="main-pulse" src="/images/youtube.webp"
 									alt="youtube"></a>
-							<a href="" rel="nofollow"><img class="main-pulse" src="/images/whatsapp.webp"
-									alt="whatsapp"></a>
+							<a href="https://rebrand.ly/wbxseo1pWhatsapp" rel="nofollow"><img class="main-pulse"
+									src="/images/whatsapp.webp" alt="whatsapp"></a>
 							<a href="" rel="nofollow"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
 						</div>
 					</div>
@@ -276,16 +274,16 @@ export default {
 				{ notSelected: '/images/BT_NotS.webp', selected: '/images/BT_S.webp', alt: 'BT Gaming' },
 				{ notSelected: '/images/BP_NotS.webp', selected: '/images/BP_S.webp', alt: 'BP Gaming' },
 				{ notSelected: '/images/Rich_NotS.webp', selected: '/images/Rich_S.webp', alt: 'Rich Gaming' },
-				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp', alt: 'Next Spin' },
-				{ notSelected: '/images/PP_NotS.webp', selected: '/images/PP_S.webp', alt: 'Pragmatic Play' },
-				{ notSelected: '/images/AW_NotS.webp', selected: '/images/AW_S.webp', alt: 'Ace Win' },
-				{ notSelected: '/images/Joker_NotS.webp', selected: '/images/Joker_S.webp', alt: 'Joker' },
-				{ notSelected: '/images/KA_NotS.webp', selected: '/images/KA_S.webp', alt: 'KA Gaming' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
-				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Sports' },
+				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp', alt: 'Next Spin' },
+				{ notSelected: '/images/Pegasus_NotS.webp', selected: '/images/Pegasus_S.webp', alt: 'Pragmatic Play' },
+				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp', alt: 'Ace Win' },
+				{ notSelected: '/images/KA_NotS.webp', selected: '/images/KA_S.webp', alt: 'Joker' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'KA Gaming' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Slot' },
+				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Live' },
+				{ notSelected: '/images/Others_NotS.webp', selected: '/images/Others_S.webp', alt: 'Sports' },
 			],
-			winbox77_link: '',
+			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
 			stickyBarHeightMobile: 75,
 		};
@@ -300,17 +298,17 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winbox', 'error']),
+		...mapGetters(['link_winboxmys', 'error']),
 	},
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winbox77_link = response_winbox77.data.data.attributes.winbox77_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
 			} catch (error) {
 				console.log(error)
 			}
@@ -369,7 +367,7 @@ export default {
 	},
 	mounted() {
 		this.fetchLink();
-		this.$store.dispatch('fetchLink_winbox');
+		this.$store.dispatch('fetchLink_winboxmys');
 	}
 }
 </script>
@@ -616,9 +614,10 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-color: #4ba614;
-	background-image: linear-gradient(to bottom, #746526, #C3B32A);
-	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
+	background-image: url('/images/Play_Btn_Bg_Img.webp');
+	background-color: transparent !important;
+	background-size: 100% 100%;
+	border: 0;
 	text-align: center;
 	color: white;
 	font-size: 11px;
@@ -639,7 +638,7 @@ h2,
 h3,
 li,
 p {
-	color: white;
+	color: black;
 }
 
 .footer-content h1 {
@@ -693,7 +692,7 @@ li {
 }
 
 .footer-detail p {
-	color: #fff;
+	color: black;
 	font-size: 12px;
 	margin-top: 30px;
 	text-transform: uppercase;
@@ -717,7 +716,7 @@ li {
 	float: left;
 	width: 70%;
 	margin-top: 50px;
-	color: #fff;
+	color: black;
 }
 
 @media screen and (max-width: 430px) {
@@ -785,7 +784,7 @@ li {
 	text-align: center;
 	font-size: 12px;
 	padding: 50px 0;
-	color: #fff;
+	color: black;
 }
 
 .TopBanner {

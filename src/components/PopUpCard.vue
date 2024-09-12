@@ -4,7 +4,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a href="/" rel="nofollow">
+					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
 					</a>
 				</div>
@@ -16,11 +16,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
 	data() {
 		return {
 			showAd: true
 		};
+	},
+	computed: {
+		...mapGetters(['link_winboxmys', 'error']),
 	},
 	methods: {
 		closeModal() {
@@ -30,6 +35,7 @@ export default {
 	},
 	mounted() {
 		document.body.style.overflow = 'hidden';
+		this.$store.dispatch('fetchLink_winboxmys');
 	}
 };
 </script>

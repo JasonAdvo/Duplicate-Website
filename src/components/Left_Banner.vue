@@ -1,7 +1,8 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<a href="/"><img style="border-radius: 8px;" src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
+			<a :href="link_winboxmys + 'winbox-register'"><img style="border-radius: 8px;" src="/images/Spin Bonus.webp"
+					alt="Spin Bonus"></a>
 			<!-- <a href="/" rel="nofollow"><img src="/images/LB_Img_1.webp" alt="PAGCOR"></a> -->
 			<table>
 				<thead>
@@ -64,37 +65,46 @@
 				</tbody>
 			</table>
 			<div class="Tablet-Mobile-view">
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_2.webp" alt="Share"></a>
+				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/LB_Img_2.webp"
+						alt="Share"></a>
 				<div class="button-grp">
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Share_Img.webp"
-							alt="Share"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Downline_Img.webp"
-							alt="Downline"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a href="/" rel="nofollow"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
+					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Share_Img.webp" alt="Share"></a>
+					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 				<a href="/" rel="nofollow"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp"
 						alt="Telegram">
 				</a>
-				<a href="/" rel="nofollow"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
-				</a>
 
-				<a href="/" rel="nofollow"><img style="border-radius: 8px;" src="/images/LB_Img_3.webp"
-						alt="Live Now"></a>
-				<a href="/" rel="nofollow"><img src="/images/LB_Img_4.webp" alt="About"></a>
+				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
+						src="/images/LB_Img_3.webp" alt="Live Now"></a>
 			</div>
-			<a href="/"><img style="border-radius: 8px;" src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
-			<a href="/"><img style="border-radius: 8px;" src="/images/welcome bonus.webp" alt="Welcome Bonus"></a>
+			<a :href="link_winboxmys + 'winbox-register'"><img style="border-radius: 8px;"
+					src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
+			<a :href="link_winboxmys + 'winbox-register'"><img style="border-radius: 8px;"
+					src="/images/welcome bonus.webp" alt="Welcome Bonus"></a>
 		</div>
 	</div>
 </template>
 
 <script>
-// import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
+import { mapGetters } from 'vuex';
+
 export default {
 	name: 'LeftBanner',
 	components: {
 		// LB_Img_Carousel
+	},
+	computed: {
+		...mapGetters(['link_winboxmys', 'error']),
+	},
+	mounted() {
+		this.$store.dispatch('fetchLink_winboxmys');
 	}
 };
 </script>
@@ -144,6 +154,12 @@ export default {
 
 .button-grp a {
 	width: calc(50% - 8px);
+}
+
+@media screen and (min-width: 610px) and (max-width: 770px) {
+	.button-grp a {
+		width: calc(50% - 15px);
+	}
 }
 
 .button_width {
@@ -209,17 +225,19 @@ table {
 
 table td {
 	font-size: 11px;
-	color: white;
+	color: black;
 	border: 1px solid white;
 	font-weight: 500;
 }
 
 .green {
-	background: #239809;
+	color: white;
+	background: radial-gradient(circle, rgba(17, 255, 38, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .red {
-	background: #d02c27;
+	color: white;
+	background: radial-gradient(circle, rgba(17, 243, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 tbody td {
