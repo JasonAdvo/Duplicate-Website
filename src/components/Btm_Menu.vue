@@ -5,14 +5,14 @@
 				<a href="https://t.me/atas77channel" rel="nofollow" class="social-media-icon">
 					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
 				</a>
-				<a href="/" rel="nofollow" class="social-media-icon">
+				<a href="/" class="social-media-icon">
 					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a href="/" rel="nofollow">
+				<a href="/">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
@@ -24,22 +24,22 @@
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="/" rel="nofollow" target="_blank">
+					<a href="/" target="_blank">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="/" rel="nofollow" target="_blank">
+					<a href="/" target="_blank">
 						<img src="/images/Btm_Promo_Img.webp" alt="Bonus">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="/" rel="nofollow" target="_blank">
+					<a href="/" target="_blank">
 						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a href="/" rel="nofollow" target="_blank">
+					<a href="/" target="_blank">
 						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
