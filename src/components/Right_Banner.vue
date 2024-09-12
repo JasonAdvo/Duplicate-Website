@@ -150,12 +150,12 @@ export default {
 	border-radius: 8px;
 }
 
-.RB_Info_Container {
+/* .RB_Info_Container {
 	background-image: url('/images/RB_Cash_Btn_Container_Img.webp');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
-}
+} */
 
 .RB_Cash_Btn_Container {
 	width: 50%;
