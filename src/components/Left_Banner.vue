@@ -154,6 +154,7 @@ export default {
 .title span {
 	color: #d3ab22;
 	font-weight: 700;
+	font-size: 11px;
 }
 
 .live {
@@ -204,7 +205,7 @@ table {
 }
 
 table td {
-	font-size: 11px;
+	font-size: 9px;
 	color: white;
 	border: 1px solid white;
 	font-weight: 500;
