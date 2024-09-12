@@ -10,6 +10,9 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src')
 		}
 	},
+	esbuild: {
+		logOverride: { 'css-syntax-error': 'silent' }
+	},
 	optimizeDeps: {
 		include: ['bootstrap', 'bootstrap-vue-3']
 	},
