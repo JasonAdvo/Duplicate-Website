@@ -64,15 +64,14 @@
 				</tbody>
 			</table>
 			<div class="Tablet-Mobile-view">
-				<a href="/"><img src="/images/LB_Img_2.webp" alt="Share"></a>
+				<a href="/"><img src="/images/LB_Img_2.webp" alt="Share Bonus"></a>
 				<div class="button-grp">
 					<a href="/"><img class="button_width" src="/images/LB_Share_Img.webp" alt="Share"></a>
 					<a href="/"><img class="button_width" src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 					<a href="/"><img class="button_width" src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 					<a href="/"><img class="button_width" src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
-				<a href="https://t.me/atas77channel" rel="nofollow"><img style="margin-top: 7%;"
-						src="/images/LB_Telegram_Img.webp" alt="Telegram">
+				<a href="/"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp" alt="Telegram">
 				</a>
 				<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
 				</a>
