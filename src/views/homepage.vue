@@ -217,7 +217,6 @@ import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
 import PopUpCard from '@/components/PopUpCard.vue';
 import BackToTop from '@/components/BackToTop.vue';
-import MobileGameSplide from '@/components/Mobile_Game_Splide.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
 
@@ -226,7 +225,6 @@ export default {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		MobileGameSplide,
 		PopUpCard,
 		BackToTop,
 	},
