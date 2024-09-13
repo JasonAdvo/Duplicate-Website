@@ -1,9 +1,10 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img
-					style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
-					alt="50% Daily Bonus"></a>
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
+			</a>
+
 			<div class="login-register-container">
 				<a :href="link_winboxmys + 'winbox-login'" rel="nofollow"><img class="Join"
 						src="/images/RB_Login_Img.webp" alt="Login"></a>
@@ -26,43 +27,22 @@
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a href="/">
 						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
 					</a>
-				</div>
-			</div>
-
-			<div class="Tablet-Mobile-view">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/LB_Img_2.webp"
-						alt="Banner"></a>
-				<div class="button-grp">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
-				</div>
-				<div class="RB-mobile-img-grp">
-					<a href="/"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
-					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-							src="/images/LB_Img_3.webp" alt="Live Now"></a>
 				</div>
 			</div>
 
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
-						<img src="/images/team-1.webp" alt="team 1">
+						<img src="/images/Southampton.webp" alt="Southampton">
 						<p>{{ $t('message.team_1') }}</p>
 					</div>
 					<div class="time-info">
 						<p>{{ $t('message.start_time') }}</p>
-						<p>17 Aug 2024</p>
-						<p class="time">03:00</p>
+						<p>14 Sep 2024</p>
+						<p class="time">19:30</p>
 						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
@@ -70,23 +50,22 @@
 						</a>
 					</div>
 					<div class="team">
-						<img src="/images/team-2.webp" alt="team 2">
+						<img src="/images/team-1.webp" alt="Man Utd">
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a href="/">
+				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
-					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px; border-radius: 8px;">
-			</a>
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 
 			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
-					alt="Top Up Rm20" style="margin-bottom: 16px; border-radius: 8px;">
+					alt="Top Up Rm20" style="margin-bottom: 16px;">
 			</a>
 		</div>
 	</div>
@@ -115,8 +94,9 @@ export default {
 	border-left: 1px solid rgba(255, 255, 255, .5);
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1000px) {
 	.Right_Banner_Container {
+		background: unset;
 		padding: 0 15px 0px 15px;
 		border-left: unset;
 	}

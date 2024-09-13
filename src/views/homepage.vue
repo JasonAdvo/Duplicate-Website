@@ -18,7 +18,7 @@
 					<div class="site-tabs">
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
-							@click="selectImage(index); handleRedirect(index)">
+							@click="selectImage(index);">
 							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
 						</div>
 					</div>
@@ -126,7 +126,6 @@
 						<strong>{{ $t('Main_Content.H2_4_Content_2') }}</strong>
 						{{ $t('Main_Content.H2_4_Content_3') }}
 					</p>
-					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
@@ -202,7 +201,6 @@
 		<div class="RightBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<RightBanner />
 		</div>
-
 	</div>
 </template>
 
@@ -340,6 +338,7 @@ export default {
 		},
 		selectImage(index) {
 			this.selectedIndex = index;
+			this.handleRedirect(index);
 		},
 		handleRedirect(index) {
 			if (index === 0) {
@@ -378,8 +377,16 @@ export default {
 		order: 1;
 	}
 
-	.Middle_Banner_Container {
+	.RightBanner {
+		order: 1;
+	}
+
+	.LeftBanner {
 		order: 2;
+	}
+
+	.Middle_Banner_Container {
+		order: 3;
 	}
 
 	.main-content {
@@ -806,6 +813,6 @@ li {
 .TopBanner {
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 3;
 }
 </style>
