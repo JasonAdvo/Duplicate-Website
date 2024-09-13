@@ -79,10 +79,6 @@
 			<a href="/"><img src="/images/Marc Marquez bonus.webp" alt="93% Marc Marquex Bonus"
 					style="margin-bottom: 16px; border-radius: 8px;">
 			</a>
-
-			<a href="/"><img src="/images/top up rm20.webp" alt="Top Up Rm20"
-					style="margin-bottom: 16px; border-radius: 8px;">
-			</a>
 		</div>
 	</div>
 </template>

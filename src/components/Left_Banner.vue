@@ -80,7 +80,6 @@
 				<a href="/"><img src="/images/LB_Img_4.webp" alt="About"></a>
 			</div>
 			<a href="/"><img style="border-radius: 8px;" src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
-			<a href="/"><img style="border-radius: 8px;" src="/images/welcome bonus.webp" alt="Welcome Bonus"></a>
 		</div>
 	</div>
 </template>
