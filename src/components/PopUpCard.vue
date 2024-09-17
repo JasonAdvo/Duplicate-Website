@@ -1,10 +1,10 @@
 <template>
-	<div v-if="showAd" class="modal fade show d-block" id="adModal" tabindex="-1" aria-labelledby="adModalLabel"
-		aria-hidden="true" style="background: rgba(0,0,0,0.5);" @click.self="closeModal">
+	<div v-if="showAd" class="modal fade show d-block" id="adModal" tabindex="-1" :aria-hidden="!showAd"
+		aria-labelledby="adModalLabel" style="background: rgba(0,0,0,0.5);" @click.self="closeModal">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a href="/">
+					<a :href="link_winbox + 'winbox-register'" rel="nofollow">
 						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
 					</a>
 				</div>
@@ -16,11 +16,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
 	data() {
 		return {
 			showAd: true
 		};
+	},
+	computed: {
+		...mapGetters(['link_winbox', 'error']),
 	},
 	methods: {
 		closeModal() {
@@ -30,6 +35,10 @@ export default {
 	},
 	mounted() {
 		document.body.style.overflow = 'hidden';
+		this.$store.dispatch('fetchLink_winbox');
+		this.$nextTick(() => {
+			document.querySelector('#adModal .btn-close').focus(); // Set focus on close button when modal opens
+		});
 	}
 };
 </script>
@@ -38,20 +47,8 @@ export default {
 #adModal .btn-close {
 	z-index: 1055;
 	color: white;
-	/* Make the close button icon white */
 	background-color: white;
-	/* Ensure the button background is white */
 	opacity: 1;
-	/* Make sure the button is fully opaque */
-}
-
-.adModal .btn-close:hover {
-	color: white;
-	/* Keep the icon white on hover */
-	background-color: white;
-	/* Keep the background white on hover */
-	opacity: 1;
-	/* Ensure it remains opaque */
 }
 
 .modal-content {

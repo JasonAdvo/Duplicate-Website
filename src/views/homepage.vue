@@ -28,13 +28,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 35" :key="n">
-								<a v-if="n <= 12" :href="`/`">
+								<a v-if="n <= 12" :href="link_winbox + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="`/`">
+									<a :href="link_winbox + 'winbox-register'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
