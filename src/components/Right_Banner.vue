@@ -97,7 +97,7 @@ export default {
 @media screen and (max-width: 1000px) {
 	.Right_Banner_Container {
 		background: unset;
-		padding: 0 15px 0px 15px;
+		padding: 15px 15px 0px 15px;
 		border-left: unset;
 	}
 
