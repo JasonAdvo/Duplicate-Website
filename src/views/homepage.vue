@@ -51,7 +51,7 @@
 					<p> {{ $t('Main_Content.H1_Content_1') }}
 						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
 						{{ $t('Main_Content.H1_Content_3') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
+						<strong>{{ $t('Main_Content.H1_Content_3_5') }} </strong>
 						{{ $t('Main_Content.H1_Content_4') }}
 					</p>
 					<p>
