@@ -27,7 +27,7 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 35" :key="n">
+							<div class="image-wrapper" v-for="n in 58" :key="n">
 								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
@@ -48,83 +48,110 @@
 
 				<div class="footer-content">
 					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
-					<p> {{ $t('Main_Content.H1_Content_1') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
-						{{ $t('Main_Content.H1_Content_3') }}
-						<strong>{{ $t('Main_Content.H1_Content_3_5') }} </strong>
-						{{ $t('Main_Content.H1_Content_4') }}
+					<p>
+						<strong>{{ $t('Main_Content.H1_Content_1') }}</strong>
+						{{ $t('Main_Content.H1_Content_2') }}
+						<strong>{{ $t('Main_Content.H1_Content_3') }}</strong>
+						{{ $t('Main_Content.H1_Content_3_5') }}
 					</p>
 					<p>
+						<strong>{{ $t('Main_Content.H1_Content_4') }}</strong>
 						{{ $t('Main_Content.H1_Content_5') }}
 						<strong>{{ $t('Main_Content.H1_Content_6') }} </strong>
 						{{ $t('Main_Content.H1_Content_7') }}
 					</p>
 					<br>
 					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
-					<p> {{ $t('Main_Content.H2_1_Content_1') }}
+					<p>
+						{{ $t('Main_Content.H2_1_Content_1') }}
 						<strong>{{ $t('Main_Content.H2_1_Content_2') }}</strong>
 						{{ $t('Main_Content.H2_1_Content_3') }}
 					</p>
 					<ol>
 						<li>
-							{{ $t('Main_Content.H2_1_Li_1_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_1_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_1_Content_3') }}
+							<strong>{{ $t('Main_Content.H2_1_Li_1_Header') }}</strong>
+							{{ $t('Main_Content.H2_1_Li_1_Content') }}
 						</li>
 						<li>
-							{{ $t('Main_Content.H2_1_Li_2_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_2_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_2_Content_3') }}
+							<strong>{{ $t('Main_Content.H2_1_Li_2_Header') }}</strong>
+							{{ $t('Main_Content.H2_1_Li_2_Content') }}
 						</li>
 						<li>
+							<strong>{{ $t('Main_Content.H2_1_Li_3_Header') }}</strong>
 							{{ $t('Main_Content.H2_1_Li_3_Content') }}
 						</li>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_4_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_4_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_4_Content_3') }}
-						</li>
 					</ol>
+					<p>
+						{{ $t('Main_Content.H2_1_Content_4') }}
+						<strong>{{ $t('Main_Content.H2_1_Content_5') }}</strong>
+						{{ $t('Main_Content.H2_1_Content_6') }}
+					</p>
 					<br>
 					<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
 					<p>
-						{{ $t('Main_Content.H2_2_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_3') }}
+						<strong>{{ $t('Main_Content.H2_2_Content_1') }}</strong>
+						{{ $t('Main_Content.H2_2_Content_2') }}
 					</p>
-					<p>
-						{{ $t('Main_Content.H2_2_Content_4') }}
-						<strong>{{ $t('Main_Content.H2_2_Content_5') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_6') }}
-					</p>
+					<ul>
+						<li>
+							<strong>{{ $t('Main_Content.H2_2_Li_1_Header') }}</strong>
+							<p>
+								{{ $t('Main_Content.H2_2_Li_1_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_2_Li_1_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_2_Li_1_Content_3') }}
+							</p>
+						</li>
+						<li>
+							<strong>{{ $t('Main_Content.H2_2_Li_2_Header') }}</strong>
+							<p>
+								{{ $t('Main_Content.H2_2_Li_2_Content') }}
+							</p>
+						</li>
+						<li>
+							<strong>{{ $t('Main_Content.H2_2_Li_3_Header') }}</strong>
+							<p>
+								{{ $t('Main_Content.H2_2_Li_3_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_2_Li_3_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_2_Li_3_Content_3') }}
+							</p>
+						</li>
+					</ul>
 					<br>
 					<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
 					<p>
-						<strong>{{ $t('Main_Content.H2_3_Content_1') }}</strong>
-						{{ $t('Main_Content.H2_3_Content_2') }}
+						{{ $t('Main_Content.H2_3_Content') }}
 					</p>
 					<ol>
 						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_1_Header') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_1_Content') }}
+							<h3><strong>{{ $t('Main_Content.H2_3_Li_1_Header') }}</strong></h3>
+							<p>
+								{{ $t('Main_Content.H2_3_Li_1_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_3_Li_1_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_3_Li_1_Content_3') }}
+							</p>
 						</li>
 						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_2_Header') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_2_Content') }}
+							<h3><strong>{{ $t('Main_Content.H2_3_Li_2_Header') }}</strong></h3>
+							<p>
+								{{ $t('Main_Content.H2_3_Li_2_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_3_Li_2_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_3_Li_2_Content_3') }}
+							</p>
 						</li>
 						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_3_Header') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_3_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_3_Li_3_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_3_Content_3') }}
+							<h3><strong>{{ $t('Main_Content.H2_3_Li_3_Header') }}</strong></h3>
+							<p>
+								{{ $t('Main_Content.H2_3_Li_3_Content_1') }}
+								<strong>{{ $t('Main_Content.H2_3_Li_3_Content_2') }}</strong>
+								{{ $t('Main_Content.H2_3_Li_3_Content_3') }}
+							</p>
 						</li>
 					</ol>
 					<br>
 					<h2>{{ $t('Main_Content.H2_4_Header') }}</h2>
 					<p>
-						{{ $t('Main_Content.H2_4_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_4_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_4_Content_3') }}
+						<strong>{{ $t('Main_Content.H2_4_Content_1') }}</strong>
+						{{ $t('Main_Content.H2_4_Content_2') }}
 					</p>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
@@ -138,17 +165,24 @@
 					</p>
 					<p>
 						{{ $t('Main_Content.Btm_Content_1') }} |
-						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
-						{{ $t('Main_Content.Btm_Content_3') }} |
-						{{ $t('Main_Content.Btm_Content_4') }}
-					</p>
-					<p>
-						<a :href="winboxofficial_link">
+						{{ $t('Main_Content.Btm_Content_2') }} |
+						{{ $t('Main_Content.Btm_Content_3') }}
+						<a :href="link_winboxmys">
 							<strong>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								{{ $t('Main_Content.Btm_Content_4') }}
 							</strong>
 						</a>
+						{{ $t('Main_Content.Btm_Content_5') }}
+					</p>
+					<p>
 						{{ $t('Main_Content.Btm_Content_6') }}
+						<a :href="winboxofficial_link">
+							<strong>
+								{{ $t('Main_Content.Btm_Content_6_5') }}
+							</strong>
+						</a>
+						{{ $t('Main_Content.Btm_Content_7') }} |
+						{{ $t('Main_Content.Btm_Content_8') }}
 					</p>
 					<div class="footer-detail">
 						<div class="Visit">
@@ -191,7 +225,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2024 CROWN99. ALL RIGHTS RESERVED.
+						2016-2024 BEARBRICK888. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>
@@ -227,57 +261,81 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"Tanzania King",
-				"Candy Party",
-				"Legend Slot Onimaru",
-				"Legend Slot Musashi",
-				"Durian King",
-				"Thai Lucky",
-				"Color Alchemy",
-				"Trade Wars",
-				"Gems Rush",
-				"Gods Of Olympus",
-				"Beauty Contest",
-				"Dragon Jewels",
-				"Golden Temple",
-				"LIFE",
-				"Magic Box",
-				"Mr Fortune",
-				"Meow Meow",
-				"Lucky 7",
-				"Where's My Monkey",
-				"Samurai Wars",
-				"Happy Road",
-				"Feed the Zombie",
-				"Burm the Office",
-				"All You Can Eat",
-				"TVW",
-				"Strange Encounter",
-				"S.O.S",
-				"On Crap",
-				"Pon Pon",
-				"Lullababy",
-				"Talent Night",
-				"Spell Craft",
-				"Steam Punk 100",
-				"Thai Street Food",
-				"Madness Buffalo"
+				"Aztec Bonus Hunt 2",
+				"Maya Elemental Totem",
+				"Dragon Chi's Quest",
+				"Starry Adventure",
+				"Phantom Multiplier",
+				"Ahapsody Muertos",
+				"Kingyo Riches",
+				"Fish PrawnCrab Bonanza",
+				"Ramakien Blessing",
+				"Football Fever",
+				"Crazy Bountry",
+				"Last Samurai",
+				"Dark Ritual",
+				"Xiang Qi Ways 2",
+				"Aztec Bonus Hunt",
+				"Firefly Hunter",
+				"Hungry Slime",
+				"Genie Myscery",
+				"Disco777",
+				"Boom of Prosperity",
+				"World Cup FInal",
+				"Astro Bunny",
+				"Cookie Hunter",
+				"Xmaxs Gift Delight",
+				"Mace Hercules",
+				"Wheel of Gems",
+				"Scale of Heaven Anubis",
+				"Infinity Ocean",
+				"DJ Fever",
+				"Jewel Mastermind",
+				"PUBG 2",
+				"Fastastic Beast",
+				"SLOTTO 4D",
+				"Xiang Qi Ways",
+				"Candy Rush",
+				"Forturn God's Pot",
+				"Tiger on Gold",
+				"Ancient Gems",
+				"Hu Fu Blessing",
+				"Battle Heroes",
+				"Mine of Prosperity",
+				"Eye of Ra",
+				"Ninja Legend",
+				"Treasure of Drake",
+				"Immortal Love",
+				"Racing for Luck",
+				"Treasure Guardian",
+				"Fortune's Warrior",
+				"Chronicle of Heroes 3 Warloads",
+				"Chronicle of Heroes Lucky Dragon",
+				"King of Glory",
+				"BomBomBot",
+				"Counter Terrorists",
+				"Bubble Dragon",
+				"Road To UEFA",
+				"Bobo Monster",
+				"Chronicle of Heroes Divine Tree",
+				"Road to Euro"
 			],
 			images: [
-				{ notSelected: '/images/CPF_NotS.webp', selected: '/images/CPF_S.webp', alt: 'Clot Play Free' },
-				{ notSelected: '/images/CP_NotS.webp', selected: '/images/CP_S.webp', alt: 'Clot Play' },
+				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp', alt: 'Advant Play' },
 				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
-				{ notSelected: '/images/BT_NotS.webp', selected: '/images/BT_S.webp', alt: 'BT Gaming' },
-				{ notSelected: '/images/BP_NotS.webp', selected: '/images/BP_S.webp', alt: 'BP Gaming' },
-				{ notSelected: '/images/Rich_NotS.webp', selected: '/images/Rich_S.webp', alt: 'Rich Gaming' },
-				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp', alt: 'Next Spin' },
-				{ notSelected: '/images/Pegasus_NotS.webp', selected: '/images/Pegasus_S.webp', alt: 'Pragmatic Play' },
-				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp', alt: 'Ace Win' },
-				{ notSelected: '/images/KA_NotS.webp', selected: '/images/KA_S.webp', alt: 'Joker' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'KA Gaming' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Slot' },
-				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Live' },
-				{ notSelected: '/images/Others_NotS.webp', selected: '/images/Others_S.webp', alt: 'Sports' },
+				{ notSelected: '/images/Rich_NotS.webp', selected: '/images/Rich_S.webp', alt: 'Rich' },
+				{ notSelected: '/images/BG_NotS.webp', selected: '/images/BG_S.webp', alt: 'Bongo' },
+				{ notSelected: '/images/PP_NotS.webp', selected: '/images/PP_S.webp', alt: 'Pragmatic Play' },
+				{ notSelected: '/images/PT_NotS.webp', selected: '/images/PT_S.webp', alt: 'Playtech' },
+				{ notSelected: '/images/AW_NotS.webp', selected: '/images/AW_S.webp', alt: 'Ace Win' },
+				{ notSelected: '/images/JDB_NotS.webp', selected: '/images/JDB_S.webp', alt: 'JDB' },
+				{ notSelected: '/images/DS_NotS.webp', selected: '/images/DS_S.webp', alt: 'Dragon Soft' },
+				{ notSelected: '/images/Rich88_NotS.webp', selected: '/images/Rich88_S.webp', alt: 'Rich88' },
+				{ notSelected: '/images/BP_NotS.webp', selected: '/images/BP_S.webp', alt: 'Bigpot Gaming' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
+				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Sport' },
+				{ notSelected: '/images/Others_NotS.webp', selected: '/images/Others_S.webp', alt: 'Other' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -411,7 +469,7 @@ export default {
 	background-image: url('/images/Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 }
 
 .Mobile_Middle_Banner {
@@ -530,22 +588,10 @@ export default {
 	display: flex;
 }
 
-.site-tabs::before {
-	content: "";
-	border-bottom: 1px solid #fff;
-	position: absolute;
-	width: 100%;
-	bottom: 1px;
-}
-
 .image-container {
-	width: calc(100% / 14);
-	padding-bottom: 30px;
+	width: calc(100% / 15);
+	padding-bottom: 20px;
 	cursor: pointer;
-}
-
-.image-container.selected {
-	border-bottom: 5px solid #FFF;
 }
 
 .image-container img {

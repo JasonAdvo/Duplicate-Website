@@ -1,6 +1,6 @@
 <template>
-	<div v-if="showAd" class="modal fade show d-block" id="adModal" tabindex="-1" aria-labelledby="adModalLabel"
-		aria-hidden="true" style="background: rgba(0,0,0,0.5);" @click.self="closeModal">
+	<div v-if="showAd" class="modal fade show d-block" id="adModal" tabindex="-1" :aria-hidden="!showAd"
+		aria-labelledby="adModalLabel" style="background: rgba(0,0,0,0.5);" @click.self="closeModal">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
@@ -36,6 +36,9 @@ export default {
 	mounted() {
 		document.body.style.overflow = 'hidden';
 		this.$store.dispatch('fetchLink_winboxmys');
+		this.$nextTick(() => {
+			document.querySelector('#adModal .btn-close').focus(); // Set focus on close button when modal opens
+		});
 	}
 };
 </script>

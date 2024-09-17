@@ -17,8 +17,8 @@
 						<p>{{ $t('message.balance') }} </p>
 						<p><strong>0.00</strong></p>
 					</div>
-					<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
-					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
+					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
+					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
@@ -36,12 +36,12 @@
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
-						<img src="/images/Southampton.webp" alt="Southampton">
+						<img src="/images/West_Ham.webp" alt="West Ham">
 						<p>{{ $t('message.team_1') }}</p>
 					</div>
 					<div class="time-info">
 						<p>{{ $t('message.start_time') }}</p>
-						<p>14 Sep 2024</p>
+						<p>21 Sep 2024</p>
 						<p class="time">19:30</p>
 						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
@@ -50,7 +50,7 @@
 						</a>
 					</div>
 					<div class="team">
-						<img src="/images/team-1.webp" alt="Man Utd">
+						<img src="/images/Chelsea.webp" alt="Chelsea">
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
@@ -127,8 +127,6 @@ export default {
 }
 
 .RB_Cash_Btn_Container img {
-	height: 44px;
-	width: 130px;
 	margin-bottom: 5px;
 }
 
@@ -144,14 +142,6 @@ export default {
 
 .login-register-container img {
 	border-radius: 0%;
-}
-
-@media screen and (min-width: 1000px) {
-
-	.Join,
-	.Register {
-		height: 42px;
-	}
 }
 
 .Join {
@@ -189,7 +179,7 @@ export default {
 }
 
 .Baki strong {
-	color: #086cec;
+	color: black;
 	font-size: 30px;
 }
 
@@ -338,6 +328,11 @@ export default {
 	margin: 5px auto 0;
 }
 
+.bet-now-container p {
+	font-size: 14px;
+	font-weight: 700;
+}
+
 .show-more-button-container {
 	background: #eee;
 	color: #000;
@@ -352,12 +347,18 @@ export default {
 
 .show-more-button-container p {
 	font-size: 13px;
+	font-weight: 700;
 	line-height: 1;
 	margin-bottom: 0;
 }
 
 .team {
 	width: 30%;
+}
+
+.team p {
+	font-weight: 700;
+	font-size: 14px;
 }
 
 .team img {
