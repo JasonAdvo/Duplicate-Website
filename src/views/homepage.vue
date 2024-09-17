@@ -71,7 +71,7 @@
 						{{ $t('Main_Content.H2_2_Content_2') }}</p>
 					<ul>
 						<li>
-							{{ $t('Main_Content.H2_2_Li_1_Header') }}
+							<strong>{{ $t('Main_Content.H2_2_Li_1_Header') }}</strong>
 							<p>
 								{{ $t('Main_Content.H2_2_Li_1_Content_1') }}
 								<strong>{{ $t('Main_Content.H2_2_Li_1_Content_2') }}</strong>
@@ -79,7 +79,7 @@
 							</p>
 						</li>
 						<li>
-							{{ $t('Main_Content.H2_2_Li_2_Header') }}
+							<strong>{{ $t('Main_Content.H2_2_Li_2_Header') }}</strong>
 							<p>
 								{{ $t('Main_Content.H2_2_Li_2_Content_1') }}
 								<strong>{{ $t('Main_Content.H2_2_Li_2_Content_2') }}</strong>
@@ -87,7 +87,7 @@
 							</p>
 						</li>
 						<li>
-							{{ $t('Main_Content.H2_2_Li_3_Header') }}
+							<strong>{{ $t('Main_Content.H2_2_Li_3_Header') }}</strong>
 							<p>
 								{{ $t('Main_Content.H2_2_Li_3_Content') }}
 							</p>
@@ -100,19 +100,19 @@
 					</p>
 					<ul>
 						<li>
-							{{ $t('Main_Content.H2_2_Li_4_Header') }}
+							<strong>{{ $t('Main_Content.H2_2_Li_4_Header') }}</strong>
 							<p>
 								{{ $t('Main_Content.H2_2_Li_4_Content') }}
 							</p>
 						</li>
 						<li>
-							{{ $t('Main_Content.H2_2_Li_5_Header') }}
+							<strong>{{ $t('Main_Content.H2_2_Li_5_Header') }}</strong>
 							<p>
 								{{ $t('Main_Content.H2_2_Li_5_Content') }}
 							</p>
 						</li>
 						<li>
-							{{ $t('Main_Content.H2_2_Li_6_Header') }}
+							<strong>{{ $t('Main_Content.H2_2_Li_6_Header') }}</strong>
 							<p>
 								{{ $t('Main_Content.H2_2_Li_6_Content') }}
 							</p>
@@ -149,12 +149,12 @@
 						{{ $t('Main_Content.Btm_Content_3') }}
 					</p>
 					<p>
-						{{ $t('Main_Content.Btm_Content_4') }} |
 						<a :href="winbox77_link">
 							<strong>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								{{ $t('Main_Content.Btm_Content_4') }}
 							</strong>
 						</a> |
+						{{ $t('Main_Content.Btm_Content_5') }} |
 						{{ $t('Main_Content.Btm_Content_6') }}
 					</p>
 					<div class="footer-detail">
