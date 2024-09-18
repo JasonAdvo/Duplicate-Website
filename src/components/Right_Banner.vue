@@ -40,7 +40,6 @@
 					<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 						<img src="/images/LB_Img_2.webp" class="no-br" alt="Share">
 						<div class="button-grp" style="position: absolute; bottom: 10px;">
-							<a href=""></a>
 							<a :href="link_ataskasino + 'en/sign-up/'" rel="nofollow">
 								<img class="col-6 no-br mb-1" src="/images/LB_Share_Btn.webp" alt="Share">
 							</a>
