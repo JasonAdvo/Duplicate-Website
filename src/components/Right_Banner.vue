@@ -6,11 +6,6 @@
 			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
 					src="/images/daily free spin bonus.gif" alt="Spin Bonus">
 			</a>
-
-			<div>
-				<RW_Img_Carousel />
-			</div>
-
 		</div>
 
 		<div class="RB_Imgs">
@@ -64,6 +59,10 @@
 							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
 						</div>
 					</div>
+				</div>
+
+				<div>
+					<RW_Img_Carousel />
 				</div>
 			</div>
 

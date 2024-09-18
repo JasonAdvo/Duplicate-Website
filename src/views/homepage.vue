@@ -171,7 +171,8 @@
 					</p>
 					<p>
 						{{ $t('Main_Content.Btm_Content_1') }} |
-						{{ $t('Main_Content.Btm_Content_2') }} |
+						{{ $t('Main_Content.Btm_Content_2') }}
+						<span v-if="!['ms', 'zh'].includes($i18n.locale)">|</span>
 						{{ $t('Main_Content.Btm_Content_3') }}
 						<a :href="link_winboxmys">
 							<strong class="Anchor_Text_Color">
@@ -359,6 +360,9 @@ export default {
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
+		currentLocale() {
+			return this.$i18n.locale; // or however you access the locale
+		}
 	},
 	methods: {
 		async fetchLink() {

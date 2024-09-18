@@ -6,10 +6,6 @@
 					alt="Spin Bonus">
 			</a>
 
-			<div>
-				<RW_Img_Carousel />
-			</div>
-
 			<div class="Share_Section">
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
@@ -27,6 +23,10 @@
 						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
 					</div>
 				</div>
+			</div>
+
+			<div>
+				<RW_Img_Carousel />
 			</div>
 		</div>
 	</div>
