@@ -3,7 +3,7 @@
 		<div class="RB_Imgs">
 
 			<div class="Mobile_View" style="display: none;">
-				<LB_Img_Carousel />
+				<RB_Img_Carousel />
 				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
 				<table>
@@ -160,12 +160,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue'
+import RB_Img_Carousel from '/src/components/RB_Img_Carousel.vue'
 
 export default {
 	name: 'RightBanner',
 	components: {
-		LB_Img_Carousel
+		RB_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
