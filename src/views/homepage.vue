@@ -69,16 +69,22 @@
 					</p>
 					<ol>
 						<li>
-							<strong>{{ $t('Main_Content.H2_1_Li_1_Header') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_1_Content') }}
+							<p>
+								<strong>{{ $t('Main_Content.H2_1_Li_1_Header') }}</strong>
+								{{ $t('Main_Content.H2_1_Li_1_Content') }}
+							</p>
 						</li>
 						<li>
-							<strong>{{ $t('Main_Content.H2_1_Li_2_Header') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_2_Content') }}
+							<p>
+								<strong>{{ $t('Main_Content.H2_1_Li_2_Header') }}</strong>
+								{{ $t('Main_Content.H2_1_Li_2_Content') }}
+							</p>
 						</li>
 						<li>
-							<strong>{{ $t('Main_Content.H2_1_Li_3_Header') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_3_Content') }}
+							<p>
+								<strong>{{ $t('Main_Content.H2_1_Li_3_Header') }}</strong>
+								{{ $t('Main_Content.H2_1_Li_3_Content') }}
+							</p>
 						</li>
 					</ol>
 					<p>
@@ -123,7 +129,7 @@
 					</p>
 					<ol>
 						<li>
-							<h3><strong>{{ $t('Main_Content.H2_3_Li_1_Header') }}</strong></h3>
+							<h3>{{ $t('Main_Content.H2_3_Li_1_Header') }}</h3>
 							<p>
 								{{ $t('Main_Content.H2_3_Li_1_Content_1') }}
 								<strong>{{ $t('Main_Content.H2_3_Li_1_Content_2') }}</strong>
@@ -131,7 +137,7 @@
 							</p>
 						</li>
 						<li>
-							<h3><strong>{{ $t('Main_Content.H2_3_Li_2_Header') }}</strong></h3>
+							<h3>{{ $t('Main_Content.H2_3_Li_2_Header') }}</h3>
 							<p>
 								{{ $t('Main_Content.H2_3_Li_2_Content_1') }}
 								<strong>{{ $t('Main_Content.H2_3_Li_2_Content_2') }}</strong>
@@ -139,7 +145,7 @@
 							</p>
 						</li>
 						<li>
-							<h3><strong>{{ $t('Main_Content.H2_3_Li_3_Header') }}</strong></h3>
+							<h3>{{ $t('Main_Content.H2_3_Li_3_Header') }}</h3>
 							<p>
 								{{ $t('Main_Content.H2_3_Li_3_Content_1') }}
 								<strong>{{ $t('Main_Content.H2_3_Li_3_Content_2') }}</strong>
@@ -472,6 +478,34 @@ export default {
 	background-position: center;
 }
 
+@media (max-width: 768px) {
+	.main-content {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.main-content::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('/images/Bg_Img.webp');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	/* Ensure it stays behind other content */
+}
+
+@media (max-width: 768px) {
+	.main-content::before {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
 .Mobile_Middle_Banner {
 	width: 100%;
 	background: rgba(0, 0, 0, .3);
@@ -542,7 +576,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #07a6fb;
+	color: #086cec;
 }
 
 .google-map-link {
@@ -635,6 +669,7 @@ export default {
 .image-grid-container {
 	display: grid;
 	gap: 10px;
+	width: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -665,14 +700,14 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-image: url('/images/Play_Btn_Bg_Img.webp');
-	background-color: transparent !important;
-	background-size: 100% 100%;
 	border: 0;
 	text-align: center;
 	color: white;
 	font-size: 11px;
 	margin-bottom: 10px;
+	border: 1px solid darkblue;
+	background-color: darkblue;
+	background-image: linear-gradient(to bottom, #1c39ff, #05063e);
 }
 
 .image-wrapper p {

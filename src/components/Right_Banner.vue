@@ -1,7 +1,7 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Bonus93.gif"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
@@ -97,7 +97,7 @@ export default {
 @media screen and (max-width: 1000px) {
 	.Right_Banner_Container {
 		background: unset;
-		padding: 0 15px 0px 15px;
+		padding: 15px 15px 0px 15px;
 		border-left: unset;
 	}
 
@@ -180,7 +180,7 @@ export default {
 
 .Baki strong {
 	color: black;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .Tablet-Mobile-view {

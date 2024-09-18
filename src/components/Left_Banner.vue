@@ -2,11 +2,16 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus">
 			</a>
 
+			<div>
+				<RW_Img_Carousel />
+			</div>
+
 			<div class="Share_Section">
+				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<!-- Blank containers with links inside -->
 					<div class="button-container">
@@ -24,9 +29,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="RW_Img_Carousel">
-			<RW_Img_Carousel />
-		</div>
+
 
 	</div>
 </template>
@@ -64,6 +67,71 @@ export default {
 	margin-bottom: 16px;
 }
 
+.Share_Section {
+	position: relative;
+}
+
+.button-grp {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 5px;
+	bottom: 5%;
+}
+
+.button-container {
+	width: 45%;
+	height: 40px;
+	border: 1px solid transparent;
+	position: relative;
+	float: left;
+	background-color: black;
+	margin-bottom: 16px;
+	opacity: 0;
+}
+
+.button-container a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.button_width {
+	width: 100%;
+	margin-bottom: 8px !important;
+}
+
+@media screen and (max-width: 2000px) {
+	.button-grp {
+		bottom: 2%;
+	}
+
+	.button-container {
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+
+	.button-container {
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.button-grp {
+		bottom: 4%;
+	}
+
+	.button-container {
+		height: 25px;
+	}
+}
+
+
 @media screen and (max-width: 1000px) {
 
 	.Left_Banner_Container {
@@ -73,58 +141,44 @@ export default {
 		padding-top: 0px;
 	}
 
-}
-
-.Share_Section {
-	background-image: url('/images/LB_Img_2.webp');
-	padding: 103% 2% 4% 5%;
-	background-size: 100% 100%;
-	background-color: transparent;
-	position: relative;
-}
-
-.button-grp {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1000px) {
 	.button-grp {
-		bottom: 10%;
+		bottom: 5%;
 		margin-top: unset;
 	}
-}
 
-.button-container {
-	width: calc(50% - 5px);
-	height: 34px;
-	border: 1px solid transparent;
-	position: relative;
-	float: left;
-}
-
-.button-container a {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background-color: transparent;
-	/* Make the link take up full space */
-}
-
-@media screen and (min-width: 610px) and (max-width: 770px) {
-	.button-grp a {
-		width: calc(50% - 15px);
+	.button-container {
+		height: 55px;
 	}
 }
 
-.button_width {
-	width: 100%;
-	margin-bottom: 8px !important;
+@media screen and (max-width: 600px) {
+	.button-grp {
+		bottom: 4%;
+	}
+
+	.button-container {
+		height: 50px;
+	}
 }
 
-.RW_Img_Carousel {
-	margin-top: 16px;
+@media screen and (max-width: 430px) {
+
+	.button-container {
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+
+	.button-container {
+		height: 25px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.button-container {
+		height: 20px;
+	}
 }
 </style>

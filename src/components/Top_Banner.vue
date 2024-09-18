@@ -252,7 +252,7 @@ export default {
 	background-color: black;
 	font-size: 12px;
 	letter-spacing: 0.5px;
-	height: 25px;
+	height: 20px;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
@@ -264,9 +264,9 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 90s linear infinite;
-	color: black;
-	letter-spacing: 0.5px;
-	font-size: 13px;
+	color: #f3c015;
+	letter-spacing: 1px;
+	font-size: 12px;
 }
 
 @keyframes scroll {
