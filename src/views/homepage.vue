@@ -55,6 +55,20 @@
 						alt="DMCA.com Protection Status" />
 				</a>
 				<div class="footer-content">
+
+					<h1>{{ $t('content.H1_Header') }}</h1>
+					<p>
+						<strong>{{ $t('content.H1_Content_1') }}</strong>
+						{{ $t('content.H1_Content_2') }}
+						<strong>{{ $t('content.H1_Content_1') }}</strong>
+						{{ $t('content.H1_Content_3') }}
+					</p>
+					<p>
+						{{ $t('content.H1_Content_4') }}
+						<strong>{{ $t('content.H1_Content_5') }}</strong>
+						{{ $t('content.H1_Content_6') }}
+					</p>
+
 					<div class="footer-detail">
 						<div class="Atas_Sign_Up_Container">
 							<a :href="link_ataskasino">{{ $t('Atas_Sign_Up.Header') }}</a> | {{

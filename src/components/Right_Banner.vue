@@ -88,7 +88,7 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_ataskasino + 'en/sports-live'" rel="nofollow">
+				<a :href="link_ataskasino + 'en/sport-live'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
