@@ -191,7 +191,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2024 CROWN99. ALL RIGHTS RESERVED.
+						2016-2024 PAVILION88. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>
