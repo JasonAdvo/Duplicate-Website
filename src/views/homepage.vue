@@ -383,6 +383,7 @@ export default {
 
 	.LeftBanner {
 		order: 2;
+		display: none;
 	}
 
 	.Middle_Banner_Container {
@@ -674,7 +675,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: #086cec;
+	/* color: #086cec; */
 }
 
 .image-wrapper a {
@@ -718,7 +719,7 @@ li {
 }
 
 .Visit strong {
-	color: #086cec;
+	color: #07a6fb;
 }
 
 .license {
