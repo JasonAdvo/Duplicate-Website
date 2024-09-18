@@ -1,5 +1,18 @@
 <template>
 	<div class="Right_Banner_Container">
+
+		<div class="Mobile_View" style="display: none;">
+			<LB_Img_Carousel />
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
+					src="/images/daily free spin bonus.gif" alt="Spin Bonus">
+			</a>
+
+			<div>
+				<RW_Img_Carousel />
+			</div>
+
+		</div>
+
 		<div class="RB_Imgs">
 			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Bonus93.gif"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
@@ -33,6 +46,27 @@
 				</div>
 			</div>
 
+			<div class="Mobile_View" style="display: none;">
+				<div class="Share_Section">
+					<img src="/images/LB_Img_2.webp" alt="Share">
+					<div class="button-grp">
+						<!-- Blank containers with links inside -->
+						<div class="button-container">
+							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
+						</div>
+						<div class="button-container">
+							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
+						</div>
+						<div class="button-container">
+							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
+						</div>
+						<div class="button-container">
+							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
@@ -61,21 +95,26 @@
 				</a>
 			</div>
 
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+					alt="Top Up Rm20" style="margin-bottom: 16px;"></a>
+
 			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
-
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
-					alt="Top Up Rm20" style="margin-bottom: 16px;">
-			</a>
 		</div>
 	</div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue'
+import RW_Img_Carousel from '/src/components/RW_Img_Carousel.vue'
 
 export default {
 	name: 'RightBanner',
+	components: {
+		LB_Img_Carousel,
+		RW_Img_Carousel
+	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
 	},
@@ -188,6 +227,10 @@ export default {
 }
 
 @media screen and (max-width: 1000px) {
+	.Mobile_View {
+		display: block !important;
+	}
+
 	.Tablet-Mobile-view {
 		display: flex !important;
 		flex-direction: column;
@@ -228,38 +271,88 @@ export default {
 		font-size: 30px;
 	}
 
-	.button-grp img {
-		width: 100% !important;
-	}
+}
+
+.Share_Section {
+	position: relative;
 }
 
 .button-grp {
-	margin-top: -24%;
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	width: 100%;
+	gap: 5px;
+	bottom: 5%;
 }
 
-.button-grp a {
-	width: calc(50% - 8px);
+.button-container {
+	width: 45%;
+	height: 40px;
+	border: 1px solid transparent;
+	position: relative;
+	float: left;
+	background-color: black;
+	margin-bottom: 16px;
+	opacity: 0;
 }
 
-@media screen and (min-width: 610px) and (max-width: 990px) {
-	.button-grp a {
-		width: calc(50% - 15px);
-	}
+.button-container a {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .button_width {
-	width: 100%
+	width: 100%;
+	margin-bottom: 8px !important;
 }
 
-.button-grp img {
-	width: 100%;
-	padding: 0 5px;
-	margin-bottom: 8px;
+@media screen and (max-width: 1000px) {
+
+	.button-grp {
+		bottom: 4%;
+		margin-top: unset;
+	}
+
+	.button-container {
+		height: 55px;
+	}
 }
+
+@media screen and (max-width: 600px) {
+	.button-grp {
+		bottom: 2%;
+	}
+
+	.button-container {
+		height: 45px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+
+	.button-container {
+		height: 25px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+
+	.button-container {
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.button-grp {
+		bottom: 0;
+	}
+}
+
 
 .sport-betting-container {
 	background-image: url('/images/soccer-betting-img.jpg');

@@ -174,7 +174,7 @@
 						{{ $t('Main_Content.Btm_Content_2') }} |
 						{{ $t('Main_Content.Btm_Content_3') }}
 						<a :href="link_winboxmys">
-							<strong>
+							<strong class="Anchor_Text_Color">
 								{{ $t('Main_Content.Btm_Content_4') }}
 							</strong>
 						</a>
@@ -183,7 +183,7 @@
 					<p>
 						{{ $t('Main_Content.Btm_Content_6') }}
 						<a :href="winboxofficial_link">
-							<strong>
+							<strong class="Anchor_Text_Color">
 								{{ $t('Main_Content.Btm_Content_6_5') }}
 							</strong>
 						</a>
@@ -447,6 +447,7 @@ export default {
 
 	.LeftBanner {
 		order: 2;
+		display: none;
 	}
 
 	.Middle_Banner_Container {
@@ -717,6 +718,9 @@ export default {
 .footer-content {
 	margin-top: 30px;
 	margin-bottom: 60px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 0 5px;
 }
 
 .footer-content h1,
@@ -755,7 +759,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: #086cec;
+	color: black;
 }
 
 .image-wrapper a {
@@ -768,6 +772,10 @@ li {
 
 .b-700 {
 	font-weight: 700;
+}
+
+.Anchor_Text_Color {
+	color: #086cec !important;
 }
 
 .footer-detail {
