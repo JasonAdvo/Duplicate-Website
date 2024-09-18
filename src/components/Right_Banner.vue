@@ -2,7 +2,7 @@
 	<div class="Right_Banner_Container">
 
 		<div class="Mobile_View" style="display: none;">
-			<LB_Img_Carousel />
+			<RB_Img_Carousel />
 			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
 					src="/images/daily free spin bonus.gif" alt="Spin Bonus">
 			</a>
@@ -62,7 +62,7 @@
 				</div>
 
 				<div>
-					<RW_Img_Carousel />
+					<RB_RW_Img_Carousel />
 				</div>
 			</div>
 
@@ -105,14 +105,14 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue'
-import RW_Img_Carousel from '/src/components/RW_Img_Carousel.vue'
+import RB_Img_Carousel from '/src/components/RB_Img_Carousel.vue'
+import RB_RW_Img_Carousel from '/src/components/RB_RW_Img_Carousel.vue'
 
 export default {
 	name: 'RightBanner',
 	components: {
-		LB_Img_Carousel,
-		RW_Img_Carousel
+		RB_Img_Carousel,
+		RB_RW_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
