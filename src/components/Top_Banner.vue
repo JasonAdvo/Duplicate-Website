@@ -63,7 +63,12 @@ export default {
 
 		const togglePopup = () => {
 			showPopup.value = !showPopup.value;
-			document.body.style.overflow = 'hidden';
+
+			if (showPopup.value) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = 'auto';
+			}
 		};
 
 		return {
