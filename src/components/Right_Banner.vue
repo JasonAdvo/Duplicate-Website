@@ -3,20 +3,20 @@
 
 		<div class="Mobile_View" style="display: none;">
 			<RB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
-					src="/images/daily free spin bonus.gif" alt="Spin Bonus">
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
+					src="/images/Daily_bonus.webp" alt="Spin Bonus">
 			</a>
 		</div>
 
 		<div class="RB_Imgs">
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Bonus93.gif"
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
 			<div class="login-register-container">
-				<a :href="link_winboxmys + 'winbox-login'" rel="nofollow"><img class="Join"
+				<a :href="link_winbox77 + 'winbox-login'" rel="nofollow"><img class="Join"
 						src="/images/RB_Login_Img.webp" alt="Login"></a>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="Register"
+				<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="Register"
 						src="/images/RB_Register_Img.webp" alt="Register"></a>
 			</div>
 			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
@@ -29,10 +29,10 @@
 					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
 						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
 					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
 						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 					</a>
 					<a href="/">
@@ -45,19 +45,14 @@
 				<div class="Share_Section">
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
-						<!-- Blank containers with links inside -->
-						<div class="button-container">
-							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-						</div>
-						<div class="button-container">
-							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-						</div>
-						<div class="button-container">
-							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-						</div>
-						<div class="button-container">
-							<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-						</div>
+						<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Share_Img.webp" alt="Share"></a>
+						<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+						<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+						<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+								src="/images/LB_More_Img.webp" alt="More"></a>
 					</div>
 				</div>
 			</div>
@@ -72,7 +67,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>21 Sep 2024</p>
 						<p class="time">19:30</p>
-						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
+						<a :href="link_winbox77 + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -83,17 +78,17 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/top up rm20.webp"
 					alt="Top Up Rm20" style="margin-bottom: 16px;"></a>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 		</div>
 	</div>
@@ -109,10 +104,10 @@ export default {
 		RB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_winbox77', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_winbox77');
 	}
 
 };
@@ -272,80 +267,44 @@ export default {
 
 .button-grp {
 	position: absolute;
+	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100%;
-	gap: 5px;
-	bottom: 5%;
 }
 
-.button-container {
-	width: 45%;
-	height: 40px;
-	border: 1px solid transparent;
-	position: relative;
-	float: left;
-	background-color: black;
-	margin-bottom: 16px;
-	opacity: 0;
+@media screen and (max-width: 1000px) {
+	.button-grp {
+		bottom: 2%;
+		margin-top: unset;
+	}
 }
 
-.button-container a {
-	display: block;
-	width: 100%;
-	height: 100%;
+@media screen and (min-width: 1920px) {
+	.button-grp {
+		margin-top: -27%;
+	}
+}
+
+.button-grp img {
+	padding: 0 5px;
+}
+
+.button-grp a {
+	width: calc(50% - 8px);
+}
+
+@media screen and (min-width: 610px) and (max-width: 770px) {
+	.button-grp a {
+		width: calc(50% - 15px);
+	}
 }
 
 .button_width {
 	width: 100%;
 	margin-bottom: 8px !important;
 }
-
-@media screen and (max-width: 1000px) {
-
-	.button-grp {
-		bottom: 4%;
-		margin-top: unset;
-	}
-
-	.button-container {
-		height: 55px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.button-grp {
-		bottom: 2%;
-	}
-
-	.button-container {
-		height: 45px;
-	}
-}
-
-@media screen and (max-width: 430px) {
-
-	.button-container {
-		height: 25px;
-	}
-}
-
-@media screen and (max-width: 380px) {
-
-	.button-container {
-		height: 20px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-
-	.button-grp {
-		bottom: 0;
-	}
-}
-
 
 .sport-betting-container {
 	background-image: url('/images/soccer-betting-img.jpg');

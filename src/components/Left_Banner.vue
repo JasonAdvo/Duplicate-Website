@@ -2,26 +2,21 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Daily_bonus.webp"
 					alt="Spin Bonus">
 			</a>
 
 			<div class="Share_Section">
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
-					<!-- Blank containers with links inside -->
-					<div class="button-container">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-					</div>
-					<div class="button-container">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-					</div>
-					<div class="button-container">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-					</div>
-					<div class="button-container">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"></a>
-					</div>
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Share_Img.webp" alt="Share"></a>
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 			</div>
 		</div>
@@ -38,10 +33,10 @@ export default {
 		LB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_winbox77', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_winbox77');
 	}
 };
 </script>
@@ -65,62 +60,43 @@ export default {
 
 .button-grp {
 	position: absolute;
+	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100%;
-	gap: 5px;
-	bottom: 5%;
 }
 
-.button-container {
-	width: 45%;
-	height: 40px;
-	border: 1px solid transparent;
-	position: relative;
-	float: left;
-	background-color: black;
-	margin-bottom: 16px;
-	opacity: 0;
+@media screen and (max-width: 1000px) {
+	.button-grp {
+		bottom: 10%;
+		margin-top: unset;
+	}
 }
 
-.button-container a {
-	display: block;
-	width: 100%;
-	height: 100%;
+@media screen and (min-width: 1920px) {
+	.button-grp {
+		margin-top: -27%;
+	}
+}
+
+.button-grp img {
+	padding: 0 5px;
+}
+
+.button-grp a {
+	width: calc(50% - 8px);
+}
+
+@media screen and (min-width: 610px) and (max-width: 770px) {
+	.button-grp a {
+		width: calc(50% - 15px);
+	}
 }
 
 .button_width {
 	width: 100%;
 	margin-bottom: 8px !important;
-}
-
-@media screen and (max-width: 2000px) {
-	.button-grp {
-		bottom: 2%;
-	}
-
-	.button-container {
-		height: 40px;
-	}
-}
-
-@media screen and (max-width: 1500px) {
-
-	.button-container {
-		height: 30px;
-	}
-}
-
-@media screen and (max-width: 1200px) {
-	.button-grp {
-		bottom: 4%;
-	}
-
-	.button-container {
-		height: 25px;
-	}
 }
 
 
@@ -131,46 +107,6 @@ export default {
 		padding-bottom: 0px;
 		border-right: unset;
 		padding-top: 0px;
-	}
-
-	.button-grp {
-		bottom: 5%;
-		margin-top: unset;
-	}
-
-	.button-container {
-		height: 55px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.button-grp {
-		bottom: 4%;
-	}
-
-	.button-container {
-		height: 50px;
-	}
-}
-
-@media screen and (max-width: 430px) {
-
-	.button-container {
-		height: 30px;
-	}
-}
-
-@media screen and (max-width: 380px) {
-
-	.button-container {
-		height: 25px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-
-	.button-container {
-		height: 20px;
 	}
 }
 </style>

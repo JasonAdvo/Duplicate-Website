@@ -31,7 +31,7 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong>
+				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong> |
 				{{ $t('Runnig_Bar.Content_2') }}
 			</div>
 		</div>
@@ -143,7 +143,7 @@ export default {
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
-	color: white;
+	color: black;
 	cursor: pointer;
 	width: 50px;
 }
