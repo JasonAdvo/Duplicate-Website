@@ -60,10 +60,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div>
-					<RB_RW_Img_Carousel />
-				</div>
 			</div>
 
 			<div class="sport-betting-container">
@@ -106,13 +102,11 @@
 <script>
 import { mapGetters } from 'vuex';
 import RB_Img_Carousel from '/src/components/RB_Img_Carousel.vue'
-import RB_RW_Img_Carousel from '/src/components/RB_RW_Img_Carousel.vue'
 
 export default {
 	name: 'RightBanner',
 	components: {
 		RB_Img_Carousel,
-		RB_RW_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),

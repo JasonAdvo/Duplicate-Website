@@ -24,10 +24,6 @@
 					</div>
 				</div>
 			</div>
-
-			<div>
-				<RW_Img_Carousel />
-			</div>
 		</div>
 	</div>
 </template>
@@ -35,13 +31,11 @@
 <script>
 import { mapGetters } from 'vuex';
 import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue'
-import RW_Img_Carousel from '/src/components/RW_Img_Carousel.vue'
 
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
-		RW_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
