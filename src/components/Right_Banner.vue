@@ -4,7 +4,7 @@
 		<div class="Mobile_View" style="display: none;">
 			<RB_Img_Carousel />
 			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
-					src="/images/Daily_bonus.webp" alt="Spin Bonus">
+					src="/images/Spin Bonus.webp" alt="Spin Bonus">
 			</a>
 		</div>
 
@@ -85,11 +85,11 @@
 				</a>
 			</div>
 
-			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/top up rm20.webp"
-					alt="Top Up Rm20" style="margin-bottom: 16px;"></a>
-
 			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
+
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/top up rm20.webp"
+					alt="Top Up Rm20" style="margin-bottom: 16px;"></a>
 		</div>
 	</div>
 </template>

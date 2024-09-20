@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Daily_bonus.webp"
+			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Spin Bonus.webp"
 					alt="Spin Bonus">
 			</a>
 
