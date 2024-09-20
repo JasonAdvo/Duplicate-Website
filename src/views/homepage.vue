@@ -301,7 +301,7 @@ export default {
 		},
 	},
 	mounted() {
-		this.fetchLink();
+		// this.fetchLink();
 		this.$store.dispatch('fetchLink_winbox77');
 	}
 }
