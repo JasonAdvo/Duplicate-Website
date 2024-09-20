@@ -382,6 +382,34 @@ export default {
 	background-position: center;
 }
 
+@media (max-width: 768px) {
+	.main-content {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.main-content::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('/images/Bg_Img.webp');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	/* Ensure it stays behind other content */
+}
+
+@media (max-width: 768px) {
+	.main-content::before {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
 .Mobile_Middle_Banner {
 	width: 100%;
 	background: rgba(0, 0, 0, .3);
@@ -573,6 +601,9 @@ export default {
 .footer-content {
 	margin-top: 30px;
 	margin-bottom: 60px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 0 5px;
 }
 
 .footer-content h1,
