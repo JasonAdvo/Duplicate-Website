@@ -1,7 +1,4 @@
 <template>
-	<div>
-		<PopUpCard />
-	</div>
 
 	<div class="TopBanner">
 		<TopBanner />
@@ -250,7 +247,6 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
-import PopUpCard from '@/components/PopUpCard.vue';
 import BackToTop from '@/components/BackToTop.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
@@ -260,7 +256,6 @@ export default {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		PopUpCard,
 		BackToTop,
 	},
 	data() {
