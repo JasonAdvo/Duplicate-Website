@@ -69,30 +69,50 @@
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
+							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+							src="/images/LB_Tips_Img.gif" alt="Game Tips"></a>
 				</div>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-					src="/images/LB_Img_3.webp" alt="Live Now"></a>
+			<LB_RW_Img_Carousel />
+
+			<div style="position: relative;">
+				<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
+				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
+				</a>
+			</div>
+
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<img src="/images/Event_Game.gif" alt="Event Game">
+			</a>
+
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<img src="/images/Pussy_888.webp" alt="Notice">
+			</a>
+
+			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<img src="/images/Predict.gif" alt="Predict and Win">
+			</a>
 		</div>
 	</div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
-import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue'
+import LB_Img_Carousel from './LB_Img_Carousel.vue'
+import LB_RW_Img_Carousel from './LB_RW_Img_Carousel.vue';
 
 export default {
 	name: 'LeftBanner',
 	components: {
-		LB_Img_Carousel
+		LB_Img_Carousel,
+		LB_RW_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
@@ -173,7 +193,7 @@ export default {
 }
 
 .title span {
-	color: #d3ab22;
+	color: black;
 	font-weight: 700;
 	padding-left: 4px;
 }
@@ -228,7 +248,8 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid white;
+	border: 1px solid #FF8C00;
+	background: #FFF;
 	font-weight: 500;
 }
 
@@ -240,13 +261,13 @@ table td {
 
 .green {
 	color: white;
-	background: radial-gradient(circle, rgba(17, 255, 38, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background-image: linear-gradient(to left, #8d8f11, #d7c965);
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	background: radial-gradient(circle, rgba(17, 243, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background-image: linear-gradient(to left, #374439, #28ab3f);
 	padding-left: 4px;
 }
 
@@ -257,7 +278,14 @@ tbody td {
 }
 
 .amount {
-	color: #d3ab22;
+	color: black;
 	text-align: right;
+}
+
+.Lucky_Number_Btn {
+	position: absolute;
+	bottom: 5%;
+	left: 8%;
+	width: 40% !important;
 }
 </style>

@@ -3,10 +3,7 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
-				</a>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
+					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
 				</a>
 			</div>
 
@@ -18,34 +15,34 @@
 			</div>
 
 			<div class="footer-content">
-				<div class="d-f col">
-					<a :href="link_winboxmys" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.webp" alt="Home">
+				<div class="col Home_Container">
+					<a class="d-f" :href="link_winboxmys" rel="nofollow" target="_blank">
+						<i class="material-icons home">home</i>
+						<span>HOME</span>
 					</a>
 				</div>
-				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Img.webp" alt="History">
+				<div class=" col">
+					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+						<i class="material-icons">access_time</i>
+						HISTORY
 					</a>
 				</div>
-				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Promo_Img.webp" alt="Bonus">
+				<div class=" col">
+					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+						<i class="material-icons">redeem</i>
+						PROMO
 					</a>
 				</div>
-				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Lucky_Img.webp" alt="Lucky Draw">
+				<div class=" col">
+					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+						<i class="material-icons">question_answer</i>
+						LIVE CHAT
 					</a>
 				</div>
-				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
+				<div class=" col">
+					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+						<i class="material-icons">settings</i>
+						SETTING
 					</a>
 				</div>
 			</div>
@@ -116,6 +113,30 @@ export default {
 .d-f {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	text-decoration: none;
+	color: black
+}
+
+.d-f i {
+	color: black;
+	font-size: 30px;
+	margin-top: 5px;
+}
+
+.home {
+	color: white !important;
+}
+
+.d-f span {
+	color: white !important;
+}
+
+.Home_Container {
+	background: #f38120;
+	margin-top: -10px;
+	padding-bottom: 10px;
+	border-radius: 15px 15px 0 0;
 }
 
 .col {
@@ -141,7 +162,7 @@ export default {
 
 .Btm-Popup_Container {
 	position: absolute;
-	bottom: 55px;
+	bottom: 70px;
 	padding-top: 30px;
 }
 

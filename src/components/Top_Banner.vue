@@ -3,6 +3,7 @@
 		<a href="/">
 			<div class="Top_Banner_Container" />
 		</a>
+		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 		<!-- Overlay -->
@@ -31,8 +32,10 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong>
-				{{ $t('Runnig_Bar.Content_2') }}
+				<strong>{{ $t('Runnig_Bar.Content_1') }}</strong> |
+				<strong>{{ $t('Runnig_Bar.Content_2') }}</strong> |
+				<strong>{{ $t('Runnig_Bar.Content_3') }}</strong> |
+				{{ $t('Runnig_Bar.Content_4') }}
 			</div>
 		</div>
 	</div>
@@ -112,7 +115,7 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TB_Bg_Img.webp');
+	background-image: url('/images/TB_Bg_Img.gif');
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -122,24 +125,16 @@ export default {
 	height: 80px;
 }
 
-.IJaya_Logo {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-	width: 240px;
-	height: auto;
-}
-
 .Partnership {
 	position: absolute;
 	top: 20px;
-	left: 30px;
+	right: 100px;
 	width: 60px;
 }
 
 .GT-icon {
 	position: absolute;
-	top: 20px;
+	top: 28px;
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
@@ -148,22 +143,8 @@ export default {
 	width: 50px;
 }
 
-@media screen and (max-width: 1030px) {
-	.IJaya_Logo img {
-		width: 200px !important;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	.IJaya_Logo {
-		top: 5px;
-	}
-}
-
 @media screen and (max-width: 430px) {
-	.IJaya_Logo {
-		width: 150px !important;
-	}
+
 
 	.Partnership {
 		top: 5px;
@@ -173,12 +154,6 @@ export default {
 	.GT-icon {
 		width: 40px;
 		top: 5px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.IJaya_Logo img {
-		width: 145px !important;
 	}
 }
 
@@ -193,8 +168,6 @@ export default {
 	transform: translateY(-50%);
 	max-width: 60px;
 }
-
-
 
 .overlay {
 	position: fixed;
@@ -264,7 +237,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 90s linear infinite;
-	color: black;
+	color: white;
 	letter-spacing: 0.5px;
 	font-size: 13px;
 }
