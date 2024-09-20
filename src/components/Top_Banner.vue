@@ -263,7 +263,7 @@ export default {
 	white-space: nowrap;
 	/* position: absolute; */
 	width: max-content;
-	animation: scroll 90s linear infinite;
+	animation: scroll 80s linear infinite;
 	color: #f3c015;
 	letter-spacing: 1px;
 	font-size: 12px;
@@ -271,7 +271,7 @@ export default {
 
 @keyframes scroll {
 	0% {
-		transform: translateX(100%);
+		transform: translateX(70%);
 	}
 
 	100% {
@@ -282,13 +282,13 @@ export default {
 @media (max-width: 1000px) {
 
 	.running-sentence {
-		animation: scroll 70s linear infinite;
+		animation: scroll 60s linear infinite;
 	}
 
 	/* Adjust this value as needed for your design */
 	@keyframes scroll {
 		0% {
-			transform: translateX(30%);
+			transform: translateX(20%);
 			/* Different value for mobile view */
 		}
 
