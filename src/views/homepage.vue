@@ -23,20 +23,15 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 35" :key="n">
-								<a v-if="n <= 12" :href="link_winbox + 'winbox-register'" rel="nofollow">
-									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+							<div class="image-wrapper col-lg-3 col-md-3 col-sm-4 col-4" v-for="n in 13" :key="n">
+								<a :href="link_winbox + 'winbox-register'" rel="nofollow">
+									<div class="inner_container">
+										<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+										<p>
+											{{ gameNames[n - 1] }}
+										</p>
+									</div>
 								</a>
-								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-
-								<div v-if="n <= 12">
-									<a :href="link_winbox + 'winbox-register'" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
-									</a>
-								</div>
-								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -227,41 +222,34 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"Tanzania King",
-				"Candy Party",
-				"Legend Slot Onimaru",
-				"Legend Slot Musashi",
-				"Durian King",
-				"Thai Lucky",
-				"Color Alchemy",
-				"Trade Wars",
-				"Gems Rush",
-				"Gods Of Olympus",
-				"Beauty Contest",
-				"Dragon Jewels",
-				"Golden Temple",
-				"LIFE",
-				"Magic Box",
-				"Mr Fortune",
-				"Meow Meow",
-				"Lucky 7",
-				"Where's My Monkey",
-				"Samurai Wars",
-				"Happy Road",
-				"Feed the Zombie",
-				"Burm the Office",
-				"All You Can Eat",
-				"TVW",
-				"Strange Encounter",
-				"S.O.S",
-				"On Crap",
-				"Pon Pon",
-				"Lullababy",
-				"Talent Night",
-				"Spell Craft",
-				"Steam Punk 100",
-				"Thai Street Food",
-				"Madness Buffalo"
+				"EVOLUTION GAMING",
+				"PRAGMATIC PLAY",
+				"PLAYTECH",
+				"ASIA GAMING",
+				"DREAM GAMING",
+				"ALLBET",
+				"SEXY BACCARAT",
+				"EZUGI",
+				"SA GAMING",
+				"WM CASINO",
+				"BIG GAMING",
+				"WORLD ENTERTAINMENT",
+				"MICRO GAMING PLUS"
+			],
+			gameNames: [
+				"EVOLUTION GAMING",
+				"PRAGMATIC PLAY",
+				"PLAYTECH",
+				"ASIA GAMING",
+				"DREAM GAMING",
+				"ALLBET",
+				"SEXY BACCARAT",
+				"EZUGI",
+				"SA GAMING",
+				"WM CASINO",
+				"BIG GAMING",
+				"WORLD ENTERTAINMENT",
+				"MICRO GAMING PLUS"
 			],
 			images: [
 				{ notSelected: '/images/CPF_NotS.webp', selected: '/images/CPF_S.webp', alt: 'Clot Play Free' },
@@ -463,8 +451,6 @@ export default {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-radius: 12px;
-	border: 1px solid #fff;
 }
 
 @media screen and (max-width: 576px) {
@@ -578,30 +564,18 @@ export default {
 }
 
 .image-grid-container {
-	display: grid;
-	gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
-@media (min-width: 1200px) {
-	.image-grid-container {
-		grid-template-columns: repeat(6, 1fr);
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-	.image-grid-container {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@media (max-width: 767px) {
-	.image-grid-container {
-		grid-template-columns: repeat(3, 1fr);
-	}
+.image-wrapper {
+	padding: 10px;
+	text-align: center;
 }
 
 .image-wrapper img {
-	width: 100%;
+	width: 50%;
 }
 
 .image-wrapper p {
@@ -610,17 +584,16 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-color: #4ba614;
-	background-image: linear-gradient(to bottom, #746526, #C3B32A);
-	box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
 	text-align: center;
 	color: white;
 	font-size: 11px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
-.image-wrapper p {
-	margin-bottom: 0;
+.inner_container {
+	padding: 10px 5px;
+	border-radius: 8px;
+	background-color: #283345
 }
 
 .footer-content {
