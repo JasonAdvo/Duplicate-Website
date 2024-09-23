@@ -1,9 +1,8 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img
-					style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
-					alt="50% Daily Bonus"></a>
+			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
+					src="/images/Bonus_93.gif" alt="Marc Marquez 93% Bonus"></a>
 			<div class="login-register-container">
 				<a :href="link_winbox + 'winbox-login'" rel="nofollow"><img class="Join" src="/images/RB_Login_Img.webp"
 						alt="Login"></a>
@@ -21,13 +20,13 @@
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
 					</a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 					</a>
 					<a href="/">
-						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
+						<img src="/images/RB_Refresh_Img.gif" alt="Refresh">
 					</a>
 				</div>
 			</div>
@@ -36,67 +35,36 @@
 				<img src="/images/LB_Img_2.webp" alt="Share Bonus">
 				<div class="button-grp">
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
+							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+							src="/images/LB_More_Img.gif" alt="More"></a>
 				</div>
-				<div class="RB-mobile-img-grp">
-					<a href="/"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
-					</a>
-					<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
-					</a>
 
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-							src="/images/LB_Img_3.webp" alt="Live Now"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/LB_Img_4.webp"
-							alt="About"></a>
+				<div style="margin-top: 20px;">
+					<RB_RW_Img_Carousel />
+
 				</div>
+
+				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+						alt="Turnover Bonus"></a>
 			</div>
-
-			<div class="sport-betting-container">
-				<div class="SB-content-container">
-					<div class="team">
-						<img src="/images/team-1.webp" alt="team 1">
-						<p>{{ $t('message.team_1') }}</p>
-					</div>
-					<div class="time-info">
-						<p>{{ $t('message.start_time') }}</p>
-						<p>17 Aug 2024</p>
-						<p class="time">03:00</p>
-						<a :href="link_winbox + 'winbox-login'" rel="nofollow">
-							<div class="bet-now-container">
-								<p>{{ $t('message.bet_now') }}</p>
-							</div>
-						</a>
-					</div>
-					<div class="team">
-						<img src="/images/team-2.webp" alt="team 2">
-						<p>{{ $t('message.team_2') }}</p>
-					</div>
-				</div>
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow">
-					<div class="show-more-button-container">
-						<p>{{ $t('message.show_more') }}</p>
-					</div>
-				</a>
-			</div>
-
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
-					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px; border-radius: 8px;">
-			</a>
 		</div>
 	</div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import RB_RW_Img_Carousel from './RB_RW_Img_Carousel.vue';
 
 export default {
 	name: 'RightBanner',
+	components: {
+		RB_RW_Img_Carousel
+	},
 	computed: {
 		...mapGetters(['link_winbox', 'error']),
 	},
@@ -160,11 +128,6 @@ export default {
 
 .login-register-container img {
 	border-radius: 0%;
-}
-
-.Join,
-.Register {
-	height: 47px;
 }
 
 .Join {
@@ -276,120 +239,5 @@ export default {
 	width: 100%;
 	padding: 0 5px;
 	margin-bottom: 8px;
-}
-
-.sport-betting-container {
-	background-image: url('/images/soccer-betting-img.jpg');
-	/* background-position: center; */
-	background-size: cover;
-	padding: 20px 0 10px 0;
-	margin-bottom: 16px;
-	border-radius: 8px;
-}
-
-@media screen and (max-width: 430px) {
-	.sport-betting-container {
-		padding: 30px 0 10px 0 !important;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	.sport-betting-container {
-		padding: 50px 0 10px 0;
-	}
-}
-
-@media screen and (min-width: 1600px) {
-	.sport-betting-container {
-		padding: 30px 0 10px 0;
-	}
-}
-
-@media screen and (min-width: 2000px) {
-	.sport-betting-container {
-		padding: 40px 0 10px 0;
-	}
-}
-
-.sport-betting-container a {
-	text-decoration: none;
-}
-
-.SB-content-container {
-	overflow: hidden;
-	padding: 10px;
-	box-shadow: 0 0 3px rgba(0, 0, 0, .6);
-	border-radius: 5px;
-	background: #fff;
-	color: #000;
-	font-size: 12px;
-	text-align: center;
-	margin: 10px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.SB-content-container p {
-	margin-bottom: 0;
-}
-
-.bet-now-container {
-	display: block;
-	background: #4caf50;
-	color: #fff;
-	padding: 8px 0;
-	line-height: 1;
-	width: 72px;
-	text-align: center;
-	border-radius: 4px;
-	margin: 5px auto 0;
-}
-
-.show-more-button-container {
-	background: #eee;
-	color: #000;
-	text-align: center;
-	padding: 10px;
-	border-radius: 5px;
-	margin: 0 10px 10px;
-	box-shadow: 0 0 3px rgb(0 0 0 / 30%);
-	border: 1px solid #ccc;
-	cursor: pointer;
-}
-
-.show-more-button-container p {
-	font-size: 13px;
-	line-height: 1;
-	margin-bottom: 0;
-}
-
-.team {
-	width: 30%;
-}
-
-.team img {
-	margin-bottom: 10px;
-	width: 50px;
-}
-
-@font-face {
-	font-family: 'Digital-7';
-	src: url('@/assets/fonts/digital-7.ttf') format('truetype');
-}
-
-.time {
-	display: block;
-	margin-top: 3px;
-	font-size: 21px;
-	color: #258D2D;
-	font-family: 'Digital-7', sans-serif;
-}
-
-.RB-mobile-img-grp {
-	margin-top: 22px;
-}
-
-.RB-mobile-img-grp img {
-	margin-bottom: 16px;
 }
 </style>

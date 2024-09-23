@@ -4,6 +4,7 @@
 			<div class="Top_Banner_Container" />
 		</a>
 		<img class="Logo_Img" src="/images/TB_Logo_Img.webp" alt="BP9 Logo">
+		<img class="A66_Grp" src="/images/A66_Grp_Img.webp" alt="A66 Group">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 		<!-- Overlay -->
@@ -125,16 +126,16 @@ export default {
 	height: auto;
 }
 
-.Partnership {
+.A66_Grp {
 	position: absolute;
 	top: 20px;
-	left: 30px;
+	right: 100px;
 	width: 60px;
 }
 
 .GT-icon {
 	position: absolute;
-	top: 20px;
+	top: 25px;
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;

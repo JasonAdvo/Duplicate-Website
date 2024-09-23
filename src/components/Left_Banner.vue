@@ -1,8 +1,7 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-					src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
+			<LB_Img_Carousel />
 			<img src="/images/LB_Img_1.webp" alt="PAGCOR">
 			<table>
 				<thead>
@@ -68,35 +67,35 @@
 				<img src="/images/LB_Img_2.webp" alt="Share Bonus">
 				<div class="button-grp">
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
+							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+							src="/images/LB_More_Img.gif" alt="More"></a>
 				</div>
-				<a href="/"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp" alt="Telegram">
-				</a>
-				<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
-				</a>
 
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-						src="/images/LB_Img_3.webp" alt="Live Now"></a>
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/LB_Img_4.webp"
-						alt="About"></a>
+				<RW_Img_Carousel />
+
+				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+						alt="Turnover Bonus"></a>
 			</div>
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-					src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
 		</div>
 	</div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import LB_Img_Carousel from './LB_Img_Carousel.vue';
+import RW_Img_Carousel from './RW_Img_Carousel.vue';
 
 export default {
 	name: 'LeftBanner',
+	components: {
+		LB_Img_Carousel,
+		RW_Img_Carousel
+	},
 	computed: {
 		...mapGetters(['link_winbox', 'error']),
 	},
@@ -166,6 +165,7 @@ export default {
 	color: #d3ab22;
 	font-weight: 700;
 	font-size: 11px;
+	padding-left: 4px;
 }
 
 .live {
@@ -223,11 +223,13 @@ table td {
 }
 
 .green {
-	background: #239809;
+	padding-left: 4px;
+	background: radial-gradient(circle, #4fff45, #1d4b1f);
 }
 
 .red {
-	background: #d02c27;
+	padding-left: 4px;
+	background: radial-gradient(circle, #feff1a, #000);
 }
 
 tbody td {
