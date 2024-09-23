@@ -3,10 +3,13 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="link_winbox + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
+					<img src="/images/Download_App_Img.webp" alt="Download App">
 				</a>
 				<a :href="link_winbox + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
+					<img src="/images/Subscribe_Us_Img.webp" alt="Subscribe">
+				</a>
+				<a :href="link_winbox + 'winbox-register'" rel="nofollow" class="social-media-icon">
+					<img src="/images/Follow_Us_Img.webp" alt="Follow Us">
 				</a>
 			</div>
 
@@ -84,7 +87,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -500%;
+	top: -700%;
 	right: 0;
 }
 

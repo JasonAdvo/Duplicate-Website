@@ -38,15 +38,14 @@ export default {
 		return {
 			// Manage current slide index
 			currentIndex: 0,
-
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_winbox', 'error']),
 	},
 	mounted() {
 		// Fetch dynamic link from Vuex store
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_winbox');
 
 
 	},

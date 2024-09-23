@@ -144,31 +144,19 @@ export default {
 	width: 50px;
 }
 
-@media screen and (max-width: 1030px) {
-	.IJaya_Logo img {
-		width: 200px !important;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	.IJaya_Logo {
-		top: 5px;
-	}
-}
-
 @media screen and (max-width: 430px) {
-	.IJaya_Logo {
-		width: 150px !important;
+	.Logo_Img {
+		width: 60px;
 	}
 
-	.Partnership {
-		top: 5px;
-		width: 40px;
+	.A66_Grp {
+		top: 10px;
+		width: 50px;
 	}
 
 	.GT-icon {
 		width: 40px;
-		top: 5px;
+		top: 10px;
 	}
 }
 
