@@ -149,6 +149,18 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
+							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
+							{{ $t('Registered_TradeMark.Content_2') }}
+							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
+							{{ $t('Registered_TradeMark.Content_4') }}
+							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
+							{{ $t('Registered_TradeMark.Content_6') }}
+						</div>
+						<div class="payment">
+							<p>{{ $t('message.Payment_Method') }}</p>
+							<img src="/images/payment-list.webp" alt="payment-list">
+						</div>
+						<div class="Certidicate_Security">
 							<p style="font-weight: 500;">{{ $t('message.Certidicate_Security') }}</p>
 							<img src="/images/Cert-list.webp" alt="certificate-list">
 						</div>
@@ -700,7 +712,7 @@ li {
 	font-size: 14px;
 	float: left;
 	width: 70%;
-	/* margin-top: 50px; */
+	margin-top: 80px;
 	color: black;
 }
 
@@ -715,7 +727,22 @@ li {
 	}
 }
 
+.Certidicate_Security {
+	text-align: left;
+	font-size: 14px;
+	float: left;
+	width: 100%;
+	/* margin-top: 50px; */
+	color: black;
+}
+
+.Certidicate_Security img {
+	margin-top: 10px;
+	width: 70%;
+}
+
 .payment {
+	font-weight: 500;
 	float: left;
 	width: 100%;
 }
