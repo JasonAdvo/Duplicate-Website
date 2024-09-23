@@ -84,6 +84,7 @@ export default {
 	height: 55px;
 	background-image: url('/images/Btm_Bg_Img.webp');
 	background-size: 100% 100%;
+	z-index: 3;
 }
 
 .relative {
