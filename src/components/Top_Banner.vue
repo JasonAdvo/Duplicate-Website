@@ -3,6 +3,7 @@
 		<a href="/">
 			<div class="Top_Banner_Container" />
 		</a>
+		<img class="Logo_Img" src="/images/TB_Logo_Img.webp" alt="BP9 Logo">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 		<!-- Overlay -->
@@ -26,12 +27,6 @@
 				<span v-if="selectedLanguage === 'zh'" class="tick">
 					<i class="fa fa-check"></i>
 				</span>
-			</div>
-		</div>
-
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				{{ $t('Runnig_Bar.Content') }}
 			</div>
 		</div>
 	</div>
@@ -111,7 +106,8 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TB_Bg_Img.webp');
+	/* background-image: url('/images/TB_Bg_Img.webp'); */
+	background-color: black;
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -121,11 +117,11 @@ export default {
 	height: 80px;
 }
 
-.IJaya_Logo {
+.Logo_Img {
 	position: absolute;
-	top: 0px;
+	top: 10px;
 	left: 20px;
-	width: 240px;
+	width: 120px;
 	height: auto;
 }
 
