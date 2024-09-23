@@ -58,12 +58,35 @@
 
 
 				<div class="footer-content">
+					<div class="footer_inner_content">
+						<p>
+							<strong>
+								<a :href="link_winbox77" style="color: #74323e;">
+									{{ $t('Main_Content.Btm_Content_1') }}
+								</a>
+							</strong> |
+							<strong>{{ $t('Main_Content.Btm_Content_2') }}</strong> |
+							{{ $t('Main_Content.Btm_Content_3') }}
+						</p>
 
+						<p>
+							<strong>{{ $t('Main_Content.Btm_Content_4') }}</strong>
+							<span v-if="!['ms', 'zh'].includes($i18n.locale)"> | </span>
+							<strong>
+								<a :href="winboxofficial_link" style="color: #74323e;">
+									{{ $t('Main_Content.Btm_Content_5') }}
+								</a>
+							</strong>
+							<span v-if="!['en', 'zh'].includes($i18n.locale)"> | </span>
+							<strong>{{ $t('Main_Content.Btm_Content_6') }}</strong>
+							<span v-if="!['ms'].includes($i18n.locale)"> | </span>
+							{{ $t('Main_Content.Btm_Content_6_5') }} {{ $t('Main_Content.Btm_Content_7') }}
 
-					<p class="b-700">
-					</p>
+						</p>
+					</div>
 
 					<div class="footer-detail">
+
 						<div class="Visit">
 							<p>
 								{{ $t('message.Visit') }}
@@ -72,6 +95,8 @@
 								</a>
 							</p>
 						</div>
+
+
 						<div class="license">
 							<p>{{ $t('message.Game_Licence') }}</p>
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
@@ -237,12 +262,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxmys_co", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxmys_co;
 			} catch (error) {
 				console.log(error)
 			}
@@ -301,7 +326,7 @@ export default {
 		},
 	},
 	mounted() {
-		// this.fetchLink();
+		this.fetchLink();
 		this.$store.dispatch('fetchLink_winbox77');
 	}
 }
@@ -647,10 +672,6 @@ li {
 	font-weight: 700;
 }
 
-.Anchor_Text_Color {
-	color: #086cec !important;
-}
-
 .footer-detail {
 	width: 90%;
 	margin: 0 auto;
@@ -662,7 +683,10 @@ li {
 	color: black;
 	font-size: 12px;
 	margin-top: 30px;
-	text-transform: uppercase;
+}
+
+.footer_inner_content p {
+	font-size: 16px;
 }
 
 .Visit p {
@@ -671,6 +695,7 @@ li {
 
 .Visit a {
 	animation: blink 0.8s infinite;
+	color: #74323e;
 }
 
 @keyframes blink {
@@ -680,7 +705,7 @@ li {
 }
 
 .Visit strong {
-	color: #086cec;
+	color: #74323e;
 }
 
 .license {
