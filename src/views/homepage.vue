@@ -68,8 +68,58 @@
 						<strong>{{ $t('content.H1_Content_5') }}</strong>
 						{{ $t('content.H1_Content_6') }}
 					</p>
-
+					<br>
+					<h2>{{ $t('content.H2_1_Header') }}</h2>
+					<p>
+						{{ $t('content.H2_1_Content_1') }}
+						<strong>{{ $t('content.H2_1_Content_2') }}</strong>
+						{{ $t('content.H2_1_Content_3') }}
+					</p>
+					<ul>
+						<li>
+							<strong>{{ $t('content.H2_1_Li_1_Header') }}</strong>
+							<p>{{ $t('content.H2_1_Li_1_Content') }}</p>
+						</li>
+						<li>
+							<strong>{{ $t('content.H2_1_Li_2_Header') }}</strong>
+							<p>
+								{{ $t('content.H2_1_Li_2_Content_1') }}
+								<strong>{{ $t('content.H2_1_Li_2_Content_2') }}</strong>
+								{{ $t('content.H2_1_Li_2_Content_3') }}
+							</p>
+						</li>
+						<li>
+							<strong>{{ $t('content.H2_1_Li_3_Header') }}</strong>
+							<p>{{ $t('content.H2_1_Li_3_Content') }}</p>
+						</li>
+					</ul>
+					<p>
+						{{ $t('content.H2_1_Content_4') }}
+						<strong>{{ $t('content.H2_1_Content_5') }}</strong>
+						{{ $t('content.H2_1_Content_6') }}
+					</p>
+					<br>
+					<h2>{{ $t('content.H2_2_Header') }}</h2>
+					<p>
+						{{ $t('content.H2_2_Content_1') }}
+						<strong>{{ $t('content.H2_2_Content_2') }}</strong>
+						{{ $t('content.H2_2_Content_3') }}
+						<strong>{{ $t('content.H2_2_Content_4') }}</strong>
+						{{ $t('content.H2_2_Content_5') }}
+					</p>
+					<br>
+					<h2>{{ $t('content.H2_3_Header') }}</h2>
+					<p>
+						{{ $t('content.H2_3_Content_1') }}
+						<strong>{{ $t('content.H2_3_Content_2') }}</strong>
+						{{ $t('content.H2_3_Content_3') }}
+					</p>
+					<br>
 					<div class="footer-detail">
+						<div class="Visit_site">
+							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
+						</div>
+						<br>
 						<div class="Atas_Sign_Up_Container">
 							<a :href="link_ataskasino">{{ $t('Atas_Sign_Up.Header') }}</a> | {{
 								$t('Atas_Sign_Up.Content') }}
@@ -78,9 +128,7 @@
 							<a :href="link_atascasinobet">{{ $t('Atas_Download.Header') }}</a> | {{
 								$t('Atas_Download.Content') }}
 						</div>
-						<div class="Visit_site">
-							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
-						</div>
+
 						<div class="license">
 							<p>{{ $t('content.Game_License') }}</p>
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
@@ -554,7 +602,6 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: rgb(13, 110, 253);
 }
 
 .image-wrapper a {
