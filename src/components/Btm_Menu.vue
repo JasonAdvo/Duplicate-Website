@@ -10,13 +10,6 @@
 				</a>
 			</div>
 
-			<div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
-				</a>
-			</div>
-
 			<div class="footer-content">
 				<div class="d-f col">
 					<a :href="link_winbox" rel="nofollow" target="_blank">
@@ -61,14 +54,12 @@ export default {
 	computed: {
 		...mapGetters(['link_winbox', 'error']),
 	},
-	methods: {
-		closePopup() {
-			this.isVisible = false;
-		},
-	},
 	mounted() {
 		this.$store.dispatch('fetchLink_winbox');
-	}
+	},
+	methods: {
+	},
+
 };
 </script>
 
@@ -132,39 +123,5 @@ export default {
 .social-media-icon img {
 	width: 20px;
 	height: 108px;
-}
-
-.Btm-Popup_Container {
-	position: absolute;
-	bottom: 55px;
-	padding-top: 30px;
-}
-
-.Btm-Popup_Container img {
-	width: 500px;
-}
-
-@media screen and (max-width: 430px) {
-	.Btm-Popup_Container img {
-		width: 100%;
-	}
-}
-
-.ic-close-circle {
-	display: flex;
-	justify-content: center;
-	border: 2px solid #fff;
-	border-radius: 100%;
-	padding: 4px;
-	width: 28px;
-	height: 28px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	cursor: pointer;
-}
-
-.fa-times::before {
-	color: white;
 }
 </style>
