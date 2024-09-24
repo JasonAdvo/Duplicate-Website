@@ -3,6 +3,10 @@
 		<TopBanner />
 	</div>
 
+	<div>
+		<PopUpCard />
+	</div>
+
 	<div class="main-content">
 		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<LeftBanner />
@@ -23,8 +27,8 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 35" :key="n">
-								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+							<div class="image-wrapper" v-for="n in 30" :key="n">
+								<a v-if="n <= 12" :href="output_Link + 'winbox-rigester'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
@@ -34,82 +38,9 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
-					<p> {{ $t('Main_Content.H1_Content_1') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
-						{{ $t('Main_Content.H1_Content_3') }}
-						<strong>{{ $t('Main_Content.H1_Content_3_5') }} </strong>
-						{{ $t('Main_Content.H1_Content_4') }}
-					</p>
-					<p>
-						{{ $t('Main_Content.H1_Content_5') }}
-						<strong>{{ $t('Main_Content.H1_Content_6') }} </strong>
-						{{ $t('Main_Content.H1_Content_7') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
-					<p> {{ $t('Main_Content.H2_1_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_1_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_1_Content_3') }}
-					</p>
-					<ol>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_1_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_1_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_1_Content_3') }}
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_2_Content') }}
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_3_Content') }}
-						</li>
-					</ol>
-					<p>
-						{{ $t('Main_Content.H2_1_Content_4') }}
-						<strong>{{ $t('Main_Content.H2_1_Content_5') }}</strong>
-						{{ $t('Main_Content.H2_1_Content_6') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
-					<p>
-						{{ $t('Main_Content.H2_2_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_3') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
-					<p>
-						{{ $t('Main_Content.H2_3_Content') }}
-					</p>
-					<ul>
-						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_1_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_3_Li_1_Content_1') }}
-								<strong>{{ $t('Main_Content.H2_3_Li_1_Content_2') }}</strong>
-								{{ $t('Main_Content.H2_3_Li_1_Content_3') }}
-							</p>
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_2_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_3_Li_2_Content') }}
-							</p>
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_3_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_3_Li_3_Content') }}
-							</p>
-						</li>
-					</ul>
-					<p>
-						{{ $t('Main_Content.H2_3_Btm_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_3_Btm_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_3_Btm_Content_3') }}
-					</p>
 
+					<br>
+					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
@@ -117,24 +48,28 @@
 					</a>
 					<br>
 					<br>
-					<p class="b-700">
-						{{ $t('Main_Content.Btm_Header') }}
-					</p>
-					<p>
-						{{ $t('Main_Content.Btm_Content_1') }}
-						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a>
-						{{ $t('Main_Content.Btm_Content_3') }}
 
-					</p>
 					<p>
-						{{ $t('Main_Content.Btm_Content_4') }}
-						<a :href="winboxofficial_link">
+						{{ $t('Main_Content.Btm_Content_1') }} |
+						{{ $t('Main_Content.Btm_Content_2') }}
+						<a :href="output_Link">
 							<strong>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
 						</a>
-						{{ $t('Main_Content.Btm_Content_6') }}
+						{{ $t('Main_Content.Btm_Content_4') }}
 					</p>
+
+					<p>
+						{{ $t('Main_Content.Btm_Content_5') }}
+						<a :href="winboxofficial_link">
+							<strong>
+								{{ $t('Main_Content.Btm_Content_6') }}
+							</strong>
+						</a>
+						{{ $t('Main_Content.Btm_Content_7') }}
+					</p>
+
 					<div class="footer-detail">
 						<div class="Visit">
 							<p>
@@ -176,7 +111,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © OREN33. All rights reserved.
+						Copyright © MYKAD99. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -197,6 +132,7 @@ import TopBanner from '/src/components/Top_Banner.vue';
 import BackToTop from '@/components/BackToTop.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
+import PopUpCard from '@/components/PopUpCard.vue';
 
 export default {
 	components: {
@@ -204,53 +140,52 @@ export default {
 		RightBanner,
 		TopBanner,
 		BackToTop,
+		PopUpCard
 	},
 	data() {
 		return {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"Tanzania King",
-				"Candy Party",
-				"Legend Slot Onimaru",
-				"Legend Slot Musashi",
-				"Durian King",
-				"Thai Lucky",
-				"Color Alchemy",
-				"Trade Wars",
-				"Gems Rush",
-				"Gods Of Olympus",
-				"Beauty Contest",
-				"Dragon Jewels",
-				"Golden Temple",
-				"LIFE",
-				"Magic Box",
-				"Mr Fortune",
-				"Meow Meow",
-				"Lucky 7",
-				"Where's My Monkey",
-				"Samurai Wars",
-				"Happy Road",
-				"Feed the Zombie",
-				"Burm the Office",
-				"All You Can Eat",
-				"TVW",
-				"Strange Encounter",
-				"S.O.S",
-				"On Crap",
-				"Pon Pon",
-				"Lullababy",
-				"Talent Night",
-				"Spell Craft",
-				"Steam Punk 100",
-				"Thai Street Food",
-				"Madness Buffalo"
+				"MONKEY888",
+				"MEGAH5",
+				"UU SLOTS",
+				"ACEWIN",
+				"MEGA888",
+				"MEGA888",
+				"MEGA888",
+				"918KISS",
+				"LFC888",
+				"PLAYSTAR",
+				"PUSSY888",
+				"PUSSY888",
+				"PEGASUS",
+				"BT GAMING",
+				"BIGPOT GAMING",
+				"918 KAYA",
+				"LUCKY365",
+				"LIVE22",
+				"RSG",
+				"LION KING",
+				"HABANERO",
+				"KA GAMING",
+				"BOOONGO",
+				"SPADEGAMING",
+				"NEXTSPIN",
+				"FUNTA GAMING",
+				"ACE333",
+				"JOKER",
+				"SG GAMING",
+				"PLAYTECH",
 			],
 			images: [
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Clot Play Free' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Clot Play' },
-				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'JILI' },
-				{ notSelected: '/images/Others_NotS.webp', selected: '/images/Others_S.webp', alt: 'BT Gaming' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
+				{ notSelected: '/images/Mega_NotS.webp', selected: '/images/Mega_S.webp', alt: 'Mega H5' },
+				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
+				{ notSelected: '/images/Power_NotS.webp', selected: '/images/Power_S.webp', alt: 'Power Game' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
+				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp', alt: 'Sport' },
+				{ notSelected: '/images/Fish_NotS.webp', selected: '/images/Fish_S.webp', alt: 'Fish' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -267,17 +202,17 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_Link', 'error']),
 	},
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winbox77_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
 			} catch (error) {
 				console.log(error)
 			}
@@ -337,7 +272,7 @@ export default {
 	},
 	mounted() {
 		this.fetchLink();
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_API');
 	}
 }
 </script>
@@ -474,14 +409,8 @@ export default {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 12px;
-	animation: gameani 1.5s linear infinite;
 }
 
-@keyframes gameani {
-	50% {
-		transform: scale(0.90);
-	}
-}
 
 @media screen and (max-width: 576px) {
 	.MB_Img img {
@@ -491,7 +420,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #f48428;
+	color: #1ebebc;
 }
 
 .platform {
@@ -505,16 +434,8 @@ export default {
 	display: flex;
 }
 
-.site-tabs::before {
-	content: "";
-	border-bottom: 1px solid #fff;
-	position: absolute;
-	width: 100%;
-	bottom: 1px;
-}
-
 .image-container {
-	width: calc(100% / 8);
+	width: calc(100% / 7);
 	padding-bottom: 30px;
 	cursor: pointer;
 }
@@ -692,7 +613,7 @@ li {
 }
 
 .Visit strong {
-	color: #f48428;
+	color: #1ebebc;
 }
 
 .license {

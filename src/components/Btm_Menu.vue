@@ -2,47 +2,48 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
+					<img src="/images/Save_Links.webp" alt="Save Links">
+				</a>
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
+					<img src="/images/MM_Grp.webp" alt="MM Group">
+				</a>
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
 					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
+					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
 				<div class="col Home_Container">
-					<a class="d-f" :href="link_winboxmys" rel="nofollow" target="_blank">
-						<i class="material-icons home">home</i>
-						<span>HOME</span>
+					<a class="d-f" :href="output_Link" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Home_Img.gif" alt="Home">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">access_time</i>
-						HISTORY
+					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
+						<img src="/images/Btm_History_Img.gif" alt="History">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">redeem</i>
-						PROMO
+					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Promo_Img.gif" alt="Promotion">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">question_answer</i>
-						LIVE CHAT
+					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Chat_Img.gif" alt="Live Chat">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">settings</i>
-						SETTING
+					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
 					</a>
 				</div>
 			</div>
@@ -61,7 +62,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_Link', 'error']),
 	},
 	methods: {
 		closePopup() {
@@ -69,7 +70,7 @@ export default {
 		},
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_API');
 	}
 };
 </script>
@@ -96,7 +97,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -500%;
+	top: -700%;
 	right: 0;
 }
 
@@ -116,13 +117,8 @@ export default {
 	justify-content: center;
 	flex-direction: column;
 	text-decoration: none;
-	color: black
-}
-
-.d-f i {
 	color: black;
-	font-size: 30px;
-	margin-top: 5px;
+	align-items: center;
 }
 
 .home {
@@ -133,20 +129,13 @@ export default {
 	color: white !important;
 }
 
-.Home_Container {
-	background: #f38120;
-	margin-top: -10px;
-	padding-bottom: 10px;
-	border-radius: 15px 15px 0 0;
-}
-
 .col {
 	flex: 1;
 	text-align: center;
 }
 
 .col img {
-	width: 45px;
+	width: 60px;
 	height: auto;
 }
 
@@ -157,13 +146,13 @@ export default {
 }
 
 .social-media-icon img {
-	width: 20px;
+	width: 30px;
 	height: 108px;
 }
 
 .Btm-Popup_Container {
 	position: absolute;
-	bottom: 70px;
+	bottom: 55px;
 	padding-top: 30px;
 }
 

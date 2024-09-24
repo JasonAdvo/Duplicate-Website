@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Spin Bonus.webp"
 					alt="Spin Bonus"></a>
 			<table>
 				<thead>
@@ -68,33 +68,29 @@
 			<div style="position: relative;">
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Tips_Img.gif" alt="Game Tips"></a>
 				</div>
 			</div>
 
 			<div style="position: relative;">
 				<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 					<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
 				</a>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-				<img src="/images/Event_Game.gif" alt="Event Game">
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
+				<img src="/images/Free_Video.gif" alt="Free Video">
 			</a>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-				<img src="/images/Pussy_888.webp" alt="Notice">
-			</a>
-
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 				<img src="/images/Predict.gif" alt="Predict and Win">
 			</a>
 		</div>
@@ -111,10 +107,10 @@ export default {
 		LB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_Link', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_API');
 	}
 };
 </script>
@@ -244,8 +240,7 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid #FF8C00;
-	background: #FFF;
+	border: 1px solid #238aa1;
 	font-weight: 500;
 }
 
@@ -274,8 +269,9 @@ tbody td {
 }
 
 .amount {
-	color: black;
+	color: red;
 	text-align: right;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .Lucky_Number_Btn {

@@ -4,7 +4,7 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<RB_Img_Carousel />
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
 				<table>
 					<thead>
@@ -68,17 +68,14 @@
 				</table>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
-			<img src="/images/RB_Img_1.webp" alt="Scan QR EWallet">
-
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
-					<a :href="link_winboxmys + 'winbox-login'" rel="nofollow"><img class="Join"
-							src="/images/RB_Login_Img.webp" alt="Login"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="Register"
+					<a href="/"><img class="Join" src="/images/RB_Login_Img.webp" alt="Login"></a>
+					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="Register"
 							src="/images/RB_Register_Img.webp" alt="Register"></a>
 				</div>
 				<div class="RB_Info_Container" style="display: flex;">
@@ -88,13 +85,13 @@
 							<p><strong>RM0.00</strong></p>
 						</div>
 						<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
-						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM25.00</strong></p>
 					</div>
 					<div class="RB_Cash_Btn_Container">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+						<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 							<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
 						</a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+						<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 							<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 						</a>
 						<a href="/">
@@ -109,45 +106,69 @@
 				<div style="position: relative;">
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.gif" alt="Share"></a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Tips_Img.gif" alt="Game Tips"></a>
 					</div>
 				</div>
 
 				<div style="position: relative; margin-bottom: 16px;">
 					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 						<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
 					</a>
 				</div>
 
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-					<img style="margin-bottom: 16px;" src="/images/Event_Game.gif" alt="Event Game">
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
+					<img src="/images/Free_Video.gif" alt="Free Video">
 				</a>
 
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-					<img style="margin-bottom: 16px;" src="/images/Pussy_888.webp" alt="Notice">
-				</a>
-
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 					<img style="margin-bottom: 16px;" src="/images/Predict.gif" alt="Predict and Win">
 				</a>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+			<div class="sport-betting-container">
+				<div class="SB-content-container">
+					<div class="team">
+						<img src="/images/Newcastle.webp" alt="Newcastle">
+						<p>{{ $t('message.team_1') }}</p>
+					</div>
+					<div class="time-info">
+						<p>{{ $t('message.start_time') }}</p>
+						<p>28 Sep 2024</p>
+						<p class="time">19:30</p>
+						<a href="/">
+							<div class="bet-now-container">
+								<p>{{ $t('message.bet_now') }}</p>
+							</div>
+						</a>
+					</div>
+					<div class="team">
+						<img src="/images/Man_City.webp" alt="Man City">
+						<p>{{ $t('message.team_2') }}</p>
+					</div>
+				</div>
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
+					<div class="show-more-button-container">
+						<p>{{ $t('message.show_more') }}</p>
+					</div>
+				</a>
+			</div>
+
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 				<img style="margin-bottom: 16px;" src="/images/Game_Tips.gif" alt="Game Tips">
 			</a>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/top up rm20.webp"
 					alt="Top Up Rm20" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -164,10 +185,10 @@ export default {
 		RB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_Link', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_API');
 	}
 
 };
@@ -189,7 +210,7 @@ export default {
 	}
 
 	.button-grp {
-		bottom: 4%;
+		bottom: 8%;
 		margin-top: unset;
 	}
 }
@@ -279,8 +300,7 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid #FF8C00;
-	background: #FFF;
+	border: 1px solid #238aa1;
 	font-weight: 500;
 }
 
@@ -309,8 +329,9 @@ tbody td {
 }
 
 .amount {
-	color: black;
+	color: red;
 	text-align: right;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .Right_Banner_Container {
@@ -323,6 +344,7 @@ tbody td {
 .Big_Info_Container {
 	border-radius: 8px;
 	padding: 8px 10px;
+	background: linear-gradient(0deg, #f0f0f0, #f0f0f0);
 	box-shadow: 2px 4px 20px rgb(14 14 14 / 61%);
 	margin-bottom: 16px;
 }
@@ -349,10 +371,11 @@ tbody td {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	justify-content: space-between;
 }
 
 .RB_Cash_Btn_Container {
-	width: 50%;
+	width: 45%;
 	text-align: right;
 	display: flex;
 	flex-direction: column;
@@ -361,8 +384,7 @@ tbody td {
 }
 
 .RB_Cash_Btn_Container img {
-	height: 44px;
-	width: 130px;
+	width: 100%;
 	margin-bottom: 5px;
 }
 
@@ -393,10 +415,10 @@ tbody td {
 }
 
 .RB_Small_Text_Container p {
-	color: #3b4a4d;
-	font-size: 15px;
-	font-weight: 400;
-	font-family: 'Raleway Bold';
+	color: black;
+	font-size: 13px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 0;
 }
 
@@ -476,5 +498,118 @@ tbody td {
 	left: 8%;
 	width: 40% !important;
 
+}
+
+.sport-betting-container {
+	background-image: url('/images/soccer-betting-img.jpg');
+	/* background-position: center; */
+	background-size: cover;
+	padding: 20px 0 10px 0;
+	margin-bottom: 16px;
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 430px) {
+	.sport-betting-container {
+		padding: 30px 0 10px 0 !important;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.sport-betting-container {
+		padding: 50px 0 10px 0;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.sport-betting-container {
+		padding: 30px 0 10px 0;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.sport-betting-container {
+		padding: 40px 0 10px 0;
+	}
+}
+
+.sport-betting-container a {
+	text-decoration: none;
+}
+
+.SB-content-container {
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+	border-radius: 5px;
+	background: #fff;
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.SB-content-container p {
+	margin-bottom: 0;
+}
+
+.bet-now-container {
+	display: block;
+	background: #4caf50;
+	color: #fff;
+	padding: 8px 0;
+	line-height: 1;
+	width: 72px;
+	text-align: center;
+	border-radius: 4px;
+	margin: 5px auto 0;
+}
+
+.show-more-button-container {
+	background: #eee;
+	color: #000;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 10px 10px;
+	box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.show-more-button-container p {
+	font-size: 13px;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.team {
+	width: 30%;
+}
+
+.team img {
+	margin-bottom: 10px;
+	width: 50px;
+}
+
+.time-info,
+.team p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Digital-7';
+	src: url('@/assets/fonts/digital-7.ttf') format('truetype');
+}
+
+.time {
+	display: block;
+	margin-top: 3px;
+	font-size: 21px;
+	color: #258D2D;
+	font-family: 'Digital-7', sans-serif;
 }
 </style>

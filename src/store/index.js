@@ -3,13 +3,13 @@ import axios from 'axios';
 
 const store = createStore({
 	state: {
-		link_winboxmys: null,
+		output_Link: null,
 		error: null,
 		isFetching: false
 	},
 	mutations: {
-		SET_LINK_WINBOXMYS(state, link) {
-			state.link_winboxmys = link;
+		SET_OUTPUT_LINK(state, link) {
+			state.output_Link = link;
 		},
 		SET_ERROR(state, error) {
 			state.error = error;
@@ -19,8 +19,8 @@ const store = createStore({
 		}
 	},
 	actions: {
-		async fetchLink_winboxmys({ commit, state }) {
-			if (!state.link_winboxmys && !state.isFetching) {
+		async fetchLink_API({ commit, state }) {
+			if (!state.output_Link && !state.isFetching) {
 				// 防止重复调用
 				commit('SET_FETCHING', true);  // 设置正在获取数据的状态
 				try {
@@ -32,7 +32,7 @@ const store = createStore({
 							}
 						}
 					);
-					commit('SET_LINK_WINBOXMYS', response.data.data.attributes.winboxv2_com);
+					commit('SET_OUTPUT_LINK', response.data.data.attributes.winboxv2_com);
 				} catch (error) {
 					console.error(error);
 				} finally {
@@ -42,7 +42,7 @@ const store = createStore({
 		}
 	},
 	getters: {
-		link_winboxmys: state => state.link_winboxmys,
+		output_Link: state => state.output_Link,
 		error: state => state.error
 	}
 });
