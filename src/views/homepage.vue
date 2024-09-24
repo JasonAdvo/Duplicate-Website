@@ -27,11 +27,15 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 30" :key="n">
+							<div class="image-wrapper" v-for="n in 32" :key="n">
 								<a v-if="n <= 12" :href="output_Link + 'winbox-rigester'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+									{{ altTexts[n - 1] }}
 								</a>
-								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+								<div v-else>
+									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+									{{ altTexts[n - 1] }}
+								</div>
 							</div>
 						</div>
 					</div>
@@ -40,35 +44,11 @@
 				<div class="footer-content">
 
 					<br>
-					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 							alt="DMCA.com Protection Status" />
 					</a>
-					<br>
-					<br>
-
-					<p>
-						{{ $t('Main_Content.Btm_Content_1') }} |
-						{{ $t('Main_Content.Btm_Content_2') }}
-						<a :href="output_Link">
-							<strong>
-								{{ $t('Main_Content.Btm_Content_3') }}
-							</strong>
-						</a>
-						{{ $t('Main_Content.Btm_Content_4') }}
-					</p>
-
-					<p>
-						{{ $t('Main_Content.Btm_Content_5') }}
-						<a :href="winboxofficial_link">
-							<strong>
-								{{ $t('Main_Content.Btm_Content_6') }}
-							</strong>
-						</a>
-						{{ $t('Main_Content.Btm_Content_7') }}
-					</p>
 
 					<div class="footer-detail">
 						<div class="Visit">
@@ -111,7 +91,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © MYKAD99. All rights reserved.
+						Copyright © BETSUPER. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -147,37 +127,40 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"MONKEY888",
-				"MEGAH5",
-				"UU SLOTS",
-				"ACEWIN",
-				"MEGA888",
-				"MEGA888",
-				"MEGA888",
-				"918KISS",
-				"LFC888",
-				"PLAYSTAR",
-				"PUSSY888",
-				"PUSSY888",
-				"PEGASUS",
-				"BT GAMING",
-				"BIGPOT GAMING",
-				"918 KAYA",
-				"LUCKY365",
-				"LIVE22",
-				"RSG",
-				"LION KING",
-				"HABANERO",
-				"KA GAMING",
-				"BOOONGO",
-				"SPADEGAMING",
-				"NEXTSPIN",
-				"FUNTA GAMING",
-				"ACE333",
-				"JOKER",
-				"SG GAMING",
-				"PLAYTECH",
+				"Nextspin",
+				"Spadegaming",
+				"Pragmatic Play",
+				"JILI",
+				"YesGetRich",
+				"Fa Chai",
+				"Microgaming",
+				"Joker",
+				"Funky Gaming",
+				"Game Play",
+				"Asia Gaming",
+				"Habanero",
+				"Mega888",
+				"918Kiss",
+				"NETENT",
+				"Red Tiger",
+				"GoldenBay",
+				"Royal Slot Gaming",
+				"Playtech",
+				"Pussy888",
+				"CQ9",
+				"JDB Gaming",
+				"Relax Gaming",
+				"PlayStar",
+				"YGGDrasil",
+				"Spinix",
+				"Advantplay",
+				"Evoplay",
+				"V-Power",
+				"FastSpin",
+				"Expanse Studios",
+				"BBIN"
 			],
+
 			images: [
 				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
 				{ notSelected: '/images/Mega_NotS.webp', selected: '/images/Mega_S.webp', alt: 'Mega H5' },
@@ -317,7 +300,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_Img.webp');
+	/* background-image: url('/images/Bg_Img.webp'); */
+	background-color: rgb(255, 191, 203);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -499,6 +483,15 @@ export default {
 	.image-grid-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+
+.image-wrapper {
+	text-align: center;
+}
+
+.image-wrapper a,
+div {
+	color: rgb(122, 38, 124);
 }
 
 .image-wrapper img {

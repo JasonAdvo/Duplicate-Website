@@ -13,13 +13,6 @@
 				</a>
 			</div>
 
-			<div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
-				</a>
-			</div>
-
 			<div class="footer-content">
 				<div class="col Home_Container">
 					<a class="d-f" :href="output_Link" rel="nofollow" target="_blank">

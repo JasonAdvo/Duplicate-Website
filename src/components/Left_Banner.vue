@@ -66,7 +66,6 @@
 			</table>
 
 			<div style="position: relative;">
-				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
@@ -140,12 +139,11 @@ export default {
 }
 
 .button-grp {
-	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -155,14 +153,9 @@ export default {
 	}
 }
 
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
-	}
-}
-
 .button-grp img {
 	padding: 0 5px;
+
 }
 
 .button-grp a {
@@ -185,7 +178,7 @@ export default {
 }
 
 .title span {
-	color: black;
+	color: white;
 	font-weight: 700;
 	padding-left: 4px;
 }
@@ -239,8 +232,9 @@ table {
 
 table td {
 	font-size: 9px;
-	color: black;
-	border: 1px solid #238aa1;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
 	font-weight: 500;
 }
 

@@ -104,7 +104,6 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
-					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
 						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.gif" alt="Share"></a>
@@ -117,7 +116,7 @@
 					</div>
 				</div>
 
-				<div style="position: relative; margin-bottom: 16px;">
+				<div style="position: relative;">
 					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 						<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
@@ -196,12 +195,11 @@ export default {
 
 <style scoped>
 .button-grp {
-	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -210,14 +208,7 @@ export default {
 	}
 
 	.button-grp {
-		bottom: 8%;
 		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
 	}
 }
 
