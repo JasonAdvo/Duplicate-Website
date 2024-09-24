@@ -27,12 +27,6 @@ import 'bootstrap';
 import { mapGetters } from 'vuex';
 
 export default {
-	data() {
-		return {
-			// Manage current slide index
-			currentIndex: 0,
-		};
-	},
 	computed: {
 		...mapGetters(['link_winbox', 'error']),
 	},
@@ -46,12 +40,6 @@ export default {
 <style>
 .carousel-indicators {
 	margin-bottom: 2px;
-}
-
-.carousel-item img {
-	/* Adjust this value as needed */
-	object-fit: cover;
-	/* This ensures that images cover the area without stretching */
 }
 
 .carousel-indicators .button {

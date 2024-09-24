@@ -297,14 +297,12 @@ import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
-import Accordion from '/src/components/Accordion.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		Accordion
 	},
 	data() {
 		return {
