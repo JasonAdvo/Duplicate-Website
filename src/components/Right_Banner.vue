@@ -329,7 +329,6 @@ tbody td {
 	background: rgba(0, 0, 0, .3);
 	padding: 10px 15px 0px 15px;
 	height: 100%;
-	border-left: 1px solid rgba(255, 255, 255, .5);
 }
 
 .Big_Info_Container {
@@ -344,7 +343,6 @@ tbody td {
 	.Right_Banner_Container {
 		background: unset;
 		padding: 15px 15px 0px 15px;
-		border-left: unset;
 	}
 
 	.login-register-container {

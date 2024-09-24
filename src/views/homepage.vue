@@ -20,6 +20,7 @@
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="selectImage(index);">
 							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
+							{{ image.alt }}
 						</div>
 					</div>
 				</div>
@@ -27,7 +28,8 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 32" :key="n">
+							<div class="image-wrapper col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4" v-for="n in 32"
+								:key="n">
 								<a v-if="n <= 12" :href="output_Link + 'winbox-rigester'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 									{{ altTexts[n - 1] }}
@@ -162,16 +164,19 @@ export default {
 			],
 
 			images: [
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
-				{ notSelected: '/images/Mega_NotS.webp', selected: '/images/Mega_S.webp', alt: 'Mega H5' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
-				{ notSelected: '/images/Power_NotS.webp', selected: '/images/Power_S.webp', alt: 'Power Game' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
-				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp', alt: 'Sport' },
-				{ notSelected: '/images/Fish_NotS.webp', selected: '/images/Fish_S.webp', alt: 'Fish' },
+				{ notSelected: '/images/Slot_NotS.svg', selected: '/images/Slot_S.svg', alt: 'Slots' },
+				{ notSelected: '/images/Casino_NotS.svg', selected: '/images/Casino_S.svg', alt: 'Casino' },
+				{ notSelected: '/images/Sport_NotS.svg', selected: '/images/Sport_S.svg', alt: 'Sports' },
+				{ notSelected: '/images/Esport_NotS.svg', selected: '/images/Esport_S.svg', alt: 'E-Sports' },
+				{ notSelected: '/images/Fishing_NotS.svg', selected: '/images/Fishing_S.svg', alt: 'Fishing' },
+				{ notSelected: '/images/Lottery_NotS.svg', selected: '/images/Lottery_S.svg', alt: 'Lottery' },
+				{ notSelected: '/images/Games_NotS.svg', selected: '/images/Games_S.svg', alt: '3D Games' },
+				{ notSelected: '/images/Fastgames_NotS.svg', selected: '/images/Fastgames_S.svg', alt: 'Fast Games' },
+				{ notSelected: '/images/Cockfight_NotS.svg', selected: '/images/Cockfight_S.svg', alt: 'Cockfight' },
+				{ notSelected: '/images/LiveTV_NotS.svg', selected: '/images/LiveTV_S.svg', alt: 'TV' },
 			],
 			winboxofficial_link: '',
-			stickyBarHeightWeb: 105,
+			stickyBarHeightWeb: 90,
 			stickyBarHeightMobile: 75,
 		};
 	},
@@ -413,15 +418,19 @@ export default {
 
 .site-tabs {
 	flex-wrap: wrap;
-	margin: 10px 0;
+	padding: 10px 10px;
 	position: relative;
 	display: flex;
+	margin: 0 -15px 0;
+	background: rgb(14, 41, 68);
 }
 
 .image-container {
-	width: calc(100% / 7);
+	width: calc(100% / 10);
 	padding-bottom: 30px;
 	cursor: pointer;
+	text-align: center;
+	color: white;
 }
 
 .image-container img {
@@ -463,30 +472,14 @@ export default {
 }
 
 .image-grid-container {
-	display: grid;
-	gap: 10px;
-}
-
-@media (min-width: 1200px) {
-	.image-grid-container {
-		grid-template-columns: repeat(6, 1fr);
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-	.image-grid-container {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@media (max-width: 767px) {
-	.image-grid-container {
-		grid-template-columns: repeat(3, 1fr);
-	}
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .image-wrapper {
 	text-align: center;
+	padding: 5px;
 }
 
 .image-wrapper a,
