@@ -44,13 +44,8 @@
 							src="/images/LB_More_Img.gif" alt="More"></a>
 				</div>
 
-				<div style="margin-top: 20px;">
-					<RB_RW_Img_Carousel />
-
-				</div>
-
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
-						alt="Turnover Bonus"></a>
+				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="margin-top: 20px;"
+						src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
 			</div>
 		</div>
 	</div>
@@ -58,13 +53,9 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import RB_RW_Img_Carousel from './RB_RW_Img_Carousel.vue';
 
 export default {
 	name: 'RightBanner',
-	components: {
-		RB_RW_Img_Carousel
-	},
 	computed: {
 		...mapGetters(['link_winbox', 'error']),
 	},
@@ -165,7 +156,7 @@ export default {
 }
 
 .Baki strong {
-	color: #FFC107;
+	color: #07a6fb;
 	font-size: 30px;
 }
 

@@ -13,12 +13,13 @@
 		"Payment_Method": "支付方式",
 		"Certidicate_Security": "证书 & 安全",
 		"Follow_Us": "关注我们",
-		"Visit": "访问我们的官方 CROWN99 博客：",
+		"Visit": "访问我们的官方 BP9 博客：",
 		"Click": "点击这里",
-		"Website": "Crown99"
+		"Website": "BP9"
 	},
 	"Main_Content": {
-		"H1_Header": "BP9 登录和游戏 | 马来西亚唯一官方在线老虎机赌场",
+		"H1_Header_1": "BP9 登录和游戏",
+		"H1_Header_2": "马来西亚唯一官方在线老虎机赌场",
 		"H2_1_Header": "BP9：最安全的游戏场所",
 		"H2_1_Content_1": "这是绝对的事实！时至今日，BP9仍是马来西亚唯一一家完全授权的在线博彩网站。不要只听我们的一面之词--只要在BP9娱乐场上玩上几分钟，您就会明白为什么我们是全马来西亚最值得信赖的在线娱乐场。",
 		"H2_1_Content_2": "当您领取300马币的免费老虎机积分时，您就会明白这一切，这是我们为所有新会员提供的赌场欢迎奖金。",
@@ -65,11 +66,13 @@
 		"Btm_Header": "我们的主要合作伙伴：",
 		"Btm_Content_1": "Winbox 马来西亚顶级赌场平台",
 		"Btm_Content_2": "在马来西亚最值得信赖的在线赌场玩游戏，享受安全交易、即时支付和各种游戏。立即加入",
-		"Btm_Content_3": "Winbox，",
+		"Btm_Content_3": "Winbox,",
 		"Btm_Content_3_5": "体验无与伦比、激动人心的游戏冒险。",
 		"Btm_Content_4": "Winbox 马来西亚",
 		"Btm_Content_5": "随时随地玩",
-		"Btm_Content_6": "通过简单的移动登录和适用于 iOS 和 Android 的 APK 下载，立即注册并开始您的游戏冒险！"
+		"Btm_Content_6": "通过简单的移动登录和适用于 iOS 和 Android 的 APK 下载，立即注册并开始您的游戏冒险！",
+		"Read_More": "阅读更多内容",
+		"Read_Less": "收起内容"
 	},
 	"FAQs": {
 		"FAQ_Header": "常见问题",
@@ -98,11 +101,11 @@
 		"Content": "Crown99 官方 - 马来西亚最大、最值得信赖的博彩平台网站！享受丰厚的欢迎奖金、真人娱乐场、老虎机和体育博彩。皇冠 99 拥有一流的安全性、丰富的游戏选择和快速响应的客户支持，访问您的账户并进入您最喜爱的游戏，享受畅快淋漓的游戏体验。"
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Crown99",
+		"Content_1": "BP9",
 		"Content_2": "是",
 		"Content_3": "Moon Technologie,",
-		"Content_4": "的注册商标，由",
+		"Content_4": "的注册商标，持有",
 		"Content_5": "库拉索岛政府",
-		"Content_6": "根据第 1168/JAZ 号主许可证许可和监管。"
+		"Content_6": "颁发的主许可证 #1168/JAZ，并受其全面监管。"
 	}
 }

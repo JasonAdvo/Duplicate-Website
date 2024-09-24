@@ -5,7 +5,8 @@ import { createI18n } from 'vue-i18n';
 import en from '/src/locales/en.json';
 import ms from '/src/locales/ms.json';
 import zh from '/src/locales/zh.json';
-// main.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap'; // Ensure Bootstrap JS is included
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import store from '/src/store/index.js'; // Import the Vuex store
 

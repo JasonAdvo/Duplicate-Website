@@ -2,6 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
+			<!-- <Test /> -->
 			<img src="/images/LB_Img_1.webp" alt="PAGCOR">
 			<table>
 				<thead>
@@ -76,10 +77,8 @@
 							src="/images/LB_More_Img.gif" alt="More"></a>
 				</div>
 
-				<RW_Img_Carousel />
-
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
-						alt="Turnover Bonus"></a>
+				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="margin-top: 20px;" src="
+						/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
 			</div>
 		</div>
 	</div>
@@ -87,14 +86,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import LB_Img_Carousel from './LB_Img_Carousel.vue';
-import RW_Img_Carousel from './RW_Img_Carousel.vue';
+import LB_Img_Carousel from '/src/components/LB_Img_Carousel.vue';
 
 export default {
 	name: 'LeftBanner',
 	components: {
 		LB_Img_Carousel,
-		RW_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winbox', 'error']),

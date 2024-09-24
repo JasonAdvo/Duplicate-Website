@@ -13,12 +13,13 @@
 		"Payment_Method": "Payment Method",
 		"Certidicate_Security": "Certificate & Security",
 		"Follow_Us": "Follow Us",
-		"Visit": "VISIT OUR OFFICIAL CROWN99 BLOG AT:",
+		"Visit": "VISIT OUR OFFICIAL BP9 BLOG AT:",
 		"Click": "CLICK HERE",
-		"Website": "Crown99"
+		"Website": "BP9"
 	},
 	"Main_Content": {
-		"H1_Header": "BP9 Login and Play | Malaysia’s Only Official Online Slot Casino",
+		"H1_Header_1": "BP9 Login and Play",
+		"H1_Header_2": "Malaysia’s Only Official Online Slot Casino",
 		"H2_1_Header": "BP9: The Safest Place to Play",
 		"H2_1_Content_1": "And that’s an absolute fact! Even now, BP9 is Malaysia’s one and only fully authorized online betting site. Don’t just take our word for it — a few minutes on BP9 Casino and you’ll see just why we’re the most trusted online casino in all of Malaysia.",
 		"H2_1_Content_2": "Tie it all together when you claim your RM300 in slot free credit, a casino welcome bonus to all our new members just for signing up.",
@@ -69,7 +70,9 @@
 		"Btm_Content_3_5": "",
 		"Btm_Content_4": "Winbox Malaysia",
 		"Btm_Content_5": "Play Anytime, Anywhere",
-		"Btm_Content_6": "With easy mobile login and APK downloads for iOS and Android, register now and start your gaming adventure!"
+		"Btm_Content_6": "With easy mobile login and APK downloads for iOS and Android, register now and start your gaming adventure!",
+		"Read_More": "Read More",
+		"Read_Less": "Read Less"
 	},
 	"FAQs": {
 		"FAQ_Header": "FAQs",
@@ -98,10 +101,10 @@
 		"Content": "Crown99 Official – Malaysia's largest and most trusted gaming platform site! Enjoy generous welcome bonuses, live casino, slots, and sportsbooks. With top-notch security, a vast game selection, and responsive customer support, access your account and dive into your favorite games for a smooth, rewarding experience."
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Crown99",
+		"Content_1": "BP9",
 		"Content_2": "is a registered trademark of",
 		"Content_3": "Moon Technologie,",
-		"Content_4": "licensed and regulated by the",
+		"Content_4": "fully licensed and regulated by the",
 		"Content_5": "Government of Curacao",
 		"Content_6": "under Master License #1168/JAZ."
 	}
