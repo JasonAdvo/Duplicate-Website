@@ -273,7 +273,7 @@
 							<p>{{ $t('message.Follow_Us') }}</p>
 							<a href="/"><img src="/images/FB_Icon.webp" alt="facebook"></a>
 							<a href="/"><img src="/images/IG_Icon.webp" alt="instagram"></a>
-							<a href="/"><img src="/images/Telegram_Icon.webp" alt="telegram"></a>
+							<a href="/"><img src="/images/telegram_icon.webp" alt="telegram"></a>
 						</div>
 					</div>
 					<div class="copyright">
