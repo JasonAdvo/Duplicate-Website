@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Spin_bonus.gif"
 					alt="Spin Bonus"></a>
 			<table>
 				<thead>

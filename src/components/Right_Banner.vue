@@ -5,7 +5,7 @@
 			<div class="Mobile_View" style="display: none;">
 				<RB_Img_Carousel />
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img style="margin-bottom: 16px;"
-						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
+						src="/images/Spin_bonus.gif" alt="Spin Bonus"></a>
 				<table>
 					<thead>
 						<tr>
