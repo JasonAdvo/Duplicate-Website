@@ -120,8 +120,6 @@
 					</div>
 				</div>
 
-				<RB_RW_Img_Carousel />
-
 				<div style="position: relative; margin-bottom: 16px;">
 					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
@@ -159,13 +157,11 @@
 <script>
 import { mapGetters } from 'vuex';
 import RB_Img_Carousel from './RB_Img_Carousel.vue'
-import RB_RW_Img_Carousel from './RB_RW_Img_Carousel.vue';
 
 export default {
 	name: 'RightBanner',
 	components: {
 		RB_Img_Carousel,
-		RB_RW_Img_Carousel
 	},
 	computed: {
 		...mapGetters(['link_winboxmys', 'error']),
