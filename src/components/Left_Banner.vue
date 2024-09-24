@@ -1,8 +1,9 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<LB_Img_Carousel />
-			<!-- <Test /> -->
+			<a :href="link_winbox + 'winbox-register'" rel="nofollow">
+				<img src="/images/welcome bonus.webp" class="d-block w-100" alt="Welcome Bonus">
+			</a>
 			<img src="/images/LB_Img_1.webp" alt="PAGCOR">
 			<table>
 				<thead>
