@@ -4,6 +4,7 @@
 			<LB_Img_Carousel />
 			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Spin_bonus.gif"
 					alt="Spin Bonus"></a>
+
 			<table>
 				<thead>
 					<tr>
@@ -19,7 +20,7 @@
 					</tr>
 					<tr>
 						<td colspan="2" class="green">
-							DEPOSIT
+							TOP UP
 						</td>
 						<td colspan="3" class="red">
 							WITHDRAW
@@ -65,33 +66,24 @@
 				</tbody>
 			</table>
 
+			<img src="/images/LB_Img_1.webp" alt="Certificate">
+
 			<div style="position: relative;">
+				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+							src="/images/LB_Copy_Img.gif" alt="Copy Link"></a>
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Tips_Img.gif" alt="Game Tips"></a>
+							src="/images/LB_More_Img.gif" alt="More Info"></a>
 				</div>
 			</div>
 
-			<div style="position: relative;">
-				<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
-				</a>
-			</div>
-
-			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-				<img src="/images/Free_Video.gif" alt="Free Video">
-			</a>
-
-			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-				<img src="/images/Predict.gif" alt="Predict and Win">
-			</a>
+			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/LB_Img_3.webp"
+					alt="Total Commission"></a>
 		</div>
 	</div>
 </template>
@@ -137,6 +129,8 @@ export default {
 }
 
 .button-grp {
+	position: absolute;
+	margin-top: -25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -148,6 +142,12 @@ export default {
 	.button-grp {
 		bottom: 10%;
 		margin-top: unset;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.button-grp {
+		margin-top: -23%;
 	}
 }
 
@@ -173,6 +173,7 @@ export default {
 
 .title {
 	position: relative;
+	background: #0096FD;
 }
 
 .title span {
@@ -230,9 +231,8 @@ table {
 
 table td {
 	font-size: 9px;
-	color: white;
-	background-color: black;
-	border: 1px solid white;
+	color: black;
+	border: 1px solid black;
 	font-weight: 500;
 }
 
@@ -244,13 +244,14 @@ table td {
 
 .green {
 	color: white;
-	background-image: linear-gradient(to left, #8d8f11, #d7c965);
+	background-image: linear-gradient(to bottom, #2ADAFF, #0096FD);
 	padding-left: 4px;
 }
 
 .red {
-	color: white;
-	background-image: linear-gradient(to left, #374439, #28ab3f);
+	background: linear-gradient(to bottom, #fafafa, #cecece, #898989);
+	font-weight: 700;
+	color: #1f3ddb;
 	padding-left: 4px;
 }
 

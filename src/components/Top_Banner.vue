@@ -4,10 +4,9 @@
 			<div class="Top_Banner_Container" />
 		</a>
 		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
-		<a href="/">
+		<!-- <a href="/">
 			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
-
-		</a>
+		</a> -->
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 
@@ -100,28 +99,22 @@ export default {
 };
 </script>
 <style scoped>
-@media screen and (max-width: 767px) {
-	.TR_Img {
-		max-width: 40px;
-	}
+.Top_Banner_Container {
+	background-image: url('/images/TB_Bg_Img.webp');
+	/* background-color: white; */
+	position: relative;
+	background-size: cover;
+	/* Adjusted to make the image smaller */
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 80px;
 }
 
 @media screen and (max-width: 430px) {
 	.Top_Banner_Container {
-		height: 50px !important;
+		height: 60px;
 	}
-}
-
-.Top_Banner_Container {
-	/* background-image: url('/images/TB_Bg_Img.webp'); */
-	background-color: white;
-	position: relative;
-	background-size: cover;
-	/* Adjusted to make the image smaller */
-	background-position: 0px 47%;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 80px;
 }
 
 .Partnership {
@@ -158,14 +151,14 @@ export default {
 
 	.Partnership {
 		left: 5px;
-		top: 8px;
-		width: 50px;
+		top: 12px;
+		width: 60px;
 	}
 
 	.GT-icon {
 		right: 5px;
 		width: 40px;
-		top: 10px;
+		top: 15px;
 	}
 }
 
@@ -179,6 +172,12 @@ export default {
 	right: 20px;
 	transform: translateY(-50%);
 	max-width: 60px;
+}
+
+@media screen and (max-width: 767px) {
+	.TR_Img {
+		max-width: 40px;
+	}
 }
 
 .overlay {

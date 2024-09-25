@@ -66,6 +66,8 @@
 						</tr>
 					</tbody>
 				</table>
+
+				<img src="/images/LB_Img_1.webp" alt="Certificate">
 			</div>
 
 			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
@@ -74,9 +76,9 @@
 
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
-					<a href="/"><img class="Join" src="/images/RB_Login_Img.webp" alt="Login"></a>
+					<a href="/"><img class="Join" src="/images/RB_Login_Img.gif" alt="Login"></a>
 					<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="Register"
-							src="/images/RB_Register_Img.webp" alt="Register"></a>
+							src="/images/RB_Register_Img.gif" alt="Register"></a>
 				</div>
 				<div class="RB_Info_Container" style="display: flex;">
 					<div class="RB_Small_Text_Container">
@@ -104,32 +106,21 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
+					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
 						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.gif" alt="Share"></a>
 						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+								src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+								src="/images/LB_Copy_Img.gif" alt="Copy Link"></a>
 						<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Tips_Img.gif" alt="Game Tips"></a>
+								src="/images/LB_More_Img.gif" alt="More Info"></a>
 					</div>
 				</div>
 
-				<div style="position: relative;">
-					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-					<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-						<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
-					</a>
-				</div>
-
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<img src="/images/Free_Video.gif" alt="Free Video">
-				</a>
-
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<img style="margin-bottom: 16px;" src="/images/Predict.gif" alt="Predict and Win">
-				</a>
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/LB_Img_3.webp"
+						alt="Total Commission"></a>
 			</div>
 
 			<div class="sport-betting-container">
@@ -159,10 +150,6 @@
 					</div>
 				</a>
 			</div>
-
-			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-				<img style="margin-bottom: 16px;" src="/images/Game_Tips.gif" alt="Game Tips">
-			</a>
 
 			<a :href="output_Link + 'winbox-rigester'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
@@ -195,11 +182,13 @@ export default {
 
 <style scoped>
 .button-grp {
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 8px;
+	bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -208,6 +197,7 @@ export default {
 	}
 
 	.button-grp {
+
 		margin-top: unset;
 	}
 }
@@ -334,7 +324,7 @@ tbody td {
 .Big_Info_Container {
 	border-radius: 8px;
 	padding: 8px 10px;
-	background: linear-gradient(0deg, #f0f0f0, #f0f0f0);
+	background-image: url('/images/Big_Info_Bg_Img.webp');
 	box-shadow: 2px 4px 20px rgb(14 14 14 / 61%);
 	margin-bottom: 16px;
 }
@@ -404,7 +394,7 @@ tbody td {
 }
 
 .RB_Small_Text_Container p {
-	color: black;
+	color: #0e2165;
 	font-size: 13px;
 	font-weight: 700;
 	font-family: 'Montserrat', sans-serif;

@@ -3,37 +3,41 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/MM_Grp.webp" alt="MM Group">
+					<img src="/images/Partnership_Img.webp" alt="G66 Partnership">
 				</a>
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
+			</div>
+
+			<div v-if="isVisible" class="Btm-Popup_Container">
+				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
+				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
+					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
 				<div class="col Home_Container">
 					<a class="d-f" :href="output_Link" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.gif" alt="Home">
+						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Img.gif" alt="History">
+						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Promo_Img.gif" alt="Promotion">
+						<img src="/images/Btm_Promo_Img.webp" alt="Promotion">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Chat_Img.gif" alt="Live Chat">
+						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
+						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
 			</div>
@@ -73,7 +77,7 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 55px;
-	background-color: rgb(255, 191, 203);
+	background-image: url('/images/Btm_Bg_Img.webp');
 	background-size: 100% 100%;
 	z-index: 3;
 }
@@ -87,7 +91,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -600%;
+	top: -300%;
 	right: 0;
 }
 
@@ -136,8 +140,7 @@ export default {
 }
 
 .social-media-icon img {
-	width: 30px;
-	height: 108px;
+	width: 75px;
 }
 
 .Btm-Popup_Container {

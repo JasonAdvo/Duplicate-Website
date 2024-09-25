@@ -3,10 +3,6 @@
 		<TopBanner />
 	</div>
 
-	<div>
-		<PopUpCard />
-	</div>
-
 	<div class="main-content">
 		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<LeftBanner />
@@ -20,7 +16,6 @@
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="selectImage(index);">
 							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
-							{{ image.alt }}
 						</div>
 					</div>
 				</div>
@@ -28,15 +23,13 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4" v-for="n in 32"
+							<div class="image-wrapper col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4" v-for="n in 34"
 								:key="n">
 								<a v-if="n <= 12" :href="output_Link + 'winbox-rigester'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-									{{ altTexts[n - 1] }}
 								</a>
 								<div v-else>
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-									{{ altTexts[n - 1] }}
 								</div>
 							</div>
 						</div>
@@ -93,7 +86,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © BETSUPER. All rights reserved.
+						Copyright © BAGUS777. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -129,51 +122,48 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"Nextspin",
-				"Spadegaming",
-				"Pragmatic Play",
+				"MARIO ClUB",
+				"FUNKY GAMES",
+				"DRAGON SOFT",
 				"JILI",
-				"YesGetRich",
-				"Fa Chai",
-				"Microgaming",
-				"Joker",
-				"Funky Gaming",
-				"Game Play",
-				"Asia Gaming",
-				"Habanero",
-				"Mega888",
-				"918Kiss",
-				"NETENT",
-				"Red Tiger",
-				"GoldenBay",
-				"Royal Slot Gaming",
-				"Playtech",
-				"Pussy888",
-				"CQ9",
-				"JDB Gaming",
-				"Relax Gaming",
-				"PlayStar",
-				"YGGDrasil",
-				"Spinix",
-				"Advantplay",
-				"Evoplay",
-				"V-Power",
-				"FastSpin",
-				"Expanse Studios",
-				"BBIN"
+				"Lucky365",
+				"NEXTSPIN",
+				"IMPERIUM GAMES",
+				"BT GAMING",
+				"I LOVE YOU",
+				"Rich88",
+				"SIMPLEPLAY",
+				"POWER",
+				"ACEWIN",
+				"PUSSY888",
+				"playtech",
+				"MEGA888",
+				"918KISS",
+				"KA GAMING",
+				"PRAGMATIC PLAY",
+				"LIVE22",
+				"LION KING",
+				"JOKER",
+				"Great Wall 99",
+				"918KISS",
+				"Sun City 2",
+				"918Kaya",
+				"Xe88",
+				"JDB",
+				"RED TIGER",
+				"RTG SPORT",
+				"CO9",
+				"GAMEPLAY INTERACTIVE",
+				"YGGDRASIL",
+				"MONKEY KING"
 			],
 
 			images: [
-				{ notSelected: '/images/Slot_NotS.svg', selected: '/images/Slot_S.svg', alt: 'Slots' },
-				{ notSelected: '/images/Casino_NotS.svg', selected: '/images/Casino_S.svg', alt: 'Casino' },
-				{ notSelected: '/images/Sport_NotS.svg', selected: '/images/Sport_S.svg', alt: 'Sports' },
-				{ notSelected: '/images/Esport_NotS.svg', selected: '/images/Esport_S.svg', alt: 'E-Sports' },
-				{ notSelected: '/images/Fishing_NotS.svg', selected: '/images/Fishing_S.svg', alt: 'Fishing' },
-				{ notSelected: '/images/Lottery_NotS.svg', selected: '/images/Lottery_S.svg', alt: 'Lottery' },
-				{ notSelected: '/images/Games_NotS.svg', selected: '/images/Games_S.svg', alt: '3D Games' },
-				{ notSelected: '/images/Fastgames_NotS.svg', selected: '/images/Fastgames_S.svg', alt: 'Fast Games' },
-				{ notSelected: '/images/Cockfight_NotS.svg', selected: '/images/Cockfight_S.svg', alt: 'Cockfight' },
-				{ notSelected: '/images/LiveTV_NotS.svg', selected: '/images/LiveTV_S.svg', alt: 'TV' },
+				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slots' },
+				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live' },
+				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sports' },
+				{ notSelected: '/images/Lottery_Img.webp', selected: '/images/Lottery_Img.webp', alt: 'Lottery' },
+				{ notSelected: '/images/Other_Img.webp', selected: '/images/Other_Img.webp', alt: 'Other' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 90,
@@ -305,8 +295,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	/* background-image: url('/images/Bg_Img.webp'); */
-	background-color: white;
+	background-image: url('/images/Bg_Img.webp');
+	/* background-color: white; */
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -409,7 +399,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #1ebebc;
+	color: #1e7ebe;
 }
 
 .platform {
@@ -421,12 +411,11 @@ export default {
 	padding: 10px 10px;
 	position: relative;
 	display: flex;
-	margin: 0 -15px 0;
-	background: rgb(14, 41, 68);
+	justify-content: space-around;
 }
 
 .image-container {
-	width: calc(100% / 10);
+	width: calc(100% / 8);
 	cursor: pointer;
 	text-align: center;
 	color: white;
@@ -444,7 +433,7 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
+		width: calc(100% / 5);
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
@@ -472,7 +461,6 @@ export default {
 
 @media (max-width: 430px) {
 	.image-container {
-		width: 50px;
 		font-size: 8px
 	}
 }
@@ -606,7 +594,7 @@ li {
 }
 
 .Visit strong {
-	color: #1ebebc;
+	color: #1e7ebe;
 }
 
 .license {
