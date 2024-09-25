@@ -388,6 +388,13 @@ export default {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 12px;
+	animation: gameani 1.5s linear infinite;
+}
+
+@keyframes gameani {
+	50% {
+		transform: scale(0.90);
+	}
 }
 
 
