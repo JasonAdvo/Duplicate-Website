@@ -24,7 +24,7 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 35" :key="n">
-								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
@@ -122,7 +122,7 @@
 					</p>
 					<p>
 						{{ $t('Main_Content.Btm_Content_1') }}
-						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a>
+						<a :href="link_output"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a>
 						{{ $t('Main_Content.Btm_Content_3') }}
 
 					</p>
@@ -267,7 +267,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	methods: {
 		async fetchLink() {
@@ -337,7 +337,7 @@ export default {
 	},
 	mounted() {
 		this.fetchLink();
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 }
 </script>

@@ -2,45 +2,45 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
 					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-register'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
 				<div class="col Home_Container">
-					<a class="d-f" :href="link_winboxmys" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
 						<i class="material-icons home">home</i>
 						<span>HOME</span>
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<i class="material-icons">access_time</i>
 						HISTORY
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<i class="material-icons">redeem</i>
 						PROMO
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<i class="material-icons">question_answer</i>
 						LIVE CHAT
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<i class="material-icons">settings</i>
 						SETTING
 					</a>
@@ -61,7 +61,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	methods: {
 		closePopup() {
@@ -69,7 +69,7 @@ export default {
 		},
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>

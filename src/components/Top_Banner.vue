@@ -4,6 +4,10 @@
 			<div class="Top_Banner_Container" />
 		</a>
 		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
+
+		<a href="/">
+			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
+		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 		<!-- Overlay -->
@@ -27,15 +31,6 @@
 				<span v-if="selectedLanguage === 'zh'" class="tick">
 					<i class="fa fa-check"></i>
 				</span>
-			</div>
-		</div>
-
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }}</strong> |
-				<strong>{{ $t('Runnig_Bar.Content_2') }}</strong> |
-				<strong>{{ $t('Runnig_Bar.Content_3') }}</strong> |
-				{{ $t('Runnig_Bar.Content_4') }}
 			</div>
 		</div>
 	</div>
@@ -128,8 +123,16 @@ export default {
 .Partnership {
 	position: absolute;
 	top: 20px;
-	right: 100px;
+	left: 20px;
 	width: 60px;
+}
+
+.Logo {
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .GT-icon {
