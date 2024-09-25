@@ -10,39 +10,34 @@
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
+					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
-				<div class="col Home_Container">
+				<div class="col">
 					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
-						<i class="material-icons home">home</i>
-						<span>HOME</span>
+						<img src="/images/Btm_Home_Img.gif" alt="Home">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">access_time</i>
-						HISTORY
+						<img src="/images/Btm_History_Img.gif" alt="History">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">redeem</i>
-						PROMO
+						<img src="/images/Btm_Promo_Img.gif" alt="Promo">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">question_answer</i>
-						LIVE CHAT
+						<img src="/images/Btm_Live_Img.gif" alt="Live Chat">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<i class="material-icons">settings</i>
-						SETTING
+						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
 					</a>
 				</div>
 			</div>
@@ -133,20 +128,13 @@ export default {
 	color: white !important;
 }
 
-.Home_Container {
-	background: #f38120;
-	margin-top: -10px;
-	padding-bottom: 10px;
-	border-radius: 15px 15px 0 0;
-}
-
 .col {
-	flex: 1;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .col img {
-	width: 45px;
+	width: 55px;
 	height: auto;
 }
 
@@ -163,7 +151,7 @@ export default {
 
 .Btm-Popup_Container {
 	position: absolute;
-	bottom: 70px;
+	bottom: 55px;
 	padding-top: 30px;
 }
 

@@ -135,6 +135,12 @@ export default {
 	transform: translateX(-50%);
 }
 
+@media (max-width: 430px) {
+	.Logo {
+		width: 100px;
+	}
+}
+
 .GT-icon {
 	position: absolute;
 	top: 28px;

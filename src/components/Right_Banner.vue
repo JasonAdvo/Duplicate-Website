@@ -6,6 +6,9 @@
 				<RB_Img_Carousel />
 				<a :href="link_output + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
+
+				<img src="/images/LB_Img_1.webp" alt="Trust">
+
 				<table>
 					<thead>
 						<tr>
@@ -68,18 +71,16 @@
 				</table>
 			</div>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Bonus.gif"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
-
-			<img src="/images/RB_Img_1.webp" alt="Scan QR EWallet">
 
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
 					<a :href="link_output + 'winbox-login'" rel="nofollow"><img class="Join"
-							src="/images/RB_Login_Img.webp" alt="Login"></a>
+							src="/images/RB_Login_Img.gif" alt="Login"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="Register"
-							src="/images/RB_Register_Img.webp" alt="Register"></a>
+							src="/images/RB_Register_Img.gif" alt="Register"></a>
 				</div>
 				<div class="RB_Info_Container" style="display: flex;">
 					<div class="RB_Small_Text_Container">
@@ -107,7 +108,7 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
-					<img src="/images/LB_Img_2.webp" alt="Share">
+					<img style="border-radius: 20px;" src="/images/LB_Img_2.gif" alt="Share">
 					<div class="button-grp">
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.gif" alt="Share"></a>
@@ -116,13 +117,12 @@
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Tips_Img.gif" alt="Game Tips"></a>
+								src="/images/LB_Free_Img.gif" alt="Free Bot"></a>
 					</div>
 				</div>
 
-				<RB_RW_Img_Carousel />
 
-				<div style="position: relative; margin-bottom: 16px;">
+				<div style="position: relative;">
 					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
 					<a :href="link_output + 'winbox-register'" rel="nofollow">
 						<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
@@ -130,16 +130,17 @@
 				</div>
 
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img style="margin-bottom: 16px;" src="/images/Event_Game.gif" alt="Event Game">
+					<img style="border-radius: 10px;" src="/images/Telco.webp" alt="Telco">
 				</a>
 
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img style="margin-bottom: 16px;" src="/images/Pussy_888.webp" alt="Notice">
+					<img style="border-radius: 10px;" src="/images/Pussy_888.gif" alt="Notice">
 				</a>
 
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img style="margin-bottom: 16px;" src="/images/Predict.gif" alt="Predict and Win">
+					<img style="border-radius: 10px;" src="/images/Predict.gif" alt="Predict and Win">
 				</a>
+
 			</div>
 
 			<a :href="link_output + 'winbox-register'" rel="nofollow">
@@ -228,7 +229,7 @@ export default {
 }
 
 .title span {
-	color: black;
+	color: #ff0000;
 	font-weight: 700;
 	padding-left: 4px;
 }
@@ -283,9 +284,8 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid #FF8C00;
-	background: #FFF;
-	font-weight: 500;
+	border: 1px solid #005032;
+	font-weight: 700;
 }
 
 @media screen and (min-width: 1440px) {
@@ -296,13 +296,13 @@ table td {
 
 .green {
 	color: white;
-	background-image: linear-gradient(to left, #8d8f11, #d7c965);
+	background-image: linear-gradient(to left, #ff0000, #DA0101);
 	padding-left: 4px;
 }
 
 .red {
-	color: white;
-	background-image: linear-gradient(to left, #374439, #28ab3f);
+	color: black;
+	background-image: linear-gradient(to left, #ff6600, #ff9900);
 	padding-left: 4px;
 }
 
@@ -313,8 +313,9 @@ tbody td {
 }
 
 .amount {
-	color: black;
+	color: #005032;
 	text-align: right;
+	font-weight: 700;
 }
 
 .Right_Banner_Container {
@@ -326,8 +327,10 @@ tbody td {
 
 .Big_Info_Container {
 	border-radius: 8px;
-	padding: 8px 10px;
-	box-shadow: 2px 4px 20px rgb(14 14 14 / 61%);
+	padding: 25px;
+	background-image: url('/images/Big_Info_Bg_Img.webp');
+	background-size: 100% 100%;
+	background-position: center;
 	margin-bottom: 16px;
 }
 
@@ -353,6 +356,7 @@ tbody td {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	padding: 10px;
 }
 
 .RB_Cash_Btn_Container {
@@ -380,15 +384,13 @@ tbody td {
 	width: 50%;
 }
 
-.login-register-container img {
-	border-radius: 0%;
-}
-
 .Join {
+	border-radius: 10px;
 	padding-right: 5px;
 }
 
 .Register {
+	border-radius: 10px;
 	padding-left: 5px;
 }
 
@@ -397,10 +399,10 @@ tbody td {
 }
 
 .RB_Small_Text_Container p {
-	color: #3b4a4d;
+	color: black;
 	font-size: 15px;
 	font-weight: 400;
-	font-family: 'Raleway Bold';
+	font-family: "Montserrat", sans-serif;
 	margin-bottom: 0;
 }
 
