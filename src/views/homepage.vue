@@ -581,9 +581,10 @@ export default {
 	color: white;
 	white-space: nowrap;
 	font-size: 12px;
-	gap: 10px;
+	gap: 5px;
 	border-radius: 5px;
 	padding: 5px 10px;
+	flex-direction: column;
 }
 
 .image-container.selected {
@@ -602,7 +603,6 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
@@ -625,6 +625,12 @@ export default {
 
 	.image-container.selected {
 		border-bottom: 0;
+	}
+}
+
+@media (max-width: 550px) {
+	.image-container {
+		width: 84px;
 	}
 }
 
@@ -658,7 +664,8 @@ export default {
 .inner_container {
 	padding: 10px 5px;
 	border-radius: 8px;
-	background-color: #283345
+	background-color: #283345;
+	height: 100%;
 }
 
 @media screen and (max-width: 768px) {
