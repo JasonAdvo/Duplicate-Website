@@ -45,8 +45,28 @@
 
 				<div class="footer-content">
 
+					<div>
+						<p>
+							{{ $t('Main_Content.Btm_Content_1') }}
+							<strong>
+								<a :href="output_Link">{{ $t('Main_Content.Btm_Content_2') }}</a>
+								{{ $t('Main_Content.Btm_Content_3') }}
+							</strong> |
+							{{ $t('Main_Content.Btm_Content_4') }}
+						</p>
+
+						<p>
+							<strong>
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
+								{{ $t('Main_Content.Btm_Content_6') }}
+							</strong> |
+							{{ $t('Main_Content.Btm_Content_7') }}
+						</p>
+					</div>
+
+
 					<br>
-					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+					<a href=" //www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 							alt="DMCA.com Protection Status" />
@@ -409,7 +429,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #1ebebc;
+	color: rgb(255, 191, 203);
 }
 
 .platform {
@@ -606,7 +626,7 @@ li {
 }
 
 .Visit strong {
-	color: #1ebebc;
+	color: rgb(255, 191, 203);
 }
 
 .license {
