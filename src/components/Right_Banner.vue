@@ -5,9 +5,7 @@
 			<div class="Mobile_View" style="display: none;">
 				<RB_Img_Carousel />
 				<a :href="link_output + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
-						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
-
-				<img src="/images/LB_Img_1.webp" alt="Trust">
+						src="/images/daily free spin bonus.gif" alt="Spin Bonus"></a>
 
 				<table>
 					<thead>
@@ -78,7 +76,7 @@
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
 					<a :href="link_output + 'winbox-login'" rel="nofollow"><img class="Join"
-							src="/images/RB_Login_Img.gif" alt="Login"></a>
+							src="/images/RB_Login_Img.webp" alt="Login"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="Register"
 							src="/images/RB_Register_Img.gif" alt="Register"></a>
 				</div>
@@ -89,7 +87,7 @@
 							<p><strong>RM0.00</strong></p>
 						</div>
 						<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
-						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM25.00</strong></p>
 					</div>
 					<div class="RB_Cash_Btn_Container">
 						<a :href="link_output + 'winbox-register'" rel="nofollow">
@@ -108,16 +106,16 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
-					<img style="border-radius: 20px;" src="/images/LB_Img_2.gif" alt="Share">
+					<img style="border-radius: 20px;" src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Share_Img.gif" alt="Share"></a>
+								src="/images/LB_Share_Img.webp" alt="Share"></a>
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Free_Img.gif" alt="Free Bot"></a>
+								src="/images/LB_Tips_Img.webp" alt="Game Tips"></a>
 					</div>
 				</div>
 
@@ -229,9 +227,10 @@ export default {
 }
 
 .title span {
-	color: #ff0000;
+	color: #009466;
 	font-weight: 700;
 	padding-left: 4px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .live {
@@ -286,6 +285,7 @@ table td {
 	color: black;
 	border: 1px solid #005032;
 	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 1440px) {
@@ -296,13 +296,13 @@ table td {
 
 .green {
 	color: white;
-	background-image: linear-gradient(to left, #ff0000, #DA0101);
+	background-image: linear-gradient(to left, #159115, #012505);
 	padding-left: 4px;
 }
 
 .red {
 	color: black;
-	background-image: linear-gradient(to left, #ff6600, #ff9900);
+	background-image: linear-gradient(to left, #c9c310, #77600c);
 	padding-left: 4px;
 }
 
@@ -356,7 +356,6 @@ tbody td {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	padding: 10px;
 }
 
 .RB_Cash_Btn_Container {

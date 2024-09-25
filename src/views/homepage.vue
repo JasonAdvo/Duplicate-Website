@@ -96,7 +96,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © MERAH44. All rights reserved.
+						Copyright © HIJAU44. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -193,14 +193,13 @@ export default {
 			],
 			images: [
 				{ notSelected: '/images/Mega_Hot_Img.webp', selected: '/images/Mega_Hot_Img.webp', alt: 'Mega H5 Hot' },
-				{ notSelected: '/images/Slot_Img.gif', selected: '/images/Slot_Img.gif', alt: 'Slot Game' },
-				{ notSelected: '/images/Clot_Img.webp', selected: '/images/Clot_Img.webp', alt: 'Clot Play' },
 				{ notSelected: '/images/Mega_Img.webp', selected: '/images/Mega_Img.webp', alt: 'Mega H5' },
 				{ notSelected: '/images/VPower_Img.webp', selected: '/images/VPower_Img.webp', alt: 'V Power' },
+				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
 				{ notSelected: '/images/JILI_Img.webp', selected: '/images/JILI_Img.webp', alt: 'JILI' },
-				{ notSelected: '/images/Live_Img.gif', selected: '/images/Live_Img.gif', alt: 'Live Game' },
-				{ notSelected: '/images/Fish_Img.gif', selected: '/images/Fish_Img.gif', alt: 'Fish Game' },
-				{ notSelected: '/images/Other_Img.gif', selected: '/images/Other_Img.gif', alt: 'Others Game' },
+				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
+				{ notSelected: '/images/Fish_Img.webp', selected: '/images/Fish_Img.webp', alt: 'Fish Game' },
+				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Clot Play' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -419,22 +418,9 @@ export default {
 
 }
 
-/* .MB_Img img {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 12px;
-}
-
-@media screen and (max-width: 576px) {
-	.MB_Img img {
-		width: 33%;
-	}
-} */
-
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #a01c1c;
+	color: #005032;
 }
 
 .platform {
@@ -457,9 +443,28 @@ export default {
 }
 
 .image-container {
-	width: calc(100% / 9);
-	padding-bottom: 30px;
+	width: calc(100% / 8);
+	/* padding-bottom: 30px; */
 	cursor: pointer;
+}
+
+.image-container.selected {
+	border-bottom: 2px solid #ffd700;
+	animation: mymove 0.3s infinite;
+}
+
+@keyframes mymove {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .image-container img {
@@ -493,10 +498,6 @@ export default {
 
 	.site-tabs::before {
 		content: none;
-	}
-
-	.image-container.selected {
-		border-bottom: 0;
 	}
 }
 
@@ -664,7 +665,7 @@ li {
 }
 
 .Visit strong {
-	color: #a01c1c;
+	color: #005032;
 }
 
 .license {

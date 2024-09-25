@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus"></a>
 			<table>
 				<thead>
@@ -65,19 +65,17 @@
 				</tbody>
 			</table>
 
-			<img src="/images/LB_Img_1.webp" alt="Trust">
-
 			<div style="position: relative;">
-				<img style="border-radius: 20px;" src="/images/LB_Img_2.gif" alt="Share">
+				<img style="border-radius: 20px;" src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.gif" alt="Share"></a>
+							src="/images/LB_Share_Img.webp" alt="Share"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Free_Img.gif" alt="Free Bot"></a>
+							src="/images/LB_Tips_Img.webp" alt="Game Tips"></a>
 				</div>
 			</div>
 
@@ -135,19 +133,17 @@ export default {
 }
 
 @media screen and (max-width: 1000px) {
-
 	.Left_Banner_Container {
 		background: unset;
 		padding-bottom: 0px;
 		border-right: unset;
 		padding-top: 0px;
 	}
-
 }
 
 .button-grp {
 	position: absolute;
-	margin-top: -26%;
+	margin-top: -28%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -158,12 +154,6 @@ export default {
 	.button-grp {
 		bottom: 10%;
 		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -24%;
 	}
 }
 
@@ -260,13 +250,13 @@ table td {
 
 .green {
 	color: white;
-	background-image: linear-gradient(to left, #ff0000, #DA0101);
+	background-image: linear-gradient(to left, #159115, #012505);
 	padding-left: 4px;
 }
 
 .red {
 	color: black;
-	background-image: linear-gradient(to left, #ff6600, #ff9900);
+	background-image: linear-gradient(to left, #c9c310, #77600c);
 	padding-left: 4px;
 }
 

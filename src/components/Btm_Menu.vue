@@ -134,7 +134,7 @@ export default {
 }
 
 .col img {
-	width: 55px;
+	width: 60px;
 	height: auto;
 }
 
