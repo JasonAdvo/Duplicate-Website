@@ -135,12 +135,6 @@ export default {
 	transform: translateX(-50%);
 }
 
-@media (max-width: 430px) {
-	.Logo {
-		width: 100px;
-	}
-}
-
 .GT-icon {
 	position: absolute;
 	top: 28px;
@@ -154,15 +148,18 @@ export default {
 
 @media screen and (max-width: 430px) {
 
+	.Logo {
+		width: 150px;
+	}
 
 	.Partnership {
-		top: 5px;
+		top: 10px;
 		width: 40px;
 	}
 
 	.GT-icon {
 		width: 40px;
-		top: 5px;
+		top: 10px;
 	}
 }
 
