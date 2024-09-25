@@ -191,9 +191,10 @@ export default {
 }
 
 .title span {
-	color: #ff0000;
+	color: #009466;
 	font-weight: 700;
 	padding-left: 4px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .live {
@@ -247,7 +248,8 @@ table td {
 	font-size: 9px;
 	color: black;
 	border: 1px solid #005032;
-	font-weight: 500;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 1440px) {
@@ -277,6 +279,7 @@ tbody td {
 .amount {
 	color: #005032;
 	text-align: right;
+
 }
 
 .Lucky_Number_Btn {

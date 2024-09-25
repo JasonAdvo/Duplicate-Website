@@ -6,7 +6,7 @@
 		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 
 		<a href="/">
-			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
+			<img class="Logo" src="/images/TB_Logo_Img.gif" alt="Logo">
 		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
@@ -129,8 +129,8 @@ export default {
 
 .Logo {
 	position: absolute;
-	top: 10px;
-	width: 200px;
+	top: 5px;
+	width: 250px;
 	left: 50%;
 	transform: translateX(-50%);
 }
