@@ -306,7 +306,7 @@ export default {
 	display: flex;
 	width: 100%;
 	/* background-image: url('/images/Bg_Img.webp'); */
-	background-color: rgb(255, 191, 203);
+	background-color: white;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -427,7 +427,6 @@ export default {
 
 .image-container {
 	width: calc(100% / 10);
-	padding-bottom: 30px;
 	cursor: pointer;
 	text-align: center;
 	color: white;
@@ -470,6 +469,14 @@ export default {
 		border-bottom: 0;
 	}
 }
+
+@media (max-width: 430px) {
+	.image-container {
+		width: 50px;
+		font-size: 8px
+	}
+}
+
 
 .image-grid-container {
 	display: flex;

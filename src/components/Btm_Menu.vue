@@ -3,9 +3,6 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Save_Links.webp" alt="Save Links">
-				</a>
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
 					<img src="/images/MM_Grp.webp" alt="MM Group">
 				</a>
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
@@ -76,7 +73,7 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 55px;
-	background-image: url('/images/Btm_Bg_Img.webp');
+	background-color: rgb(255, 191, 203);
 	background-size: 100% 100%;
 	z-index: 3;
 }
@@ -90,7 +87,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -700%;
+	top: -600%;
 	right: 0;
 }
 
