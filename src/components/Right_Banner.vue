@@ -76,7 +76,7 @@
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
 					<a :href="link_output + 'winbox-login'" rel="nofollow"><img class="Join"
-							src="/images/RB_Login_Img.webp" alt="Login"></a>
+							src="/images/RB_Login_Img.gif" alt="Login"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="Register"
 							src="/images/RB_Register_Img.gif" alt="Register"></a>
 				</div>
@@ -106,25 +106,21 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
-					<img style="border-radius: 20px;" src="/images/LB_Img_2.webp" alt="Share">
-					<div class="button-grp">
-						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Share_Img.webp" alt="Share"></a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Tips_Img.webp" alt="Game Tips"></a>
-					</div>
-				</div>
-
-
-				<div style="position: relative;">
 					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
 					<a :href="link_output + 'winbox-register'" rel="nofollow">
 						<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
 					</a>
+				</div>
+
+				<div style="position: relative;">
+					<div class="button-grp">
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Share_Img.gif" alt="Share"></a>
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Downline_Img.gif" alt="Downline"></a>
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Copy_Img.gif" alt="Copy"></a>
+					</div>
 				</div>
 
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
@@ -178,12 +174,11 @@ export default {
 
 <style scoped>
 .button-grp {
-	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	/* justify-content: ; */
 	flex-wrap: wrap;
+	margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -208,12 +203,12 @@ export default {
 }
 
 .button-grp a {
-	width: calc(50% - 8px);
+	width: 50%;
 }
 
 @media screen and (min-width: 610px) and (max-width: 770px) {
 	.button-grp a {
-		width: calc(50% - 15px);
+		width: 50%;
 	}
 }
 
@@ -227,7 +222,7 @@ export default {
 }
 
 .title span {
-	color: #009466;
+	color: #04318a;
 	font-weight: 700;
 	padding-left: 4px;
 	font-family: "Montserrat", sans-serif;
@@ -283,7 +278,8 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid #005032;
+	border: 1px solid #04318a;
+	background-color: white;
 	font-weight: 700;
 	font-family: "Montserrat", sans-serif;
 }
@@ -296,13 +292,13 @@ table td {
 
 .green {
 	color: white;
-	background-image: linear-gradient(to left, #159115, #012505);
+	background-color: #04318a;
 	padding-left: 4px;
 }
 
 .red {
-	color: black;
-	background-image: linear-gradient(to left, #c9c310, #77600c);
+	color: white;
+	background-color: #04318a;
 	padding-left: 4px;
 }
 
@@ -313,7 +309,7 @@ tbody td {
 }
 
 .amount {
-	color: #005032;
+	color: #022f8a;
 	text-align: right;
 	font-weight: 700;
 }
@@ -327,8 +323,8 @@ tbody td {
 
 .Big_Info_Container {
 	border-radius: 8px;
-	padding: 25px;
-	background-image: url('/images/Big_Info_Bg_Img.webp');
+	/* padding: 25px; */
+	/* background-image: url('/images/Big_Info_Bg_Img.webp'); */
 	background-size: 100% 100%;
 	background-position: center;
 	margin-bottom: 16px;
@@ -368,8 +364,8 @@ tbody td {
 }
 
 .RB_Cash_Btn_Container img {
-	height: 44px;
-	width: 130px;
+	/* height: 44px;
+	width: 130px; */
 	margin-bottom: 5px;
 }
 
@@ -398,7 +394,7 @@ tbody td {
 }
 
 .RB_Small_Text_Container p {
-	color: black;
+	color: #022f8a;
 	font-size: 15px;
 	font-weight: 400;
 	font-family: "Montserrat", sans-serif;
@@ -420,7 +416,7 @@ tbody td {
 }
 
 .Baki strong {
-	color: #da9100;
+	color: #022f8a;
 	font-size: 30px;
 }
 

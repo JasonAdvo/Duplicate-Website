@@ -59,17 +59,19 @@
 
 					<div>
 						<p>
-							{{ $t('Main_Content.Btm_Content_1') }}
 							<strong>
-								<a :href="link_output">{{ $t('Main_Content.Btm_Content_2') }}</a>
+								<a :href="link_output">{{ $t('Main_Content.Btm_Content_1') }}</a>
 							</strong>
-							{{ $t('Main_Content.Btm_Content_3') }}
+							|
+							{{ $t('Main_Content.Btm_Content_2') }}
+
 						</p>
 
 						<p>
-							{{ $t('Main_Content.Btm_Content_4') }}
 							<strong>
-								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
+								{{ $t('Main_Content.Btm_Content_3') }}
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_4') }}</a>
+								{{ $t('Main_Content.Btm_Content_5') }}
 							</strong>
 							{{ $t('Main_Content.Btm_Content_6') }}
 						</p>
@@ -116,7 +118,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © HIJAU44. All rights reserved.
+						Copyright © V3CUCI. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -212,17 +214,14 @@ export default {
 				"MIDAS GOLDEN TOUCH"
 			],
 			images: [
-				{ notSelected: '/images/Mega_Hot_Img.webp', selected: '/images/Mega_Hot_Img.webp', alt: 'Mega H5 Hot' },
-				{ notSelected: '/images/Mega_Img.webp', selected: '/images/Mega_Img.webp', alt: 'Mega H5' },
-				{ notSelected: '/images/VPower_Img.webp', selected: '/images/VPower_Img.webp', alt: 'V Power' },
 				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
-				{ notSelected: '/images/JILI_Img.webp', selected: '/images/JILI_Img.webp', alt: 'JILI' },
 				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
-				{ notSelected: '/images/Fish_Img.webp', selected: '/images/Fish_Img.webp', alt: 'Fish Game' },
-				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Clot Play' },
+				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sport Game' },
+				{ notSelected: '/images/Lottery_Img.webp', selected: '/images/Lottery_Img.webp', alt: 'Lottery Game' },
+				{ notSelected: '/images/Other_Img.webp', selected: '/images/Other_Img.webp', alt: 'Other Game' },
 			],
 			winboxofficial_link: '',
-			stickyBarHeightWeb: 105,
+			stickyBarHeightWeb: 90,
 			stickyBarHeightMobile: 75,
 		};
 	},
@@ -241,12 +240,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxmys_co", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winbox77_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxmys_co;
 			} catch (error) {
 				console.log(error)
 			}
@@ -440,7 +439,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #005032;
+	color: rgba(20, 100, 190);
 }
 
 .platform {
@@ -454,26 +453,25 @@ export default {
 	display: flex;
 }
 
-.site-tabs::before {
+/* .site-tabs::before {
 	content: "";
 	border-bottom: 1px solid #fff;
 	position: absolute;
 	width: 100%;
 	bottom: 1px;
-}
+} */
 
 .image-container {
-	width: calc(100% / 8);
+	width: calc(100% / 5);
 	/* padding-bottom: 30px; */
 	cursor: pointer;
 }
 
-.image-container.selected {
+/* .image-container.selected {
 	border-bottom: 2px solid #ffd700;
-	animation: mymove 0.3s infinite;
-}
+} */
 
-@keyframes mymove {
+/* @keyframes mymove {
 	0% {
 		transform: translateY(0);
 	}
@@ -485,7 +483,7 @@ export default {
 	100% {
 		transform: translateY(0);
 	}
-}
+} */
 
 .image-container img {
 	width: 100%;
@@ -685,7 +683,7 @@ li {
 }
 
 .Visit strong {
-	color: #005032;
+	color: rgba(20, 100, 190);
 }
 
 .license {

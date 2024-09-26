@@ -77,7 +77,8 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 55px;
-	background-image: url('/images/Btm_Bg_Img.webp');
+	/* background-image: url('/images/Btm_Bg_Img.webp'); */
+	background-color: rgba(20, 100, 190);
 	background-size: 100% 100%;
 	z-index: 3;
 }

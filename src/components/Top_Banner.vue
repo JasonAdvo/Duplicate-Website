@@ -6,7 +6,7 @@
 		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 
 		<a href="/">
-			<img class="Logo" src="/images/TB_Logo_Img.gif" alt="Logo">
+			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
 		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
@@ -31,13 +31,6 @@
 				<span v-if="selectedLanguage === 'zh'" class="tick">
 					<i class="fa fa-check"></i>
 				</span>
-			</div>
-		</div>
-
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }}</strong> |
-				{{ $t('Runnig_Bar.Content_2') }}
 			</div>
 		</div>
 	</div>
@@ -117,7 +110,8 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TB_Bg_Img.gif');
+	/* background-image: url('/images/TB_Bg_Img.gif'); */
+	background-color: rgba(20, 100, 190);
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -129,15 +123,17 @@ export default {
 
 .Partnership {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
-	width: 60px;
+	width: 80px;
+	background-color: white;
+	border-radius: 10px;
 }
 
 .Logo {
 	position: absolute;
 	top: 5px;
-	width: 250px;
+	width: 80px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -156,12 +152,12 @@ export default {
 @media screen and (max-width: 430px) {
 
 	.Logo {
-		width: 150px;
+		width: 50px;
 	}
 
 	.Partnership {
-		top: 10px;
-		width: 40px;
+		top: 6px;
+		width: 55px;
 	}
 
 	.GT-icon {

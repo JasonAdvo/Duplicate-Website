@@ -66,16 +66,13 @@
 			</table>
 
 			<div style="position: relative;">
-				<img style="border-radius: 20px;" src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
+							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Tips_Img.webp" alt="Game Tips"></a>
+							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 				</div>
 			</div>
 
@@ -142,12 +139,11 @@ export default {
 }
 
 .button-grp {
-	position: absolute;
-	margin-top: -28%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	/* justify-content: ; */
 	flex-wrap: wrap;
+	margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -162,12 +158,12 @@ export default {
 }
 
 .button-grp a {
-	width: calc(50% - 8px);
+	width: 50%;
 }
 
 @media screen and (min-width: 610px) and (max-width: 770px) {
 	.button-grp a {
-		width: calc(50% - 15px);
+		width: 50%;
 	}
 }
 
@@ -181,7 +177,7 @@ export default {
 }
 
 .title span {
-	color: #009466;
+	color: #04318a;
 	font-weight: 700;
 	padding-left: 4px;
 	font-family: "Montserrat", sans-serif;
@@ -237,7 +233,8 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid #005032;
+	border: 1px solid #04318a;
+	background-color: white;
 	font-weight: 700;
 	font-family: "Montserrat", sans-serif;
 }
@@ -250,13 +247,13 @@ table td {
 
 .green {
 	color: white;
-	background-image: linear-gradient(to left, #159115, #012505);
+	background-color: #04318a;
 	padding-left: 4px;
 }
 
 .red {
-	color: black;
-	background-image: linear-gradient(to left, #c9c310, #77600c);
+	color: white;
+	background-color: #04318a;
 	padding-left: 4px;
 }
 
@@ -267,7 +264,7 @@ tbody td {
 }
 
 .amount {
-	color: #005032;
+	color: #022f8a;
 	text-align: right;
 
 }
