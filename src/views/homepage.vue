@@ -55,6 +55,26 @@
 							alt="DMCA.com Protection Status" />
 					</a>
 					<br>
+					<br>
+
+					<div>
+						<p>
+							{{ $t('Main_Content.Btm_Content_1') }}
+							<strong>
+								<a :href="link_output">{{ $t('Main_Content.Btm_Content_2') }}</a>
+							</strong>
+							{{ $t('Main_Content.Btm_Content_3') }}
+						</p>
+
+						<p>
+							{{ $t('Main_Content.Btm_Content_4') }}
+							<strong>
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
+							</strong>
+							{{ $t('Main_Content.Btm_Content_6') }}
+						</p>
+					</div>
+
 					<div class="footer-detail">
 						<div class="Visit">
 							<p>

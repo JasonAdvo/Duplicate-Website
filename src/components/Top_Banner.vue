@@ -33,6 +33,13 @@
 				</span>
 			</div>
 		</div>
+
+		<div class="running-sentence-container">
+			<div class="running-sentence">
+				<strong>{{ $t('Runnig_Bar.Content_1') }}</strong> |
+				{{ $t('Runnig_Bar.Content_2') }}
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -243,7 +250,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 90s linear infinite;
-	color: white;
+	color: black;
 	letter-spacing: 0.5px;
 	font-size: 13px;
 }
