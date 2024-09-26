@@ -44,6 +44,27 @@
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 							alt="DMCA.com Protection Status" />
 					</a>
+					<br>
+					<br>
+
+					<div>
+						<p>
+							<strong>
+								<a :href="output_Link">{{ $t('Main_Content.Btm_Content_1') }}</a>
+								{{ $t('Main_Content.Btm_Content_2') }}
+							</strong>
+							{{ $t('Main_Content.Btm_Content_3') }}
+						</p>
+
+						<p>
+							<strong>
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_4') }}</a>
+								{{ $t('Main_Content.Btm_Content_5') }}
+							</strong>
+							|
+							{{ $t('Main_Content.Btm_Content_6') }}
+						</p>
+					</div>
 
 					<div class="footer-detail">
 						<div class="Visit">
