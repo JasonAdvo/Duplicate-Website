@@ -110,7 +110,8 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TB_Bg_Img.gif');
+	/* background-image: url('/images/TB_Bg_Img.gif'); */
+	background-color: #f80605;
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -122,9 +123,11 @@ export default {
 
 .Partnership {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
-	width: 60px;
+	width: 80px;
+	background-color: white;
+	border-radius: 10px;
 }
 
 .Logo {
@@ -133,17 +136,25 @@ export default {
 	width: 250px;
 	left: 50%;
 	transform: translateX(-50%);
+	background-color: white;
+	border-radius: 10px;
 }
 
 .GT-icon {
 	position: absolute;
-	top: 28px;
 	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
 	z-index: 1;
 	font-size: 30px;
-	color: white;
+	color: black;
 	cursor: pointer;
 	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	align-content: center;
+	background-color: white;
 }
 
 @media screen and (max-width: 430px) {
@@ -153,13 +164,14 @@ export default {
 	}
 
 	.Partnership {
-		top: 10px;
-		width: 40px;
+		top: 6px;
+		width: 55px;
 	}
 
 	.GT-icon {
 		width: 40px;
-		top: 10px;
+		height: 40px;
+		top: 25px;
 	}
 }
 

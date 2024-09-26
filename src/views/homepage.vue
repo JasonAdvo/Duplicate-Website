@@ -3,6 +3,10 @@
 		<TopBanner />
 	</div>
 
+	<div>
+		<PopUpCard />
+	</div>
+
 	<div class="main-content">
 		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<LeftBanner />
@@ -96,7 +100,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © HIJAU44. All rights reserved.
+						Copyright © ASIABET33. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -114,16 +118,16 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
-import BackToTop from '@/components/BackToTop.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
+import PopUpCard from '@/components/PopUpCard.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		BackToTop,
+		PopUpCard
 	},
 	data() {
 		return {
@@ -192,14 +196,11 @@ export default {
 				"MIDAS GOLDEN TOUCH"
 			],
 			images: [
-				{ notSelected: '/images/Mega_Hot_Img.webp', selected: '/images/Mega_Hot_Img.webp', alt: 'Mega H5 Hot' },
-				{ notSelected: '/images/Mega_Img.webp', selected: '/images/Mega_Img.webp', alt: 'Mega H5' },
-				{ notSelected: '/images/VPower_Img.webp', selected: '/images/VPower_Img.webp', alt: 'V Power' },
-				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
+				{ notSelected: '/images/CPF_Img.webp', selected: '/images/CPF_Img.webp', alt: 'Clot Play Free' },
+				{ notSelected: '/images/CP_Img.webp', selected: '/images/CP_Img.webp', alt: 'Clot Play	' },
 				{ notSelected: '/images/JILI_Img.webp', selected: '/images/JILI_Img.webp', alt: 'JILI' },
-				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
-				{ notSelected: '/images/Fish_Img.webp', selected: '/images/Fish_Img.webp', alt: 'Fish Game' },
-				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Clot Play' },
+				{ notSelected: '/images/BT_Img.webp', selected: '/images/BT_Img.webp', alt: 'BT Gaming' },
+				{ notSelected: '/images/Rich_Img.webp', selected: '/images/Rich_Img.webp', alt: 'Rich Gaming' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -331,7 +332,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_Img.webp');
+	/* background-image: url('/images/Bg_Img.webp'); */
+	background-color: white;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -420,7 +422,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #005032;
+	color: #f80605;
 }
 
 .platform {
@@ -432,28 +434,30 @@ export default {
 	margin: 10px 0;
 	position: relative;
 	display: flex;
+	background-color: red;
+	border-radius: 25px;
 }
 
-.site-tabs::before {
+/* .site-tabs::before {
 	content: "";
 	border-bottom: 1px solid #fff;
 	position: absolute;
 	width: 100%;
 	bottom: 1px;
-}
+} */
 
 .image-container {
-	width: calc(100% / 8);
+	width: calc(100% / 5);
 	/* padding-bottom: 30px; */
 	cursor: pointer;
 }
 
-.image-container.selected {
+/* .image-container.selected {
 	border-bottom: 2px solid #ffd700;
 	animation: mymove 0.3s infinite;
-}
+} */
 
-@keyframes mymove {
+/* @keyframes mymove {
 	0% {
 		transform: translateY(0);
 	}
@@ -465,7 +469,7 @@ export default {
 	100% {
 		transform: translateY(0);
 	}
-}
+} */
 
 .image-container img {
 	width: 100%;
@@ -479,7 +483,7 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
+		/* width: 86px; */
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
@@ -665,7 +669,7 @@ li {
 }
 
 .Visit strong {
-	color: #005032;
+	color: #f80605;
 }
 
 .license {
