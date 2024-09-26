@@ -66,34 +66,18 @@
 			</table>
 
 			<div style="position: relative;">
+				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
+							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
+							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_More_Img.webp" alt="More Info"></a>
 				</div>
 			</div>
-
-			<div style=" position: relative;">
-				<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
-				</a>
-			</div>
-
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
-				<img style="border-radius: 10px;" src="/images/Telco.webp" alt="Telco">
-			</a>
-
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
-				<img style="border-radius: 10px;" src="/images/Pussy_888.gif" alt="Notice">
-			</a>
-
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
-				<img style="border-radius: 10px;" src="/images/Predict.gif" alt="Predict and Win">
-			</a>
 		</div>
 	</div>
 </template>
@@ -139,11 +123,12 @@ export default {
 }
 
 .button-grp {
+	position: absolute;
+	margin-top: -26%;
 	display: flex;
 	flex-direction: row;
-	/* justify-content: ; */
+	justify-content: center;
 	flex-wrap: wrap;
-	margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -153,17 +138,23 @@ export default {
 	}
 }
 
+@media screen and (min-width: 1920px) {
+	.button-grp {
+		margin-top: -24%;
+	}
+}
+
 .button-grp img {
 	padding: 0 5px;
 }
 
 .button-grp a {
-	width: 50%;
+	width: calc(50% - 10px);
 }
 
 @media screen and (min-width: 610px) and (max-width: 770px) {
 	.button-grp a {
-		width: 50%;
+		width: calc(50% - 15px);
 	}
 }
 
@@ -177,7 +168,7 @@ export default {
 }
 
 .title span {
-	color: #04318a;
+	color: #d3ab22;
 	font-weight: 700;
 	padding-left: 4px;
 	font-family: "Montserrat", sans-serif;
@@ -232,9 +223,9 @@ table {
 
 table td {
 	font-size: 9px;
-	color: black;
-	border: 1px solid #04318a;
-	background-color: white;
+	color: white;
+	border: 1px solid black;
+	background-color: black;
 	font-weight: 700;
 	font-family: "Montserrat", sans-serif;
 }
@@ -247,13 +238,13 @@ table td {
 
 .green {
 	color: white;
-	background-color: #04318a;
+	background: linear-gradient(to bottom, rgba(29, 75, 31, 1) 0%, rgba(79, 255, 69, 1) 100%);
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	background-color: #04318a;
+	background: linear-gradient(to bottom, rgba(150, 40, 27) 30%, rgba(242, 38, 19) 100%);
 	padding-left: 4px;
 }
 
@@ -264,9 +255,8 @@ tbody td {
 }
 
 .amount {
-	color: #022f8a;
+	color: #d3ab22;
 	text-align: right;
-
 }
 
 .Lucky_Number_Btn {

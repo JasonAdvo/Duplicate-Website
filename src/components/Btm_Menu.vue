@@ -3,41 +3,44 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
+					<img src="/images/i_Grp_Img.webp" alt="I Group">
+				</a>
+				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
+					<img src="/images/Subscribe_Us_Img.webp" alt="Subscribe Us">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
+					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
 				<div class="col">
 					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.gif" alt="Home">
+						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Img.gif" alt="History">
+						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Promo_Img.gif" alt="Promo">
+						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Live_Img.gif" alt="Live Chat">
+						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
+						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
 			</div>
@@ -77,8 +80,8 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 55px;
-	/* background-image: url('/images/Btm_Bg_Img.webp'); */
-	background-color: rgba(20, 100, 190);
+	background-image: url('/images/Btm_Bg_Img.webp');
+	/* background-color: rgba(20, 100, 190); */
 	background-size: 100% 100%;
 	z-index: 3;
 }
@@ -92,7 +95,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -500%;
+	top: -600%;
 	right: 0;
 }
 

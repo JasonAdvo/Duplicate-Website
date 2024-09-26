@@ -3,6 +3,10 @@
 		<TopBanner />
 	</div>
 
+	<div>
+		<PopUpCard />
+	</div>
+
 	<div class="main-content">
 		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<LeftBanner />
@@ -61,17 +65,16 @@
 						<p>
 							<strong>
 								<a :href="link_output">{{ $t('Main_Content.Btm_Content_1') }}</a>
+								{{ $t('Main_Content.Btm_Content_2') }}
 							</strong>
 							|
-							{{ $t('Main_Content.Btm_Content_2') }}
-
+							{{ $t('Main_Content.Btm_Content_3') }}
 						</p>
 
 						<p>
 							<strong>
-								{{ $t('Main_Content.Btm_Content_3') }}
-								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_4') }}</a>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								{{ $t('Main_Content.Btm_Content_4') }}
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
 							</strong>
 							{{ $t('Main_Content.Btm_Content_6') }}
 						</p>
@@ -118,7 +121,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © V3CUCI. All rights reserved.
+						Copyright © IMENANG. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -136,16 +139,16 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
-import BackToTop from '@/components/BackToTop.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
+import PopUpCard from '@/components/PopUpCard.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		BackToTop,
+		PopUpCard
 	},
 	data() {
 		return {
@@ -214,10 +217,12 @@ export default {
 				"MIDAS GOLDEN TOUCH"
 			],
 			images: [
+				{ notSelected: '/images/JILI_Img.webp', selected: '/images/JILI_Img.webp', alt: 'JILI' },
+				{ notSelected: '/images/Microgaming_Img.webp', selected: '/images/Microgaming_Img.webp', alt: 'Microgaming' },
+				{ notSelected: '/images/Pegasus_Img.webp', selected: '/images/Pegasus_Img.webp', alt: 'Pegasus Game' },
 				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
 				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
 				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sport Game' },
-				{ notSelected: '/images/Lottery_Img.webp', selected: '/images/Lottery_Img.webp', alt: 'Lottery Game' },
 				{ notSelected: '/images/Other_Img.webp', selected: '/images/Other_Img.webp', alt: 'Other Game' },
 			],
 			winboxofficial_link: '',
@@ -439,7 +444,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: rgba(20, 100, 190);
+	color: #c9ab70;
 }
 
 .platform {
@@ -462,7 +467,7 @@ export default {
 } */
 
 .image-container {
-	width: calc(100% / 5);
+	width: calc(100% / 7);
 	/* padding-bottom: 30px; */
 	cursor: pointer;
 }
@@ -683,7 +688,7 @@ li {
 }
 
 .Visit strong {
-	color: rgba(20, 100, 190);
+	color: #c9ab70;
 }
 
 .license {
