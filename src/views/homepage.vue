@@ -49,13 +49,34 @@
 
 				<div class="footer-content">
 
+					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 							alt="DMCA.com Protection Status" />
 					</a>
 					<br>
-					<div class="footer-detail">
+					<br>
+
+					<div class="footer_btm_content">
+						<p>
+							<a :href="link_output">
+								<strong>{{ $t('Main_Content.Btm_Content_1') }}</strong>
+							</a>
+							{{ $t('Main_Content.Btm_Content_2') }}
+						</p>
+						<p>
+							<strong>
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_3') }}</a>
+								{{ $t('Main_Content.Btm_Content_4') }}
+							</strong>
+							|
+							{{ $t('Main_Content.Btm_Content_5') }}
+						</p>
+
+					</div>
+
+					<div class=" footer-detail">
 						<div class="Visit">
 							<p>
 								{{ $t('message.Visit') }}
@@ -222,12 +243,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winbox77_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
 			} catch (error) {
 				console.log(error)
 			}
