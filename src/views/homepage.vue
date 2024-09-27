@@ -56,8 +56,196 @@
 						alt="DMCA.com Protection Status" />
 				</a>
 				<div class="footer-content">
+
+					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
+					<br>
+
+					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
+					<p>{{ $t('Main_Content.H2_1_Content_1') }}</p>
+					<p>{{ $t('Main_Content.H2_1_Content_2') }}</p>
+
+					<div class="hide_content" v-if="showContent">
+						<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_2_Content') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_3') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_4') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_4') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_3_Content_1') }}</p>
+						<p>{{ $t('Main_Content.H2_3_Content_2') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_4_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_4_Content_1') }}</p>
+						<p>{{ $t('Main_Content.H2_4_Content_2') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_5_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_5_Content_1') }}</p>
+						<p>{{ $t('Main_Content.H2_5_Content_2') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_6_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_6_Content_1') }}</p>
+						<p>{{ $t('Main_Content.H2_6_Content_2') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_7_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_7_Content_1') }}</p>
+						<p>{{ $t('Main_Content.H2_7_Content_2') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_8_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_8_Content') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_9_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_9_Content') }}</p>
+						<h3>{{ $t('Main_Content.H3_9_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_9_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_9_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_9_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_9_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_9_Content_3') }}</p>
+						<h3>{{ $t('Main_Content.H3_9_Header_4') }}</h3>
+						<p>{{ $t('Main_Content.H3_9_Content_4') }}</p>
+						<h3>{{ $t('Main_Content.H3_9_Header_5') }}</h3>
+						<p>{{ $t('Main_Content.H3_9_Content_5') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_10_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_10_Content') }}</p>
+						<h3>{{ $t('Main_Content.H3_10_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_10_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_10_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_10_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_10_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_10_Content_3') }}</p>
+						<p>{{ $t('Main_Content.H2_10_Btm_Content') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_11_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_11_Content_1') }}</p>
+						<p>{{ $t('Main_Content.H2_11_Content_2') }}</p>
+						<p>{{ $t('Main_Content.H2_11_Content_3') }}</p>
+						<p>{{ $t('Main_Content.H2_11_Content_4') }}</p>
+					</div>
+
+					<span class="read-more" @click="toggleContent" v-if="!showContent">
+						{{ $t('Main_Content.Read_More') }}</span>
+					<span class="read-less" @click="toggleContent" v-else>{{ $t('Main_Content.Read_Less')
+						}}</span>
+
+					<div>
+						<h2 class="FAQ_Header">{{ $t('FAQs.FAQ') }}</h2>
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseOne" aria-expanded="false"
+										aria-controls="flush-collapseOne">
+										{{ $t('FAQs.FAQ_1_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseOne" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_1_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseTwo" aria-expanded="false"
+										aria-controls="flush-collapseTwo">
+										{{ $t('FAQs.FAQ_2_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_2_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree" aria-expanded="false"
+										aria-controls="flush-collapseThree">
+										{{ $t('FAQs.FAQ_3_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_3_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFour" aria-expanded="false"
+										aria-controls="flush-collapseFour">
+										{{ $t('FAQs.FAQ_4_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseFour" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_4_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingFive">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFive" aria-expanded="false"
+										aria-controls="flush-collapseFive">
+										{{ $t('FAQs.FAQ_5_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseFive" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_5_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingSix">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseSix" aria-expanded="false"
+										aria-controls="flush-collapseSix">
+										{{ $t('FAQs.FAQ_6_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseSix" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_6_Content') }}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
 					<div class="footer-detail">
 						<div class="Atas_Sign_Up_Container">
+							<br>
 							<a :href="link_ataskasino">{{ $t('Atas_Sign_Up.Header') }}</a> - {{
 								$t('Atas_Sign_Up.Content') }}
 						</div>
@@ -239,6 +427,8 @@ export default {
 			status: null,
 			response: [],
 			link_atascasinobet: '',
+			showContent: false,
+			activeAccordion: 0,
 		};
 	},
 	setup() {
@@ -324,7 +514,19 @@ export default {
 					behavior: 'smooth'
 				});
 			}
-		}
+		},
+		toggleContent() {
+			this.showContent = !this.showContent; // Toggle the content visibility
+		},
+		setActiveAccordion(index) {
+			console.log(index)
+			if (this.activeAccordion === index) {
+				console.log(this.activeAccordion)
+				this.activeAccordion = null;
+			} else {
+				this.activeAccordion = index;
+			}
+		},
 	},
 	computed: {
 		...mapGetters(['link_ataskasino', 'error']),
@@ -554,6 +756,10 @@ export default {
 
 .footer-content {
 	margin-top: 30px;
+	margin-bottom: 60px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 0 5px;
 }
 
 .footer-content h1,
@@ -605,6 +811,45 @@ li {
 
 .b-700 {
 	font-weight: 700;
+}
+
+.hide_content {
+	display: block;
+	/* Ensure the content is block when shown */
+}
+
+.read-more,
+.read-less {
+	cursor: pointer;
+	color: black;
+	/* Style for read more/less links */
+	text-decoration: underline;
+}
+
+.FAQ_Header {
+	font-size: 23px !important;
+	text-align: center;
+}
+
+.accordion {
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	/* Optional: Add a border around the accordion */
+	overflow: hidden;
+	/* Ensure child elements respect the border radius */
+}
+
+.accordion-button {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.accordion-body {
+	font-size: 16px;
 }
 
 .footer-detail {
