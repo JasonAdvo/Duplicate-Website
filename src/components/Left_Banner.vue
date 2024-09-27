@@ -3,7 +3,9 @@
 		<div class="LB_Imgs">
 			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
 					src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
-			<img src="/images/LB_Img_1.webp" alt="PAGCOR">
+
+			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
+					src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
 			<table>
 				<thead>
 					<tr>
@@ -65,29 +67,21 @@
 				</tbody>
 			</table>
 			<div class="Tablet-Mobile-view">
-				<img src="/images/LB_Img_2.webp" alt="Share Bonus">
-				<div class="button-grp">
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+				<div style="position: relative;">
+					<img src="/images/LB_Img_2.webp" alt="Share Bonus">
+					<div class="button-grp">
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Share_Img.webp" alt="Share"></a>
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_More_Img.webp" alt="More"></a>
+					</div>
 				</div>
-				<a href="/"><img style="margin-top: 7%;" src="/images/LB_Telegram_Img.webp" alt="Telegram">
-				</a>
-				<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
-				</a>
-
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-						src="/images/LB_Img_3.webp" alt="Live Now"></a>
-				<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/LB_Img_4.webp"
-						alt="About"></a>
 			</div>
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-					src="/images/Turnover Bonus.webp" alt="Turnover Bonus"></a>
+
 		</div>
 	</div>
 </template>
@@ -132,17 +126,12 @@ export default {
 
 
 .button-grp {
-	margin-top: -30%;
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -28%;
-	}
+	bottom: 9%;
 }
 
 .button-grp img {

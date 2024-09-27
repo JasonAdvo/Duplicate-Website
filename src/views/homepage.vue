@@ -1,8 +1,4 @@
 <template>
-	<div>
-		<PopUpCard />
-	</div>
-
 	<div class="TopBanner">
 		<TopBanner />
 	</div>
@@ -47,91 +43,6 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
-					<p> {{ $t('Main_Content.H1_Content_1') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
-						{{ $t('Main_Content.H1_Content_3') }}
-						<strong>{{ $t('Main_Content.H1_Content_4') }} </strong>
-						{{ $t('Main_Content.H1_Content_5') }}
-					</p>
-					<p>
-						{{ $t('Main_Content.H1_Content_6') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
-						{{ $t('Main_Content.H1_Content_7') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
-					<p> {{ $t('Main_Content.H2_1_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_1_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_1_Content_3') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
-					<p> <strong>{{ $t('Main_Content.H2_2_Content_1') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_2') }}</p>
-					<ul>
-						<li>
-							<strong>{{ $t('Main_Content.H2_2_Li_1_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_2_Li_1_Content_1') }}
-								<strong>{{ $t('Main_Content.H2_2_Li_1_Content_2') }}</strong>
-								{{ $t('Main_Content.H2_2_Li_1_Content_3') }}
-							</p>
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_2_Li_2_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_2_Li_2_Content_1') }}
-								<strong>{{ $t('Main_Content.H2_2_Li_2_Content_2') }}</strong>
-								{{ $t('Main_Content.H2_2_Li_2_Content_3') }}
-							</p>
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_2_Li_3_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_2_Li_3_Content') }}
-							</p>
-						</li>
-					</ul>
-					<p>
-						{{ $t('Main_Content.H2_2_Middle_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Middle_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Middle_Content_3') }}
-					</p>
-					<ul>
-						<li>
-							<strong>{{ $t('Main_Content.H2_2_Li_4_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_2_Li_4_Content') }}
-							</p>
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_2_Li_5_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_2_Li_5_Content') }}
-							</p>
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_2_Li_6_Header') }}</strong>
-							<p>
-								{{ $t('Main_Content.H2_2_Li_6_Content') }}
-							</p>
-						</li>
-					</ul>
-					<p>
-						{{ $t('Main_Content.H2_2_Btm_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Btm_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Btm_Content_3') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H3_Header') }}</h2>
-					<p>{{ $t('Main_Content.H3_Content_1') }}</p>
-					<p>
-						{{ $t('Main_Content.H3_Content_2') }}
-						<strong>{{ $t('Main_Content.H3_Content_3') }}</strong>
-						{{ $t('Main_Content.H3_Content_4') }}
-					</p>
-
 					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
@@ -140,23 +51,7 @@
 					</a>
 					<br>
 					<br>
-					<p class="b-700">
-						{{ $t('Main_Content.Btm_Header') }}
-					</p>
-					<p>
-						{{ $t('Main_Content.Btm_Content_1') }} |
-						<a :href="link_winbox"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
-						{{ $t('Main_Content.Btm_Content_3') }}
-					</p>
-					<p>
-						<a :href="winbox77_link">
-							<strong>
-								{{ $t('Main_Content.Btm_Content_4') }}
-							</strong>
-						</a> |
-						{{ $t('Main_Content.Btm_Content_5') }} |
-						{{ $t('Main_Content.Btm_Content_6') }}
-					</p>
+
 					<div class="footer-detail">
 						<div class="Visit">
 							<p>
@@ -198,7 +93,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2024 CROWN99. ALL RIGHTS RESERVED.
+						Copyright © EVO888. All rights reserved.
 					</div>
 				</div>
 			</div>

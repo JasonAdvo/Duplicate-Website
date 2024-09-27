@@ -1,9 +1,9 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img
-					style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
-					alt="50% Daily Bonus"></a>
+			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/bonus.gif"
+					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px; border-radius: 8px;">
+			</a>
 			<div class="login-register-container">
 				<a :href="link_winbox + 'winbox-login'" rel="nofollow"><img class="Join" src="/images/RB_Login_Img.webp"
 						alt="Login"></a>
@@ -33,27 +33,18 @@
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<img src="/images/LB_Img_2.webp" alt="Share Bonus">
-				<div class="button-grp">
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
-				</div>
-				<div class="RB-mobile-img-grp">
-					<a href="/"><img src="/images/LB_Telegram_Img.webp" alt="Telegram">
-					</a>
-					<a href="/"><img src="/images/LB_Facebook_Img.webp" alt="Facebook">
-					</a>
-
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-							src="/images/LB_Img_3.webp" alt="Live Now"></a>
-					<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/LB_Img_4.webp"
-							alt="About"></a>
+				<div style="position: relative;     margin-bottom: 16px;">
+					<img src="/images/LB_Img_2.webp" alt="Share Bonus">
+					<div class="button-grp">
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Share_Img.webp" alt="Share"></a>
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+						<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img class="button_width"
+								src="/images/LB_More_Img.webp" alt="More"></a>
+					</div>
 				</div>
 			</div>
 
@@ -85,9 +76,11 @@
 				</a>
 			</div>
 
-			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
-					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px; border-radius: 8px;">
-			</a>
+			<a :href="link_winbox + 'winbox-register'" rel="nofollow"><img
+					style="margin-bottom: 16px; border-radius: 8px;" src="/images/Daily_bonus.webp"
+					alt="50% Daily Bonus"></a>
+
+
 		</div>
 	</div>
 </template>
@@ -257,11 +250,12 @@ export default {
 }
 
 .button-grp {
-	margin-top: -24%;
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	bottom: 3%;
 }
 
 .button-grp a {
