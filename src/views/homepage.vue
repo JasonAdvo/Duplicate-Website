@@ -59,6 +59,26 @@
 							alt="DMCA.com Protection Status" />
 					</a>
 					<br>
+					<br>
+					<div>
+						<p>
+							<strong>
+								<a :href="link_output">{{ $t('Main_Content.Btm_Content_1') }}</a>
+							</strong>
+							{{ $t('Main_Content.Btm_Content_2') }}
+						</p>
+
+						<p>
+							<strong>
+								{{ $t('Main_Content.Btm_Content_3') }}
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_4') }}</a>
+								{{ $t('Main_Content.Btm_Content_5') }}
+							</strong>
+							|
+							{{ $t('Main_Content.Btm_Content_6') }}
+						</p>
+					</div>
+
 					<div class="footer-detail">
 						<div class="Visit">
 							<p>
@@ -75,10 +95,6 @@
 						<div class="game">
 							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
 							{{ $t('Registered_TradeMark.Content_2') }}
-							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
-							{{ $t('Registered_TradeMark.Content_4') }}
-							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
-							{{ $t('Registered_TradeMark.Content_6') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>
