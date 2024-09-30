@@ -1,13 +1,13 @@
 <template>
 	<div class="Right_Banner_Container">
 		<div class="RB_Imgs">
-			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/Atas-Post-Banner-(Eng).webp"
+			<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/Atas-Post-Banner-(Eng).webp"
 					alt="188% Welcome Bonus" style="margin-bottom: 16px;">
 			</a>
 			<div class="login-register-container">
-				<a :href="link_atascasinobet + 'atas-login'" rel="nofollow"><img src="/images/RB_Login_Btn_Img.png"
+				<a :href="link_output + 'atas-login'" rel="nofollow"><img src="/images/RB_Login_Btn_Img.png"
 						alt="Login"></a>
-				<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/RB_Register_Btn_Img.png"
+				<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/RB_Register_Btn_Img.png"
 						alt="Register"></a>
 			</div>
 			<div style="display: flex; margin-bottom: 23px">
@@ -20,28 +20,27 @@
 					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank">
 						<img src="/images/RB_Deposit_Btn_Img.png" alt="Deposit">
 					</a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank">
 						<img src="/images/RB_Withdraw_Btn_Img.png" alt="Withdraw">
 					</a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/RB_Refresh_Btn_Img.png"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/RB_Refresh_Btn_Img.png"
 							alt="Refresh"></a>
 				</div>
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg"
-						alt="Banner"></a>
+				<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg" alt="Banner"></a>
 				<div class="button-grp">
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
@@ -57,7 +56,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a :href="link_atascasinobet + 'atas-login'" rel="nofollow">
+						<a :href="link_output + 'atas-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -68,14 +67,14 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_atascasinobet + 'sports-live'" rel="nofollow">
+				<a :href="link_output + 'sports-live'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/check_in.webp"
+			<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/check_in.webp"
 					alt="Weekly Check In Bonus" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -94,10 +93,10 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(['link_atascasinobet', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_atascasinobet');
+		this.$store.dispatch('fetchLink_output');
 	}
 
 };

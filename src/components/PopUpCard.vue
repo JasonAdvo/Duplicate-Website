@@ -4,7 +4,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow">
+					<a :href="link_output + 'sign-up'" rel="nofollow">
 						<img src="/images/Mamak24_Popup_Img.png" class="img-fluid" alt="notice">
 					</a>
 				</div>
@@ -31,11 +31,11 @@ export default {
 		},
 	},
 	computed: {
-		...mapGetters(['link_atascasinobet', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
 		document.body.style.overflow = 'hidden';
-		this.$store.dispatch('fetchLink_atascasinobet');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>

@@ -32,13 +32,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a v-if="n <= 12" :href="link_atascasinobet + 'sign-up'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_output + 'sign-up'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="link_atascasinobet + 'sign-up'" rel="nofollow">
+									<a :href="link_output + 'sign-up'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -51,78 +51,7 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
-					<p><a href="/">MAMAK24</a> {{
-						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
-							}}</strong> {{
-								$t('Upper_Content.MAMAK24_Description_SH') }}
-					</p>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24_Online_Games') }}</h2>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.MAMAK24-OG-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.M24-OG-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Live-Casino-Games') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-LCG-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Casino-Slots') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-OCS-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Sports-Betting') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-SB-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-SB-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-Online-Lottery') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Online-Casino-Games.H3-OL-FH-Description') }} <strong>{{
-						$t('H2-MAMAK24-Online-Casino-Games.H3-OL-Main-word') }}</strong> {{
-								$t('H2-MAMAK24-Online-Casino-Games.H3-OL-SH-Description') }}
-					</p>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Payment-Methods.MAMAK24_Payment_Methods') }}</h2>
-					<p>{{ $t('H2-MAMAK24-Payment-Methods.M24-PM-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Bank-Transfer') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Payment-Methods.H3-BT-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Payment-Methods.H3-Ewallet-Transfer') }}</h3>
-					<p><strong>{{ $t('H2-MAMAK24-Payment-Methods.H3-ET-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Payment-Methods.H3-ET-Description') }}
-					</p>
-					<br>
-					<h2>{{ $t('H2-Join-M24.Join_MAMAK24') }}</h2>
-					<p>{{ $t('H2-Join-M24.Join-M24-Description') }}</p>
-					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Register-Online') }}</h3>
-					<ol>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-1') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-2') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-3') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-4') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-RO-Step-5-FH') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-RO-Step-5-Main-Word') }}</strong> {{
-									$t('H2-Join-M24.H3-M24-RO-Step-5-SH') }}</li>
-					</ol>
-					<h3>{{ $t('H2-Join-M24.H3-MAMAK24-Casino-Online') }}</h3>
-					<ol>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-1') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-2-Description') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-CO-Step-2-Main-Word') }}</strong></li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-3') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-4') }}</li>
-						<li>{{ $t('H2-Join-M24.H3-M24-CO-Step-5-FH') }} <strong>{{
-							$t('H2-Join-M24.H3-M24-CO-Step-5-Main-Word') }}</strong> {{
-									$t('H2-Join-M24.H3-M24-CO-Step-5') }}</li>
-					</ol>
-					<br>
-					<h2>{{ $t('H2-MAMAK24-Bonus.MAMAK24_Bonus') }}</h2>
-					<p><strong>{{ $t('H2-MAMAK24-Bonus.M24-Bonus-Main-Word') }}</strong> {{
-						$t('H2-MAMAK24-Bonus.M24-Bonus-Description') }}
-					</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-Advant-Play-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-APB-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-50%-Welcome-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-WB-Description') }}</p>
-					<h3>{{ $t('H2-MAMAK24-Bonus.H3-10%-Unlimited-Bonus') }}</h3>
-					<p>{{ $t('H2-MAMAK24-Bonus.H3-UB-Description') }}</p>
-					<br>
-					<p>{{ $t('MAMAK24-Last-Description.M24_LD') }}</p>
+
 					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
@@ -132,21 +61,7 @@
 					<br>
 					<br>
 					<p class="b-700">
-						{{ $t('content.Learn_More') }}
 					</p>
-					<p>
-						<a :href="link_atascasinobet"><strong>{{ $t('content.FP_Link_Word') }}</strong></a>
-						|
-						{{
-							$t('content.FP_Content') }}
-					</p>
-					<p>
-						<a :href="link_ataskasino"><strong>{{ $t('content.SP_Link_Word') }}</strong></a>
-						|
-						{{
-							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
-					</p>
-
 
 				</div>
 			</div>
@@ -272,10 +187,10 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_atascasinobet', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_atascasinobet');
+		this.$store.dispatch('fetchLink_output');
 		this.fetchLink_ataskasino();
 	},
 	methods: {

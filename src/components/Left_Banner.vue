@@ -1,25 +1,24 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/188welcome_bonus.webp"
+			<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/188welcome_bonus.webp"
 					alt="188% Welcome Bonus"></a>
 			<div class="Tablet-Mobile-view">
-				<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg"
-						alt="Share"></a>
+				<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg" alt="Share"></a>
 				<div class="button-grp">
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
 			<LB_Img_Carousel />
 
-			<a :href="link_atascasinobet + 'sign-up'" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
+			<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
 					alt="Top Up Bonus"></a>
 		</div>
 	</div>
@@ -40,10 +39,10 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(['link_atascasinobet', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_atascasinobet');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>
