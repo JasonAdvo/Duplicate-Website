@@ -113,20 +113,20 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100px;
-	border-bottom: 2px solid #FF0198;
+	border-bottom: 2px solid #0066C9;
 }
 
 .Logo {
 	position: absolute;
-	top: 0px;
+	top: 15px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 220px;
+	width: 180px;
 }
 
 .partnership {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
 	width: 100px;
 }
@@ -144,14 +144,14 @@ export default {
 @media screen and (max-width: 430px) {
 
 	.Logo {
-		top: 0px;
+		top: 10px;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 100px;
+		width: 80px;
 	}
 
 	.partnership {
-		top: 10px;
+		top: 8px;
 		left: 20px;
 		width: 50px;
 	}

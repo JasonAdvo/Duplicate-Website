@@ -2,13 +2,13 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/download_side_btn.webp" alt="download">
 				</a>
-				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/telegram_side_btn.webp" alt="telegram">
 				</a>
-				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/fb_side_btn.webp" alt="Twitter">
 				</a>
 			</div>
@@ -19,22 +19,22 @@
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_History_Img.png" alt="Sign Up">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_Promo_Img.png" alt="Promotion">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_Live_Chat_Img.png" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_Setting_Img.png" alt="Setting">
 					</a>
 				</div>
@@ -73,7 +73,7 @@ export default {
 	/* background-image: url('/images/Mamak24_Btm_Banner.jpg'); */
 	background-color: black;
 	background-size: 100% 100%;
-	border-top: 2px solid #FF0198;
+	border-top: 2px solid #0066C9;
 }
 
 .relative {

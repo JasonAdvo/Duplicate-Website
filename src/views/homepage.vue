@@ -25,7 +25,7 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper col-lg-3 col-md-3 col-sm-4 col-4" v-for="n in 13" :key="n">
-								<a :href="link_winbox + 'winbox-register'" rel="nofollow">
+								<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 									<div class="inner_container">
 										<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 										<p>
@@ -39,167 +39,7 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Main_Content.H1_Header_1') }} | {{ $t('Main_Content.H1_Header_2') }}</h1>
-					<br>
-					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
-					<p>{{ $t('Main_Content.H2_1_Content_1') }}</p>
-					<p>{{ $t('Main_Content.H2_1_Content_2') }}</p>
 
-					<div class="hide_content" v-if="showContent">
-
-						<h3>{{ $t('Main_Content.H3_1_Header_1') }}</h3>
-						<p>{{ $t('Main_Content.H3_1_Content_1') }}</p>
-						<h3>{{ $t('Main_Content.H3_1_Header_2') }}</h3>
-						<p>{{ $t('Main_Content.H3_1_Content_2') }}</p>
-						<h3>{{ $t('Main_Content.H3_1_Header_3') }}</h3>
-						<p>{{ $t('Main_Content.H3_1_Content_3') }}</p>
-						<br>
-
-						<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
-						<p>{{ $t('Main_Content.H2_2_Content') }}</p>
-						<h3>{{ $t('Main_Content.H3_2_Header_1') }}</h3>
-						<p>{{ $t('Main_Content.H3_2_Content_1') }}</p>
-						<h3>{{ $t('Main_Content.H3_2_Header_2') }}</h3>
-						<p>{{ $t('Main_Content.H3_2_Content_2') }}</p>
-						<h3>{{ $t('Main_Content.H3_2_Header_3') }}</h3>
-						<p>{{ $t('Main_Content.H3_2_Content_3') }}</p>
-						<h3>{{ $t('Main_Content.H3_2_Header_4') }}</h3>
-						<p>{{ $t('Main_Content.H3_2_Content_4') }}</p>
-						<h3>{{ $t('Main_Content.H3_2_Header_5') }}</h3>
-						<p>{{ $t('Main_Content.H3_2_Content_5') }}</p>
-						<h3>{{ $t('Main_Content.H3_2_Header_6') }}</h3>
-						<p>{{ $t('Main_Content.H3_2_Content_6') }}</p>
-						<br>
-
-						<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
-						<p>{{ $t('Main_Content.H2_3_Content') }}</p>
-						<h3>{{ $t('Main_Content.H3_3_Header_1') }}</h3>
-						<p>{{ $t('Main_Content.H3_3_Content_1') }}</p>
-						<h3>{{ $t('Main_Content.H3_3_Header_2') }}</h3>
-						<p>{{ $t('Main_Content.H3_3_Content_2') }}</p>
-						<h3>{{ $t('Main_Content.H3_3_Header_3') }}</h3>
-						<p>{{ $t('Main_Content.H3_3_Content_3_1') }}</p>
-						<p>{{ $t('Main_Content.H3_3_Content_3_2') }}</p>
-						<br>
-
-						<h2>{{ $t('Main_Content.H2_4_Header') }}</h2>
-						<h3>{{ $t('Main_Content.H3_4_Header_1') }}</h3>
-						<p>{{ $t('Main_Content.H3_4_Content_1') }}</p>
-						<h3>{{ $t('Main_Content.H3_4_Header_2') }}</h3>
-						<p>{{ $t('Main_Content.H3_4_Content_2') }}</p>
-						<h3>{{ $t('Main_Content.H3_4_Header_3') }}</h3>
-						<p>{{ $t('Main_Content.H3_4_Content_3') }}</p>
-						<p>{{ $t('Main_Content.H2_4_Btm_Content') }}</p>
-						<br>
-
-						<h2>{{ $t('Main_Content.Summary_Header') }}</h2>
-						<p>{{ $t('Main_Content.Summary_Content_1') }}</p>
-						<p>{{ $t('Main_Content.Summary_Content_2') }}</p>
-					</div>
-
-					<span class="read-more" @click="toggleContent" v-if="!showContent">{{ $t('Main_Content.Read_More')
-						}}</span>
-					<span class="read-less" @click="toggleContent" v-else>{{ $t('Main_Content.Read_Less')
-						}}</span>
-
-					<div>
-						<h2 class="FAQ_Header">{{ $t('FAQs.FAQ_Header') }}</h2>
-						<div class="accordion accordion-flush" id="accordionFlushExample">
-							<div class="accordion-item">
-								<h3 class="accordion-header" id="flush-headingOne">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseOne" aria-expanded="false"
-										aria-controls="flush-collapseOne">
-										{{ $t('FAQs.FAQ_1_Header') }}
-									</button>
-								</h3>
-								<div id="flush-collapseOne" class="accordion-collapse collapse"
-									aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-									<div class="accordion-body">
-										{{ $t('FAQs.FAQ_1_Content') }}
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h3 class="accordion-header" id="flush-headingTwo">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseTwo" aria-expanded="false"
-										aria-controls="flush-collapseTwo">
-										{{ $t('FAQs.FAQ_2_Header') }}
-									</button>
-								</h3>
-								<div id="flush-collapseTwo" class="accordion-collapse collapse"
-									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-									<div class="accordion-body">
-										{{ $t('FAQs.FAQ_2_Content') }}
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h3 class="accordion-header" id="flush-headingThree">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseThree" aria-expanded="false"
-										aria-controls="flush-collapseThree">
-										{{ $t('FAQs.FAQ_3_Header') }}
-									</button>
-								</h3>
-								<div id="flush-collapseThree" class="accordion-collapse collapse"
-									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-									<div class="accordion-body">
-										{{ $t('FAQs.FAQ_3_Content') }}
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h3 class="accordion-header" id="flush-headingFour">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseFour" aria-expanded="false"
-										aria-controls="flush-collapseFour">
-										{{ $t('FAQs.FAQ_4_Header') }}
-									</button>
-								</h3>
-								<div id="flush-collapseFour" class="accordion-collapse collapse"
-									aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-									<div class="accordion-body">
-										{{ $t('FAQs.FAQ_4_Content') }}
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h3 class="accordion-header" id="flush-headingFive">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseFive" aria-expanded="false"
-										aria-controls="flush-collapseFive">
-										{{ $t('FAQs.FAQ_5_Header') }}
-									</button>
-								</h3>
-								<div id="flush-collapseFive" class="accordion-collapse collapse"
-									aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-									<div class="accordion-body">
-										{{ $t('FAQs.FAQ_5_Content') }}
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h3 class="accordion-header" id="flush-headingSix">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#flush-collapseSix" aria-expanded="false"
-										aria-controls="flush-collapseSix">
-										{{ $t('FAQs.FAQ_6_Header') }}
-									</button>
-								</h3>
-								<div id="flush-collapseSix" class="accordion-collapse collapse"
-									aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-									<div class="accordion-body">
-										{{ $t('FAQs.FAQ_6_Content') }}
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<br>
-					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
@@ -208,24 +48,7 @@
 					<br>
 					<br>
 					<div class="b-700">
-						<p>
-							{{ $t('Main_Content.Btm_Header') }}
-						</p>
-						<p>
-							{{ $t('Main_Content.Btm_Content_1') }} |
-							{{ $t('Main_Content.Btm_Content_2') }}
-							<a :href="link_winbox"><strong>{{ $t('Main_Content.Btm_Content_3') }}</strong></a>
-							{{ $t('Main_Content.Btm_Content_3_5') }}
-						</p>
-						<p>
-							<a :href="winbox77_link">
-								<strong>
-									{{ $t('Main_Content.Btm_Content_4') }}
-								</strong>
-							</a> |
-							{{ $t('Main_Content.Btm_Content_5') }} |
-							{{ $t('Main_Content.Btm_Content_6') }}
-						</p>
+
 					</div>
 
 					<div class="footer-detail">
@@ -244,10 +67,7 @@
 						<div class="game">
 							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
 							{{ $t('Registered_TradeMark.Content_2') }}
-							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
-							{{ $t('Registered_TradeMark.Content_4') }}
-							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
-							{{ $t('Registered_TradeMark.Content_6') }}
+
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>
@@ -277,7 +97,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © BP9. All rights reserved.
+						Copyright © BP77. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -371,7 +191,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winbox', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	methods: {
 		async fetchLink() {
@@ -709,7 +529,7 @@ span {
 
 .b-700 p,
 a {
-	font-size: 11px;
+	font-size: 16px;
 	font-weight: 700;
 }
 
@@ -775,13 +595,13 @@ a {
 
 .footer-detail p {
 	color: #fff;
-	font-size: 11px;
+	font-size: 16px;
 	margin-top: 30px;
 	text-transform: uppercase;
 }
 
 .Visit p {
-	font-size: 11px;
+	font-size: 16px;
 }
 
 .Visit a {
@@ -812,7 +632,7 @@ a {
 
 .game {
 	text-align: left;
-	font-size: 11px;
+	font-size: 16px;
 	float: left;
 	width: 70%;
 	margin-top: 50px;

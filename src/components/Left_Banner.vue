@@ -4,20 +4,23 @@
 
 			<LB_Img_Carousel />
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/bonus.gif" alt="Bonus"></a>
+			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
+					alt="Daily free spin bonus" style="margin-bottom: 16px;">
+			</a>
+
 			<div class="Tablet-Mobile-view">
 				<div class="button-grp">
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 
-				<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/top up rm20.webp"
 						alt="Top Up Bonus"></a>
 			</div>
 		</div>
