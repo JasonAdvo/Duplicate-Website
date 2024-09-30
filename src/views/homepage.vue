@@ -1,49 +1,204 @@
 <template>
-	<div class="topbanner">
+	<div class="TopBanner">
 		<TopBanner />
 	</div>
 
 	<div class="main-content">
-		<div class="LeftBanner col-sm-12 col-md-12 col-lg-3">
+		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<LeftBanner />
 		</div>
 		<!-- Middle Blank Column -->
-
-		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-6">
+		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-4 col-xl-6">
 			<div class="Middle_Inner_Container">
-				<div class="site-tabs">
-					<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
-						:class="['image-container', { selected: selectedIndex === index }]"
-						@click="selectImage(index); handleRedirect(index)">
-						<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
-						{{ image.alt }}
+				<div style="display: flex; justify-content: center;">
+					<div class="site-tabs">
+						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
+							:class="['image-container', { selected: selectedIndex === index }]"
+							@click="selectImage(index); handleRedirect(index)">
+							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
+							{{ siteName[index] }}
+						</div>
 					</div>
 				</div>
 
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
-									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
+							<div class="image-wrapper col-lg-3 col-md-3 col-sm-4 col-4" v-for="n in 13" :key="n">
+								<a :href="link_winbox + 'winbox-register'" rel="nofollow">
+									<div class="inner_container">
+										<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+										<p>
+											{{ gameNames[n - 1] }}
+										</p>
+									</div>
 								</a>
-								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
-
-								<div v-if="n <= 12">
-									<a :href="link_output + 'winbox-register'" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
-									</a>
-								</div>
-								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="footer-content">
+					<h1>{{ $t('Main_Content.H1_Header_1') }} | {{ $t('Main_Content.H1_Header_2') }}</h1>
+					<br>
+					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
+					<p>{{ $t('Main_Content.H2_1_Content_1') }}</p>
+					<p>{{ $t('Main_Content.H2_1_Content_2') }}</p>
 
+					<div class="hide_content" v-if="showContent">
+
+						<h3>{{ $t('Main_Content.H3_1_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_1_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_1_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_1_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_1_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_1_Content_3') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_2_Content') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_3') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_4') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_4') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_5') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_5') }}</p>
+						<h3>{{ $t('Main_Content.H3_2_Header_6') }}</h3>
+						<p>{{ $t('Main_Content.H3_2_Content_6') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
+						<p>{{ $t('Main_Content.H2_3_Content') }}</p>
+						<h3>{{ $t('Main_Content.H3_3_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_3_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_3_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_3_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_3_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_3_Content_3_1') }}</p>
+						<p>{{ $t('Main_Content.H3_3_Content_3_2') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.H2_4_Header') }}</h2>
+						<h3>{{ $t('Main_Content.H3_4_Header_1') }}</h3>
+						<p>{{ $t('Main_Content.H3_4_Content_1') }}</p>
+						<h3>{{ $t('Main_Content.H3_4_Header_2') }}</h3>
+						<p>{{ $t('Main_Content.H3_4_Content_2') }}</p>
+						<h3>{{ $t('Main_Content.H3_4_Header_3') }}</h3>
+						<p>{{ $t('Main_Content.H3_4_Content_3') }}</p>
+						<p>{{ $t('Main_Content.H2_4_Btm_Content') }}</p>
+						<br>
+
+						<h2>{{ $t('Main_Content.Summary_Header') }}</h2>
+						<p>{{ $t('Main_Content.Summary_Content_1') }}</p>
+						<p>{{ $t('Main_Content.Summary_Content_2') }}</p>
+					</div>
+
+					<span class="read-more" @click="toggleContent" v-if="!showContent">{{ $t('Main_Content.Read_More')
+						}}</span>
+					<span class="read-less" @click="toggleContent" v-else>{{ $t('Main_Content.Read_Less')
+						}}</span>
+
+					<div>
+						<h2 class="FAQ_Header">{{ $t('FAQs.FAQ_Header') }}</h2>
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseOne" aria-expanded="false"
+										aria-controls="flush-collapseOne">
+										{{ $t('FAQs.FAQ_1_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseOne" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_1_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseTwo" aria-expanded="false"
+										aria-controls="flush-collapseTwo">
+										{{ $t('FAQs.FAQ_2_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_2_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree" aria-expanded="false"
+										aria-controls="flush-collapseThree">
+										{{ $t('FAQs.FAQ_3_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_3_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFour" aria-expanded="false"
+										aria-controls="flush-collapseFour">
+										{{ $t('FAQs.FAQ_4_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseFour" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_4_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingFive">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseFive" aria-expanded="false"
+										aria-controls="flush-collapseFive">
+										{{ $t('FAQs.FAQ_5_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseFive" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_5_Content') }}
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="flush-headingSix">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseSix" aria-expanded="false"
+										aria-controls="flush-collapseSix">
+										{{ $t('FAQs.FAQ_6_Header') }}
+									</button>
+								</h3>
+								<div id="flush-collapseSix" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										{{ $t('FAQs.FAQ_6_Content') }}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br>
 					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
@@ -52,30 +207,26 @@
 					</a>
 					<br>
 					<br>
-
-					<div class="footer_content_text_container">
+					<div class="b-700">
 						<p>
-							<strong>
-								<a :href="link_output">{{ $t('Footer_Content.FC_1') }}</a>
-								{{ $t('Footer_Content.FC_2') }}
-							</strong>
-							|
-							{{ $t('Footer_Content.FC_3') }}
+							{{ $t('Main_Content.Btm_Header') }}
 						</p>
-
 						<p>
-							<strong>
-								{{ $t('Footer_Content.FC_4') }}
-								<a :href="link_suboutput">{{ $t('Footer_Content.FC_5') }}</a>
-								{{ $t('Footer_Content.FC_6') }}
-							</strong>
-							|
-							{{ $t('Footer_Content.FC_7') }}
+							{{ $t('Main_Content.Btm_Content_1') }} |
+							{{ $t('Main_Content.Btm_Content_2') }}
+							<a :href="link_winbox"><strong>{{ $t('Main_Content.Btm_Content_3') }}</strong></a>
+							{{ $t('Main_Content.Btm_Content_3_5') }}
+						</p>
+						<p>
+							<a :href="winbox77_link">
+								<strong>
+									{{ $t('Main_Content.Btm_Content_4') }}
+								</strong>
+							</a> |
+							{{ $t('Main_Content.Btm_Content_5') }} |
+							{{ $t('Main_Content.Btm_Content_6') }}
 						</p>
 					</div>
-
-					<p class="b-700">
-					</p>
 
 					<div class="footer-detail">
 						<div class="Visit">
@@ -87,45 +238,55 @@
 							</p>
 						</div>
 						<div class="license">
-							<p style="font-weight: 500;">{{ $t('message.Game_Licence') }}</p>
+							<p>{{ $t('message.Game_Licence') }}</p>
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
 							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
 							{{ $t('Registered_TradeMark.Content_2') }}
+							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
+							{{ $t('Registered_TradeMark.Content_4') }}
+							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
+							{{ $t('Registered_TradeMark.Content_6') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>
-							<img src="/images/payment-list.webp" alt="payment-list">
+							<div class="payment_method_list">
+								<img src="/images/Bank_Transfer.webp" alt="Bank Transfer">
+								<img src="/images/Help_Pay2.webp" alt="Help Pay 2">
+								<img src="/images/QR_Pay.webp" alt="QR Pay">
+								<img src="/images/Eezie_Pay.webp" alt="Eezie Pay">
+								<img src="/images/Fast_Pay.webp" alt="Fast Pay">
+								<img src="/images/Doit_Now.webp" alt="Doit Now">
+								<img src="/images/Vader_Pay.webp" alt="Vaderpay">
+								<img src="/images/World_Pay.webp" alt="World Pay">
+							</div>
 						</div>
-						<div class="Certidicate_Security">
-							<p style="font-weight: 500;">{{ $t('message.Certidicate_Security') }}</p>
-							<img src="/images/Cert-list.webp" alt="certificate-list">
+						<div class="certification">
+							<p>{{ $t('message.Certidicate_Security') }}</p>
+							<div class="certification_list">
+								<img src="/images/Secure.webp" alt="Secure SSL Encryption">
+								<img src="/images/Cloudflare.webp" alt="CLOUDFLARE">
+							</div>
 						</div>
 						<div class="follow">
-							<p style="font-weight: 500;">{{ $t('message.Follow_Us') }}</p>
-							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
-							<a href="/"><img class="main-pulse" src="/images/telegram.webp" alt="telegram"></a>
-							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
-							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
-							<a href="https://rebrand.ly/wbxseo1pWhatsapp" rel="nofollow"><img class="main-pulse"
-									src="/images/whatsapp.webp" alt="whatsapp"></a>
-							<a href="/"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
+							<p>{{ $t('message.Follow_Us') }}</p>
+							<a href="/"><img src="/images/FB_Icon.webp" alt="facebook"></a>
+							<a href="/"><img src="/images/IG_Icon.webp" alt="instagram"></a>
+							<a href="/"><img src="/images/telegram_icon.webp" alt="telegram"></a>
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © GGLBET. All rights reserved.
+						Copyright © BP9. All rights reserved.
 					</div>
-
 				</div>
 			</div>
 		</div>
 
 		<!-- Right Banner Column -->
-		<div class="RightBanner col-sm-12 col-md-12 col-lg-3">
+		<div class="RightBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
 			<RightBanner />
 		</div>
-
 	</div>
 </template>
 
@@ -146,74 +307,58 @@ export default {
 	data() {
 		return {
 			selectedItem: 0,
-			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks. MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses. Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
 			altTexts: [
-				"Ramakien Belssing",
-				"Aztec 2",
-				"Football Fever",
-				"Firefly Hunter",
-				"Dark Ritual",
-				"Hungry Slime",
-				"Crazy Bounty",
-				"Dragon Chi’s Quest",
-				"Maya Elemental Totem",
-				"Xiang Qi Ways 2",
-				"Aztec",
-				"Last Samurai",
-				"Genie Mystery",
-				"Disco 777",
-				"Boom of Prosperity",
-				"World Cop Final",
-				"Astro Bunny",
-				"Cookie Hunter",
-				"Xmas Gift Delight",
-				"Mace of Hercules",
-				"Wheel of Gems",
-				"Scale of Heaven Anubis",
-				"Infinity Ocean",
-				"DJ Fever",
-				"Jewel Mastermind",
-				"PUBG 2",
-				"Fantastic Beast",
-				"Slotto 4D",
-				"Xiang Qi Ways",
-				"Candy Rush",
-				"Fortune God’s Pot",
-				"Tiger on Gold",
-				"Ancient Gems",
-				"Hu Fu Blessing",
-				"Battle Heroes",
-				"Mine of Prosperity",
-				"Eye of RA",
-				"Ninja Legend",
-				"Treasure of Drake",
-				"Immortal Love",
-				"Racing for Luck",
-				"Treasure Guardian",
-				"Fortune’s Warrior",
-				"Chronicle of Heroes 3 Warloads",
-				"Chronicle of Heroes Lucky Dragon",
-				"King of Glory",
-				"Bom Bom Bot",
-				"Counter Terrorists",
-				"Bubble Dragon",
-				"Road to UEFA",
-				"Bobo Monster",
-				"Chronicle of Heroes Divine Tree",
-				"Road To Euro"
+				"EVOLUTION GAMING",
+				"PRAGMATIC PLAY",
+				"PLAYTECH",
+				"ASIA GAMING",
+				"DREAM GAMING",
+				"ALLBET",
+				"SEXY BACCARAT",
+				"EZUGI",
+				"SA GAMING",
+				"WM CASINO",
+				"BIG GAMING",
+				"WORLD ENTERTAINMENT",
+				"MICRO GAMING PLUS"
+			],
+			gameNames: [
+				"EVOLUTION GAMING",
+				"PRAGMATIC PLAY",
+				"PLAYTECH",
+				"ASIA GAMING",
+				"DREAM GAMING",
+				"ALLBET",
+				"SEXY BACCARAT",
+				"EZUGI",
+				"SA GAMING",
+				"WM CASINO",
+				"BIG GAMING",
+				"WORLD ENTERTAINMENT",
+				"MICRO GAMING PLUS"
 			],
 			images: [
-				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot' },
-				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live' },
-				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sport' },
-				{ notSelected: '/images/Other_Img.webp', selected: '/images/Other_Img.webp', alt: 'Other' },
+				{ notSelected: '/images/CASINO_NotS.svg', selected: '/images/CASINO_S.svg', alt: 'Casino' },
+				{ notSelected: '/images/SLOTS_NotS.svg', selected: '/images/SLOTS_S.svg', alt: 'Slots' },
+				{ notSelected: '/images/FISHIING_NotS.svg', selected: '/images/FISHIING_S.svg', alt: 'Fishing' },
+				{ notSelected: '/images/ESPORTS_NotS.svg', selected: '/images/ESPORTS_S.svg', alt: 'E-Sports' },
+				{ notSelected: '/images/SPORTS_NotS.svg', selected: '/images/SPORTS_S.svg', alt: 'Sports' },
+				{ notSelected: '/images/CRASH_NotS.svg', selected: '/images/CRASH_S.svg', alt: 'Crash Game' },
 			],
-			status: null,
-			response: [],
-			link_suboutput: '',
-			stickyBarHeightWeb: 110,
+			siteName: [
+				"CASINO",
+				"SLOTS",
+				"FISHING",
+				"ESPORTS",
+				"SPORTS",
+				"CRASH GAME"
+			],
+			winbox77_link: '',
+			stickyBarHeightWeb: 90,
 			stickyBarHeightMobile: 75,
+			showContent: false,
+			activeAccordion: 0,
 		};
 	},
 	setup() {
@@ -226,27 +371,17 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_output', 'error']),
-	},
-	mounted() {
-		this.$store.dispatch('fetchLink_output');
-		this.fetchLink_ataskasino();
-		console.log(this.$i18n.locale);
+		...mapGetters(['link_winbox', 'error']),
 	},
 	methods: {
-		async fetchLink_ataskasino() {
+		async fetchLink() {
 			try {
-				const response = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxmys_co", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-
-				// this.status = response.status;
-				// console.log(this.status)
-				// this.response = response;
-				// console.log(this.response)
-				this.link_suboutput = response.data.data.attributes.winboxmys_co;
+				this.winbox77_link = response_winbox77.data.data.attributes.winbox77_my;
 			} catch (error) {
 				console.log(error)
 			}
@@ -302,8 +437,23 @@ export default {
 				});
 			}
 		},
+		toggleContent() {
+			this.showContent = !this.showContent; // Toggle the content visibility
+		},
+		setActiveAccordion(index) {
+			console.log(index)
+			if (this.activeAccordion === index) {
+				console.log(this.activeAccordion)
+				this.activeAccordion = null;
+			} else {
+				this.activeAccordion = index;
+			}
+		},
 	},
-
+	mounted() {
+		this.fetchLink();
+		this.$store.dispatch('fetchLink_winbox');
+	}
 }
 </script>
 
@@ -338,11 +488,10 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	/* background-image: url('/images/Bg_Img.webp'); */
-	background-color: rgba(35, 37, 43, 1);
+	background-image: url('/images/Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 }
 
 .Mobile_Middle_Banner {
@@ -403,8 +552,6 @@ export default {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-radius: 12px;
-	border: 1px solid #fff;
 }
 
 @media screen and (max-width: 576px) {
@@ -415,45 +562,49 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #eb008c;
+	color: #07a6fb;
 }
 
 .site-tabs {
-	display: flex;
 	flex-wrap: wrap;
 	margin: 10px 0;
-	justify-content: space-evenly;
+	position: relative;
+	display: flex;
 }
 
 .image-container {
-	width: calc(100% / 10);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% / 6);
 	cursor: pointer;
-	text-align: center;
 	color: white;
-	border: 2px solid #eb008c;
-	margin: 3px;
-	border-radius: 14px;
-	background-color: black;
+	white-space: nowrap;
+	font-size: 12px;
+	gap: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	flex-direction: column;
+}
+
+.image-container.selected {
+	background-color: #0066C9;
 }
 
 .image-container img {
-	width: 100%;
+	width: 30%;
 }
 
 @media (max-width: 768px) {
 	.site-tabs {
 		flex-wrap: nowrap;
 		overflow-x: auto;
-		/* Allow horizontal scrolling */
 		-webkit-overflow-scrolling: touch;
-		/* Enable smooth scrolling on touch devices */
 	}
 
 	.image-container {
-		width: 71px;
-		/* Fixed width for mobile view */
 		flex: 0 0 auto;
-		/* Prevent shrinking */
+		padding-bottom: 0;
 	}
 
 	.site-tabs::-webkit-scrollbar {
@@ -467,34 +618,35 @@ export default {
 		scrollbar-width: none;
 		/* Hide scrollbar on Firefox */
 	}
+
+	.site-tabs::before {
+		content: none;
+	}
+
+	.image-container.selected {
+		border-bottom: 0;
+	}
+}
+
+@media (max-width: 550px) {
+	.image-container {
+		width: 84px;
+	}
 }
 
 .image-grid-container {
-	display: grid;
-	gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 }
 
-@media (min-width: 1200px) {
-	.image-grid-container {
-		grid-template-columns: repeat(6, 1fr);
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-	.image-grid-container {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@media (max-width: 767px) {
-	.image-grid-container {
-		grid-template-columns: repeat(3, 1fr);
-	}
+.image-wrapper {
+	padding: 10px;
+	text-align: center;
 }
 
 .image-wrapper img {
-	width: 100%;
+	width: 50%;
 }
 
 .image-wrapper p {
@@ -502,25 +654,29 @@ export default {
 	padding: 3px 0;
 	margin-top: 8px;
 	width: 100%;
-	border: 1px solid #FF0198;
-	background-color: #FF0198;
-	/* background-image: linear-gradient(to bottom, #4ba614, #008c00); */
+	border: 0;
 	text-align: center;
 	color: white;
 	font-size: 11px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
-.image-wrapper p {
-	margin-bottom: 0;
+.inner_container {
+	padding: 10px 5px;
+	border-radius: 8px;
+	background-color: #283345;
+	height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.inner_container {
+		min-height: 120px;
+	}
 }
 
 .footer-content {
 	margin-top: 30px;
 	margin-bottom: 60px;
-	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	padding: 0 5px;
 }
 
 .footer-content h1,
@@ -532,38 +688,74 @@ p {
 }
 
 .footer-content h1 {
-	font-size: 25px;
+	font-size: 13px;
 	font-weight: 700;
 }
 
 .footer-content h2 {
-	font-size: 23px;
+	font-size: 12px;
 	font-weight: 700;
 }
 
 .footer-content h3 {
-	font-size: 18px;
+	font-size: 11px;
 	font-weight: 700;
 }
 
 .footer-content p,
-li {
-	font-size: 16px;
+span {
+	font-size: 11px;
 }
 
-.footer-content a {
-	font-size: 16px;
+.b-700 p,
+a {
+	font-size: 11px;
 	font-weight: 700;
 }
 
-
-.footer-content a {
+.b-700 strong {
 	font-weight: 700;
-	color: #eb008c;
+	color: #07a6fb;
 }
 
-.footer_content_text_container p {
-	color: black;
+.hide_content {
+	display: block;
+	/* Ensure the content is block when shown */
+}
+
+.read-more,
+.read-less {
+	cursor: pointer;
+	color: white;
+	/* Style for read more/less links */
+	text-decoration: underline;
+}
+
+.FAQ_Header {
+	font-size: 12px !important;
+	text-align: center;
+}
+
+.accordion {
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	/* Optional: Add a border around the accordion */
+	overflow: hidden;
+	/* Ensure child elements respect the border radius */
+}
+
+.accordion-button {
+	font-weight: 700;
+	font-size: 11px;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+
+.accordion-body {
+	font-size: 12px;
 }
 
 .image-wrapper a {
@@ -574,10 +766,6 @@ li {
 	width: 150px;
 }
 
-.b-700 {
-	font-weight: 700;
-}
-
 .footer-detail {
 	width: 90%;
 	margin: 0 auto;
@@ -586,14 +774,14 @@ li {
 }
 
 .footer-detail p {
-	color: black;
-	font-size: 13px;
+	color: #fff;
+	font-size: 11px;
 	margin-top: 30px;
 	text-transform: uppercase;
 }
 
 .Visit p {
-	font-size: 16px;
+	font-size: 11px;
 }
 
 .Visit a {
@@ -607,8 +795,7 @@ li {
 }
 
 .Visit strong {
-	font-weight: 700;
-	color: #eb008c;
+	color: #07a6fb;
 }
 
 .license {
@@ -617,7 +804,7 @@ li {
 }
 
 .license img {
-	width: 70%;
+	width: 80%;
 	margin-top: 10px;
 	float: left;
 	margin-right: 10px;
@@ -625,59 +812,46 @@ li {
 
 .game {
 	text-align: left;
-	font-size: 14px;
+	font-size: 11px;
 	float: left;
 	width: 70%;
-	margin-top: 80px;
-	color: black;
-}
-
-.game img {
-	margin-top: 10px;
-	width: 100%;
+	margin-top: 50px;
+	color: #fff;
 }
 
 @media screen and (max-width: 430px) {
 	.game {
-		font-size: 12px;
+		font-size: 8px;
 	}
 }
 
-.Certidicate_Security {
-	text-align: left;
-	font-size: 14px;
-	float: left;
-	width: 100%;
-	/* margin-top: 50px; */
-	color: black;
-}
-
-.Certidicate_Security img {
-	margin-top: 10px;
-	width: 70%;
-}
-
 .payment {
-	font-weight: 500;
 	float: left;
 	width: 100%;
 }
 
-.payment img {
-	width: 100%;
-	display: inline-block;
-	margin-bottom: 10px;
+.payment_method_list,
+.certification_list {
+	justify-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-top: 10px;
+}
+
+.payment_method_list img,
+.certification_list img {
+	background: #3b4758;
+	border-radius: 5px;
+	display: inline;
+	height: auto;
+	padding: 3px 10px;
+	width: 120px;
 }
 
 .certification {
 	float: left;
 	width: 100%;
-}
-
-.certification img {
-	width: 100%;
-	display: inline-block;
-	margin-bottom: 10px;
 }
 
 .follow {
@@ -715,12 +889,12 @@ li {
 
 .copyright {
 	text-align: center;
-	font-size: 12px;
+	font-size: 11px;
 	padding: 50px 0;
-	color: black;
+	color: #fff;
 }
 
-.topbanner {
+.TopBanner {
 	position: sticky;
 	top: 0;
 	z-index: 10;
