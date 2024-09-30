@@ -52,6 +52,27 @@
 					</a>
 					<br>
 					<br>
+
+					<div class="footer_content_text_container">
+						<p>
+							<strong>
+								<a :href="link_output">{{ $t('Footer_Content.FC_1') }}</a>
+								{{ $t('Footer_Content.FC_2') }}
+							</strong>
+							|
+							{{ $t('Footer_Content.FC_3') }}
+						</p>
+
+						<p>
+							<strong>
+								<a :href="link_suboutput">{{ $t('Footer_Content.FC_4') }}</a>
+								{{ $t('Footer_Content.FC_5') }}
+							</strong>
+							|
+							{{ $t('Footer_Content.FC_6') }}
+						</p>
+					</div>
+
 					<p class="b-700">
 					</p>
 
@@ -189,7 +210,7 @@ export default {
 			],
 			status: null,
 			response: [],
-			link_ataskasino: '',
+			link_suboutput: '',
 			stickyBarHeightWeb: 110,
 			stickyBarHeightMobile: 75,
 		};
@@ -214,9 +235,9 @@ export default {
 	methods: {
 		async fetchLink_ataskasino() {
 			try {
-				const response = await axios.get("https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com", {
+				const response = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxmys_co", {
 					headers: {
-						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021"
+						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
 
@@ -224,8 +245,8 @@ export default {
 				// console.log(this.status)
 				// this.response = response;
 				// console.log(this.response)
-				this.link_ataskasino = response.data.data.attributes.ataskasino_com;
-				// console.log(this.link_ataskasino)
+				this.link_suboutput = response.data.data.attributes.winboxmys_co;
+				// console.log(this.link_suboutput)
 			} catch (error) {
 				console.log(error)
 			}
@@ -480,12 +501,13 @@ export default {
 	padding: 3px 0;
 	margin-top: 8px;
 	width: 100%;
-	border: 1px solid #34740e;
-	background-color: #4ba614;
-	background-image: linear-gradient(to bottom, #4ba614, #008c00);
+	border: 1px solid #2baee4;
+	background-color: #2baee4;
+	/* background-image: linear-gradient(to bottom, #4ba614, #008c00); */
 	text-align: center;
-	color: white;
+	color: black;
 	font-size: 11px;
+	font-weight: 700;
 	margin-bottom: 10px;
 }
 
@@ -532,12 +554,11 @@ li {
 .footer-content a {
 	font-size: 16px;
 	font-weight: 700;
+	color: blue
 }
 
-
-.footer-content strong {
-	font-weight: 700;
-	color: blue
+.footer_content_text_container p {
+	color: black;
 }
 
 .image-wrapper a {
@@ -581,6 +602,7 @@ li {
 }
 
 .Visit strong {
+	font-weight: 700;
 	color: blue;
 }
 
