@@ -56,7 +56,7 @@ export default {
 }
 
 .LB_Imgs img {
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 16px;
 	border-radius: 8px;
 }
@@ -74,6 +74,7 @@ export default {
 
 .button-grp img {
 	padding: 0 5px;
+	width: 50%;
 }
 
 .no-br {

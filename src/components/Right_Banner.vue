@@ -130,7 +130,7 @@ export default {
 
 
 .RB_Imgs img {
-	max-width: 100%;
+	width: 100%;
 	border-radius: 8px;
 }
 
@@ -184,7 +184,7 @@ export default {
 }
 
 .Baki strong {
-	color: #4798d1;
+	color: #FF0198;
 	font-size: 19.5px;
 }
 
@@ -220,6 +220,14 @@ export default {
 	.Baki strong {
 		font-size: 40px;
 	}
+
+	.button-grp a {
+		width: 50% !important;
+	}
+
+	.button-grp img {
+		width: 100% !important;
+	}
 }
 
 @media screen and (max-width: 430px) {
@@ -231,13 +239,7 @@ export default {
 		font-size: 20px;
 	}
 
-	.button-grp a {
-		width: 50% !important;
-	}
 
-	.button-grp img {
-		width: 100% !important;
-	}
 }
 
 .button-grp {
@@ -259,6 +261,12 @@ export default {
 	padding: 20px 0 10px 0;
 	margin-bottom: 16px;
 	border-radius: 8px;
+}
+
+@media screen and (min-width: 430px) and (max-width: 1000px) {
+	.sport-betting-container {
+		padding: 50px 0 10px 0;
+	}
 }
 
 @media screen and (min-width: 1600px) {
@@ -331,6 +339,7 @@ export default {
 
 .team img {
 	margin-bottom: 10px;
+	width: 50px;
 }
 
 @font-face {

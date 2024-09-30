@@ -5,7 +5,7 @@
 		</a>
 
 		<a href="/">
-			<img class="Logo" src="/images/Top_Logo_Img.webp" alt="Logo">
+			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
 		</a>
 
 		<img class="partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
@@ -113,6 +113,7 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100px;
+	border-bottom: 2px solid #FF0198;
 }
 
 .Logo {
@@ -120,7 +121,7 @@ export default {
 	top: 0px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 200px;
+	width: 220px;
 }
 
 .partnership {
