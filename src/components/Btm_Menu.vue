@@ -2,7 +2,7 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank" class="social-media-icon">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/download_side_btn.webp" alt="download">
 				</a>
 				<a href="https://t.me/atas77channel" rel="nofollow" target="_blank" class="social-media-icon">
@@ -19,22 +19,22 @@
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_History_Img.png" alt="Sign Up">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_Promo_Img.png" alt="Promotion">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_Live_Chat_Img.png" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'sign-up'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/M24_BtmB_Setting_Img.png" alt="Setting">
 					</a>
 				</div>

@@ -8,7 +8,14 @@
 		"bet_now": "TARUH",
 		"show_more": "Lagi",
 		"team_1": "Man Utd",
-		"team_2": "Fulham"
+		"team_2": "Fulham",
+		"Game_Licence": "GAME LICENSE",
+		"Payment_Method": "CARA BAYARAN",
+		"Certidicate_Security": "Sijil & Keselamatan",
+		"Follow_Us": "IKUT KAMI",
+		"Visit": "LAWATI BLOG RASMI XE88 KAMI DI:",
+		"Click": "KLIK DI SINI",
+		"Website": "XE88"
 	},
 	"Upper_Content": {
 		"h1_First_Line": "MAMAK24 Kasino Dalam Talian Terpercaya",
@@ -89,5 +96,9 @@
 	"Announce_Bar": {
 		"Header": "MAMAK24 Rasmi",
 		"Content": "Platform perjudian paling dipercayai di Asia! Temui destinasi utama Malaysia untuk kasino langsung, slot, dan sportsbook. Dengan keselamatan bertaraf tinggi, pilihan permainan yang luas, dan sokongan pelanggan yang responsif, MAMAK24 menawarkan bonus selamat datang dan promosi yang murah hati. Log masuk sekarang dan nikmati pengalaman permainan yang lancar dan memuaskan."
+	},
+	"Registered_TradeMark": {
+		"Content_1": "XE88 sepenuhnya dilesenkan dan diatur oleh Kerajaan Curacao,",
+		"Content_2": "menjamin pengalaman permainan yang selamat dan sah. Beroperasi di bawah Lesen Utama N.V. #365/JAZ, kami mengutamakan keselamatan dan keseronokan anda semasa bermain."
 	}
 }

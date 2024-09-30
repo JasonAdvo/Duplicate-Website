@@ -25,14 +25,14 @@ const store = createStore({
 				commit('SET_FETCHING', true);  // 设置正在获取数据的状态
 				try {
 					const response = await axios.get(
-						'https://seo.mobileapplab.online/api/atas?fields[0]=atascasinobet_com',
+						'https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my',
 						{
 							headers: {
-								Authorization: 'Bearer 1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021'
+								Authorization: 'Bearer e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568'
 							}
 						}
 					);
-					commit('SET_LINK_OUTPUT', response.data.data.attributes.atascasinobet_com);
+					commit('SET_LINK_OUTPUT', response.data.data.attributes.winboxofficial_my);
 				} catch (error) {
 					console.error(error);
 				} finally {

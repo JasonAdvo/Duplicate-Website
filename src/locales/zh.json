@@ -8,7 +8,14 @@
 		"bet_now": "下注",
 		"show_more": "更多",
 		"team_1": "曼彻斯特联",
-		"team_2": "富勒姆"
+		"team_2": "富勒姆",
+		"Game_Licence": "游戏许可",
+		"Payment_Method": "支付方式",
+		"Certidicate_Security": "证书 & 安全",
+		"Follow_Us": "关注我们",
+		"Visit": "访问我们的官方 XE88 博客：",
+		"Click": "点击这里",
+		"Website": "XE88"
 	},
 	"Upper_Content": {
 		"h1_First_Line": "MAMAK24 可信赖的在线赌场",
@@ -89,5 +96,9 @@
 	"Announce_Bar": {
 		"Header": "MAMAK24 官方",
 		"Content": "亚洲最受信赖的赌博平台！发现马来西亚顶级的现场赌场、老虎机和体育博彩目的地。MAMAK24 提供顶级安全性、丰富的游戏选择以及响应迅速的客户支持，还提供丰厚的欢迎奖金和促销活动。立即登录，享受流畅且令人满意的游戏体验。"
+	},
+	"Registered_TradeMark": {
+		"Content_1": "XE88 完全由库拉索政府授权和监管，",
+		"Content_2": "确保安全合法的游戏体验。我们在 N.V. #365/JAZ 的主许可证下运营，优先考虑您的安全和游戏乐趣。"
 	}
 }

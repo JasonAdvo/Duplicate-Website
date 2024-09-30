@@ -1,25 +1,25 @@
 <template>
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
-			<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/188welcome_bonus.webp"
-					alt="188% Welcome Bonus"></a>
-			<div class="Tablet-Mobile-view">
-				<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/LB_Img_2.jpg" alt="Share"></a>
-				<div class="button-grp">
-					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a :href="link_output + 'sign-up'" rel="nofollow"><img class="col-6 no-br"
-							src="/images/M24_More_btn.png" alt="More"></a>
-				</div>
-			</div>
+
 			<LB_Img_Carousel />
 
-			<a :href="link_output + 'sign-up'" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
-					alt="Top Up Bonus"></a>
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/bonus.gif" alt="Bonus"></a>
+			<div class="Tablet-Mobile-view">
+				<div class="button-grp">
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+							src="/images/M24_Share_btn.gif" alt="Share"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+							src="/images/M24_Downline_btn.png" alt="Downline"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+							src="/images/M24_Copy_btn.png" alt="Copy"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="col-6 no-br"
+							src="/images/M24_More_btn.png" alt="More"></a>
+				</div>
+
+				<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+						alt="Top Up Bonus"></a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -58,7 +58,7 @@ export default {
 .LB_Imgs img {
 	max-width: 100%;
 	margin-bottom: 16px;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -70,11 +70,6 @@ export default {
 		padding-bottom: 0px;
 		border-right: unset;
 	}
-}
-
-
-.button-grp {
-	margin-top: -32%;
 }
 
 .button-grp img {

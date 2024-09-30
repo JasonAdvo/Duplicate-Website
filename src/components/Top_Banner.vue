@@ -3,6 +3,13 @@
 		<a href="/">
 			<div class="Top_Banner_Container" />
 		</a>
+
+		<a href="/">
+			<img class="Logo" src="/images/Top_Logo_Img.webp" alt="Logo">
+		</a>
+
+		<img class="partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
+
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
@@ -27,11 +34,11 @@
 				</span>
 			</div>
 		</div>
-		<div class="running-sentence-container">
+		<!-- <div class="running-sentence-container">
 			<div class="running-sentence">
 				<strong>{{ $t('Announce_Bar.Header') }}</strong> - {{ $t('Announce_Bar.Content') }}
 			</div>
-		</div>
+		</div> -->
 	</div>
 </template>
 
@@ -42,7 +49,8 @@ import { useI18n } from 'vue-i18n';
 export default {
 	name: 'TopBanner',
 	setup() {
-		const { locale } = useI18n();
+		const { locale } = useI18n(); // Destructure locale from Vue I18n
+
 		const showPopup = ref(false);
 		const selectedLanguage = ref(localStorage.getItem('selectedLanguage') || 'en');
 
@@ -74,9 +82,18 @@ export default {
 		return {
 			showPopup,
 			changeLanguage,
-			togglePopup
+			togglePopup,
+			selectedLanguage
 		};
-	}
+	},
+	mounted() {
+		// Retrieve and apply the stored language setting on component mount
+		const savedLanguage = localStorage.getItem('selectedLanguage');
+		if (savedLanguage) {
+			this.$i18n.locale = savedLanguage;
+			this.selectedLanguage = savedLanguage;
+		}
+	},
 };
 </script>
 
@@ -85,41 +102,63 @@ export default {
 	.Top_Banner_Container {
 		height: 50px !important;
 	}
-
-	.TR_Img {
-		max-width: 40px;
-	}
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TBanner_Img.jpg');
+	/* background-image: url('/images/TBanner_Img.jpg'); */
+	background-color: black;
 	position: relative;
 	background-size: cover;
 	background-position: 0 24%;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 60px;
+	height: 100px;
 }
 
-.TopBanner {
-	width: 100%;
-}
-
-.TR_Img {
+.Logo {
 	position: absolute;
-	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
-	max-width: 60px;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+}
+
+.partnership {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 100px;
 }
 
 .GT-icon {
 	position: absolute;
-	top: 20px;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 20px;
 	z-index: 1;
 	color: white;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+
+	.Logo {
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+	}
+
+	.partnership {
+		top: 10px;
+		left: 20px;
+		width: 50px;
+	}
+
+}
+
+.TopBanner {
+	width: 100%;
 }
 
 .overlay {
@@ -154,12 +193,6 @@ export default {
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
-}
-
-@media screen and (max-width: 430px) {
-	.GT-icon {
-		top: 14px !important;
-	}
 }
 
 .running-sentence-container {

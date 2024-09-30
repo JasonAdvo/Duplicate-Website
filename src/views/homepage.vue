@@ -1,12 +1,4 @@
 <template>
-	<div>
-		<PopUpCard />
-	</div>
-
-	<div>
-		<BackToTop />
-	</div>
-
 	<div class="topbanner">
 		<TopBanner />
 	</div>
@@ -23,8 +15,8 @@
 					<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 						:class="['image-container', { selected: selectedIndex === index }]"
 						@click="selectImage(index); handleRedirect(index)">
-						<img :src="selectedIndex === index ? image.selected : image.notSelected"
-							:alt="'Image ' + (index + 1)">
+						<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
+						{{ image.alt }}
 					</div>
 				</div>
 
@@ -32,13 +24,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a v-if="n <= 12" :href="link_output + 'sign-up'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="link_output + 'sign-up'" rel="nofollow">
+									<a :href="link_output + 'winbox-register'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -63,6 +55,46 @@
 					<p class="b-700">
 					</p>
 
+					<div class="footer-detail">
+						<div class="Visit">
+							<p>
+								{{ $t('message.Visit') }}
+								<a href="/">
+									<strong>{{ $t('message.Click') }} {{ $t('message.Website') }}</strong>
+								</a>
+							</p>
+						</div>
+						<div class="license">
+							<p style="font-weight: 500;">{{ $t('message.Game_Licence') }}</p>
+							<img src="/images/Footer-License-Img.webp" alt="Game License">
+						</div>
+						<div class="game">
+							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
+							{{ $t('Registered_TradeMark.Content_2') }}
+						</div>
+						<div class="payment">
+							<p>{{ $t('message.Payment_Method') }}</p>
+							<img src="/images/payment-list.webp" alt="payment-list">
+						</div>
+						<div class="Certidicate_Security">
+							<p style="font-weight: 500;">{{ $t('message.Certidicate_Security') }}</p>
+							<img src="/images/Cert-list.webp" alt="certificate-list">
+						</div>
+						<div class="follow">
+							<p style="font-weight: 500;">{{ $t('message.Follow_Us') }}</p>
+							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
+							<a href="/"><img class="main-pulse" src="/images/telegram.webp" alt="telegram"></a>
+							<a href="/"><img class="main-pulse" src="/images/instagram.webp" alt="instagram"></a>
+							<a href="/"><img class="main-pulse" src="/images/youtube.webp" alt="youtube"></a>
+							<a href="https://rebrand.ly/wbxseo1pWhatsapp" rel="nofollow"><img class="main-pulse"
+									src="/images/whatsapp.webp" alt="whatsapp"></a>
+							<a href="/"><img class="main-pulse" src="/images/mail.webp" alt="mail"></a>
+						</div>
+					</div>
+					<div class="copyright">
+						Copyright © XE88. All rights reserved.
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -80,8 +112,6 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
-import PopUpCard from '@/components/PopUpCard.vue';
-import BackToTop from '@/components/BackToTop.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
 
@@ -90,8 +120,6 @@ export default {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		PopUpCard,
-		BackToTop,
 	},
 	data() {
 		return {
@@ -154,26 +182,15 @@ export default {
 				"Road To Euro"
 			],
 			images: [
-				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
-				{ notSelected: '/images/RICH_NotS.webp', selected: '/images/RICH_S.webp' },
-				{ notSelected: '/images/Bongo_NotS.webp', selected: '/images/Bongo_S.webp' },
-				{ notSelected: '/images/Pragmatic_NotS.webp', selected: '/images/Pragmatic_S.webp' },
-				{ notSelected: '/images/Playtech_NotS.webp', selected: '/images/Playtech_S.webp' },
-				{ notSelected: '/images/AceWin_NotS.webp', selected: '/images/AceWin_S.webp' },
-				{ notSelected: '/images/JDB_NotS.webp', selected: '/images/JDB_S.webp' },
-				{ notSelected: '/images/Dragoon_NotS.webp', selected: '/images/Dragoon_S.webp' },
-				{ notSelected: '/images/Rich88_NotS.webp', selected: '/images/Rich88_S.webp' },
-				{ notSelected: '/images/Bigpot_NotS.webp', selected: '/images/Bigpot_S.webp' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp' },
-				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp' },
-				{ notSelected: '/images/Other_NotS.webp', selected: '/images/Other_S.webp' },
+				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot' },
+				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live' },
+				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sport' },
+				{ notSelected: '/images/Other_Img.webp', selected: '/images/Other_Img.webp', alt: 'Other' },
 			],
 			status: null,
 			response: [],
 			link_ataskasino: '',
-			stickyBarHeightWeb: 80,
+			stickyBarHeightWeb: 110,
 			stickyBarHeightMobile: 75,
 		};
 	},
@@ -192,6 +209,7 @@ export default {
 	mounted() {
 		this.$store.dispatch('fetchLink_output');
 		this.fetchLink_ataskasino();
+		console.log(this.$i18n.locale);
 	},
 	methods: {
 		async fetchLink_ataskasino() {
@@ -299,7 +317,7 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_img.png');
+	background-image: url('/images/Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom;
@@ -375,37 +393,25 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #ffc107;
-}
-
-.google-map-link {
-	font-style: italic;
-	color: #f0d843 !important;
-	font-weight: bolder;
-	font-size: 12px;
-	overflow-wrap: anywhere;
-}
-
-.map-container {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 20px 0;
-}
-
-.platform {
-	color: #f0d843 !important;
+	color: blue
 }
 
 .site-tabs {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 10px 0;
+	justify-content: space-evenly;
 }
 
 .image-container {
-	width: 6.66%;
+	width: calc(100% / 10);
 	cursor: pointer;
+	text-align: center;
+	color: white;
+	border: 2px solid #2baee4;
+	margin: 3px;
+	border-radius: 14px;
+	background-color: black;
 }
 
 .image-container img {
@@ -444,6 +450,7 @@ export default {
 .image-grid-container {
 	display: grid;
 	gap: 10px;
+	width: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -489,6 +496,9 @@ export default {
 .footer-content {
 	margin-top: 30px;
 	margin-bottom: 60px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 0 5px;
 }
 
 .footer-content h1,
@@ -527,7 +537,7 @@ li {
 
 .footer-content strong {
 	font-weight: 700;
-	color: #ffd700;
+	color: blue
 }
 
 .image-wrapper a {
@@ -542,9 +552,150 @@ li {
 	font-weight: 700;
 }
 
+.footer-detail {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.footer-detail p {
+	color: black;
+	font-size: 13px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.Visit p {
+	font-size: 16px;
+}
+
+.Visit a {
+	animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.Visit strong {
+	color: blue;
+}
+
+.license {
+	float: left;
+	width: 30%;
+}
+
+.license img {
+	width: 70%;
+	margin-top: 10px;
+	float: left;
+	margin-right: 10px;
+}
+
+.game {
+	text-align: left;
+	font-size: 14px;
+	float: left;
+	width: 70%;
+	margin-top: 80px;
+	color: black;
+}
+
+.game img {
+	margin-top: 10px;
+	width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+	.game {
+		font-size: 12px;
+	}
+}
+
+.Certidicate_Security {
+	text-align: left;
+	font-size: 14px;
+	float: left;
+	width: 100%;
+	/* margin-top: 50px; */
+	color: black;
+}
+
+.Certidicate_Security img {
+	margin-top: 10px;
+	width: 70%;
+}
+
+.payment {
+	font-weight: 500;
+	float: left;
+	width: 100%;
+}
+
+.payment img {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.certification {
+	float: left;
+	width: 100%;
+}
+
+.certification img {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.follow {
+	float: left;
+	width: 100%;
+}
+
+.follow a img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.main-pulse {
+	animation: pulse 1s infinite ease-in-out alternate;
+}
+
+.payment P,
+.certification p,
+.follow p {
+	margin-bottom: 0;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	padding: 50px 0;
+	color: black;
+}
+
 .topbanner {
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 10;
 }
 </style>
