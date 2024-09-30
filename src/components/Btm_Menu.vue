@@ -6,44 +6,47 @@
 					<img src="/images/Save_Links.webp" alt="Save Links">
 				</a>
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/MM_Grp.webp" alt="MM Group">
-				</a>
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
+					<img src="/images/Berjayasama_Img.webp" alt="Berjayasama Group">
 				</a>
 			</div>
 
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
+					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
 				<div class="col Home_Container">
-					<a class="d-f" :href="output_Link" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.gif" alt="Home">
+					<a class="d-f home" :href="output_Link" rel="nofollow" target="_blank">
+						<i class="material-icons">home</i>
+						{{ $t('Btm_Section.Home') }}
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Img.gif" alt="History">
+						<i class="material-icons">redeem</i>
+						{{ $t('Btm_Section.History') }}
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Promo_Img.gif" alt="Promotion">
+						<i class="material-icons">redeem</i>
+						{{ $t('Btm_Section.Promo') }}
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Chat_Img.gif" alt="Live Chat">
+						<i class="material-icons">question_answer</i>
+						{{ $t('Btm_Section.Live') }}
+
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="output_Link + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
+						<i class="material-icons">settings</i>
+						{{ $t('Btm_Section.Setting') }}
 					</a>
 				</div>
 			</div>
@@ -97,7 +100,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -700%;
+	top: -500%;
 	right: 0;
 }
 
@@ -125,6 +128,12 @@ export default {
 	color: white !important;
 }
 
+.Home_Container {
+	background-color: #24be17;
+	box-shadow: 0 0px 0px #2bd83e;
+	border-radius: 10px 10px 0 0;
+}
+
 .d-f span {
 	color: white !important;
 }
@@ -132,6 +141,7 @@ export default {
 .col {
 	flex: 1;
 	text-align: center;
+	height: 100%;
 }
 
 .col img {

@@ -27,7 +27,7 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 30" :key="n">
+							<div class="image-wrapper" v-for="n in 35" :key="n">
 								<a v-if="n <= 12" :href="output_Link + 'winbox-rigester'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
@@ -48,27 +48,6 @@
 					</a>
 					<br>
 					<br>
-
-					<p>
-						{{ $t('Main_Content.Btm_Content_1') }} |
-						{{ $t('Main_Content.Btm_Content_2') }}
-						<a :href="output_Link">
-							<strong>
-								{{ $t('Main_Content.Btm_Content_3') }}
-							</strong>
-						</a>
-						{{ $t('Main_Content.Btm_Content_4') }}
-					</p>
-
-					<p>
-						{{ $t('Main_Content.Btm_Content_5') }}
-						<a :href="winboxofficial_link">
-							<strong>
-								{{ $t('Main_Content.Btm_Content_6') }}
-							</strong>
-						</a>
-						{{ $t('Main_Content.Btm_Content_7') }}
-					</p>
 
 					<div class="footer-detail">
 						<div class="Visit">
@@ -111,7 +90,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © MYKAD99. All rights reserved.
+						Copyright © MIBOX8. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -129,7 +108,6 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
-import BackToTop from '@/components/BackToTop.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
 import PopUpCard from '@/components/PopUpCard.vue';
@@ -139,8 +117,6 @@ export default {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
-		BackToTop,
-		PopUpCard
 	},
 	data() {
 		return {
@@ -179,13 +155,12 @@ export default {
 				"PLAYTECH",
 			],
 			images: [
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
-				{ notSelected: '/images/Mega_NotS.webp', selected: '/images/Mega_S.webp', alt: 'Mega H5' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot Game' },
+				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI Game' },
 				{ notSelected: '/images/Power_NotS.webp', selected: '/images/Power_S.webp', alt: 'Power Game' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
-				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp', alt: 'Sport' },
-				{ notSelected: '/images/Fish_NotS.webp', selected: '/images/Fish_S.webp', alt: 'Fish' },
+				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live Casino Game' },
+				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp', alt: 'Sport Game' },
+				{ notSelected: '/images/Other_NotS.webp', selected: '/images/Other_S.webp', alt: 'Other Game' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -435,7 +410,7 @@ export default {
 }
 
 .image-container {
-	width: calc(100% / 7);
+	width: calc(100% / 6);
 	padding-bottom: 30px;
 	cursor: pointer;
 }

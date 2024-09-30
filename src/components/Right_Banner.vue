@@ -72,6 +72,8 @@
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
+			<img src="/images/Scan_QR_Wallet_Img.webp" alt="Scan QR Wallet">
+
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
 					<a href="/"><img class="Join" src="/images/RB_Login_Img.webp" alt="Login"></a>
@@ -125,39 +127,7 @@
 				</div>
 
 				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<img src="/images/Free_Video.gif" alt="Free Video">
-				</a>
-
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 					<img style="margin-bottom: 16px;" src="/images/Predict.gif" alt="Predict and Win">
-				</a>
-			</div>
-
-			<div class="sport-betting-container">
-				<div class="SB-content-container">
-					<div class="team">
-						<img src="/images/Newcastle.webp" alt="Newcastle">
-						<p>{{ $t('message.team_1') }}</p>
-					</div>
-					<div class="time-info">
-						<p>{{ $t('message.start_time') }}</p>
-						<p>28 Sep 2024</p>
-						<p class="time">19:30</p>
-						<a href="/">
-							<div class="bet-now-container">
-								<p>{{ $t('message.bet_now') }}</p>
-							</div>
-						</a>
-					</div>
-					<div class="team">
-						<img src="/images/Man_City.webp" alt="Man City">
-						<p>{{ $t('message.team_2') }}</p>
-					</div>
-				</div>
-				<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-					<div class="show-more-button-container">
-						<p>{{ $t('message.show_more') }}</p>
-					</div>
 				</a>
 			</div>
 
@@ -197,11 +167,11 @@ export default {
 <style scoped>
 .button-grp {
 	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	bottom: 12%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -210,7 +180,7 @@ export default {
 	}
 
 	.button-grp {
-		bottom: 8%;
+		bottom: 12%;
 		margin-top: unset;
 	}
 }
@@ -344,8 +314,10 @@ tbody td {
 .Big_Info_Container {
 	border-radius: 8px;
 	padding: 8px 10px;
-	background: linear-gradient(0deg, #f0f0f0, #f0f0f0);
-	box-shadow: 2px 4px 20px rgb(14 14 14 / 61%);
+	/* background: linear-gradient(0deg, #f0f0f0, #f0f0f0); */
+	background-image: url('/images/Big_Info_Bg_Img.webp');
+	background-size: 100% 100%;
+	/* box-shadow: 2px 4px 20px rgb(14 14 14 / 61%); */
 	margin-bottom: 16px;
 }
 

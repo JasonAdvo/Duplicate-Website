@@ -87,10 +87,6 @@
 			</div>
 
 			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
-				<img src="/images/Free_Video.gif" alt="Free Video">
-			</a>
-
-			<a :href="output_Link + 'winbox-rigester'" rel="nofollow">
 				<img src="/images/Predict.gif" alt="Predict and Win">
 			</a>
 		</div>
@@ -148,13 +144,6 @@ export default {
 	flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1000px) {
-	.button-grp {
-		bottom: 10%;
-		margin-top: unset;
-	}
-}
-
 @media screen and (min-width: 1920px) {
 	.button-grp {
 		margin-top: -27%;
@@ -185,7 +174,7 @@ export default {
 }
 
 .title span {
-	color: black;
+	color: #d3ab22;
 	font-weight: 700;
 	padding-left: 4px;
 }
@@ -240,7 +229,7 @@ table {
 table td {
 	font-size: 9px;
 	color: black;
-	border: 1px solid #238aa1;
+	border: 1px solid #53b948;
 	font-weight: 500;
 }
 
@@ -269,7 +258,7 @@ tbody td {
 }
 
 .amount {
-	color: red;
+	color: #d3ab22;
 	text-align: right;
 	font-family: 'Montserrat', sans-serif;
 }

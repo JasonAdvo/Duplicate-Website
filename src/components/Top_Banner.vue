@@ -4,10 +4,6 @@
 			<div class="Top_Banner_Container" />
 		</a>
 		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
-		<a href="/">
-			<img class="Logo" src="/images/TB_Logo_Img.gif" alt="Logo">
-
-		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 
@@ -125,9 +121,9 @@ export default {
 
 .Partnership {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
-	width: 60px;
+	width: 100px;
 }
 
 .Logo {
@@ -144,22 +140,21 @@ export default {
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
-	color: white;
+	color: black;
 	cursor: pointer;
 	width: 50px;
 }
 
 @media screen and (max-width: 430px) {
 
-
 	.Partnership {
 		top: 5px;
-		width: 40px;
+		width: 80px;
 	}
 
 	.GT-icon {
 		width: 40px;
-		top: 5px;
+		top: 8px;
 	}
 }
 
