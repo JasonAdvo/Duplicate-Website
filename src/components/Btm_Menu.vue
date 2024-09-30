@@ -7,13 +7,6 @@
 				</a>
 			</div>
 
-			<div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
-				</a>
-			</div>
-
 			<div class="footer-content">
 				<div class="col">
 					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
