@@ -24,13 +24,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 58" :key="n">
-								<a v-if="n <= 12" :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_output + 'winbox-rigester'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+									<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -54,30 +54,7 @@
 
 				<div class="footer-content">
 					<div class="footer_inner_content">
-						<p>
-							<strong>
-								<a :href="link_winbox77" style="color: #74323e;">
-									{{ $t('Main_Content.Btm_Content_1') }}
-								</a>
-							</strong> |
-							<strong>{{ $t('Main_Content.Btm_Content_2') }}</strong> |
-							{{ $t('Main_Content.Btm_Content_3') }}
-						</p>
 
-						<p>
-							<strong>{{ $t('Main_Content.Btm_Content_4') }}</strong>
-							<span v-if="!['ms', 'zh'].includes($i18n.locale)"> | </span>
-							<strong>
-								<a :href="winboxofficial_link" style="color: #74323e;">
-									{{ $t('Main_Content.Btm_Content_5') }}
-								</a>
-							</strong>
-							<span v-if="!['en', 'zh'].includes($i18n.locale)"> | </span>
-							<strong>{{ $t('Main_Content.Btm_Content_6') }}</strong>
-							<span v-if="!['ms'].includes($i18n.locale)"> | </span>
-							{{ $t('Main_Content.Btm_Content_6_5') }} {{ $t('Main_Content.Btm_Content_7') }}
-
-						</p>
 					</div>
 
 					<div class="footer-detail">
@@ -216,21 +193,15 @@ export default {
 				"Road to Euro"
 			],
 			images: [
-				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp', alt: 'Advant Play' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
-				{ notSelected: '/images/Rich_NotS.webp', selected: '/images/Rich_S.webp', alt: 'Rich' },
-				{ notSelected: '/images/BG_NotS.webp', selected: '/images/BG_S.webp', alt: 'Bongo' },
-				{ notSelected: '/images/PP_NotS.webp', selected: '/images/PP_S.webp', alt: 'Pragmatic Play' },
-				{ notSelected: '/images/PT_NotS.webp', selected: '/images/PT_S.webp', alt: 'Playtech' },
-				{ notSelected: '/images/AW_NotS.webp', selected: '/images/AW_S.webp', alt: 'Ace Win' },
-				{ notSelected: '/images/JDB_NotS.webp', selected: '/images/JDB_S.webp', alt: 'JDB' },
-				{ notSelected: '/images/DS_NotS.webp', selected: '/images/DS_S.webp', alt: 'Dragon Soft' },
-				{ notSelected: '/images/Rich88_NotS.webp', selected: '/images/Rich88_S.webp', alt: 'Rich88' },
-				{ notSelected: '/images/BP_NotS.webp', selected: '/images/BP_S.webp', alt: 'Bigpot Gaming' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Live' },
-				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Sport' },
-				{ notSelected: '/images/Others_NotS.webp', selected: '/images/Others_S.webp', alt: 'Other' },
+				{ notSelected: '/images/Power.webp', selected: '/images/Power.webp', alt: 'V Power Game' },
+				{ notSelected: '/images/Rich.webp', selected: '/images/Rich.webp', alt: 'Rich Game' },
+				{ notSelected: '/images/BT_Gaming.webp', selected: '/images/BT_Gaming.webp', alt: 'BT Gaming' },
+				{ notSelected: '/images/CG_Gaming.webp', selected: '/images/CG_Gaming.webp', alt: 'CG Creative Gaming' },
+				{ notSelected: '/images/AFB_Gaming.webp', selected: '/images/AFB_Gaming.webp', alt: 'AFB Gaming' },
+				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI Game' },
+				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot Game' },
+				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live Game' },
+				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp', alt: 'Sportbook' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -247,7 +218,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winbox77', 'error']),
+		...mapGetters(['link_output', 'error']),
 		currentLocale() {
 			return this.$i18n.locale; // or however you access the locale
 		}
@@ -320,7 +291,7 @@ export default {
 	},
 	mounted() {
 		this.fetchLink();
-		this.$store.dispatch('fetchLink_winbox77');
+		this.$store.dispatch('fetchLink_output');
 	}
 }
 </script>
@@ -516,7 +487,7 @@ export default {
 }
 
 .image-container {
-	width: calc(100% / 15);
+	width: calc(100% / 9);
 	padding-bottom: 20px;
 	cursor: pointer;
 }
@@ -598,8 +569,10 @@ export default {
 	color: white;
 	font-size: 11px;
 	margin-bottom: 10px;
-	border: 1px solid #74323e;
-	background-image: linear-gradient(to bottom, #74323e, #743136);
+	/* border: 1px solid #74323e; */
+	/* background-image: linear-gradient(to bottom, #74323e, #743136); */
+	background-image: url('/images/Play_Btn_Img.webp');
+	background-size: 100% 100%;
 }
 
 .image-wrapper p {
@@ -688,7 +661,7 @@ li {
 
 .Visit a {
 	animation: blink 0.8s infinite;
-	color: #74323e;
+	color: #086cec;
 }
 
 @keyframes blink {
@@ -698,7 +671,7 @@ li {
 }
 
 .Visit strong {
-	color: #74323e;
+	color: #086cec;
 }
 
 .license {

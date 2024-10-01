@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Spin Bonus.webp"
 					alt="Spin Bonus">
 			</a>
 
@@ -11,13 +11,13 @@
 			<div class="Share_Section">
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
 							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>21 Sep 2024</p>
 						<p class="time">19:30</p>
-						<a :href="link_winbox77 + 'winbox-login'" rel="nofollow">
+						<a href="/">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -43,7 +43,7 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
@@ -63,10 +63,10 @@ export default {
 		LB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winbox77', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winbox77');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>

@@ -4,7 +4,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
 					</a>
 				</div>
@@ -25,7 +25,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winbox77', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	methods: {
 		closeModal() {
@@ -35,7 +35,7 @@ export default {
 	},
 	mounted() {
 		document.body.style.overflow = 'hidden';
-		this.$store.dispatch('fetchLink_winbox77');
+		this.$store.dispatch('fetchLink_output');
 		this.$nextTick(() => {
 			document.querySelector('#adModal .btn-close').focus(); // Set focus on close button when modal opens
 		});

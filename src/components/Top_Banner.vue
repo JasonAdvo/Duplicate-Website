@@ -2,7 +2,11 @@
 	<div class="relative">
 		<a href="/">
 			<div class="Top_Banner_Container" />
+
 		</a>
+		<a href="/"><img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo"></a>
+		<img class="Partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
+		<img class="Click" src="/images/TB_Click_Img.gif" alt="Click Me">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 		<!-- Overlay -->
@@ -26,13 +30,6 @@
 				<span v-if="selectedLanguage === 'zh'" class="tick">
 					<i class="fa fa-check"></i>
 				</span>
-			</div>
-		</div>
-
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong> |
-				{{ $t('Runnig_Bar.Content_2') }}
 			</div>
 		</div>
 	</div>
@@ -133,13 +130,27 @@ export default {
 .Partnership {
 	position: absolute;
 	top: 20px;
-	left: 30px;
+	right: 200px;
 	width: 60px;
+}
+
+.Click {
+	position: absolute;
+	top: 15px;
+	right: 90px;
+	width: 100px;
+}
+
+.Logo {
+	position: absolute;
+	width: 200px;
+	top: 15px;
+	left: 20px;
 }
 
 .GT-icon {
 	position: absolute;
-	top: 20px;
+	top: 25px;
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
@@ -148,37 +159,34 @@ export default {
 	width: 50px;
 }
 
-@media screen and (max-width: 1030px) {
-	.IJaya_Logo img {
-		width: 200px !important;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	.IJaya_Logo {
-		top: 5px;
-	}
-}
-
 @media screen and (max-width: 430px) {
-	.IJaya_Logo {
-		width: 150px !important;
+	.Logo {
+		width: 150px;
+		top: 8px;
 	}
 
 	.Partnership {
-		top: 5px;
+		top: 10px;
 		width: 40px;
+		right: 130px;
+	}
+
+	.Click {
+		top: 8px;
+		width: 70px;
+		right: 50px;
 	}
 
 	.GT-icon {
 		width: 40px;
-		top: 5px;
+		top: 10px;
+		right: 0;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	.IJaya_Logo img {
-		width: 145px !important;
+	.Partnership {
+		right: 120px;
 	}
 }
 
