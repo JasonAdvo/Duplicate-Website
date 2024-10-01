@@ -50,17 +50,17 @@
 					<div>
 						<p>
 							<strong>
-								<a :href="output_Link">{{ $t('Main_Content.Btm_Content_1') }}</a>
-								{{ $t('Main_Content.Btm_Content_2') }}
+								{{ $t('Main_Content.Btm_Content_1') }}
+								<a :href="output_Link">{{ $t('Main_Content.Btm_Content_2') }}</a>
+								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
 							|
-							{{ $t('Main_Content.Btm_Content_3') }}
+							{{ $t('Main_Content.Btm_Content_4') }}
 						</p>
 
 						<p>
 							<strong>
-								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_4') }}</a>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
 							</strong>
 							|
 							{{ $t('Main_Content.Btm_Content_6') }}
