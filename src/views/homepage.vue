@@ -215,6 +215,8 @@
 							{{ $t('Main_Content.Btm_Content_1') }} |
 							{{ $t('Main_Content.Btm_Content_2') }}
 							<a :href="link_winbox"><strong>{{ $t('Main_Content.Btm_Content_3') }}</strong></a>
+							<span v-if="!['zh'].includes($i18n.locale)">.</span>
+							<span v-if="!['ms', 'en'].includes($i18n.locale)">,</span>
 							{{ $t('Main_Content.Btm_Content_3_5') }}
 						</p>
 						<p>
