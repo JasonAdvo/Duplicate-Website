@@ -57,7 +57,7 @@
 				</a>
 				<div class="footer-content">
 
-					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
+					<h1>{{ $t('Main_Content.H1_Header_1') }} | {{ $t('Main_Content.H1_Header_2') }} </h1>
 					<br>
 
 					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
