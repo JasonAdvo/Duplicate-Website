@@ -5,10 +5,10 @@
 				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/download_side_btn.webp" alt="download">
 				</a>
-				<a href="https://t.me/atas77channel" rel="nofollow" target="_blank" class="social-media-icon">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/telegram_side_btn.webp" alt="telegram">
 				</a>
-				<a href=" https://x.com/atascasinomy" rel="nofollow" target="_blank" class="social-media-icon">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/fb_side_btn.webp" alt="Twitter">
 				</a>
 			</div>
