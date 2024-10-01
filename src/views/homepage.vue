@@ -185,10 +185,10 @@
 						{{ $t('Main_Content.Btm_Content_6') }}
 						<a :href="winboxofficial_link">
 							<strong class="Anchor_Text_Color">
-								{{ $t('Main_Content.Btm_Content_6_5') }}
+								{{ $t('Main_Content.Btm_Content_7') }}
 							</strong>
 						</a>
-						{{ $t('Main_Content.Btm_Content_7') }} |
+						|
 						{{ $t('Main_Content.Btm_Content_8') }}
 					</p>
 					<div class="footer-detail">
