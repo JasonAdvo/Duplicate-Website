@@ -50,7 +50,10 @@
 					<br>
 
 					<p>
-						{{ $t('Main_Content.Btm_Content_1') }} |
+						<strong>
+							{{ $t('Main_Content.Btm_Content_1') }}
+						</strong>
+						|
 						{{ $t('Main_Content.Btm_Content_2') }}
 						<a :href="output_Link">
 							<strong>
@@ -62,12 +65,13 @@
 
 					<p>
 						{{ $t('Main_Content.Btm_Content_5') }}
-						<a :href="winboxofficial_link">
-							<strong>
+						<strong>
+							<a :href="winboxofficial_link">
 								{{ $t('Main_Content.Btm_Content_6') }}
-							</strong>
-						</a>
-						{{ $t('Main_Content.Btm_Content_7') }}
+							</a>
+							{{ $t('Main_Content.Btm_Content_7') }}
+						</strong>
+						{{ $t('Main_Content.Btm_Content_8') }}
 					</p>
 
 					<div class="footer-detail">
