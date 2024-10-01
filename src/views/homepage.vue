@@ -53,9 +53,7 @@
 						src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						alt="DMCA.com Protection Status" />
 				</a>
-
 				<br>
-
 
 				<div class="footer-content">
 					<div class="footer_inner_content">
@@ -70,18 +68,17 @@
 						</p>
 
 						<p>
-							<strong>{{ $t('Main_Content.Btm_Content_4') }}</strong>
-							<span v-if="!['ms', 'zh'].includes($i18n.locale)"> | </span>
 							<strong>
 								<a :href="winboxofficial_link" style="color: #74323e;">
-									{{ $t('Main_Content.Btm_Content_5') }}
+									{{ $t('Main_Content.Btm_Content_4') }}
 								</a>
 							</strong>
-							<span v-if="!['en', 'zh'].includes($i18n.locale)"> | </span>
-							<strong>{{ $t('Main_Content.Btm_Content_6') }}</strong>
-							<span v-if="!['ms'].includes($i18n.locale)"> | </span>
-							{{ $t('Main_Content.Btm_Content_6_5') }} {{ $t('Main_Content.Btm_Content_7') }}
-
+							|
+							<strong>
+								{{ $t('Main_Content.Btm_Content_5') }}
+							</strong>
+							|
+							{{ $t('Main_Content.Btm_Content_6') }}
 						</p>
 					</div>
 
