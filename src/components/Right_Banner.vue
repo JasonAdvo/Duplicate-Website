@@ -28,8 +28,7 @@
 					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/RB_Withdraw_Btn_Img.png" alt="Withdraw">
 					</a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/RB_Refresh_Btn_Img.png"
-							alt="Refresh"></a>
+					<a href="/"><img src="/images/RB_Refresh_Btn_Img.png" alt="Refresh"></a>
 				</div>
 			</div>
 
