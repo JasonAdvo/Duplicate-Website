@@ -129,7 +129,6 @@ export default {
 	margin-bottom: 8px;
 }
 
-
 .button-grp img {
 	padding: 0 5px;
 }

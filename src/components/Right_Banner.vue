@@ -75,10 +75,16 @@
 
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
-					<a :href="link_output + 'winbox-login'" rel="nofollow"><img class="Join"
-							src="/images/RB_Login_Img.webp" alt="Login"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="Register"
-							src="/images/RB_Register_Img.gif" alt="Register"></a>
+					<a :href="link_output + 'winbox-login'" rel="nofollow">
+						<div class="Join">
+							LOGIN
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="Register">
+							REGISTER
+						</div>
+					</a>
 				</div>
 				<div class="RB_Info_Container" style="display: flex;">
 					<div class="RB_Small_Text_Container">
@@ -291,8 +297,10 @@ tbody td {
 .Big_Info_Container {
 	border-radius: 8px;
 	padding: 25px;
-	background-image: url('/images/Big_Info_Bg_Img.webp');
-	background-size: 100% 100%;
+	/* background-image: url('/images/Big_Info_Bg_Img.webp'); */
+	background-color: rgba(0, 0, 0, .3);
+	border: 2px solid #9d00ff;
+	/* background-size: 100% 100%; */
 	background-position: center;
 	margin-bottom: 16px;
 }
@@ -361,7 +369,7 @@ tbody td {
 }
 
 .RB_Small_Text_Container p {
-	color: black;
+	color: white;
 	font-size: 15px;
 	font-weight: 400;
 	font-family: "Montserrat", sans-serif;
