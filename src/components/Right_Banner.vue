@@ -54,6 +54,330 @@
 				</div>
 			</div>
 
+			<div class="Promo_Section">
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						SPECIAL PROMO
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">Daftar Baru Free RM1</p>
+								<p class="name">RM1</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">Telegram Free ( RM 1 Up to RM 88)</p>
+								<p class="name">RM88</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						CUCI FULL 100%
+						<p style="color: #0096FF; font-size: 10px; margin: 0">TANPA DEPOSIT</p>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
+								<p class="name">MYR ?</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE SHARE</p>
+								<p class="name">RM3</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">Downline 1st Deposit</p>
+								<p class="name">RM8</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						NEW MEMBER PROMOTION
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">WELCOME FREE</p>
+								<p class="name">RM10</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">WELCOME BONUS 77%</p>
+								<p class="name">77%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">Informasi Penting</p>
+								<p class="name">MYR ?</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						FREE BONUS
+						<span style="color: #0096FF;">[DAILY] </span>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE DAILY BONUS</p>
+								<p class="name">RM3</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE DAILY BONUS</p>
+								<p class="name">RM6</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE DAILY BONUS</p>
+								<p class="name">RM9</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						HOT PROMOTION
+						<p style="color: #0096FF; font-size: 10px; margin: 0">DAILY CLAIM 1 TIME</p>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM5 x2 times</p>
+								<p class="name">RM5</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM10 x2 times</p>
+								<p class="name">RM10</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM15 x2 times</p>
+								<p class="name">RM15</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM25 x2 times</p>
+								<p class="name">RM25</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM40 x2 times</p>
+								<p class="name">RM40</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM50 x2 times</p>
+								<p class="name">RM50</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						UNLIMITED BONUS
+						<p style="color: #0096FF; font-size: 10px; margin: 0">MAX WITHDRAW 500K</p>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">5%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">8%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">10%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						HOT PROMOTION
+						<p style="color: #0096FF; font-size: 10px; margin: 0">DAILY CLAIM 1 TIME</p>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM5 x2 times</p>
+								<p class="name">RM5</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM10 x2 times</p>
+								<p class="name">RM10</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM15 x2 times</p>
+								<p class="name">RM15</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM25 x2 times</p>
+								<p class="name">RM25</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">FREE RM40 x2 times</p>
+								<p class="name">RM40</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						UNLIMITED BONUS
+						<p style="color: #0096FF; font-size: 10px; margin: 0">MAX WITHDRAW 500K</p>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">5%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">8%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">10%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Special_Promo_Section">
+					<div style="margin-bottom: 5px;">
+						UNLIMITED BONUS
+						<p style="color: #0096FF; font-size: 10px; margin: 0">MAX WITHDRAW 500K</p>
+					</div>
+					<div class="Promo_Container">
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">5%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">8%</p>
+							</div>
+						</div>
+
+						<div class="Promo_Bg_Container Shadow_Container">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<div class="Text_Container">
+								<p class="text">UNLIMITED</p>
+								<p class="name">10%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
 			<div class="Mobile_View" style="display: none;">
 				<div class="Share_Section">
 					<img src="/images/LB_Img_2.webp" alt="Share">
@@ -259,6 +583,65 @@ export default {
 .Baki strong {
 	color: black;
 	font-size: 25px;
+}
+
+.Special_Promo_Section {
+
+	margin-bottom: 16px;
+}
+
+.Promo_Container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.Promo_Bg_Container {
+	position: relative;
+	float: left;
+}
+
+.Shadow_Container::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	z-index: 1;
+	border-radius: 8px;
+}
+
+.Promo_Bg {
+	max-height: 120px;
+	width: unset !important;
+	border-radius: 8px;
+}
+
+.Text_Container {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 5px 5px 0;
+	text-align: center;
+}
+
+.text,
+.name {
+	margin: 0;
+	color: #25F9FD;
+	text-shadow: 1px 1px 3px #000, 1px 1px 5px #000, 1px 1px 1px #000;
+}
+
+.text {
+	font-size: 13px;
+	min-height: 35px;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .Tablet-Mobile-view {

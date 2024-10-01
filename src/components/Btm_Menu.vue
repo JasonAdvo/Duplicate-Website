@@ -80,6 +80,7 @@ export default {
 	background-image: url('/images/Btm_Bg_Img.webp');
 	background-size: 100% 100%;
 	box-shadow: 0 -1px 5px rgba(0, 0, 0, 1);
+	z-index: 100;
 }
 
 .relative {
