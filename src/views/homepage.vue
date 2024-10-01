@@ -133,6 +133,7 @@
 								{{ $t('Main_Content.Btm_Content_5') }}
 							</strong>
 						</a>
+						<span v-if="!['zh'].includes($i18n.locale)">.</span>
 						{{ $t('Main_Content.Btm_Content_6') }}
 					</p>
 					<div class="footer-detail">
