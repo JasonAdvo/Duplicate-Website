@@ -351,17 +351,32 @@ tbody td {
 }
 
 .login-register-container a {
-	width: 50%;
+	width: 49%;
+	height: 40px;
+	text-decoration: none;
+}
+
+.Join,
+.Register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	font-weight: 700;
 }
 
 .Join {
-	border-radius: 10px;
-	padding-right: 5px;
+	color: #ffffff;
+	border-color: #a403ff;
+	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
 }
 
 .Register {
-	border-radius: 10px;
-	padding-left: 5px;
+	color: #2e2e2e;
+	background: linear-gradient(180deg, #03fe94 0%, #00b324 100%);
+	border-color: #00ff57;
 }
 
 .RB_Small_Text_Container {
@@ -391,7 +406,7 @@ tbody td {
 }
 
 .Baki strong {
-	color: #da9100;
+	color: #9d00ff;
 	font-size: 30px;
 }
 
