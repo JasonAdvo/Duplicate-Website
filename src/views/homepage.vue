@@ -65,9 +65,11 @@
 
 						<p>
 							<strong>
-								{{ $t('Footer_Content.FC_4') }}
-								<a :href="link_suboutput">{{ $t('Footer_Content.FC_5') }}</a>
-								{{ $t('Footer_Content.FC_6') }}
+								<a :href="link_suboutput">
+									{{ $t('Footer_Content.FC_4') }}
+									{{ $t('Footer_Content.FC_5') }}
+									{{ $t('Footer_Content.FC_6') }}
+								</a>
 							</strong>
 							|
 							{{ $t('Footer_Content.FC_7') }}
