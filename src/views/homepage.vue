@@ -59,9 +59,11 @@
 
 					<div>
 						<p>
-							{{ $t('Main_Content.Btm_Content_1') }}
+
 							<strong>
+								{{ $t('Main_Content.Btm_Content_1') }}
 								<a :href="link_output">{{ $t('Main_Content.Btm_Content_2') }}</a>
+								<span v-if="!['zh'].includes($i18n.locale)">!</span>
 							</strong>
 							{{ $t('Main_Content.Btm_Content_3') }}
 						</p>
@@ -71,6 +73,7 @@
 
 								{{ $t('Main_Content.Btm_Content_4') }}
 								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
+								<span v-if="!['zh'].includes($i18n.locale)">!</span>
 								{{ $t('Main_Content.Btm_Content_6') }}
 							</strong>
 							{{ $t('Main_Content.Btm_Content_7') }}

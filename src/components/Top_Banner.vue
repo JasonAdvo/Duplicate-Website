@@ -249,7 +249,7 @@ export default {
 	white-space: nowrap;
 	/* position: absolute; */
 	width: max-content;
-	animation: scroll 30s linear infinite;
+	animation: scroll 90s linear infinite;
 	color: black;
 	letter-spacing: 0.5px;
 	font-size: 13px;
