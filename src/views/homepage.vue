@@ -64,8 +64,10 @@
 					<div>
 						<p>
 							<strong>
-								<a :href="link_output">{{ $t('Main_Content.Btm_Content_1') }}</a>
-								{{ $t('Main_Content.Btm_Content_2') }}
+								<a :href="link_output">
+									{{ $t('Main_Content.Btm_Content_1') }}
+									{{ $t('Main_Content.Btm_Content_2') }}
+								</a>
 							</strong>
 							|
 							{{ $t('Main_Content.Btm_Content_3') }}
