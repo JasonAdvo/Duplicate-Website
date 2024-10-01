@@ -129,7 +129,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © RAMLY888. ALL RIGHTS RESERVED.
+						Copyright © GTB77. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>

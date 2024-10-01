@@ -6,6 +6,7 @@
 			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
 					src="/images/Spin Bonus.webp" alt="Spin Bonus">
 			</a>
+
 		</div>
 
 		<div class="RB_Imgs">
@@ -13,31 +14,43 @@
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
-			<div class="login-register-container">
-				<a :href="link_winbox77 + 'winbox-login'" rel="nofollow"><img class="Join"
-						src="/images/RB_Login_Img.webp" alt="Login"></a>
-				<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="Register"
-						src="/images/RB_Register_Img.webp" alt="Register"></a>
+			<div class="Mobile_View" style="display: none;">
+				<img style="margin-bottom: 16px;" src="/images/LB_Img_1.webp" alt="Deposit Fast & Secure">
 			</div>
-			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
-				<div class="RB_Small_Text_Container">
-					<div class="Baki">
-						<p>{{ $t('message.balance') }} </p>
-						<p><strong>0.00</strong></p>
-					</div>
-					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
-					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
+
+			<div class="Live_Time">
+				Date & Time :
+				<span>{{ liveTime }}</span>
+			</div>
+
+			<div class="Big_Info_Container">
+				<div class="login-register-container">
+					<a :href="link_winbox77 + 'winbox-login'" rel="nofollow"><img class="Join"
+							src="/images/RB_Login_Img.gif" alt="Login"></a>
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img class="Register"
+							src="/images/RB_Register_Img.gif" alt="Register"></a>
 				</div>
-				<div class="RB_Cash_Btn_Container">
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
-						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
-					</a>
-					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
-						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
-					</a>
-					<a href="/">
-						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
-					</a>
+
+				<div class="RB_Info_Container" style="display: flex;">
+					<div class="RB_Small_Text_Container">
+						<div class="Baki">
+							<p>{{ $t('message.balance') }} </p>
+							<p><strong>0.00</strong></p>
+						</div>
+						<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
+					</div>
+					<div class="RB_Cash_Btn_Container">
+						<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+							<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						</a>
+						<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+							<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						</a>
+						<a href="/">
+							<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -55,34 +68,33 @@
 								src="/images/LB_More_Img.webp" alt="More"></a>
 					</div>
 				</div>
-			</div>
-
-			<div class="sport-betting-container">
-				<div class="SB-content-container">
-					<div class="team">
-						<img src="/images/West_Ham.webp" alt="West Ham">
-						<p>{{ $t('message.team_1') }}</p>
+				<div class="sport-betting-container">
+					<div class="SB-content-container">
+						<div class="team">
+							<img src="/images/West_Ham.webp" alt="West Ham">
+							<p>{{ $t('message.team_1') }}</p>
+						</div>
+						<div class="time-info">
+							<p>{{ $t('message.start_time') }}</p>
+							<p>21 Sep 2024</p>
+							<p class="time">19:30</p>
+							<a :href="link_winbox77 + 'winbox-login'" rel="nofollow">
+								<div class="bet-now-container">
+									<p>{{ $t('message.bet_now') }}</p>
+								</div>
+							</a>
+						</div>
+						<div class="team">
+							<img src="/images/Chelsea.webp" alt="Chelsea">
+							<p>{{ $t('message.team_2') }}</p>
+						</div>
 					</div>
-					<div class="time-info">
-						<p>{{ $t('message.start_time') }}</p>
-						<p>21 Sep 2024</p>
-						<p class="time">19:30</p>
-						<a :href="link_winbox77 + 'winbox-login'" rel="nofollow">
-							<div class="bet-now-container">
-								<p>{{ $t('message.bet_now') }}</p>
-							</div>
-						</a>
-					</div>
-					<div class="team">
-						<img src="/images/Chelsea.webp" alt="Chelsea">
-						<p>{{ $t('message.team_2') }}</p>
-					</div>
+					<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
+						<div class="show-more-button-container">
+							<p>{{ $t('message.show_more') }}</p>
+						</div>
+					</a>
 				</div>
-				<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow">
-					<div class="show-more-button-container">
-						<p>{{ $t('message.show_more') }}</p>
-					</div>
-				</a>
 			</div>
 
 			<a :href="link_winbox77 + 'winbox-signup'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
@@ -103,13 +115,36 @@ export default {
 	components: {
 		RB_Img_Carousel,
 	},
+	data() {
+		return {
+			liveTime: ''
+		}
+	},
 	computed: {
 		...mapGetters(['link_winbox77', 'error']),
 	},
 	mounted() {
 		this.$store.dispatch('fetchLink_winbox77');
-	}
+		this.updateTime();
+		setInterval(this.updateTime, 1000);
+	},
+	methods: {
+		updateTime() {
+			const now = new Date();
 
+			// Format date and time as: DD MM YYYY (DAY) HH:MM:SS
+			const day = String(now.getDate()).padStart(2, '0'); // Day of month
+			const month = now.toLocaleString('en-US', { month: 'long' }); // Month (January is 0)
+			const year = now.getFullYear(); // Year
+			const dayOfWeek = now.toLocaleDateString('en-US', { weekday: 'short' }); // Day of the week
+			const hours = String(now.getHours()).padStart(2, '0'); // Hours (24-hour format)
+			const minutes = String(now.getMinutes()).padStart(2, '0'); // Minutes
+			const seconds = String(now.getSeconds()).padStart(2, '0'); // Seconds
+
+			// Format: DD MM YYYY (DAY) HH:MM:SS
+			this.liveTime = `${day} ${month} ${year} (${dayOfWeek}) ${hours}:${minutes}:${seconds}`;
+		}
+	}
 };
 </script>
 
@@ -132,6 +167,22 @@ export default {
 		padding-top: 0px !important;
 	}
 
+}
+
+.Live_Time {
+	font-size: 14px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-bottom: 16px;
+	color: gold;
+}
+
+.Big_Info_Container {
+	background-image: url('/images/RB_Big_Info_Bg_Img.webp');
+	background-size: 100% 100%;
+	padding: 8px 10px;
+	margin-bottom: 16px;
 }
 
 .RB_Imgs img {
