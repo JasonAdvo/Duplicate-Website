@@ -53,6 +53,7 @@
 								<a :href="output_Link">{{ $t('Main_Content.Btm_Content_1') }}</a>
 								{{ $t('Main_Content.Btm_Content_2') }}
 							</strong>
+							|
 							{{ $t('Main_Content.Btm_Content_3') }}
 						</p>
 
@@ -187,7 +188,7 @@ export default {
 				{ notSelected: '/images/Other_Img.webp', selected: '/images/Other_Img.webp', alt: 'Other' },
 			],
 			winboxofficial_link: '',
-			stickyBarHeightWeb: 90,
+			stickyBarHeightWeb: 100,
 			stickyBarHeightMobile: 75,
 		};
 	},
