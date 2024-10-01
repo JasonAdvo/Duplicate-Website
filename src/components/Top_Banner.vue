@@ -6,7 +6,7 @@
 		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 
 		<a href="/">
-			<img class="Logo" src="/images/TB_Logo_Img.gif" alt="Logo">
+			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
 		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
@@ -31,13 +31,6 @@
 				<span v-if="selectedLanguage === 'zh'" class="tick">
 					<i class="fa fa-check"></i>
 				</span>
-			</div>
-		</div>
-
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }}</strong> |
-				{{ $t('Runnig_Bar.Content_2') }}
 			</div>
 		</div>
 	</div>
@@ -117,7 +110,8 @@ export default {
 }
 
 .Top_Banner_Container {
-	background-image: url('/images/TB_Bg_Img.gif');
+	/* background-image: url('/images/TB_Bg_Img.gif'); */
+	background-color: black;
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -125,19 +119,22 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;
+	border-bottom: 2px solid #9d00ff;
 }
 
 .Partnership {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
-	width: 60px;
+	width: 80px;
+	background-color: white;
+	border-radius: 8px;
 }
 
 .Logo {
 	position: absolute;
 	top: 5px;
-	width: 250px;
+	width: 90px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -156,7 +153,7 @@ export default {
 @media screen and (max-width: 430px) {
 
 	.Logo {
-		width: 150px;
+		width: 50px;
 	}
 
 	.Partnership {
@@ -203,21 +200,21 @@ export default {
 	z-index: 9999;
 	text-align: center;
 	width: 300px;
-	border: 2px solid #FFC107;
+	border: 2px solid #9601e1;
 	color: white;
 }
 
 .popup-card div {
 	display: block;
 	padding: 15px;
-	border-bottom: 1px solid #FFC107;
+	border-bottom: 1px solid #9601e1;
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
 }
 
 .tick {
-	color: #FFC107;
+	color: #9601e1;
 }
 
 .tick i {

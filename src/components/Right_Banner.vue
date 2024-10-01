@@ -118,32 +118,7 @@
 								src="/images/LB_Tips_Img.webp" alt="Game Tips"></a>
 					</div>
 				</div>
-
-
-				<div style="position: relative;">
-					<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
-						<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
-					</a>
-				</div>
-
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img style="border-radius: 10px;" src="/images/Telco.webp" alt="Telco">
-				</a>
-
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img style="border-radius: 10px;" src="/images/Pussy_888.gif" alt="Notice">
-				</a>
-
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img style="border-radius: 10px;" src="/images/Predict.gif" alt="Predict and Win">
-				</a>
-
 			</div>
-
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
-				<img style="margin-bottom: 16px;" src="/images/Game_Tips.gif" alt="Game Tips">
-			</a>
 
 			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
@@ -227,7 +202,7 @@ export default {
 }
 
 .title span {
-	color: #009466;
+	color: white;
 	font-weight: 700;
 	padding-left: 4px;
 	font-family: "Montserrat", sans-serif;
@@ -282,10 +257,11 @@ table {
 
 table td {
 	font-size: 9px;
-	color: black;
-	border: 1px solid #005032;
+	color: white;
+	border: 1px solid #9d00ff;
 	font-weight: 700;
 	font-family: "Montserrat", sans-serif;
+	background-color: black;
 }
 
 @media screen and (min-width: 1440px) {
@@ -295,14 +271,14 @@ table td {
 }
 
 .green {
-	color: white;
-	background-image: linear-gradient(to left, #159115, #012505);
+	color: black;
+	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
 	padding-left: 4px;
 }
 
 .red {
 	color: black;
-	background-image: linear-gradient(to left, #c9c310, #77600c);
+	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
 	padding-left: 4px;
 }
 
@@ -313,9 +289,9 @@ tbody td {
 }
 
 .amount {
-	color: #005032;
+	color: #9d00ff;
 	text-align: right;
-	font-weight: 700;
+
 }
 
 .Right_Banner_Container {

@@ -84,5 +84,12 @@
 		"Content_4": "is fully licensed and regulated by the",
 		"Content_5": "Government of Curacao,",
 		"Content_6": "providing players with a safe and legitimate gaming environment under Master License N.V. #365/JAZ."
+	},
+	"Btm_Section": {
+		"Home": "Home",
+		"History": "History",
+		"Deposit": "Deposit",
+		"Promo": "Promo",
+		"Profile": "Profile"
 	}
 }

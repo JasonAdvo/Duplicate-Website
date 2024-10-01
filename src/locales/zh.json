@@ -84,5 +84,12 @@
 		"Content_4": "在",
 		"Content_5": "库拉索岛政府",
 		"Content_6": "的全牌照和监管下运营，确保在主许可证 N.V. #365/JAZ 下提供安全合法的游戏环境。"
+	},
+	"Btm_Section": {
+		"Home": "首页",
+		"History": "报表",
+		"Deposit": "存款",
+		"Promo": "优惠活动",
+		"Profile": "账户档案"
 	}
 }

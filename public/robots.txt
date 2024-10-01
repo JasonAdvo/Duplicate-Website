@@ -7,4 +7,4 @@ User-agent: dotbot
 Crawl-delay: 10
 User-agent: AhrefsBot
 Crawl-delay: 10
-Sitemap: https://www.hijau443.com/sitemap.xml
+Sitemap: https://www.epicwin7.com/sitemap.xml

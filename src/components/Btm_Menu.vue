@@ -10,34 +10,40 @@
 			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
-					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
+					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div>
 
 			<div class="footer-content">
 				<div class="col">
 					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.gif" alt="Home">
+						<img src="/images/Btm_Home_Img.webp" alt="Home">
+						{{ $t('Btm_Section.Home') }}
+
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Img.gif" alt="History">
+						<img src="/images/Btm_History_Img.webp" alt="History">
+						{{ $t('Btm_Section.History') }}
+					</a>
+				</div>
+				<div class=" col">
+					<a class="d-f Deposit" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+						<i data-v-d3e469a8 class="fa-solid fa-wallet fa-shake"></i>
+						{{ $t('Btm_Section.Deposit') }}
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Promo_Img.gif" alt="Promo">
+						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
+						{{ $t('Btm_Section.Promo') }}
 					</a>
 				</div>
 				<div class=" col">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Live_Img.gif" alt="Live Chat">
-					</a>
-				</div>
-				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
+						<img src="/images/Btm_Profile_Img.webp" alt="Setting">
+						{{ $t('Btm_Section.Profile') }}
 					</a>
 				</div>
 			</div>
@@ -76,9 +82,11 @@ export default {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 55px;
-	background-image: url('/images/Btm_Bg_Img.webp');
-	background-size: 100% 100%;
+	height: 65px;
+	/* background-image: url('/images/Btm_Bg_Img.webp'); */
+	/* background-size: 100% 100%; */
+	background: linear-gradient(180deg, #160e25 0%, #261a30 100%);
+	border-top: 2px solid #9601e1;
 	z-index: 3;
 }
 
@@ -111,17 +119,31 @@ export default {
 	justify-content: center;
 	flex-direction: column;
 	text-decoration: none;
-	color: black
+	color: white;
+	font-size: 12px;
+	align-items: center;
 }
 
 .d-f i {
-	color: black;
 	font-size: 30px;
-	margin-top: 5px;
+	color: #00ef7a;
 }
 
 .home {
 	color: white !important;
+}
+
+.Deposit {
+	border: 2px solid #00ff57;
+	background: linear-gradient(180deg, #4c01b4 0%, #6b10ad 100%);
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .d-f span {
@@ -134,7 +156,7 @@ export default {
 }
 
 .col img {
-	width: 60px;
+	width: 45px;
 	height: auto;
 }
 
@@ -151,7 +173,7 @@ export default {
 
 .Btm-Popup_Container {
 	position: absolute;
-	bottom: 55px;
+	bottom: 65px;
 	padding-top: 30px;
 }
 

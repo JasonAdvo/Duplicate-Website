@@ -582,7 +582,7 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-image: url('/images/Play_Btn_Bg_Img.webp');
+	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
 	background-color: transparent !important;
 	background-size: 100% 100%;
 	border: 0;
