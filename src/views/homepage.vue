@@ -66,8 +66,11 @@
 
 						<p>
 							<strong>
-								<a :href="winbox77_link">{{ $t('Main_Content.Btm_Content_6') }}</a>
-								{{ $t('Main_Content.Btm_Content_7') }}
+								<a :href="winbox77_link">
+									{{ $t('Main_Content.Btm_Content_6') }}
+									{{ $t('Main_Content.Btm_Content_7') }}
+								</a>
+
 							</strong>
 							{{ $t('Main_Content.Btm_Content_8') }}
 						</p>
