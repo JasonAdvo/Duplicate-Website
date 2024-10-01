@@ -33,6 +33,22 @@
 				</span>
 			</div>
 		</div>
+
+		<div class="running-sentence-container">
+			<div class="running-sentence">
+				<strong>
+					{{ $t('Runnig_Bar.Content_1') }}
+					<a href="/">{{ $t('Runnig_Bar.Content_2') }}</a>
+					{{ $t('Runnig_Bar.Content_3') }}
+					|
+					{{ $t('Runnig_Bar.Content_4') }}
+					|
+					{{ $t('Runnig_Bar.Content_5') }}
+					|
+					{{ $t('Runnig_Bar.Content_6') }}
+				</strong>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -259,6 +275,10 @@ export default {
 	100% {
 		transform: translateX(-100%);
 	}
+}
+
+.running-sentence a {
+	color: #a01c1c;
 }
 
 @media (max-width: 1000px) {

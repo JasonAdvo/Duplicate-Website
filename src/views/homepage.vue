@@ -49,6 +49,7 @@
 
 				<div class="footer-content">
 
+					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
@@ -57,24 +58,25 @@
 					<br>
 					<br>
 
-					<div>
+					<div class="footer_btm_content">
 						<p>
-							<strong>
-								<a :href="link_output">{{ $t('Main_Content.Btm_Content_1') }}</a>
-							</strong>
+							<a :href="link_output">
+								<strong>{{ $t('Main_Content.Btm_Content_1') }}</strong>
+							</a>
 							{{ $t('Main_Content.Btm_Content_2') }}
 						</p>
-
 						<p>
 							<strong>
 								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_3') }}</a>
 								{{ $t('Main_Content.Btm_Content_4') }}
 							</strong>
+							|
 							{{ $t('Main_Content.Btm_Content_5') }}
 						</p>
+
 					</div>
 
-					<div class="footer-detail">
+					<div class=" footer-detail">
 						<div class="Visit">
 							<p>
 								{{ $t('message.Visit') }}
