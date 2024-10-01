@@ -106,7 +106,6 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
-					<img style="border-radius: 20px;" src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.webp" alt="Share"></a>
@@ -153,28 +152,16 @@ export default {
 
 <style scoped>
 .button-grp {
-	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1000px) {
 	.Mobile_View {
 		display: block !important;
-	}
-
-	.button-grp {
-		bottom: 4%;
-		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
 	}
 }
 
