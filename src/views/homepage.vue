@@ -71,8 +71,9 @@
 							<strong>
 								{{ $t('Main_Content.Btm_Content_3') }}
 								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_4') }}</a>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								<span>{{ $t('Main_Content.Btm_Content_5') }}</span>
 							</strong>
+							<span v-if="!['ms', 'en'].includes($i18n.locale)">,</span>
 							{{ $t('Main_Content.Btm_Content_6') }}
 						</p>
 					</div>
