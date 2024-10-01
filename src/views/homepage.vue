@@ -149,12 +149,14 @@
 						{{ $t('Main_Content.Btm_Content_3') }}
 					</p>
 					<p>
+						{{ $t('Main_Content.Btm_Content_4') }}
+						|
 						<a :href="winbox77_link">
 							<strong>
-								{{ $t('Main_Content.Btm_Content_4') }}
+								{{ $t('Main_Content.Btm_Content_5') }}
 							</strong>
-						</a> |
-						{{ $t('Main_Content.Btm_Content_5') }} |
+						</a>
+						|
 						{{ $t('Main_Content.Btm_Content_6') }}
 					</p>
 					<div class="footer-detail">
