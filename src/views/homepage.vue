@@ -56,8 +56,10 @@
 					<div class="footer_content_text_container">
 						<p>
 							<strong>
-								<a :href="link_output">{{ $t('Footer_Content.FC_1') }}</a>
-								{{ $t('Footer_Content.FC_2') }}
+								<a :href="link_output">
+									{{ $t('Footer_Content.FC_1') }}
+									{{ $t('Footer_Content.FC_2') }}
+								</a>
 							</strong>
 							|
 							{{ $t('Footer_Content.FC_3') }}
