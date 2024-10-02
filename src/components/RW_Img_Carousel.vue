@@ -10,17 +10,17 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/BB_LB_S1.webp" class="d-block w-100" alt="50% Welcome Bonus">
 				</a>
 			</div>
 			<div class="carousel-item">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/BB_LB_S2.webp" class="d-block w-100" alt="Free Credit">
 				</a>
 			</div>
 			<div class="carousel-item">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/BB_LB_S3.webp" class="d-block w-100" alt="Share Get Reward">
 				</a>
 			</div>
@@ -42,11 +42,11 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
 		// Fetch dynamic link from Vuex store
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 
 
 	},

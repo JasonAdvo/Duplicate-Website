@@ -3,58 +3,61 @@
 
 		<div class="Mobile_View" style="display: none;">
 			<RB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
 					src="/images/daily free spin bonus.gif" alt="Spin Bonus">
 			</a>
 		</div>
 
 		<div class="RB_Imgs">
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Bonus93.gif"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/Bonus93.gif"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
-			<div class="login-register-container">
-				<a :href="link_winboxmys + 'winbox-login'" rel="nofollow"><img class="Join"
-						src="/images/RB_Login_Img.webp" alt="Login"></a>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="Register"
-						src="/images/RB_Register_Img.webp" alt="Register"></a>
-			</div>
-			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
-				<div class="RB_Small_Text_Container">
-					<div class="Baki">
-						<p>{{ $t('message.balance') }} </p>
-						<p><strong>0.00</strong></p>
+			<div class="Big_Info_Container">
+				<div class="login-register-container">
+					<a :href="link_output + 'winbox-login'" rel="nofollow"><img class="Join"
+							src="/images/RB_Login_Img.webp" alt="Login"></a>
+					<a :href="link_output + 'winbox-signup'" rel="nofollow"><img class="Register"
+							src="/images/RB_Register_Img.webp" alt="Register"></a>
+				</div>
+				<div class="RB_Info_Container" style="display: flex;">
+					<div class="RB_Small_Text_Container">
+						<div class="Baki">
+							<p>{{ $t('message.balance') }} </p>
+							<p><strong>0.00</strong></p>
+						</div>
+						<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 					</div>
-					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
-					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
-				</div>
-				<div class="RB_Cash_Btn_Container">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
-					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
-					</a>
-					<a href="/">
-						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
-					</a>
+					<div class="RB_Cash_Btn_Container">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						</a>
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						</a>
+						<a href="/">
+							<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
+						</a>
+					</div>
 				</div>
 			</div>
+
 
 			<div class="Mobile_View" style="display: none;">
 				<div class="Share_Section">
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
 							<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
 						</a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
 							<img class="col-6 no-br" src="/images/LB_Downline_Img.webp" alt="Downline">
 						</a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
 							<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
 						</a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
 							<img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More">
 						</a>
 					</div>
@@ -71,7 +74,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>21 Sep 2024</p>
 						<p class="time">19:30</p>
-						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
+						<a :href="link_output + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -82,17 +85,17 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/top up rm20.webp"
 					alt="Top Up Rm20" style="margin-bottom: 16px;"></a>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 		</div>
 	</div>
@@ -108,10 +111,10 @@ export default {
 		RB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 
 };
@@ -123,6 +126,13 @@ export default {
 	padding: 10px 15px 0px 15px;
 	height: 100%;
 	border-left: 1px solid rgba(255, 255, 255, .5);
+}
+
+.Big_Info_Container {
+	background-image: url('/images/Big_Info_Bg_Img.webp');
+	background-size: 100% 100%;
+	padding: 10px;
+	margin-bottom: 16px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -159,6 +169,7 @@ export default {
 
 .RB_Cash_Btn_Container img {
 	margin-bottom: 5px;
+	width: 90%;
 }
 
 .login-register-container {
@@ -188,7 +199,7 @@ export default {
 }
 
 .RB_Small_Text_Container p {
-	color: black;
+	color: white;
 	font-size: 15px;
 	font-weight: 400;
 	font-family: Lato, sans-serif;
@@ -210,7 +221,7 @@ export default {
 }
 
 .Baki strong {
-	color: black;
+	color: white;
 	font-size: 25px;
 }
 
@@ -271,7 +282,6 @@ export default {
 
 .button-grp {
 	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -280,19 +290,14 @@ export default {
 
 @media screen and (max-width: 1000px) {
 	.button-grp {
-		bottom: 8%;
+		bottom: 2%;
 		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
 	}
 }
 
 .button-grp img {
 	padding: 0 5px;
+	margin-bottom: 8px;
 }
 
 .button-grp a {

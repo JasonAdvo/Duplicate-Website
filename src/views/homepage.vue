@@ -28,13 +28,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 58" :key="n">
-								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_output + 'winbox-signup'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+									<a :href="link_output + 'winbox-signup'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -98,7 +98,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © MADRID888. All rights reserved.
+						Copyright © NFT888. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -223,7 +223,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_output', 'error']),
 		currentLocale() {
 			return this.$i18n.locale; // or however you access the locale
 		}
@@ -296,7 +296,7 @@ export default {
 	},
 	mounted() {
 		this.fetchLink();
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 }
 </script>
@@ -370,7 +370,7 @@ export default {
 
 @media (max-width: 768px) {
 	.main-content::before {
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
 	}
 }
@@ -446,42 +446,6 @@ export default {
 .Middle_Inner_Container a {
 	padding: 0;
 	color: #086cec;
-}
-
-.google-map-link {
-	font-style: italic;
-	color: #f0d843 !important;
-	font-weight: bolder;
-	font-size: 12px;
-	overflow-wrap: anywhere;
-}
-
-.map-container {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 20px 0;
-}
-
-.platform {
-	color: #f0d843 !important;
-}
-
-.running-sentence {
-	white-space: nowrap;
-	/* position: absolute; */
-	width: max-content;
-	animation: scroll 72s linear infinite;
-}
-
-@keyframes scroll {
-	0% {
-		transform: translateX(75%);
-	}
-
-	100% {
-		transform: translateX(-100%);
-	}
 }
 
 .site-tabs {
@@ -574,9 +538,8 @@ export default {
 	color: white;
 	font-size: 11px;
 	margin-bottom: 10px;
-	border: 1px solid darkblue;
-	background-color: darkblue;
-	background-image: linear-gradient(to bottom, #1c39ff, #05063e);
+	background-image: url('/images/Play_Btn_Img.webp');
+	background-size: 100% 100%;
 }
 
 .image-wrapper p {

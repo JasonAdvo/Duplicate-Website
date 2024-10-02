@@ -2,23 +2,23 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus">
 			</a>
 
 			<div class="Share_Section">
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
 						<img class="col-6 no-br" src="/images/LB_Share_Img.webp" alt="Share">
 					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
 						<img class="col-6 no-br" src="/images/LB_Downline_Img.webp" alt="Downline">
 					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
 						<img class="col-6 no-br" src="/images/LB_Copy_Img.webp" alt="Copy">
 					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
 						<img class="col-6 no-br" src="/images/LB_More_Img.webp" alt="More">
 					</a>
 				</div>
@@ -37,10 +37,10 @@ export default {
 		LB_Img_Carousel,
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['link_output', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>
@@ -64,7 +64,7 @@ export default {
 
 .button-grp {
 	position: absolute;
-	margin-top: -29%;
+	margin-top: -25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
