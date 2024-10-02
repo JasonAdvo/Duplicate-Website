@@ -60,6 +60,7 @@
 								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
 						</a>
+						<span v-if="!['zh'].includes($i18n.locale)">,</span>
 						{{ $t('Main_Content.Btm_Content_4') }}
 					</p>
 
