@@ -59,13 +59,15 @@
 						SPECIAL PROMO
 					</div>
 					<div class="Promo_Container">
-						<div class="Promo_Bg_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">Daftar Baru Free RM1</p>
-								<p class="name">RM1</p>
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+							<div class="Promo_Bg_Container">
+								<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+								<div class="Text_Container">
+									<p class="text">Daftar Baru Free RM1</p>
+									<p class="name">RM1</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
 						<div class="Promo_Bg_Container Shadow_Container">
 							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
@@ -83,13 +85,16 @@
 						<p style="color: #0096FF; font-size: 10px; margin: 0">TANPA DEPOSIT</p>
 					</div>
 					<div class="Promo_Container">
-						<div class="Promo_Bg_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
-								<p class="name">MYR ?</p>
+
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+							<div class="Promo_Bg_Container">
+								<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+								<div class="Text_Container">
+									<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
+									<p class="name">MYR ?</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
 						<div class="Promo_Bg_Container Shadow_Container">
 							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
@@ -140,239 +145,6 @@
 						</div>
 					</div>
 
-				</div>
-
-				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						FREE BONUS
-						<span style="color: #0096FF;">[DAILY] </span>
-					</div>
-					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE DAILY BONUS</p>
-								<p class="name">RM3</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE DAILY BONUS</p>
-								<p class="name">RM6</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE DAILY BONUS</p>
-								<p class="name">RM9</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						HOT PROMOTION
-						<p style="color: #0096FF; font-size: 10px; margin: 0">DAILY CLAIM 1 TIME</p>
-					</div>
-					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE RM5 x2 times</p>
-								<p class="name">RM5</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE RM10 x2 times</p>
-								<p class="name">RM10</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE RM15 x2 times</p>
-								<p class="name">RM15</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE RM25 x2 times</p>
-								<p class="name">RM25</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE RM40 x2 times</p>
-								<p class="name">RM40</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">FREE RM50 x2 times</p>
-								<p class="name">RM50</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						UNLIMITED BONUS
-						<p style="color: #0096FF; font-size: 10px; margin: 0">MAX WITHDRAW 500K</p>
-					</div>
-					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">UNLIMITED</p>
-								<p class="name">5%</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">UNLIMITED</p>
-								<p class="name">8%</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">UNLIMITED</p>
-								<p class="name">10%</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						TELCO BONUS
-						<p style="color: #0096FF; font-size: 10px; margin: 0">DIGI|MAXIS|CELCOM|UMOBILE</p>
-					</div>
-					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">TELCO WELCOME</p>
-								<p class="name">50%</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">TELCO RM 10 FREE</p>
-								<p class="name">RM5</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">TELCO RM 20 FREE</p>
-								<p class="name">RM10</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">TELCO RM 30 FREE</p>
-								<p class="name">RM15</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">TELCO RM 50 FREE</p>
-								<p class="name">RM25</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						KUMPUL RECEIPT
-						<p style="color: #0096FF; font-size: 10px; margin: 0">DAILY MISSION</p>
-					</div>
-					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">In 3 Kali 30 RESIT FREE</p>
-								<p class="name">RM8.88</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">In 7 Kali 30 RESIT FREE</p>
-								<p class="name">RM18.88</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">In 12 Kali 30 RESIT FREE</p>
-								<p class="name">RM38.88</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						KUMPUL RECEIPT
-						<p style="color: #0096FF; font-size: 10px; margin: 0">WEEKLY MISSION</p>
-					</div>
-					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">In 30 Kali 30 RESIT FREE</p>
-								<p class="name">RM68.88</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">In 50 Kali 30 RESIT FREE</p>
-								<p class="name">RM88.88</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">In 70 Kali 30 RESIT FREE</p>
-								<p class="name">RM168.88</p>
-							</div>
-						</div>
-					</div>
 				</div>
 
 			</div>
