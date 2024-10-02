@@ -150,16 +150,19 @@ export default {
 }
 
 @media screen and (max-width: 430px) {
-
-
 	.Partnership {
 		top: 5px;
-		width: 40px;
+		width: 60px;
+	}
+
+	.Logo {
+		top: 5px;
+		width: 90px;
 	}
 
 	.GT-icon {
 		width: 40px;
-		top: 5px;
+		top: 10px;
 	}
 }
 
