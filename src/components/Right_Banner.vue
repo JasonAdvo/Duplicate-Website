@@ -64,7 +64,7 @@
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
-						<img src="/images/West_Ham.webp" alt="West Ham">
+						<img src="/images/Crystal_Palace.webp" alt="West Ham">
 						<p>{{ $t('message.team_1') }}</p>
 					</div>
 					<div class="time-info">
@@ -78,7 +78,7 @@
 						</a>
 					</div>
 					<div class="team">
-						<img src="/images/Chelsea.webp" alt="Chelsea">
+						<img src="/images/Liverpool.webp" alt="Chelsea">
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
