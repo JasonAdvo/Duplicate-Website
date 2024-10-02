@@ -154,12 +154,13 @@ export default {
 @media screen and (max-width: 430px) {
 
 	.Logo {
-		width: 50px;
+		top: 5px;
+		width: 45px;
 	}
 
 	.Partnership {
 		top: 10px;
-		width: 40px;
+		width: 45px;
 	}
 
 	.GT-icon {
