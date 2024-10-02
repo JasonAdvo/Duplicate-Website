@@ -485,6 +485,7 @@ export default {
 	}
 
 	.image-container {
+		width: 86px;
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
