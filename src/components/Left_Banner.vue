@@ -227,6 +227,7 @@ export default {
 table {
 	width: 100%;
 	margin-bottom: 16px;
+	border: 1px solid black !important;
 }
 
 table td {
@@ -245,15 +246,17 @@ table td {
 }
 
 .green {
-	color: black;
-	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+	color: white;
+	/* background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%); */
+	background-color: black;
 	padding-left: 4px;
 }
 
 .red {
-	color: black;
-	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+	color: white;
+	/* background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%); */
 	padding-left: 4px;
+	background-color: black;
 }
 
 tbody td {

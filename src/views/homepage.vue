@@ -332,7 +332,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_Img.webp');
+	/* background-image: url('/images/Bg_Img.webp')  */
+	background-color: #9900ff;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -455,6 +456,7 @@ export default {
 
 .image-container.selected {
 	background: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+	border: 2px solid black;
 }
 
 .image-container img {
@@ -557,8 +559,8 @@ export default {
 	margin-top: 8px;
 	width: 100%;
 	border: 0;
-	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
-	background-color: transparent !important;
+	/* background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%); */
+	background-color: black;
 	background-size: 100% 100%;
 	border: 0;
 	text-align: center;
