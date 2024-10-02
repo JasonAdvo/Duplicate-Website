@@ -99,7 +99,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © JOMKISS. All rights reserved.
+						Copyright © JOMPANDA. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -334,7 +334,7 @@ export default {
 	display: flex;
 	width: 100%;
 	/* background-image: url('/images/Bg_Img.webp')  */
-	background-color: #9900ff;
+	background-color: #6834ec;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -418,12 +418,11 @@ export default {
 .MB_Img {
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #9d00ff;
+	color: #6834ec;
 }
 
 .site_tabs_container {
@@ -670,7 +669,7 @@ li {
 }
 
 .Visit strong {
-	color: #9d00ff;
+	color: #6834ec;
 }
 
 .license {

@@ -135,7 +135,7 @@ export default {
 .Logo {
 	position: absolute;
 	top: 8px;
-	width: 100px;
+	width: 80px;
 	left: 50%;
 	transform: translateX(-50%);
 }
