@@ -324,7 +324,7 @@ tbody td {
 	border-radius: 8px;
 	padding: 25px;
 	/* background-image: url('/images/Big_Info_Bg_Img.webp'); */
-	background-color: rgba(0, 0, 0, .3);
+	background-color: rgba(0, 0, 0);
 	border: 2px solid #9d00ff;
 	/* background-size: 100% 100%; */
 	background-position: center;
