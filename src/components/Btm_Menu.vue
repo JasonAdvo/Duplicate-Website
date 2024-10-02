@@ -3,7 +3,11 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
+					<img src="/images/Download_Img.webp" alt="Download">
+				</a>
+
+				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
+					<img src="/images/Tips_Img.webp" alt="Game Tips">
 				</a>
 			</div>
 
@@ -99,7 +103,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -500%;
+	top: -400%;
 	right: 0;
 }
 
@@ -167,8 +171,7 @@ export default {
 }
 
 .social-media-icon img {
-	width: 20px;
-	height: 108px;
+	width: 80px;
 }
 
 .Btm-Popup_Container {

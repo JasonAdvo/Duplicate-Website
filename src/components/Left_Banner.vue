@@ -67,14 +67,26 @@
 
 			<div style="position: relative;">
 				<div class="button-grp">
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Tips_Img.webp" alt="Game Tips"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							SHARE
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							DOWNLINE CHART
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							COPY REFERRAL LINK
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							GAME TIPS
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -135,6 +147,9 @@ export default {
 
 .button-grp a {
 	width: calc(50% - 8px);
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (min-width: 610px) and (max-width: 770px) {
@@ -144,8 +159,16 @@ export default {
 }
 
 .button_width {
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	border-color: #a403ff;
+	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
+	width: 90%;
 	margin-bottom: 8px !important;
+	border-radius: 8px;
+	height: 40px;
 }
 
 .title {
