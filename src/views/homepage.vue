@@ -16,6 +16,7 @@
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="selectImage(index);">
 							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
+							{{ image.alt }}
 						</div>
 					</div>
 				</div>
@@ -55,28 +56,6 @@
 							alt="DMCA.com Protection Status" />
 					</a>
 					<br>
-					<br>
-
-					<div>
-						<p>
-							{{ $t('Main_Content.Btm_Content_1') }}
-							<strong>
-								<a :href="link_output">{{ $t('Main_Content.Btm_Content_2') }}</a>
-							</strong>
-							{{ $t('Main_Content.Btm_Content_3') }}
-						</p>
-
-						<p>
-							<strong>
-
-								{{ $t('Main_Content.Btm_Content_4') }}
-								<a :href="winboxofficial_link">{{ $t('Main_Content.Btm_Content_5') }}</a>
-								{{ $t('Main_Content.Btm_Content_6') }}
-							</strong>
-							{{ $t('Main_Content.Btm_Content_7') }}
-
-						</p>
-					</div>
 
 					<div class="footer-detail">
 						<div class="Visit">
@@ -119,7 +98,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © HIJAU44. All rights reserved.
+						Copyright © EPICWIN. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -213,17 +192,18 @@ export default {
 				"MIDAS GOLDEN TOUCH"
 			],
 			images: [
-				{ notSelected: '/images/Mega_Hot_Img.webp', selected: '/images/Mega_Hot_Img.webp', alt: 'Mega H5 Hot' },
-				{ notSelected: '/images/Mega_Img.webp', selected: '/images/Mega_Img.webp', alt: 'Mega H5' },
-				{ notSelected: '/images/VPower_Img.webp', selected: '/images/VPower_Img.webp', alt: 'V Power' },
-				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
-				{ notSelected: '/images/JILI_Img.webp', selected: '/images/JILI_Img.webp', alt: 'JILI' },
-				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
-				{ notSelected: '/images/Fish_Img.webp', selected: '/images/Fish_Img.webp', alt: 'Fish Game' },
-				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Clot Play' },
+				{ notSelected: 'public/images/Hot.webp', selected: '/images/Hot.webp', alt: 'Hot' },
+				{ notSelected: '/images/Slot.gif', selected: '/images/Slot.gif', alt: 'Slots' },
+				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live' },
+				{ notSelected: '/images/Fish.webp', selected: '/images/Fish.webp', alt: 'Fishing' },
+				{ notSelected: '/images/Poker.webp', selected: '/images/Poker.webp', alt: 'Poker' },
+				{ notSelected: '/images/Mini_Game.webp', selected: '/images/Mini_Game.webp', alt: 'Minigame' },
+				{ notSelected: '/images/Demo_Play.webp', selected: '/images/Demo_Play.webp', alt: 'Demo Play' },
+				{ notSelected: '/images/New.webp', selected: '/images/New.webp', alt: 'News' },
+				{ notSelected: '/images/Leaderboard.webp', selected: '/images/Leaderboard.webp', alt: 'Leaderboard' },
 			],
 			winboxofficial_link: '',
-			stickyBarHeightWeb: 105,
+			stickyBarHeightWeb: 90,
 			stickyBarHeightMobile: 75,
 		};
 	},
@@ -441,7 +421,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #005032;
+	color: #9d00ff;
 }
 
 .platform {
@@ -453,40 +433,38 @@ export default {
 	margin: 10px 0;
 	position: relative;
 	display: flex;
-}
-
-.site-tabs::before {
-	content: "";
-	border-bottom: 1px solid #fff;
-	position: absolute;
 	width: 100%;
-	bottom: 1px;
 }
 
 .image-container {
-	width: calc(100% / 8);
+	width: calc(100% / 9);
 	/* padding-bottom: 30px; */
 	cursor: pointer;
+	background-color: black;
+	border: 2px solid #9d00ff;
+	border-radius: 16px;
+	padding: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+
 }
 
 .image-container.selected {
-	border-bottom: 2px solid #ffd700;
-	animation: mymove 0.3s infinite;
+	background: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
 }
 
-@keyframes mymove {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-3px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
+.image-container img {
+	width: 60px !important;
 }
+
+.image-container.selected img {
+	filter: brightness(100);
+}
+
 
 .image-container img {
 	width: 100%;
@@ -500,7 +478,6 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
@@ -686,7 +663,7 @@ li {
 }
 
 .Visit strong {
-	color: #005032;
+	color: #9d00ff;
 }
 
 .license {
