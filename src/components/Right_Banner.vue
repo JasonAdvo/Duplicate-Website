@@ -7,7 +7,7 @@
 
 
 			<div class="login-register-container">
-				<a :href="link_output" rel="nofollow"><img src="/images/RB_Login_Btn_Img.png" alt="Login"></a>
+				<a href="/" rel="nofollow"><img src="/images/RB_Login_Btn_Img.png" alt="Login"></a>
 				<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/RB_Register_Btn_Img.png"
 						alt="Register"></a>
 			</div>
@@ -58,7 +58,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
 						<p class="time">03:00</p>
-						<a :href="link_output" rel="nofollow">
+						<a href="/" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>

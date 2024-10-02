@@ -47,8 +47,26 @@
 					</a>
 					<br>
 					<br>
-					<div class="b-700">
 
+					<div class="Footer_Content_Text">
+						<p>
+							<a :href="link_output">
+								<strong>
+									{{ $t('Footer_Content.FC_1') }}
+								</strong>
+							</a>
+							{{ $t('Footer_Content.FC_2') }}
+						</p>
+
+						<p>
+							<a :href="winbox77_link">
+								<strong>
+									{{ $t('Footer_Content.FC_3') }}
+								</strong>
+							</a>
+							|
+							{{ $t('Footer_Content.FC_4') }}
+						</p>
 					</div>
 
 					<div class="footer-detail">
@@ -175,7 +193,7 @@ export default {
 				"CRASH GAME"
 			],
 			winbox77_link: '',
-			stickyBarHeightWeb: 90,
+			stickyBarHeightWeb: 110,
 			stickyBarHeightMobile: 75,
 			showContent: false,
 			activeAccordion: 0,
@@ -524,7 +542,7 @@ p {
 
 .footer-content p,
 span {
-	font-size: 11px;
+	font-size: 16px;
 }
 
 .b-700 p,
