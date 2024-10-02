@@ -49,6 +49,29 @@
 					<br>
 					<br>
 
+					<div>
+						<p>
+							<a :href="output_Link">
+								<strong>
+									{{ $t('Main_Content.Btm_Content_1') }}
+								</strong>
+							</a>
+							{{ $t('Main_Content.Btm_Content_2') }}
+							|
+							{{ $t('Main_Content.Btm_Content_3') }}
+						</p>
+
+						<p>
+							<a :href="winboxofficial_link">
+								<strong>
+									{{ $t('Main_Content.Btm_Content_4') }}
+								</strong>
+							</a>
+							|
+							{{ $t('Main_Content.Btm_Content_5') }}
+						</p>
+					</div>
+
 					<div class="footer-detail">
 						<div class="Visit">
 							<p>
@@ -123,36 +146,41 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"MONKEY888",
 				"MEGAH5",
 				"UU SLOTS",
-				"ACEWIN",
-				"MEGA888",
-				"MEGA888",
-				"MEGA888",
-				"918KISS",
-				"LFC888",
 				"PLAYSTAR",
-				"PUSSY888",
-				"PUSSY888",
-				"PEGASUS",
+				"ACE WIN",
 				"BT GAMING",
 				"BIGPOT GAMING",
-				"918 KAYA",
-				"LUCKY365",
-				"LIVE22",
-				"RSG",
-				"LION KING",
-				"HABANERO",
-				"KA GAMING",
-				"BOOONGO",
-				"SPADEGAMING",
-				"NEXTSPIN",
-				"FUNTA GAMING",
-				"ACE333",
-				"JOKER",
-				"SG GAMING",
+				"MONKEY888",
+				"MEGA888",
+				"MEGA888",
+				"MEGA888",
 				"PLAYTECH",
+				"PUSSY",
+				"PUSSY",
+				"JOKER",
+				"918KISS",
+				"PRAGMATICPLAY",
+				"LUCKY365",
+				"ROYAL SLOT GAMING",
+				"LIVE22",
+				"KAYA",
+				"FA CHAI",
+				"SPADEGAMING",
+				"918KISS HTMLS",
+				"LION KING",
+				"MICROGAMING",
+				"RED TIGER",
+				"DRAGON SOFT",
+				"KA GAMING",
+				"CREATIVE GAMING",
+				"FUNKY GAMES",
+				"JDB",
+				"HABANERO",
+				"PEFASUS",
+				"NEXTSPIN",
+				"EVO888"
 			],
 			images: [
 				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot Game' },
@@ -182,12 +210,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxmys_co", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxmys_co;
 			} catch (error) {
 				console.log(error)
 			}
@@ -395,11 +423,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #1ebebc;
-}
-
-.platform {
-	color: #f0d843 !important;
+	color: #24be17;
 }
 
 .site-tabs {
@@ -588,7 +612,7 @@ li {
 }
 
 .Visit strong {
-	color: #1ebebc;
+	color: #24be17;
 }
 
 .license {
