@@ -169,6 +169,8 @@ export default {
 	margin-bottom: 8px !important;
 	border-radius: 8px;
 	height: 40px;
+	text-align: center;
+	font-size: 14px;
 }
 
 .title {
