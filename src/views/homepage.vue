@@ -250,9 +250,11 @@
 								$t('Atas_Sign_Up.Content') }}
 						</div>
 						<div class="Atas_Download_Container">
-							<a :href="link_atascasinobet">{{ $t('Atas_Download.Header') }}</a> - {{
-								$t('Atas_Download.Content_1') }} <strong>{{ $t('Atas_Download.Content_2') }}</strong> {{
-								$t('Atas_Download.Content_3') }}
+							{{ $t('Atas_Download.Header') }}
+							-
+							{{ $t('Atas_Download.Content_1') }}
+							<a :href="link_atascasinobet">{{ $t('Atas_Download.Content_2') }}</a>
+							{{ $t('Atas_Download.Content_3') }}
 						</div>
 						<div class="Visit_site">
 							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
