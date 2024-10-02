@@ -28,13 +28,6 @@
 				</span>
 			</div>
 		</div>
-
-		<div class="running-sentence-container">
-			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong>
-				{{ $t('Runnig_Bar.Content_2') }}
-			</div>
-		</div>
 	</div>
 </template>
 
