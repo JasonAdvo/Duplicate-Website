@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus"></a>
 			<table>
 				<thead>
@@ -67,31 +67,31 @@
 
 			<div style="position: relative;">
 				<div class="button-grp">
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-signup'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-signup'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="link_output + 'winbox-signup'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 				</div>
 			</div>
 
 			<div style=" position: relative;">
 				<img src="/images/Luck_Draw_Deposit.webp" alt="Lucky Draw Deposit">
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img class="Lucky_Number_Btn" src="/images/Luck_Number_Btn.gif" alt="Lucky Number Button">
 				</a>
 			</div>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
+			<a :href="link_output + 'winbox-signup'" rel="nofollow">
 				<img style="border-radius: 10px;" src="/images/Telco.webp" alt="Telco">
 			</a>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
+			<a :href="link_output + 'winbox-signup'" rel="nofollow">
 				<img style="border-radius: 10px;" src="/images/Pussy_888.gif" alt="Notice">
 			</a>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow">
+			<a :href="link_output + 'winbox-signup'" rel="nofollow">
 				<img style="border-radius: 10px;" src="/images/Predict.gif" alt="Predict and Win">
 			</a>
 		</div>

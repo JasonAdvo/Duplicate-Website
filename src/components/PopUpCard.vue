@@ -4,7 +4,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
 						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
 					</a>
 				</div>

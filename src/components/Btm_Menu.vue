@@ -2,7 +2,7 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" class="social-media-icon">
 					<img src="/images/SQUEEN668.webp" alt="SQUEEN 668">
 				</a>
 			</div>
@@ -14,22 +14,22 @@
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_History_Img.gif" alt="History">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Promo_Img.gif" alt="Promo">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Live_Img.gif" alt="Live Chat">
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Setting_Img.gif" alt="Setting">
 					</a>
 				</div>

@@ -25,7 +25,7 @@
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 60" :key="n">
 								<div class="MB_IMGs_Wrapper">
-									<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
+									<a v-if="n <= 12" :href="link_output + 'winbox-signup'" rel="nofollow">
 										<img class="MB_IMGs" :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 									</a>
 									<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
@@ -33,7 +33,7 @@
 
 
 								<div v-if="n <= 12">
-									<a :href="link_output + 'winbox-register'" rel="nofollow">
+									<a :href="link_output + 'winbox-signup'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>

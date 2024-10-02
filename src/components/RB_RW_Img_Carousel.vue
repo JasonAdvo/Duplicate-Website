@@ -10,17 +10,17 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/RW_Img_1.webp" class="d-block w-100" alt="50% Welcome Bonus">
 				</a>
 			</div>
 			<div class="carousel-item">
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/RW_Img_2.webp" class="d-block w-100" alt="Free Credit">
 				</a>
 			</div>
 			<div class="carousel-item">
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/RW_Img_3.webp" class="d-block w-100" alt="Share Get Reward">
 				</a>
 			</div>
