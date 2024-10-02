@@ -419,12 +419,6 @@
 					</a>
 				</div>
 			</div>
-
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
-					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
-
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/top up rm20.webp"
-					alt="Top Up Rm20" style="margin-bottom: 16px;"></a>
 		</div>
 	</div>
 </template>
