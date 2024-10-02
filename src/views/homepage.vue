@@ -244,8 +244,8 @@
 
 
 					<div class="footer-detail">
+						<p>{{ $t('Our_Partner.Partner') }}</p>
 						<div class="Atas_Sign_Up_Container">
-							<br>
 							<a :href="link_ataskasino">{{ $t('Atas_Sign_Up.Header') }}</a> - {{
 								$t('Atas_Sign_Up.Content') }}
 						</div>
