@@ -69,7 +69,7 @@
 				</table>
 			</div>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Bonus.gif"
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
@@ -205,7 +205,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	color: #ffffff;
-	border-color: #a403ff;
+	border: 2px solid black;
 	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
 	width: 90%;
 	margin-bottom: 8px !important;
@@ -271,6 +271,7 @@ export default {
 table {
 	width: 100%;
 	margin-bottom: 16px;
+	border: 2px solid black;
 }
 
 table td {
@@ -289,14 +290,14 @@ table td {
 }
 
 .green {
-	color: black;
-	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+	color: white;
+	background-color: black;
 	padding-left: 4px;
 }
 
 .red {
-	color: black;
-	background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+	color: white;
+	background-color: black;
 	padding-left: 4px;
 }
 
@@ -479,7 +480,12 @@ tbody td {
 	.Baki strong {
 		font-size: 30px;
 	}
+}
 
+@media screen and (max-width: 320px) {
+	.button_width {
+		font-size: 12px
+	}
 }
 
 .Lucky_Number_Btn {

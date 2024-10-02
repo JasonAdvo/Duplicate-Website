@@ -10,7 +10,8 @@
 		<!-- Middle Blank Column -->
 		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-4 col-xl-6">
 			<div class="Middle_Inner_Container">
-				<div style="display: flex; justify-content: center;">
+
+				<div class="site_tabs_container">
 					<div class="site-tabs">
 						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
 							:class="['image-container', { selected: selectedIndex === index }]"
@@ -98,7 +99,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © EPICWIN. All rights reserved.
+						Copyright © JOMKISS. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -425,8 +426,12 @@ export default {
 	color: #9d00ff;
 }
 
-.platform {
-	color: #f0d843 !important;
+.site_tabs_container {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	padding: 0 10px
 }
 
 .site-tabs {

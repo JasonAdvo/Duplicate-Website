@@ -163,12 +163,14 @@ export default {
 	justify-content: center;
 	align-items: center;
 	color: #ffffff;
-	border-color: #a403ff;
+	border: 2px solid black;
 	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
 	width: 90%;
 	margin-bottom: 8px !important;
 	border-radius: 8px;
 	height: 40px;
+	text-align: center;
+	font-size: 14px;
 }
 
 .title {
@@ -227,7 +229,7 @@ export default {
 table {
 	width: 100%;
 	margin-bottom: 16px;
-	border: 1px solid black !important;
+	border: 2px solid black;
 }
 
 table td {
@@ -247,16 +249,14 @@ table td {
 
 .green {
 	color: white;
-	/* background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%); */
 	background-color: black;
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	/* background-image: linear-gradient(180deg, #a51aef 0%, #656ac8 100%); */
-	padding-left: 4px;
 	background-color: black;
+	padding-left: 4px;
 }
 
 tbody td {

@@ -164,14 +164,26 @@ export default {
 	height: auto;
 }
 
+.social-media-icon img {
+	width: 80px;
+}
+
+@media screen and (max-width:430px) {
+	.social-media-container {
+		top: -300%;
+	}
+
+	.social-media-icon img {
+		width: 60px;
+	}
+}
+
 @media screen and (max-width: 321px) {
 	.col img {
 		width: 30px;
 	}
-}
 
-.social-media-icon img {
-	width: 80px;
+
 }
 
 .Btm-Popup_Container {

@@ -111,7 +111,8 @@ export default {
 
 .Top_Banner_Container {
 	/* background-image: url('/images/TB_Bg_Img.gif'); */
-	background: rgba(80, 40, 180);
+	/* background: rgba(80, 40, 180); */
+	background-color: black;
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -119,7 +120,7 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;
-	/* border-bottom: 2px solid #9d00ff; */
+	border-bottom: 2px solid #9d00ff;
 }
 
 .Partnership {
