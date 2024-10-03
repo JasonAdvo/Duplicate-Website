@@ -84,6 +84,7 @@
 						</div>
 						<div class="game">
 							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
+							<span v-if="!['zh'].includes($i18n.locale)">,</span>
 							{{ $t('Registered_TradeMark.Content_2') }}
 
 						</div>

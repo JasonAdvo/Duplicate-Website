@@ -141,7 +141,7 @@ export default {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 770px) {
 
 	.Logo {
 		top: 10px;
