@@ -86,12 +86,12 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
-							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
-							{{ $t('Registered_TradeMark.Content_2') }}
-							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
-							{{ $t('Registered_TradeMark.Content_4') }}
-							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
-							{{ $t('Registered_TradeMark.Content_6') }}
+							{{ $t('Registered_TradeMark.Content_1') }}
+							<strong>
+								{{ $t('Registered_TradeMark.Content_2') }}
+							</strong>
+							<span>, </span>
+							{{ $t('Registered_TradeMark.Content_3') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>

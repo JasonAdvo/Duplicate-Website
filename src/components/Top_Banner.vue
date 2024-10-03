@@ -31,7 +31,30 @@
 			</div>
 		</div>
 
-
+		<div class="running-sentence-container">
+			<div class="running-sentence">
+				<strong>{{ $t('Runnig_Bar.Content_1') }}</strong>
+				|
+				<strong>{{ $t('Runnig_Bar.Content_2') }}</strong>
+				|
+				<strong>{{ $t('Runnig_Bar.Content_3') }}</strong>
+				|
+				<strong>{{ $t('Runnig_Bar.Content_4') }}</strong>
+				|
+				<strong>{{ $t('Runnig_Bar.Content_5') }}</strong>
+				|
+				<strong>{{ $t('Runnig_Bar.Content_6') }}</strong>
+				|
+				<strong>{{ $t('Runnig_Bar.Content_7') }}</strong>
+				<strong>{{ $t('Runnig_Bar.Content_8') }}</strong>
+				{{ $t('Runnig_Bar.Content_9') }}
+				{{ $t('Runnig_Bar.Content_10') }}
+				<strong>{{ $t('Runnig_Bar.Content_11') }}</strong>
+				{{ $t('Runnig_Bar.Content_12') }}
+				<strong>{{ $t('Runnig_Bar.Content_13') }}</strong>
+				{{ $t('Runnig_Bar.Content_14') }}
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -235,9 +258,9 @@ export default {
 
 .running-sentence {
 	white-space: nowrap;
-	/* position: absolute; */
-	width: max-content;
-	animation: scroll 90s linear infinite;
+	display: inline-block;
+	width: 100%;
+	animation: scroll 70s linear infinite;
 	color: white;
 	letter-spacing: 0.5px;
 	font-size: 13px;
@@ -254,21 +277,17 @@ export default {
 }
 
 @media (max-width: 1000px) {
-
 	.running-sentence {
-		animation: scroll 70s linear infinite;
+		animation: scroll 30s linear infinite;
 	}
 
-	/* Adjust this value as needed for your design */
 	@keyframes scroll {
 		0% {
-			transform: translateX(30%);
-			/* Different value for mobile view */
+			transform: translateX(100%);
 		}
 
 		100% {
-			transform: translateX(-100%);
-			/* Different value for mobile view */
+			transform: translateX(-1100%);
 		}
 	}
 }
