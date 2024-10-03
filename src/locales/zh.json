@@ -78,12 +78,12 @@
 		"Content_2": "体验令人兴奋的老虎机游戏、现场游戏、体育博彩和彩票选项。我们的AUTO EWALLET现已重新上线，提供无需扫描二维码的快速存款服务！🏆 我们推荐使用我们的“自动电子钱包”选项，包括TouchnGo、Boostpay、Grabpay、Shopeepay、Duitnow、VISA、MasterCard和信用卡。没有诈骗，没有等待，没有扫描！🎁🎁🎁 分享乐趣并赚取额外收入——只需点击“分享”按钮邀请您的朋友。您分享的越多，赚的越多！😘😘😘"
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Epicwin",
+		"Content_1": "EpicWin",
 		"Content_2": "",
 		"Content_3": "",
-		"Content_4": "在",
-		"Content_5": "库拉索岛政府",
-		"Content_6": "的全牌照和监管下运营，确保在主许可证 N.V. #365/JAZ 下提供安全合法的游戏环境。"
+		"Content_4": "拥有由库拉索政府授予的完整执照（主许可证#1168/JAZ），由Moon Technologie运营.",
+		"Content_5": "",
+		"Content_6": ""
 	},
 	"Btm_Section": {
 		"Home": "首页",
@@ -91,5 +91,11 @@
 		"Deposit": "存款",
 		"Promo": "优惠活动",
 		"Profile": "账户档案"
+	},
+	"footer": {
+		"1": "Winbox Malaysia",
+		"2": " 体验终极游戏体验，安全的游戏、快速存款和独家奖金。立即加入Winbox Malaysia，将您的娱乐提升到新高度！",
+		"3": "Winbox Login",
+		"4": " 解锁顶级游戏的即时访问，快速存款和刺激的奖励。今天登录Winbox，开启您的游戏之旅并提升至新层次！"
 	}
 }

@@ -57,7 +57,25 @@
 					</a>
 					<br>
 
+
 					<div class="footer-detail">
+						<p>
+							<a :href="link_output" rel="nofollow">
+								<b>
+									{{ $t('footer.1') }}
+								</b>
+							</a> |
+							{{ $t('footer.2') }}
+						</p>
+
+						<p>
+							<a :href="winboxofficial_link" rel="nofollow">
+								<b>
+									{{ $t('footer.3') }}
+								</b>
+							</a> |
+							{{ $t('footer.4') }}
+						</p>
 						<div class="Visit">
 							<p>
 								{{ $t('message.Visit') }}
@@ -222,12 +240,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winbox77_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
 			} catch (error) {
 				console.log(error)
 			}
