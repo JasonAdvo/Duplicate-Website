@@ -192,7 +192,7 @@ export default {
 				"MIDAS GOLDEN TOUCH"
 			],
 			images: [
-				{ notSelected: 'public/images/Hot.webp', selected: '/images/Hot.webp', alt: 'Hot' },
+				{ notSelected: '/images/Hot.webp', selected: '/images/Hot.webp', alt: 'Hot' },
 				{ notSelected: '/images/Slot.gif', selected: '/images/Slot.gif', alt: 'Slots' },
 				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live' },
 				{ notSelected: '/images/Fish.webp', selected: '/images/Fish.webp', alt: 'Fishing' },
