@@ -5,7 +5,6 @@
 
 		</a>
 		<a href="/"><img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo"></a>
-		<img class="Partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
 		<img class="Click" src="/images/TB_Click_Img.gif" alt="Click Me">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
