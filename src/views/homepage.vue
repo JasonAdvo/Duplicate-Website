@@ -58,6 +58,27 @@
 					<p class="b-700">
 					</p>
 					<div class="footer-detail">
+						<p>
+							<b>
+								<a :href="link_winboxmys" rel="nofollow">
+									{{ $t('footer.1') }}
+								</a>
+								{{ $t('footer.2') }}
+							</b>|
+							{{ $t('footer.3') }}
+						</p>
+
+						<p>
+							<b>
+								{{ $t('footer.44') }}
+								<a :href="winboxofficial_link" rel="nofollow">
+									{{ $t('footer.4') }}
+								</a>
+								{{ $t('footer.5') }}
+							</b> |
+							{{ $t('footer.6') }}
+
+						</p>
 						<div class="Visit">
 							<p>
 								{{ $t('message.Visit') }}

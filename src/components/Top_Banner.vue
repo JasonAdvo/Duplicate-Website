@@ -28,6 +28,12 @@
 				</span>
 			</div>
 		</div>
+
+	</div>
+	<div class="running-sentence-container">
+		<div class="running-sentence">
+			{{ $t('Runnig_Bar.Content_1') }}
+		</div>
 	</div>
 </template>
 
