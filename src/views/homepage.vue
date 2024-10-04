@@ -59,6 +59,23 @@
 
 					<div class="footer-detail">
 
+						<p>
+							<b>
+								<a :href="link_output">
+									{{ $t('content.FP_Link_Word') }}
+								</a>
+							</b> |
+							{{ $t('content.FP_Content') }}
+						</p>
+
+						<p>
+							<b>
+								<a :href="winboxofficial_link">
+									{{ $t('content.SP_Link_Word') }}
+								</a>
+							</b> |
+							{{ $t('content.SP_F_Content') }}
+						</p>
 						<div class="Visit">
 							<p>
 								{{ $t('message.Visit') }}
