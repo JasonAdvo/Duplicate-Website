@@ -61,7 +61,7 @@
 					<div class="footer-detail">
 						<p>
 							<a :href="link_output">
-								<b>
+								<b style="font-size: 13px;">
 									{{ $t('footer.1') }}
 								</b>
 							</a> |
@@ -70,7 +70,7 @@
 
 						<p>
 							<a :href="winboxofficial_link">
-								<b>
+								<b style="font-size: 13px;">
 									{{ $t('footer.3') }}
 								</b>
 							</a> |
