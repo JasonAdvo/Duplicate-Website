@@ -60,7 +60,7 @@
 
 					<div class="footer-detail">
 						<p>
-							<a :href="link_output" rel="nofollow">
+							<a :href="link_output">
 								<b>
 									{{ $t('footer.1') }}
 								</b>
@@ -69,7 +69,7 @@
 						</p>
 
 						<p>
-							<a :href="winboxofficial_link" rel="nofollow">
+							<a :href="winboxofficial_link">
 								<b>
 									{{ $t('footer.3') }}
 								</b>
