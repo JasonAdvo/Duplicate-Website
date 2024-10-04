@@ -60,20 +60,24 @@
 
 					<div class="footer-detail">
 						<p>
-							<b>
-								<a :href="link_output">
+
+							<a :href="link_output">
+								<b style="font-size: 13px;">
 									{{ $t('content.FP_Link_Word') }}
-								</a>
-							</b> |
+								</b>
+							</a>
+							|
 							{{ $t('content.FP_Content') }}
 						</p>
 
 						<p>
-							<b>
-								<a :href="winboxofficial_link">
+
+							<a :href="winboxofficial_link">
+								<b style="font-size: 13px;">
 									{{ $t('content.SP_Link_Word') }}
-								</a>
-							</b> |
+								</b>
+							</a>
+							|
 
 							{{ $t('content.SP_F_Content') }}
 						</p>
