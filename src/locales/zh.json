@@ -81,9 +81,9 @@
 		"Content_1": "Jompanda",
 		"Content_2": "",
 		"Content_3": "",
-		"Content_4": "在",
-		"Content_5": "库拉索岛政府",
-		"Content_6": "的全牌照和监管下运营，确保在主许可证 N.V. #365/JAZ 下提供安全合法的游戏环境。"
+		"Content_4": "自豪地获得了库拉索政府颁发的完整许可证，许可证编号为#1168/JAZ，并由Moon Technologie管理。",
+		"Content_5": "",
+		"Content_6": ""
 	},
 	"Btm_Section": {
 		"Home": "首页",
@@ -91,5 +91,13 @@
 		"Deposit": "存款",
 		"Promo": "优惠活动",
 		"Profile": "账户档案"
+	},
+	"footer": {
+		"1": "马来西亚在线赌博网站 2024 — Winbox Casino ",
+		"2": "畅玩最安全、最多样化的在线赌博游戏，零支出限额。注册 ",
+		"3": "Winbox",
+		"4": " 以获得最刺激的在线游戏体验。",
+		"5": "马来西亚Winbox",
+		"6": "最好的在线赌博移动赌场应用程序。获取适用于 iOS 和 Android 的 Winbox APK，立即注册，享受业内所有最好的游戏！"
 	}
 }
