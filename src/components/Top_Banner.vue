@@ -3,7 +3,7 @@
 		<a href="/">
 			<div class="Top_Banner_Container" />
 		</a>
-		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
+
 
 		<img class="Logo" src="/images/TB_Info_Img.gif" alt="Logo">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
