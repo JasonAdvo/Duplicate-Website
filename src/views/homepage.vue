@@ -62,20 +62,24 @@
 						<p>
 							{{ $t('footer.1') }}|
 							{{ $t('footer.2') }}
-							<b>
-								<a :href="link_output">
+
+							<a :href="link_output">
+								<b style="font-size: 13px;">
 									{{ $t('footer.3') }}
-								</a>
-							</b>
+								</b>
+							</a>
+
 							{{ $t('footer.4') }}
 						</p>
 
 						<p>
-							<b>
-								<a :href="winboxofficial_link">
+
+							<a :href="winboxofficial_link">
+								<b style="font-size: 13px;">
 									{{ $t('footer.5') }}
-								</a>
-							</b> |
+								</b>
+							</a>
+							|
 							{{ $t('footer.6') }}
 						</p>
 						<div class="Visit">
