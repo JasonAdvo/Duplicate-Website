@@ -59,12 +59,16 @@
 					</p>
 					<div class="footer-detail">
 						<p>
-							<b>
-								<a :href="link_winboxmys">
+
+							<a :href="link_winboxmys">
+								<b style="font-size: 13px;">
 									{{ $t('footer.1') }}
-								</a>
+								</b>
+							</a>
+							<b style="font-size: 13px;">
 								{{ $t('footer.2') }}
-							</b>|
+							</b>
+							|
 							{{ $t('footer.3') }}
 						</p>
 
@@ -72,7 +76,9 @@
 							<b>
 								{{ $t('footer.44') }}
 								<a :href="winboxofficial_link">
-									{{ $t('footer.4') }}
+									<b style="font-size: 13px;">
+										{{ $t('footer.4') }}
+									</b>
 								</a>
 								{{ $t('footer.5') }}
 							</b> |
