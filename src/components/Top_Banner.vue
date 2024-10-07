@@ -116,10 +116,18 @@ export default {
 	background-size: cover;
 	/* Adjusted to make the image smaller */
 	background-position: 0px 47%;
-	background-repeat: no-repeat;
+	background-repeat: round;
 	width: 100%;
 	height: 80px;
 }
+
+@media screen and (min-width:652px) {
+	.Top_Banner_Container {
+		background-position: 0px 47%;
+		background-repeat: no-repeat;
+	}
+}
+
 
 .IJaya_Logo {
 	position: absolute;
