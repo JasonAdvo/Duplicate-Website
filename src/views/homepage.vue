@@ -256,6 +256,12 @@
 							<a :href="link_atascasinobet">{{ $t('Atas_Download.Content_2') }}</a>
 							{{ $t('Atas_Download.Content_3') }}
 						</div>
+						<div class="Atas_Download_Container">
+							{{ $t('thitdFooter.1') }}
+							<a :href="link_ataskasino">{{ $t('thitdFooter.2') }}</a>
+							{{ $t('thitdFooter.3') }}
+						</div>
+
 						<div class="Visit_site">
 							{{ $t('content.Visit_Site') }} <a href="/">{{ $t('content.Site') }}</a>
 						</div>
