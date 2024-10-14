@@ -69,7 +69,7 @@
 							{{ $t('Btm_Content.Second_H2_First_Li_Header') }}
 							<p>{{ $t('Btm_Content.Second_H2_First_Li_Content_1') }} <strong>{{
 								$t('Btm_Content.Second_H2_First_Li_Content_2')
-							}}</strong> {{
+									}}</strong> {{
 										$t('Btm_Content.Second_H2_First_Li_Content_3') }} </p>
 						</li>
 						<li>
@@ -80,25 +80,25 @@
 							{{ $t('Btm_Content.Second_H2_Third_Li_Header') }}
 							<p>{{ $t('Btm_Content.Second_H2_Third_Li_Content_1') }} <strong>{{
 								$t('Btm_Content.Second_H2_Third_Li_Content_2')
-							}}</strong> {{
+									}}</strong> {{
 										$t('Btm_Content.Second_H2_Third_Li_Content_3') }} </p>
 						</li>
 					</ul>
 					<p>{{ $t('Btm_Content.Second_H2_Btm_Content_1') }} <strong>{{
 						$t('Btm_Content.Second_H2_Btm_Content_2')
-					}}</strong> {{
+							}}</strong> {{
 								$t('Btm_Content.Second_H2_Btm_Content_3') }} </p>
 					<br>
 					<h2>{{ $t('Btm_Content.Third_H2_Header') }}</h2>
 					<p>{{ $t('Btm_Content.Third_H2_Content_1') }} <strong>{{
 						$t('Btm_Content.Third_H2_Content_2')
-					}}</strong> {{
+							}}</strong> {{
 								$t('Btm_Content.Third_H2_Content_3') }} </p>
 					<ol>
 						<li>
 							<p>{{ $t('Btm_Content.Third_H2_First_Li_Content_1') }} <strong>{{
 								$t('Btm_Content.Third_H2_First_Li_Content_2')
-							}}</strong> {{
+									}}</strong> {{
 										$t('Btm_Content.Third_H2_First_Li_Content_3') }} </p>
 						</li>
 						<li>
@@ -107,13 +107,13 @@
 						<li>
 							<p>{{ $t('Btm_Content.Third_H2_Third_Li_Content_1') }} <strong>{{
 								$t('Btm_Content.Third_H2_Third_Li_Content_2')
-							}}</strong> {{
+									}}</strong> {{
 										$t('Btm_Content.Third_H2_Third_Li_Content_3') }} </p>
 						</li>
 						<li>
 							<p>{{ $t('Btm_Content.Third_H2_Fourth_Li_Content_1') }} <strong>{{
 								$t('Btm_Content.Third_H2_Fourth_Li_Content_2')
-							}}</strong> {{
+									}}</strong> {{
 										$t('Btm_Content.Third_H2_Fourth_Li_Content_3') }} </p>
 						</li>
 					</ol>
@@ -140,6 +140,11 @@
 						<a :href="link_ataskasino"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> |
 						{{
 							$t('content.SP_F_Content') }}
+					</p>
+					<p>
+						{{ $t('thirdFooter.1') }}
+						<a :href="link_ataskasino"><strong> {{ $t('thirdFooter.2') }}</strong></a>
+						{{ $t('thirdFooter.3') }}
 					</p>
 					<div class="footer-detail">
 						<div class="license">
