@@ -128,6 +128,11 @@
 							<a :href="link_atascasinobet">{{ $t('Atas_Download.Header') }}</a> | {{
 								$t('Atas_Download.Content') }}
 						</div>
+						<div class="Atas_Download_Container">
+							{{ $t('thirdFooter.1') }}
+							<a :href="link_ataskasino">{{ $t('thirdFooter.2') }}</a>
+							{{ $t('thirdFooter.3') }}
+						</div>
 
 						<div class="license">
 							<p>{{ $t('content.Game_License') }}</p>
