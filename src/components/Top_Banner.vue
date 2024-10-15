@@ -4,8 +4,8 @@
 			<div class="Top_Banner_Container" />
 
 		</a>
+		<img class="Partnership" src="/images/G66_Partnership_Img.webp" alt="G66 Partnership">
 		<a href="/"><img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo"></a>
-		<img class="Click" src="/images/TB_Click_Img.gif" alt="Click Me">
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 		<!-- Overlay -->
@@ -33,11 +33,10 @@
 		</div>
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				<b>{{ $t('Runnig_Bar.Content_1') }}</b>|
-				<b>{{ $t('Runnig_Bar.Content_2') }}</b>|
-				{{ $t('Runnig_Bar.Content_3') }}
-				<b>{{ $t('Runnig_Bar.Content_4') }}</b>
-				{{ $t('Runnig_Bar.Content_5') }}
+				<b>{{ $t('Runnig_Bar.Content_1') }}</b>
+				{{ $t('Runnig_Bar.Content_2') }}
+				<b>{{ $t('Runnig_Bar.Content_3') }}</b>
+				{{ $t('Runnig_Bar.Content_4') }}
 			</div>
 		</div>
 	</div>
@@ -127,33 +126,19 @@ export default {
 	height: 80px;
 }
 
-.IJaya_Logo {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-	width: 240px;
-	height: auto;
-}
-
 .Partnership {
 	position: absolute;
 	top: 20px;
-	right: 200px;
+	left: 20px;
 	width: 60px;
-}
-
-.Click {
-	position: absolute;
-	top: 15px;
-	right: 90px;
-	width: 100px;
 }
 
 .Logo {
 	position: absolute;
 	width: 200px;
 	top: 15px;
-	left: 20px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .GT-icon {
@@ -162,7 +147,7 @@ export default {
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
-	color: black;
+	color: white;
 	cursor: pointer;
 	width: 50px;
 }
@@ -174,7 +159,7 @@ export default {
 	}
 
 	.Partnership {
-		top: 10px;
+		top: 12px;
 		width: 40px;
 		right: 130px;
 	}
@@ -280,7 +265,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 80s linear infinite;
-	color: #f3c015;
+	color: black;
 	letter-spacing: 1px;
 	font-size: 12px;
 }

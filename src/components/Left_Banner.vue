@@ -2,25 +2,86 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
 					alt="Spin Bonus">
 			</a>
 
-			<img src="/images/LB_Img_1.webp" alt="Deposit Fast & Secure">
+			<img src="/images/LB_Img_1.gif" alt="Deposit Fast & Secure">
+
+			<table>
+				<thead>
+					<tr>
+						<td colspan="5" class="title">
+							<span>
+								LIVE TRANSACTION
+							</span>
+							<div class="live main-blink-me">
+								LIVE
+								<span></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="green">
+							DEPOSIT
+						</td>
+						<td colspan="3" class="red">
+							WITHDRAW
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>60*******095</td>
+						<td class="amount">RM50.00</td>
+						<td>60******739</td>
+						<td class="amount">RM600.05</td>
+						<td>JILI</td>
+					</tr>
+					<tr>
+						<td>60*******399</td>
+						<td class="amount">RM10.00</td>
+						<td>60******209</td>
+						<td class="amount">RM127.09</td>
+						<td>KISS918</td>
+					</tr>
+					<tr>
+						<td>60*******874</td>
+						<td class="amount">RM5.00</td>
+						<td>60******316</td>
+						<td class="amount">RM20.09</td>
+						<td>JILI</td>
+					</tr>
+					<tr>
+						<td>60*******399</td>
+						<td class="amount">RM10.00</td>
+						<td>60******453</td>
+						<td class="amount">RM127.05</td>
+						<td>MEGA888</td>
+					</tr>
+					<tr>
+						<td>60*******110</td>
+						<td class="amount">RM50.00</td>
+						<td>60******716</td>
+						<td class="amount">RM50.00</td>
+						<td>JILI</td>
+					</tr>
+				</tbody>
+			</table>
 
 			<div class="Share_Section">
-				<img src="/images/LB_Img_2.webp" alt="Share">
+				<img src="/images/LB_Img_2.gif" alt="Share">
 				<div class="button-grp">
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Share_Img.gif" alt="Share"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
+							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 				</div>
 			</div>
+
+			<img src="/images/LB_Tekan_Img.webp" alt="Tekan Sini">
 
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
@@ -32,7 +93,7 @@
 						<p>{{ $t('message.start_time') }}</p>
 						<p>21 Sep 2024</p>
 						<p class="time">19:30</p>
-						<a href="/">
+						<a :href="link_output + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -43,7 +104,7 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+				<a :href="link_output + 'winbox-register'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
@@ -93,7 +154,7 @@ export default {
 	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 
@@ -256,5 +317,100 @@ export default {
 	font-size: 21px;
 	color: #258D2D;
 	font-family: 'Digital-7', sans-serif;
+}
+
+.title {
+	position: relative;
+	background: #004D85;
+}
+
+.title span {
+	color: white;
+	font-weight: 700;
+	padding-left: 4px;
+}
+
+.live {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 3px;
+	right: 3px;
+	background: red;
+	padding: 1px 3px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 400;
+	height: 13px;
+}
+
+.live span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	float: right;
+	border-radius: 10px;
+	margin: 1px 1px 0 3px;
+}
+
+.main-blink-me {
+	animation: blinkme 1.5s linear infinite;
+}
+
+@keyframes blinkme {
+	0% {
+		display: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+table {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+table td {
+	font-size: 9px;
+	color: black;
+	border: 1px solid black;
+	font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+	table td {
+		font-size: 11px;
+	}
+}
+
+.green {
+	color: white;
+	background-image: linear-gradient(to bottom, #7B94BC, #7B94BC);
+	padding-left: 4px;
+}
+
+.red {
+	color: white;
+	background: linear-gradient(to bottom, #C8D8EF, #C8D8EF);
+	padding-left: 4px;
+}
+
+tbody td {
+	width: 20%;
+	height: 20px;
+	padding: 4px;
+	word-wrap: break-word;
+}
+
+.amount {
+	color: black;
+	text-align: right;
 }
 </style>

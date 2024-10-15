@@ -3,14 +3,14 @@
 
 		<div class="Mobile_View" style="display: none;">
 			<RB_Img_Carousel />
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img style="width: 100%; margin-bottom: 16px"
 					src="/images/Spin Bonus.webp" alt="Spin Bonus">
 			</a>
 
 		</div>
 
 		<div class="RB_Imgs">
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
@@ -25,8 +25,9 @@
 
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
-					<a href="/"><img class="Join" src="/images/RB_Login_Img.gif" alt="Login"></a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="Register"
+					<a :href="link_output + 'winbox-login'" rel="nofollow"><img class="Join"
+							src="/images/RB_Login_Img.gif" alt="Login"></a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="Register"
 							src="/images/RB_Register_Img.gif" alt="Register"></a>
 				</div>
 
@@ -40,18 +41,20 @@
 						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 					</div>
 					<div class="RB_Cash_Btn_Container">
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
 						</a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 						</a>
 						<a href="/">
-							<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
+							<img src="/images/RB_Refresh_Img.gif" alt="Refresh">
 						</a>
 					</div>
 				</div>
 			</div>
+
+			<img style="width: 280px;" src="/images/RB_Ang_Pao_Img.gif" alt="Ang Pao">
 
 			<div class="Promo_Section">
 				<div class="Special_Promo_Section">
@@ -59,23 +62,15 @@
 						SPECIAL PROMO
 					</div>
 					<div class="Promo_Container">
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
 							<div class="Promo_Bg_Container">
-								<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+								<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 								<div class="Text_Container">
 									<p class="text">Daftar Baru Free RM1</p>
 									<p class="name">RM1</p>
 								</div>
 							</div>
 						</a>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">Telegram Free ( RM 1 Up to RM 88)</p>
-								<p class="name">RM88</p>
-							</div>
-						</div>
 					</div>
 				</div>
 
@@ -85,30 +80,11 @@
 						<p style="color: #0096FF; font-size: 10px; margin: 0">TANPA DEPOSIT</p>
 					</div>
 					<div class="Promo_Container">
-
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<div class="Promo_Bg_Container">
-								<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-								<div class="Text_Container">
-									<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
-									<p class="name">MYR ?</p>
-								</div>
-							</div>
-						</a>
-
 						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 							<div class="Text_Container">
 								<p class="text">FREE SHARE</p>
 								<p class="name">RM3</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">Downline 1st Deposit</p>
-								<p class="name">RM8</p>
 							</div>
 						</div>
 					</div>
@@ -120,27 +96,32 @@
 						NEW MEMBER PROMOTION
 					</div>
 					<div class="Promo_Container">
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">WELCOME FREE</p>
-								<p class="name">RM10</p>
+
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<div class="Promo_Bg_Container">
+								<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
+								<div class="Text_Container">
+									<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
+									<p class="name">MYR ?</p>
+								</div>
 							</div>
-						</div>
+						</a>
+
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<div class="Promo_Bg_Container">
+								<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
+								<div class="Text_Container">
+									<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
+									<p class="name">MYR ?</p>
+								</div>
+							</div>
+						</a>
 
 						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
+							<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 							<div class="Text_Container">
 								<p class="text">WELCOME BONUS 77%</p>
 								<p class="name">77%</p>
-							</div>
-						</div>
-
-						<div class="Promo_Bg_Container Shadow_Container">
-							<img class="Promo_Bg" src="/images/Promo_Bg_Img.gif" alt="Promotion">
-							<div class="Text_Container">
-								<p class="text">Informasi Penting</p>
-								<p class="name">MYR ?</p>
 							</div>
 						</div>
 					</div>
@@ -153,13 +134,13 @@
 				<div class="Share_Section">
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.webp" alt="Share"></a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img class="button_width"
+						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_More_Img.webp" alt="More"></a>
 					</div>
 				</div>
@@ -184,7 +165,7 @@
 							<p>{{ $t('message.team_2') }}</p>
 						</div>
 					</div>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
 						<div class="show-more-button-container">
 							<p>{{ $t('message.show_more') }}</p>
 						</div>

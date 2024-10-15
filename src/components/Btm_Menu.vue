@@ -1,25 +1,25 @@
 <template>
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
-			<div class="social-media-container">
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
+			<!-- <div class="social-media-container">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Download_App_Img.webp" alt="Download App">
 				</a>
 
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Subscribe_Us_Img.webp" alt="Subscribe Us">
 				</a>
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
+				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Follow_Us_Img.webp" alt="Follow Us">
 				</a>
-			</div>
+			</div> -->
 
-			<div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+			<!-- <div v-if="isVisible" class="Btm-Popup_Container">
+				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> 
+				<a :href="link_output + 'winbox-register'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.gif" alt="Join Us Now">
 				</a>
-			</div>
+			</div> -->
 
 			<div class="footer-content">
 				<div class="d-f col">
@@ -28,17 +28,17 @@
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Live_Img.gif" alt="Live Chat">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
+					<a :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>

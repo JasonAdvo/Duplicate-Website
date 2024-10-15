@@ -20,23 +20,14 @@
 					</div>
 				</div>
 
-				<div class="MB_Img_Gallery">
+				<div class="MB_Img_Gallery" id="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 58" :key="n">
-								<a v-if="n <= 12" :href="link_output + 'winbox-rigester'" rel="nofollow">
+								<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-
-								<div v-if="n <= 12">
-									<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
-									</a>
-								</div>
-								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -58,9 +49,7 @@
 					</div>
 
 					<div class="footer-detail">
-
 						<p>
-
 							<a :href="link_output">
 								<b style="font-size: 12px;">
 									{{ $t('content.FP_Link_Word') }}
@@ -95,12 +84,8 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
-							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
+							{{ $t('Registered_TradeMark.Content_1') }}
 							{{ $t('Registered_TradeMark.Content_2') }}
-							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
-							{{ $t('Registered_TradeMark.Content_4') }}
-							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
-							{{ $t('Registered_TradeMark.Content_6') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>
@@ -122,7 +107,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © GTB77. ALL RIGHTS RESERVED.
+						Copyright © MATBET88. ALL RIGHTS RESERVED.
 					</div>
 				</div>
 			</div>
@@ -214,15 +199,11 @@ export default {
 				"Road to Euro"
 			],
 			images: [
-				{ notSelected: '/images/Power.webp', selected: '/images/Power.webp', alt: 'V Power Game' },
-				{ notSelected: '/images/Rich.webp', selected: '/images/Rich.webp', alt: 'Rich Game' },
-				{ notSelected: '/images/BT_Gaming.webp', selected: '/images/BT_Gaming.webp', alt: 'BT Gaming' },
-				{ notSelected: '/images/CG_Gaming.webp', selected: '/images/CG_Gaming.webp', alt: 'CG Creative Gaming' },
-				{ notSelected: '/images/AFB_Gaming.webp', selected: '/images/AFB_Gaming.webp', alt: 'AFB Gaming' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI Game' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'Slot Game' },
-				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live Game' },
-				{ notSelected: '/images/Sport_NotS.webp', selected: '/images/Sport_S.webp', alt: 'Sportbook' },
+				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
+				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
+				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sport Game' },
+				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live Game' },
+				{ notSelected: '/images/Others_Img.webp', selected: '/images/Others_Img.webp', alt: 'Other Game' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -365,7 +346,7 @@ export default {
 
 @media (max-width: 768px) {
 	.main-content {
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
 	}
 }
@@ -508,7 +489,7 @@ export default {
 }
 
 .image-container {
-	width: calc(100% / 9);
+	width: calc(100% / 5);
 	padding-bottom: 20px;
 	cursor: pointer;
 }
