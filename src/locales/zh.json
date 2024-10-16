@@ -7,15 +7,15 @@
 		"start_time": "开赛时间",
 		"bet_now": "下注",
 		"show_more": "更多",
-		"team_1": "南安普教",
-		"team_2": "曼彻斯特联",
+		"team_1": "西汉姆联",
+		"team_2": "托特纳姆热刺",
 		"Game_Licence": "游戏许可",
 		"Payment_Method": "支付方式",
 		"Certidicate_Security": "证书 & 安全",
 		"Follow_Us": "关注我们",
-		"Visit": "访问我们的官方 Boda8 博客：",
+		"Visit": "访问我们的官方 PANAS777 博客：",
 		"Click": "点击这里",
-		"Website": "Boda8"
+		"Website": "PANAS777"
 	},
 	"Main_Content": {
 		"H1_Header": "Oren33 亚洲 – 最佳免费奖金的在线赌场",
@@ -67,22 +67,31 @@
 	},
 	"content": {
 		"Learn_More": "进一步了解我们的合作伙伴:",
-		"FP_Link_Word": "Winbox 注册",
-		"FP_Content": "准备好赢大钱了吗？立即注册 Winbox，开始游戏，无提款限制！",
-		"SP_Link_Word": "Winbox",
-		"SP_F_Content": "与 Winbox 一起进入在线赌场娱乐世界，享受无尽的赢钱机会！"
+		"FP_Link_Word": "下载 Winbox 应用",
+		"FP_Content": "获取 Winbox 应用，享受安全的游戏、丰厚的奖励和流畅的游戏体验。立即下载，体验终极在线赌场乐趣！",
+		"SP_Link_Word": "立即加入 Winbox",
+		"SP_F_Content": "体验 Winbox 带来的顶级在线游戏—安全、刺激，并充满丰厚奖励。"
 	},
 	"Runnig_Bar": {
-		"Content_1": "🎉 欢迎来到 Boda8，马来西亚终极在线赌场！🎰 🎁🎁🎁 领取 150% 欢迎奖金和高达 20% 的现金返还！此外，还可享受 30% 老虎机每日奖金和特别无限欢乐时光奖金！🕑🎰 立即加入，享受热门游戏、VIP 优惠和幸运轮奖励！🌟🌟 放心玩游戏，安全无忧，全天候客户支持！💪"
+		"Content_1": "🔥 欢迎来到 PANAS777 – 亚洲十大在线钱包赌场！ 🎰 安全、用户友好，",
+		"Content_2": "专为您的便利而设计！ 💸 只需点击一下即可赚取额外收入 —",
+		"Content_3": "分享",
+		"Content_4": "并享受",
+		"Content_5": "无条件的即时佣金提取！",
+		"Content_6": "🚀 立即在",
+		"Content_7": "PANAS777",
+		"Content_8": "体验不间断的动作和安全的游戏！"
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Boda8 由库拉索政府根据主许可证#1168/JAZ 正式授权，并由 Moon Technologies 运营。"
+		"Content_1": "Panas777 由库拉索政府根据主许可证#1168/JAZ 正式授权，并由 Moon Technologies 运营。"
 	},
 	"Btm_Section": {
 		"Home": "首页",
 		"History": "报表",
 		"Deposit": "存款",
 		"Promo": "优惠活动",
-		"Profile": "账户档案"
+		"Profile": "账户档案",
+		"Live": "聊天",
+		"Setting": "设定"
 	}
 }

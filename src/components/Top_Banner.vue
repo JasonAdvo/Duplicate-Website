@@ -6,9 +6,6 @@
 			</a>
 			<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 
-			<a href="/">
-				<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
-			</a>
 			<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
 			<!-- Overlay -->
@@ -38,7 +35,14 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				{{ $t('Runnig_Bar.Content_1') }}
+				<b>{{ $t('Runnig_Bar.Content_1') }}</b>
+				{{ $t('Runnig_Bar.Content_2') }}
+				<b>{{ $t('Runnig_Bar.Content_3') }}</b>
+				{{ $t('Runnig_Bar.Content_4') }}
+				<b>{{ $t('Runnig_Bar.Content_5') }}</b>
+				{{ $t('Runnig_Bar.Content_6') }}
+				<b>{{ $t('Runnig_Bar.Content_7') }}</b>
+				{{ $t('Runnig_Bar.Content_8') }}
 			</div>
 		</div>
 	</div>
@@ -118,9 +122,9 @@ export default {
 }
 
 .Top_Banner_Container {
-	/* background-image: url('/images/TB_Bg_Img.gif'); */
+	background-image: url('/images/TB_Bg_Img.gif');
 	/* background: rgba(80, 40, 180); */
-	background-color: #4b007f;
+	/* background-color: #4b007f; */
 	position: relative;
 	background-size: cover;
 	/* Adjusted to make the image smaller */
@@ -128,7 +132,7 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;
-	border-bottom: 2px solid #9d00ff;
+	/* border-bottom: 2px solid #9d00ff; */
 }
 
 .Partnership {
@@ -209,21 +213,21 @@ export default {
 	z-index: 9999;
 	text-align: center;
 	width: 300px;
-	border: 2px solid #9601e1;
+	border: 2px solid #ff0717;
 	color: white;
 }
 
 .popup-card div {
 	display: block;
 	padding: 15px;
-	border-bottom: 1px solid #9601e1;
+	border-bottom: 1px solid #ff0717;
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
 }
 
 .tick {
-	color: #9601e1;
+	color: #ff0717;
 }
 
 .tick i {
@@ -238,8 +242,7 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	/* background-image: url('/images/Running_Bar_Bg_Img.webp'); */
-	/* visibility: visible; */
+	background-image: url('/images/Running_Bar_Bg_Img.gif');
 	background-size: 100% 100%;
 	background-color: black;
 	font-size: 12px;
@@ -249,8 +252,6 @@ export default {
 	display: flex;
 	align-items: center;
 	position: sticky;
-	background-color: white;
-	border-bottom: 2px solid #9d00ff;
 }
 
 .running-sentence {
@@ -258,7 +259,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 30s linear infinite;
-	color: black;
+	color: white;
 	letter-spacing: 0.5px;
 	font-size: 13px;
 }

@@ -1,4 +1,8 @@
 <template>
+	<div>
+		<PopUpCard />
+	</div>
+
 	<div class="TopBanner">
 		<TopBanner />
 	</div>
@@ -17,7 +21,6 @@
 							:class="['image-container', { selected: selectedIndex === index }]"
 							@click="selectImage(index);">
 							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
-							{{ image.alt }}
 						</div>
 					</div>
 				</div>
@@ -25,11 +28,11 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 31" :key="n">
-								<a v-if="n <= 12" :href="link_output + 'winbox-rigester'" rel="nofollow">
-									<img class="MB_IMGs" :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+							<div class="image-wrapper" v-for="n in 45" :key="n">
+								<a v-if="n <= 12" :href="link_output + 'winbox-signup'" rel="nofollow">
+									<img class="MB_IMGs" :src="`/images/MB_${n}_Img.gif`" :alt="altTexts[n - 1]">
 								</a>
-								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+								<img v-else :src="`/images/MB_${n}_Img.gif`" :alt="altTexts[n - 1]">
 							</div>
 						</div>
 					</div>
@@ -85,9 +88,15 @@
 							<img src="/images/payment-list.webp" alt="payment-list">
 						</div>
 						<div class="Certidicate_Security">
-							<p style="font-weight: 500;">{{ $t('message.Certidicate_Security') }}</p>
+							<p style="font-weight: 500;">{{ $t('message.Certidicate') }}</p>
 							<img src="/images/Cert-list.webp" alt="certificate-list">
+							<img src="/images/Cert-list_2.webp" alt="certificate-list-2">
 						</div>
+						<div class="Security">
+							<p style="font-weight: 500;">{{ $t('message.Security') }}</p>
+							<img src="/images/Security-list.webp" alt="Security List">
+						</div>
+
 						<div class="follow">
 							<p style="font-weight: 500;">{{ $t('message.Follow_Us') }}</p>
 							<a href="/"><img class="main-pulse" src="/images/facebook.webp" alt="facebook"></a>
@@ -100,7 +109,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © BODA8. All rights reserved.
+						Copyright © PANAS777. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -118,6 +127,7 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
+import PopUpCard from '@/components/PopUpCard.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
 
@@ -126,58 +136,70 @@ export default {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
+		PopUpCard
 	},
 	data() {
 		return {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"NEXTSPIN",
-				"Spade Gaming",
-				"Pragmatic Play",
-				"JILI",
-				"YGR",
-				"FC Fa Chai",
-				"Microgaming",
-				"Joker",
-				"Funky Games",
-				"Gameplay Interactive",
-				"AG Gaming",
-				"Habanero",
-				"MEGA888",
-				"918Kiss",
-				"NETENT",
-				"Red Tiger",
-				"Hong Chow",
-				"Playtech",
-				"Pussy888",
-				"CO9",
+				"MEGAH5",
+				"MEGAH5",
+				"VPOWER",
+				"MARIO",
+				"POCKET GAME",
+				"PUSSY888",
+				"PUSSY888",
+				"XE88",
+				"SPADE GAMING",
 				"JDB",
-				"Relax Gaming",
-				"PS",
-				"YGGDRASIL",
-				"ADVANT PLAY",
-				"Dragon Soft",
-				"Evoplay",
-				"V Power",
-				"Fast Spin",
-				"BBN",
-				"Skywind Group"
+				"FACHAI",
+				"DRAGON SOFT",
+				"PLAYTECH",
+				"PRAGMATIC",
+				"JOKER",
+				"SUNCITY",
+				"ACE333",
+				"KISS918",
+				"MEGA888",
+				"MEGA888 2",
+				"LION KING",
+				"EVOLUTION",
+				"MICROGAMING",
+				"CO9",
+				"KA GAMING",
+				"CREATIVE",
+				"FUNKY GAMING",
+				"NEXT SPIN",
+				"PEGASUS",
+				"LUCKY365",
+				"KISS918 HTMLS",
+				"UUSLOT",
+				"ACEWIN",
+				"RICH GAMING",
+				"PLAY STAR",
+				"HABANERO",
+				"RICH88",
+				"BTGAMING",
+				"BIG POT",
+				"5G GAMING",
+				"ILOVEYOU",
+				"LFC",
+				"MONKEY KING",
+				"AFB SLOT",
+				"WE SLOT"
 			],
 			images: [
-				{ notSelected: '/images/Slots.svg', selected: '/images/Slots_S.svg', alt: 'Slots' },
-				{ notSelected: '/images/Casino.svg', selected: '/images/Casino_S.svg', alt: 'Casino' },
-				{ notSelected: '/images/Sports.svg', selected: '/images/Sports_S.svg', alt: 'Sports' },
-				{ notSelected: '/images/fish.svg', selected: '/images/fish_S.svg', alt: 'Fishing' },
-				{ notSelected: '/images/Lottery.svg', selected: '/images/Lottery_S.svg', alt: 'Lottery' },
-				{ notSelected: '/images/Games_3D.svg', selected: '/images/Games_3D_S.svg', alt: '3D Games' },
-				{ notSelected: '/images/Fast_Games.svg', selected: '/images/Fast_Games_S.svg', alt: 'Fast Games' },
-				{ notSelected: '/images/Poker.svg', selected: '/images/Poker_S.svg', alt: 'Poker' },
-				{ notSelected: '/images/TV.svg', selected: '/images/TV_S.svg', alt: 'TV' },
+				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slots' },
+				{ notSelected: '/images/Evo888H5_Img.gif', selected: '/images/Evo888H5_Img.gif', alt: 'Evo888H5' },
+				{ notSelected: '/images/JILI_Img.gif', selected: '/images/JILI_Img.gif', alt: 'JILI' },
+				{ notSelected: '/images/Live_Img.webp', selected: '/images/Live_Img.webp', alt: 'Live' },
+				{ notSelected: '/images/Sport_Img.webp', selected: '/images/Sport_Img.webp', alt: 'Sport' },
+				{ notSelected: '/images/More_Img.webp', selected: '/images/More_Img.webp', alt: 'More Game' },
 			],
 			winboxofficial_link: '',
-			stickyBarHeightWeb: 90,
-			stickyBarHeightMobile: 75,
+			stickyBarHeightWeb: 110,
+			stickyBarHeightMobile: 110,
 		};
 	},
 	setup() {
@@ -305,8 +327,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	background-image: url('/images/Bg_Img.webp');
-	/* background-color: #9900ff; */
+	/* background-image: url('/images/Bg_Img.webp'); */
+	background-color: black;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -395,7 +417,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: #9d00ff;
+	color: #ff0717;
 }
 
 .site_tabs_container {
@@ -409,13 +431,14 @@ export default {
 	position: relative;
 	display: flex;
 	width: 100%;
+	border-bottom: 1px solid white;
 }
 
 .image-container {
-	width: calc(100% / 9);
+	width: calc(100% / 6);
 	/* padding-bottom: 30px; */
 	cursor: pointer;
-	background: rgb(246, 246, 246);
+	/* background: rgb(246, 246, 246); */
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	border-radius: 16px;
 	padding: 4px;
@@ -427,20 +450,6 @@ export default {
 	font-size: 14px;
 	font-weight: 700;
 
-}
-
-.image-container.selected {
-	background: rgb(75, 0, 127);
-	color: white
-		/* border: 2px solid black; */
-}
-
-.image-container img {
-	width: 60px !important;
-}
-
-.image-container.selected img {
-	filter: brightness(100);
 }
 
 
@@ -456,7 +465,7 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
+		/* width: 86px; */
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
@@ -486,19 +495,19 @@ export default {
 
 @media (min-width: 1200px) {
 	.image-grid-container {
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
 	.image-grid-container {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
 @media (max-width: 767px) {
 	.image-grid-container {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
@@ -625,7 +634,7 @@ li {
 }
 
 .Visit strong {
-	color: #9d00ff;
+	color: #ff0717;
 }
 
 .license {
@@ -671,7 +680,21 @@ li {
 
 .Certidicate_Security img {
 	margin-top: 10px;
+	width: 100%;
+}
+
+.Security {
+	text-align: left;
+	font-size: 14px;
+	float: left;
 	width: 70%;
+	/* margin-top: 50px; */
+	color: black;
+}
+
+.Security img {
+	margin-top: 10px;
+	width: 100%;
 }
 
 .payment {
@@ -683,7 +706,7 @@ li {
 .payment img {
 	width: 100%;
 	display: inline-block;
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
 .certification {

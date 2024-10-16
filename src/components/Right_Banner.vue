@@ -4,86 +4,21 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<RB_Img_Carousel />
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img style="margin-bottom: 16px;"
+				<a :href="link_output + 'winbox-signup'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/daily free spin bonus.gif" alt="Spin Bonus"></a>
-
-				<table>
-					<thead>
-						<tr>
-							<td colspan="5" class="title">
-								<span>
-									LIVE TRANSACTION
-								</span>
-								<div class="live main-blink-me">
-									LIVE
-									<span></span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="green">
-								DEPOSIT
-							</td>
-							<td colspan="3" class="red">
-								WITHDRAW
-							</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>60*******095</td>
-							<td class="amount">RM50.00</td>
-							<td>60******739</td>
-							<td class="amount">RM600.05</td>
-							<td>JILI</td>
-						</tr>
-						<tr>
-							<td>60*******399</td>
-							<td class="amount">RM10.00</td>
-							<td>60******209</td>
-							<td class="amount">RM127.09</td>
-							<td>KISS918</td>
-						</tr>
-						<tr>
-							<td>60*******874</td>
-							<td class="amount">RM5.00</td>
-							<td>60******316</td>
-							<td class="amount">RM20.09</td>
-							<td>JILI</td>
-						</tr>
-						<tr>
-							<td>60*******399</td>
-							<td class="amount">RM10.00</td>
-							<td>60******453</td>
-							<td class="amount">RM127.05</td>
-							<td>MEGA888</td>
-						</tr>
-						<tr>
-							<td>60*******110</td>
-							<td class="amount">RM50.00</td>
-							<td>60******716</td>
-							<td class="amount">RM50.00</td>
-							<td>JILI</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
-					<a href="/">
-						<div class="Join">
-							LOGIN
-						</div>
+					<a :href="link_output + 'winbox-login'" rel="nofollow">
+						<img src="/images/RB_Login_Img.webp" alt="Login">
 					</a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-						<div class="Register">
-							REGISTER
-						</div>
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
+						<img src="/images/RB_Register_Img.webp" alt="Register">
 					</a>
 				</div>
 				<div class="RB_Info_Container" style="display: flex;">
@@ -96,40 +31,68 @@
 						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM25.00</strong></p>
 					</div>
 					<div class="RB_Cash_Btn_Container">
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
 						</a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 						</a>
 						<a href="/">
-							<img src="/images/RB_Refresh_Img.gif" alt="Refresh">
+							<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
 						</a>
 					</div>
 				</div>
 			</div>
 
+			<div class="sport-betting-container">
+				<div class="SB-content-container">
+					<div class="team">
+						<img src="/images/Tottenham.webp" alt="West Ham">
+						<p>{{ $t('message.team_2') }}</p>
+					</div>
+					<div class="time-info">
+						<p>{{ $t('message.start_time') }}</p>
+						<p>19 Oct 2024</p>
+						<p class="time">19:30</p>
+						<a :href="link_output + 'winbox-login'" rel="nofollow">
+							<div class="bet-now-container">
+								<p>{{ $t('message.bet_now') }}</p>
+							</div>
+						</a>
+					</div>
+					<div class="team">
+						<img src="/images/West_Ham.webp" alt="Chelsea">
+						<p>{{ $t('message.team_1') }}</p>
+					</div>
+				</div>
+				<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<div class="show-more-button-container">
+						<p>{{ $t('message.show_more') }}</p>
+					</div>
+				</a>
+			</div>
 
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
+					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<div class="button_width">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<div class="button_width Share">
 								SHARE
 							</div>
 						</a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<div class="button_width">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<div class="button_width Downline">
 								DOWNLINE CHART
 							</div>
 						</a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<div class="button_width">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<div class="button_width Copy">
 								COPY REFERRAL LINK
 							</div>
 						</a>
-						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-							<div class="button_width">
+						<a :href="link_output + 'winbox-signup'" rel="nofollow">
+							<div class="button_width More_Info">
 								GAME TIPS
 							</div>
 						</a>
@@ -137,10 +100,10 @@
 				</div>
 			</div>
 
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/top up rm20.webp"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/top up rm20.webp"
 					alt="Top Up Rm20" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -169,18 +132,21 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 1000px) {
+	.Mobile_View {
+		display: block !important;
+	}
+}
+
 .button-grp {
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 8px;
-}
-
-@media screen and (max-width: 1000px) {
-	.Mobile_View {
-		display: block !important;
-	}
+	width: 100%;
+	bottom: 3%;
 }
 
 .button-grp img {
@@ -205,14 +171,37 @@ export default {
 	justify-content: center;
 	align-items: center;
 	color: #ffffff;
-	border: 2px solid black;
-	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
+	/* background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%); */
 	width: 90%;
 	margin-bottom: 8px !important;
-	border-radius: 8px;
+	border-radius: 10px;
 	height: 40px;
 	text-align: center;
 	font-size: 14px;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+}
+
+.Share {
+	background-image: linear-gradient(to bottom, #22492B, #1BD144);
+	border: 0;
+}
+
+.Downline {
+	border-color: #25729a;
+	background-color: #3093c7;
+	background-image: linear-gradient(to bottom, #3093c7, #1c5a85);
+}
+
+.Copy {
+	border-color: #C62828;
+	background-color: #F44336;
+	background-image: linear-gradient(to bottom, #F44336, #B71C1C);
+}
+
+.More_Info {
+	border-color: #cb9b14;
+	background-color: #eab92d;
+	background-image: linear-gradient(to bottom, #eab92d, #c79810);
 }
 
 .title {
@@ -327,10 +316,10 @@ tbody td {
 .Big_Info_Container {
 	border-radius: 8px;
 	padding: 25px;
-	/* background-image: url('/images/Big_Info_Bg_Img.webp'); */
-	background-color: rgba(0, 0, 0, .3);
-	border: 2px solid #9d00ff;
-	/* background-size: 100% 100%; */
+	background-image: url('/images/Big_Info_Bg_Img.webp');
+	/* background-color: rgba(0, 0, 0, .3); */
+	/* border: 2px solid #9d00ff; */
+	background-size: 100% 100%;
 	background-position: center;
 	margin-bottom: 16px;
 }
@@ -382,7 +371,7 @@ tbody td {
 
 .login-register-container a {
 	width: 49%;
-	height: 40px;
+	/* height: 40px; */
 	text-decoration: none;
 }
 
@@ -438,7 +427,7 @@ tbody td {
 }
 
 .Baki strong {
-	color: #9d00ff;
+	color: #FFC107;
 	font-size: 30px;
 }
 
@@ -500,5 +489,123 @@ tbody td {
 	left: 8%;
 	width: 40% !important;
 
+}
+
+.sport-betting-container {
+	background-image: url('/images/soccer-betting-img.jpg');
+	/* background-position: center; */
+	background-size: cover;
+	padding: 20px 0 10px 0;
+	margin-bottom: 16px;
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 430px) {
+	.sport-betting-container {
+		padding: 30px 0 10px 0 !important;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.sport-betting-container {
+		padding: 50px 0 10px 0;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.sport-betting-container {
+		padding: 30px 0 10px 0;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.sport-betting-container {
+		padding: 40px 0 10px 0;
+	}
+}
+
+.sport-betting-container a {
+	text-decoration: none;
+}
+
+.SB-content-container {
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+	border-radius: 5px;
+	background: #fff;
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.SB-content-container p {
+	margin-bottom: 0;
+}
+
+.bet-now-container {
+	display: block;
+	background: #4caf50;
+	color: #fff;
+	padding: 8px 0;
+	line-height: 1;
+	width: 72px;
+	text-align: center;
+	border-radius: 4px;
+	margin: 5px auto 0;
+}
+
+.bet-now-container p {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.show-more-button-container {
+	background: #eee;
+	color: #000;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 10px 10px;
+	box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.show-more-button-container p {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.team {
+	width: 30%;
+}
+
+.team p {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.team img {
+	margin-bottom: 10px;
+	width: 50px;
+}
+
+@font-face {
+	font-family: 'Digital-7';
+	src: url('@/assets/fonts/digital-7.ttf') format('truetype');
+}
+
+.time {
+	display: block;
+	margin-top: 3px;
+	font-size: 21px;
+	color: #258D2D;
+	font-family: 'Digital-7', sans-serif;
 }
 </style>

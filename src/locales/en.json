@@ -7,15 +7,16 @@
 		"start_time": "START TIME",
 		"bet_now": "BET NOW",
 		"show_more": "Show More",
-		"team_1": "Southampton",
-		"team_2": "Man Utd",
+		"team_1": "West Ham",
+		"team_2": "Tottenham",
 		"Game_Licence": "GAME LICENSE",
 		"Payment_Method": "Payment Method",
-		"Certidicate_Security": "Certificate & Security",
+		"Certidicate": "Certificate",
+		"Security": "Security",
 		"Follow_Us": "Follow Us",
-		"Visit": "VISIT OUR OFFICIAL Boda8 BLOG AT:",
+		"Visit": "VISIT OUR OFFICIAL PANAS777 BLOG AT:",
 		"Click": "CLICK HERE",
-		"Website": "Boda8"
+		"Website": "PANAS777"
 	},
 	"Main_Content": {
 		"H1_Header": "Oren33 Asia – Where The Best Free Credit Casino Bonus Lives",
@@ -67,22 +68,31 @@
 	},
 	"content": {
 		"Learn_More": "Learn more about our big partner:",
-		"FP_Link_Word": "Winbox Sign Up",
-		"FP_Content": "Ready to win big? Sign up with Winbox today and start playing with no withdrawal limits!",
-		"SP_Link_Word": "Winbox",
-		"SP_F_Content": "Step into the world of online casino entertainment with Winbox and enjoy endless winning opportunities!"
+		"FP_Link_Word": "Download Winbox App",
+		"FP_Content": "Get the Winbox app for secure gaming, exciting rewards, and seamless gameplay. Download now for the ultimate online casino experience!",
+		"SP_Link_Word": "Join Winbox Now",
+		"SP_F_Content": "Experience top-notch online gaming with Winbox—secure, thrilling, and filled with generous rewards."
 	},
 	"Runnig_Bar": {
-		"Content_1": "🎉 Welcome to Boda8, Malaysia's Ultimate Online Casino! 🎰 🎁🎁🎁 Claim your 150% Welcome Bonus and up to 20% Cashback! Plus, enjoy a 30% Slot Daily Bonus and special Unlimited Happy Hour Bonuses! 🕑🎰 Join Now for Top Games, VIP Deals, and Lucky Wheel Rewards! 🌟🌟 Play with confidence, safety, and 24/7 customer support! 💪"
+		"Content_1": "🔥 Welcome to PANAS777 – Asia’s Top 10 Online Wallet Casino! 🎰 Safe, User-Friendly,",
+		"Content_2": "and designed for your convenience! 💸 Earn extra income with just a click—",
+		"Content_3": "SHARE",
+		"Content_4": "and enjoy instant",
+		"Content_5": "commission withdrawals with no conditions!",
+		"Content_6": "🚀 Experience non-stop action and secure gaming at",
+		"Content_7": "PANAS777",
+		"Content_8": "now!"
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Boda8 is officially licensed by the Government of Curacao under Master License #1168/JAZ and is operated by Moon Technologies."
+		"Content_1": "Panas777  is officially licensed by the Government of Curacao under Master License #1168/JAZ and is operated by Moon Technologies."
 	},
 	"Btm_Section": {
 		"Home": "Home",
 		"History": "History",
 		"Deposit": "Deposit",
 		"Promo": "Promo",
-		"Profile": "Profile"
+		"Profile": "Profile",
+		"Live": "Live",
+		"Setting": "Setting"
 	}
 }

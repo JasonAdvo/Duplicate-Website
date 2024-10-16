@@ -1,55 +1,54 @@
 <template>
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
-			<!-- <div class="social-media-container">
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Download_Img.webp" alt="Download">
+			<div class="social-media-container">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" class="social-media-icon">
+					<img src="/images/Save_Link_Img.webp" alt="Save Link">
 				</a>
 
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Tips_Img.webp" alt="Game Tips">
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" class="social-media-icon">
+					<img src="/images/TWCBET_Img.webp" alt="TWCBET">
 				</a>
-			</div> -->
+			</div>
 
-			<!-- <div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> 
-				<a :href="link_output + 'winbox-rigester'" rel="nofollow">
+			<div v-if="isVisible" class="Btm-Popup_Container">
+				<i class="ic-close-circle fas fa-times" @click="closePopup"></i>
+				<a :href="link_output + 'winbox-signup'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
-			</div> -->
+			</div>
 
 			<div class="footer-content">
-				<div class="col">
-					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
+				<a :href="link_output" rel="nofollow" target="_blank" class="col home">
+					<div class="d-f ">
 						<img src="/images/Btm_Home_Img.webp" alt="Home">
 						{{ $t('Btm_Section.Home') }}
-
-					</a>
-				</div>
-				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
+					</div>
+				</a>
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank" class=" col">
+					<div class="d-f">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 						{{ $t('Btm_Section.History') }}
-					</a>
-				</div>
-				<div class=" col">
-					<a class="d-f Deposit" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<i data-v-d3e469a8 class="fa-solid fa-wallet fa-shake"></i>
-						{{ $t('Btm_Section.Deposit') }}
-					</a>
-				</div>
-				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
+					</div>
+				</a>
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank" class=" col">
+					<div class="d-f">
 						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
 						{{ $t('Btm_Section.Promo') }}
-					</a>
-				</div>
-				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Profile_Img.webp" alt="Setting">
-						{{ $t('Btm_Section.Profile') }}
-					</a>
-				</div>
+					</div>
+				</a>
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank" class=" col">
+					<div class="d-f">
+						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
+						{{ $t('Btm_Section.Live') }}
+					</div>
+				</a>
+				<a :href="link_output + 'winbox-signup'" rel="nofollow" target="_blank" class=" col">
+					<div class="d-f">
+						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
+						{{ $t('Btm_Section.Setting') }}
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -87,11 +86,8 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 65px;
-	/* background-image: url('/images/Btm_Bg_Img.webp'); */
-	/* background-size: 100% 100%; */
-	/* background: linear-gradient(180deg, #160e25 0%, #261a30 100%); */
-	background-color: #4b007f;
-	border-top: 2px solid #9601e1;
+	background-image: url('/images/Btm_Bg_Img.webp');
+	background-size: 100% 100%;
 	z-index: 3;
 }
 
@@ -104,12 +100,16 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -400%;
+	top: -500%;
 	right: 0;
 }
 
 .social-media-icon {
 	margin-bottom: 5px;
+}
+
+.social-media-icon img {
+	width: 30px;
 }
 
 .footer-content {
@@ -127,6 +127,8 @@ export default {
 	color: white;
 	font-size: 12px;
 	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .d-f i {
@@ -135,7 +137,13 @@ export default {
 }
 
 .home {
-	color: white !important;
+	background-color: #ad0505;
+	box-shadow: 0 5px 15px rgb(215 183 22 / 61%);
+	padding: 10px 0;
+	margin-top: -10px;
+	border-radius: 15px 15px 0 0;
+	font-weight: 700;
+	color: #ffffff;
 }
 
 .Deposit {
@@ -158,15 +166,12 @@ export default {
 .col {
 	display: flex;
 	justify-content: center;
+	text-decoration: none;
 }
 
 .col img {
 	width: 45px;
 	height: auto;
-}
-
-.social-media-icon img {
-	width: 80px;
 }
 
 @media screen and (max-width:430px) {
@@ -175,7 +180,7 @@ export default {
 	}
 
 	.social-media-icon img {
-		width: 60px;
+		width: 20px;
 	}
 }
 
@@ -189,15 +194,15 @@ export default {
 
 .Btm-Popup_Container {
 	position: absolute;
-	bottom: 65px;
+	bottom: 75px;
 	padding-top: 30px;
 }
 
 .Btm-Popup_Container img {
-	width: 500px;
+	width: 600px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:770px) {
 	.Btm-Popup_Container img {
 		width: 100%;
 	}

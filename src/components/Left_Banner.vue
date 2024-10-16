@@ -2,88 +2,31 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
+			<a :href="link_output + 'winbox-signup'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus"></a>
-			<table>
-				<thead>
-					<tr>
-						<td colspan="5" class="title">
-							<span>
-								LIVE TRANSACTION
-							</span>
-							<div class="live main-blink-me">
-								LIVE
-								<span></span>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="green">
-							DEPOSIT
-						</td>
-						<td colspan="3" class="red">
-							WITHDRAW
-						</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>60*******095</td>
-						<td class="amount">RM50.00</td>
-						<td>60******739</td>
-						<td class="amount">RM600.05</td>
-						<td>JILI</td>
-					</tr>
-					<tr>
-						<td>60*******399</td>
-						<td class="amount">RM10.00</td>
-						<td>60******209</td>
-						<td class="amount">RM127.09</td>
-						<td>KISS918</td>
-					</tr>
-					<tr>
-						<td>60*******874</td>
-						<td class="amount">RM5.00</td>
-						<td>60******316</td>
-						<td class="amount">RM20.09</td>
-						<td>JILI</td>
-					</tr>
-					<tr>
-						<td>60*******399</td>
-						<td class="amount">RM10.00</td>
-						<td>60******453</td>
-						<td class="amount">RM127.05</td>
-						<td>MEGA888</td>
-					</tr>
-					<tr>
-						<td>60*******110</td>
-						<td class="amount">RM50.00</td>
-						<td>60******716</td>
-						<td class="amount">RM50.00</td>
-						<td>JILI</td>
-					</tr>
-				</tbody>
-			</table>
+
+
 
 			<div style="position: relative;">
+				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-						<div class="button_width">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
+						<div class="button_width Share">
 							SHARE
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-						<div class="button_width">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
+						<div class="button_width Downline">
 							DOWNLINE CHART
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-						<div class="button_width">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
+						<div class="button_width Copy">
 							COPY REFERRAL LINK
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
-						<div class="button_width">
+					<a :href="link_output + 'winbox-signup'" rel="nofollow">
+						<div class="button_width More_Info">
 							GAME TIPS
 						</div>
 					</a>
@@ -134,11 +77,14 @@ export default {
 }
 
 .button-grp {
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 8px;
+	width: 100%;
+	bottom: 3%;
 }
 
 .button-grp img {
@@ -163,14 +109,37 @@ export default {
 	justify-content: center;
 	align-items: center;
 	color: #ffffff;
-	border: 2px solid black;
-	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
+	/* background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%); */
 	width: 90%;
 	margin-bottom: 8px !important;
-	border-radius: 8px;
+	border-radius: 10px;
 	height: 40px;
 	text-align: center;
 	font-size: 14px;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+}
+
+.Share {
+	background-image: linear-gradient(to bottom, #22492B, #1BD144);
+	border: 0;
+}
+
+.Downline {
+	border-color: #25729a;
+	background-color: #3093c7;
+	background-image: linear-gradient(to bottom, #3093c7, #1c5a85);
+}
+
+.Copy {
+	border-color: #C62828;
+	background-color: #F44336;
+	background-image: linear-gradient(to bottom, #F44336, #B71C1C);
+}
+
+.More_Info {
+	border-color: #cb9b14;
+	background-color: #eab92d;
+	background-image: linear-gradient(to bottom, #eab92d, #c79810);
 }
 
 .title {
