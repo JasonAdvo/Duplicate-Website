@@ -25,26 +25,12 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 60" :key="n">
-								<div class="MB_IMGs_Wrapper">
-									<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
-										<img class="MB_IMGs" :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-									</a>
-									<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-								</div>
-
-
-								<div v-if="n <= 12">
-									<a :href="link_output + 'winbox-register'" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
-									</a>
-								</div>
-								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
-								</div>
+							<div class="image-wrapper" v-for="n in 31" :key="n">
+								<a v-if="n <= 12" :href="link_output + 'winbox-rigester'" rel="nofollow">
+									<img class="MB_IMGs" :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+								</a>
+								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 							</div>
-
-
 						</div>
 					</div>
 				</div>
@@ -59,10 +45,9 @@
 					<br>
 
 					<div class="footer-detail">
-						<p>
-
+						<p style="text-transform: none;">
 							<a :href="link_output">
-								<b style="font-size: 13px;">
+								<b style="font-size: 16px;">
 									{{ $t('content.FP_Link_Word') }}
 								</b>
 							</a>
@@ -70,15 +55,13 @@
 							{{ $t('content.FP_Content') }}
 						</p>
 
-						<p>
-
+						<p style="text-transform: none;">
 							<a :href="winboxofficial_link">
-								<b style="font-size: 13px;">
+								<b style="font-size: 16px;">
 									{{ $t('content.SP_Link_Word') }}
 								</b>
 							</a>
 							|
-
 							{{ $t('content.SP_F_Content') }}
 						</p>
 
@@ -95,12 +78,7 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
-							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
-							{{ $t('Registered_TradeMark.Content_2') }}
-							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
-							{{ $t('Registered_TradeMark.Content_4') }}
-							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
-							{{ $t('Registered_TradeMark.Content_6') }}
+							{{ $t('Registered_TradeMark.Content_1') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>
@@ -122,7 +100,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © JOMKISS. All rights reserved.
+						Copyright © BODA8. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -154,77 +132,48 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"FONG SHEN",
-				"Shinibg Stars",
-				"SEA WORLD",
-				"FORTUNEFEST",
-				"Golden Tour",
-				"DOLHIN REEF",
-				"Tally Ho",
-				"RALLY CHAMPIONSHIP",
-				"HIGHWAY KINGS",
-				"PANTHER MOON",
-				"GREAT BLUE",
-				"5 FORTUNE",
-				"Jin Ping Mai 2",
-				"GOLD RUSH",
-				"GREEN LIGHT",
-				"LCELAND",
-				"THAI PARADISE",
-				"Cherry Love",
-				"Captains Treasure",
-				"BOY KING'S TREASURE",
-				"Bonus Bears",
-				"Jin QianWa",
-				"Silent Bullet",
-				"God of Wealth",
-				"DRAGON HERO",
-				"Wild Fireworks",
-				"BIG PROSPERITY",
-				"SPARTA",
-				"DRAGON STRIKE",
-				"NIAN NIAN YOU YU",
-				"SILENT RUN",
-				"DaSiXi",
-				"Dolphin",
-				"GOLDEN MONKEY",
-				"GOLDEN LOTUS",
-				"HANZO'S DOJO",
-				"SUSHI OISHI",
-				"FART GIRL",
-				"Celebration of Wealth",
-				"WANG CHAY",
-				"TRIPLE TWISTER",
-				"CLASH OF THE BEASTS",
-				"DRAGONZ",
-				"NITRO",
-				"SUN WU KONG",
-				"TEMPLE OF WEALTH",
-				"DWARFS GONE WILD",
-				"AGENT 51",
-				"LION DANCE",
-				"ENCHANCED GARDEN",
-				"FLOATING DRAGON",
-				"IRISH LUCK",
-				"STICKY BANDITS",
-				"NARCOS",
-				"GREAT88",
-				"TIGER'S CLORY",
-				"CONAN",
-				"FORTUNE TIGER",
-				"FORTUNE FIREWORKS",
-				"MIDAS GOLDEN TOUCH"
+				"NEXTSPIN",
+				"Spade Gaming",
+				"Pragmatic Play",
+				"JILI",
+				"YGR",
+				"FC Fa Chai",
+				"Microgaming",
+				"Joker",
+				"Funky Games",
+				"Gameplay Interactive",
+				"AG Gaming",
+				"Habanero",
+				"MEGA888",
+				"918Kiss",
+				"NETENT",
+				"Red Tiger",
+				"Hong Chow",
+				"Playtech",
+				"Pussy888",
+				"CO9",
+				"JDB",
+				"Relax Gaming",
+				"PS",
+				"YGGDRASIL",
+				"ADVANT PLAY",
+				"Dragon Soft",
+				"Evoplay",
+				"V Power",
+				"Fast Spin",
+				"BBN",
+				"Skywind Group"
 			],
 			images: [
-				{ notSelected: 'public/images/Hot.webp', selected: '/images/Hot.webp', alt: 'Hot' },
-				{ notSelected: '/images/Slot.gif', selected: '/images/Slot.gif', alt: 'Slots' },
-				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live' },
-				{ notSelected: '/images/Fish.webp', selected: '/images/Fish.webp', alt: 'Fishing' },
-				{ notSelected: '/images/Poker.webp', selected: '/images/Poker.webp', alt: 'Poker' },
-				{ notSelected: '/images/Mini_Game.webp', selected: '/images/Mini_Game.webp', alt: 'Minigame' },
-				{ notSelected: '/images/Demo_Play.webp', selected: '/images/Demo_Play.webp', alt: 'Demo Play' },
-				{ notSelected: '/images/New.webp', selected: '/images/New.webp', alt: 'News' },
-				{ notSelected: '/images/Leaderboard.webp', selected: '/images/Leaderboard.webp', alt: 'Leaderboard' },
+				{ notSelected: '/images/Slots.svg', selected: '/images/Slots_S.svg', alt: 'Slots' },
+				{ notSelected: '/images/Casino.svg', selected: '/images/Casino_S.svg', alt: 'Casino' },
+				{ notSelected: '/images/Sports.svg', selected: '/images/Sports_S.svg', alt: 'Sports' },
+				{ notSelected: '/images/fish.svg', selected: '/images/fish_S.svg', alt: 'Fishing' },
+				{ notSelected: '/images/Lottery.svg', selected: '/images/Lottery_S.svg', alt: 'Lottery' },
+				{ notSelected: '/images/Games_3D.svg', selected: '/images/Games_3D_S.svg', alt: '3D Games' },
+				{ notSelected: '/images/Fast_Games.svg', selected: '/images/Fast_Games_S.svg', alt: 'Fast Games' },
+				{ notSelected: '/images/Poker.svg', selected: '/images/Poker_S.svg', alt: 'Poker' },
+				{ notSelected: '/images/TV.svg', selected: '/images/TV_S.svg', alt: 'TV' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 90,
@@ -246,12 +195,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxv2_com", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winbox77_my", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxv2_com;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winbox77_my;
 			} catch (error) {
 				console.log(error)
 			}
@@ -356,8 +305,8 @@ export default {
 .main-content {
 	display: flex;
 	width: 100%;
-	/* background-image: url('/images/Bg_Img.webp')  */
-	background-color: #9900ff;
+	background-image: url('/images/Bg_Img.webp');
+	/* background-color: #9900ff; */
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -452,9 +401,6 @@ export default {
 .site_tabs_container {
 	display: flex;
 	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
-	padding: 0 10px
 }
 
 .site-tabs {
@@ -469,22 +415,24 @@ export default {
 	width: calc(100% / 9);
 	/* padding-bottom: 30px; */
 	cursor: pointer;
-	background-color: black;
-	border: 2px solid #9d00ff;
+	background: rgb(246, 246, 246);
+	border: 1px solid rgba(0, 0, 0, 0.5);
 	border-radius: 16px;
 	padding: 4px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: white;
+	color: black;
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 700;
 
 }
 
 .image-container.selected {
-	background: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
-	border: 2px solid black;
+	background: rgb(75, 0, 127);
+	color: white
+		/* border: 2px solid black; */
 }
 
 .image-container img {
@@ -554,32 +502,15 @@ export default {
 	}
 }
 
-.MB_IMGs_Wrapper {
-	height: 120px;
-	/* This is the fixed height */
-	width: auto;
-	/* Automatically scales width */
-	overflow: hidden;
-	/* Ensures no overflow */
-}
-
-@media (max-width: 430px) {
-	.MB_IMGs_Wrapper {
-		height: 90px;
-	}
-}
-
 .MB_IMGs {
 	height: 100%;
-	/* The image takes full height of container */
 	width: auto;
-	/* Maintains aspect ratio */
 	object-fit: cover;
-	/* Ensures the image covers the container */
 }
 
 .image-wrapper img {
 	width: 100%;
+	border-radius: 8px;
 }
 
 .image-wrapper p {
@@ -674,7 +605,7 @@ li {
 
 .footer-detail p {
 	color: black;
-	font-size: 13px;
+	font-size: 16px;
 	margin-top: 30px;
 	text-transform: uppercase;
 }

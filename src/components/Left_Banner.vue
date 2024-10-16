@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
+			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus"></a>
 			<table>
 				<thead>
@@ -67,22 +67,22 @@
 
 			<div style="position: relative;">
 				<div class="button-grp">
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 						<div class="button_width">
 							SHARE
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 						<div class="button_width">
 							DOWNLINE CHART
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 						<div class="button_width">
 							COPY REFERRAL LINK
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 						<div class="button_width">
 							GAME TIPS
 						</div>
@@ -214,11 +214,15 @@ export default {
 
 @keyframes blinkme {
 	0% {
-		display: 1;
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
 	}
 
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 
 	100% {

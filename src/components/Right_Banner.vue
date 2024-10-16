@@ -4,7 +4,7 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<RB_Img_Carousel />
-				<a :href="link_output + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/daily free spin bonus.gif" alt="Spin Bonus"></a>
 
 				<table>
@@ -69,18 +69,18 @@
 				</table>
 			</div>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
 			<div class="Big_Info_Container">
 				<div class="login-register-container">
-					<a :href="link_output + 'winbox-login'" rel="nofollow">
+					<a href="/">
 						<div class="Join">
 							LOGIN
 						</div>
 					</a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 						<div class="Register">
 							REGISTER
 						</div>
@@ -96,10 +96,10 @@
 						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM25.00</strong></p>
 					</div>
 					<div class="RB_Cash_Btn_Container">
-						<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 							<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
 						</a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 							<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 						</a>
 						<a href="/">
@@ -113,22 +113,22 @@
 			<div class="Mobile_View" style="display: none;">
 				<div style="position: relative;">
 					<div class="button-grp">
-						<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 							<div class="button_width">
 								SHARE
 							</div>
 						</a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 							<div class="button_width">
 								DOWNLINE CHART
 							</div>
 						</a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 							<div class="button_width">
 								COPY REFERRAL LINK
 							</div>
 						</a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 							<div class="button_width">
 								GAME TIPS
 							</div>
@@ -137,10 +137,10 @@
 				</div>
 			</div>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+			<a :href="link_output + 'winbox-rigester'" rel="nofollow"><img src="/images/top up rm20.webp"
 					alt="Top Up Rm20" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -256,11 +256,15 @@ export default {
 
 @keyframes blinkme {
 	0% {
-		display: 1;
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
 	}
 
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 
 	100% {
@@ -365,8 +369,8 @@ tbody td {
 }
 
 .RB_Cash_Btn_Container img {
-	height: 44px;
-	width: 130px;
+	/* height: 44px; */
+	width: 100%;
 	margin-bottom: 5px;
 }
 
@@ -395,14 +399,16 @@ tbody td {
 
 .Join {
 	color: #ffffff;
-	border-color: #a403ff;
-	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
+	/* border-color: #a403ff; */
+	/* background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%); */
+	background: rgb(75, 0, 127);
 }
 
 .Register {
-	color: #2e2e2e;
-	background: linear-gradient(180deg, #03fe94 0%, #00b324 100%);
-	border-color: #00ff57;
+	color: white;
+	/* background: linear-gradient(180deg, #03fe94 0%, #00b324 100%); */
+	background: rgb(184, 0, 0);
+	/* border-color: #00ff57; */
 }
 
 .RB_Small_Text_Container {

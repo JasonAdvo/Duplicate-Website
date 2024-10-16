@@ -1,19 +1,19 @@
 <template>
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
-			<div class="social-media-container">
-				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
+			<!-- <div class="social-media-container">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Download_Img.webp" alt="Download">
 				</a>
 
-				<a :href="link_output + 'winbox-register'" rel="nofollow" class="social-media-icon">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Tips_Img.webp" alt="Game Tips">
 				</a>
-			</div>
+			</div> -->
 
 			<!-- <div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> 
-				<a :href="link_output + 'winbox-register'" rel="nofollow">
+				<a :href="link_output + 'winbox-rigester'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div> -->
@@ -27,25 +27,25 @@
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 						{{ $t('Btm_Section.History') }}
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f Deposit" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f Deposit" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<i data-v-d3e469a8 class="fa-solid fa-wallet fa-shake"></i>
 						{{ $t('Btm_Section.Deposit') }}
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
 						{{ $t('Btm_Section.Promo') }}
 					</a>
 				</div>
 				<div class=" col">
-					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
+					<a class="d-f" :href="link_output + 'winbox-rigester'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Profile_Img.webp" alt="Setting">
 						{{ $t('Btm_Section.Profile') }}
 					</a>
@@ -89,7 +89,8 @@ export default {
 	height: 65px;
 	/* background-image: url('/images/Btm_Bg_Img.webp'); */
 	/* background-size: 100% 100%; */
-	background: linear-gradient(180deg, #160e25 0%, #261a30 100%);
+	/* background: linear-gradient(180deg, #160e25 0%, #261a30 100%); */
+	background-color: #4b007f;
 	border-top: 2px solid #9601e1;
 	z-index: 3;
 }
