@@ -15,12 +15,68 @@
 			</a>
 
 			<div class="Mobile_View" style="display: none;">
-				<img style="margin-bottom: 16px;" src="/images/LB_Img_1.webp" alt="Deposit Fast & Secure">
-			</div>
+				<img style="margin-bottom: 16px;" src="/images/LB_Img_1.gif" alt="Payment Method">
 
-			<div class="Live_Time">
-				Date & Time :
-				<span>{{ liveTime }}</span>
+				<table>
+					<thead>
+						<tr>
+							<td colspan="5" class="title">
+								<span>
+									LIVE TRANSACTION
+								</span>
+								<div class="live main-blink-me">
+									LIVE
+									<span></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="green">
+								DEPOSIT
+							</td>
+							<td colspan="3" class="red">
+								WITHDRAW
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>60*******095</td>
+							<td class="amount">RM50.00</td>
+							<td>60******739</td>
+							<td class="amount">RM600.05</td>
+							<td>JILI</td>
+						</tr>
+						<tr>
+							<td>60*******399</td>
+							<td class="amount">RM10.00</td>
+							<td>60******209</td>
+							<td class="amount">RM127.09</td>
+							<td>KISS918</td>
+						</tr>
+						<tr>
+							<td>60*******874</td>
+							<td class="amount">RM5.00</td>
+							<td>60******316</td>
+							<td class="amount">RM20.09</td>
+							<td>JILI</td>
+						</tr>
+						<tr>
+							<td>60*******399</td>
+							<td class="amount">RM10.00</td>
+							<td>60******453</td>
+							<td class="amount">RM127.05</td>
+							<td>MEGA888</td>
+						</tr>
+						<tr>
+							<td>60*******110</td>
+							<td class="amount">RM50.00</td>
+							<td>60******716</td>
+							<td class="amount">RM50.00</td>
+							<td>JILI</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 
 			<div class="Big_Info_Container">
@@ -54,20 +110,23 @@
 				</div>
 			</div>
 
-			<img style="width: 280px;" src="/images/RB_Ang_Pao_Img.gif" alt="Ang Pao">
-
 			<div class="Promo_Section">
 				<div class="Special_Promo_Section">
 					<div class="Promo_Title">
-						SPECIAL PROMO
+						ANGPAO FREE!!
+						<b class="main-blink-me" style="color:Yellow;">[🧧]</b>
 					</div>
-					<div class="Promo_Container">
+					<div class="Promo_Container" style="flex-direction: column;">
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<img style="width: 280px;" src="/images/RB_Ang_Pao_Img.gif" alt="Ang Pao">
+						</a>
+
 						<a :href="link_output + 'winbox-register'" rel="nofollow">
 							<div class="Promo_Bg_Container">
 								<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 								<div class="Text_Container">
-									<p class="text">Daftar Baru Free RM1</p>
-									<p class="name">RM1</p>
+									<p class="text"> Join Telegram Group Free </p>
+									<p class="name">RM20</p>
 								</div>
 							</div>
 						</a>
@@ -75,25 +134,26 @@
 				</div>
 
 				<div class="Special_Promo_Section">
-					<div class="Promo_Title">
-						CUCI FULL 100%
-						<p style="color: #0096FF; font-size: 10px; margin: 0">TANPA DEPOSIT</p>
+					<div class="Promo_Title" style="display: flex; align-items: center">
+						<div class="main-blink" style="color:#FFF;">WELCOME BONUS</div>
+						<img class="main-blink-me" style="width:25px;display:inline;" src="/images/Hot_Tag.webp"
+							alt="Hot">
 					</div>
 					<div class="Promo_Container">
 						<div class="Promo_Bg_Container Shadow_Container">
 							<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 							<div class="Text_Container">
-								<p class="text">FREE SHARE</p>
-								<p class="name">RM3</p>
+								<p class="text"> Welcome Bonus 100% </p>
+								<p class="name">100%</p>
 							</div>
 						</div>
 					</div>
-
 				</div>
 
 				<div class="Special_Promo_Section">
 					<div class="Promo_Title">
-						NEW MEMBER PROMOTION
+						FREE CREDIT BONUS
+						<b class="main-blink-me" style="color:#0096FD;"> [MATBET88 MEMBER] </b>
 					</div>
 					<div class="Promo_Container">
 
@@ -101,8 +161,8 @@
 							<div class="Promo_Bg_Container">
 								<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 								<div class="Text_Container">
-									<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
-									<p class="name">MYR ?</p>
+									<p class="text">FREE REGISTER </p>
+									<p class="name">RM10</p>
 								</div>
 							</div>
 						</a>
@@ -111,8 +171,8 @@
 							<div class="Promo_Bg_Container">
 								<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 								<div class="Text_Container">
-									<p class="text">365 FREE BONUS RM 0.1 ~ RM 10</p>
-									<p class="name">MYR ?</p>
+									<p class="text">FREE REGISTER 365</p>
+									<p class="name">RM2</p>
 								</div>
 							</div>
 						</a>
@@ -120,39 +180,80 @@
 						<div class="Promo_Bg_Container Shadow_Container">
 							<img class="Promo_Bg" src="/images/Promo_Bg_Img.webp" alt="Promotion">
 							<div class="Text_Container">
-								<p class="text">WELCOME BONUS 77%</p>
-								<p class="name">77%</p>
+								<p class="text"> FREE RM5.00 EVERYDAY </p>
+								<p class="name">RM5</p>
 							</div>
 						</div>
 					</div>
-
 				</div>
-
 			</div>
 
 			<div class="Mobile_View" style="display: none;">
 				<div class="Share_Section">
-					<img src="/images/LB_Img_2.webp" alt="Share">
+					<div style="padding: 0 5px;">
+						<b style="color: gold; font-size: 13px; text-decoration: underline">{{
+							$t('Share_Section.1_Line')
+						}}</b>
+						<br>
+						<span style="color: white; font-size: 13px;">{{ $t('Share_Section.Press') }}</span>
+						<span class="main-blink-me"
+							style="color: #FFFFFF;background: #04A019;font-size: 13px;padding: 2px 5px 1px;border-radius: 5px;">{{
+								$t('Share_Section.Invite') }}</span>
+						<span style="color: white; font-size: 13px;">{{ $t('Share_Section.2_Line') }}</span>
+						<br>
+						<b style="color:#FF3333;font-size:13px;">5%</b>
+						<span style="color: white; font-size: 13px; margin-left: 2px;">{{ $t('Share_Section.3_Line')
+							}}</span>
+						<span class="main-blink-me"
+							style="color: #EFF707;background: #F52222;font-size: 13px;padding: 2px 5px 1px;border-radius: 5px;">12AM</span>
+						<br>
+						<b style="color: gold; font-size: 19px; text-decoration: underline;">{{
+							$t('Share_Section.4_Line')
+						}}</b>
+						<br>
+						<div>
+							<b style="color: lime;">{{ $t('Share_Section.Share') }}</b>
+							<span style="color: white; margin-left: 2px;">{{ $t('Share_Section.1_Friend') }}</span>
+							<b style="color: magenta; margin-left: 2px;">{{ $t('Share_Section.Free') }}</b>
+							<span style="color: white; margin-left: 2px;">RM30.00</span>
+						</div>
+						<div>
+							<b style="color: lime;">{{ $t('Share_Section.Share') }}</b>
+							<span style="color: white; margin-left: 2px;">{{ $t('Share_Section.20_Friend') }}</span>
+							<b style="color: magenta; margin-left: 2px;">{{ $t('Share_Section.Free') }}</b>
+							<span style="color: white; margin-left: 2px;">RM600.00</span>
+						</div>
+						<div>
+							<b style="color: lime;">{{ $t('Share_Section.Share') }}</b>
+							<span style="color: white; margin-left: 2px;">{{ $t('Share_Section.100_Friend') }}</span>
+							<b style="color: magenta; margin-left: 2px;">{{ $t('Share_Section.Free') }}</b>
+							<span style="color: white; margin-left: 2px;">RM3000.00</span>
+						</div>
+					</div>
+
 					<div class="button-grp">
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Share_Img.webp" alt="Share"></a>
+								src="/images/LB_Share_Img.gif" alt="Share"></a>
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+								src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
-						<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_More_Img.webp" alt="More"></a>
+								src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 					</div>
 				</div>
+
+				<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<img style="margin-bottom: 16px" src="/images/LB_Tekan_Img.webp" alt="Tekan Sini">
+				</a>
+
 				<div class="sport-betting-container">
 					<div class="SB-content-container">
 						<div class="team">
-							<img src="/images/West_Ham.webp" alt="West Ham">
-							<p>{{ $t('message.team_1') }}</p>
+							<img src="/images/Tottenham.webp" alt="West Ham">
+							<p>{{ $t('message.team_2') }}</p>
 						</div>
 						<div class="time-info">
 							<p>{{ $t('message.start_time') }}</p>
-							<p>21 Sep 2024</p>
+							<p>19 Oct 2024</p>
 							<p class="time">19:30</p>
 							<a href="/">
 								<div class="bet-now-container">
@@ -161,8 +262,8 @@
 							</a>
 						</div>
 						<div class="team">
-							<img src="/images/Chelsea.webp" alt="Chelsea">
-							<p>{{ $t('message.team_2') }}</p>
+							<img src="/images/West_Ham.webp" alt="Chelsea">
+							<p>{{ $t('message.team_1') }}</p>
 						</div>
 					</div>
 					<a :href="link_output + 'winbox-register'" rel="nofollow">
@@ -253,6 +354,8 @@ export default {
 	background-size: 100% 100%;
 	padding: 8px 10px;
 	margin-bottom: 16px;
+	box-shadow: 0 0 5px #000;
+	border-radius: 8px;
 }
 
 .RB_Imgs img {
@@ -341,10 +444,29 @@ export default {
 	font-weight: 700;
 }
 
+.main-blink {
+	animation-name: blinker;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+	50% {
+		box-shadow: 0 0 15px #fff;
+	}
+}
+
 .Promo_Container {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+}
+
+@media screen and (max-width: 769px) {
+	.Promo_Container {
+		flex-direction: row !important;
+	}
 }
 
 .Promo_Bg_Container {
@@ -381,7 +503,7 @@ export default {
 .text,
 .name {
 	margin: 0;
-	color: #25F9FD;
+	color: white;
 	text-shadow: 1px 1px 3px #000, 1px 1px 5px #000, 1px 1px 1px #000;
 }
 
@@ -447,29 +569,20 @@ export default {
 }
 
 .Share_Section {
+	background-image: url('/images/LB_Img_2.gif');
+	background-size: 100% 100%;
+	background-color: transparent;
+	padding: 10px 7px;
 	position: relative;
+	border-radius: 8px;
+	margin-bottom: 16px;
 }
 
 .button-grp {
-	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1000px) {
-	.button-grp {
-		bottom: 2%;
-		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
-	}
 }
 
 .button-grp img {
@@ -477,13 +590,7 @@ export default {
 }
 
 .button-grp a {
-	width: calc(50% - 8px);
-}
-
-@media screen and (min-width: 610px) and (max-width: 770px) {
-	.button-grp a {
-		width: calc(50% - 15px);
-	}
+	width: 50%
 }
 
 .button_width {
@@ -615,5 +722,104 @@ export default {
 
 .RB-mobile-img-grp img {
 	margin-bottom: 16px;
+}
+
+.title {
+	position: relative;
+	background: #004D85;
+}
+
+.title span {
+	color: white;
+	font-weight: 700;
+	padding-left: 4px;
+}
+
+.live {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 3px;
+	right: 3px;
+	background: red;
+	padding: 1px 3px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 400;
+	height: 13px;
+}
+
+.live span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	float: right;
+	border-radius: 10px;
+	margin: 1px 1px 0 3px;
+}
+
+.main-blink-me {
+	animation: blinkme 1.5s linear infinite;
+}
+
+@keyframes blinkme {
+	0% {
+		opacity: 0;
+	}
+
+	38% {
+		opacity: 0;
+	}
+
+	39% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+table {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+table td {
+	font-size: 9px;
+	color: black;
+	border: 1px solid black;
+	font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+	table td {
+		font-size: 11px;
+	}
+}
+
+.green {
+	color: white;
+	background-image: linear-gradient(to bottom, #7B94BC, #7B94BC);
+	padding-left: 4px;
+}
+
+.red {
+	color: white;
+	background: linear-gradient(to bottom, #C8D8EF, #C8D8EF);
+	padding-left: 4px;
+}
+
+tbody td {
+	width: 20%;
+	height: 20px;
+	padding: 4px;
+	word-wrap: break-word;
+}
+
+.amount {
+	color: black;
+	text-align: right;
 }
 </style>

@@ -8,7 +8,7 @@
 		"bet_now": "下注",
 		"show_more": "更多",
 		"team_1": "西汉姆联",
-		"team_2": "切尔西",
+		"team_2": "托特纳姆热刺",
 		"Game_Licence": "游戏许可",
 		"Payment_Method": "支付方式",
 		"Certidicate_Security": "证书 & 安全",
@@ -100,5 +100,25 @@
 		"Content_4": "",
 		"Content_5": "",
 		"Content_6": ""
+	},
+	"Share_Section": {
+		"1_Line": "推荐朋友并获得佣金",
+		"Press": "按",
+		"Invite": "邀请",
+		"2_Line": "并发送链接给朋友们。",
+		"3_Line": "佣金将在每个星期一支付",
+		"4_Line": "每分享1次获得RM30.00",
+		"Share": "分享给",
+		"1_Friend": "1位朋友",
+		"20_Friend": "20位朋友",
+		"100_Friend": "100位朋友",
+		"Free": "免费"
+	},
+	"PopUp": {
+		"1_Line": "通知：",
+		"2_Line": "其他公司不在名单上",
+		"3_Line": "不在我们公司下，如果被骗我们将不承担责任",
+		"4_Line": "MATBET88 网站链接:",
+		"5_Line": "版权公司在以下"
 	}
 }

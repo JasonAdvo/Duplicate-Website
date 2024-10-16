@@ -4,14 +4,57 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body p-0 text-center">
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
-						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
-					</a>
+					<div class="Top_Content">
+						<b style="color: #ff0000;">
+							{{ $t('PopUp.1_Line') }}
+						</b>
+						<br>
+						<div>
+							<b style="color: #ff9900;">{{ $t('PopUp.2_Line') }}</b>
+							<b style="color: #ff0000;"> G66 Group Partnership </b>
+							<b style="color: #ff9900;">{{ $t('PopUp.3_Line') }}</b>
+						</div>
+						<b style="color: #ff9900;">{{ $t('PopUp.4_Line') }}</b>
+						<br>
+						<a style="text-decoration: none" href="/">
+							<b style="color: white; ">matbet.site</b>
+						</a>
+						<br><br>
+						<a style="text-decoration: none" href="1/matbet88a.com/">
+							<b style="color: white; ">1matbet.com</b>
+						</a>
+						<br><br>
+						<a style="text-decoration: none" href="2/matbet88a.com/">
+							<b style="color: white; ">2matbet.com</b>
+						</a>
+						<br><br>
+						<a style="text-decoration: none" href="3/matbet88a.com/">
+							<b style="color: white; ">3matbet.com</b>
+						</a>
+						<br><br>
+						<a style="text-decoration: none" href="4/matbet88a.com/">
+							<b style="color: white; ">4matbet.com</b>
+						</a>
+						<br><br>
+						<a style="text-decoration: none" href="5/matbet88a.com/">
+							<b style="color: white; ">5matbet.com</b>
+						</a>
+						<br><br>
+						<b style="color: #ff9900;">{{ $t('PopUp.5_Line') }}</b>
+						<b style="color: #ff0000;"> G66 Group Partnership </b>
+						<br><br>
+						<img src="/images/Popup_Img.webp" alt="notice">
+						<button type="button" class="OK_button" @click="closeModal">
+							OK
+						</button>
+					</div>
+
+					<button type="button" class="btn-close position-absolute top-0 end-0" @click="closeModal"
+						aria-label="Close"></button>
 				</div>
 			</div>
 		</div>
-		<button type="button" class="btn-close position-absolute top-0 end-0 m-3" @click="closeModal"
-			aria-label="Close"></button>
+
 	</div>
 </template>
 
@@ -64,8 +107,9 @@ export default {
 }
 
 .modal-content {
-	background: transparent;
-	border: none;
+	background: #C8D8EF;
+	border: 1px solid #fff;
+	padding: 20px 16px;
 }
 
 .modal-body img {
@@ -73,9 +117,31 @@ export default {
 	height: auto;
 }
 
+.Top_Content {
+	text-align: center;
+}
+
+.Top_Content b,
+span {
+	font-size: 16px;
+}
+
 @media screen and (max-width: 430px) {
 	.img-fluid {
 		max-width: 75%;
 	}
+}
+
+.OK_button {
+	border-left-color: rgb(53, 179, 242);
+	border-right-color: rgb(53, 179, 242);
+	background-color: #35B3F2;
+	border: 0;
+	color: white;
+	margin: .3125em;
+	padding: .625em 2em;
+	font-weight: 500;
+	border-radius: .25em;
+	margin-top: 30px;
 }
 </style>

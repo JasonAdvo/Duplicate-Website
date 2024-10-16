@@ -8,7 +8,7 @@
 		"bet_now": "BET NOW",
 		"show_more": "Show More",
 		"team_1": "West Ham",
-		"team_2": "Chelsea",
+		"team_2": "Tottenham",
 		"Game_Licence": "GAME LICENSE",
 		"Payment_Method": "Payment Method",
 		"Certidicate_Security": "Certificate & Security",
@@ -95,10 +95,26 @@
 	},
 	"Registered_TradeMark": {
 		"Content_1": "Matbet88",
-		"Content_2": "is proudly licensed by the Government of Curacao under Master License #1168/JAZ and operated by Moon Technologies.",
-		"Content_3": "",
-		"Content_4": "",
-		"Content_5": "",
-		"Content_6": ""
+		"Content_2": "is proudly licensed by the Government of Curacao under Master License #1168/JAZ and operated by Moon Technologies."
+	},
+	"Share_Section": {
+		"1_Line": "RECOMMEND FRIENDS AND EARN COMMISSION",
+		"Press": "PRESS",
+		"Invite": "INVITE",
+		"2_Line": "AND SEND THE LINK TO FRIENDS.",
+		"3_Line": "COMMISSION will be paid every MONDAY",
+		"4_Line": "FOR EVERY 1 SHARE GET RM30.00",
+		"Share": "SHARE WITH",
+		"1_Friend": "1 FRIEND",
+		"20_Friend": "20 FRIENDS",
+		"100_Friend": "100 FRIENDS",
+		"Free": "FREE"
+	},
+	"PopUp": {
+		"1_Line": "Notice:",
+		"2_Line": "Other Companies Not Listed",
+		"3_Line": "Not Under Our Company, If Scammed We Will Not Be Responsible",
+		"4_Line": "MATBET88 Website Link:",
+		"5_Line": "Copyright Companies Under"
 	}
 }

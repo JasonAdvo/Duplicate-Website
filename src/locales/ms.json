@@ -8,7 +8,7 @@
 		"bet_now": "TARUH",
 		"show_more": "Lagi",
 		"team_1": "West Ham",
-		"team_2": "Chelsea",
+		"team_2": "Tottenham",
 		"Game_Licence": "GAME LICENSE",
 		"Payment_Method": "CARA BAYARAN",
 		"Certidicate_Security": "Sijil & Keselamatan",
@@ -100,5 +100,25 @@
 		"Content_4": "",
 		"Content_5": "",
 		"Content_6": ""
+	},
+	"Share_Section": {
+		"1_Line": "REKEMEN KAWAN2 DPT COMMISSION",
+		"Press": "TEKAN",
+		"Invite": "JEMPUT",
+		"2_Line": "DAN HANTAR LINK UTK KWN2.",
+		"3_Line": "COMMISSION akn bayar setiap ISNIN",
+		"4_Line": "SETIAP 1 SHARE GET RM30.00",
+		"Share": "KONGSI",
+		"1_Friend": "1 KAWAN",
+		"20_Friend": "20 KAWAN",
+		"100_Friend": "100 KAWAN",
+		"Free": "FREE"
+	},
+	"PopUp": {
+		"1_Line": "Notis:",
+		"2_Line": "Yang Lain-lain Company Tidak Ada Di List",
+		"3_Line": "Bukan Under Company Kami , Kalau Kena Scam Kami Tidak Akan Bertangguangjawab",
+		"4_Line": "Pautan Laman Web MATBET88:",
+		"5_Line": "Syarikat Hak Cipta Di Bawah"
 	}
 }

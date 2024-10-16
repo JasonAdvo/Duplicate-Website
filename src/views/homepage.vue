@@ -1,4 +1,9 @@
 <template>
+
+	<div>
+		<PopUpCard />
+	</div>
+
 	<div class="TopBanner">
 		<TopBanner />
 	</div>
@@ -23,7 +28,7 @@
 				<div class="MB_Img_Gallery" id="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 58" :key="n">
+							<div class="image-wrapper" v-for="n in 33" :key="n">
 								<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
@@ -51,7 +56,7 @@
 					<div class="footer-detail">
 						<p>
 							<a :href="link_output">
-								<b style="font-size: 12px;">
+								<b style="font-size: 16px;">
 									{{ $t('content.FP_Link_Word') }}
 								</b>
 							</a>
@@ -62,7 +67,7 @@
 						<p>
 
 							<a :href="winboxofficial_link">
-								<b style="font-size: 12px;">
+								<b style="font-size: 16px;">
 									{{ $t('content.SP_Link_Word') }}
 								</b>
 							</a>
@@ -125,6 +130,7 @@ import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
+import PopUpCard from '@/components/PopUpCard.vue';
 import { mapGetters } from 'vuex';
 import axios from 'axios';
 
@@ -133,70 +139,46 @@ export default {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
+		PopUpCard
 	},
 	data() {
 		return {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"Aztec Bonus Hunt 2",
-				"Maya Elemental Totem",
-				"Dragon Chi's Quest",
-				"Starry Adventure",
-				"Phantom Multiplier",
-				"Ahapsody Muertos",
-				"Kingyo Riches",
-				"Fish PrawnCrab Bonanza",
-				"Ramakien Blessing",
-				"Football Fever",
-				"Crazy Bountry",
-				"Last Samurai",
-				"Dark Ritual",
-				"Xiang Qi Ways 2",
-				"Aztec Bonus Hunt",
-				"Firefly Hunter",
-				"Hungry Slime",
-				"Genie Myscery",
-				"Disco777",
-				"Boom of Prosperity",
-				"World Cup FInal",
-				"Astro Bunny",
-				"Cookie Hunter",
-				"Xmaxs Gift Delight",
-				"Mace Hercules",
-				"Wheel of Gems",
-				"Scale of Heaven Anubis",
-				"Infinity Ocean",
-				"DJ Fever",
-				"Jewel Mastermind",
-				"PUBG 2",
-				"Fastastic Beast",
-				"SLOTTO 4D",
-				"Xiang Qi Ways",
-				"Candy Rush",
-				"Forturn God's Pot",
-				"Tiger on Gold",
-				"Ancient Gems",
-				"Hu Fu Blessing",
-				"Battle Heroes",
-				"Mine of Prosperity",
-				"Eye of Ra",
-				"Ninja Legend",
-				"Treasure of Drake",
-				"Immortal Love",
-				"Racing for Luck",
-				"Treasure Guardian",
-				"Fortune's Warrior",
-				"Chronicle of Heroes 3 Warloads",
-				"Chronicle of Heroes Lucky Dragon",
-				"King of Glory",
-				"BomBomBot",
-				"Counter Terrorists",
-				"Bubble Dragon",
-				"Road To UEFA",
-				"Bobo Monster",
-				"Chronicle of Heroes Divine Tree",
-				"Road to Euro"
+				"MARIO CLUB",
+				"Dragon Soft",
+				"Funky Games",
+				"JILI",
+				"Lucky365",
+				"NEXTSPIN",
+				"Rich88",
+				"SIMPLEPLAY",
+				"V Power",
+				"Ace Win",
+				"I Love You",
+				"MEGA888",
+				"Monkey King",
+				"playtech",
+				"Pussy888",
+				"918Kiss",
+				"KA Gaming",
+				"Pragmatic Play",
+				"Live88",
+				"Lion King",
+				"Joker",
+				"Great Wall 2",
+				"MEGA H5",
+				"Sun City 2",
+				"Xe 88",
+				"AAA",
+				"JDB",
+				"Red Tiger",
+				"918Kaya",
+				"CO9",
+				"RTG SLOTS",
+				"IMPERIUM GAMES",
+				"BT Gaming"
 			],
 			images: [
 				{ notSelected: '/images/Slot_Img.webp', selected: '/images/Slot_Img.webp', alt: 'Slot Game' },
@@ -431,7 +413,6 @@ export default {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 12px;
-	border: 1px solid #fff;
 }
 
 @media screen and (max-width: 576px) {
@@ -486,10 +467,11 @@ export default {
 	margin: 10px 0;
 	position: relative;
 	display: flex;
+	border-bottom: 2px solid white;
 }
 
 .image-container {
-	width: calc(100% / 5);
+	width: calc(100% / 8);
 	padding-bottom: 20px;
 	cursor: pointer;
 }
@@ -503,10 +485,11 @@ export default {
 		flex-wrap: nowrap;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+		border-bottom: unset
 	}
 
 	.image-container {
-		width: 86px;
+		width: calc(100% / 5);
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}
@@ -649,7 +632,7 @@ li {
 
 .footer-detail p {
 	color: black;
-	font-size: 12px;
+	font-size: 16px;
 	margin-top: 30px;
 }
 

@@ -6,7 +6,7 @@
 					alt="Spin Bonus">
 			</a>
 
-			<img src="/images/LB_Img_1.gif" alt="Deposit Fast & Secure">
+			<img src="/images/LB_Img_1.gif" alt="Payment Method">
 
 			<table>
 				<thead>
@@ -70,7 +70,44 @@
 			</table>
 
 			<div class="Share_Section">
-				<img src="/images/LB_Img_2.gif" alt="Share">
+				<div style="padding: 0 5px;">
+					<b style="color: gold; font-size: 13px; text-decoration: underline">{{ $t('Share_Section.1_Line')
+						}}</b>
+					<br>
+					<span style="color: white; font-size: 13px;">{{ $t('Share_Section.Press') }}</span>
+					<span class="main-blink-me"
+						style="color: #FFFFFF;background: #04A019;font-size: 13px;padding: 2px 5px 1px;border-radius: 5px;">{{
+							$t('Share_Section.Invite') }}</span>
+					<span style="color: white; font-size: 13px;">{{ $t('Share_Section.2_Line') }}</span>
+					<br>
+					<b style="color:#FF3333;font-size:13px;">5%</b>
+					<span style="color: white; font-size: 13px; margin-left: 2px;">{{ $t('Share_Section.3_Line')
+						}}</span>
+					<span class="main-blink-me"
+						style="color: #EFF707;background: #F52222;font-size: 13px;padding: 2px 5px 1px;border-radius: 5px;">12AM</span>
+					<br>
+					<b style="color: gold; font-size: 19px; text-decoration: underline;">{{ $t('Share_Section.4_Line')
+						}}</b>
+					<br>
+					<div>
+						<b style="color: lime;">{{ $t('Share_Section.Share') }}</b>
+						<span style="color: white; margin-left: 2px;">{{ $t('Share_Section.1_Friend') }}</span>
+						<b style="color: magenta; margin-left: 2px;">{{ $t('Share_Section.Free') }}</b>
+						<span style="color: white; margin-left: 2px;">RM30.00</span>
+					</div>
+					<div>
+						<b style="color: lime;">{{ $t('Share_Section.Share') }}</b>
+						<span style="color: white; margin-left: 2px;">{{ $t('Share_Section.20_Friend') }}</span>
+						<b style="color: magenta; margin-left: 2px;">{{ $t('Share_Section.Free') }}</b>
+						<span style="color: white; margin-left: 2px;">RM600.00</span>
+					</div>
+					<div>
+						<b style="color: lime;">{{ $t('Share_Section.Share') }}</b>
+						<span style="color: white; margin-left: 2px;">{{ $t('Share_Section.100_Friend') }}</span>
+						<b style="color: magenta; margin-left: 2px;">{{ $t('Share_Section.Free') }}</b>
+						<span style="color: white; margin-left: 2px;">RM3000.00</span>
+					</div>
+				</div>
 				<div class="button-grp">
 					<a :href="link_output + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
@@ -81,17 +118,19 @@
 				</div>
 			</div>
 
-			<img src="/images/LB_Tekan_Img.webp" alt="Tekan Sini">
+			<a :href="link_output + 'winbox-register'" rel="nofollow">
+				<img src="/images/LB_Tekan_Img.webp" alt="Tekan Sini">
+			</a>
 
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
-						<img src="/images/West_Ham.webp" alt="West Ham">
-						<p>{{ $t('message.team_1') }}</p>
+						<img src="/images/Tottenham.webp" alt="West Ham">
+						<p>{{ $t('message.team_2') }}</p>
 					</div>
 					<div class="time-info">
 						<p>{{ $t('message.start_time') }}</p>
-						<p>21 Sep 2024</p>
+						<p>19 Oct 2024</p>
 						<p class="time">19:30</p>
 						<a :href="link_output + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
@@ -100,8 +139,8 @@
 						</a>
 					</div>
 					<div class="team">
-						<img src="/images/Chelsea.webp" alt="Chelsea">
-						<p>{{ $t('message.team_2') }}</p>
+						<img src="/images/West_Ham.webp" alt="Chelsea">
+						<p>{{ $t('message.team_1') }}</p>
 					</div>
 				</div>
 				<a :href="link_output + 'winbox-register'" rel="nofollow">
@@ -146,29 +185,20 @@ export default {
 }
 
 .Share_Section {
+	background-image: url('/images/LB_Img_2.gif');
+	background-size: 100% 100%;
+	background-color: transparent;
+	padding: 10px 7px;
 	position: relative;
+	border-radius: 8px;
+	margin-bottom: 16px;
 }
 
 .button-grp {
-	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1000px) {
-	.button-grp {
-		bottom: 10%;
-		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
-	}
 }
 
 .button-grp img {
@@ -176,7 +206,7 @@ export default {
 }
 
 .button-grp a {
-	width: calc(50% - 8px);
+	width: 50%;
 }
 
 @media screen and (min-width: 610px) and (max-width: 770px) {
@@ -360,11 +390,15 @@ export default {
 
 @keyframes blinkme {
 	0% {
-		display: 1;
+		opacity: 0;
 	}
 
-	50% {
+	38% {
 		opacity: 0;
+	}
+
+	39% {
+		opacity: 1;
 	}
 
 	100% {
