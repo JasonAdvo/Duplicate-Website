@@ -1,36 +1,44 @@
 <template>
 	<div class="relative">
-		<a href="/">
-			<div class="Top_Banner_Container" />
-		</a>
-		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
+		<div class="relative">
+			<a href="/">
+				<div class="Top_Banner_Container" />
+			</a>
+			<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 
-		<a href="/">
-			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
-		</a>
-		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
+			<a href="/">
+				<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
+			</a>
+			<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
-		<!-- Overlay -->
-		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
-		<!-- Pop-up Card -->
-		<div v-if="showPopup" class="popup-card">
-			<div @click="changeLanguage('en')">
-				English
-				<span v-if="selectedLanguage === 'en'" class="tick">
-					<i class="fa fa-check"></i>
-				</span>
+			<!-- Overlay -->
+			<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
+			<!-- Pop-up Card -->
+			<div v-if="showPopup" class="popup-card">
+				<div @click="changeLanguage('en')">
+					English
+					<span v-if="selectedLanguage === 'en'" class="tick">
+						<i class="fa fa-check"></i>
+					</span>
+				</div>
+				<div @click="changeLanguage('ms')">
+					Bahasa Melayu
+					<span v-if="selectedLanguage === 'ms'" class="tick">
+						<i class="fa fa-check"></i>
+					</span>
+				</div>
+				<div @click="changeLanguage('zh')">
+					中文
+					<span v-if="selectedLanguage === 'zh'" class="tick">
+						<i class="fa fa-check"></i>
+					</span>
+				</div>
 			</div>
-			<div @click="changeLanguage('ms')">
-				Bahasa Melayu
-				<span v-if="selectedLanguage === 'ms'" class="tick">
-					<i class="fa fa-check"></i>
-				</span>
-			</div>
-			<div @click="changeLanguage('zh')">
-				中文
-				<span v-if="selectedLanguage === 'zh'" class="tick">
-					<i class="fa fa-check"></i>
-				</span>
+		</div>
+
+		<div class="running-sentence-container">
+			<div class="running-sentence">
+				{{ $t('Runnig_Bar.Content_1') }}
 			</div>
 		</div>
 	</div>
@@ -125,8 +133,7 @@ export default {
 
 .Partnership {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 15px;
 	left: 20px;
 	width: 80px;
 	background-color: white;
@@ -143,8 +150,7 @@ export default {
 
 .GT-icon {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 25px;
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
@@ -160,10 +166,12 @@ export default {
 	}
 
 	.Partnership {
+		top: 10px;
 		width: 45px;
 	}
 
 	.GT-icon {
+		top: 10px;
 		width: 40px;
 	}
 }
@@ -230,7 +238,7 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Running_Bar_Bg_Img.webp');
+	/* background-image: url('/images/Running_Bar_Bg_Img.webp'); */
 	/* visibility: visible; */
 	background-size: 100% 100%;
 	background-color: black;
@@ -241,6 +249,8 @@ export default {
 	display: flex;
 	align-items: center;
 	position: sticky;
+	background-color: white;
+	border-bottom: 2px solid #9d00ff;
 }
 
 .running-sentence {
