@@ -2,7 +2,7 @@
 	<div class="Left_Banner_Container">
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
+			<a :href="output_link + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
 					alt="Spin Bonus"></a>
 
 			<img src="/images/LB_Img_1.webp" alt="Payment Method">
@@ -71,18 +71,18 @@
 			<div style="position: relative;">
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Share_Img.gif" alt="Share"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 							src="/images/LB_More_Img.gif" alt="More"></a>
 				</div>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
+			<a :href="output_link + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
 					src="/images/LB_Img_3.webp" alt="Live Now"></a>
 		</div>
 	</div>
@@ -98,10 +98,10 @@ export default {
 		LB_Img_Carousel
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_link', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>

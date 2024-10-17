@@ -4,7 +4,7 @@
 
 			<div class="Mobile_View" style="display: none;">
 				<RB_Img_Carousel />
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
+				<a :href="output_link + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
 
 				<img style="margin-bottom: 16px;" src="/images/LB_Img_1.webp" alt="Payment Method">
@@ -71,14 +71,14 @@
 				</table>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
+			<a :href="output_link + 'winbox-register'" rel="nofollow"><img src="/images/Marc Marquez bonus.webp"
 					alt="93% Marc Marquex Bonus" style="margin-bottom: 16px;">
 			</a>
 
 			<div class="login-register-container">
-				<a :href="link_winboxmys + 'winbox-login'" rel="nofollow"><img class="Join"
-						src="/images/RB_Login_Img.webp" alt="Login"></a>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="Register"
+				<a :href="output_link + 'winbox-login'" rel="nofollow"><img class="Join" src="/images/RB_Login_Img.webp"
+						alt="Login"></a>
+				<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="Register"
 						src="/images/RB_Register_Img.webp" alt="Register"></a>
 			</div>
 			<div class="RB_Info_Container" style="display: flex; margin-bottom: 23px">
@@ -91,10 +91,10 @@
 					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM20.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="output_link + 'winbox-register'" rel="nofollow">
 						<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
 					</a>
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+					<a :href="output_link + 'winbox-register'" rel="nofollow">
 						<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 					</a>
 					<a href="/">
@@ -107,18 +107,18 @@
 				<div style="position: relative; margin-bottom: 16px;">
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Share_Img.gif" alt="Share"></a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Downline_Img.gif" alt="Downline"></a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_Copy_Img.gif" alt="Copy"></a>
-						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
+						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
 								src="/images/LB_More_Img.gif" alt="More"></a>
 					</div>
 				</div>
 
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img
+				<a :href="output_link + 'winbox-register'" rel="nofollow"><img
 						style="border-radius: 8px; margin-bottom: 16px;" src="/images/LB_Img_3.webp" alt="Live Now"></a>
 
 			</div>
@@ -132,7 +132,7 @@
 					<div class="time-info">
 						<p>19 Oct 2024</p>
 						<p class="time">19:30</p>
-						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
+						<a :href="output_link + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
 								<p>{{ $t('message.bet_now') }}</p>
 							</div>
@@ -143,17 +143,17 @@
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="output_link + 'winbox-register'" rel="nofollow">
 					<div class="show-more-button-container">
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+			<a :href="output_link + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
 
-			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+			<a :href="output_link + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
 					alt="Top Up Rm20" style="margin-bottom: 16px;">
 			</a>
 		</div>
@@ -170,10 +170,10 @@ export default {
 		RB_Img_Carousel
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_link', 'error']),
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 
 };

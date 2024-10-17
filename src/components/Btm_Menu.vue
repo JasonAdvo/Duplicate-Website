@@ -2,49 +2,49 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">
+				<a :href="output_link + 'winbox-register'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
 				</a>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" class="social-media-icon">
+				<a :href="output_link + 'winbox-register'" rel="nofollow" class="social-media-icon">
 					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
 				</a>
 			</div>
 
 			<!-- <div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i>
-				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+				<a :href="output_link + 'winbox-register'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
 			</div> -->
 
 			<div class="footer-content">
 				<div class="d-f col">
-					<a :href="link_winboxmys" rel="nofollow" target="_blank">
+					<a :href="output_link" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Home_Img.webp" alt="Home">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Promo_Img.webp" alt="Bonus">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Lucky_Img.webp" alt="Lucky Draw">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
 					</a>
 				</div>
 				<div class="d-f col">
-					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow" target="_blank">
+					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
 					</a>
 				</div>
@@ -64,7 +64,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_link', 'error']),
 	},
 	methods: {
 		closePopup() {
@@ -72,7 +72,7 @@ export default {
 		},
 	},
 	mounted() {
-		this.$store.dispatch('fetchLink_winboxmys');
+		this.$store.dispatch('fetchLink_output');
 	}
 };
 </script>

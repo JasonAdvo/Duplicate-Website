@@ -28,13 +28,13 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 37" :key="n">
-								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+								<a v-if="n <= 12" :href="output_link + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 
 								<div v-if="n <= 12">
-									<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
+									<a :href="output_link + 'winbox-register'" rel="nofollow">
 										<p>{{ $t('message.Play') }}</p>
 									</a>
 								</div>
@@ -59,12 +59,12 @@
 						{{ $t('Main_Content.Btm_Header') }}
 					</p>
 					<p>
-						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_1') }}</strong></a>
+						<a :href="output_link"><strong>{{ $t('Main_Content.Btm_Content_1') }}</strong></a>
 						|
 						{{ $t('Main_Content.Btm_Content_2') }}
 					</p>
 					<p>
-						<a :href="winboxofficial_link">
+						<a :href="output_link">
 							<strong>
 								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
@@ -211,7 +211,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['link_winboxmys', 'error']),
+		...mapGetters(['output_link', 'error']),
 	},
 	methods: {
 		async fetchLink() {
@@ -280,8 +280,8 @@ export default {
 		},
 	},
 	mounted() {
-		this.fetchLink();
-		this.$store.dispatch('fetchLink_winboxmys');
+		// this.fetchLink();
+		this.$store.dispatch('fetchLink_output');
 	}
 }
 </script>
