@@ -4,6 +4,9 @@
 			<LB_Img_Carousel />
 			<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img src="/images/Spin Bonus.webp"
 					alt="Spin Bonus"></a>
+
+			<img src="/images/LB_Img_1.webp" alt="Payment Method">
+
 			<table>
 				<thead>
 					<tr>
@@ -69,13 +72,13 @@
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.webp" alt="Share"></a>
+							src="/images/LB_Share_Img.gif" alt="Share"></a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.webp" alt="More"></a>
+							src="/images/LB_More_Img.gif" alt="More"></a>
 				</div>
 			</div>
 
@@ -208,11 +211,15 @@ export default {
 
 @keyframes blinkme {
 	0% {
-		display: 1;
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
 	}
 
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 
 	100% {
@@ -227,8 +234,8 @@ table {
 
 table td {
 	font-size: 9px;
-	color: black;
-	border: 1px solid white;
+	color: white;
+	border: 1px solid black;
 	font-weight: 500;
 }
 
@@ -240,13 +247,13 @@ table td {
 
 .green {
 	color: white;
-	background: radial-gradient(circle, rgba(17, 255, 38, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: radial-gradient(circle, rgba(82, 255, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	background: radial-gradient(circle, rgba(17, 243, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: radial-gradient(circle, rgba(255, 26, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	padding-left: 4px;
 }
 

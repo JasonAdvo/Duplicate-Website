@@ -5,6 +5,8 @@
 		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
+		<img class="Partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
+
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
 		<!-- Pop-up Card -->
@@ -31,8 +33,9 @@
 
 		<div class="running-sentence-container">
 			<div class="running-sentence">
-				<strong>{{ $t('Runnig_Bar.Content_1') }} </strong>
-				{{ $t('Runnig_Bar.Content_2') }}
+				{{ $t('Runnig_Bar.Content_1') }}
+				<b>{{ $t('Runnig_Bar.Content_2') }}</b>
+				{{ $t('Runnig_Bar.Content_3') }}
 			</div>
 		</div>
 	</div>
@@ -122,14 +125,6 @@ export default {
 	height: 80px;
 }
 
-.IJaya_Logo {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-	width: 240px;
-	height: auto;
-}
-
 .Partnership {
 	position: absolute;
 	top: 20px;
@@ -143,42 +138,20 @@ export default {
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
-	color: white;
+	color: black;
 	cursor: pointer;
 	width: 50px;
 }
 
-@media screen and (max-width: 1030px) {
-	.IJaya_Logo img {
-		width: 200px !important;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	.IJaya_Logo {
-		top: 5px;
-	}
-}
-
 @media screen and (max-width: 430px) {
-	.IJaya_Logo {
-		width: 150px !important;
-	}
-
 	.Partnership {
-		top: 5px;
+		top: 10px;
 		width: 40px;
 	}
 
 	.GT-icon {
 		width: 40px;
 		top: 5px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.IJaya_Logo img {
-		width: 145px !important;
 	}
 }
 
@@ -193,8 +166,6 @@ export default {
 	transform: translateY(-50%);
 	max-width: 60px;
 }
-
-
 
 .overlay {
 	position: fixed;
@@ -264,7 +235,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 90s linear infinite;
-	color: black;
+	color: white;
 	letter-spacing: 0.5px;
 	font-size: 13px;
 }

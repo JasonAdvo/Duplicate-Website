@@ -27,7 +27,7 @@
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 35" :key="n">
+							<div class="image-wrapper" v-for="n in 37" :key="n">
 								<a v-if="n <= 12" :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
@@ -47,85 +47,7 @@
 				</div>
 
 				<div class="footer-content">
-					<h1>{{ $t('Main_Content.H1_Header') }}</h1>
-					<p> {{ $t('Main_Content.H1_Content_1') }}
-						<strong>{{ $t('Main_Content.H1_Content_2') }} </strong>
-						{{ $t('Main_Content.H1_Content_3') }}
-						<strong>{{ $t('Main_Content.H1_Content_3_5') }} </strong>
-						{{ $t('Main_Content.H1_Content_4') }}
-					</p>
-					<p>
-						{{ $t('Main_Content.H1_Content_5') }}
-						<strong>{{ $t('Main_Content.H1_Content_6') }} </strong>
-						{{ $t('Main_Content.H1_Content_7') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_1_Header') }}</h2>
-					<p> {{ $t('Main_Content.H2_1_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_1_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_1_Content_3') }}
-					</p>
-					<ol>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_1_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_1_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_1_Content_3') }}
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_2_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_2_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_2_Content_3') }}
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_3_Content') }}
-						</li>
-						<li>
-							{{ $t('Main_Content.H2_1_Li_4_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_1_Li_4_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_1_Li_4_Content_3') }}
-						</li>
-					</ol>
-					<br>
-					<h2>{{ $t('Main_Content.H2_2_Header') }}</h2>
-					<p>
-						{{ $t('Main_Content.H2_2_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_2_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_3') }}
-					</p>
-					<p>
-						{{ $t('Main_Content.H2_2_Content_4') }}
-						<strong>{{ $t('Main_Content.H2_2_Content_5') }}</strong>
-						{{ $t('Main_Content.H2_2_Content_6') }}
-					</p>
-					<br>
-					<h2>{{ $t('Main_Content.H2_3_Header') }}</h2>
-					<p>
-						<strong>{{ $t('Main_Content.H2_3_Content_1') }}</strong>
-						{{ $t('Main_Content.H2_3_Content_2') }}
-					</p>
-					<ol>
-						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_1_Header') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_1_Content') }}
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_2_Header') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_2_Content') }}
-						</li>
-						<li>
-							<strong>{{ $t('Main_Content.H2_3_Li_3_Header') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_3_Content_1') }}
-							<strong>{{ $t('Main_Content.H2_3_Li_3_Content_2') }}</strong>
-							{{ $t('Main_Content.H2_3_Li_3_Content_3') }}
-						</li>
-					</ol>
-					<br>
-					<h2>{{ $t('Main_Content.H2_4_Header') }}</h2>
-					<p>
-						{{ $t('Main_Content.H2_4_Content_1') }}
-						<strong>{{ $t('Main_Content.H2_4_Content_2') }}</strong>
-						{{ $t('Main_Content.H2_4_Content_3') }}
-					</p>
+
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
@@ -137,18 +59,17 @@
 						{{ $t('Main_Content.Btm_Header') }}
 					</p>
 					<p>
-						{{ $t('Main_Content.Btm_Content_1') }} |
-						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_2') }}</strong></a> |
-						{{ $t('Main_Content.Btm_Content_3') }} |
-						{{ $t('Main_Content.Btm_Content_4') }}
+						<a :href="link_winboxmys"><strong>{{ $t('Main_Content.Btm_Content_1') }}</strong></a>
+						|
+						{{ $t('Main_Content.Btm_Content_2') }}
 					</p>
 					<p>
 						<a :href="winboxofficial_link">
 							<strong>
-								{{ $t('Main_Content.Btm_Content_5') }}
+								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
 						</a>
-						{{ $t('Main_Content.Btm_Content_6') }}
+						{{ $t('Main_Content.Btm_Content_4') }}
 					</p>
 					<div class="footer-detail">
 						<div class="Visit">
@@ -164,12 +85,7 @@
 							<img src="/images/Footer-License-Img.webp" alt="Game License">
 						</div>
 						<div class="game">
-							<strong>{{ $t('Registered_TradeMark.Content_1') }}</strong>
-							{{ $t('Registered_TradeMark.Content_2') }}
-							<strong>{{ $t('Registered_TradeMark.Content_3') }}</strong>
-							{{ $t('Registered_TradeMark.Content_4') }}
-							<strong>{{ $t('Registered_TradeMark.Content_5') }}</strong>
-							{{ $t('Registered_TradeMark.Content_6') }}
+							{{ $t('Registered_TradeMark.Content_1') }}
 						</div>
 						<div class="payment">
 							<p>{{ $t('message.Payment_Method') }}</p>
@@ -191,7 +107,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						2016-2024 PAVILION88. ALL RIGHTS RESERVED.
+						Copyright © CYLBET. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -227,57 +143,58 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
+				"Boxing Vs Muay-Thai",
+				"Tree of Wealth",
+				"Madness Buffalo",
 				"Tanzania King",
 				"Candy Party",
 				"Legend Slot Onimaru",
 				"Legend Slot Musashi",
+				"Lucky777",
 				"Durian King",
 				"Thai Lucky",
-				"Color Alchemy",
+				"Colour Alchemy",
 				"Trade Wars",
 				"Gems Rush",
-				"Gods Of Olympus",
+				"Gods of Olympus",
 				"Beauty Contest",
 				"Dragon Jewels",
 				"Golden Temple",
-				"LIFE",
-				"Magic Box",
+				"Life",
+				"Magicbox",
 				"Mr Fortune",
 				"Meow Meow",
-				"Lucky 7",
 				"Where's My Monkey",
 				"Samurai Wars",
 				"Happy Road",
-				"Feed the Zombie",
-				"Burm the Office",
+				"Feed The Zombie",
+				"Burn The Office",
 				"All You Can Eat",
 				"TVW",
 				"Strange Encounter",
 				"S.O.S",
-				"On Crap",
+				"Oh Crap",
 				"Pon Pon",
 				"Lullababy",
 				"Talent Night",
 				"Spell Craft",
 				"Steam Punk 100",
-				"Thai Street Food",
-				"Madness Buffalo"
+				"Thai Street Food"
 			],
 			images: [
-				{ notSelected: '/images/CPF_NotS.webp', selected: '/images/CPF_S.webp', alt: 'Clot Play Free' },
-				{ notSelected: '/images/CP_NotS.webp', selected: '/images/CP_S.webp', alt: 'Clot Play' },
-				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp', alt: 'JILI' },
-				{ notSelected: '/images/BT_NotS.webp', selected: '/images/BT_S.webp', alt: 'BT Gaming' },
-				{ notSelected: '/images/BP_NotS.webp', selected: '/images/BP_S.webp', alt: 'BP Gaming' },
-				{ notSelected: '/images/Rich_NotS.webp', selected: '/images/Rich_S.webp', alt: 'Rich Gaming' },
-				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp', alt: 'Next Spin' },
-				{ notSelected: '/images/Pegasus_NotS.webp', selected: '/images/Pegasus_S.webp', alt: 'Pragmatic Play' },
-				{ notSelected: '/images/NS_NotS.webp', selected: '/images/NS_S.webp', alt: 'Ace Win' },
-				{ notSelected: '/images/KA_NotS.webp', selected: '/images/KA_S.webp', alt: 'Joker' },
-				{ notSelected: '/images/Slot_NotS.webp', selected: '/images/Slot_S.webp', alt: 'KA Gaming' },
-				{ notSelected: '/images/Live_NotS.webp', selected: '/images/Live_S.webp', alt: 'Slot' },
-				{ notSelected: '/images/Sports_NotS.webp', selected: '/images/Sports_S.webp', alt: 'Live' },
-				{ notSelected: '/images/Others_NotS.webp', selected: '/images/Others_S.webp', alt: 'Sports' },
+				{ notSelected: '/images/CPF.webp', selected: '/images/CPF.webp', alt: 'Clot Play Free' },
+				{ notSelected: '/images/CP.webp', selected: '/images/CP.webp', alt: 'Clot Play' },
+				{ notSelected: '/images/JILI.webp', selected: '/images/JILI.webp', alt: 'JILI' },
+				{ notSelected: '/images/BT_Gaming.webp', selected: '/images/BT_Gaming.webp', alt: 'BT Gaming' },
+				{ notSelected: '/images/BP_Gaming.webp', selected: '/images/BP_Gaming.webp', alt: 'BP Gaming' },
+				{ notSelected: '/images/Rich_Gaming.webp', selected: '/images/Rich_Gaming.webp', alt: 'Rich Gaming' },
+				{ notSelected: '/images/AP.webp', selected: '/images/AP.webp', alt: 'Advant Play' },
+				{ notSelected: '/images/Joker.webp', selected: '/images/Joker.webp', alt: 'Joker' },
+				{ notSelected: '/images/Acewin.webp', selected: '/images/Acewin.webp', alt: 'Acewin' },
+				{ notSelected: '/images/Slot_Fish.webp', selected: '/images/Slot_Fish.webp', alt: 'Slot & Fish' },
+				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live Game' },
+				{ notSelected: '/images/Sports.webp', selected: '/images/Sports.webp', alt: 'Sportsbook' },
+				{ notSelected: '/images/Lottery_Poker.webp', selected: '/images/Lottery_Poker.webp', alt: 'Lottery & Poker' },
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -299,12 +216,12 @@ export default {
 	methods: {
 		async fetchLink() {
 			try {
-				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxofficial_my", {
+				const response_winbox77 = await axios.get("https://seo.mobileapplab.online/api/winbox?fields[0]=winboxmys_co", {
 					headers: {
 						"Authorization": "Bearer " + "e2e085a70abb572e2ad3118cf0c3749024fc7342f873874a3cfc95f6520e4f561a3656113097ce0fea85186a91a42c56799bd153626b51f36c83bcf5c02e9996cc56106cb88a85ea4c4d58b4e1713dcc2c5006c666d09110e741081c80562cc29b6490fa8125037afdf61b783ebfd01e41152c0f61803009ad98eded56aa6568"
 					}
 				});
-				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxofficial_my;
+				this.winboxofficial_link = response_winbox77.data.data.attributes.winboxmys_co;
 			} catch (error) {
 				console.log(error)
 			}
@@ -412,7 +329,7 @@ export default {
 	background-image: url('/images/Bg_Img.webp');
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 }
 
 .Mobile_Middle_Banner {
@@ -540,7 +457,7 @@ export default {
 }
 
 .image-container {
-	width: calc(100% / 14);
+	width: calc(100% / 13);
 	padding-bottom: 30px;
 	cursor: pointer;
 }
@@ -644,7 +561,7 @@ h2,
 h3,
 li,
 p {
-	color: black;
+	color: white;
 }
 
 .footer-content h1 {
@@ -698,7 +615,7 @@ li {
 }
 
 .footer-detail p {
-	color: black;
+	color: white;
 	font-size: 12px;
 	margin-top: 30px;
 	text-transform: uppercase;
@@ -740,7 +657,7 @@ li {
 	float: left;
 	width: 70%;
 	margin-top: 50px;
-	color: black;
+	color: white;
 }
 
 @media screen and (max-width: 430px) {
@@ -808,7 +725,7 @@ li {
 	text-align: center;
 	font-size: 12px;
 	padding: 50px 0;
-	color: black;
+	color: white;
 }
 
 .TopBanner {

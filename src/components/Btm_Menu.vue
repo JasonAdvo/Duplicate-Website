@@ -10,12 +10,12 @@
 				</a>
 			</div>
 
-			<div v-if="isVisible" class="Btm-Popup_Container">
-				<i class="ic-close-circle fas fa-times" @click="closePopup"></i> <!-- Font Awesome cross icon -->
+			<!-- <div v-if="isVisible" class="Btm-Popup_Container">
+				<i class="ic-close-circle fas fa-times" @click="closePopup"></i>
 				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
-			</div>
+			</div> -->
 
 			<div class="footer-content">
 				<div class="d-f col">
@@ -87,6 +87,7 @@ export default {
 	height: 55px;
 	background-image: url('/images/Btm_Bg_Img.webp');
 	background-size: 100% 100%;
+	box-shadow: 0 -1px 5px rgba(0, 0, 0, 1);
 }
 
 .relative {

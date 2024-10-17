@@ -6,6 +6,9 @@
 				<RB_Img_Carousel />
 				<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img style="margin-bottom: 16px;"
 						src="/images/Spin Bonus.webp" alt="Spin Bonus"></a>
+
+				<img style="margin-bottom: 16px;" src="/images/LB_Img_1.webp" alt="Payment Method">
+
 				<table>
 					<thead>
 						<tr>
@@ -89,13 +92,13 @@
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
+						<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
 					</a>
 					<a :href="link_winboxmys + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
+						<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
 					</a>
 					<a href="/">
-						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
+						<img src="/images/RB_Refresh_Img.gif" alt="Refresh">
 					</a>
 				</div>
 			</div>
@@ -105,13 +108,13 @@
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
 						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Share_Img.webp" alt="Share"></a>
+								src="/images/LB_Share_Img.gif" alt="Share"></a>
 						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
+								src="/images/LB_Downline_Img.gif" alt="Downline"></a>
 						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
+								src="/images/LB_Copy_Img.gif" alt="Copy"></a>
 						<a :href="link_winboxmys + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_More_Img.webp" alt="More"></a>
+								src="/images/LB_More_Img.gif" alt="More"></a>
 					</div>
 				</div>
 
@@ -123,12 +126,11 @@
 			<div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
-						<img src="/images/Southampton.webp" alt="Southampton">
+						<img src="/images/Tottenham.webp" alt="Tottenham">
 						<p>{{ $t('message.team_1') }}</p>
 					</div>
 					<div class="time-info">
-						<p>{{ $t('message.start_time') }}</p>
-						<p>14 Sep 2024</p>
+						<p>19 Oct 2024</p>
 						<p class="time">19:30</p>
 						<a :href="link_winboxmys + 'winbox-login'" rel="nofollow">
 							<div class="bet-now-container">
@@ -137,7 +139,7 @@
 						</a>
 					</div>
 					<div class="team">
-						<img src="/images/team-1.webp" alt="Man Utd">
+						<img src="/images/West_Ham.webp" alt="West Ham">
 						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
@@ -263,11 +265,15 @@ export default {
 
 @keyframes blinkme {
 	0% {
-		display: 1;
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
 	}
 
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 
 	100% {
@@ -282,8 +288,8 @@ table {
 
 table td {
 	font-size: 9px;
-	color: black;
-	border: 1px solid white;
+	color: white;
+	border: 1px solid black;
 	font-weight: 500;
 }
 
@@ -295,13 +301,13 @@ table td {
 
 .green {
 	color: white;
-	background: radial-gradient(circle, rgba(17, 255, 38, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: radial-gradient(circle, rgba(82, 255, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	background: radial-gradient(circle, rgba(17, 243, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: radial-gradient(circle, rgba(255, 26, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	padding-left: 4px;
 }
 
@@ -356,8 +362,8 @@ tbody td {
 }
 
 .RB_Cash_Btn_Container img {
-	height: 44px;
-	width: 130px;
+	/* height: 44px; */
+	width: 70%;
 	margin-bottom: 5px;
 }
 
@@ -396,7 +402,7 @@ tbody td {
 }
 
 .RB_Small_Text_Container p {
-	color: black;
+	color: white;
 	font-size: 15px;
 	font-weight: 400;
 	font-family: Lato, sans-serif;
@@ -538,6 +544,7 @@ tbody td {
 	text-align: center;
 	border-radius: 4px;
 	margin: 5px auto 0;
+	font-weight: 700;
 }
 
 .show-more-button-container {
@@ -555,6 +562,7 @@ tbody td {
 .show-more-button-container p {
 	font-size: 13px;
 	line-height: 1;
+	font-weight: 700;
 	margin-bottom: 0;
 }
 
@@ -565,6 +573,10 @@ tbody td {
 .team img {
 	margin-bottom: 10px;
 	width: 50px;
+}
+
+.team p {
+	font-weight: 700;
 }
 
 @font-face {
@@ -578,6 +590,7 @@ tbody td {
 	font-size: 21px;
 	color: #258D2D;
 	font-family: 'Digital-7', sans-serif;
+	font-weight: 700;
 }
 
 .RB-mobile-img-grp {
