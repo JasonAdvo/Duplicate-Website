@@ -72,18 +72,15 @@
 				<img src="/images/LB_Img_2.webp" alt="Share">
 				<div class="button-grp">
 					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Share_Img.gif" alt="Share"></a>
+							src="/images/LB_Share_Img.webp" alt="Share"></a>
 					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Downline_Img.gif" alt="Downline"></a>
+							src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_Copy_Img.gif" alt="Copy"></a>
+							src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 					<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-							src="/images/LB_More_Img.gif" alt="More"></a>
+							src="/images/LB_More_Img.webp" alt="More"></a>
 				</div>
 			</div>
-
-			<a :href="output_link + 'winbox-register'" rel="nofollow"><img style="border-radius: 8px;"
-					src="/images/LB_Img_3.webp" alt="Live Now"></a>
 		</div>
 	</div>
 </template>
@@ -132,24 +129,11 @@ export default {
 
 .button-grp {
 	position: absolute;
-	margin-top: -29%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1000px) {
-	.button-grp {
-		bottom: 10%;
-		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
-	}
+	bottom: 10%;
 }
 
 .button-grp img {
@@ -235,7 +219,7 @@ table {
 table td {
 	font-size: 9px;
 	color: white;
-	border: 1px solid black;
+	border: 1px solid #fde53b;
 	font-weight: 500;
 }
 
@@ -247,13 +231,13 @@ table td {
 
 .green {
 	color: white;
-	background: radial-gradient(circle, rgba(82, 255, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to bottom, rgb(252 227 59) 51%, rgb(244 169 59) 100%);
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	background: radial-gradient(circle, rgba(255, 26, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to bottom, rgb(252 227 59) 51%, rgb(244 169 59) 100%);
 	padding-left: 4px;
 }
 

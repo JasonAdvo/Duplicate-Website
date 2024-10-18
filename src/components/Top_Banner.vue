@@ -5,7 +5,11 @@
 		</a>
 		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
 
-		<img class="Partnership" src="/images/A66_Grp_Img.webp" alt="A66 Group">
+		<a href="/">
+			<img class="Logo" src="/images/Logo_Img.webp" alt="Logo">
+		</a>
+
+		<img class="Partnership" src="/images/A66_Grp_Img.gif" alt="A66 Group">
 
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
@@ -34,8 +38,13 @@
 		<div class="running-sentence-container">
 			<div class="running-sentence">
 				{{ $t('Runnig_Bar.Content_1') }}
-				<b>{{ $t('Runnig_Bar.Content_2') }}</b>
+				|
+				{{ $t('Runnig_Bar.Content_2') }}
+				|
 				{{ $t('Runnig_Bar.Content_3') }}
+				<b>{{ $t('Runnig_Bar.Content_4') }}</b>
+				<span v-if="!['zh'].includes($i18n.locale)">,</span>
+				{{ $t('Runnig_Bar.Content_5') }}
 			</div>
 		</div>
 	</div>
@@ -125,33 +134,46 @@ export default {
 	height: 80px;
 }
 
+.Logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	top: 0;
+}
+
 .Partnership {
 	position: absolute;
 	top: 20px;
 	left: 30px;
-	width: 60px;
+	width: 100px;
 }
 
 .GT-icon {
 	position: absolute;
-	top: 20px;
+	top: 25px;
 	right: 20px;
 	z-index: 1;
 	font-size: 30px;
-	color: black;
+	color: white;
 	cursor: pointer;
 	width: 50px;
 }
 
 @media screen and (max-width: 430px) {
 	.Partnership {
-		top: 10px;
-		width: 40px;
+		top: 8px;
+		left: 5px;
+		width: 80px;
+	}
+
+	.Logo {
+		width: 120px;
 	}
 
 	.GT-icon {
-		width: 40px;
-		top: 5px;
+		width: 35px;
+		top: 10px;
 	}
 }
 

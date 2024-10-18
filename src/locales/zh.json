@@ -13,9 +13,9 @@
 		"Payment_Method": "支付方式",
 		"Certidicate_Security": "证书 & 安全",
 		"Follow_Us": "关注我们",
-		"Visit": "访问我们的官方 CYLBET 博客：",
+		"Visit": "访问我们的官方 SCRPLAY 博客：",
 		"Click": "点击这里",
-		"Website": "CYLBET"
+		"Website": "SCRPLAY"
 	},
 	"Main_Content": {
 		"H1_Header": "最好的电子钱包老虎机娱乐场 - Pavilion88娱乐场APK",
@@ -64,10 +64,10 @@
 		"H2_4_Content_2": "Pavilion88 Malaysia，",
 		"H2_4_Content_3": "获得老虎机玩家所需的所有免费点数和免费旋转币。",
 		"Btm_Header": "我们的主要合作伙伴：",
-		"Btm_Content_1": "Winbox 马来西亚",
-		"Btm_Content_2": "体验安全的游戏、快速存款和丰厚奖金，尽在Winbox Malaysia。今天就加入，提升您的游戏体验！",
+		"Btm_Content_1": "Winbox 官方马来西亚",
+		"Btm_Content_2": "解锁安全游戏、闪电般的存款以及无与伦比的奖金，尽在Winbox 官方马来西亚。立即加入，提升您的游戏冒险！",
 		"Btm_Content_3": "Winbox 下载",
-		"Btm_Content_4": "立即下载Winbox应用，享受流畅的游戏体验、安全的存款和独家奖励。今天下载，提升您的赌场体验！"
+		"Btm_Content_4": "今天就下载Winbox应用，享受流畅的游戏体验、安全的交易和独家奖励。立即开始您的胜利之旅！"
 	},
 	"content": {
 		"Learn_More": "进一步了解我们的合作伙伴:",
@@ -78,11 +78,23 @@
 		"SP_S_Content": "在ATAS赌场，探索马来西亚顶级的赌博目的地，这里提供各种游戏，如真人赌场、老虎机和体育博彩。凭借顶级的安全性、丰富的游戏种类和卓越的客户服务，ATAS赌场为所有玩家确保了卓越的游戏体验。"
 	},
 	"Runnig_Bar": {
-		"Content_1": "🧧 欢迎来到 CYL88！🎰 享受",
-		"Content_2": "每日免费信用红包",
-		"Content_3": "（随机！）🧧🧧🧧，只需点击一下即可赚取额外收入——分享并观察您的收入增长！🎁 立即加入并使用您的推荐链接邀请您的朋友解锁更多奖励！💵💵💵 每周一 12 点支付 5% 佣金和 5% 回扣——不要错过在 CYL88 赢取大奖的机会！🚀"
+		"Content_1": "👑 Scrplay7",
+		"Content_2": "提现全额奖金",
+		"Content_3": "接受 VVIP 投注！ 💰 体验马来西亚排名第一的优质电子钱包赌场，拥有一流的安全性和最好的在线老虎机和现场游戏！使用 TnG、Boost 等电子钱包享受无缝存款和取款！ 🎰 在 SCRPlay，我们秉承",
+		"Content_4": "“敢玩敢给线上娱乐”",
+		"Content_5": "的座右铭，提供值得信赖、无忧的游戏和负责任的游戏，为您带来有趣、安全的体验。立即加入，了解我们为何成为马来西亚十大在线赌场之一！"
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Cylbet8 是 Moon Technologie 拥有的注册商标和品牌。该公司受库拉索政府监管和许可，在游戏服务提供商 N.V. 主许可证 #1168/JAZ 下运营。"
+		"Content_1": "Scrplay 是 Moon Technologie 注册的商标品牌，受库拉索政府监管并根据游戏服务提供商 N.V. 主许可证 #1168/JAZ 进行许可。"
+	},
+	"Popular_Game": {
+		"Title": "热门游戏"
+	},
+	"Btm_Bar": {
+		"Home": "首页",
+		"History": "记录",
+		"Promo": "奖金",
+		"Live": "聊天",
+		"Setting": "设定"
 	}
 }

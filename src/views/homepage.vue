@@ -32,15 +32,6 @@
 									<img :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
 								</a>
 								<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-
-								<div v-if="n <= 12">
-									<a :href="output_link + 'winbox-register'" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
-									</a>
-								</div>
-								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -107,7 +98,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						Copyright © CYLBET. All rights reserved.
+						Copyright © SCRPLAY. All rights reserved.
 					</div>
 				</div>
 			</div>
@@ -143,58 +134,49 @@ export default {
 			selectedItem: 0,
 			selectedIndex: 0,
 			altTexts: [
-				"Boxing Vs Muay-Thai",
-				"Tree of Wealth",
-				"Madness Buffalo",
-				"Tanzania King",
-				"Candy Party",
-				"Legend Slot Onimaru",
-				"Legend Slot Musashi",
-				"Lucky777",
-				"Durian King",
-				"Thai Lucky",
-				"Colour Alchemy",
-				"Trade Wars",
-				"Gems Rush",
-				"Gods of Olympus",
-				"Beauty Contest",
-				"Dragon Jewels",
-				"Golden Temple",
-				"Life",
-				"Magicbox",
-				"Mr Fortune",
-				"Meow Meow",
-				"Where's My Monkey",
-				"Samurai Wars",
-				"Happy Road",
-				"Feed The Zombie",
-				"Burn The Office",
-				"All You Can Eat",
-				"TVW",
-				"Strange Encounter",
-				"S.O.S",
-				"Oh Crap",
-				"Pon Pon",
-				"Lullababy",
-				"Talent Night",
-				"Spell Craft",
-				"Steam Punk 100",
-				"Thai Street Food"
+				"MEGAH5",
+				"MEGAH5",
+				"EVO888H5",
+				"DRAGOON SOFT",
+				"PRAGMATIC PLAY",
+				"V POWER",
+				"UU SLOT",
+				"NO LIMIT CITY",
+				"RELAX GAMING",
+				"HACKSAW GAMING",
+				"CREATIVE GAMING",
+				"BONGO",
+				"SPADEGAMING",
+				"YGR",
+				"3WIN8",
+				"CO9",
+				"HABANERO",
+				"MICROGAMING",
+				"NEXTSPIN",
+				"KA GAMING",
+				"LUCKY365",
+				"LIVE99",
+				"PLAYTECH",
+				"ACEWIN",
+				"JOKER",
+				"GAMEPLAY",
+				"JDB",
+				"ACE333",
+				"PUSSY888",
+				"PUSSY888",
+				"LION KING",
+				"918KISS",
+				"MEGA888",
+				"MEGA888",
+				"MEGA888",
+				"SUN CITY 2",
+				"GREAT WALL 2 99"
 			],
 			images: [
-				{ notSelected: '/images/CPF.webp', selected: '/images/CPF.webp', alt: 'Clot Play Free' },
-				{ notSelected: '/images/CP.webp', selected: '/images/CP.webp', alt: 'Clot Play' },
-				{ notSelected: '/images/JILI.webp', selected: '/images/JILI.webp', alt: 'JILI' },
-				{ notSelected: '/images/BT_Gaming.webp', selected: '/images/BT_Gaming.webp', alt: 'BT Gaming' },
-				{ notSelected: '/images/BP_Gaming.webp', selected: '/images/BP_Gaming.webp', alt: 'BP Gaming' },
-				{ notSelected: '/images/Rich_Gaming.webp', selected: '/images/Rich_Gaming.webp', alt: 'Rich Gaming' },
-				{ notSelected: '/images/AP.webp', selected: '/images/AP.webp', alt: 'Advant Play' },
-				{ notSelected: '/images/Joker.webp', selected: '/images/Joker.webp', alt: 'Joker' },
-				{ notSelected: '/images/Acewin.webp', selected: '/images/Acewin.webp', alt: 'Acewin' },
-				{ notSelected: '/images/Slot_Fish.webp', selected: '/images/Slot_Fish.webp', alt: 'Slot & Fish' },
-				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live Game' },
-				{ notSelected: '/images/Sports.webp', selected: '/images/Sports.webp', alt: 'Sportsbook' },
-				{ notSelected: '/images/Lottery_Poker.webp', selected: '/images/Lottery_Poker.webp', alt: 'Lottery & Poker' },
+				{ notSelected: '/images/Slot_NS.webp', selected: '/images/Slot_S.webp', alt: 'Slot Game' },
+				{ notSelected: '/images/Spribe_NS.webp', selected: '/images/Spribe_S.webp', alt: 'Spribe Game' },
+				{ notSelected: '/images/Live_NS.webp', selected: '/images/Live_S.webp', alt: 'Live Gane' },
+				{ notSelected: '/images/Sport_NS.webp', selected: '/images/Sport_S.webp', alt: 'Sport' }
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 105,
@@ -391,7 +373,6 @@ export default {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 12px;
-	border: 1px solid #fff;
 }
 
 @media screen and (max-width: 576px) {
@@ -457,13 +438,9 @@ export default {
 }
 
 .image-container {
-	width: calc(100% / 13);
+	width: calc(100% / 8);
 	padding-bottom: 30px;
 	cursor: pointer;
-}
-
-.image-container.selected {
-	border-bottom: 5px solid #FFF;
 }
 
 .image-container img {
@@ -478,7 +455,7 @@ export default {
 	}
 
 	.image-container {
-		width: 86px;
+		width: calc(100% / 4);
 		flex: 0 0 auto;
 		padding-bottom: 0;
 	}

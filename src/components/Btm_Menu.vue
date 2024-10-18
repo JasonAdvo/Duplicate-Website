@@ -3,51 +3,47 @@
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
 				<a :href="output_link + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Subscribe_Us_Img.gif" alt="Subscribe">
+					<img src="/images/Free_TNG_Img.gif" alt="Free TNG">
 				</a>
 				<a :href="output_link + 'winbox-register'" rel="nofollow" class="social-media-icon">
-					<img src="/images/Trusted_Site_Img.gif" alt="Trusted">
+					<img src="/images/Complain_Us_Img.gif" alt="Complain Us">
 				</a>
 			</div>
 
-			<!-- <div v-if="isVisible" class="Btm-Popup_Container">
+			<div v-if="isVisible" class="Btm-Popup_Container">
 				<i class="ic-close-circle fas fa-times" @click="closePopup"></i>
 				<a :href="output_link + 'winbox-register'" rel="nofollow">
 					<img src="/images/Btm_Pop_Up_Img.webp" alt="Join Us Now">
 				</a>
-			</div> -->
+			</div>
 
 			<div class="footer-content">
-				<div class="d-f col">
-					<a :href="output_link" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.webp" alt="Home">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_History_Img.webp" alt="History">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Promo_Img.webp" alt="Bonus">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Lucky_Img.webp" alt="Lucky Draw">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Live_Img.webp" alt="Live Chat">
-					</a>
-				</div>
-				<div class="d-f col">
-					<a :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Setting_Img.webp" alt="Setting">
-					</a>
-				</div>
+				<a class="d-f col" :href="output_link" rel="nofollow" target="_blank">
+
+					<i class="material-icons">home</i>
+					{{ $t('Btm_Bar.Home') }}
+				</a>
+
+				<a class="d-f col" :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
+					<i class="material-icons">access_time</i>
+					{{ $t('Btm_Bar.History') }}
+
+				</a>
+				<a class="d-f col" :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
+					<i class="material-icons">redeem</i>
+					{{ $t('Btm_Bar.Promo') }}
+
+				</a>
+				<a class="d-f col" :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
+					<i class="material-icons">question_answer</i>
+					{{ $t('Btm_Bar.Live') }}
+
+				</a>
+				<a class="d-f col" :href="output_link + 'winbox-register'" rel="nofollow" target="_blank">
+					<i class="material-icons">settings</i>
+					{{ $t('Btm_Bar.Setting') }}
+
+				</a>
 			</div>
 		</div>
 	</div>
@@ -117,6 +113,11 @@ export default {
 .d-f {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
 }
 
 .col {

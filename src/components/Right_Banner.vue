@@ -92,14 +92,24 @@
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a :href="output_link + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
+						<img src="/images/RB_Deposit_Img.webp" alt="Deposit">
 					</a>
 					<a :href="output_link + 'winbox-register'" rel="nofollow">
-						<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
+						<img src="/images/RB_Withdraw_Img.webp" alt="Withdraw">
 					</a>
 					<a href="/">
-						<img src="/images/RB_Refresh_Img.gif" alt="Refresh">
+						<img src="/images/RB_Refresh_Img.webp" alt="Refresh">
 					</a>
+				</div>
+			</div>
+
+			<div class="Popular_Game_Section">
+				<div class="Title">
+					{{ $t('Popular_Game.Title') }}
+				</div>
+				<div class="Game_List">
+					<img v-for="(Game, Index) in Game_List" :key="Index" class="Game_List_Img" :src="Game.img"
+						:alt="Game.alt">
 				</div>
 			</div>
 
@@ -108,22 +118,18 @@
 					<img src="/images/LB_Img_2.webp" alt="Share">
 					<div class="button-grp">
 						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Share_Img.gif" alt="Share"></a>
+								src="/images/LB_Share_Img.webp" alt="Share"></a>
 						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Downline_Img.gif" alt="Downline"></a>
+								src="/images/LB_Downline_Img.webp" alt="Downline"></a>
 						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_Copy_Img.gif" alt="Copy"></a>
+								src="/images/LB_Copy_Img.webp" alt="Copy"></a>
 						<a :href="output_link + 'winbox-register'" rel="nofollow"><img class="button_width"
-								src="/images/LB_More_Img.gif" alt="More"></a>
+								src="/images/LB_More_Img.webp" alt="More"></a>
 					</div>
 				</div>
-
-				<a :href="output_link + 'winbox-register'" rel="nofollow"><img
-						style="border-radius: 8px; margin-bottom: 16px;" src="/images/LB_Img_3.webp" alt="Live Now"></a>
-
 			</div>
 
-			<div class="sport-betting-container">
+			<!-- <div class="sport-betting-container">
 				<div class="SB-content-container">
 					<div class="team">
 						<img src="/images/Tottenham.webp" alt="Tottenham">
@@ -148,7 +154,7 @@
 						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
-			</div>
+			</div> -->
 
 			<a :href="output_link + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
 					alt="Turnover Bonus" style="margin-bottom: 16px;"></a>
@@ -168,6 +174,22 @@ export default {
 	name: 'RightBanner',
 	components: {
 		RB_Img_Carousel
+	},
+	data() {
+		return {
+			Game_List: [
+				{ img: '/images/Game_List_1.webp', alt: 'Aviator' },
+				{ img: '/images/Game_List_2.webp', alt: 'Lightning Roulette' },
+				{ img: '/images/Game_List_3.webp', alt: 'Live Bacarrat' },
+				{ img: '/images/Game_List_4.webp', alt: 'Gate Of Olympus' },
+				{ img: '/images/Game_List_5.webp', alt: 'Sweet Bonanza' },
+				{ img: '/images/Game_List_6.webp', alt: 'Lucky Little Dragons' },
+				{ img: '/images/Game_List_7.webp', alt: 'Maya Golden City 4' },
+				{ img: '/images/Game_List_8.webp', alt: 'Jili Caisen' },
+				{ img: '/images/Game_List_9.webp', alt: 'Fortune Gems 3' },
+				{ img: '/images/Game_List_10.webp', alt: 'Super Ace' },
+			]
+		}
 	},
 	computed: {
 		...mapGetters(['output_link', 'error']),
@@ -195,14 +217,8 @@ export default {
 	}
 
 	.button-grp {
-		bottom: 4%;
+		bottom: 8%;
 		margin-top: unset;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.button-grp {
-		margin-top: -27%;
 	}
 }
 
@@ -289,7 +305,7 @@ table {
 table td {
 	font-size: 9px;
 	color: white;
-	border: 1px solid black;
+	border: 1px solid #fde53b;
 	font-weight: 500;
 }
 
@@ -301,13 +317,13 @@ table td {
 
 .green {
 	color: white;
-	background: radial-gradient(circle, rgba(82, 255, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to bottom, rgb(252 227 59) 51%, rgb(244 169 59) 100%);
 	padding-left: 4px;
 }
 
 .red {
 	color: white;
-	background: radial-gradient(circle, rgba(255, 26, 26, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to bottom, rgb(252 227 59) 51%, rgb(244 169 59) 100%);
 	padding-left: 4px;
 }
 
@@ -424,12 +440,36 @@ tbody td {
 }
 
 .Baki strong {
-	color: #086cec;
+	color: #FFC107;
 	font-size: 30px;
 }
 
 .Tablet-Mobile-view {
 	display: none;
+}
+
+.Popular_Game_Section {
+	margin-bottom: 16px;
+}
+
+.Title {
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.Game_List {
+	width: 100%;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.Game_List_Img {
+	margin: 0 8px 0 0;
+	border-radius: 8px;
+	cursor: pointer;
+	width: 38% !important;
+	display: inline-block;
 }
 
 @media screen and (max-width: 1000px) {

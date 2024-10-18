@@ -13,9 +13,9 @@
 		"Payment_Method": "Payment Method",
 		"Certidicate_Security": "Certificate & Security",
 		"Follow_Us": "Follow Us",
-		"Visit": "VISIT OUR OFFICIAL CYLBET BLOG AT:",
+		"Visit": "VISIT OUR OFFICIAL SCRPLAY BLOG AT:",
 		"Click": "CLICK HERE",
-		"Website": "CYLBET"
+		"Website": "SCRPLAY"
 	},
 	"Main_Content": {
 		"H1_Header": "The Best Ewallet Slot Casino – Pavilion88 Casino APK ",
@@ -64,10 +64,10 @@
 		"H2_4_Content_2": "Pavilion88 Malaysia",
 		"H2_4_Content_3": "today and get all the free credits and free spins any slot player could ever need.",
 		"Btm_Header": "Our Big Partners:",
-		"Btm_Content_1": "Winbox Malaysia",
-		"Btm_Content_2": "Experience secure gaming, fast deposits, and exciting bonuses with Winbox Malaysia. Join today and take your online gaming to the next level!",
+		"Btm_Content_1": "Winbox Official Malaysia",
+		"Btm_Content_2": "Unlock a world of secure gaming, lightning-fast deposits, and unbeatable bonuses with Winbox Official Malaysia. Join now and level up your gaming adventure!",
 		"Btm_Content_3": "Winbox Download",
-		"Btm_Content_4": "Get the Winbox app now for seamless gaming, secure deposits, and exclusive rewards. Download today and elevate your casino experience!"
+		"Btm_Content_4": "Download the Winbox app today for smooth, secure gaming, rapid transactions, and exclusive rewards. Start your winning streak now!"
 	},
 	"content": {
 		"Learn_More": "Learn more about our big partner:",
@@ -78,11 +78,23 @@
 		"SP_S_Content": "Discover Malaysia's premier gambling destination at Atas Casino, featuring a wide array of games such as live casino, slots, and sports betting. Known for its top-notch security, vast game variety, and excellent customer service, Atas Casino ensures an outstanding gaming experience for all players."
 	},
 	"Runnig_Bar": {
-		"Content_1": "🧧 Welcome to CYL88! 🎰 Enjoy",
-		"Content_2": "DAILY FREE CREDIT ANGPAO",
-		"Content_3": "(Random!) 🧧🧧🧧 and earn extra income with just a click—SHARE and watch your earnings grow! 🎁 Join now and invite your friends using your REFERRAL link to unlock even more rewards! 💵💵💵 5% Commission & 5% Rebate paid out every Monday at 12 AM—don’t miss out on your chance to win BIG at CYL88! 🚀"
+		"Content_1": "👑 Scrplay7",
+		"Content_2": "Withdraw Full With Bonus",
+		"Content_3": "VVIP Bets Accepted! 💰 Experience Malaysia’s #1 Premium E-Wallet Casino with top-notch security and the best online slots & live games! Enjoy seamless deposits & withdrawals with e-wallets like TnG, Boost, and more! 🎰 At SCRPlay, we live by the motto",
+		"Content_4": "“Dare to Play, Dare to Win Online”",
+		"Content_5": " offering trusted, hassle-free gameplay and responsible gaming for a fun, secure experience. Join now and discover why we’re a Top 10 Malaysia Online Casino!"
 	},
 	"Registered_TradeMark": {
-		"Content_1": "Cylbet8 is a registered trademark and brand owned by Moon Technologie. It is regulated and licensed by the Government of Curacao, operating under the Master License of Gaming Services Provider, N.V. #1168/JAZ."
+		"Content_1": "Scrplay is a trademarked brand registered by Moon Technologie, regulated and licensed by the Government of Curacao under the Master License of Gaming Services Provider, N.V. #1168/JAZ."
+	},
+	"Popular_Game": {
+		"Title": "Popular Game"
+	},
+	"Btm_Bar": {
+		"Home": "HOME",
+		"History": "HISTORY",
+		"Promo": "PROMO",
+		"Live": "LIVE CHAT",
+		"Setting": "SETTING"
 	}
 }
