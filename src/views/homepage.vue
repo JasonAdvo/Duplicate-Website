@@ -64,7 +64,7 @@
 						{{ $t('Main_Content.Btm_Content_2') }}
 					</p>
 					<p>
-						<a :href="winboxofficial_link">
+						<a :href="winboxofficial_link + 'winbox-download'">
 							<strong>
 								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
