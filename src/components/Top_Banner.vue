@@ -1,14 +1,36 @@
 <template>
 	<div class="relative">
-		<a href="/">
-			<div class="Top_Banner_Container" />
-		</a>
-		<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
+		<div class="Top_Banner_Container">
 
-		<a href="/">
-			<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
-		</a>
-		<i class="material-icons GT-icon" @click="togglePopup">g_translate</i>
+			<a href="/">
+				<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
+			</a>
+			<div style="display: flex; justify-content: flex-end; align-items: center;">
+
+				<div class="login-register-container">
+					<a :href="link_output + 'winbox-login'" rel="nofollow">
+						<div class="Join">
+							LOGIN
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="Register">
+							REGISTER
+						</div>
+					</a>
+				</div>
+
+				<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
+
+
+				<i class="material-icons GT-icon" @click.stop="togglePopup">g_translate</i>
+
+
+			</div>
+
+
+		</div>
+
 
 		<!-- Overlay -->
 		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
@@ -39,6 +61,8 @@
 <script>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { mapGetters } from 'vuex';
+
 
 export default {
 	name: 'TopBanner',
@@ -86,6 +110,9 @@ export default {
 			selectedLanguage
 		};
 	},
+	computed: {
+		...mapGetters(['link_output', 'error']),
+	},
 	mounted() {
 		// Retrieve and apply the stored language setting on component mount
 		const savedLanguage = localStorage.getItem('selectedLanguage');
@@ -93,6 +120,7 @@ export default {
 			this.$i18n.locale = savedLanguage;
 			this.selectedLanguage = savedLanguage;
 		}
+		this.$store.dispatch('fetchLink_output');
 	},
 };
 </script>
@@ -110,44 +138,97 @@ export default {
 }
 
 .Top_Banner_Container {
-	/* background-image: url('/images/TB_Bg_Img.gif'); */
 	background-color: black;
 	position: relative;
 	background-size: cover;
-	/* Adjusted to make the image smaller */
 	background-position: 0px 47%;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;
 	border-bottom: 2px solid #9d00ff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .Partnership {
-	position: absolute;
-	top: 15px;
-	left: 20px;
-	width: 80px;
+	margin-left: 10%;
+	width: 10%;
 	background-color: white;
 	border-radius: 8px;
 }
 
 .Logo {
-	position: absolute;
-	top: 5px;
-	width: 90px;
-	left: 50%;
-	transform: translateX(-50%);
+	margin-left: 10%;
+	width: 80%;
 }
 
 .GT-icon {
-	position: absolute;
-	top: 28px;
-	right: 20px;
-	z-index: 1;
+	z-index: 100;
 	font-size: 30px;
 	color: white;
 	cursor: pointer;
-	width: 50px;
+	width: 10%;
+	margin: 0 10%;
+	position: relative;
+}
+
+.login-register-container {
+	display: flex;
+
+}
+
+.login-register-container a {
+	text-decoration: none;
+	margin-left: 10%;
+
+}
+
+.Join,
+.Register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-weight: 700;
+	width: 100%;
+	padding: 8px 16px;
+
+}
+
+@keyframes heartbeat {
+	0% {
+		transform: scale(1);
+	}
+
+	14% {
+		transform: scale(1.3);
+	}
+
+	28% {
+		transform: scale(1);
+	}
+
+	42% {
+		transform: scale(1.3);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+}
+
+.Join {
+	color: #ffffff;
+	border-color: #a403ff;
+	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
+}
+
+.Register {
+	color: #2e2e2e;
+	background: linear-gradient(180deg, #03fe94 0%, #00b324 100%);
+	border-color: #00ff57;
+	animation: heartbeat 1.3s ease-in-out infinite;
 }
 
 @media screen and (max-width: 430px) {
@@ -172,7 +253,6 @@ export default {
 }
 
 .TR_Img {
-	position: absolute;
 	top: 50%;
 	right: 20px;
 	transform: translateY(-50%);
