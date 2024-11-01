@@ -3,11 +3,11 @@
 
 
 	<div id="app">
-		<div style="width: 20%;">
+		<div style="width: 20%;" class="Left_Banner">
 			<Left_Banner />
 		</div>
 
-		<div style="width: 80%;">
+		<div style="width: 80%;" class="router_view">
 			<router-view></router-view>
 
 		</div>
@@ -34,5 +34,15 @@ export default {
 <style scoped>
 #app {
 	display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+	.Left_Banner {
+		display: none;
+	}
+
+	.router_view {
+		width: 100% !important;
+	}
 }
 </style>

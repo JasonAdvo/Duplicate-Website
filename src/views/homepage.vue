@@ -9,8 +9,6 @@
 
 		<div class="Top_LR_Section">
 
-
-
 			<div class="Big_Info_Container">
 				<div class="RB_Info_Container" style="display: flex;">
 					<div class="RB_Small_Text_Container">
@@ -46,35 +44,81 @@
 			</div>
 		</div>
 
+		<div class="button_grp_container" style="display: none;">
+			<div style="position: relative; width: 100%; padding: 0 20px">
+				<div class="button-grp">
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							SHARE
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							DOWNLINE CHART
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							COPY REFERRAL LINK
+						</div>
+					</a>
+					<a :href="link_output + 'winbox-register'" rel="nofollow">
+						<div class="button_width">
+							GAME TIPS
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
 		<!-- Middle Blank Column -->
 		<div class="Middle_Banner_Container">
 			<div class="Middle_Inner_Container">
-				<div class="MB_Img_Gallery">
-					<div class="MB_Img" id="MB_Img">
-						<div class="image-grid-container">
-							<div class="image-wrapper" v-for="n in 60" :key="n">
-								<div class="MB_IMGs_Wrapper">
-									<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
-										<img class="MB_IMGs" :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-									</a>
-									<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
-								</div>
 
-
-								<div v-if="n <= 12">
-									<a :href="link_output + 'winbox-register'" rel="nofollow">
-										<p>{{ $t('message.Play') }}</p>
-									</a>
-								</div>
-								<div v-else>
-									<p>{{ $t('message.Play') }}</p>
-								</div>
+				<div style="display: flex">
+					<div class="site-tabs_Container"
+						style="display: none;justify-content: center; margin-top: 10px; margin-right: 5px;">
+						<div class="site-tabs">
+							<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
+								:class="['image-container', { selected: selectedIndex === index }]"
+								@click="selectImage(index);">
+								<img :src="selectedIndex === index ? image.selected : image.notSelected"
+									:alt="image.alt">
+								{{ image.alt }}
 							</div>
+						</div>
+					</div>
 
 
+					<div class="MB_Img_Gallery">
+						<div class="MB_Img" id="MB_Img">
+							<div class="image-grid-container">
+								<div class="image-wrapper" v-for="n in 60" :key="n">
+									<div class="MB_IMGs_Wrapper">
+										<a v-if="n <= 12" :href="link_output + 'winbox-register'" rel="nofollow">
+											<img class="MB_IMGs" :src="`/images/MB_${n}_Img.webp`"
+												:alt="altTexts[n - 1]">
+										</a>
+										<img v-else :src="`/images/MB_${n}_Img.webp`" :alt="altTexts[n - 1]">
+									</div>
+
+
+									<div v-if="n <= 12">
+										<a :href="link_output + 'winbox-register'" rel="nofollow">
+											<p>{{ $t('message.Play') }}</p>
+										</a>
+									</div>
+									<div v-else>
+										<p>{{ $t('message.Play') }}</p>
+									</div>
+								</div>
+
+
+							</div>
 						</div>
 					</div>
 				</div>
+
 
 				<div class="footer-content">
 
@@ -173,7 +217,7 @@ export default {
 	components: {
 		RightBanner,
 		TopBanner,
-		FooterMenu
+		FooterMenu,
 	},
 	data() {
 		return {
@@ -254,7 +298,7 @@ export default {
 			],
 			winboxofficial_link: '',
 			stickyBarHeightWeb: 120,
-			stickyBarHeightMobile: 75,
+			stickyBarHeightMobile: 110,
 		};
 	},
 	setup() {
@@ -320,6 +364,10 @@ export default {
 				sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			}
 		},
+		selectImage(index) {
+			this.selectedIndex = index;
+			this.handleRedirect(index);
+		},
 		handleRedirect(index) {
 			index = Number(index);  // Ensure index is a number
 
@@ -375,6 +423,23 @@ export default {
 	.MM_Small_Text_Container p {
 		font-size: 18px !important;
 		color: rgb(2, 47, 138);
+	}
+
+	.Big_Info_Container {
+		width: 100% !important;
+	}
+
+	.MB_Img_Gallery {
+		width: 78vw;
+	}
+
+	.site-tabs_Container {
+		display: flex !important;
+	}
+
+	.button_grp_container {
+		display: flex !important;
+		justify-content: center;
 	}
 }
 
@@ -453,6 +518,40 @@ export default {
 .Baki strong {
 	color: #9d00ff;
 	font-size: 30px;
+}
+
+.button-grp {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 8px 0;
+}
+
+.button-grp img {
+	padding: 0 5px;
+}
+
+.button-grp a {
+	width: 50%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+}
+
+.button_width {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	border-color: #a403ff;
+	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
+	width: 95%;
+	margin-bottom: 8px !important;
+	border-radius: 8px;
+	height: 40px;
+	text-align: center;
+	font-size: 12px;
 }
 
 .main-content {
@@ -536,8 +635,82 @@ export default {
 	padding: 0px 15px 30px;
 }
 
+.site-tabs {
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	gap: 5px;
+}
+
+.image-container {
+	width: 100%;
+	/* padding-bottom: 30px; */
+	cursor: pointer;
+	background-color: black;
+	border: 2px solid #9d00ff;
+	border-radius: 16px;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	flex-direction: column;
+
+}
+
+.image-container.selected {
+	background: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+}
+
+.image-container img {
+	width: 60px !important;
+	margin: 0;
+}
+
+.image-container.selected img {
+	filter: brightness(100);
+}
+
+@media (max-width: 768px) {
+	.site-tabs {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.image-container {
+		flex: 0 0 auto;
+		padding-bottom: 0;
+	}
+
+	.site-tabs::-webkit-scrollbar {
+		display: none;
+		/* Hide scrollbar on WebKit browsers */
+	}
+
+	.site-tabs {
+		-ms-overflow-style: none;
+		/* Hide scrollbar on IE and Edge */
+		scrollbar-width: none;
+		/* Hide scrollbar on Firefox */
+	}
+
+	.site-tabs::before {
+		content: none;
+	}
+}
+
 .MB_Img_Gallery {
 	margin: 10px 0px;
+	padding: 2vw;
+	border: 2px solid #9601e1;
+	box-shadow: 0 0 6px #9601e1;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
 }
 
 .MB_Img {
@@ -569,7 +742,7 @@ export default {
 
 @media (min-width: 768px) and (max-width: 1199px) {
 	.image-grid-container {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
@@ -580,27 +753,16 @@ export default {
 }
 
 .MB_IMGs_Wrapper {
-	height: 200px;
-	/* This is the fixed height */
+	/* height: 200px; */
 	width: auto;
-	/* Automatically scales width */
 	overflow: hidden;
-	/* Ensures no overflow */
 }
 
-@media (max-width: 430px) {
-	.MB_IMGs_Wrapper {
-		height: 90px;
-	}
-}
 
 .MB_IMGs {
-	height: 100%;
-	/* The image takes full height of container */
+	/* height: 100%; */
 	width: auto;
-	/* Maintains aspect ratio */
 	object-fit: cover;
-	/* Ensures the image covers the container */
 }
 
 .image-wrapper img {
@@ -621,10 +783,12 @@ export default {
 	color: white;
 	font-size: 11px;
 	margin-bottom: 10px;
+	display: none;
 }
 
 .image-wrapper p {
 	margin-bottom: 0;
+	display: none;
 }
 
 .image_box {
