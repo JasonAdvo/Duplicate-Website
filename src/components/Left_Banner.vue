@@ -146,6 +146,9 @@ export default {
 			this.selectedIndex = index;
 			this.handleRedirect(index);
 		},
+		handleRedirect(index) {
+			this.$router.push({ name: 'Home', query: { redirectIndex: index } });
+		}
 	}
 };
 </script>

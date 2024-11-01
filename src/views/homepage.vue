@@ -9,9 +9,7 @@
 
 		<div class="Top_LR_Section">
 
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
-					alt="Top Up Rm20" style=" width: 100%;">
-			</a>
+
 
 			<div class="Big_Info_Container">
 				<div class="RB_Info_Container" style="display: flex;">
@@ -35,12 +33,17 @@
 						</a>
 					</div>
 				</div>
+
+				<div style="display: flex; justify-content: space-between;">
+					<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+							alt="Turnover Bonus" style="width: 95%;">
+					</a>
+
+					<a :href="link_output + 'winbox-register'" rel="nofollow" style="text-align: right;"><img
+							src="/images/top up rm20.webp" alt="Top Up Rm20" style=" width: 95%;">
+					</a>
+				</div>
 			</div>
-
-			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
-					alt="Turnover Bonus" style=" width: 100%;">
-			</a>
-
 		</div>
 
 		<!-- Middle Blank Column -->
@@ -250,7 +253,7 @@ export default {
 				{ notSelected: '/images/Leaderboard.webp', selected: '/images/Leaderboard.webp', alt: 'Leaderboard' },
 			],
 			winboxofficial_link: '',
-			stickyBarHeightWeb: 90,
+			stickyBarHeightWeb: 120,
 			stickyBarHeightMobile: 75,
 		};
 	},
@@ -265,6 +268,17 @@ export default {
 	},
 	computed: {
 		...mapGetters(['link_output', 'error']),
+	},
+	created() {
+		const index = this.$route.query.redirectIndex;
+		if (index) {
+			this.handleRedirect(index);
+		}
+	},
+	watch: {
+		'$route.query.redirectIndex'(newIndex) {
+			this.handleRedirect(newIndex);
+		}
 	},
 	methods: {
 		async fetchLink() {
@@ -306,10 +320,9 @@ export default {
 				sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			}
 		},
-		// selectImage(index) {
-		// 	this.handleRedirect(index);
-		// },
 		handleRedirect(index) {
+			index = Number(index);  // Ensure index is a number
+
 			if (index === 0) {
 				this.scrollToElement('.MB_Img_Gallery');
 			} else {
@@ -386,7 +399,7 @@ export default {
 	border: 2px solid #9d00ff;
 	/* background-size: 100% 100%; */
 	background-position: center;
-	width: 100%;
+	width: 50%;
 	/* margin: 0 5px; */
 }
 
