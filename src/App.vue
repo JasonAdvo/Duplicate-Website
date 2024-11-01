@@ -1,20 +1,31 @@
 <template>
+
+
+
 	<div id="app">
-		<router-view></router-view>
+		<div style="width: 20%;">
+			<Left_Banner />
+		</div>
+
+		<div style="width: 80%;">
+			<router-view></router-view>
+
+		</div>
 	</div>
-	<div>
-		<FooterMenu />
-	</div>
+
+
+
+
 </template>
 
 <script>
-import FooterMenu from '/src/components/Btm_Menu.vue';
+import Left_Banner from './components/Left_Banner.vue';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
 export default {
 	components: {
-		FooterMenu,
+		Left_Banner
 	},
 	name: 'App'
 }
@@ -23,6 +34,5 @@ export default {
 <style scoped>
 #app {
 	display: flex;
-	flex-direction: column;
 }
 </style>

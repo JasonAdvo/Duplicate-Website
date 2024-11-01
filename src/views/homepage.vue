@@ -4,23 +4,48 @@
 	</div>
 
 	<div class="main-content">
-		<div class="LeftBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
-			<LeftBanner />
-		</div>
-		<!-- Middle Blank Column -->
-		<div class="Middle_Banner_Container col-sm-12 col-md-12 col-lg-4 col-xl-6">
-			<div class="Middle_Inner_Container">
-				<div style="display: flex; justify-content: center;">
-					<div class="site-tabs">
-						<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
-							:class="['image-container', { selected: selectedIndex === index }]"
-							@click="selectImage(index);">
-							<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
-							{{ image.alt }}
+
+		<!-- Top Login & Register Section -->
+
+		<div class="Top_LR_Section">
+
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/top up rm20.webp"
+					alt="Top Up Rm20" style=" width: 100%;">
+			</a>
+
+			<div class="Big_Info_Container">
+				<div class="RB_Info_Container" style="display: flex;">
+					<div class="RB_Small_Text_Container">
+						<div class="Baki">
+							<p>{{ $t('message.balance') }} </p>
+							<p><strong>RM0.00</strong></p>
 						</div>
+						<p>{{ $t('message.Min_Deposit') }} <strong>RM1.00</strong></p>
+						<p>{{ $t('message.Min_Withdrawal') }} <strong>RM25.00</strong></p>
+					</div>
+					<div class="RB_Cash_Btn_Container">
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<img src="/images/RB_Deposit_Img.gif" alt="Deposit">
+						</a>
+						<a :href="link_output + 'winbox-register'" rel="nofollow">
+							<img src="/images/RB_Withdraw_Img.gif" alt="Withdraw">
+						</a>
+						<a href="/">
+							<img src="/images/RB_Refresh_Img.gif" alt="Refresh">
+						</a>
 					</div>
 				</div>
+			</div>
 
+			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/Turnover Bonus.webp"
+					alt="Turnover Bonus" style=" width: 100%;">
+			</a>
+
+		</div>
+
+		<!-- Middle Blank Column -->
+		<div class="Middle_Banner_Container">
+			<div class="Middle_Inner_Container">
 				<div class="MB_Img_Gallery">
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
@@ -122,26 +147,30 @@
 			</div>
 		</div>
 
-		<!-- Right Banner Column -->
-		<div class="RightBanner col-sm-12 col-md-12 col-lg-4 col-xl-3">
-			<RightBanner />
-		</div>
+
+
+
+	</div>
+
+	<div class="Bottom_Bar">
+		<FooterMenu />
 	</div>
 </template>
 
 <script>
 import { useI18n } from 'vue-i18n'; // Add this import
-import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
+import FooterMenu from '/src/components/Btm_Menu.vue';
+
 import { mapGetters } from 'vuex';
 import axios from 'axios';
 
 export default {
 	components: {
-		LeftBanner,
 		RightBanner,
 		TopBanner,
+		FooterMenu
 	},
 	data() {
 		return {
@@ -277,10 +306,9 @@ export default {
 				sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			}
 		},
-		selectImage(index) {
-			this.selectedIndex = index;
-			this.handleRedirect(index);
-		},
+		// selectImage(index) {
+		// 	this.handleRedirect(index);
+		// },
 		handleRedirect(index) {
 			if (index === 0) {
 				this.scrollToElement('.MB_Img_Gallery');
@@ -331,10 +359,6 @@ export default {
 		order: 3;
 	}
 
-	.main-content {
-		flex-direction: column;
-	}
-
 	.MM_Small_Text_Container p {
 		font-size: 18px !important;
 		color: rgb(2, 47, 138);
@@ -347,6 +371,77 @@ export default {
 	}
 }
 
+.Top_LR_Section {
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px
+}
+
+.Big_Info_Container {
+	border-radius: 8px;
+	padding: 25px;
+	/* background-image: url('/images/Big_Info_Bg_Img.webp'); */
+	background-color: rgba(0, 0, 0, .3);
+	border: 2px solid #9d00ff;
+	/* background-size: 100% 100%; */
+	background-position: center;
+	width: 100%;
+	/* margin: 0 5px; */
+}
+
+.RB_Info_Container {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.RB_Cash_Btn_Container {
+	width: 50%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 5px;
+}
+
+.RB_Cash_Btn_Container img {
+	height: 44px;
+	width: 130px;
+	margin-bottom: 5px;
+}
+
+.RB_Small_Text_Container {
+	width: 50%;
+}
+
+.RB_Small_Text_Container p {
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 0;
+}
+
+.RB_Small_Text_Container strong {
+	font-weight: bold !important;
+}
+
+.Baki {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 7px;
+}
+
+.Baki p {
+	margin: 5px 0;
+}
+
+.Baki strong {
+	color: #9d00ff;
+	font-size: 30px;
+}
+
 .main-content {
 	display: flex;
 	width: 100%;
@@ -354,6 +449,7 @@ export default {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -446,77 +542,6 @@ export default {
 	color: #f0d843 !important;
 }
 
-.site-tabs {
-	flex-wrap: wrap;
-	margin: 10px 0;
-	position: relative;
-	display: flex;
-	width: 100%;
-}
-
-.image-container {
-	width: calc(100% / 9);
-	/* padding-bottom: 30px; */
-	cursor: pointer;
-	background-color: black;
-	border: 2px solid #9d00ff;
-	border-radius: 16px;
-	padding: 4px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: white;
-	text-align: center;
-	font-size: 12px;
-
-}
-
-.image-container.selected {
-	background: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
-}
-
-.image-container img {
-	width: 60px !important;
-}
-
-.image-container.selected img {
-	filter: brightness(100);
-}
-
-
-.image-container img {
-	width: 100%;
-}
-
-@media (max-width: 768px) {
-	.site-tabs {
-		flex-wrap: nowrap;
-		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
-	}
-
-	.image-container {
-		flex: 0 0 auto;
-		padding-bottom: 0;
-	}
-
-	.site-tabs::-webkit-scrollbar {
-		display: none;
-		/* Hide scrollbar on WebKit browsers */
-	}
-
-	.site-tabs {
-		-ms-overflow-style: none;
-		/* Hide scrollbar on IE and Edge */
-		scrollbar-width: none;
-		/* Hide scrollbar on Firefox */
-	}
-
-	.site-tabs::before {
-		content: none;
-	}
-}
-
 .image-grid-container {
 	display: grid;
 	gap: 10px;
@@ -542,7 +567,7 @@ export default {
 }
 
 .MB_IMGs_Wrapper {
-	height: 120px;
+	height: 200px;
 	/* This is the fixed height */
 	width: auto;
 	/* Automatically scales width */
@@ -796,6 +821,12 @@ li {
 .TopBanner {
 	position: sticky;
 	top: 0;
+	z-index: 3;
+}
+
+.Bottom_Bar {
+	position: sticky;
+	bottom: 0;
 	z-index: 3;
 }
 </style>

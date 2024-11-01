@@ -1,59 +1,62 @@
 <template>
-	<div class="relative">
-		<div class="Top_Banner_Container">
+	<div class="Top_Banner_Container">
 
-			<a href="/">
-				<img class="Logo" src="/images/TB_Logo_Img.webp" alt="Logo">
-			</a>
-			<div style="display: flex; justify-content: flex-end; align-items: center;">
+		<a href="/">
+			<img class="Logo" style="display: none;" src="/images/TB_Logo_Img.webp" alt="Logo">
+		</a>
 
-				<div class="login-register-container">
-					<a :href="link_output + 'winbox-login'" rel="nofollow">
-						<div class="Join">
-							LOGIN
-						</div>
-					</a>
-					<a :href="link_output + 'winbox-register'" rel="nofollow">
-						<div class="Register">
-							REGISTER
-						</div>
-					</a>
-				</div>
+		<div class="Right_Item_Group">
+			<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
 
-				<img class="Partnership" src="/images/Partnership_Img.webp" alt="Partnership">
-
-
-				<i class="material-icons GT-icon" @click.stop="togglePopup">g_translate</i>
-
-
+			<div class="login-register-container">
+				<a :href="link_output + 'winbox-login'" rel="nofollow">
+					<div class="Join">
+						LOGIN
+					</div>
+				</a>
+				<a :href="link_output + 'winbox-register'" rel="nofollow">
+					<div class="Register">
+						REGISTER
+					</div>
+				</a>
 			</div>
 
+			<i class="material-icons GT-icon" @click.stop="togglePopup">g_translate</i>
+		</div>
+	</div>
 
+	<div class="running-sentence-container">
+
+		<div class="icon">
+			<i aria-hidden="true" class="fa fa-bullhorn"></i>
 		</div>
 
+		<div class="running-sentence">
+			{{ $t('Runnig_Bar.Content_1') }}
+		</div>
+	</div>
 
-		<!-- Overlay -->
-		<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
-		<!-- Pop-up Card -->
-		<div v-if="showPopup" class="popup-card">
-			<div @click="changeLanguage('en')">
-				English
-				<span v-if="selectedLanguage === 'en'" class="tick">
-					<i class="fa fa-check"></i>
-				</span>
-			</div>
-			<div @click="changeLanguage('ms')">
-				Bahasa Melayu
-				<span v-if="selectedLanguage === 'ms'" class="tick">
-					<i class="fa fa-check"></i>
-				</span>
-			</div>
-			<div @click="changeLanguage('zh')">
-				中文
-				<span v-if="selectedLanguage === 'zh'" class="tick">
-					<i class="fa fa-check"></i>
-				</span>
-			</div>
+	<!-- Overlay -->
+	<div v-if="showPopup" class="overlay" @click="togglePopup"></div>
+	<!-- Pop-up Card -->
+	<div v-if="showPopup" class="popup-card">
+		<div @click="changeLanguage('en')">
+			English
+			<span v-if="selectedLanguage === 'en'" class="tick">
+				<i class="fa fa-check"></i>
+			</span>
+		</div>
+		<div @click="changeLanguage('ms')">
+			Bahasa Melayu
+			<span v-if="selectedLanguage === 'ms'" class="tick">
+				<i class="fa fa-check"></i>
+			</span>
+		</div>
+		<div @click="changeLanguage('zh')">
+			中文
+			<span v-if="selectedLanguage === 'zh'" class="tick">
+				<i class="fa fa-check"></i>
+			</span>
 		</div>
 	</div>
 </template>
@@ -125,18 +128,6 @@ export default {
 };
 </script>
 <style scoped>
-@media screen and (max-width: 767px) {
-	.TR_Img {
-		max-width: 40px;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	.Top_Banner_Container {
-		height: 50px !important;
-	}
-}
-
 .Top_Banner_Container {
 	background-color: black;
 	position: relative;
@@ -145,22 +136,28 @@ export default {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80px;
-	border-bottom: 2px solid #9d00ff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 15px;
+}
+
+.Right_Item_Group {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
 }
 
 .Partnership {
-	margin-left: 10%;
-	width: 10%;
+	width: 5%;
+	min-width: 60px;
 	background-color: white;
 	border-radius: 8px;
 }
 
 .Logo {
-	margin-left: 10%;
-	width: 80%;
+	width: auto;
 }
 
 .GT-icon {
@@ -168,20 +165,16 @@ export default {
 	font-size: 30px;
 	color: white;
 	cursor: pointer;
-	width: 10%;
-	margin: 0 10%;
 	position: relative;
 }
 
 .login-register-container {
 	display: flex;
-
+	gap: 5px;
 }
 
 .login-register-container a {
 	text-decoration: none;
-	margin-left: 10%;
-
 }
 
 .Join,
@@ -191,8 +184,9 @@ export default {
 	align-items: center;
 	border-radius: 10px;
 	font-weight: 700;
-	width: 100%;
-	padding: 8px 16px;
+	width: auto;
+	padding: 4px 8px;
+	font-size: 14px;
 
 }
 
@@ -229,34 +223,6 @@ export default {
 	background: linear-gradient(180deg, #03fe94 0%, #00b324 100%);
 	border-color: #00ff57;
 	animation: heartbeat 1.3s ease-in-out infinite;
-}
-
-@media screen and (max-width: 430px) {
-
-	.Logo {
-		width: 50px;
-	}
-
-	.Partnership {
-		top: 10px;
-		width: 40px;
-	}
-
-	.GT-icon {
-		width: 40px;
-		top: 10px;
-	}
-}
-
-.TopBanner {
-	width: 100%;
-}
-
-.TR_Img {
-	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
-	max-width: 60px;
 }
 
 .overlay {
@@ -309,17 +275,28 @@ export default {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background-image: url('/images/Running_Bar_Bg_Img.webp');
+	/* background-image: url('/images/Running_Bar_Bg_Img.webp'); */
 	/* visibility: visible; */
 	background-size: 100% 100%;
-	background-color: black;
+	background-color: #20003d;
+	border-top: 2px solid #9d00ff;
+	border-bottom: 2px solid #9d00ff;
 	font-size: 12px;
 	letter-spacing: 0.5px;
-	height: 25px;
+	height: 35px;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
 	position: sticky;
+}
+
+.icon {
+	color: #451162;
+	background-color: #a0fc9d;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 3px 10px;
+	z-index: 1;
 }
 
 .running-sentence {
@@ -327,7 +304,7 @@ export default {
 	/* position: absolute; */
 	width: max-content;
 	animation: scroll 30s linear infinite;
-	color: black;
+	color: white;
 	letter-spacing: 0.5px;
 	font-size: 13px;
 }
@@ -342,7 +319,32 @@ export default {
 	}
 }
 
+@media screen and (max-width: 430px) {
+
+	.Top_Banner_Container {
+		height: 70px;
+		padding: 0 10px;
+	}
+
+	.Logo {
+		width: 50px;
+	}
+
+	.Right_Item_Group {
+		gap: 5px;
+	}
+
+	.GT-icon {
+		font-size: 25px;
+	}
+
+}
+
 @media (max-width: 1000px) {
+
+	.Logo {
+		display: block !important;
+	}
 
 	.running-sentence {
 		animation: scroll 70s linear infinite;

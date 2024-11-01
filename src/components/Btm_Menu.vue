@@ -19,32 +19,32 @@
 			</div>
 
 			<div class="footer-content">
-				<div class="col">
+				<div class="">
 					<a class="d-f" :href="link_output" rel="nofollow" target="_blank">
-						<img src="/images/Btm_Home_Img.webp" alt="Home">
+						<img class="Btm_Img" src="/images/Btm_Home_Img.webp" alt="Home">
 						{{ $t('Btm_Section.Home') }}
 
 					</a>
 				</div>
-				<div class=" col">
+				<div class=" ">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_History_Img.webp" alt="History">
 						{{ $t('Btm_Section.History') }}
 					</a>
 				</div>
-				<div class=" col">
+				<div class=" ">
 					<a class="d-f Deposit" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<i data-v-d3e469a8 class="fa-solid fa-wallet fa-shake"></i>
 						{{ $t('Btm_Section.Deposit') }}
 					</a>
 				</div>
-				<div class=" col">
+				<div class=" ">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Promo_Img.webp" alt="Promo">
 						{{ $t('Btm_Section.Promo') }}
 					</a>
 				</div>
-				<div class=" col">
+				<div class=" ">
 					<a class="d-f" :href="link_output + 'winbox-register'" rel="nofollow" target="_blank">
 						<img src="/images/Btm_Profile_Img.webp" alt="Setting">
 						{{ $t('Btm_Section.Profile') }}
@@ -83,7 +83,6 @@ export default {
 .footer-menu {
 	display: flex;
 	justify-content: space-between;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 65px;
@@ -91,7 +90,6 @@ export default {
 	/* background-size: 100% 100%; */
 	background: linear-gradient(180deg, #160e25 0%, #261a30 100%);
 	border-top: 2px solid #9601e1;
-	z-index: 3;
 }
 
 .relative {
@@ -154,18 +152,13 @@ export default {
 	color: white !important;
 }
 
-.col {
-	display: flex;
-	justify-content: center;
-}
-
-.col img {
+.Btm_Img {
 	width: 45px;
 	height: auto;
 }
 
 @media screen and (max-width: 321px) {
-	.col img {
+	.Btm_Img {
 		width: 30px;
 	}
 }

@@ -1,9 +1,26 @@
 <template>
 	<div class="Left_Banner_Container">
+
+		<a href="/">
+			<img style="margin-bottom: 16px;" src="/images/TB_Logo_Img.webp" alt="Logo">
+		</a>
+
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
 			<a :href="link_output + 'winbox-register'" rel="nofollow"><img src="/images/daily free spin bonus.gif"
 					alt="Spin Bonus"></a>
+
+			<div style="display: flex;justify-content: center;">
+				<div class="site-tabs">
+					<div v-for="(image, index) in images" :key="index" :id="'image-container-' + index"
+						:class="['image-container', { selected: selectedIndex === index }]"
+						@click="selectImage(index);">
+						<img :src="selectedIndex === index ? image.selected : image.notSelected" :alt="image.alt">
+						{{ image.alt }}
+					</div>
+				</div>
+			</div>
+
 			<table>
 				<thead>
 					<tr>
@@ -99,6 +116,22 @@ import LB_Img_Carousel from './LB_Img_Carousel.vue'
 
 export default {
 	name: 'LeftBanner',
+	data() {
+		return {
+			selectedIndex: 0,
+			images: [
+				{ notSelected: '/images/Hot.webp', selected: '/images/Hot.webp', alt: 'Hot' },
+				{ notSelected: '/images/Slot.gif', selected: '/images/Slot.gif', alt: 'Slots' },
+				{ notSelected: '/images/Live.webp', selected: '/images/Live.webp', alt: 'Live' },
+				{ notSelected: '/images/Fish.webp', selected: '/images/Fish.webp', alt: 'Fishing' },
+				{ notSelected: '/images/Poker.webp', selected: '/images/Poker.webp', alt: 'Poker' },
+				{ notSelected: '/images/Mini_Game.webp', selected: '/images/Mini_Game.webp', alt: 'Minigame' },
+				{ notSelected: '/images/Demo_Play.webp', selected: '/images/Demo_Play.webp', alt: 'Demo Play' },
+				{ notSelected: '/images/New.webp', selected: '/images/New.webp', alt: 'News' },
+				{ notSelected: '/images/Leaderboard.webp', selected: '/images/Leaderboard.webp', alt: 'Leaderboard' },
+			],
+		}
+	},
 	components: {
 		LB_Img_Carousel,
 	},
@@ -107,16 +140,39 @@ export default {
 	},
 	mounted() {
 		this.$store.dispatch('fetchLink_output');
+	},
+	methods: {
+		selectImage(index) {
+			this.selectedIndex = index;
+			this.handleRedirect(index);
+		},
 	}
 };
 </script>
 
 <style scoped>
 .Left_Banner_Container {
-	background: rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0);
 	padding: 10px 15px 30px 15px;
-	height: 100%;
-	border-right: 1px solid rgba(255, 255, 255, .5);
+	height: 100vh;
+	border-right: 2px solid #9601e1;
+	text-align: center;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: sticky;
+	left: 0;
+	top: 0;
+
+	/* Hide scrollbar for Chrome, Safari, and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+	-ms-overflow-style: none;
+	/* Internet Explorer 10+ */
+}
+
+.Left_Banner_Container::-webkit-scrollbar {
+	display: none;
+	/* Chrome, Safari, and Opera */
 }
 
 .LB_Imgs img {
@@ -133,6 +189,74 @@ export default {
 	}
 }
 
+.site-tabs {
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 5px;
+}
+
+.image-container {
+	width: 100%;
+	/* padding-bottom: 30px; */
+	cursor: pointer;
+	background-color: black;
+	border: 2px solid #9d00ff;
+	border-radius: 16px;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+
+}
+
+.image-container.selected {
+	background: linear-gradient(180deg, #a51aef 0%, #656ac8 100%);
+}
+
+.image-container img {
+	width: 60px !important;
+	margin: 0;
+}
+
+.image-container.selected img {
+	filter: brightness(100);
+}
+
+@media (max-width: 768px) {
+	.site-tabs {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.image-container {
+		flex: 0 0 auto;
+		padding-bottom: 0;
+	}
+
+	.site-tabs::-webkit-scrollbar {
+		display: none;
+		/* Hide scrollbar on WebKit browsers */
+	}
+
+	.site-tabs {
+		-ms-overflow-style: none;
+		/* Hide scrollbar on IE and Edge */
+		scrollbar-width: none;
+		/* Hide scrollbar on Firefox */
+	}
+
+	.site-tabs::before {
+		content: none;
+	}
+}
+
 .button-grp {
 	display: flex;
 	flex-direction: row;
@@ -146,16 +270,10 @@ export default {
 }
 
 .button-grp a {
-	width: calc(50% - 8px);
+	width: 50%;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
-}
-
-@media screen and (min-width: 610px) and (max-width: 770px) {
-	.button-grp a {
-		width: calc(50% - 15px);
-	}
 }
 
 .button_width {
@@ -165,12 +283,12 @@ export default {
 	color: #ffffff;
 	border-color: #a403ff;
 	background: linear-gradient(180deg, #a500fb 0%, #4e01b3 100%);
-	width: 90%;
+	width: 95%;
 	margin-bottom: 8px !important;
 	border-radius: 8px;
 	height: 40px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .title {
@@ -238,6 +356,8 @@ table td {
 	font-weight: 700;
 	font-family: "Montserrat", sans-serif;
 	background-color: black;
+	text-align: left;
+	word-break: break-all;
 }
 
 @media screen and (min-width: 1440px) {
