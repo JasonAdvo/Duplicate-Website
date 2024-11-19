@@ -7,7 +7,7 @@
 					<a :href="output_link + 'winbox-register'" rel="nofollow">
 						<img src="/images/Popup_Img.webp" class="img-fluid" alt="notice">
 
-						<img style="margin-top: 20px;" src="/images/Popup_Img_2.webp" class="img-fluid" alt="notice">
+						<img src="/images/Popup_Img_2.webp" class="img-fluid" alt="notice">
 					</a>
 				</div>
 			</div>
