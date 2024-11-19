@@ -15,31 +15,9 @@
 							<b style="color: #ff9900;">{{ $t('PopUp.3_Line') }}</b>
 						</div>
 						<b style="color: #ff9900;">{{ $t('PopUp.4_Line') }}</b>
+
 						<br>
-						<a style="text-decoration: none" href="/">
-							<b style="color: white; ">matbet.site</b>
-						</a>
-						<br><br>
-						<a style="text-decoration: none" href="1/matbet88a.com/">
-							<b style="color: white; ">1matbet.com</b>
-						</a>
-						<br><br>
-						<a style="text-decoration: none" href="2/matbet88a.com/">
-							<b style="color: white; ">2matbet.com</b>
-						</a>
-						<br><br>
-						<a style="text-decoration: none" href="3/matbet88a.com/">
-							<b style="color: white; ">3matbet.com</b>
-						</a>
-						<br><br>
-						<a style="text-decoration: none" href="4/matbet88a.com/">
-							<b style="color: white; ">4matbet.com</b>
-						</a>
-						<br><br>
-						<a style="text-decoration: none" href="5/matbet88a.com/">
-							<b style="color: white; ">5matbet.com</b>
-						</a>
-						<br><br>
+
 						<b style="color: #ff9900;">{{ $t('PopUp.5_Line') }}</b>
 						<b style="color: #ff0000;"> G66 Group Partnership </b>
 						<br><br>
