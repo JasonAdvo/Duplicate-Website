@@ -68,7 +68,7 @@
 							<strong>
 								{{ $t('Main_Content.Btm_Content_3') }}
 							</strong>
-						</a>
+						</a> |
 						{{ $t('Main_Content.Btm_Content_4') }}
 					</p>
 					<div class="footer-detail">
