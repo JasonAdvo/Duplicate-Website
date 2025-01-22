@@ -67,7 +67,7 @@
 						</p>
 
 						<p>
-							<a :href="winboxofficial_link">
+							<a href="https://www.winboxmys.co/">
 								<b style="font-size: 12px;">
 									{{ $t('content.SP_Link_Word') }}
 								</b>
